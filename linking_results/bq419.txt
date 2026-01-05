@@ -1,0 +1,307 @@
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.storms_1978
+[
+    state (Type: STRING; Sample values: ['Ar', 'Al', 'Ar', 'Mo', 'Mi']; Description: The full text state name where the event occurred)
+    state_fips_code (Type: STRING; Sample values: ['5', '1', '5', '30', '29']; Description: Unique FIPS code identifier assigned to each state.   State names and their corresponding FIPS codes are available as a BigQuery Public Dataset: bigquery-public-data.census_fips_codes.states_2016  The geographic polygons that define the perimeter of each state are available as a BigQuery Public Dataset: bigquery-public-data.geo_us_boundaries.us_states)
+    cz_fips_code (Type: STRING; Sample values: ['125', '73', '35', '13', '41']; Description: Unique FIPS code identifier assigned to each county.   State names and their corresponding FIPS codes are available as a BigQuery Public Dataset: bigquery-public-data.census_fips_codes.counties_2016  The geographic polygons that define the perimeter of each state are available as a BigQuery Public Dataset: bigquery-public-data.geo_us_boundaries.us_counties)
+    event_type (Type: STRING; Sample values: ['hail', 'thunderstorm wind', 'tornado', 'hail', 'hail']; Description: The only events permitted in Storm Data are listed in Table 1 of Section 2.1.1 of NWS Directive 10-1605 at http://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf. The chosen event type is the one that most accurately describes the meteorological event leading to fatalities, injuries, damage, etc. However, significant events, such as tornadoes, having no impact or causing no damage, are also included in Storm Data.)
+    event_id (Type: STRING; Sample values: ['9980116', '9979883', '9981225', '10070243', '10056221']; Description: ID assigned by NWS to note a single, small part that goes into a specific storm episode; links the storm episode between the three files downloaded from SPC’s website)
+    cz_name (Type: STRING; Sample values: ['SALINE', 'JEFFERSON', 'CRITTENDEN', 'CASCADE', 'CHARITON']; Description: (County/Parish, Zone or Marine Name assigned to the county FIPS number or NWS Forecast Zone  NWS Forecast Zones are available as a BigQuery Public Dataset: bigquery-public-data.noaa_historic_severe_storms.nws_forecast_zones)
+    location_index (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number assigned by NWS to specific locations within the same Storm event. Each event’s sequentially increasing location index number will have a corresponding lat/lon point)
+    damage_property (Type: INT64; Sample values: ['0', '0', '25000', '0', '0']; Description: The estimated amount of damage to property incurred by the weather event, in USD at the time of the event. Values are not adjusted for inflation  Note: Values listed as 0 do not necessarily mean that no property damage occurred as a result of the event)
+    damage_crops (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: The estimated amount of damage to crops incurred by the weather event, in USD at the time of the storm. Values are not adjusted for inflation  Note: Values listed as 0 do not necessarily mean that no property damage occurred as a result of the event)
+    wfo (Type: STRING; Sample values: ['T', 'T', 'None', 'ATA', 'LCO']; Description: National Weather Service Forecast Office’s area of responsibility (County Warning Area) in which the event occurred)
+    cz_type (Type: STRING; Sample values: ['C', 'C', 'C', 'C', 'C']; Description: Indicates whether the event happened in   - C: County/Parish  - Z: NWS zone  - M: Marine)
+    event_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The latitude where the event occurred (rounded to the hundredths in decimal degrees; includes an ‘-‘ if it’s S of the Equator))
+    episode_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ID assigned by NWS to denote the storm episode; links the event details file with the information within location file)
+    magnitude (Type: FLOAT64; Sample values: ['4.0', '0.0', '0.0', '2.0', '1.0']; Description: Measured extent of the magnitude type. This is only used for wind speeds and hail size.   Wind speeds are in MPH; Hail sizes are in inches)
+    event_range (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: A hydro-meteorological event will be referenced, minimally, to the nearest tenth of a mile, to the geographical center (not from the village/city boundaries or limits) of a particular village/city, airport, or inland lake, providing that the reference point is documented in the Storm Data software location database.)
+    event_point (Type: GEOGRAPHY; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Geographic representation of the event_longitude and latitude)
+    source (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Source reporting the weather event  Note: This can be any entry. Values are not restricted to specific categories)
+    event_longitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The longitude where the event occurred (rounded to the hundredths in decimal degrees; includes an ‘-‘ if it’s W of the Prime Meridian))
+    event_end_time (Type: DATETIME; Sample values: ['1978-01-07 17:45:00', '1978-07-10 15:15:00', '1978-05-01 00:05:00', '1978-06-28 17:45:00', '1978-10-10 14:35:00']; Description: The date and time that the event ended. Note that episodes and events may have different start and end times if multiple events occured in the same episode)
+    event_timezone (Type: STRING; Sample values: ['CST', 'CST', 'CST', 'CST', 'CST']; Description: The time zone in which the event_begin_time and the event_end_time is recorded.)
+    event_begin_time (Type: DATETIME; Sample values: ['1978-01-07 17:45:00', '1978-07-10 15:15:00', '1978-05-01 00:05:00', '1978-06-28 17:45:00', '1978-10-10 14:35:00']; Description: The date and time that the event began. Note that episodes and events may have different start and end times if multiple events occured in the same episode)
+    tor_width (Type: STRING; Sample values: ['0', '0', '50', '0', '0']; Description: Width of the tornado or tornado segment while on the ground (in feet))
+]
+**Some other tables have the similar structure: [storms_1991, storms_1956, storms_1976, storms_1984, storms_1977, storms_2017, storms_1960, storms_2010, storms_1975, storms_2008, storms_2023, storms_1992, storms_2003, storms_1972, storms_1961, storms_1968, storms_2005, storms_1999, storms_2019, storms_1981, storms_1957, storms_1971, storms_1970, storms_1993, storms_1966, storms_2014, storms_1950, storms_1979, storms_1988, storms_1967, storms_1983, storms_1998, storms_2016, storms_1955, storms_2011, storms_1952, storms_1958, storms_1985, storms_1954, storms_1959, storms_1996, storms_1953, storms_2009, storms_1973, storms_1982, storms_2007, storms_2018, storms_1964, storms_1965, storms_1969, storms_2001, storms_1989, storms_1974, storms_1997, storms_1980, storms_1951, storms_2006, storms_2013, storms_2000, storms_2022, storms_2004, storms_2021, storms_1994, storms_2002, storms_2024, storms_2015, storms_1995, storms_1963, storms_2020, storms_2012, storms_1962, storms_1987, storms_1990, storms_1986]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.tornado_paths
+[
+    state_abbreviation (Type: STRING; Sample values: ['IA', 'IA', 'IA', 'IA', 'IA']; Description: 2 letter postal abbreviation of the state's name)
+    state_name (Type: STRING; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa']; Description: Full text name of the state in which the tornado occurred)
+    state_fips_code (Type: STRING; Sample values: ['19', '19', '19', '19', '19']; Description: 2-digit state FIPS code. This maps to all state_fips_code columns in the BigQuery Public Datasets Program)
+    property_loss (Type: STRING; Sample values: ['25000', '0.12', '0.7', '0.075', '16']; Description: Estimated property loss in USD. Note that zero does not indicate $0. Possible values are: 0 - unknown or not provided; 1 - <50; 2 - 50 - <500; 3 - 500 - <5,000; 4 - 5,000 - <50,000; 5 - 50,000 - <500,000; 6 - 500,000 - <5,000,000; 7 - 5,000,000 - <50,000,000; 8 - 50,000,000 - <500,000,000; 9 - 500,000,000 or greater.)
+    yearly_tornado_count (Type: STRING; Sample values: ['614739', '816', '770', '365283', '664']; Description: Count of tornadoes that year after the given tornado is reported to the NWS database. This does not necessarily indicate sequential order because of reporting potential delays.)
+    storm_date (Type: DATE; Sample values: ['2017-03-06', '1999-04-08', '2007-06-22', '2012-04-14', '2007-06-01']; Description: Date of the tornado)
+    width (Type: FLOAT64; Sample values: ['195.0', '0.0', '450.0', '270.0', '2322.0']; Description: Width of the tornado in feet)
+    length (Type: FLOAT64; Sample values: ['5.45', '32.0', '6.36', '1.27', '15.75']; Description: Length of the tornado, in miles)
+    magnitude (Type: STRING; Sample values: ['0', '2', '2', '1', '3']; Description: EF-Scale rating for the tornado. Possible values are 0, 1, 2, 3, 4 , 5 and unknown)
+    tornado_path_geom (Type: GEOGRAPHY; Sample values: ['LINESTRING(-92.9974 41.4611, -92.9041 41.4976)', 'LINESTRING(-93.75 41.18, -93.675 41.28, -93.6 41.38, -93.525 41.48, -93.45 41.58)', 'LINESTRING(-93.78 41.49, -93.66 41.47)', 'LINESTRING(-92.5092 41.2498, -92.4847 41.2493)', 'LINESTRING(-91.19 41.27, -91.11 41.365, -91.03 41.46)']; Description: Geographic representation of the storm's path)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.nws_forecast_regions
+[
+    state (Type: STRING; Sample values: ['MI', 'MI', 'MI', 'MI', 'MI'])
+    state_zone (Type: STRING; Sample values: ['MI001', 'MI002', 'MI003', 'MI004', 'MI005'])
+    name (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    shortname (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    zone (Type: STRING; Sample values: ['001', '002', '003', '004', '005'])
+    lon (Type: FLOAT64; Sample values: ['-88.4287', '-89.315', '-88.6207', '-88.3652', '-87.6415'])
+    cwa (Type: STRING; Sample values: ['MQT', 'MQT', 'MQT', 'MQT', 'MQT'])
+    lat (Type: FLOAT64; Sample values: ['47.6104', '46.6644', '47.0531', '46.6626', '46.4314'])
+    fe_area (Type: STRING; Sample values: ['wu', 'wu', 'wu', 'nr', 'nr'])
+    time_zone (Type: STRING; Sample values: ['E', 'E', 'E', 'E', 'E'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.wind_reports
+[
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county (Type: STRING; Sample values: ['AUTAUGA', 'AUTAUGA', 'AUTAUGA', 'AUTAUGA', 'BALDWIN'])
+    comments (Type: STRING; Sample values: ['DAMAGE TO A MOBILE HOME REPORTED BY EMA. PROBABLE TORNADO. (BMX)', 'CORRECTS PREVIOUS TSTM WND DMG REPORT FROM PRATTVILLE. 5 TREES WERE SNAPPED OFF IN THE CAMELLIA ESTATES NEIGHBORHOOD IN PRATTVILLE. AT LEAST ONE RESIDENCE SUSTAINED ROO (BMX)', 'TREES DOWN ALONG CR 19 NORTH OF AUTAUGAVILLE. (BMX)', 'TREE DOWN ON SUMMER LN. WINDS ESTIMATED AT 40-50 MPH AS SUGGESTED BY RADAR AND NEARBY SURFACE OB AT K1A9. (BMX)', 'REPORTS OF DOWNED POWER LINES NEAR SEMINOLE. TIME ESTIMATED BY RADAR. (MOB)'])
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-19 20:17:00+00:00', '2019-02-12 16:36:00+00:00', '2019-03-03 19:25:00+00:00', '2019-06-26 03:15:00+00:00', '2019-04-19 00:33:00+00:00']; Description: Timestamp in UTC)
+    location (Type: STRING; Sample values: ['3 NNW BOOTH', 'PRATTVILLE', '4 NNW AUTAUGAVILLE', '1 E PRATTVILLE', 'SEMINOLE']; Description: Location of report)
+    time (Type: STRING; Sample values: ['2017', '1636', '1925', '0315', '0033']; Description: Hour in UTC)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.tornado_reports
+[
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county (Type: STRING; Sample values: ['HENRY', 'AUTAUGA', 'ELMORE', 'COOSA', 'PICKENS'])
+    comments (Type: STRING; Sample values: ['TREE DAMAGE FROM A BRIEF TORNADO ABOUT 1.5 MI N OF ABBEVILLE / 2 MI N GRABALL. (TAE)', '*** 2 INJ *** CORRECTS PREVIOUS TORNADO REPORT TO INCLUDE 2 INJURIES. A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... WHICH OCCURRED JUST NORTHWEST OF (BMX)', '*** 4 INJ *** A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF HIGH-END EF-2 INTENSITY THAT BEGAN JUST SOUTHWEST OF WETUMPKA AND CONTINUED NORTHEAST... ENDING JUST BEFORE (BMX)', 'A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... AFFECTING AREAS JUST SOUTHEAST OF ROCKFORD IN COOSA COUNTY ALONG COUNTY ROAD 101. (BMX)', 'CORRECTS PREVIOUS TORNADO REPORT FROM 3 WSW GAINSVILLE LAKE. THE TORNADO TOUCHED DOWN JUST EAST OF NANCY CLARK ROAD... AND FIRST CAUSED DAMAGE ALONG AN EAST-WEST TREELI (BMX)'])
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-04 10:40:00+00:00', '2019-01-19 20:04:00+00:00', '2019-01-19 20:52:00+00:00', '2019-01-19 20:58:00+00:00', '2019-02-23 23:44:00+00:00']; Description: Timestamp in UTC)
+    location (Type: STRING; Sample values: ['2 N GRABALL', '3 ENE MULBERRY', '3 SW WETUMPKA', '2 W COTTAGE GROVE', '3 WSW GAINESVILLE LAKE']; Description: Location of report)
+    latitude (Type: FLOAT64; Sample values: ['31.62', '32.49', '32.52', '32.85', '33.06']; Description: Latitude to two decimal places)
+    time (Type: STRING; Sample values: ['1040', '2004', '2052', '2058', '2344']; Description: Hour in UTC)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.wind_reports
+[
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county (Type: STRING; Sample values: ['LEE', 'LEE', 'LEE', 'LEE', 'LEE'])
+    comments (Type: STRING; Sample values: ['TREES DOWN NEAR THE INTERSECTION OF LEE RD 440 AND LEE RD 179. ALSO REPORT OF TREES DOWN JUST TO THE EAST NEAR THE INTERSECTION OF LEE RD 240 AND LEE RD 212. TIME ESTIM (BMX)', 'REPORTS OF TREES DOWN IN VARIOUS LOCATIONS IN EASTERN LEE COUNTY FROM BOWING STORM SEGMENT. TIME ESTIMATED. (BMX)', 'CORRECTS PREVIOUS TORNADO REPORT FROM SALEM. US HWY 280 BLOCKED BY DOWNED CELL TOWER ACROSS HWY. (BMX)', 'A TREE WAS DOWNED ONTO A HOME. (BMX)', 'TREE DOWN ON A HOME. TIME ESTIMATED FROM RADAR. (BMX)'])
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-19 22:54:00+00:00', '2019-02-12 18:11:00+00:00', '2019-03-03 20:22:00+00:00', '2019-03-26 00:13:00+00:00', '2019-06-07 17:56:00+00:00']; Description: Timestamp in UTC)
+    location (Type: STRING; Sample values: ['2 N CRAWFORD', '3 SW MONTEREY HEIGHTS', "SMITH'S STATION", '1 NNW SMITHS STATION', '1 SSE ROBERT G. PITTS A']; Description: Location of report)
+    time (Type: STRING; Sample values: ['2254', '1811', '2022', '0013', '1756']; Description: Hour in UTC)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.tornado_reports
+[
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county (Type: STRING; Sample values: ['HENRY', 'AUTAUGA', 'ELMORE', 'COOSA', 'PICKENS'])
+    comments (Type: STRING; Sample values: ['TREE DAMAGE FROM A BRIEF TORNADO ABOUT 1.5 MI N OF ABBEVILLE / 2 MI N GRABALL. (TAE)', '*** 2 INJ *** CORRECTS PREVIOUS TORNADO REPORT TO INCLUDE 2 INJURIES. A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... WHICH OCCURRED JUST NORTHWEST OF (BMX)', '*** 4 INJ *** A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF HIGH-END EF-2 INTENSITY THAT BEGAN JUST SOUTHWEST OF WETUMPKA AND CONTINUED NORTHEAST... ENDING JUST BEFORE (BMX)', 'A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... AFFECTING AREAS JUST SOUTHEAST OF ROCKFORD IN COOSA COUNTY ALONG COUNTY ROAD 101. (BMX)', 'CORRECTS PREVIOUS TORNADO REPORT FROM 3 WSW GAINSVILLE LAKE. THE TORNADO TOUCHED DOWN JUST EAST OF NANCY CLARK ROAD... AND FIRST CAUSED DAMAGE ALONG AN EAST-WEST TREELI (BMX)'])
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-04 10:40:00+00:00', '2019-01-19 20:04:00+00:00', '2019-01-19 20:52:00+00:00', '2019-01-19 20:58:00+00:00', '2019-02-23 23:44:00+00:00']; Description: Timestamp in UTC)
+    location (Type: STRING; Sample values: ['2 N GRABALL', '3 ENE MULBERRY', '3 SW WETUMPKA', '2 W COTTAGE GROVE', '3 WSW GAINESVILLE LAKE']; Description: Location of report)
+    latitude (Type: FLOAT64; Sample values: ['31.62', '32.49', '32.52', '32.85', '33.06']; Description: Latitude to two decimal places)
+    time (Type: STRING; Sample values: ['1040', '2004', '2052', '2058', '2344']; Description: Hour in UTC)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.hail_reports
+[
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county (Type: STRING; Sample values: ['AUTAUGA', 'AUTAUGA', 'BALDWIN', 'BALDWIN', 'BALDWIN'])
+    comments (Type: STRING; Sample values: ['FORWARDED BY BROADCAST MEDIA VIA SOCIAL MEDIA. (BMX)', 'QUARTER SIZE HAIL WAS REPORTED ON OLD RIDGE ROAD NORTH OF PRATTVILLE. (BMX)', 'TWO SEPARATE PHOTOS SHOW HAIL NEAR SOFTBALL SIZE IN ORANGE BEACH. SIGNIFICANT HAIL DAMAGE REPORTED TO NUMEROUS VEHICLES AND METALS ROOFS IN THE AREA. (MOB)', 'REPORT OF 2 INCH SIZE HAIL FURTHER INLAND (SOUTHWEST OF LILLIAN). (MOB)', 'CORRECTS PREVIOUS HAIL REPORT FROM 2 WSW FOLEY. REPORT OF QUARTER-SIZE HAIL IN SOUTHWEST FOLEY. TIME AND LOCATION GIVEN BY LOCAL POLICE. (MOB)'])
+    location (Type: STRING; Sample values: ['4 ESE MARBURY', '3 NNE PRATTVILLE', '1 SSW ORANGE BEACH', '4 SW LILLIAN', '2 WSW FOLEY']; Description: Location of report)
+    timestamp (Type: TIMESTAMP; Sample values: ['2021-04-09 15:01:00+00:00', '2021-05-03 23:30:00+00:00', '2021-04-10 08:20:00+00:00', '2021-04-10 08:40:00+00:00', '2021-04-15 12:56:00+00:00']; Description: Timestamp in UTC)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.hail_reports
+[
+    state (Type: STRING; Sample values: ['N', 'AL', 'AL', 'AL', 'AL'])
+    time (Type: STRING; Sample values: ['2328', '2122', '2005', '2028', '2047']; Description: Hour in UTC)
+    location (Type: STRING; Sample values: ['10 WEST HEMINGFORD', '1 SSW EW SHELL FISHERIE', '1 W LOACHAPOKA', 'BEAUREGARD', 'SMITHS STATION']; Description: Location of report)
+    county (Type: STRING; Sample values: ['BOX BUTTE', 'LEE', 'LEE', 'LEE', 'LEE'])
+    comments (Type: STRING; Sample values: ['PHOTO ON SOCIAL MEDIA READING 2.14 INCHES FOR DIAMETER. (CYS', 'VIA SOCIAL MEDIA. (BMX)', 'QUARTER SIZE HAIL IN LOACHAPOKA. (BMX)', 'SILVER DOLLAR SIZE HAIL IN BEAUREGARD. (BMX)', 'GOLF BALL SIZE HAIL IN SMITHS STATION. (BMX)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_tsunami.historical_source_event
+[
+    state (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The two-letter State or Province abbreviation where the Earthquake occurred.)
+    id (Type: INT64; Sample values: ['3190', '3650', '97', '187', '224']; Description: The unique numeric identifier of the record.)
+    event_validity (Type: INT64; Sample values: ['1', 'None', '1', '0', '1']; Description: Valid values: -1 to 4 Validity of the actual tsunami occurrence is indicated by a numerical rating of the reports of that event:  4 = definite tsunami 3 = probable tsunami 2 = questionable tsunami 1 = very doubtful tsunami 0 = event that only caused a seiche or disturbance in an inland river -1 = erroneous entry)
+    cause_code (Type: INT64; Sample values: ['0', 'None', '0', '1', '0']; Description: Valid values: 0 to 11 The source of the tsunami:  0 = Unknown 1 = Earthquake 2 = Questionable Earthquake 3 = Earthquake and Landslide 4 = Volcano and Earthquake 5 = Volcano, Earthquake, and Landslide 6 = Volcano 7 = Volcano and Landslide 8 = Landslide 9 = Meteorological 10 = Explosion 11 = Astronomical Tide)
+    location_name (Type: STRING; Sample values: ['MEDITERRANEAN SEA', 'None', 'WEST CORNWALL, ENGLAND', 'DOVER STRAITS, ENGLAND', 'ENGLAND']; Description: The Country, State, Province or Island where the tsunami source occurred (For example enter: Japan or Honshu) This is only an approximate geographic location. Events prior to 1900 were not instrumentally located, therefore, the location given is based on the latitude and longitude of the city where the maximum effects occurred. If there are different spellings of a city name the additional names are in parentheses.)
+    region_code (Type: INT64; Sample values: ['50', 'None', '73', '73', '73']; Description: Regional boundaries are based on frequency of occurrence of tsunamigenic events, geophysical relations, risk in distant areas and political justification. 77 =	West Coast of Africa 78 =	Central Africa 73 =	Northeast Atlantic Ocean 72 =	Northwest Atlantic Ocean 70 =	Southeast Atlantic Ocean 71 =	Southwest Atlantic Ocean 75 =	E. Coast USA and Canada, St Pierre and Miquelon 76 =	Gulf of Mexico 74 =	Caribbean Sea 40 =	Black Sea and Caspian Sea 50 =	Mediterranean Sea 30 =	Red Sea and Persian Gulf 60 =	Indian Ocean (including west coast of Australia) 87 =	Alaska (including Aleutian Islands) 84 =	China, North and South Korea, Philippines, Taiwan 81 =	E. Coast Australia, New Zealand, South Pacific Is. 80 =	Hawaii, Johnston Atoll, Midway I 83 =	E. Indonesia (Pacific Ocean) and Malaysia 82 =	New Caledonia, New Guinea, Solomon Is., Vanuatu 86 =	Kamchatka and Kuril Islands 85 =	Japan 88 =	West Coast of North and Central America 89 =	West Coast of South America)
+    iida (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Valid values: -5 to 10 Tsunami magnitude (M) is defined by Iida and others (1967) as  M = log2h, where "h" is the maximum runup height of the wave.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_hurricanes.hurricanes
+[
+    usa_poci (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: pressure in millibars of the last closed isobar/n900 - 1050 mb NOT BEST-TRACKED (not reanalyzed))
+    usa_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Minimum central pressure (mb))
+    usa_status (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Status of system. Options are:  DB - disturbance/n TD - tropical depression/n TS - tropical storm/n TY - typhoon/n ST - super typhoon/n TC - tropical cyclone/n HU,HR - hurricane/n SD - subtropical depression/n SS - subtropical storm/n EX - extratropical systems/n PT - post tropical/n IN - inland/n DS - dissipating/n LO - low/n WV - tropical wave/n ET - extrapolated/n MD - monsoon depression/n XX - unknown.)
+    usa_atcf_id (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: The ATCF ID is assigned by US agencies and can be used to comparethe storm with other US cyclone-related datasets. If two (or more) ATCF tracks make up one storm/nthen the IDs are separated by a colon. The format of the ATCF ID is B<bb><nn><yyyy> where bb is the basin ID/nnn is the number of the storm in that basin and yyyy is the year. Possible basin values are: AL: North Atlantic/nSL: South Atlantic/nEP: East Pacific/nWP: West Pacific/nSH: Southern Hemisphere/nIO: North Indian For the provisional data/nother basin identifiers were provided that include: CP: Central Pacific/nSP: South Pacific/nSI: South Indian/nAS: Arabian Sea (North Indian) and BB: Bay of Bengal (North Indian))
+    name (Type: STRING; Sample values: ['NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED']; Description: Name provided by the agency. IBTrACS ignores most names that include digits or abbreviations.)
+    number (Type: INT64; Sample values: ['2', '2', '4', '6', '7']; Description: The cardinal number of the system for that season. The count includes all basins/nso this will not be continuous for basin files.)
+    sid (Type: STRING; Sample values: ['1848011S09080', '1848011S09080', '1848011S16057', '1848061S12075', '1848112S07084']; Description: Storm Identifier.)
+    usa_r50_ne (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in northeastern quadrant)
+    usa_rmw (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: radius of max winds/n0 - 999 n mi. NOT BEST TRACKED (not reanalyzed))
+    usa_r50_se (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 50 kt wind radii maximum extent in southeastern quadrant)
+    hko_cat (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: After 2009/nwe further classified two more storm types above typhoon/nso there are in total 7 storm types LW (Low) <22 kt TD (Tropical Depression) 22 – 33 kt TS (Tropical Storm) 34 – 47 kt STS (Severe Tropical Storm) 48 – 63 kt T (Typhoon) 64 – 80 kt ST (Severe Typhoon) 81 – 99 kt SuperT (Super Typhoon) >= 100 kt)
+    td9636_stage (Type: INT64; Sample values: ['None', 'None', '7', '7', 'None']; Description: This field gives an estimate of the highest winds occurring in the storm at the time and location indicated. The entire storm was coded as to the highest stage reached for some of the earlier years. 0 - Tropical disturbance (1969 onward) 1 - depression < 34 [some variation in definition for S Indian] 2 - Storm 34-63 [with some variation in definition for S Indian] 3 - point where wind reached 64 knots [except N Indian where it is wind 43-47 knots] 4 - Hurricane > 64 [except in N Indian/nWind > 48] 5 - Extratropical 6 - Dissipating 7 - Unknown Intensity or doubtful track)
+    usa_record (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Record identifier (see notes below) C – Closest approach to a coast/nnot followed by a landfall G – Genesis I – An intensity peak in terms of both pressure and wind L – Landfall (center of system crossing a coastline) P – Minimum in central pressure R – Provides additional detail on the intensity of the cyclone when rapid changes are underway S – Change of status of the system T – Provides additional detail on the track (position) of the cyclone W – Maximum sustained wind speed)
+    usa_r50_nw (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in northwestern quadrant)
+    usa_r64_ne (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 64 kt wind radii maximum extent in northeastern quadrant)
+    usa_r64_se (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in southeastern quadrant)
+    usa_sshs (Type: INT64; Sample values: ['-5', '-5', '-5', '-5', '-5']; Description: Saffir-Simpson Hurricane Scale information based on the wind speed provided by the US agency wind speed (US agencies provide 1-minute wind speeds) -5 = Unknown [XX] -4 = Post-tropical [EX/nET/nPT] -3 = Miscellaneous disturbances [WV/nLO/nDB/nDS/nIN/nMD] -2 = Subtropical [SS/nSD] Tropical systems classified based on wind speeds [TD/nTS/nHU/nTY,/nTC/nST/nHR]  -1 = Tropical depression (W<34)  0 = Tropical storm [34<W<64]  1 = Category 1 [64<=W<83]  2 = Category 2 [83<=W<96]  3 = Category 3 [96<=W<113]  4 = Category 4 [113<=W<137]  5 = Category 5 [W >= 137])
+    usa_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    td9636_wind (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Estimated highest wind speed at the time indicated. These estimates are subjective and must be interpreted with caution.)
+    season (Type: STRING; Sample values: ['1848', '1848', '1848', '1848', '1848'])
+    usa_eye (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: eye diameter/n0 - 120 n mi. NOT BEST TRACKED (not reanalyzed))
+    usa_r64_nw (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in northwestern quadrant)
+    usa_wind (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum sustained wind speed in knots: 0 - 300 kts.)
+    basin (Type: STRING; Sample values: ['SI', 'SI', 'SI', 'SI', 'SI']; Description: Basins include: NA - North Atlantic EP - Eastern North Pacific WP - Western North Pacific NI - North Indian SI - South Indian SP - Southern Pacific SA - South Atlantic MM - Missing - should not appear in final IBTrACS product)
+    usa_agency (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: The agency file providing the information: The representative US agency data is derived from a hierarchical selection: the first dataset in the following list to provide information at the given time is used as the USA_agency: - HURDAT_ATL - HURSAT_EPA - ATCF (for NA and EP basins only) - JTWC_WP - JTWC_IO - JTWC_EP - JTWC_CP - JTWC_SH - CPHC [separate file provided by CPHC for years TBD] - tcvitals - THIS INDICATES THAT THE DATA ARE PRELIMINARY While these agencies are generally orthogonal/nthere are cases where a system is provided in more than one source. In this case/nthe report from the highest source is used. ATCF format info from: https://www.nrlmry.navy.mil/atcf_web/docs/database/new/abdeck.txt HURDAT2 info from: http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf)
+    usa_roci (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: radius of the last closed isobar/n0 - 999 n mi. NOT BEST TRACKED (not reanalyzed))
+    ds824_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    td9636_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    nature (Type: STRING; Sample values: ['NR', 'NR', 'NR', 'NR', 'NR']; Description: Combined storm type. This is assigned based on all available storm types. They include: DS - Disturbance TS - Tropical ET - Extratropical SS - Subtropical NR - Not reported MX - Mixture (contradicting nature reports from different agencies))
+    subbasin (Type: STRING; Sample values: ['MM', 'MM', 'MM', 'MM', 'MM']; Description: Subbasins include: MM - missing - no sub basin for this basin (no subbasins provided for WP/nSI) CS - Caribbean Sea GM - Gulf of Mexico CP - Central Pacific BB - Bay of Bengal AS - Arabian Sea WA - Western Australia EA - Eastern Australia)
+    usa_r50_sw (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 50 kt wind radii maximum extent in southwestern quadrant)
+    usa_r34_ne (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 34 kt wind radii maximum extent in northeastern quadrant)
+    hko_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    td9635_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    iflag (Type: STRING; Sample values: ['_____P________', '_____P________', '__________P___', '_____P____P___', '_____P________']; Description: Interpolation Flag A 14 character flag string which denotes the source of each agency's report: Interpolation Flags include: _ == missing reports. No information provided. O == original report as provided by the agency. P == position was interpolated (all variables were interpolated/filled/nincluding intensity) I == Position was provided/nbut Intensity variables (and likely other variables) were interpolated/filled V = Position and intensity variables are original but some variables were interpolated/filled. The order of the 14 characters refers to the following 14 datasets: 1 - USA Agency (see column 18) 2 - Tokyo 3 - CMA 4 - HKO 5 - NewDelhi 6 - Reunion 7 - BoM 8 - Nadi 9 - Wellington 10 - ds824 11 - TD9636 12 - TD9635 13 - Neumann Southern Hemisphere data set 14 - M.L. Chenoweth N Atlantic Historic dataset)
+    usa_longitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    bom_type (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This indicates the type of system that this cyclone was at the time of the observation. Note that cyclones can evolve during their lifetimes and hence change type mid-stream (e.g. Extratropical transition (ETT)))
+    mlc_pressure (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    usa_r64_sw (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 64 kt wind radii maximum extent in southwestern quadrant)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_tsunami.historical_runups
+[
+    state (Type: STRING; Sample values: ['VI', 'NS', 'NS', 'None', 'KURIL ISLANDS']; Description: The State, Province or Prefecture where the tsunami effects were observed.)
+    id (Type: INT64; Sample values: ['942', '9647', '9946', '1004', '1787']; Description: The unique numeric identifier of the record.)
+    tsevent_id (Type: INT64; Sample values: ['966', '2792', '2792', '983', '1457']; Description: The unique numeric identifier of the tsunami source event record that links the runup with the event.)
+    location_name (Type: STRING; Sample values: ['ST. CROIX:  FREDERIKSTED', 'TUFTS COVE, NOVA SCOTIA', 'TURTLE GROVE, NOVA SCOTIA', 'TUPUNGA, CHATHAM IS.', 'OPASNAIA BAY, URUP I,  KURILSKIYE']; Description: The location (city, state or island) where the tsunami effects were observed.)
+    region_code (Type: INT64; Sample values: ['74', '75', '75', '81', '86']; Description: Regional boundaries are based on frequency of occurrence of tsunamigenic events, geophysical relations, risk in distant areas and political justification. 77 =	West Coast of Africa 78 =	Central Africa 73 =	Northeast Atlantic Ocean 72 =	Northwest Atlantic Ocean 70 =	Southeast Atlantic Ocean 71 =	Southwest Atlantic Ocean 75 =	E. Coast USA and Canada, St Pierre and Miquelon 76 =	Gulf of Mexico 74 =	Caribbean Sea and Bermuda 40 =	Black Sea and Caspian Sea 50 =	Mediterranean Sea 30 =	Red Sea and Persian Gulf 60 =	Indian Ocean (including west coast of Australia) 87 =	Alaska (including Aleutian Islands) 84 =	China, North and South Korea, Philippines, Taiwan 81 =	E Coast Australia, New Zealand, South Pacific Is. 80 =	Hawaii, Johnston Atoll, Midway I 83 =	E. Indonesia (Pacific Ocean) and Malaysia 82 =	New Caledonia, New Guinea, Solomon Is., Vanuatu 86 =	Kamchatka and Kuril Islands 85 =	Japan 88 =	West Coast of North and Central America 89 =	West Coast of South America)
+    type_measurement_id (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Valid values: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10  See text below for more information. 1 = Eyewitness measurement 5 = Runup Height, Post-tsunami survey measurement 4 = Water height, Post-tsunami survey measurement 8 = Water height in harbor, Post-tsunami survey measurement 10 = Flow Depth, Post-tsunami survey measurement 9 = Splash mark, Post-tsunami survey measurement 2 = Tide-gauge measurement 3 = Deep ocean gauge 6 = Atmospheric Wave 7 = Seiche)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_significant_earthquakes.earthquakes
+[
+    state (Type: STRING; Sample values: ['None', 'None', 'None', 'HI', 'MA']; Description: The State, Province or Prefecture of the earthquake was located.)
+    id (Type: INT64; Sample values: ['338', '771', '7889', '6697', '6013'])
+    location_name (Type: STRING; Sample values: ['UNITED KINGDOM:  BRITIAN', 'UNITED KINGDOM:  DOVER STRAITS', 'UNITED KINGDOM:  ENGLAND: ST. MARY, SCILLY ISLANDS', 'HAWAII', 'BOSTON AND SALEM, MASSACHUSETTS']; Description: Earthquake Location Name. The location (city, state or island) where the earthquake was located.)
+    region_code (Type: INT64; Sample values: ['120', '120', '120', '150', '150']; Description: Region Name (Code). Regional boundaries were assigned based on the frequency of occurrence of earthquakes, geophysical relations, risk in distant areas and political justification. The codes are defined as: 10 = Central, Western and S. Africa 15 = Northern Africa 20 = Antarctica 30 = East Asia 40 = Central Asia and Caucasus 50 = Kamchatka and Kuril Islands 60 = S. and SE. Asia and Indian Ocean 70 = Atlantic Ocean 80 = Bering Sea 90 = Caribbean 100 = Central America 110 = Eastern Europe 120 = Northern and Western Europe 130 = Southern Europe 140 = Middle East 150 = North America and Hawaii 160 = South America 170 = Central and South Pacific)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.stations
+[
+    state (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    name (Type: STRING; Sample values: ['WXPOD 7018                   ', 'WXPOD 7026                   ', 'WXPOD 7070                   ', 'WXPOD8278                    ', 'WXPOD 8318                   '])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_icoads.icoads_core_2011
+[
+    past_weather (Type: INT64; Sample values: ['0', '1', '1', '2', '1']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    id_indicator (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: ID Indicator indicates whether a callsign or some other sort of identification is contained in the ID field (and in R3.0 data, II should always be extant when ID information exists; whereas II should always be missing if ID is missing): 0 – ID present, but unknown type 1 – ship, Ocean Station Vessel (OSV), or ice station callsign 2 – generic ID (e.g., SHIP, BUOY, RIGG, PLAT) 3 – WMO 5-digit buoy number 4 – other buoy number (e.g., Argos or national buoy number) 5 – Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations) 6 – station name or number 7 – oceanographic platform/cruise number 8 – fishing vessel psuedo-ID 9 – national ship number 10 – composite information from early ship data 11 – 7-digit buoy ID (proposed))
+    country_code (Type: STRING; Sample values: ['', '', '', '', '']; Description: The country that recruited a ship, which may differ from the country of immediate receipt (C2, field 15) and may also differ from the ship’s registry)
+    middle_cloud_type (Type: STRING; Sample values: ['A', 'A', 'A', 'A', '1']; Description: Codes 0 to 10 [A in base36 encoding] show characteristics observed of clouds of the genera Altocumulus, Altostratus, and Nimbostratus (WMO Code 0515).)
+    source_id (Type: INT64; Sample values: ['114', '114', '114', '114', '114']; Description: Number of the source ID from which the report came (Table D7). Each SID may contain a single deck or a mixture of decks, but each SID is generally constrained to a single input format.)
+    second_country_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The country of immediate receipt (C2), which may differ from the recruiting country (C1) and may also differ from the ship’s registry.)
+    unique_report_id (Type: STRING; Sample values: ['91BOBM', '90R3SD', '90UYC7', '9570W9', '8ITNZU']; Description: A unique ID for each record in ICOADS represented as a base36 number of length 6.)
+    callsign (Type: STRING; Sample values: ['3EUS', '3EUS', '3EUS', '3EUS', '3FJQ']; Description: Identification/Callsign)
+]
+**Some other tables have the similar structure: [icoads_core_2009, icoads_core_2005, icoads_core_2017, icoads_core_2007, icoads_core_2013, icoads_core_2008, icoads_core_2010, icoads_core_2016, icoads_core_2014, icoads_core_2015, icoads_core_2012, icoads_core_2006]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_1706_array
+[
+    array2 (Type: STRING; Sample values: ['Pueo      ', 'Pueo      ', 'Pueo      ', 'Pueo      ', 'Moli      '])
+    array1 (Type: STRING; Sample values: ['Iiwi      ', 'Iiwi      ', 'Kolea     ', 'Kolea     ', 'Kolea     '])
+    hp5_dist (Type: STRING; Sample values: ['-387.33', '-387.33', '-387.83', '-387.83', '-392.15'])
+    hp4_dist (Type: STRING; Sample values: ['-386.37', '-386.37', '-386.87', '-386.87', '-391.19'])
+]
+**Some other tables have the similar structure: [dclde_2020_1705_array]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_detection_readme
+[
+    table (Type: STRING; Sample values: ['x_Array', 'x_Array', 'x_Array', 'x_Array', 'x_Array'])
+    description (Type: STRING; Sample values: ['Name of array attached directly to the separator.', 'Name of array attached directly to the tow cable.', 'End time for the provided array parameters in UTC time. ', 'Start time for the provided array parameters in UTC time. ', 'Start time for provided array parameters in "ship local" time.'])
+    field (Type: STRING; Sample values: ['Array2', 'Array1', 'ArrayEnd_UTC', 'ArrayStart_UTC', 'ArrayStart_ShipLocal'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.gsod1973
+[
+    year (Type: STRING; Sample values: ['1973', '1973', '1973', '1973', '1973']; Description: The year)
+]
+**Some other tables have the similar structure: [gsod1938, gsod2020, gsod1945, gsod1948, gsod1949, gsod1983, gsod1998, gsod1930, gsod1995, gsod1960, gsod1987, gsod1975, gsod1992, gsod1954, gsod1990, gsod2019, gsod1977, gsod1964, gsod1970, gsod1969, gsod2003, gsod1951, gsod1937, gsod1952, gsod1997, gsod1984, gsod2008, gsod1953, gsod1940, gsod2004, gsod1955, gsod2011, gsod1959, gsod1947, gsod1974, gsod2015, gsod1993, gsod2007, gsod2002, gsod1944, gsod2023, gsod1999, gsod2024, gsod1932, gsod1965, gsod1939, gsod1982, gsod1968, gsod1946, gsod2005, gsod2010, gsod1931, gsod2018, gsod2012, gsod1956, gsod1941, gsod1979, gsod2017, gsod1935, gsod1961, gsod2014, gsod1991, gsod1958, gsod2000, gsod2009, gsod2013, gsod1989, gsod1933, gsod1996, gsod1985, gsod1980, gsod2006, gsod1988, gsod2001, gsod1971, gsod1934, gsod1936, gsod1929, gsod1981, gsod1972, gsod2021, gsod1986, gsod1967, gsod1978, gsod1963, gsod1942, gsod1966, gsod1950, gsod1943, gsod2016, gsod1957, gsod1994, gsod1976, gsod1962, gsod2022]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_species_lookup
+[
+    code (Type: STRING; Sample values: ['98', '96', '79', '78', '77'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_nefsc_pad_metadata
+[
+    file_name (Type: STRING; Sample values: ['SBNMS_20071218_133000.aif', 'SBNMS_20071218_134500.aif', 'SBNMS_20071218_140000.aif', 'SBNMS_20071218_141500.aif', 'SBNMS_20071218_143000.aif'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_afsc_pad_metadata
+[
+    file_name (Type: STRING; Sample values: ['SonobuoyDeployments.xlsx', 'SB-GAGL01-130624-215520.flac', 'SB-GAGL01-130624-220000.flac', 'SB-GAGL01-130624-221000.flac', 'SB-GAGL01-130624-222000.flac'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_nrs_pad_metadata
+[
+    file_name (Type: STRING; Sample values: ['NRS01_20141014_234015.flac', 'NRS01_20141015_034021.flac', 'NRS01_20141015_074026.flac', 'NRS01_20141015_114032.flac', 'NRS01_20141015_154038.flac'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_icoads.icoads_core_1662_2000
+[
+    callsign (Type: STRING; Sample values: ['2201', '8448', '-582', '1228', '2398']; Description: Identification/Callsign)
+]
+**Some other tables have the similar structure: [icoads_core_2001_2004]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_sanctsound_pad_metadata
+[
+    file_name (Type: STRING; Sample values: ['SanctSound_CI01_01_671379494_CalibrationInfo.pdf', 'CI01_01_RBRsT_101567.mat', 'CI01_01_RBRsT_101567.png', 'CI01_01_RBRsT_101567.rsk', 'Thumbs.db'])
+]
+
+--------------------------------------------------
+

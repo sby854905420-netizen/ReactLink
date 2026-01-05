@@ -1,0 +1,95 @@
+###Table full name: Wrestlers
+[
+    name (Type: ; Sample values: ['Grandmaster Sexay & Raven & Steve Blackman', 'Dinty Moore & Steve Fender', 'Dean Malenko & The Godfather', 'Braun Strowman & Drew McIntyre', 'Bill Payne & Tim McNeany'])
+    id (Type: INTEGER; Sample values: ['7968', '99186', '11320', '49198', '23106'])
+]
+
+--------------------------------------------------
+
+###Table full name: Matches
+[
+    title_change (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    loser_id (Type: TEXT; Sample values: ['98496', '117907', '3852', '17806', '3287'])
+    duration (Type: TEXT; Sample values: ['01:39', '', '', '', ''])
+    winner_id (Type: TEXT; Sample values: ['3286', '118375', '3447', '14884', '3563'])
+    title_id (Type: TEXT; Sample values: ['1', '65152', '1', '1', '1'])
+    id (Type: INTEGER; Sample values: ['435067', '296379', '157310', '395773', '83840'])
+    match_type_id (Type: TEXT; Sample values: ['399', '1', '1', '1', '1'])
+    card_id (Type: INTEGER; Sample values: ['8416', '10889', '465', '1478', '989'])
+    win_type (Type: TEXT; Sample values: ['def. (pin)', 'def.', 'def. (pin)', 'def. (pin)', 'draw (NC)'])
+]
+
+--------------------------------------------------
+
+###Table full name: Events
+[
+    name (Type: TEXT; Sample values: ['Money In The Bank 2022', 'Superstars of Wrestling Taping #260', 'Wrestling Challenge Taping #288', "Bash At The Beach '99", 'Sanford Show'])
+    id (Type: INTEGER; Sample values: ['3575', '2441', '2337', '10196', '11002'])
+]
+
+--------------------------------------------------
+
+###Table full name: Match_Types
+[
+    name (Type: TEXT; Sample values: ['"I Forfeit Match"', 'commentator: Baron Corbin commentator: Maryse commentator: The Miz', 'referee: Daniel Bryan referee: Shane McMahon', 'no holds barred handicap tag', 'basketball contest'])
+    id (Type: INTEGER; Sample values: ['30644', '30577', '28585', '6582', '49883'])
+]
+
+--------------------------------------------------
+
+###Table full name: Belts
+[
+    name (Type: TEXT; Sample values: ['WWF International Title', 'NXT Championship NXT North American Championship', 'WWF Hardcore Title', 'WWF Cruiserweight Title', 'WWE Unified Tag Team Titles'])
+    id (Type: INTEGER; Sample values: ['19634', '67836', '1637', '1625', '22563'])
+]
+
+--------------------------------------------------
+
+###Table full name: Cards
+[
+    match_html (Type: TEXT; Sample values: ['<table cellpadding="0" cellspacing="1" width="100%">\n <tr class="head">\n  <th width="3%">\n   no.\n  </th>\n  <th colspan="3" width="50%">\n   match\n  </th>\n  <th width="5%">\n   duration\n  </th>\n  <th width="19%">\n   match type\n  </th>\n  <th width="18%">...(truncated)', '<table cellpadding="0" cellspacing="1" width="100%">\n <tr class="head">\n  <th width="3%">\n   no.\n  </th>\n  <th colspan="3" width="50%">\n   match\n  </th>\n  <th width="5%">\n   duration\n  </th>\n  <th width="19%">\n   match type\n  </th>\n  <th width="18%">...(truncated)', '<table cellpadding="0" cellspacing="1" width="100%">\n <tr class="head">\n  <th width="3%">\n   no.\n  </th>\n  <th colspan="3" width="50%">\n   match\n  </th>\n  <th width="5%">\n   duration\n  </th>\n  <th width="19%">\n   match type\n  </th>\n  <th width="18%">...(truncated)', '<table cellpadding="0" cellspacing="1" width="100%">\n <tr class="head">\n  <th width="3%">\n   no.\n  </th>\n  <th colspan="3" width="50%">\n   match\n  </th>\n  <th width="5%">\n   duration\n  </th>\n  <th width="19%">\n   match type\n  </th>\n  <th width="18%">...(truncated)', '<table cellpadding="0" cellspacing="1" width="100%">\n <tr class="head">\n  <th width="3%">\n   no.\n  </th>\n  <th colspan="3" width="50%">\n   match\n  </th>\n  <th width="5%">\n   duration\n  </th>\n  <th width="19%">\n   match type\n  </th>\n  <th width="18%">...(truncated)'])
+    event_date (Type: TEXT; Sample values: ['2013-05-18', '2016-11-19', '2019-02-19', '2016-07-30', '2008-04-08'])
+    event_id (Type: INTEGER; Sample values: ['551', '12052', '4437', '11001', '236'])
+    url (Type: TEXT; Sample values: ['http://www.profightdb.com/cards/wwe/wwe-live-21228.html', 'http://www.profightdb.com/cards/nxt/tv-taping-221-25255.html', 'http://www.profightdb.com/cards/wwe/205-live-117-29013.html', 'http://www.profightdb.com/cards/nxt/jacksonville-show-24460.html', 'http://www.profightdb.com/cards/wwe/smackdown-taping-3103.html'])
+    id (Type: INTEGER; Sample values: ['6649', '12052', '4437', '12116', '8392'])
+    promotion_id (Type: INTEGER; Sample values: ['3211', '10963', '3211', '10963', '3211'])
+    table_id (Type: INTEGER; Sample values: ['6641', '12043', '4431', '12113', '8391'])
+    info_html (Type: TEXT; Sample values: ['<table border="0" width="100%">\n <tr>\n  <td align="left" height="23" width="40%">\n   <strong>\n    Date:\n   </strong>\n   <a href="/this-day-in-history/05-18-2013.html">\n    Sat, May 18th 2013\n   </a>\n  </td>\n  <td align="left" width="52%">\n   <strong>...(truncated)', '<table border="0" width="100%">\n <tr>\n  <td align="left" height="23" width="40%">\n   <strong>\n    Date:\n   </strong>\n   <a href="/this-day-in-history/11-19-2016.html">\n    Sat, Nov 19th 2016\n   </a>\n  </td>\n  <td align="left" width="52%">\n   <strong>...(truncated)', '<table border="0" width="100%">\n <tr>\n  <td align="left" height="23" width="40%">\n   <strong>\n    Date:\n   </strong>\n   <a href="/this-day-in-history/02-19-2019.html">\n    Tue, Feb 19th 2019\n   </a>\n  </td>\n  <td align="left" width="52%">\n   <strong>...(truncated)', '<table border="0" width="100%">\n <tr>\n  <td align="left" height="23" width="40%">\n   <strong>\n    Date:\n   </strong>\n   <a href="/this-day-in-history/07-30-2016.html">\n    Sat, Jul 30th 2016\n   </a>\n  </td>\n  <td align="left" width="52%">\n   <strong>...(truncated)', '<table border="0" width="100%">\n <tr>\n  <td align="left" height="23" width="40%">\n   <strong>\n    Date:\n   </strong>\n   <a href="/this-day-in-history/04-08-2008.html">\n    Tue, Apr 8th 2008\n   </a>\n  </td>\n  <td align="left" width="52%">\n   <strong>\n...(truncated)'])
+    location_id (Type: INTEGER; Sample values: ['410', '270', '355', '259', '81'])
+]
+
+--------------------------------------------------
+
+###Table full name: Promotions
+[
+    name (Type: TEXT; Sample values: ['NXT', 'ECW', 'WWE', 'WCW', 'WWF'])
+    id (Type: INTEGER; Sample values: ['10963', '12682', '3211', '9876', '230'])
+]
+
+--------------------------------------------------
+
+###Table full name: sqlite_sequence
+[
+    name (Type: ; Sample values: ['Cards', 'Belts', 'Tables', 'Promotions', 'Locations'])
+    seq (Type: ; Sample values: ['14431', '540800', '14431', '14431', '14431'])
+]
+
+--------------------------------------------------
+
+###Table full name: Locations
+[
+    name (Type: TEXT; Sample values: ['Flushing, New York', 'Trieste, Trieste', 'Coventry, England', 'Niagara Falls, New York', 'Shelton, Connecticut'])
+    id (Type: INTEGER; Sample values: ['36', '6676', '8953', '1687', '2360'])
+]
+
+--------------------------------------------------
+
+###Table full name: Tables
+[
+    html (Type: TEXT; Sample values: ['<table cellpadding="0" cellspacing="1">\n <tr class="head">\n  <th>\n   <a href="?order=date&amp;ppv=no&amp;type=asc" rel="nofollow">\n    date\n   </a>\n  </th>\n  <th>\n   <a href="?order=promotion&amp;ppv=no&amp;type=asc" rel="nofollow">\n    promotion\n   ...(truncated)', '<table cellpadding="0" cellspacing="1">\n <tr class="head">\n  <th>\n   <a href="?order=date&amp;ppv=no&amp;type=asc" rel="nofollow">\n    date\n   </a>\n  </th>\n  <th>\n   <a href="?order=promotion&amp;ppv=no&amp;type=asc" rel="nofollow">\n    promotion\n   ...(truncated)', '<table cellpadding="0" cellspacing="1">\n <tr class="head">\n  <th>\n   <a href="?order=date&amp;ppv=no&amp;type=asc" rel="nofollow">\n    date\n   </a>\n  </th>\n  <th>\n   <a href="?order=promotion&amp;ppv=no&amp;type=asc" rel="nofollow">\n    promotion\n   ...(truncated)', '<table cellpadding="0" cellspacing="1">\n <tr class="head">\n  <th>\n   <a href="?order=date&amp;ppv=no&amp;type=asc" rel="nofollow">\n    date\n   </a>\n  </th>\n  <th>\n   <a href="?order=promotion&amp;ppv=no&amp;type=asc" rel="nofollow">\n    promotion\n   ...(truncated)', '<table cellpadding="0" cellspacing="1">\n <tr class="head">\n  <th>\n   <a href="?order=date&amp;ppv=no&amp;type=asc" rel="nofollow">\n    date\n   </a>\n  </th>\n  <th>\n   <a href="?order=promotion&amp;ppv=no&amp;type=asc" rel="nofollow">\n    promotion\n   ...(truncated)'])
+    url (Type: TEXT; Sample values: ['http://www.profightdb.com/cards/wwf-cards-pg195-no-1.html?order=&type=', 'http://www.profightdb.com/cards/wwe-cards-pg609-no-2.html?order=&type=', 'http://www.profightdb.com/cards/wwe-cards-pg198-no-2.html?order=&type=', 'http://www.profightdb.com/cards/wwe-cards-pg640-no-2.html?order=&type=', 'http://www.profightdb.com/cards/wcw-cards-pg57-no-4.html?order=&type='])
+    id (Type: INTEGER; Sample values: ['2170', '9291', '5181', '9601', '10436'])
+]
+
+--------------------------------------------------
+

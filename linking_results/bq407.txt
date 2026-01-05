@@ -1,0 +1,450 @@
+###Table full name: bigquery-public-data.covid19_usafacts.confirmed_cases
+[
+    _2020_05_20 (Type: INT64; Sample values: ['47', '34', '737', '4578', '272'])
+    _2020_11_20 (Type: INT64; Sample values: ['1550', '1917', '19885', '45792', '1593'])
+    _2020_05_21 (Type: INT64; Sample values: ['48', '34', '742', '4641', '275'])
+    _2020_11_30 (Type: INT64; Sample values: ['1676', '2162', '22785', '51553', '1750'])
+    _2020_03_21 (Type: INT64; Sample values: ['2', '6', '16', '154', '0'])
+    _2020_03_20 (Type: INT64; Sample values: ['2', '6', '11', '123', '0'])
+    _2020_05_30 (Type: INT64; Sample values: ['61', '105', '810', '4980', '278'])
+    _2020_11_21 (Type: INT64; Sample values: ['1557', '1927', '20093', '46234', '1602'])
+    _2020_03_05 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_05_27 (Type: INT64; Sample values: ['56', '35', '781', '4869', '278'])
+    _2023_05_20 (Type: INT64; Sample values: ['6397', '10868', '121086', '292134', '7267'])
+    _2020_05_03 (Type: INT64; Sample values: ['43', '32', '638', '3584', '211'])
+    _2020_11_03 (Type: INT64; Sample values: ['1026', '1413', '13543', '32847', '1135'])
+    _2020_01_30 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_03_30 (Type: INT64; Sample values: ['20', '6', '167', '919', '2'])
+    _2020_11_27 (Type: INT64; Sample values: ['1630', '2056', '21787', '49890', '1710'])
+    _2020_10_21 (Type: INT64; Sample values: ['813', '1184', '10797', '28041', '957'])
+    _2020_10_30 (Type: INT64; Sample values: ['923', '1357', '12509', '31052', '1070'])
+    _2020_11_05 (Type: INT64; Sample values: ['1087', '1476', '14291', '34322', '1198'])
+    _2020_05_17 (Type: INT64; Sample values: ['46', '33', '719', '4396', '263'])
+    _2020_03_27 (Type: INT64; Sample values: ['16', '8', '117', '645', '0'])
+    _2020_11_17 (Type: INT64; Sample values: ['1482', '1841', '18752', '43462', '1533'])
+    _2020_05_01 (Type: INT64; Sample values: ['43', '32', '628', '3518', '208'])
+    _2021_05_20 (Type: INT64; Sample values: ['2270', '3549', '42992', '94047', '2831'])
+    _2020_05_11 (Type: INT64; Sample values: ['45', '33', '692', '4088', '231'])
+    _2020_03_17 (Type: INT64; Sample values: ['0', '1', '3', '46', '0'])
+    _2023_01_20 (Type: INT64; Sample values: ['6240', '10653', '93814', '215940', '7180'])
+    _2020_03_11 (Type: INT64; Sample values: ['0', '0', '0', '3', '0'])
+    county_name (Type: STRING; Sample values: ['Perry County ', 'Pulaski County ', 'St. Charles County ', 'St. Louis County ', 'Saline County '])
+    _2020_01_27 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_02_21 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_03_01 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_12_30 (Type: INT64; Sample values: ['1967', '2924', '30767', '66753', '2230'])
+    _2023_05_21 (Type: INT64; Sample values: ['6397', '10868', '121086', '292134', '7267'])
+    _2020_04_20 (Type: INT64; Sample values: ['37', '31', '507', '2576', '101'])
+    _2020_10_20 (Type: INT64; Sample values: ['807', '1163', '10608', '27750', '951'])
+    _2020_12_21 (Type: INT64; Sample values: ['1892', '2803', '28812', '62796', '2085'])
+    _2020_05_25 (Type: INT64; Sample values: ['48', '34', '761', '4775', '277'])
+    _2020_12_05 (Type: INT64; Sample values: ['1716', '2291', '24341', '54753', '1819'])
+    _2020_11_25 (Type: INT64; Sample values: ['1616', '2025', '21403', '49118', '1698'])
+    _2020_03_03 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_04_21 (Type: INT64; Sample values: ['37', '31', '519', '2660', '114'])
+    _2020_11_29 (Type: INT64; Sample values: ['1639', '2083', '22289', '50726', '1718'])
+    _2020_03_25 (Type: INT64; Sample values: ['8', '6', '72', '420', '0'])
+    _2021_03_20 (Type: INT64; Sample values: ['2171', '3456', '40269', '86365', '2794'])
+    _2020_11_01 (Type: INT64; Sample values: ['930', '1372', '12879', '31689', '1080'])
+    _2020_02_05 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2023_05_27 (Type: INT64; Sample values: ['6397', '10868', '121086', '292134', '7267'])
+    _2020_08_21 (Type: INT64; Sample values: ['292', '411', '5327', '17837', '527'])
+    _2020_02_20 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_04_27 (Type: INT64; Sample values: ['42', '31', '592', '3153', '184'])
+    _2020_05_05 (Type: INT64; Sample values: ['44', '32', '653', '3738', '219'])
+    _2020_10_27 (Type: INT64; Sample values: ['877', '1288', '11781', '29749', '1014'])
+    _2020_04_30 (Type: INT64; Sample values: ['43', '32', '617', '3422', '204'])
+    _2020_05_31 (Type: INT64; Sample values: ['62', '106', '814', '5010', '278'])
+    _2020_12_03 (Type: INT64; Sample values: ['1706', '2268', '23817', '53743', '1789'])
+    _2020_05_22 (Type: INT64; Sample values: ['48', '34', '750', '4701', '276'])
+    _2020_10_05 (Type: INT64; Sample values: ['702', '971', '8656', '24484', '855'])
+    _2020_10_03 (Type: INT64; Sample values: ['687', '949', '8485', '24189', '834'])
+    _2020_12_17 (Type: INT64; Sample values: ['1863', '2752', '27958', '61153', '2015'])
+    _2023_03_20 (Type: INT64; Sample values: ['6342', '10795', '119878', '289032', '7232'])
+    _2020_10_17 (Type: INT64; Sample values: ['789', '1123', '10191', '27062', '930'])
+    _2020_06_21 (Type: INT64; Sample values: ['110', '116', '1011', '6103', '283'])
+    _2023_02_20 (Type: INT64; Sample values: ['6314', '10715', '93814', '215940', '7200'])
+    _2020_01_25 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2021_11_20 (Type: INT64; Sample values: ['3303', '5437', '57470', '125995', '4155'])
+    _2020_06_03 (Type: INT64; Sample values: ['72', '108', '846', '5140', '280'])
+    _2023_04_20 (Type: INT64; Sample values: ['6392', '10859', '120949', '291866', '7259'])
+    _2020_02_27 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2021_01_20 (Type: INT64; Sample values: ['2072', '3265', '35529', '76640', '2548'])
+    _2023_02_21 (Type: INT64; Sample values: ['6318', '10746', '93814', '215940', '7213'])
+    _2020_02_17 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_05_16 (Type: INT64; Sample values: ['46', '33', '717', '4363', '263'])
+    _2020_06_20 (Type: INT64; Sample values: ['109', '116', '1008', '6069', '283'])
+    _2020_02_03 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2023_01_21 (Type: INT64; Sample values: ['6240', '10653', '93814', '215940', '7180'])
+    _2020_04_03 (Type: INT64; Sample values: ['30', '10', '253', '1332', '3'])
+    _2020_06_30 (Type: INT64; Sample values: ['156', '130', '1211', '7092', '288'])
+    _2023_03_21 (Type: INT64; Sample values: ['6355', '10808', '120102', '289645', '7237'])
+    _2020_05_18 (Type: INT64; Sample values: ['46', '34', '724', '4451', '268'])
+    _2020_12_20 (Type: INT64; Sample values: ['1879', '2773', '28563', '62266', '2045'])
+    _2020_08_17 (Type: INT64; Sample values: ['268', '341', '5029', '17025', '499'])
+    _2023_01_27 (Type: INT64; Sample values: ['6273', '10663', '93814', '215940', '7182'])
+    _2020_08_05 (Type: INT64; Sample values: ['218', '224', '4161', '14721', '429'])
+    _2020_12_27 (Type: INT64; Sample values: ['1934', '2856', '29865', '64874', '2135'])
+    _2020_05_29 (Type: INT64; Sample values: ['60', '35', '798', '4947', '278'])
+    _2021_05_30 (Type: INT64; Sample values: ['2273', '3564', '43131', '94511', '2836'])
+    _2020_08_30 (Type: INT64; Sample values: ['395', '536', '5881', '19257', '551'])
+    _2023_01_05 (Type: INT64; Sample values: ['6198', '10605', '93814', '215940', '7148'])
+    _2020_05_23 (Type: INT64; Sample values: ['48', '34', '757', '4726', '277'])
+    _2020_11_18 (Type: INT64; Sample values: ['1509', '1873', '19159', '44263', '1551'])
+    _2020_06_17 (Type: INT64; Sample values: ['102', '116', '969', '5905', '283'])
+    _2020_08_27 (Type: INT64; Sample values: ['380', '526', '5720', '18844', '546'])
+    _2020_04_17 (Type: INT64; Sample values: ['37', '31', '477', '2317', '68'])
+    _2020_03_22 (Type: INT64; Sample values: ['3', '6', '22', '183', '0'])
+    _2020_03_29 (Type: INT64; Sample values: ['18', '5', '137', '791', '0'])
+    _2020_03_18 (Type: INT64; Sample values: ['1', '3', '6', '60', '0'])
+    county_fips_code (Type: STRING; Sample values: ['29157', '29169', '29183', '29189', '29195'])
+    state_fips_code (Type: STRING; Sample values: ['29', '29', '29', '29', '29'])
+    _2020_07_27 (Type: INT64; Sample values: ['192', '179', '3457', '12784', '399'])
+    _2020_09_27 (Type: INT64; Sample values: ['649', '873', '7967', '23403', '751'])
+    _2020_06_27 (Type: INT64; Sample values: ['144', '128', '1132', '6717', '284'])
+    _2021_08_27 (Type: INT64; Sample values: ['2599', '4612', '50180', '110509', '3459'])
+    _2021_02_27 (Type: INT64; Sample values: ['2149', '3443', '39142', '83598', '2778'])
+    state (Type: STRING; Sample values: ['MO', 'MO', 'MO', 'MO', 'MO'])
+    _2021_04_20 (Type: INT64; Sample values: ['2209', '3495', '42006', '90981', '2815'])
+    _2020_09_18 (Type: INT64; Sample values: ['591', '745', '7337', '22201', '685'])
+    _2021_04_18 (Type: INT64; Sample values: ['2203', '3493', '41907', '90646', '2815'])
+    _2020_04_18 (Type: INT64; Sample values: ['37', '31', '485', '2379', '74'])
+    _2021_04_22 (Type: INT64; Sample values: ['2213', '3499', '42104', '91329', '2815'])
+    _2021_04_27 (Type: INT64; Sample values: ['2236', '3511', '42327', '92024', '2817'])
+    _2020_04_22 (Type: INT64; Sample values: ['38', '31', '535', '2735', '146'])
+    _2021_04_17 (Type: INT64; Sample values: ['2203', '3492', '41853', '90553', '2815'])
+    _2021_03_27 (Type: INT64; Sample values: ['2176', '3464', '40669', '87331', '2797'])
+    _2021_01_27 (Type: INT64; Sample values: ['2090', '3302', '36478', '78541', '2628'])
+    _2021_07_27 (Type: INT64; Sample values: ['2351', '4184', '45902', '101439', '3081'])
+    _2022_08_27 (Type: INT64; Sample values: ['4989', '8818', '93814', '215940', '6269'])
+    _2021_12_27 (Type: INT64; Sample values: ['3646', '5839', '65077', '143099', '4638'])
+    _2021_04_04 (Type: INT64; Sample values: ['2184', '3473', '41099', '88425', '2802'])
+    _2021_02_17 (Type: INT64; Sample values: ['2137', '3420', '38491', '82338', '2745'])
+    _2021_04_19 (Type: INT64; Sample values: ['2207', '3494', '41957', '90839', '2815'])
+    _2021_04_10 (Type: INT64; Sample values: ['2190', '3482', '41459', '89457', '2807'])
+    _2021_04_12 (Type: INT64; Sample values: ['2192', '3482', '41573', '89784', '2810'])
+    _2023_04_19 (Type: INT64; Sample values: ['6392', '10859', '120949', '291866', '7259'])
+    _2021_04_03 (Type: INT64; Sample values: ['2184', '3472', '41072', '88348', '2800'])
+    _2021_03_04 (Type: INT64; Sample values: ['2153', '3447', '39429', '84312', '2788'])
+    _2023_04_18 (Type: INT64; Sample values: ['6392', '10859', '120949', '291866', '7259'])
+    _2021_03_19 (Type: INT64; Sample values: ['2171', '3456', '40245', '86263', '2794'])
+    _2021_09_20 (Type: INT64; Sample values: ['2848', '4812', '52719', '116138', '3846'])
+    _2021_02_20 (Type: INT64; Sample values: ['2139', '3426', '38726', '82778', '2756'])
+    _2021_09_18 (Type: INT64; Sample values: ['2834', '4797', '52553', '115754', '3830'])
+    _2021_08_29 (Type: INT64; Sample values: ['2606', '4625', '50329', '110849', '3469'])
+    _2021_08_20 (Type: INT64; Sample values: ['2544', '4536', '49297', '108664', '3400'])
+    _2021_02_22 (Type: INT64; Sample values: ['2142', '3432', '38859', '83052', '2763'])
+    _2021_02_19 (Type: INT64; Sample values: ['2139', '3426', '38674', '82670', '2754'])
+    _2021_09_27 (Type: INT64; Sample values: ['2907', '4899', '53545', '117902', '3925'])
+    _2021_03_22 (Type: INT64; Sample values: ['2172', '3457', '40377', '86632', '2794'])
+    _2021_03_18 (Type: INT64; Sample values: ['2169', '3456', '40196', '86148', '2793'])
+    _2021_02_18 (Type: INT64; Sample values: ['2138', '3422', '38584', '82513', '2751'])
+    _2021_08_19 (Type: INT64; Sample values: ['2531', '4528', '49169', '108390', '3388'])
+    _2020_08_18 (Type: INT64; Sample values: ['269', '360', '5088', '17214', '504'])
+    _2021_09_29 (Type: INT64; Sample values: ['2937', '4950', '53758', '118394', '3951'])
+    _2021_05_27 (Type: INT64; Sample values: ['2273', '3559', '43095', '94415', '2836'])
+    _2021_06_27 (Type: INT64; Sample values: ['2290', '3674', '43615', '95951', '2892'])
+    _2020_02_22 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2021_02_03 (Type: INT64; Sample values: ['2109', '3365', '37330', '80168', '2698'])
+    _2021_02_12 (Type: INT64; Sample values: ['2130', '3404', '38201', '81761', '2738'])
+    _2020_10_18 (Type: INT64; Sample values: ['789', '1126', '10266', '27194', '934'])
+    _2021_04_29 (Type: INT64; Sample values: ['2242', '3515', '42419', '92297', '2819'])
+    _2020_09_17 (Type: INT64; Sample values: ['583', '736', '7264', '22054', '677'])
+    _2020_07_18 (Type: INT64; Sample values: ['185', '169', '2686', '10843', '367'])
+    _2021_07_18 (Type: INT64; Sample values: ['2311', '3983', '44795', '98955', '3000'])
+    _2020_03_19 (Type: INT64; Sample values: ['0', '5', '8', '90', '0'])
+    _2020_04_19 (Type: INT64; Sample values: ['37', '30', '490', '2448', '85'])
+    _2021_04_28 (Type: INT64; Sample values: ['2239', '3514', '42371', '92172', '2817'])
+    _2021_04_23 (Type: INT64; Sample values: ['2220', '3500', '42151', '91474', '2815'])
+    _2020_02_18 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2022_04_20 (Type: INT64; Sample values: ['4989', '8818', '93814', '215940', '6269'])
+    _2022_04_18 (Type: INT64; Sample values: ['4989', '8818', '93814', '215940', '6269'])
+    _2021_04_16 (Type: INT64; Sample values: ['2200', '3491', '41817', '90461', '2815'])
+    _2022_03_18 (Type: INT64; Sample values: ['4930', '8787', '93618', '215223', '6261'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_usafacts.deaths
+[
+    _2020_05_27 (Type: INT64; Sample values: ['0', '1', '0', '0', '0'])
+    _2020_05_20 (Type: INT64; Sample values: ['0', '1', '0', '0', '0'])
+    _2020_05_21 (Type: INT64; Sample values: ['0', '1', '0', '0', '0'])
+    county_fips_code (Type: STRING; Sample values: ['08061', '08091', '27077', '27081', '35011'])
+    county_name (Type: STRING; Sample values: ['Kiowa County ', 'Ouray County ', 'Lake of the Woods County ', 'Lincoln County ', 'De Baca County '])
+    state_fips_code (Type: STRING; Sample values: ['08', '08', '27', '27', '35'])
+    _2020_08_27 (Type: INT64; Sample values: ['0', '1', '0', '0', '0'])
+    _2020_02_27 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_01_27 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_03_27 (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    _2020_11_27 (Type: INT64; Sample values: ['0', '2', '1', '1', '0'])
+    state (Type: STRING; Sample values: ['CO', 'CO', 'MN', 'MN', 'NM'])
+    _2021_08_27 (Type: INT64; Sample values: ['3', '5', '4', '3', '3'])
+    _2021_04_27 (Type: INT64; Sample values: ['3', '3', '3', '3', '1'])
+    _2021_04_20 (Type: INT64; Sample values: ['3', '3', '3', '2', '1'])
+    _2021_02_20 (Type: INT64; Sample values: ['3', '3', '1', '2', '0'])
+    _2021_02_22 (Type: INT64; Sample values: ['3', '3', '1', '2', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2017_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['1610.0', '1704.0', '2342.0', '2487.0', '7153.0'])
+    median_age (Type: FLOAT64; Sample values: ['36.4', '39.3', '38.8', '42.3', '44.3'])
+    geo_id (Type: STRING; Sample values: ['38037', '39886', '15558', '67467', '70748'])
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    pop_15_and_over (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    pop_25_64 (Type: FLOAT64; Sample values: ['815.0', '764.0', '1065.0', '1261.0', '4628.0'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['7.0', '24.0', '11.0', '18.0', '532.0'])
+    pop_16_over (Type: FLOAT64; Sample values: ['1177.0', '1357.0', '1791.0', '2018.0', '6438.0'])
+    male_45_64_less_than_9_grade (Type: FLOAT64; Sample values: ['33.0', '20.0', '26.0', '6.0', '174.0'])
+    median_year_structure_built (Type: FLOAT64; Sample values: ['1977.0', '1977.0', '1954.0', '1953.0', '1981.0'])
+]
+**Some other tables have the similar structure: [zcta5_2014_5yr, zcta5_2016_5yr, zcta5_2011_5yr, zcta5_2013_5yr, zcta5_2015_5yr, zcta_2019_5yr, zcta_2020_5yr, zcta5_2012_5yr, zcta5_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.county_2018_1yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['331164.0', '406850.0', '936692.0', '975280.0', '494228.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    median_age (Type: FLOAT64; Sample values: ['41.7', '36.4', '42.0', '48.5', '42.7']; Description: Median Age. The median age of all people in a given geographic area.)
+    geo_id (Type: STRING; Sample values: ['34035', '51107', '34003', '12103', '34027']; Description: US County Geoids)
+    do_date (Type: STRING; Sample values: ['2018', '2018', '2018', '2018', '2018'])
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    owner_occupied_housing_units (Type: FLOAT64; Sample values: ['91176.0', '100398.0', '220204.0', '271342.0', '133030.0']; Description: Owner-occupied Housing Units)
+    male_62_to_64 (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+    male_60_to_61 (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    male_20 (Type: FLOAT64; Sample values: ['2339.0', '1567.0', '4548.0', '3770.0', '2250.0']; Description: Male age 20. The male population with an age of twenty years within the specified area.)
+    median_year_structure_built (Type: FLOAT64; Sample values: ['1981.0', '1998.0', '1958.0', '1976.0', '1969.0']; Description: Median Year Structure Built. Median Year Structure Built)
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Married but separated. The number of people in a geographic area who are married but separated)
+    owner_occupied_housing_units_upper_value_quartile (Type: FLOAT64; Sample values: ['659000.0', '694800.0', '689300.0', '336000.0', '676200.0']; Description: Owner-Occupied Housing Units Upper Value Quartile)
+    male_under_5 (Type: FLOAT64; Sample values: ['8795.0', '14590.0', '25185.0', '21743.0', '12642.0']; Description: Male under 5 years. The male population over the age of five years within the specified area.)
+    male_21 (Type: FLOAT64; Sample values: ['2102.0', '2348.0', '6091.0', '5799.0', '2985.0']; Description: Male age 21. The male population with an age of twenty-one years within the specified area.)
+    female_under_5 (Type: FLOAT64; Sample values: ['8094.0', '14322.0', '24565.0', '20662.0', '12081.0']; Description: Female under 5 years. The female population over the age of five years within the specified area.)
+    owner_occupied_housing_units_lower_value_quartile (Type: FLOAT64; Sample values: ['294300.0', '393600.0', '356900.0', '121500.0', '337500.0']; Description: Owner-Occupied Housing Units Lower Value Quartile)
+    pop_15_and_over (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Population 15 Years and Over. The number of people in a geographic area who are over the age of 15.  This is used mostly as a denominator of marital status.)
+    pop_16_over (Type: FLOAT64; Sample values: ['266674.0', '305449.0', '763161.0', '836293.0', '404878.0']; Description: Population age 16 and over. The number of people in each geography who are age 16 or over.)
+    asian_male_45_54 (Type: FLOAT64; Sample values: ['5041.0', '7018.0', '12011.0', '1968.0', '3933.0']; Description: Asian Men age 45 to 54)
+    asian_male_55_64 (Type: FLOAT64; Sample values: ['3219.0', '2781.0', '9739.0', '1957.0', '2986.0']; Description: Asian Men age 55 to 64)
+    male_35_to_39 (Type: FLOAT64; Sample values: ['10617.0', '16684.0', '30105.0', '27047.0', '13537.0']; Description: Male age 35 to 39. The male population between the age of thirty-five years to thirty-nine years within the specified area.)
+]
+**Some other tables have the similar structure: [county_2013_1yr, county_2019_1yr, county_2020_5yr, county_2012_3yr, county_2012_5yr, county_2008_1yr, county_2019_5yr, county_2015_5yr, county_2014_1yr, county_2011_1yr, county_2010_5yr, county_2017_1yr, county_2009_1yr, county_2008_3yr, county_2012_1yr, county_2010_3yr, county_2011_3yr, county_2014_5yr, county_2007_1yr, county_2011_5yr, county_2016_5yr, county_2007_3yr, county_2018_5yr, county_2013_3yr, county_2017_5yr, county_2013_5yr, county_2015_1yr, county_2016_1yr, county_2009_3yr, county_2021_1yr, county_2010_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2019_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['807.0', '595.0', '2621.0', '649.0', '353.0'])
+    geo_id (Type: STRING; Sample values: ['1222', '1745', '2163', '2543', '2876'])
+    pop_16_over (Type: FLOAT64; Sample values: ['672.0', '410.0', '2563.0', '607.0', '285.0'])
+    median_year_structure_built (Type: FLOAT64; Sample values: ['1972.0', '1951.0', '1978.0', '1942.0', '0.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.censustract_2019_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['1993.0', '1959.0', '3507.0', '3878.0', '10596.0'])
+    median_age (Type: FLOAT64; Sample values: ['38.9', '41.3', '37.6', '45.8', '34.9'])
+    geo_id (Type: STRING; Sample values: ['1001020100', '1001020200', '1001020300', '1001020400', '1001020500'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['7.0', '20.0', '80.0', '38.0', '23.0'])
+    pop_25_64 (Type: FLOAT64; Sample values: ['1059.0', '1119.0', '1943.0', '1907.0', '5329.0'])
+    pop_16_over (Type: FLOAT64; Sample values: ['1617.0', '1575.0', '2799.0', '3227.0', '8495.0'])
+]
+**Some other tables have the similar structure: [censustract_2012_5yr, censustract_2016_5yr, censustract_2017_5yr, censustract_2013_5yr, censustract_2015_5yr, censustract_2018_5yr, censustract_2014_5yr, censustract_2020_5yr, censustract_2010_5yr, censustract_2011_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zip_codes_2018_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['7882.0', '11979.0', '14140.0', '13961.0', '15864.0'])
+    median_age (Type: FLOAT64; Sample values: ['47.3', '39.3', '40.7', '30.1', '31.1'])
+    geo_id (Type: STRING; Sample values: ['15537', '48215', '29571', '88063', '32310'])
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['76.0', '363.0', '365.0', '180.0', '163.0'])
+    geoid (Type: STRING; Sample values: ['', '', '', '', ''])
+    male_45_64_less_than_9_grade (Type: FLOAT64; Sample values: ['45.0', '87.0', '25.0', '299.0', '99.0'])
+    children (Type: FLOAT64; Sample values: ['1451.0', '3189.0', '3282.0', '4345.0', '3682.0'])
+    male_45_64_some_college (Type: FLOAT64; Sample values: ['129.0', '359.0', '434.0', '193.0', '301.0'])
+    pop_15_and_over (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    gini_index (Type: FLOAT64; Sample values: ['0.422', '0.5847', '0.5231', '0.494', '0.4746'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['57.0', '1020.0', '100.0', '325.0', '1781.0'])
+    pop_16_over (Type: FLOAT64; Sample values: ['6695.0', '9101.0', '11142.0', '10045.0', '12718.0'])
+]
+**Some other tables have the similar structure: [zip_codes_2013_5yr, zip_codes_2016_5yr, zip_codes_2015_5yr, zip_codes_2014_5yr, zip_codes_2011_5yr, zip_codes_2012_5yr, zip_codes_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.state_2020_5yr
+[
+    median_age (Type: FLOAT64; Sample values: ['39.2', '34.6', '38.3', '36.9', '37.7'])
+    geo_id (Type: STRING; Sample values: ['1', '2', '5', '8', '28'])
+    do_date (Type: STRING; Sample values: ['', '', '', '', ''])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['181564.0', '50694.0', '133707.0', '289568.0', '94087.0'])
+    children (Type: FLOAT64; Sample values: ['1092912.0', '183359.0', '702832.0', '1259031.0', '707221.0'])
+    total_pop (Type: FLOAT64; Sample values: ['4893186.0', '736990.0', '3011873.0', '5684926.0', '2981835.0'])
+    pop_25_64 (Type: FLOAT64; Sample values: ['2516572.0', '395807.0', '1516605.0', '3092417.0', '1508842.0'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['62298.0', '4492.0', '34131.0', '33251.0', '41781.0'])
+    male_20 (Type: FLOAT64; Sample values: ['36705.0', '5710.0', '24123.0', '41345.0', '23698.0'])
+    households (Type: FLOAT64; Sample values: ['1888504.0', '255173.0', '1170544.0', '2137402.0', '1116649.0'])
+    male_21 (Type: FLOAT64; Sample values: ['33089.0', '6184.0', '20634.0', '37714.0', '21600.0'])
+    male_under_5 (Type: FLOAT64; Sample values: ['149579.0', '26684.0', '96802.0', '168650.0', '94834.0'])
+    pop_5_years_over (Type: FLOAT64; Sample values: ['4599254.0', '684688.0', '2823428.0', '5353987.0', '2796561.0'])
+    population_1_year_and_over (Type: FLOAT64; Sample values: ['4838779.0', '727126.0', '2977936.0', '5625572.0', '2946605.0'])
+    population_3_years_over (Type: FLOAT64; Sample values: ['4721160.0', '706079.0', '2901503.0', '5491894.0', '2872789.0'])
+    male_45_64_less_than_9_grade (Type: FLOAT64; Sample values: ['24830.0', '2195.0', '18724.0', '25259.0', '18086.0'])
+    different_house_year_ago_different_city (Type: FLOAT64; Sample values: ['439536.0', '69649.0', '291838.0', '668169.0', '268452.0'])
+    income_20000_24999 (Type: FLOAT64; Sample values: ['100073.0', '7832.0', '71501.0', '73827.0', '65578.0'])
+    income_125000_149999 (Type: FLOAT64; Sample values: ['94196.0', '20298.0', '50496.0', '158981.0', '45432.0'])
+    asian_male_55_64 (Type: FLOAT64; Sample values: ['2797.0', '2653.0', '1999.0', '7208.0', '1222.0'])
+    income_35000_39999 (Type: FLOAT64; Sample values: ['87120.0', '8506.0', '58828.0', '79193.0', '49176.0'])
+    male_45_64_some_college (Type: FLOAT64; Sample values: ['126548.0', '24030.0', '75498.0', '142954.0', '75064.0'])
+    female_20 (Type: FLOAT64; Sample values: ['35535.0', '3787.0', '20463.0', '36336.0', '22715.0'])
+    gini_index (Type: FLOAT64; Sample values: ['0.4777', '0.423', '0.4792', '0.4565', '0.4838'])
+    black_male_55_64 (Type: FLOAT64; Sample values: ['72165.0', '1476.0', '24492.0', '13145.0', '60208.0'])
+    female_under_5 (Type: FLOAT64; Sample values: ['144353.0', '25618.0', '91643.0', '162289.0', '90440.0'])
+    housing_units (Type: FLOAT64; Sample values: ['2270398.0', '318370.0', '1379778.0', '2361372.0', '1330867.0'])
+    nonfamily_households (Type: FLOAT64; Sample values: ['653952.0', '87358.0', '400433.0', '778499.0', '376160.0'])
+    income_10000_14999 (Type: FLOAT64; Sample values: ['105415.0', '7476.0', '66021.0', '65782.0', '74879.0'])
+    asian_male_45_54 (Type: FLOAT64; Sample values: ['4804.0', '3122.0', '2610.0', '11171.0', '1737.0'])
+    income_100000_124999 (Type: FLOAT64; Sample values: ['153722.0', '28918.0', '86222.0', '229671.0', '79785.0'])
+    married_households (Type: FLOAT64; Sample values: ['893948.0', '127312.0', '564299.0', '1069666.0', '499635.0'])
+]
+**Some other tables have the similar structure: [state_2017_5yr, state_2013_5yr, state_2017_1yr, state_2014_5yr, state_2013_3yr, state_2012_3yr, state_2007_3yr, state_2008_1yr, state_2007_1yr, state_2018_5yr, state_2019_5yr, state_2016_1yr, state_2021_1yr, state_2011_3yr, state_2016_5yr, state_2011_5yr, state_2009_1yr, state_2010_5yr, state_2010_1yr, state_2015_5yr, state_2011_1yr, state_2012_5yr, state_2013_1yr, state_2009_3yr, state_2008_3yr, state_2018_1yr, state_2019_1yr, state_2014_1yr, state_2012_1yr, state_2015_1yr, state_2010_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_usafacts.summary
+[
+    county_name (Type: STRING; Sample values: ['Statewide Unallocated', 'Statewide Unallocated', 'Statewide Unallocated', 'Statewide Unallocated', 'Statewide Unallocated'])
+    state (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    county_fips_code (Type: STRING; Sample values: ['00000', '00000', '00000', '00000', '00000'])
+    state_fips_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01'])
+    date (Type: DATE; Sample values: ['2020-01-22', '2020-01-23', '2020-01-24', '2020-01-25', '2020-01-26'])
+    deaths (Type: NUMERIC; Sample values: ['0E-9', '0E-9', '0E-9', '0E-9', '0E-9'])
+    confirmed_cases (Type: NUMERIC; Sample values: ['0E-9', '0E-9', '0E-9', '0E-9', '0E-9'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.place_2010_5yr
+[
+    geo_id (Type: STRING; Sample values: ['3602902', '1255750', '4214264', '3906670', '5572925']; Description: Incorporated Places Geoids)
+    do_date (Type: STRING; Sample values: ['20062010', '20062010', '20062010', '20062010', '20062010'])
+    total_pop (Type: FLOAT64; Sample values: ['1664.0', '5888.0', '6656.0', '8704.0', '9216.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    median_age (Type: FLOAT64; Sample values: ['44.9', '29.6', '36.3', '34.3', '39.0']; Description: Median Age. The median age of all people in a given geographic area.)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+**Some other tables have the similar structure: [place_2014_1yr, place_2007_3yr, place_2016_5yr, place_2009_1yr, place_2021_1yr, place_2013_1yr, place_2009_3yr, place_2008_1yr, place_2010_3yr, place_2015_5yr, place_2019_1yr, place_2007_1yr, place_2016_1yr, place_2015_1yr, place_2012_1yr, place_2014_5yr, place_2013_3yr, place_2013_5yr, place_2018_1yr, place_2011_3yr, place_2012_5yr, place_2019_5yr, place_2011_5yr, place_2012_3yr, place_2017_1yr, place_2020_5yr, place_2010_1yr, place_2011_1yr, place_2008_3yr, place_2017_5yr, place_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictsecondary_2020_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['280.0', '17.0', '0.0', '0.0', '91.0'])
+    median_age (Type: FLOAT64; Sample values: ['49.5', '58.8', '-666666666.0', '-666666666.0', '50.9'])
+    geo_id (Type: STRING; Sample values: ['606020', '1717902', '1717903', '1799004', '1799008'])
+]
+**Some other tables have the similar structure: [schooldistrictsecondary_2017_1yr, schooldistrictsecondary_2021_1yr, schooldistrictsecondary_2015_5yr, schooldistrictsecondary_2018_1yr, schooldistrictsecondary_2019_1yr, schooldistrictsecondary_2019_5yr, schooldistrictsecondary_2018_5yr, schooldistrictsecondary_2016_1yr, schooldistrictsecondary_2016_5yr, schooldistrictsecondary_2015_1yr, schooldistrictsecondary_2010_1yr, schooldistrictsecondary_2014_5yr, schooldistrictsecondary_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictunified_2016_1yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['98573.0', '71297.0', '95920.0', '89228.0', '87804.0'])
+    geo_id (Type: STRING; Sample values: ['402860', '402920', '404630', '408170', '506120'])
+    median_age (Type: FLOAT64; Sample values: ['27.6', '38.9', '41.3', '30.8', '26.9'])
+]
+**Some other tables have the similar structure: [schooldistrictunified_2014_1yr, schooldistrictunified_2017_1yr, schooldistrictunified_2017_5yr, schooldistrictunified_2016_5yr, schooldistrictunified_2019_5yr, schooldistrictunified_2018_1yr, schooldistrictunified_2010_5yr, schooldistrictunified_2019_1yr, schooldistrictunified_2018_5yr, schooldistrictunified_2021_1yr, schooldistrictunified_2015_1yr, schooldistrictunified_2020_5yr, schooldistrictunified_2010_1yr, schooldistrictunified_2015_5yr, schooldistrictunified_2014_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.congressionaldistrict_2010_5yr
+[
+    total_pop (Type: FLOAT64; Sample values: ['658309.0', '540874.0', '671527.0', '602790.0', '1005212.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    median_age (Type: FLOAT64; Sample values: ['36.8', '34.3', '32.2', '35.6', '36.3']; Description: Median Age. The median age of all people in a given geographic area.)
+    geo_id (Type: STRING; Sample values: ['3607', '2613', '3610', '1701', '3203']; Description: US Congressional Districts Geoids)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+**Some other tables have the similar structure: [congressionaldistrict_2016_1yr, congressionaldistrict_2009_3yr, congressionaldistrict_2011_1yr, congressionaldistrict_2016_5yr, congressionaldistrict_2010_3yr, congressionaldistrict_2007_1yr, congressionaldistrict_2020_5yr, congressionaldistrict_2007_3yr, congressionaldistrict_2021_1yr, congressionaldistrict_2010_1yr, congressionaldistrict_2019_1yr, congressionaldistrict_2008_3yr, congressionaldistrict_2018_5yr, congressionaldistrict_2018_1yr, congressionaldistrict_2017_5yr, congressionaldistrict_2014_1yr, congressionaldistrict_2012_3yr, congressionaldistrict_2009_1yr, congressionaldistrict_2013_3yr, congressionaldistrict_2015_5yr, congressionaldistrict_2012_1yr, congressionaldistrict_2012_5yr, congressionaldistrict_2019_5yr, congressionaldistrict_2015_1yr, congressionaldistrict_2011_5yr, congressionaldistrict_2008_1yr, congressionaldistrict_2013_5yr, congressionaldistrict_2017_1yr, congressionaldistrict_2011_3yr, congressionaldistrict_2014_5yr, congressionaldistrict_2013_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictsecondary_2010_5yr
+[
+    median_age (Type: FLOAT64; Sample values: ['43.2', '38.4', '42.5', '32.4', '38.4']; Description: Median Age. The median age of all people in a given geographic area.)
+    geo_id (Type: STRING; Sample values: ['2504290', '0614190', '3412570', '0616500', '1729280']; Description: Secondary School District Geoids)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.blockgroup_2014_5yr
+[
+    median_age (Type: FLOAT64; Sample values: ['26.9', '32.3', '33.8', '47.6', '42.2']; Description: Median Age. The median age of all people in a given geographic area.)
+    geo_id (Type: STRING; Sample values: ['360470750001', '060730146012', '530730001003', '340030490022', '060376511021']; Description: US Census Block Groups_2015 Geoids)
+]
+**Some other tables have the similar structure: [blockgroup_2010_5yr, blockgroup_2012_5yr, blockgroup_2018_5yr, blockgroup_2013_5yr, blockgroup_2016_5yr, blockgroup_2011_5yr, blockgroup_2015_5yr, blockgroup_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.cbsa_2010_5yr
+[
+    geo_id (Type: STRING; Sample values: ['34820', '32580', '39580', '36540', '44100']; Description: Core Based Statistical Area (CBSA) Geoids)
+    total_pop (Type: NUMERIC; Sample values: ['258267.000000000', '736973.000000000', '1069694.000000000', '845820.000000000', '207990.000000000']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    median_age (Type: NUMERIC; Sample values: ['40.800000000', '28.100000000', '34.600000000', '34.700000000', '39.300000000']; Description: Median Age. The median age of all people in a given geographic area.)
+]
+**Some other tables have the similar structure: [cbsa_2015_1yr, cbsa_2020_5yr, cbsa_2016_1yr, cbsa_2012_5yr, cbsa_2018_5yr, cbsa_2012_3yr, cbsa_2009_1yr, cbsa_2019_1yr, cbsa_2016_5yr, cbsa_2015_5yr, cbsa_2007_1yr, cbsa_2012_1yr, cbsa_2009_3yr, cbsa_2014_5yr, cbsa_2011_1yr, cbsa_2007_3yr, cbsa_2008_1yr, cbsa_2021_1yr, cbsa_2017_1yr, cbsa_2010_1yr, cbsa_2013_1yr, cbsa_2011_3yr, cbsa_2010_3yr, cbsa_2008_3yr, cbsa_2018_1yr, cbsa_2014_1yr, cbsa_2013_3yr, cbsa_2019_5yr, cbsa_2013_5yr, cbsa_2011_5yr, cbsa_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.puma_2016_1yr
+[
+    geo_id (Type: STRING; Sample values: ['2701405', '4203210', '0800812', '0603705', '0600105']; Description: US Census Public Use Microdata Areas Geoids)
+    median_age (Type: FLOAT64; Sample values: ['28.1', '31.1', '32.6', '40.7', '42.3']; Description: Median Age. The median age of all people in a given geographic area.)
+    total_pop (Type: FLOAT64; Sample values: ['148430.0', '146965.0', '182908.0', '176942.0', '174439.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [puma_2008_1yr, puma_2007_1yr, puma_2009_1yr, puma_2017_1yr, puma_2019_5yr, puma_2013_3yr, puma_2018_1yr, puma_2014_5yr, puma_2007_3yr, puma_2011_1yr, puma_2016_5yr, puma_2018_5yr, puma_2015_1yr, puma_2017_5yr, puma_2015_5yr, puma_2011_3yr, puma_2014_1yr, puma_2009_3yr, puma_2013_5yr, puma_2021_1yr, puma_2020_5yr, puma_2012_1yr, puma_2019_1yr, puma_2011_5yr, puma_2013_1yr, puma_2010_1yr, puma_2010_3yr, puma_2008_3yr, puma_2012_5yr, puma_2010_5yr, puma_2012_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_vaccination_access.facility_boundary_us_drive
+[
+    facility_sub_region_2_code (Type: STRING; Sample values: ['12009', '29023', '42017', '37155', '01101']; Description: In the US, the FIPS code for a US county (or equivalent). For example, 06085.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_vaccination_access.facility_boundary_us_all
+[
+    facility_sub_region_2_code (Type: STRING; Sample values: ['18039', '55059', '19153', '45079', '53073']; Description: In the US, the FIPS code for a US county (or equivalent). For example, 06085.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_vaccination_access.facility_boundary_us_walk
+[
+    facility_sub_region_2_code (Type: STRING; Sample values: ['01001', '01001', '01001', '01001', '01001']; Description: In the US, the FIPS code for a US county (or equivalent). For example, 06085.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictelementary_2014_1yr
+[
+    geo_id (Type: STRING; Sample values: ['0626280', '0630990', '1714460', '0613500', '3406030']; Description: Elementary School District Geoids)
+    median_age (Type: FLOAT64; Sample values: ['35.5', '38.4', '36.3', '25.5', '43.3']; Description: Median Age. The median age of all people in a given geographic area.)
+]
+**Some other tables have the similar structure: [schooldistrictelementary_2010_1yr, schooldistrictelementary_2015_1yr, schooldistrictelementary_2021_1yr, schooldistrictelementary_2019_5yr, schooldistrictelementary_2019_1yr, schooldistrictelementary_2010_5yr, schooldistrictelementary_2018_1yr, schooldistrictelementary_2020_5yr, schooldistrictelementary_2016_1yr, schooldistrictelementary_2014_5yr, schooldistrictelementary_2017_5yr, schooldistrictelementary_2015_5yr, schooldistrictelementary_2018_5yr, schooldistrictelementary_2016_5yr, schooldistrictelementary_2017_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_vaccination_access.facility_boundary_us_transit
+[
+    facility_sub_region_2_code (Type: STRING; Sample values: ['01001', '01001', '01001', '01001', '01001']; Description: In the US, the FIPS code for a US county (or equivalent). For example, 06085.)
+]
+
+--------------------------------------------------
+

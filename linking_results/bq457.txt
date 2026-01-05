@@ -1,0 +1,502 @@
+###Table full name: bigquery-public-data.libraries_io.repository_dependencies
+[
+    repository_name_with_owner (Type: STRING; Sample values: ['stokesbga/react-native-step-indicator', 'stokesbga/react-native-step-indicator', 'stokesbga/react-native-step-indicator', 'stokesbga/react-native-step-indicator', 'stokesbga/react-native-step-indicator']; Description: The repository name and owner seperated by a slash, also maps to the url slug on the given repository host e.g. librariesio/libraries.io.)
+    repository_id (Type: INT64; Sample values: ['37320471', '37320471', '37320471', '37320471', '37320471']; Description: The unique primary key of the repository for this dependency in the Libraries.io database.)
+    id (Type: INT64; Sample values: ['494629073', '494629140', '494629180', '494629193', '494629246']; Description: The unique primary key of the repository dependency in the Libraries.io database.)
+    host_type (Type: STRING; Sample values: ['GitHub', 'GitHub', 'GitHub', 'GitHub', 'GitHub']; Description: Which website the dependencys repository is hosted on, either GitHub, GitLab or Bitbucket.)
+    manifest_platform (Type: STRING; Sample values: ['npm', 'npm', 'npm', 'npm', 'npm']; Description: Which package manager the dependency listed in the manifest should use.)
+    optional (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Is the dependency optional?.)
+    dependency_kind (Type: STRING; Sample values: ['runtime', 'runtime', 'runtime', 'runtime', 'runtime']; Description: The type of dependency, often declared for the phase of usage, e.g. runtime, test, development, build.)
+    dependency_requirements (Type: STRING; Sample values: ['3.1.0', '1.0.11', '3.3.0', '2.0.0', '2.5.1']; Description: The version or range of versions that the dependency specifies, resolution of that to a particular version is package manager specific.)
+    dependency_project_id (Type: INT64; Sample values: ['140871', '149306', '159991', '897326', '291676']; Description: The unique primary key of the project for this dependency in the Libraries.io database.)
+    dependency_project_name (Type: STRING; Sample values: ['debug', 'fstream', 'inquirer', 'is-fullwidth-code-point', 'jsesc']; Description: The name of the project that the dependency specifies.)
+    git_branch (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Which branch was the manifest loaded from the repository.)
+    manifest_filepath (Type: STRING; Sample values: ['example/yarn.lock', 'example/yarn.lock', 'example/yarn.lock', 'example/yarn.lock', 'example/yarn.lock']; Description: Path to the file where the dependency is declared within the repository.)
+    manifest_kind (Type: STRING; Sample values: ['lockfile', 'lockfile', 'lockfile', 'lockfile', 'lockfile']; Description: Either manifest or lockfile, manifests are written by humans, lockfiles contain full resolved dependency tree.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.repositories
+[
+    fork_source_name_with_owner (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If the repository is a fork the repository name and owner seperated by a slash of the repository if was forked from.)
+    name_with_owner (Type: STRING; Sample values: ['PeaceGoose/Choose', 'dineshbalani/dinesh-b.github.io', 'johnhaldeman/OscarTriviaDiscordBot', 'ferasfakhry/FrequencySweep', 'ptariche/rust-rocket-mongo-example']; Description: The repository name and owner seperated by a slash also maps to the url slug on the given repository host e.g. librariesio/libraries.io.)
+    id (Type: INT64; Sample values: ['29309201', '29309340', '29309389', '29309466', '29309572']; Description: he unique primary key of the repository in the Libraries.io database.)
+    updated_timestamp (Type: TIMESTAMP; Sample values: ['2017-10-13 00:37:35+00:00', '2017-10-13 00:41:41+00:00', '2017-10-13 00:43:33+00:00', '2017-10-13 00:46:31+00:00', '2017-10-13 00:50:26+00:00']; Description: Timestamp of when the repository was last saved by Libraries.io.)
+    description (Type: STRING; Sample values: ['None', 'None', 'A Discord Bot for Playing the Game "Password" with a Both Focusing on Oscar Trivia', 'None', 'None']; Description: Description of repository.)
+    last_synced_timestamp (Type: TIMESTAMP; Sample values: ['2017-10-13 00:37:35+00:00', '2017-10-13 00:41:54+00:00', '2017-10-13 00:43:33+00:00', '2017-10-13 00:46:31+00:00', '2017-10-13 00:50:26+00:00']; Description: Timestamp of when Libraries.io last synced the repository from the host API.)
+    size (Type: INT64; Sample values: ['5423', '0', '0', '0', '0']; Description: Size of the repository in kilobytes only available for GitHub and Bitbucket.)
+    created_timestamp (Type: TIMESTAMP; Sample values: ['2017-09-28 23:46:38+00:00', '2017-10-13 00:41:41+00:00', '2017-10-13 00:43:24+00:00', '2017-10-13 00:45:59+00:00', '2017-10-13 00:50:17+00:00']; Description: Timestamp of when the repository was created on the host.)
+    uuid (Type: STRING; Sample values: ['105209643', '106759743', '106759837', '106760022', '106760291']; Description: ID of the repository on the remote host not unique between GitLab and GitHub repositories.)
+    fork (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Is the repository a fork of another.)
+    host_type (Type: STRING; Sample values: ['GitHub', 'GitHub', 'GitHub', 'GitHub', 'GitHub']; Description: Which website the repository is hosted on either GitHub GitLab or Bitbucket.)
+    license (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: SPDX identifier of the license of the repository only available for GitHub repositories.)
+    display_name (Type: STRING; Sample values: ['GitHub', 'GitHub', 'GitHub', 'GitHub', 'GitHub']; Description: Display name for the repository only available for GitLab repositories.)
+    wiki_enabled (Type: BOOL; Sample values: ['True', 'True', 'True', 'True', 'True']; Description: Is the wiki enabled for this repository?.)
+    forks_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of forks of this repository.)
+    last_pushed_timestamp (Type: TIMESTAMP; Sample values: ['2017-09-29 00:20:24+00:00', '2017-10-13 00:41:42+00:00', '2017-10-13 00:43:25+00:00', '2017-10-13 00:46:00+00:00', '2017-10-13 00:50:17+00:00']; Description: Timestamp of when the repository was last pushed to only available for GitHub repositories.)
+    an (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    contributors_count (Type: INT64; Sample values: ['1', '0', '0', '0', '0']; Description: Number of unique contributors that have committed to the default branch.)
+    pull_requests_enabled (Type: STRING; Sample values: ['git', 'git', 'git', 'git', 'git']; Description: Are pull requests enabled for this repository? Only available for GitLab repositories.)
+    license_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a license file has been detected the full name of the license file e.g LICENSE.)
+    keywords (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Comma separated array of keywords called "topics" on GitHub only available for GitHub and GitLab.)
+    language (Type: STRING; Sample values: ['HTML', 'None', 'None', 'None', 'None']; Description: Primary programming language the project is written in only available for GitHub and Bitbucket.)
+    changelog_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a changelog file has been detected the full name of the changelog file e.g changelog.txt.)
+    readme_filename (Type: STRING; Sample values: ['README.md', 'None', 'None', 'None', 'None']; Description: If a readme file has been detected the full name of the readme file e.g README.md.)
+    contributing_guidelines_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a contributing guidelines file has been detected the full name of the contributing guidelines file e.g contributing.md.)
+    code_of_conduct_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a code of conduct file has been detected the full name of the code of conduct file e.g code_of_conduct.md.)
+    security_threat_model_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a Security Threat Model file has been detected the full name of the Security Threat Model file e.g threatmodel.md.)
+    security_audit_filename (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: If a Security Audit file has been detected the full name of the Security Audit file e.g security.md.)
+    default_branch (Type: STRING; Sample values: ['master', 'master', 'master', 'master', 'master']; Description: Primary branch of the repository.)
+    scm_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Type of source control repository uses always "git" for GitHub and GitLab.)
+    homepage_url (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: URL of a declared homepage or other website for the repository.)
+    mirror_url (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: URL of the repositroy of which this is a mirror of only present if this repository is a mirror of another.)
+    pages_enabled (Type: BOOL; Sample values: ['True', 'False', 'False', 'False', 'False']; Description: Is GitHub pages enabled for this repository? only possible for GitHub.)
+    status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Either Active Deprecated Unmaintained Help Wanted Removed no value also means active. Updated when detected by Libraries.io or su. manually by Libraries.io user via "repo suggection" feature.)
+    issues_enabled (Type: BOOL; Sample values: ['True', 'True', 'True', 'True', 'True']; Description: Is the bug tracker enabled for this repository?.)
+    open_issues_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of open issues on the repository bug tracker only available for GitHub and GitLab.)
+    stars_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of stars on the repository only available for GitHub and GitLab.)
+    logo_url (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Custom logo url for repository only available for GitLab repositories.)
+    sourcerank (Type: INT64; Sample values: ['2', '1', '1', '1', '1']; Description: Libraries.io defined score based on quality popularity and community metrics.)
+    watchers_count (Type: INT64; Sample values: ['0', '0', '1', '0', '1']; Description: Number of subscribers to all notifications for the repository only available for GitHub and Bitbucket.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.dependencies
+[
+    id (Type: INT64; Sample values: ['63688894', '93706523', '88984643', '70881952', '85289846']; Description: The unique primary key of the dependency in the Libraries.io database.)
+    platform (Type: STRING; Sample values: ['Packagist', 'Packagist', 'NPM', 'NPM', 'Maven']; Description: The name of the Package manager the dependency is available on.)
+    version_id (Type: INT64; Sample values: ['10963540', '15670669', '15150299', '11984358', '12274677']; Description: The unique primary key of the version for this dependency in the Libraries.io database.)
+    dependency_name (Type: STRING; Sample values: ['codeception/verify', '10up/wp_mock', 'react', 'dotenv', 'org.apache.activemq:activemq-client']; Description: The name of the project that the dependency specifies.)
+    dependency_platform (Type: STRING; Sample values: ['Packagist', 'Packagist', 'NPM', 'NPM', 'Maven']; Description: The name of the package manager that the project that the dependency specifies is available from (only different for Atom).)
+    version_number (Type: STRING; Sample values: ['1.0.1', '1.2.3', '0.1.3-h', '0.1.0', '1.20']; Description: The number of the version that the dependency belongs to.)
+    optional_dependency (Type: STRING; Sample values: ['false', 'false', 'false', 'false', 'false']; Description: Is the dependency optional?.)
+    project_id (Type: INT64; Sample values: ['2499997', '3261980', '3196162', '2619549', '2673189']; Description: The unique primary key of the project for this dependency in the Libraries.io database.)
+    project_name (Type: STRING; Sample values: ['jackshadow/yii2-sentry', 'immediate/im-fabric-wordpress', 'react-hig-datepicker', '@machinemode/cryptopia', 'de.taimos:dvalin-interconnect-core']; Description: The name of the project the dependency belongs to.)
+    dependency_requirements (Type: STRING; Sample values: [' *', ' 0.3.0', ' ^15.4.1', ' ^4.0.0', '${activemq.version}']; Description: The version or range of versions that the dependency specifies, resolution of that to a particular version is package manager specific.)
+    dependency_kind (Type: STRING; Sample values: ['Development', 'Development', 'runtime', 'Development', 'runtime']; Description: The type of dependency, often declared for the phase of usage, e.g. runtime, test, development, build.)
+    dependency_project_id (Type: INT64; Sample values: ['48204', '37460', '304875', '142776', '359766']; Description: The unique primary key of the project for this dependency in the Libraries.io database.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.tags
+[
+    repository_name_with_owner (Type: STRING; Sample values: ['dmpriso/hunter', 'dmpriso/hunter', 'dmpriso/hunter', 'dmpriso/hunter', 'dmpriso/hunter']; Description: The repository name and owner seperated by a slash, also maps to the url slug on the given repository host e.g. librariesio/libraries.io.)
+    repository_id (Type: INT64; Sample values: ['23754342', '23754342', '23754342', '23754342', '23754342']; Description: The unique primary key of the repository for this tag in the Libraries.io database.)
+    host_type (Type: STRING; Sample values: ['GitHub', 'GitHub', 'GitHub', 'GitHub', 'GitHub']; Description: Which website the tags repository is hosted on, either GitHub, GitLab or Bitbucket.)
+    id (Type: INT64; Sample values: ['52086629', '52086654', '52086678', '52086709', '52086694']; Description: The unique primary key of the tag in the Libraries.io database.)
+    tag_name (Type: STRING; Sample values: ['v0.16.2', 'v0.16.27', 'v0.17.14', 'v0.18.24', 'v0.18.9']; Description: The name of the tag often is a version number but could be any freeform string.)
+    tag_git_sha (Type: STRING; Sample values: ['db87a6c907a822d2c0d3e5df01d74a11330e290d', '4b9a51ac24f8c55d0dc28b617c4329f0db582b53', 'ca3adc81c78cdba67bc1567088d0fba309df2fb8', '65fce9666dcb02ac8fbc43bed10680dd86ab758b', '87e8fb2e57f4a71b685270d053e94d8706da9bdb']; Description: Sha of the object that the tag is pointing at in the repository.)
+    tag_updated_timestamp (Type: TIMESTAMP; Sample values: ['2017-05-11 12:17:06+00:00', '2017-05-11 12:17:20+00:00', '2017-05-11 12:17:27+00:00', '2017-05-11 12:17:36+00:00', '2017-05-11 12:17:32+00:00']; Description: The timestamp of when the tag was last saved by Libraries.io.)
+    tag_created_timestamp (Type: TIMESTAMP; Sample values: ['2017-05-11 12:17:06+00:00', '2017-05-11 12:17:20+00:00', '2017-05-11 12:17:27+00:00', '2017-05-11 12:17:36+00:00', '2017-05-11 12:17:32+00:00']; Description: The timestamp of when the tag was first saved by Libraries.io.)
+    tag_published_timestamp (Type: TIMESTAMP; Sample values: ['2016-10-01 00:27:25+00:00', '2016-11-13 05:26:20+00:00', '2017-01-15 04:57:59+00:00', '2017-03-21 10:26:17+00:00', '2017-03-04 03:46:31+00:00']; Description: The timestamp of when the tag was published.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.projects_with_repository_fields
+[
+    repository_updated_timestamp (Type: TIMESTAMP; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: Timestamp of when the repository was last saved by Libraries.io.)
+    repository_last_synced_timestamp (Type: STRING; Sample values: ['', '', '', '', '']; Description: Timestamp of when Libraries.io last synced the repository from the host API.)
+    repository_name_with_owner (Type: STRING; Sample values: ['', '', '', '', '']; Description: The repository name and owner seperated by a slash, also maps to the url slug on the given repository host e.g. librariesio/libraries.io.)
+    repository_fork_source_name_with_owner (Type: STRING; Sample values: ['', '', '', '', '']; Description: If the repository is a fork, the repository name and owner seperated by a slash of the repository if was forked from.)
+    updated_timestamp (Type: TIMESTAMP; Sample values: ['2017-10-24 12:26:54+00:00', '2017-02-16 14:39:26+00:00', '2017-10-24 12:22:44+00:00', '2017-04-06 18:11:32+00:00', '2017-04-06 20:09:37+00:00']; Description: The timestamp of when Libraries.io last saved a change to the project.)
+    repository_host_type (Type: STRING; Sample values: ['', '', '', '', '']; Description: Which website the repository is hosted on, either GitHub, GitLab or Bitbucket.)
+    platform (Type: STRING; Sample values: ['Go', 'Go', 'Go', 'Go', 'Go']; Description: The name of the Package manager the project is available on.)
+    dependent_repositories_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: The total count of open source repositories that list the project as a dependency as detected by Libraries.io.)
+    repository_language (Type: STRING; Sample values: ['', '', '', '', '']; Description: Primary programming language the project is written in, only available for GitHub and Bitbucket.)
+    licenses (Type: STRING; Sample values: ['', '', '', '', '']; Description: Comma separated array of SPDX identifiers for licenses declared in package manager meta data or submitted manually by Libraries.io user via "project suggection" feature.)
+    description (Type: STRING; Sample values: ['', '', 'Package atom defines XML data structures for an Atom feed.', '', '']; Description: Description provided by the package manager, falling back to description from repository if empty.)
+    repository_uuid (Type: STRING; Sample values: ['', '', '', '', '']; Description: ID of the repository on the remote host, not unique between GitLab and GitHub repositories.)
+    repository_keywords (Type: STRING; Sample values: ['', '', '', '', '']; Description: Comma separated array of keywords, called "topics" on GitHub, only available for GitHub and GitLab.)
+    last_synced_timestamp (Type: TIMESTAMP; Sample values: ['2017-10-24 12:26:52+00:00', '2016-12-20 07:11:06+00:00', '2017-10-24 12:22:44+00:00', 'NaT', 'NaT']; Description: Timestamp of when Libraries.io last synced the project from it's package manager API.)
+    repository_size (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Size of the repository in kilobytes, only available for GitHub and Bitbucket.)
+    id (Type: INT64; Sample values: ['441543', '2066201', '438069', '713439', '893415']; Description: The unique primary key of the project in the Libraries.io database.)
+    repository_created_timestamp (Type: TIMESTAMP; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: Timestamp of when the repository was created on the host.)
+    latest_release_publish_timestamp (Type: TIMESTAMP; Sample values: ['2017-10-24 12:26:42+00:00', '2016-12-20 07:11:01+00:00', '2017-10-24 12:22:44+00:00', '2017-03-09 18:07:26+00:00', '2017-03-14 10:10:56+00:00']; Description: Time of the latest release detected by Libraries.io (ordered by semver, falling back to publish date for invalid semver).)
+    name (Type: STRING; Sample values: ['code.google.com/p/weed-fs/go/weed/weed_server', 'github.com/rogpeppe/juju/utils/syslog/testing', 'camlistore.org/pkg/importer/feed/atom', 'azul3d.org/website/mdattr/mdattr/content/pages/templates/pages/pages/content', 'azul3d.org/website/mdattr/mdattr/content/pages/content/content/mdattr/pages/pages/pages/content/templates/content/templates/pages/pages/pages/content/mdattr/templates/templates']; Description: The name of the project, unique by Platform (case sensitive).)
+    keywords (Type: STRING; Sample values: ['', '', '', '', '']; Description: Comma separated array of keywords if supported by package manager.)
+    repository_license (Type: STRING; Sample values: ['', '', '', '', '']; Description: SPDX identifier of the license of the repository, only available for GitHub repositories.)
+    repository_last_pushed_timestamp (Type: TIMESTAMP; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: Timestamp of when the repository was last pushed to, only available for GitHub repositories.)
+    repository_description (Type: STRING; Sample values: ['', '', '', '', '']; Description: Description of repository.)
+    versions_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of published versions of the project found by Libraries.io.)
+    repository_status (Type: STRING; Sample values: ['', '', '', '', '']; Description: Either Active, Deprecated, Unmaintained, Help Wanted, Removed, no value also means active. Updated when detected by Libraries.io or su. manually by Libraries.io user via "repo suggection" feature.)
+    repository_url (Type: STRING; Sample values: ['https://code.google.com/p/weed-fs/go/weed/weed_server', 'https://github.com/rogpeppe/juju/utils/syslog/testing', 'https://camlistore.org/pkg/importer/feed/atom', 'https://azul3d.org/website/mdattr/mdattr/content/pages/templates/pages/pages/content', 'https://azul3d.org/website/mdattr/mdattr/content/pages/content/content/mdattr/pages/pages/pages/content/templates/content/templates/pages/pages/pages/content/mdattr/templates/templates']; Description: URL of source code repository declared in package manager metadata or submitted manually by Libraries.io user via "project suggection" feature.)
+    repository_id (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The unique primary key of the repository for this project in the Libraries.io database.)
+    package_manager_id (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Unique ID of project from package manager API, only currently used by PlatformIO.)
+    repository_fork (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Is the repository a fork of another.)
+    repository_changelog_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a changelog file has been detected, the full name of the changelog file, e.g changelog.txt.)
+    repository_pull_requests_enabled (Type: STRING; Sample values: ['', '', '', '', '']; Description: Are pull requests enabled for this repository? Only available for GitLab repositories.)
+    created_timestamp (Type: TIMESTAMP; Sample values: ['2015-02-13 17:25:32+00:00', '2016-12-20 07:11:01+00:00', '2015-02-13 17:15:36+00:00', '2015-03-14 05:03:11+00:00', '2015-07-15 05:07:34+00:00']; Description: The timestamp of when Libraries.io first discovered the project.)
+    repository_display_name (Type: STRING; Sample values: ['', '', '', '', '']; Description: Display name for the repository, only available for GitLab repositories.)
+    repository_wiki_enabled (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Is the wiki enabled for this repository?.)
+    repository_forks_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number of forks of this repository.)
+    repository_contributors_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number of unique contributors that have committed to the default branch.)
+    repository_readme_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a readme file has been detected, the full name of the readme file, e.g README.md.)
+    repository_contributing_guidelines_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a contributing guidelines file has been detected, the full name of the contributing guidelines file, e.g contributing.md.)
+    repository_license_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a license file has been detected, the full name of the license file, e.g LICENSE.)
+    repository_code_of_conduct_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a code of conduct file has been detected, the full name of the code of conduct file, e.g code_of_conduct.md.)
+    repository_security_threat_model_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a Security Threat Model file has been detected, the full name of the Security Threat Model file, e.g threatmodel.md.)
+    repository_security_audit_filename (Type: STRING; Sample values: ['', '', '', '', '']; Description: If a Security Audit file has been detected, the full name of the Security Audit file, e.g security.md.)
+    bh (Type: STRING; Sample values: ['', '', '', '', ''])
+    repository_default_branch (Type: STRING; Sample values: ['', '', '', '', '']; Description: Primary branch of the repository.)
+    repository_scm_type (Type: STRING; Sample values: ['', '', '', '', '']; Description: Type of source control repository uses, always "git" for GitHub and GitLab.)
+    homepage_url (Type: STRING; Sample values: ['https://code.google.com/p/weed-fs/', 'https://github.com/rogpeppe/juju', 'https://camlistore.org', 'https://azul3d.org/website/mdattr/mdattr/content/pages/templates/pages/pages/content', 'https://azul3d.org/website/mdattr/mdattr/content/pages/content/content/mdattr/pages/pages/pages/content/templates/content/templates/pages/pages/pages/content/mdattr/templates/templates']; Description: URL of webpage or repository as provided by package managers that support it.)
+    repository_homepage_url (Type: STRING; Sample values: ['', '', '', '', '']; Description: URL of a declared homepage or other website for the repository.)
+    repository_mirror_url (Type: STRING; Sample values: ['', '', '', '', '']; Description: URL of the repositroy of which this is a mirror of, only present if this repository is a mirror of another.)
+    repository_pages_enabled (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Is GitHub pages enabled for this repository? only possible for GitHub.)
+    status (Type: STRING; Sample values: ['', '', '', '', '']; Description: Either Active, Deprecated, Unmaintained, Help Wanted, Removed, no value also means active. Updated when detected by Libraries.io or submitted manually by Libraries.io user via "project suggection" feature.)
+    language (Type: STRING; Sample values: ['', '', '', '', '']; Description: Primary programming language the project is written in, pulled from the repository if source is hosted on GitHub.)
+    repository_open_issues_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number of open issues on the repository bug tracker, only available for GitHub and GitLab.)
+    repository_issues_enabled (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Is the bug tracker enabled for this repository?.)
+    latest_release_number (Type: STRING; Sample values: ['', '', '', '', '']; Description: Version number of the latest release detected by Libraries.io (ordered by semver, falling back to publish date for invalid semver).)
+    dependent_projects_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of other projects that declare the project as a dependency in one or more of their versions.)
+    repository_logo_url (Type: STRING; Sample values: ['', '', '', '', '']; Description: Custom logo url for repository, only available for GitLab repositories.)
+    repository_stars_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number of stars on the repository, only available for GitHub and GitLab.)
+    repository_sourcerank (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Libraries.io defined score based on quality, popularity and community metrics.)
+    repository_watchers_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Number of subscribers to all notifications for the repository, only available for GitHub and Bitbucket.)
+    sourcerank (Type: INT64; Sample values: ['2', '0', '2', '2', '2']; Description: Libraries.io defined score based on quality, popularity and community metrics.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.projects
+[
+    description (Type: STRING; Sample values: ['Angular directive for jquery-maskedinput', 'None', 'None', 'Gandalf color theme', 'Search text-property or overlay-property contexts.']; Description: Description provided by the package manager, falling back to description from repository if empty.)
+    dependent_repositories_count (Type: INT64; Sample values: ['8', '0', '0', '0', '0']; Description: The total count of open source repositories that list the project as a dependency as detected by Libraries.io.)
+    repository_id (Type: INT64; Sample values: ['12683', 'None', 'None', 'None', 'None']; Description: The unique primary key of the repository for this project in the Libraries.io database.)
+    repository_url (Type: STRING; Sample values: ['https://github.com/danicomas/angular-jquery-maskedinput.git', 'https://github.com/Cinamonas/jquery-dragndrop.git', 'https://github.com/generalthings/pkg-select-many-js.git', 'None', 'https://www.emacswiki.org/emacs/download/isearch-prop.el']; Description: URL of source code repository declared in package manager metadata or submitted manually by Libraries.io user via "project suggection" feature.)
+    platform (Type: STRING; Sample values: ['Bower', 'Bower', 'Bower', 'Emacs', 'Emacs']; Description: The name of the Package manager the project is available on.)
+    licenses (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Comma separated array of SPDX identifiers for licenses declared in package manager meta data or submitted manually by Libraries.io user via "project suggection" feature.)
+    versions_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of published versions of the project found by Libraries.io.)
+    updated_timestamp (Type: TIMESTAMP; Sample values: ['2018-12-17 00:14:34+00:00', '2018-12-17 01:48:30+00:00', '2018-12-17 03:05:36+00:00', '2018-12-21 01:01:40+00:00', '2018-10-25 20:58:32+00:00']; Description: The timestamp of when Libraries.io last saved a change to the project.)
+    latest_release_publish_timestamp (Type: TIMESTAMP; Sample values: ['2018-12-17 00:14:34+00:00', '2018-12-17 01:48:30+00:00', '2018-12-17 03:05:36+00:00', '2018-12-21 01:01:40+00:00', '2018-01-24 01:08:58+00:00']; Description: Time of the latest release detected by Libraries.io (ordered by semver, falling back to publish date for invalid semver).)
+    package_manager_id (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Unique ID of project from package manager API, only currently used by PlatformIO.)
+    id (Type: INT64; Sample values: ['3184', '14086', '22343', '27720', '28043']; Description: The unique primary key of the project in the Libraries.io database.)
+    name (Type: STRING; Sample values: ['angular-jquery-maskedinput', 'jquery-dragndrop', 'select-many-js', 'gandalf-theme', 'isearch-prop']; Description: The name of the project, unique by Platform (case sensitive).)
+    homepage_url (Type: STRING; Sample values: ['https://github.com/danicomas/angular-jquery-maskedinput', 'None', 'None', 'None', 'http://www.emacswiki.org/isearch-prop.el']; Description: URL of webpage or repository as provided by package managers that support it.)
+    keywords (Type: STRING; Sample values: ['angular,jquery,mask,masked,input', 'None', 'None', 'color,theme', 'search,matching,invisible,thing,help']; Description: Comma separated array of keywords if supported by package manager.)
+    language (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Primary programming language the project is written in, pulled from the repository if source is hosted on GitHub.)
+    status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Either Active, Deprecated, Unmaintained, Help Wanted, Removed, no value also means active. Updated when detected by Libraries.io or submitted manually by Libraries.io user via "project suggection" feature.)
+    latest_release_number (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Version number of the latest release detected by Libraries.io (ordered by semver, falling back to publish date for invalid semver).)
+    last_synced_timestamp (Type: TIMESTAMP; Sample values: ['2018-12-17 00:14:34+00:00', '2018-12-17 01:48:30+00:00', '2018-12-17 03:05:36+00:00', '2018-12-21 01:01:40+00:00', '2018-01-24 01:08:54+00:00']; Description: Timestamp of when Libraries.io last synced the project from it's package manager API.)
+    created_timestamp (Type: TIMESTAMP; Sample values: ['2015-01-12 00:07:14+00:00', '2015-01-12 00:11:53+00:00', '2015-01-12 00:15:07+00:00', '2015-01-12 00:20:26+00:00', '2015-01-12 00:20:42+00:00']; Description: The timestamp of when Libraries.io first discovered the project.)
+    dependent_projects_count (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of other projects that declare the project as a dependency in one or more of their versions.)
+    sourcerank (Type: INT64; Sample values: ['2', '1', '1', '0', '0']; Description: Libraries.io defined score based on quality, popularity and community metrics.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.libraries_io.versions
+[
+    platform (Type: STRING; Sample values: ['Atom', 'Atom', 'Atom', 'Atom', 'Atom']; Description: The name of the Package manager the version is available on.)
+    updated_timestamp (Type: TIMESTAMP; Sample values: ['2015-05-23 19:19:04+00:00', '2015-09-28 20:18:41+00:00', '2015-12-07 21:28:37+00:00', '2015-10-23 21:08:37+00:00', '2015-08-13 21:38:51+00:00']; Description: The timestamp of when the version was last saved by Libraries.io.)
+    id (Type: INT64; Sample values: ['3125634', '3876666', '4455398', '4222891', '3459903']; Description: The unique primary key of the version in the Libraries.io database.)
+    project_name (Type: STRING; Sample values: ['webflow-to-wordpress', 'nuclide-health', 'fb-atom-snippets', 'nuclide-busy-signal', 'language-marasm']; Description: The name of the project the version belongs to.)
+    project_id (Type: INT64; Sample values: ['802627', '994734', '1112791', '1058135', '929280']; Description: The unique primary key of the project for this version in the Libraries.io database.)
+    number (Type: STRING; Sample values: ['0.0.0', '0.0.0', '0.0.0', '0.0.0', '0.0.0']; Description: The number of the release often confirms to semantic versioning.)
+    published_timestamp (Type: TIMESTAMP; Sample values: ['2015-05-23 19:19:04+00:00', '2015-09-28 20:18:41+00:00', '2015-12-07 21:28:37+00:00', '2015-10-23 21:08:37+00:00', '2015-08-13 21:38:51+00:00']; Description: The timestamp of when the version was published.)
+    created_timestamp (Type: TIMESTAMP; Sample values: ['2015-05-23 19:19:04+00:00', '2015-09-28 20:18:41+00:00', '2015-12-07 21:28:37+00:00', '2015-10-23 21:08:37+00:00', '2015-08-13 21:38:51+00:00']; Description: The timestamp of when the version was first detected by Libraries.io.)
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+# Feature Toggle Libraries
+
+## Libraries and Their Details
+
+### .NET Libraries
+- **Library:** unleash-client-dotnet
+  - **Artifact Name:** Unleash.FeatureToggle.Client
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** unleash-client
+  - **Artifact Name:** unleash.client
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** launchdarkly
+  - **Artifact Name:** LaunchDarkly.Client
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** NFeature
+  - **Artifact Name:** NFeature
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** FeatureToggle
+  - **Artifact Name:** FeatureToggle
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** FeatureSwitcher
+  - **Artifact Name:** FeatureSwitcher
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+- **Library:** Toggler
+  - **Artifact Name:** Toggler
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+### Go Libraries
+- **Library:** launchdarkly
+  - **Artifact Name:** github.com/launchdarkly/go-client
+  - **Platform:** Go
+  - **Languages:** Go
+
+- **Library:** Toggle
+  - **Artifact Name:** github.com/xchapter7x/toggle
+  - **Platform:** Go
+  - **Languages:** Go
+
+- **Library:** dcdr
+  - **Artifact Name:** github.com/vsco/dcdr
+  - **Platform:** Go
+  - **Languages:** Go
+
+- **Library:** unleash-client-go
+  - **Artifact Name:** github.com/unleash/unleash-client-go
+  - **Platform:** Go
+  - **Languages:** Go
+
+### JavaScript/TypeScript Libraries
+- **Library:** unleash-client-node
+  - **Artifact Name:** unleash-client
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** launchdarkly
+  - **Artifact Name:** ldclient-js
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** ember-feature-flags
+  - **Artifact Name:** ember-feature-flags
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** feature-toggles
+  - **Artifact Name:** feature-toggles
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** React Feature Toggles
+  - **Artifact Name:** @paralleldrive/react-feature-toggles
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** launchdarkly
+  - **Artifact Name:** ldclient-node
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** flipit
+  - **Artifact Name:** flipit
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** fflip
+  - **Artifact Name:** fflip
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** Bandiera
+  - **Artifact Name:** bandiera-client
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** flopflip
+  - **Artifact Name:** @flopflip/react-redux
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+- **Library:** flopflip
+  - **Artifact Name:** @flopflip/react-broadcast
+  - **Platform:** NPM
+  - **Languages:** JavaScript, TypeScript
+
+### Maven/Kotlin/Java Libraries
+- **Library:** launchdarkly
+  - **Artifact Name:** com.launchdarkly:launchdarkly-android-client
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** toggle
+  - **Artifact Name:** cc.soham:toggle
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** unleash-client-java
+  - **Artifact Name:** no.finn.unleash:unleash-client-java
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** launchdarkly
+  - **Artifact Name:** com.launchdarkly:launchdarkly-client
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** Togglz
+  - **Artifact Name:** org.togglz:togglz-core
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** FF4J
+  - **Artifact Name:** org.ff4j:ff4j-core
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+- **Library:** Flip
+  - **Artifact Name:** com.tacitknowledge.flip:core
+  - **Platform:** Maven
+  - **Languages:** Kotlin, Java
+
+
+
+### .NET Libraries
+- **Library:** unleash-client-dotnet
+  - **Artifact Name:** Unleash.FeatureToggle.Client
+  - **Platform:** NuGet
+  - **Languages:** C#, Visual Basic
+
+### iOS Libraries (CocoaPods, Carthage)
+- **Library:** launchdarkly
+  - **Artifact Name:** LaunchDarkly
+  - **Platform:** CocoaPods
+  - **Languages:** Objective-C, Swift
+
+- **Library:** launchdarkly
+  - **Artifact Name:** launchdarkly/ios-client
+  - **Platform:** Carthage
+  - **Languages:** Objective-C, Swift
+
+### PHP Libraries (Packagist)
+- **Library:** launchdarkly
+  - **Artifact Name:** launchdarkly/launchdarkly-php
+  - **Platform:** Packagist
+  - **Languages:** PHP
+
+- **Library:** Symfony FeatureFlagsBundle
+  - **Artifact Name:** dzunke/feature-flags-bundle
+  - **Platform:** Packagist
+  - **Languages:** PHP
+
+- **Library:** rollout
+  - **Artifact Name:** opensoft/rollout
+  - **Platform:** Packagist
+  - **Languages:** PHP
+
+- **Library:** Bandiera
+  - **Artifact Name:** npg/bandiera-client-php
+  - **Platform:** Packagist
+  - **Languages:** PHP
+
+### Python Libraries (Pypi)
+- **Library:** unleash-client-python
+  - **Artifact Name:** UnleashClient
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** launchdarkly
+  - **Artifact Name:** ldclient-py
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Flask FeatureFlags
+  - **Artifact Name:** Flask-FeatureFlags
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Gutter
+  - **Artifact Name:** gutter
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Feature Ramp
+  - **Artifact Name:** feature_ramp
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** flagon
+  - **Artifact Name:** flagon
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Waffle
+  - **Artifact Name:** django-waffle
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Gargoyle
+  - **Artifact Name:** gargoyle
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+- **Library:** Gargoyle
+  - **Artifact Name:** gargoyle-yplan
+  - **Platform:** Pypi
+  - **Languages:** Python
+
+### Ruby Libraries (Rubygems)
+- **Library:** unleash-client-ruby
+  - **Artifact Name:** unleash
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** launchdarkly
+  - **Artifact Name:** ldclient-rb
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** rollout
+  - **Artifact Name:** rollout
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** FeatureFlipper
+  - **Artifact Name:** feature_flipper
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** Flip
+  - **Artifact Name:** flip
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** Setler
+  - **Artifact Name:** setler
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** Bandiera
+  - **Artifact Name:** bandiera-client
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** Feature
+  - **Artifact Name:** feature
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+- **Library:** Flipper
+  - **Artifact Name:** flipper
+  - **Platform:** Rubygems
+  - **Languages:** Ruby
+
+### Scala Libraries (Maven)
+- **Library:** Bandiera
+  - **Artifact Name:** com.springernature:bandiera-client-scala_2.12
+  - **Platform:** Maven
+  - **Languages:** Scala
+
+- **Library:** Bandiera
+  - **Artifact Name:** com.springernature:bandiera-client-scala_2.11
+  - **Platform:** Maven
+  - **Languages:** Scala

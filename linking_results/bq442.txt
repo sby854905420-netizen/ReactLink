@@ -1,0 +1,103 @@
+###Table full name: bigquery-public-data.cymbal_investments.trade_capture_report
+[
+    TradeReportID (Type: STRING; Sample values: ['d8eefa63-6f10-4566-8f15-81460448f2ac-0', '7fa78bef-912c-41cb-b381-4c03b5a7c508-0', '5a4c4d8b-b9b8-4307-a0c3-8c753ed93520-0', 'a204ef77-1071-48ee-a5f5-21579311cd91-0', 'b7a40778-7293-407b-8636-91a7ffe9817a-0']; Description: ID of this trade report)
+    LastPx (Type: FLOAT64; Sample values: ['2953.125', '2952.375', '2953.375', '2952.625', '2953.625']; Description: Price at which the CFD was entered)
+    StrikePrice (Type: FLOAT64; Sample values: ['2953.125', '2952.375', '2952.625', '2953.125', '2952.375']; Description: Price at which the CFD closed)
+    OrderID (Type: STRING; Sample values: ['d8eefa63-6f10-4566-8f15-81460448f2ac', '7fa78bef-912c-41cb-b381-4c03b5a7c508', '5a4c4d8b-b9b8-4307-a0c3-8c753ed93520', 'a204ef77-1071-48ee-a5f5-21579311cd91', 'b7a40778-7293-407b-8636-91a7ffe9817a']; Description: Order identifier)
+    TransactTime (Type: TIMESTAMP; Sample values: ['2020-05-18 17:23:26.393000+00:00', '2020-05-18 17:25:59.485000+00:00', '2020-05-18 17:33:10.485000+00:00', '2020-05-18 17:39:40.341000+00:00', '2020-05-18 17:48:45.471000+00:00']; Description: Time the transaction occured)
+    TradeDate (Type: DATE; Sample values: ['2020-05-18', '2020-05-18', '2020-05-18', '2020-05-18', '2020-05-18']; Description: Date trade was executed)
+    Quantity (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Overall/total quantity (e.g. number of shares))
+    TargetCompID (Type: STRING; Sample values: ['MOMOES-COMPID', 'MOMOES-COMPID', 'MOMOES-COMPID', 'MOMOES-COMPID', 'MOMOES-COMPID']; Description: Assigned value used to identify firm receiving message.)
+    CFICode (Type: STRING; Sample values: ['MMMXXX', 'MMMXXX', 'MMMXXX', 'MMMXXX', 'MMMXXX']; Description: Financial instrument classification code)
+    SenderCompID (Type: STRING; Sample values: ['MDOC', 'MDOC', 'MDOC', 'MDOC', 'MDOC']; Description: Assigned value used to identify firm sending message.)
+    SendingTime (Type: TIMESTAMP; Sample values: ['2020-05-18 17:23:26+00:00', '2020-05-18 17:25:59+00:00', '2020-05-18 17:33:10+00:00', '2020-05-18 17:39:39+00:00', '2020-05-18 17:48:45+00:00']; Description: Time the message was sent)
+    Sides (Type: ARRAY<STRUCT<Side STRING, OrderID STRING, PartyIDs ARRAY<STRUCT<PartyID STRING, PartyIDSource STRING, PartyRole STRING>>>>; Sample values: ['"[{\\"Side\\": \\"LONG\\", \\"OrderID\\": \\"d8eefa63-6f10-4566-8f15-81460448f2ac\\", \\"PartyIDs\\": []}]"', '"[{\\"Side\\": \\"LONG\\", \\"OrderID\\": \\"7fa78bef-912c-41cb-b381-4c03b5a7c508\\", \\"PartyIDs\\": []}]"', '"[{\\"Side\\": \\"LONG\\", \\"OrderID\\": \\"5a4c4d8b-b9b8-4307-a0c3-8c753ed93520\\", \\"PartyIDs\\": []}]"', '"[{\\"Side\\": \\"LONG\\", \\"OrderID\\": \\"a204ef77-1071-48ee-a5f5-21579311cd91\\", \\"PartyIDs\\": []}]"', '"[{\\"Side\\": \\"LONG\\", \\"OrderID\\": \\"b7a40778-7293-407b-8636-91a7ffe9817a\\", \\"PartyIDs\\": []}]"'])
+    MaturityDate (Type: TIMESTAMP; Sample values: ['2020-05-18 17:24:26.393000+00:00', '2020-05-18 17:26:59.485000+00:00', '2020-05-18 17:34:10.485000+00:00', '2020-05-18 17:40:40.341000+00:00', '2020-05-18 17:49:45.471000+00:00']; Description: Date of contract expiry)
+    Symbol (Type: STRING; Sample values: ['ESM0', 'ESM0', 'ESM0', 'ESM0', 'ESM0']; Description: Trading symbol of the asset)
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+## Trade Capture Report Data List
+
+Below is a detailed description of each extracted field:
+
+### Extracted Data Fields
+
+
+
+1. **`tradeID`**:
+
+   \- Represents the unique identifier for each order in the dataset.
+
+   \- **Type**: STRING
+
+
+
+2. **`tradeTimestamp` **:
+
+   \- Indicates the maturity date when the trade is due.
+
+   \- **Type**: TIMESTAMP
+
+
+
+3. **`algorithm`**:
+
+   \- Deduces the algorithm used for the trade based on the first four characters of the `TargetCompID`:
+
+​     \- 'MOMO' mapped to 'Momentum'
+
+​     \- 'LUCK' mapped to 'Feeling Lucky'
+
+​     \- 'PRED' mapped to 'Prediction'
+
+   \- **Type**: STRING
+
+
+
+4. **`symbol`**:
+
+   \- The trading symbol of the financial instrument involved in the trade.
+
+   \- **Type**: STRING
+
+
+
+5. **`openPrice` **:
+
+   \- The last price at which the trade was executed, considered as the opening price for analysis purposes.
+
+   \- **Type**: FLOAT
+
+
+
+6. **`closePrice` **:
+
+   \- Represents the strike price of the option for the trade, considered here as the closing price for analysis.
+
+   \- **Type**: FLOAT
+
+
+
+7. **`tradeDirection`**:
+
+   \- Extracted from a nested array column `Sides` using `UNNEST`. It signifies the direction of the trade:
+
+​     \- Possible values include 'SHORT' or 'LONG'.
+
+   \- **Type**: STRING
+
+
+
+8. **`tradeMultiplier`**:
+
+   \- Derived from the trade direction:
+
+​     \- 'SHORT' results in a value of `-1`
+
+​     \- 'LONG' results in a value of `1`
+
+   \- **Type**: INTEGER

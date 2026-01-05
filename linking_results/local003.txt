@@ -1,0 +1,205 @@
+###Table full name: orders
+[
+    order_purchase_timestamp (Type: TEXT; Sample values: ['2018-03-09 11:28:21', '2017-11-20 16:46:51', '2018-08-06 09:12:33', '2017-11-28 21:31:13', '2017-07-04 15:26:25'])
+    customer_id (Type: TEXT; Sample values: ['cbb8cc5d78799d889be9031df33c30dd', '16482587049b0c2a607dd532d0653696', '796e0c6b3690401bd5592b7ce89be9f2', '5331ac2d2ed2def738a9c200cf8ebacb', '2fe74cd469ff73b77342fc789332b598'])
+    order_delivered_customer_date (Type: TEXT; Sample values: ['2018-03-26 19:44:42', '2017-12-05 00:57:57', '2018-08-14 18:11:36', '2017-12-06 19:12:54', '2017-07-14 18:55:36'])
+    order_estimated_delivery_date (Type: TEXT; Sample values: ['2018-04-04 00:00:00', '2017-12-13 00:00:00', '2018-08-22 00:00:00', '2017-12-18 00:00:00', '2017-07-26 00:00:00'])
+    order_id (Type: TEXT; Sample values: ['36496983bcef05ef8cf855bbcf5d23ab', 'ff64e0ba4800eb1127ac32aeac2b51f9', '6cd474b81add3c3d62536cab3e34aa23', 'c1bb3ffb1aeb6afbe42101499bd15708', 'fd85f9c9bfe9cc5b55c648a96a4f2598'])
+    order_status (Type: TEXT; Sample values: ['delivered', 'delivered', 'delivered', 'delivered', 'delivered'])
+    order_delivered_carrier_date (Type: TEXT; Sample values: ['2018-03-13 19:34:36', '2017-11-24 15:39:15', '2018-08-13 15:33:00', '2017-12-01 20:49:50', '2017-07-06 13:34:33'])
+    order_approved_at (Type: TEXT; Sample values: ['2018-03-10 03:48:47', '2017-11-20 16:56:23', '2018-08-06 09:44:23', '2017-11-30 02:20:22', '2017-07-06 03:23:59'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_payments
+[
+    payment_sequential (Type: INTEGER; Sample values: ['1', '1', '1', '1', '1'])
+    payment_value (Type: REAL; Sample values: ['74.63', '158.8', '116.13', '104.4', '189.0'])
+    payment_installments (Type: INTEGER; Sample values: ['4', '6', '10', '10', '1'])
+    order_id (Type: TEXT; Sample values: ['ee026f49fd0f7469eca393e46a073077', '1d85312d372335db21f7f178c2325c6c', '2b8b7636f69e8dca87850024171a19fa', 'a8f53fb2d23aa53494da639eaed2c172', '1ce630b94c04093fbbb40498068f46b0'])
+    payment_type (Type: TEXT; Sample values: ['credit_card', 'credit_card', 'credit_card', 'credit_card', 'boleto'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_items
+[
+    freight_value (Type: REAL; Sample values: ['11.09', '14.27', '28.14', '23.6', '24.15'])
+    seller_id (Type: TEXT; Sample values: ['aae3bfea055532c57fb453ed3ec80b30', 'cfb1a033743668a192316f3c6d1d2671', '12b9676b00f60f3b700e83af21824c0e', 'da8622b14eb17ae2831f4ac5b9dab84a', '9add47bf45ce8e8c7db6b9cf670b1e09'])
+    price (Type: REAL; Sample values: ['68.0', '124.9', '199.0', '114.9', '109.8'])
+    order_id (Type: TEXT; Sample values: ['fd1dfd657df57a8183a8bd5ad5725538', '8842bee3797d9ac30486e0b26f5a9756', 'e87aa2b0086ab1f74f1faa822186807c', 'b560ced1765e243b3ebf765d80a8873d', '35ff30856e32d0b5a4a2abe36bc26f4e'])
+    product_id (Type: TEXT; Sample values: ['4d8ea5149cb1949048b389bc23797fef', 'f72b7888719ff77bf96e14bc97b64430', '8f79239910bb0bf15488ef9abd9e6593', '372645c7439f9661fbbacfd129aa92ec', '288dbc06591742c5d7fe90fbfb08943e'])
+    order_item_id (Type: INTEGER; Sample values: ['1', '1', '1', '1', '1'])
+    shipping_limit_date (Type: TEXT; Sample values: ['2017-03-07 23:50:10', '2018-03-05 04:15:43', '2017-04-25 18:22:48', '2018-07-25 04:45:07', '2017-10-11 20:49:31'])
+]
+
+--------------------------------------------------
+
+###Table full name: leads_closed
+[
+    average_stock (Type: TEXT; Sample values: ['5-20', 'None', 'None', 'None', 'None'])
+    business_segment (Type: TEXT; Sample values: ['health_beauty', 'home_office_furniture', 'health_beauty', 'construction_tools_house_garden', 'food_drink'])
+    declared_monthly_revenue (Type: REAL; Sample values: ['30000.0', '0.0', '0.0', '0.0', '0.0'])
+    seller_id (Type: TEXT; Sample values: ['cee4320453079d554562dee0753d7d43', '8ec9a02e1c573e5ebf9133968d9b0042', 'ae0728a2cb289dec6d1ceb0b7d6b82c5', 'bbe87dce25ba8b38bb61cc7210a3f10b', '9c1c0c36cd23c20897e473901a8fb149'])
+    sr_id (Type: TEXT; Sample values: ['068066e24f0c643eb1d089c7dd20cd73', '495d4e95a8cf8bbf8b432b612a2aa328', '9e4d1098a3b0f5da39b0bc48f9876645', '85fc447d336637ba1df43e793199fbc8', 'fbf4aef3f6915dc0c3c97d6812522f6a'])
+    won_date (Type: TEXT; Sample values: ['2018-08-21 21:07:30', '2018-02-28 21:24:13', '2018-04-10 14:43:06', '2018-03-22 15:07:28', '2018-03-19 20:26:27'])
+    declared_product_catalog_size (Type: REAL; Sample values: ['500.0', 'nan', 'nan', 'nan', 'nan'])
+    sdr_id (Type: TEXT; Sample values: ['b34f6eba10f46bf9a657a01c108a8284', '9e4d1098a3b0f5da39b0bc48f9876645', '4b339f9567d060bcea4f5136b9f5949e', '9e4d1098a3b0f5da39b0bc48f9876645', '9e4d1098a3b0f5da39b0bc48f9876645'])
+    business_type (Type: TEXT; Sample values: ['reseller', 'manufacturer', 'reseller', 'reseller', 'reseller'])
+    has_gtin (Type: INTEGER; Sample values: ['1.0', 'nan', 'nan', 'nan', 'nan'])
+    has_company (Type: INTEGER; Sample values: ['1.0', 'nan', 'nan', 'nan', 'nan'])
+    lead_behaviour_profile (Type: TEXT; Sample values: ['shark', 'cat', 'cat', 'cat', 'cat'])
+    mql_id (Type: TEXT; Sample values: ['0e327f32dbb22d433600688b7e9af0db', '07e3b175a6c00f310d4e7e4b17df1304', '0a55079ea003674ae2145b02f03ff27d', '05b99715f32c973f929cd22735389966', '7290c4082936311a3295b7c9ca7bda8f'])
+    lead_type (Type: TEXT; Sample values: ['online_medium', 'industry', 'online_medium', 'online_big', 'online_medium'])
+]
+
+--------------------------------------------------
+
+###Table full name: customers
+[
+    customer_unique_id (Type: TEXT; Sample values: ['191525912e1a31a97bf8b481ce852f75', 'a45db9d0a5dcfbf97517132c9d7fe232', 'f64909771abc5e2378773b2b8a56f67b', '43df16fc8bbc0499aa6bf4e582dfbb66', '2d62f3a9748197a1e14719249eaaef03'])
+    customer_id (Type: TEXT; Sample values: ['a1acf95041edd043087a040e89449636', '6b4e082b14e562a79465f516bd129f3b', '216ca7984f36f840df4e983b578856d4', 'e54e09bbe2be2674c611aa7a6456a8e7', 'fbd3895c5f12c58d91cfb71241f3f5cc'])
+    customer_zip_code_prefix (Type: INTEGER; Sample values: ['11712', '41825', '13426', '78700', '89560'])
+    customer_state (Type: TEXT; Sample values: ['SP', 'BA', 'SP', 'MT', 'SC'])
+    customer_city (Type: TEXT; Sample values: ['praia grande', 'salvador', 'piracicaba', 'rondonopolis', 'videira'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_reviews
+[
+    review_score (Type: INTEGER; Sample values: ['5', '4', '5', '4', '5'])
+    order_id (Type: TEXT; Sample values: ['b64c877d24e9ca2418150a159d754371', 'f18cb9c90909f11a7adabc63fb188f19', '0d9df4f2f2ff31254428de406416328c', 'ac2b0218860ad82946845af74f514052', '05c882a9c704a528bfbaa15fd8805d43'])
+    review_id (Type: TEXT; Sample values: ['c74b4e36cdad43707ec16b14a655ad4d', 'd04bf0f58aec6ea447a3551b90f7c1dd', 'c0c1c760cf359132694e049c74dab224', 'dc0512c8eeec6afd238c367c8ea4938c', 'f9dc1e05e8b8efa6af2a6bd92992ea01'])
+    review_answer_timestamp (Type: TEXT; Sample values: ['2018-02-26 12:38:17', '2017-10-25 12:01:32', '2017-04-22 01:05:05', '2018-02-28 03:45:53', '2018-01-30 23:57:52'])
+    review_creation_date (Type: TEXT; Sample values: ['2018-02-23 00:00:00', '2017-10-25 00:00:00', '2017-04-21 00:00:00', '2018-02-27 00:00:00', '2018-01-30 00:00:00'])
+    review_comment_message (Type: TEXT; Sample values: ['Nunca tive problemas super recomendado ', 'Foi entregue apenas parte do pedido, a saia para cama box não veio.', 'Entrega antes do prazo previsto, sensacional', 'Amei, só achei caro ', 'None'])
+    review_comment_title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: products
+[
+    product_length_cm (Type: REAL; Sample values: ['22.0', '35.0', '16.0', '16.0', '28.0'])
+    product_name_lenght (Type: REAL; Sample values: ['35.0', '60.0', '59.0', '34.0', '41.0'])
+    product_id (Type: TEXT; Sample values: ['5a49f099263e18cab64382c04cb76883', '537148287359f3f816095b3bfc368130', 'f5c0c21094c05855d475bc3890adb6dd', 'c5dfa757c5ae7662e178e990e39362e0', 'e4d34d3dbd367b0021e5d65105870180'])
+    product_width_cm (Type: REAL; Sample values: ['17.0', '25.0', '11.0', '11.0', '26.0'])
+    product_photos_qty (Type: REAL; Sample values: ['1.0', '1.0', '3.0', '4.0', '2.0'])
+    product_description_lenght (Type: REAL; Sample values: ['538.0', '340.0', '1116.0', '426.0', '288.0'])
+    product_height_cm (Type: REAL; Sample values: ['13.0', '6.0', '5.0', '9.0', '12.0'])
+    product_weight_g (Type: REAL; Sample values: ['467.0', '3600.0', '450.0', '150.0', '1372.0'])
+    product_category_name (Type: TEXT; Sample values: ['relogios_presentes', 'cama_mesa_banho', 'automotivo', 'fashion_bolsas_e_acessorios', 'ferramentas_jardim'])
+]
+
+--------------------------------------------------
+
+###Table full name: sellers
+[
+    seller_zip_code_prefix (Type: INTEGER; Sample values: ['3306', '80710', '88780', '3586', '1303'])
+    seller_id (Type: TEXT; Sample values: ['aced59e9b31ef866a94f9e7f29d8d418', 'b5f49fe968dff6b112861e6cd8e192ef', 'b55638ad525e906c698fa2ce742c1742', 'd9c349beabc06aa6ff1c6d68b5e9e22e', '1690cada046eb7e92c12f98b1f8a8167'])
+    seller_city (Type: TEXT; Sample values: ['sao paulo', 'curitiba', 'imbituba', 'sao paulo', 'sao paulo'])
+    seller_state (Type: TEXT; Sample values: ['SP', 'PR', 'SC', 'SP', 'SP'])
+]
+
+--------------------------------------------------
+
+###Table full name: leads_qualified
+[
+    first_contact_date (Type: TEXT; Sample values: ['2018-02-07', '2017-11-20', '2017-07-12', '2017-07-20', '2018-03-16'])
+    origin (Type: TEXT; Sample values: ['organic_search', 'paid_search', 'organic_search', 'organic_search', 'paid_search'])
+    landing_page_id (Type: TEXT; Sample values: ['0218f6be0b76aca72ab4d00ee9e8cf10', 'b217afa2c1f4cb502423005639878f6d', '31aa231b755f09653f48e41c110c8860', '22c29808c4f815213303f8933030604c', '22c29808c4f815213303f8933030604c'])
+    mql_id (Type: TEXT; Sample values: ['a7ad710353b08b3d1e7ee6daca9679cc', '785f9daa6aedd3afc9ef23137a51fe3e', '2a5f614fbd6b69fd6695ae213d63eef0', 'b2a242690f117309099b7a561b605e9e', '659d33c1b83122ee316c7943d8b091eb'])
+]
+
+--------------------------------------------------
+
+###Table full name: product_category_name_translation
+[
+    product_category_name (Type: TEXT; Sample values: ['ferramentas_jardim', 'cama_mesa_banho', 'fashion_roupa_feminina', 'agro_industria_e_comercio', 'artigos_de_festas'])
+    product_category_name_english (Type: TEXT; Sample values: ['garden_tools', 'bed_bath_table', 'fashio_female_clothing', 'agro_industry_and_commerce', 'party_supplies'])
+]
+
+--------------------------------------------------
+
+###Table full name: geolocation
+[
+    geolocation_zip_code_prefix (Type: INTEGER; Sample values: ['8900', '18520', '89210', '79758', '35160'])
+    geolocation_lng (Type: REAL; Sample values: ['-46.03386496794391', '-47.76046832976516', '-48.83769144601536', '-53.26856664727548', '-42.56145298557327'])
+    geolocation_lat (Type: REAL; Sample values: ['-23.41703007438397', '-23.159482222434374', '-26.336437470165603', '-21.757988776500703', '-19.51289595614291'])
+    geolocation_state (Type: TEXT; Sample values: ['SP', 'SP', 'SC', 'MS', 'MG'])
+    geolocation_city (Type: TEXT; Sample values: ['guararema', 'cerquilho', 'joinville', 'nova casa verde', 'ipatinga'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+# Introduction to the RFM Model
+
+The RFM (Recency, Frequency, Monetary) model segments and scores customers based on three key dimensions:
+
+• Recency (R): How long it has been since the customer’s last purchase. A lower R score (e.g., R = 1) indicates a very recent purchase, while a higher R score (e.g., R = 5) indicates a longer time since the last purchase.
+
+• Frequency (F): How often the customer purchases within a given time period. A lower F score (e.g., F = 1) signifies that the customer buys very frequently, whereas a higher F score (e.g., F = 5) indicates less frequent purchasing.
+
+• Monetary (M): The total amount of money the customer spends. A lower M score (e.g., M = 1) indicates higher overall spending, while a higher M score (e.g., M = 5) signifies lower spending over the measured period.
+
+Each customer’s R, F, and M scores are determined by their respective percentiles when compared to other customers. By concatenating the three scores, you get an “RFM cell”—for instance, a customer with R=1, F=5, and M=2 would fall into the 152 segment.
+
+# RFM Segmentation Calculation
+
+After scoring customers on Recency, Frequency, and Monetary values, the next step is to group them into segments that require different marketing or sales strategies. Typically:
+
+1. Determine each customer’s recency score (R) from 1 to 5 (1 = very recent purchase, 5 = not recent).  
+2. Determine each customer’s frequency score (F) from 1 to 5 (1 = most frequent purchases, 5 = least frequent).  
+3. Determine each customer’s monetary score (M) from 1 to 5 (1 = highest spending, 5 = lowest spending).  
+4. Concatenate these three scores into an RFM score (e.g., 153, 514).
+
+By analyzing the distribution of RFM scores and placing them into buckets—for example, “Champions,” “Loyal Customers,” “At Risk,” “Lost,” etc.—you can tailor marketing, sales, and retention strategies to maximize the potential of each segment. 
+
+For instance, a “Champion” (R=1, F=1, M=1) is a recent, frequent, and high-spending user who is highly valuable to your business, whereas a “Lost” customer (e.g., R=5, F=5, M=5) may require re-engagement offers or might no longer be cost-effective to target. Different segments can thus be prioritized based on their profitability and likelihood of responding positively to marketing efforts.
+
+## RFM Segmentation Logic
+
+Customers are assigned to specific segments (RFM Buckets) based on a combination of their Recency, Frequency, and Monetary scores. The segmentation logic is as follows:
+
+- **Champions**: Customers who have made a recent purchase, with high frequency and high monetary value. These are considered the most valuable customers.
+  - Criteria: Recency = 1 and Frequency + Monetary score between 1 and 4.
+
+- **Can't Lose Them**: Previously frequent and high-spending customers who have not made a recent purchase. These customers are at risk of leaving and need attention.
+  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 1 and 2.
+
+- **Hibernating**: Customers whose last purchase was a while ago, with low to moderate frequency and spending. These customers might have lost interest in the products.
+  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 3 and 6.
+
+- **Lost**: Customers who have not purchased in a long time and have low frequency and monetary value. These customers are likely lost.
+  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 7 and 10.
+
+- **Loyal Customers**: Customers who are frequent buyers with decent spending levels, and they have made a purchase relatively recently. These customers are likely to be very loyal.
+  - Criteria: Recency = 2 or 3 and Frequency + Monetary score between 1 and 4.
+
+- **Needs Attention**: Customers whose purchase frequency and spending are moderate. They haven't bought very recently, but they could be incentivized to become more active.
+  - Criteria: Recency = 3 and Frequency + Monetary score between 5 and 6.
+
+- **Recent Users**: Customers who made a purchase recently, but their frequency and spending are moderate. These are relatively new or inconsistent buyers.
+  - Criteria: Recency = 1 and Frequency + Monetary score between 7 and 8.
+
+- **Potential Loyalists**: Customers who show potential to become loyal customers. They have good frequency and monetary scores, and they have made recent purchases. With the right engagement, they could become loyal customers.
+  - Criteria:
+    - Recency = 1 and Frequency + Monetary score between 5 and 6.
+    - OR Recency = 2 and Frequency + Monetary score between 5 and 8.
+
+- **Price Sensitive**: Customers who have made recent purchases but tend to spend less, indicating they may be more sensitive to price.
+  - Criteria: Recency = 1 and Frequency + Monetary score between 9 and 10.
+
+- **Promising**: These customers exhibit high potential with decent frequency and monetary scores, and they could become more valuable over time.
+  - Criteria: Recency = 2 and Frequency + Monetary score between 9 and 10.
+
+- **About to Sleep**: Customers whose frequency and spending are low, and their last purchase was some time ago. These customers are likely to become inactive.
+  - Criteria: Recency = 3 and Frequency + Monetary score between 7 and 10.
+
+## Summary
+
+This segmentation logic groups customers based on their behavior in terms of when they last purchased (Recency), how often they purchase (Frequency), and how much they spend (Monetary). By understanding which group a customer belongs to, organizations can tailor marketing strategies to engage the right audience more effectively, improving customer retention and maximizing value.

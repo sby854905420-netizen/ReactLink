@@ -1,0 +1,752 @@
+###Table full name: bigquery-public-data.ebi_chembl.compound_properties
+[
+    heavy_atoms (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qed_weighted (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    molregno (Type: STRING; Sample values: ['39845', '114774', '178306', '201633', '293382'])
+    hbd (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hba (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hbd_lipinski (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hba_lipinski (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    full_molformula (Type: STRING; Sample values: ['C54H75N11O15S2', 'C55H78N12O12S2', 'C45H62ClF6N4O16P', 'C62H88N14O6', 'C71H99N13O13S'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_properties_25
+[
+    heavy_atoms (Type: STRING; Sample values: ['51', '54', '58', '54', '57'])
+    qed_weighted (Type: STRING; Sample values: ['0.12', '0.09', '0.06', '0.05', '0.02'])
+    hbd (Type: STRING; Sample values: ['7', '8', '11', '8', '12'])
+    hba (Type: STRING; Sample values: ['9', '8', '11', '8', '12'])
+    hbd_lipinski (Type: STRING; Sample values: ['8', '9', '12', '10', '16'])
+    molregno (Type: STRING; Sample values: ['4393', '23599', '25076', '26302', '38268'])
+    full_molformula (Type: STRING; Sample values: ['C36H58N6O9', 'C38H52N6O10', 'C39H56N8O10S', 'C43H63F3N6O9', 'C34H59N11O12'])
+    rtb (Type: STRING; Sample values: ['18', '21', '24', '25', '25'])
+    psa (Type: STRING; Sample values: ['229.49', '263.19', '301.24', '221.89', '394.15'])
+    aromatic_rings (Type: STRING; Sample values: ['1', '2', '2', '3', '0'])
+    mw_monoisotopic (Type: STRING; Sample values: ['718.4265', '752.3745', '828.384', '750.468', '813.4345'])
+]
+**Some other tables have the similar structure: [compound_properties_24, compound_properties_23]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_properties_28
+[
+    heavy_atoms (Type: STRING; Sample values: ['53', '60', '64', '52', '56'])
+    qed_weighted (Type: STRING; Sample values: ['0.09', '0.13', '0.04', '0.07', '0.08'])
+    molregno (Type: STRING; Sample values: ['1733', '11360', '17023', '23434', '23749'])
+    hbd (Type: STRING; Sample values: ['7', '6', '13', '10', '8'])
+    hba (Type: STRING; Sample values: ['6', '7', '13', '10', '8'])
+    hbd_lipinski (Type: STRING; Sample values: ['8', '10', '15', '11', '9'])
+    hba_lipinski (Type: STRING; Sample values: ['13', '12', '24', '18', '16'])
+    full_molformula (Type: STRING; Sample values: ['C40H52N6O7', 'C48H36N8O4', 'C40H68N12O12', 'C34H53N7O11', 'C40H56N6O10'])
+    rtb (Type: STRING; Sample values: ['20', '8', '28', '22', '23'])
+    aromatic_rings (Type: STRING; Sample values: ['3', '5', '1', '1', '2'])
+    psa (Type: STRING; Sample values: ['208.82', '224.9', '388.12', '295.45', '263.19'])
+]
+**Some other tables have the similar structure: [compound_properties_27, compound_properties_29, compound_properties_33, compound_properties_26, compound_properties_30]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_records_23
+[
+    doc_id (Type: STRING; Sample values: ['49165', '49165', '49165', '49165', '49165'])
+    record_id (Type: STRING; Sample values: ['863980', '863985', '864014', '864036', '864123'])
+    compound_name (Type: STRING; Sample values: ['GNF-Pf-415', 'GNF-Pf-420', 'GNF-Pf-449', 'GNF-Pf-471', 'GNF-Pf-558'])
+    src_id (Type: STRING; Sample values: ['3', '3', '3', '3', '3'])
+    src_compound_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_records_29
+[
+    doc_id (Type: STRING; Sample values: ['49165', '49165', '49165', '49165', '49165'])
+    record_id (Type: STRING; Sample values: ['863996', '864145', '864146', '864168', '864170'])
+    compound_name (Type: STRING; Sample values: ['GNF-Pf-431', 'GNF-Pf-580', 'GNF-Pf-581', 'GNF-Pf-603', 'GNF-Pf-605'])
+    src_id (Type: STRING; Sample values: ['3', '3', '3', '3', '3'])
+    src_compound_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cidx (Type: STRING; Sample values: ['CLD0', 'CLD0', 'CLD0', 'CLD0', 'CLD0'])
+]
+**Some other tables have the similar structure: [compound_records_33, compound_records_24, compound_records_25, compound_records_27, compound_records_28, compound_records_30, compound_records_26]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activities_23
+[
+    standard_value (Type: STRING; Sample values: ['176200', '88', '8.1', '10.09', '3'])
+    assay_id (Type: STRING; Sample values: ['18264', '1691', '145379', '22428', '11798'])
+    pchembl_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_type (Type: STRING; Sample values: ['Solubility', 'Efficacy', 'pKa', 'pKa', 'Concentration'])
+    doc_id (Type: STRING; Sample values: ['8329', '14499', '11635', '14281', '13509'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    published_value (Type: STRING; Sample values: ['17.62', '88', '8.1', '10.09', '3'])
+    published_type (Type: STRING; Sample values: ['Solubility', 'Efficacy', 'pKa', 'pKa', 'Concentration'])
+    standard_units (Type: STRING; Sample values: ['ug.mL-1', '%', 'None', 'None', 'uM'])
+    activity_id (Type: STRING; Sample values: ['33164', '34169', '37773', '47524', '64894'])
+    record_id (Type: STRING; Sample values: ['347488', '163730', '285955', '292297', '205385'])
+    data_validity_comment (Type: STRING; Sample values: ['Outside typical range', 'None', 'None', 'None', 'None'])
+    molregno (Type: STRING; Sample values: ['290461', '102087', '243457', '11595', '179429'])
+    potential_duplicate (Type: STRING; Sample values: ['0', '1', '0', '0', '0'])
+    activity_comment (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_flag (Type: STRING; Sample values: ['1', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assays_33
+[
+    doc_id (Type: STRING; Sample values: ['14485', '50340', '35036', '51315', '13875'])
+    assay_id (Type: STRING; Sample values: ['34564', '617531', '425850', '635688', '155200'])
+    assay_tax_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tid (Type: STRING; Sample values: ['1', '1', '1', '3', '3'])
+    confidence_score (Type: STRING; Sample values: ['8', '8', '8', '8', '8'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    src_assay_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL649328', 'CHEMBL1099881', 'CHEMBL856853', 'CHEMBL1119717', 'CHEMBL763673'])
+    cell_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tissue_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    variant_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    aidx (Type: STRING; Sample values: ['CLD0', 'CLD0', 'CLD0', 'CLD0', 'CLD0'])
+]
+**Some other tables have the similar structure: [assays_30, assays_29, assays_28, assays_25, assays_24, assays_23]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assays_27
+[
+    doc_id (Type: STRING; Sample values: ['107020', '101284', '107902', '108414', '104417'])
+    activity_count (Type: STRING; Sample values: ['None', '19', 'None', 'None', '2'])
+    assay_id (Type: STRING; Sample values: ['1729496', '1618845', '1752402', '1763666', '1661914'])
+    assay_tax_id (Type: STRING; Sample values: ['9606', '9606', '9606', '9606', '9606'])
+    tid (Type: STRING; Sample values: ['3', '3', '3', '3', '3'])
+    confidence_score (Type: STRING; Sample values: ['9', '9', '9', '9', '9'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    src_assay_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL4144774', 'CHEMBL3861014', 'CHEMBL4187162', 'CHEMBL4198913', 'CHEMBL4011526'])
+    mc_tax_id (Type: STRING; Sample values: ['9606', '9606', '9606', '9606', '9606'])
+    mc_target_name (Type: STRING; Sample values: ['PDE5A_HUMAN', 'PDE5A_HUMAN', 'PDE5A_HUMAN', 'PDE5A_HUMAN', 'PDE5A_HUMAN'])
+    cell_id (Type: STRING; Sample values: ['None', '749', 'None', 'None', 'None'])
+    tissue_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    variant_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    aidx (Type: STRING; Sample values: ['1003732', '865192', '969752', '1022757', '910322'])
+    job_id (Type: STRING; Sample values: ['417', '41', '421', '423', '401'])
+    log_id (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    ridx (Type: STRING; Sample values: ['29456790', '27606546', '29288071', '29549837', '28406621'])
+    tid_fixed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+**Some other tables have the similar structure: [assays_26]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activities_24
+[
+    assay_id (Type: STRING; Sample values: ['4700', '4678', '225838', '5677', '4647'])
+    standard_value (Type: STRING; Sample values: ['233', '33020', '5.8', '3.774', '6.72'])
+    pchembl_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    doc_id (Type: STRING; Sample values: ['5668', '17791', '13280', '17837', '3443'])
+    standard_upper_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_type (Type: STRING; Sample values: ['CL', 'AUC', 'Concentration', 'AUC', 'CL'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    published_value (Type: STRING; Sample values: ['233', '33.02', '5.8', '3774', '6.72'])
+    standard_units (Type: STRING; Sample values: ['mL.min-1.kg-1', 'ng.hr.mL-1', 'ug ml-1', 'uM.hr', 'mL.min-1.kg-1'])
+    published_type (Type: STRING; Sample values: ['CLint', 'AUC', 'Concentration', 'AUC', 'Plasma clearance'])
+    activity_id (Type: STRING; Sample values: ['76627', '161314', '165837', '227370', '231894'])
+    record_id (Type: STRING; Sample values: ['155819', '104022', '348001', '188323', '206759'])
+    data_validity_comment (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    toid (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    molregno (Type: STRING; Sample values: ['2038629', '23417', '70151', '165336', '43934'])
+    potential_duplicate (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    value (Type: STRING; Sample values: ['233', '33.02', '5.8', '3774', '6.72'])
+    standard_flag (Type: STRING; Sample values: ['1', '1', '0', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activities_25
+[
+    assay_id (Type: STRING; Sample values: ['168817', '47463', '19471', '74389', '18264'])
+    pchembl_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_value (Type: STRING; Sample values: ['-32', '0.38', '7.14', '44', '174400'])
+    doc_id (Type: STRING; Sample values: ['9890', '2669', '17025', '9484', '8329'])
+    standard_upper_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_type (Type: STRING; Sample values: ['Change', 'IC80', 'T1/2', 'Reduction', 'Solubility'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_units (Type: STRING; Sample values: ['%', 'ug ml-1', 'hr', '%', 'ug.mL-1'])
+    activity_id (Type: STRING; Sample values: ['37646', '41771', '52279', '53052', '67030'])
+    record_id (Type: STRING; Sample values: ['167994', '89500', '140746', '73516', '347483'])
+    data_validity_comment (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'Outside typical range'])
+    toid (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    molregno (Type: STRING; Sample values: ['149022', '81466', '125914', '66828', '292438'])
+    potential_duplicate (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    activity_comment (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    value (Type: STRING; Sample values: ['-32', '0.38', '7.14', '44', '17.44'])
+    standard_flag (Type: STRING; Sample values: ['0', '0', '1', '0', '1'])
+]
+**Some other tables have the similar structure: [activities_29, activities_33, activities_27, activities_30, activities_28, activities_26]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assays
+[
+    doc_id (Type: STRING; Sample values: ['5173', '47941', '61691', '6237', '46198'])
+    assay_id (Type: STRING; Sample values: ['155712', '579817', '814425', '223970', '562503'])
+    assay_tax_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tid (Type: STRING; Sample values: ['3', '3', '3', '3', '3'])
+    confidence_score (Type: STRING; Sample values: ['8', '8', '8', '8', '8'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    src_assay_id (Type: STRING; Sample values: ['None', 'None', '443569', 'None', 'None'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL760590', 'CHEMBL1059718', 'CHEMBL2019821', 'CHEMBL845490', 'CHEMBL1011852'])
+    cell_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tissue_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    variant_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    aidx (Type: STRING; Sample values: ['CLD0', 'CLD0', 'CLD0', 'CLD0', 'CLD0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_properties_27
+[
+    standard_value (Type: STRING; Sample values: ['2', '16', '14', '2', '16'])
+    standard_type (Type: STRING; Sample values: ['DOSED_COMPOUND_ID', 'N', 'STUDY_DOSING_DURATION', 'DOSED_COMPOUND_ID', 'N'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_units (Type: STRING; Sample values: ['None', 'None', 'day', 'None', 'None'])
+    ap_id (Type: STRING; Sample values: ['5324944', '5324948', '5324952', '5324957', '5324961'])
+    activity_id (Type: STRING; Sample values: ['17805440', '17805440', '17805440', '17805437', '17805437'])
+    relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    units (Type: STRING; Sample values: ['None', 'None', 'day', 'None', 'None'])
+    value (Type: STRING; Sample values: ['2', '16', '14', '2', '16'])
+    type (Type: STRING; Sample values: ['DOSED_COMPOUND_ID', 'N', 'STUDY_DOSING_DURATION', 'DOSED_COMPOUND_ID', 'N'])
+    text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    result_flag (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+]
+**Some other tables have the similar structure: [activity_properties_24, activity_properties_33, activity_properties_30, activity_properties_29, activity_properties_25, activity_properties_28, activity_properties_26]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_records
+[
+    doc_id (Type: STRING; Sample values: ['2', '3', '6', '6', '6'])
+    record_id (Type: STRING; Sample values: ['350151', '350162', '350206', '350238', '350204'])
+    compound_name (Type: STRING; Sample values: ["3-{4-[3-{6'-[3-(3-methyl-1,7-dioxaspiro[5.5]undec-2-yl)-1-hydroxybutyl]-8'-hydroxy-7'-methylenespiro[tetrahydrofuran-2,2'-perhydropyrano[3,2-b]pyran]-5-yl}-1-methyl-(E)-2-propenyl]-2-methyl-11-hydroxy-5,7-dioxaspiro[5.5]undec-1-en-8-yl}-2-hydroxy-2-m...(truncated)", 'Biphenyl-2-carboxylic acid [2-[4-(4-diethylamino-piperidin-1-yl)-4-oxo-butoxy]-4-(5,6,7,8-tetrahydro-thieno[3,2-b]azepine-4-carbonyl)-phenyl]-amide', '(2R,3S)-3-Benzoyloxy-2-ethoxycarbonyl-8-methyl-8-azonia-bicyclo[3.2.1]octane', '(2S,3S)-3-Benzoyloxy-2-methoxycarbonyl-8-methyl-8-azonia-bicyclo[3.2.1]octane', '(2R,3S)-3-Benzoyloxy-2-methoxycarbonyl-8-methyl-8-azonia-bicyclo[3.2.1]octane'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    src_compound_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cidx (Type: STRING; Sample values: ['CLD0', 'CLD0', 'CLD0', 'CLD0', 'CLD0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_properties
+[
+    standard_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_type (Type: STRING; Sample values: ['Hit', 'Hit', 'Hit', 'Hit', 'Hit'])
+    standard_relation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_text_value (Type: STRING; Sample values: ['Agonist', 'Antagonist', 'PAM', 'Antagonist', 'PAM'])
+    standard_units (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ap_id (Type: STRING; Sample values: ['9535477', '9547220', '9538756', '9541670', '9551758'])
+    activity_id (Type: STRING; Sample values: ['24934985', '24943493', '24937334', '24939424', '24946705'])
+    relation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    units (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    type (Type: STRING; Sample values: ['Hit', 'Hit', 'Hit', 'Hit', 'Hit'])
+    value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    text_value (Type: STRING; Sample values: ['Agonist', 'Antagonist', 'PAM', 'Antagonist', 'PAM'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assay_parameters_28
+[
+    standard_relation (Type: STRING; Sample values: ['None', 'None', 'None', '=', '='])
+    standard_value (Type: STRING; Sample values: ['None', 'None', 'None', '0', '0'])
+    standard_type (Type: STRING; Sample values: ['DOSE', 'DOSE', 'DOSE', 'regeneration_stabilization_period', 'regeneration_contact_time'])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    assay_param_id (Type: STRING; Sample values: ['3730332', '3730377', '3771277', '3710902', '3711013'])
+    assay_id (Type: STRING; Sample values: ['100201', '100334', '132722', '1640162', '1640168'])
+]
+**Some other tables have the similar structure: [assay_parameters_30, assay_parameters_24, assay_parameters_29, assay_parameters_27, assay_parameters_25, assay_parameters_26, assay_parameters_33]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activities
+[
+    assay_id (Type: STRING; Sample values: ['115373', '24932', '341744', '973467', '937305'])
+    standard_upper_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_value (Type: STRING; Sample values: ['2', 'None', 'None', 'None', 'None'])
+    pchembl_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    doc_id (Type: STRING; Sample values: ['7417', '16917', '30911', '74443', '71750'])
+    standard_type (Type: STRING; Sample values: ['%', 'F', 'F', 'F', 'F'])
+    standard_relation (Type: STRING; Sample values: ['=', 'None', 'None', 'None', 'None'])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_units (Type: STRING; Sample values: ['None', '%', '%', '%', '%'])
+    activity_id (Type: STRING; Sample values: ['400977', '794406', '1701575', '13396471', '12637343'])
+    record_id (Type: STRING; Sample values: ['333853', '77674', '444884', '1909086', '1845676'])
+    data_validity_comment (Type: STRING; Sample values: ['None', 'Potential missing data', 'None', 'None', 'None'])
+    toid (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    molregno (Type: STRING; Sample values: ['283276', '71172', '343251', '1573031', '1514445'])
+    potential_duplicate (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    relation (Type: STRING; Sample values: ['=', 'None', 'None', 'None', 'None'])
+    value (Type: STRING; Sample values: ['2', 'None', 'None', 'None', 'None'])
+    standard_flag (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_supp_25
+[
+    standard_value (Type: STRING; Sample values: ['300', '679', '850', '320', '657'])
+    standard_type (Type: STRING; Sample values: ['NEUTSG', 'NEUTSG', 'NEUTSG', 'NEUTSG', 'NEUTSG'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_units (Type: STRING; Sample values: ['cells.uL-1', 'cells.uL-1', 'cells.uL-1', 'cells.uL-1', 'cells.uL-1'])
+    as_id (Type: STRING; Sample values: ['1031369', '1031407', '1031445', '1031483', '1031521'])
+    rgid (Type: STRING; Sample values: ['24038', '24039', '24040', '24041', '24042'])
+    smid (Type: STRING; Sample values: ['1027719', '1027757', '1027795', '1027833', '1027871'])
+    relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    value (Type: STRING; Sample values: ['300', '679', '850', '320', '657'])
+]
+**Some other tables have the similar structure: [activity_supp_30, activity_supp_27, activity_supp_28, activity_supp_29, activity_supp_24, activity_supp_26, activity_supp_33]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assay_parameters
+[
+    standard_relation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_type (Type: STRING; Sample values: ['DOSE', 'DOSE', 'DOSE', 'reference compound Ki', 'Ligand Bmax'])
+    standard_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    assay_param_id (Type: STRING; Sample values: ['3730332', '3730377', '3771277', '4059045', '4059046'])
+    assay_id (Type: STRING; Sample values: ['100201', '100334', '132722', '2137251', '2137251'])
+    value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_supp
+[
+    standard_value (Type: STRING; Sample values: ['300', '679', '850', '320', '657'])
+    standard_type (Type: STRING; Sample values: ['NEUTSG', 'NEUTSG', 'NEUTSG', 'NEUTSG', 'NEUTSG'])
+    standard_relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    standard_text_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    standard_units (Type: STRING; Sample values: ['cells.uL-1', 'cells.uL-1', 'cells.uL-1', 'cells.uL-1', 'cells.uL-1'])
+    as_id (Type: STRING; Sample values: ['1031369', '1031407', '1031445', '1031483', '1031521'])
+    rgid (Type: STRING; Sample values: ['24038', '24039', '24040', '24041', '24042'])
+    smid (Type: STRING; Sample values: ['1027719', '1027757', '1027795', '1027833', '1027871'])
+    value (Type: STRING; Sample values: ['300', '679', '850', '320', '657'])
+    relation (Type: STRING; Sample values: ['=', '=', '=', '=', '='])
+    units (Type: STRING; Sample values: ['CELLS/uL', 'CELLS/uL', 'CELLS/uL', 'CELLS/uL', 'CELLS/uL'])
+    type (Type: STRING; Sample values: ['ABSOLUTE SEGMENTED NEUTROPHIL', 'ABSOLUTE SEGMENTED NEUTROPHIL', 'ABSOLUTE SEGMENTED NEUTROPHIL', 'ABSOLUTE SEGMENTED NEUTROPHIL', 'ABSOLUTE SEGMENTED NEUTROPHIL'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.defined_daily_dose_28
+[
+    ddd_admr (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ddd_id (Type: STRING; Sample values: ['15', '2979', '2981', '3237', '1742'])
+    ddd_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', '0.1'])
+    atc_code (Type: STRING; Sample values: ['A02AD01', 'R03BB05', 'R03BB06', 'V03AE09', 'S01EB04'])
+]
+**Some other tables have the similar structure: [defined_daily_dose_33, defined_daily_dose_26, defined_daily_dose_29, defined_daily_dose_27, defined_daily_dose_30, defined_daily_dose_24, defined_daily_dose_23, defined_daily_dose_25]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_stds_lookup_28
+[
+    standard_type (Type: STRING; Sample values: ['HCT', 'MCHC', 'EOSLE', 'LYMLE', 'BASOLE'])
+    normal_range_max (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    std_act_id (Type: STRING; Sample values: ['81', '95', '103', '104', '106'])
+    standard_units (Type: STRING; Sample values: ['%', '%', '%', '%', '%'])
+]
+**Some other tables have the similar structure: [activity_stds_lookup_27, activity_stds_lookup_29, activity_stds_lookup_30, activity_stds_lookup_25, activity_stds_lookup_33, activity_stds_lookup_26, activity_stds_lookup_24, activity_stds_lookup_23]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_stds_lookup
+[
+    standard_type (Type: STRING; Sample values: ['HCT', 'MCHC', 'EOSLE', 'LYMLE', 'BASOLE'])
+    normal_range_max (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    std_act_id (Type: STRING; Sample values: ['81', '95', '103', '104', '106'])
+    standard_units (Type: STRING; Sample values: ['%', '%', '%', '%', '%'])
+    definition (Type: STRING; Sample values: ['The percentage of a whole blood specimen that is composed of red blood cells (erythrocytes).', 'A quantitative measurement of the mean amount of hemoglobin per erythrocytes in a specified volume of a biological specimen.', 'A relative measurement (ratio or percentage) of the eosinophils to leukocytes in a biological specimen.', 'A relative measurement (ratio or percentage) of the lymphocytes to leukocytes in a biological specimen.', 'A relative measurement (ratio or percentage) of the basophils to leukocytes in a biological specimen.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.defined_daily_dose
+[
+    ddd_admr (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ddd_id (Type: STRING; Sample values: ['15', '2979', '2981', '3237', '3282'])
+    ddd_value (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    atc_code (Type: STRING; Sample values: ['A02AD01', 'R03BB05', 'R03BB06', 'V03AE09', 'B06AC05'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.docs_23
+[
+    pubmed_id (Type: STRING; Sample values: ['10879539', '15301540', '14640569', '18020407', '18001038'])
+    journal (Type: STRING; Sample values: ['Nature', 'Biochemistry', 'J Agric Food Chem', 'J Agric Food Chem', 'J Agric Food Chem'])
+    doc_id (Type: STRING; Sample values: ['45680', '70539', '70515', '69640', '69638'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL1143399', 'CHEMBL3046924', 'CHEMBL3046748', 'CHEMBL3046326', 'CHEMBL3045616'])
+    patent_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    first_page (Type: STRING; Sample values: ['962', '10414', '7271', '10323', '10331'])
+    last_page (Type: STRING; Sample values: ['966', '10423', '7275', '10330', '10338'])
+    year (Type: STRING; Sample values: ['2000', '2004', '2003', '2007', '2007'])
+    title (Type: STRING; Sample values: ['A small-molecule nitroimidazopyran drug candidate for the treatment of tuberculosis.', 'Structural basis for herbicidal inhibitor selectivity revealed by comparison of crystal structures of plant and mammalian 4-hydroxyphenylpyruvate dioxygenases.', 'Antifeedant effects of the limonoids from Entandrophragma candolei (Meliaceae) on the gram pod borer, Helicoverpa armigera (Lepidoptera: Noctuidae).', 'Screening of dialkoxybenzenes and disubstituted cyclopentene derivatives against the cabbage looper, Trichoplusia ni, for the discovery of new feeding and oviposition deterrents.', 'Synthetic pyrazole derivatives as growth inhibitors of some phytopathogenic fungi.'])
+    doc_type (Type: STRING; Sample values: ['PUBLICATION', 'PUBLICATION', 'PUBLICATION', 'PUBLICATION', 'PUBLICATION'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.docs
+[
+    pubmed_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    journal (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    doc_id (Type: STRING; Sample values: ['-1', '51886', '51887', '52546', '54166'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL1158643', 'CHEMBL1201861', 'CHEMBL1201862', 'CHEMBL1229341', 'CHEMBL1615344'])
+    patent_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ridx (Type: STRING; Sample values: ['CLD0', 'CLD0', 'CLD0', 'CLD0', 'CLD0'])
+    src_id (Type: STRING; Sample values: ['0', '5', '7', '6', '1'])
+    chembl_release_id (Type: STRING; Sample values: ['7', '9', '9', '9', '10'])
+    first_page (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: STRING; Sample values: ['Unpublished dataset', 'Genomics of Drug Sensitity in Cancer screening data, Wellcome Trust Sanger Institute', 'PubChem BioAssay data set', 'PDB Ligands', 'Cerep in vitro phospholipidosis assay data'])
+    doc_type (Type: STRING; Sample values: ['DATASET', 'DATASET', 'DATASET', 'DATASET', 'DATASET'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.docs_28
+[
+    pubmed_id (Type: STRING; Sample values: ['22483270', '21624500', '30448189', '30448190', '30448257'])
+    journal (Type: STRING; Sample values: ['Chem Cent J', 'Drug Discovery Today', 'Bioorg Med Chem', 'Bioorg Med Chem', 'Bioorg Med Chem'])
+    doc_id (Type: STRING; Sample values: ['69727', '59326', '110494', '110495', '110499'])
+    chembl_id (Type: STRING; Sample values: ['CHEMBL3046882', 'CHEMBL1909281', 'CHEMBL4308871', 'CHEMBL4308872', 'CHEMBL4308876'])
+    patent_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ridx (Type: STRING; Sample values: ['CLD0', 'CLD0', '30448189', '30448190', '30448257'])
+    src_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1'])
+    chembl_release_id (Type: STRING; Sample values: ['', '', '', '', ''])
+    first_page (Type: STRING; Sample values: ['None', '697', '6000', '6067', '6050'])
+    last_page (Type: STRING; Sample values: ['None', '703', '6014', '6075', '6055'])
+    year (Type: STRING; Sample values: ['2012', '2011', '2018', '2018', '2018'])
+    title (Type: STRING; Sample values: ['Synthesis and antibacterial activity against ralstonia solanacearum for novel hydrazone derivatives containing a pyridine moiety.', 'FDA-approved drug labeling for the study of drug-induced liver injury.', 'Design, synthesis and in vitro evaluation of stilbene derivatives as novel LSD1 inhibitors for AML therapy.', 'Dose dependent actions of LCL521 on acid ceramidase and key sphingolipid metabolites.', 'Isolation and structure determination of a new lasso peptide specialicin based on genome mining.'])
+    doc_type (Type: STRING; Sample values: ['PUBLICATION', 'PUBLICATION', 'PUBLICATION', 'PUBLICATION', 'PUBLICATION'])
+]
+**Some other tables have the similar structure: [docs_24, docs_26, docs_25, docs_27, docs_29, docs_30, docs_33]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.match_23
+[
+    publication_number (Type: STRING; Sample values: ['US-5223510-A', 'US-5288726-A', 'US-5288726-A', 'US-5344932-A', 'US-5344932-A'])
+]
+**Some other tables have the similar structure: [match_24]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assay_class_map_30
+[
+    assay_id (Type: INT64; Sample values: ['511570', '511565', '758442', '641019', '511566']; Description: Foreign key that maps to the ASSAYS table)
+    ass_cls_map_id (Type: INT64; Sample values: ['1267071', '1267072', '1267073', '1267074', '1267075']; Description: Primary key.)
+    assay_class_id (Type: INT64; Sample values: ['344', '344', '344', '344', '344']; Description: Foreign key that maps to the ASSAY_CLASSIFICATION table)
+]
+**Some other tables have the similar structure: [assay_class_map_33, assay_class_map_26, assay_class_map_25, assay_class_map_29, assay_class_map_27, assay_class_map_28]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assay_class_map
+[
+    assay_id (Type: STRING; Sample values: ['585237', '511570', '511565', '758442', '641019'])
+    ass_cls_map_id (Type: STRING; Sample values: ['1879821', '1879822', '1879823', '1879824', '1879825'])
+    assay_class_id (Type: STRING; Sample values: ['344', '344', '344', '344', '344'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_structures
+[
+    canonical_smiles (Type: STRING; Sample values: ['CC1(C(=O)O)C2CCC(O2)C1C(=O)O', 'O=C(/C=C/C=C/c1ccccc1)/C=C/c1ccccc1', 'CCc1cnc(-n2nc(OC(C)C)c(Cc3cccc(F)c3)c2C)nc1', 'O=C(c1ccc(F)cc1)C1CCN(C2=Nc3ccccc3CC=C2c2ccc(Cl)cc2)CC1', 'CNCc1ccc(Oc2cncc(C)n2)cc1'])
+    molregno (Type: STRING; Sample values: ['3198', '1834716', '1836053', '18332', '1856527'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_structures_26
+[
+    canonical_smiles (Type: STRING; Sample values: ['O=C1N(CN2CCCCC2)c2ccccc2C12SCCS2', 'CC/C(=C(\\c1ccc(I)cc1)c1ccc(OCCCCCCCN2CCCC2)cc1)c1ccccc1', 'CCNc1cccnc1N1CCN(C(=O)c2nc3ccccc3s2)CC1', 'CN(C)CCOc1ccc2[nH]c(C(=O)c3cc4ccccc4[nH]3)cc2c1', 'CC12CCCCC1(Br)[N+]([O-])=[N+]2[O-]'])
+    molregno (Type: STRING; Sample values: ['427', '521', '1504', '1919', '3364'])
+]
+**Some other tables have the similar structure: [compound_structures_23, compound_structures_28, compound_structures_29, compound_structures_33, compound_structures_24, compound_structures_27, compound_structures_30, compound_structures_25]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_dictionary
+[
+    structure_type (Type: STRING; Sample values: ['SEQ', 'SEQ', 'SEQ', 'SEQ', 'SEQ'])
+    molregno (Type: STRING; Sample values: ['675587', '675779', '675786', '1121861', '1121862'])
+    pref_name (Type: STRING; Sample values: ['DACLIZUMAB', 'ECULIZUMAB', 'USTEKINUMAB', 'BELATACEPT', 'BENRALIZUMAB'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_dictionary_27
+[
+    structure_type (Type: STRING; Sample values: ['MOL', 'MOL', 'MOL', 'MOL', 'MOL'])
+    molregno (Type: STRING; Sample values: ['523060', '194', '207', '556', '601'])
+    pref_name (Type: STRING; Sample values: ['SODIUM HEPARIN', 'SULBACTAM', 'TAZOBACTAM', 'ISOSORBIDE DINITRATE', 'LYSERGIDE'])
+    molecule_type (Type: STRING; Sample values: ['Oligosaccharide', 'Small molecule', 'Small molecule', 'Small molecule', 'Small molecule'])
+]
+**Some other tables have the similar structure: [molecule_dictionary_23, molecule_dictionary_29, molecule_dictionary_30, molecule_dictionary_26, molecule_dictionary_28, molecule_dictionary_24, molecule_dictionary_25]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_structural_alerts_33
+[
+    molregno (Type: STRING; Sample values: ['103', '105', '638', '722', '752'])
+]
+**Some other tables have the similar structure: [compound_structural_alerts_26, compound_structural_alerts_25, compound_structural_alerts_27, compound_structural_alerts_23, compound_structural_alerts_30, compound_structural_alerts_24, compound_structural_alerts_29, compound_structural_alerts_28]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.compound_structural_alerts
+[
+    molregno (Type: STRING; Sample values: ['103', '105', '638', '722', '752'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_dictionary_33
+[
+    molregno (Type: STRING; Sample values: ['675587', '675779', '675786', '1121861', '1121862'])
+    pref_name (Type: STRING; Sample values: ['DACLIZUMAB', 'ECULIZUMAB', 'USTEKINUMAB', 'BELATACEPT', 'BENRALIZUMAB'])
+    molecule_type (Type: STRING; Sample values: ['Antibody', 'Antibody', 'Antibody', 'Protein', 'Antibody'])
+    structure_type (Type: STRING; Sample values: ['SEQ', 'SEQ', 'SEQ', 'SEQ', 'SEQ'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.chembl_release_33
+[
+    creation_date (Type: STRING; Sample values: ['2009-09-03 00:00:00.000000', '2009-11-30 00:00:00.000000', '2010-04-16 00:00:00.000000', '2010-05-18 00:00:00.000000', '2010-06-24 00:00:00.000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.version_29
+[
+    creation_date (Type: STRING; Sample values: ['2021-07-01 00:00:00.000000'])
+    name (Type: STRING; Sample values: ['ChEMBL_29'])
+]
+**Some other tables have the similar structure: [version_23, version_26, version_24, version_33, version_30, version_27, version_28, version_25]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_hierarchy
+[
+    molregno (Type: STRING; Sample values: ['1', '2', '3', '4', '5'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_hrac_classification_30
+[
+    molregno (Type: INT64; Sample values: ['1369899', '1238673', '1495975', '51985', '1475652']; Description: Foreign key to molecule_dictionary, showing the compound to which this classification applies.)
+]
+**Some other tables have the similar structure: [molecule_hrac_classification_26, molecule_hrac_classification_33, molecule_hrac_classification_24, molecule_hrac_classification_25, molecule_hrac_classification_29, molecule_hrac_classification_23, molecule_hrac_classification_28, molecule_hrac_classification_27]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.molecule_atc_classification_30
+[
+    molregno (Type: INT64; Sample values: ['1280', '1280', '1280', '1280', '1280']; Description: Drug to which the ATC code applies (foreign key to molecule_dictionary table))
+]
+**Some other tables have the similar structure: [molecule_atc_classification_23, molecule_atc_classification_26, molecule_atc_classification_27, molecule_atc_classification_25, molecule_atc_classification_24, molecule_atc_classification_29, molecule_atc_classification_33, molecule_atc_classification_28]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.protein_classification_26
+[
+    pref_name (Type: STRING; Sample values: ['Protein class', 'Enzyme', 'Adhesion', 'Surface antigen', 'Membrane receptor'])
+]
+**Some other tables have the similar structure: [protein_classification_23, protein_classification_28, protein_classification_25, protein_classification_24, protein_classification_30, protein_classification_33, protein_classification_27, protein_classification_29]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.protein_classification
+[
+    pref_name (Type: STRING; Sample values: ['Protein class', 'Enzyme', 'Adhesion', 'Surface antigen', 'Membrane receptor'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.assay_parameters_23
+[
+    assay_param_id (Type: STRING; Sample values: ['3273520', '3273552', '3273870', '3273897', '3273906'])
+    assay_id (Type: STRING; Sample values: ['1479159', '1479162', '1479191', '1479194', '1479194'])
+    parameter_value (Type: STRING; Sample values: ['-80', '0.25', '-40', 'Ambient', 'mV'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_supp_map_24
+[
+    activity_id (Type: STRING; Sample values: ['17126237', '17126237', '17126237', '17126237', '17126237'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_supp_map_33
+[
+    activity_id (Type: STRING; Sample values: ['17126840', '17126841', '17126842', '17126843', '17126844'])
+]
+**Some other tables have the similar structure: [activity_supp_map_27, activity_supp_map_25, activity_supp_map_28, activity_supp_map_29, activity_supp_map_30, activity_supp_map_26]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.ligand_eff_26
+[
+    activity_id (Type: STRING; Sample values: ['31889', '31890', '31891', '31892', '31893'])
+]
+**Some other tables have the similar structure: [ligand_eff_33, ligand_eff_28, ligand_eff_25, ligand_eff_27, ligand_eff_29, ligand_eff_23, ligand_eff_24, ligand_eff_30]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.activity_supp_map
+[
+    activity_id (Type: STRING; Sample values: ['17126840', '17126841', '17126842', '17126843', '17126844'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.product_patents_33
+[
+    submission_date (Type: STRING; Sample values: ['2017-12-20 00:00:00.000000', '2020-12-21 00:00:00.000000', '2015-01-21 00:00:00.000000', '2017-12-20 00:00:00.000000', '2020-12-21 00:00:00.000000'])
+]
+**Some other tables have the similar structure: [product_patents_25, product_patents_28, product_patents_29, product_patents_27, product_patents_30, product_patents_26, product_patents_24]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.product_patents
+[
+    submission_date (Type: STRING; Sample values: ['2017-12-20 00:00:00.000000', '2020-12-21 00:00:00.000000', '2015-01-21 00:00:00.000000', '2017-12-20 00:00:00.000000', '2020-12-21 00:00:00.000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.predicted_binding_domains_24
+[
+    activity_id (Type: STRING; Sample values: ['2347597', '2347629', '6379307', '6379310', '10859946'])
+]
+**Some other tables have the similar structure: [predicted_binding_domains_30, predicted_binding_domains_28, predicted_binding_domains_33, predicted_binding_domains_27, predicted_binding_domains_25, predicted_binding_domains_29, predicted_binding_domains_26, predicted_binding_domains_23]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.predicted_binding_domains
+[
+    activity_id (Type: STRING; Sample values: ['22413971', '22433085', '22469714', '22900108', '22414005'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ebi_chembl.ligand_eff
+[
+    activity_id (Type: STRING; Sample values: ['31889', '31890', '31891', '31892', '31893'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+### Data Sources:
+Part tables of ChEMBL database:
+- activity data: patents-public-data.ebi_chembl.activities_29
+- compound structures: patents-public-data.ebi_chembl.compound_structures_29 
+- compound properties: patents-public-data.ebi_chembl.compound_properties_29 
+- publication documents: patents-public-data.ebi_chembl.docs_29 
+
+### UUID Generation:
+Activity Pair UUID (mmp_delta_uuid):
+Generated using the MD5 hash of the JSON string of the pair's activity IDs:
+to_hex(md5(to_json_string(struct(A, B))))
+Both A and B can be activity id or canonical_smiles
+
+### Standard Change Classification:
+Determines whether the standard value between two molecules has increased, decreased, or stayed the same:
+'decrease': If standard_value_1 >(>>) standard_value_2 and measurement relations do not conflict.
+'increase': If standard_value_1 <(<<) standard_value_2 and measurement relations do not conflict.
+'no-change': If standard_value_1 =(~) standard_value_2 and both standard relations indicate equality.
+
+### How to Got the publication Date
+To compute a publication date for each document, we use the following method, which assigns a date based on the document's relative position within its journal and year, ordered by its first page number.
+
+#### 1. Year Calculation
+
+- **Year**: Use the document's publication year as the year in the date.
+  - If the document's year is known, use that year.
+  - If the year is missing or unavailable, default to **1970**.
+
+#### 2. Month Calculation
+
+- **Grouping**: For all documents within the same **journal** and **year**, group them together.
+- **Ordering**: Within each group, order the documents by their `first_page` number (converted to an integer).
+- **Percent Rank Computation**:
+  - Calculate the **percent rank** of each document in the ordered list.
+  - **Percent Rank Formula**:
+
+    $$\text{Percent Rank} = \frac{\text{Rank of Document} - 1}{\text{Total Documents in Group} - 1}$$
+
+    - The rank starts at 1 for the first document.
+    - The percent rank ranges from 0 to 1.
+- **Month Assignment**:
+  - Scale the percent rank to months by multiplying it by 11:
+
+    $$\text{Scaled Value} = \text{Percent Rank} \times 11$$
+
+  - Take the integer part of the scaled value (floor it):
+
+    $$\text{Floor Value} = \left\lfloor \text{Scaled Value} \right\rfloor$$
+
+  - Add 1 to get the month number (since months are from 1 to 12):
+
+    $$\text{Month} = \text{Floor Value} + 1$$
+
+  - **Note**: If the computed month is not available (e.g., due to missing data), default the month to **1**.
+
+#### 3. Day Calculation
+
+- **Using the Same Percent Rank**: Use the percent rank computed in the month calculation.
+- **Day Assignment**:
+  - Scale the percent rank to days by multiplying it by **308**:
+
+    $$\text{Scaled Value} = \text{Percent Rank} \times 308$$
+
+    - The number 308 is chosen because it is the product of 11 months and 28 days (11 × 28), representing the total number of days in an 11-month period with 28 days per month.
+  - Take the integer part of the scaled value (floor it):
+
+    $$\text{Floor Value} = \left\lfloor \text{Scaled Value} \right\rfloor$$
+
+  - Compute the modulus of the floor value with 28:
+
+    $$\text{Modulo Value} = \text{Floor Value} \bmod 28$$
+
+  - Add 1 to get the day number (since days are from 1 to 28):
+
+    $$\text{Day} = \text{Modulo Value} + 1$$
+
+  - **Note**: If the computed day is not available, default the day to **1**.
+
+### 4. Constructing the publication Date
+
+- Combine the computed **Year**, **Month**, and **Day** to form the publication date.
+
+  $$\text{publication Date} : \text{Year}-\text{Month}-\text{Day}$$
+
+  For example, 2002-06-15.

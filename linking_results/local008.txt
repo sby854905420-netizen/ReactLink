@@ -1,0 +1,277 @@
+###Table full name: batting
+[
+    player_id (Type: TEXT; Sample values: ['bocekmi01', 'sanfoja02', 'boardch01', 'bigbila01', 'varvaan01'])
+    hbp (Type: NUMERIC; Sample values: ['0', '0', '0', '0', '0'])
+    hr (Type: NUMERIC; Sample values: ['0', '0', '0', '9', '0'])
+    g (Type: INTEGER; Sample values: ['19', '23', '2', '83', '61'])
+    triple (Type: NUMERIC; Sample values: ['0', '0', '0', '1', '0'])
+    team_id (Type: TEXT; Sample values: ['CHA', 'SFN', 'PHA', 'BAL', 'ATL'])
+    sb (Type: NUMERIC; Sample values: ['0', '0', '0', '7', '0'])
+    h (Type: NUMERIC; Sample values: ['8', '3', '0', '87', '0'])
+    league_id (Type: TEXT; Sample values: ['AL', 'NL', 'AL', 'AL', 'NL'])
+    cs (Type: NUMERIC; Sample values: ['0', '0', '', '1', '0'])
+    rbi (Type: NUMERIC; Sample values: ['3', '0', '0', '31', '0'])
+    year (Type: INTEGER; Sample values: ['1934', '1965', '1913', '2003', '2014'])
+    so (Type: NUMERIC; Sample values: ['5', '7', '2', '60', '0'])
+    sh (Type: NUMERIC; Sample values: ['0', '1', '0', '1', '0'])
+    sf (Type: NUMERIC; Sample values: ['', '0', '', '2', '0'])
+    bb (Type: NUMERIC; Sample values: ['5', '2', '0', '29', '0'])
+    ab (Type: NUMERIC; Sample values: ['38', '25', '3', '287', '0'])
+    double (Type: NUMERIC; Sample values: ['1', '0', '0', '15', '0'])
+    g_idp (Type: NUMERIC; Sample values: ['', '0', '', '2', '0'])
+    ibb (Type: NUMERIC; Sample values: ['', '0', '', '3', '0'])
+    r (Type: NUMERIC; Sample values: ['3', '0', '0', '43', '0'])
+    stint (Type: INTEGER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: player
+[
+    bats (Type: TEXT; Sample values: ['R', 'L', 'R', 'R', ''])
+    name_given (Type: TEXT; Sample values: ['Jonathan David', 'Andrew Robert', 'Joshua Gibson', 'Alonzo Sidney', 'George Henry'])
+    bbref_id (Type: TEXT; Sample values: ['leicejo01', 'wilkian01', 'bootyjo01', 'powelal01', 'uppje01'])
+    name_first (Type: TEXT; Sample values: ['Jon', 'Andy', 'Josh', 'Alonzo', 'Jerry'])
+    birth_month (Type: NUMERIC; Sample values: ['2', '9', '4', '12', '12'])
+    name_last (Type: TEXT; Sample values: ['Leicester', 'Wilkins', 'Booty', 'Powell', 'Upp'])
+    final_game (Type: TEXT; Sample values: ['2007-09-28', '2014-09-28', '1998-04-11', '1991-10-06', '1909-09-27'])
+    retro_id (Type: TEXT; Sample values: ['leicj001', 'wilka002', 'bootj001', 'powea001', 'upp-j101'])
+    height (Type: NUMERIC; Sample values: ['75', '73', '75', '74', ''])
+    player_id (Type: TEXT; Sample values: ['leicejo01', 'wilkian01', 'bootyjo01', 'powelal01', 'uppje01'])
+    weight (Type: NUMERIC; Sample values: ['220', '220', '210', '190', ''])
+    birth_day (Type: NUMERIC; Sample values: ['7', '13', '29', '12', '10'])
+    throws (Type: TEXT; Sample values: ['R', 'R', 'R', 'R', 'L'])
+    birth_state (Type: TEXT; Sample values: ['CA', 'OK', 'MS', 'CA', 'OH'])
+    death_month (Type: NUMERIC; Sample values: ['', '', '', '', '6'])
+    birth_city (Type: TEXT; Sample values: ['Mariposa', 'Tulsa', 'Starkville', 'San Francisco', 'Sandusky'])
+    birth_year (Type: NUMERIC; Sample values: ['1979', '1988', '1975', '1964', '1883'])
+    death_day (Type: NUMERIC; Sample values: ['', '', '', '', '30'])
+    birth_country (Type: TEXT; Sample values: ['USA', 'USA', 'USA', 'USA', 'USA'])
+    debut (Type: TEXT; Sample values: ['2004-06-09', '2014-08-31', '1996-09-24', '1987-04-06', '1909-09-02'])
+    death_year (Type: NUMERIC; Sample values: ['', '', '', '', '1937'])
+]
+
+--------------------------------------------------
+
+###Table full name: batting_postseason
+[
+    player_id (Type: TEXT; Sample values: ['papeljo01', 'rossda01', 'hardyjj01', 'smithoz01', 'podrejo01'])
+    hr (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    hbp (Type: NUMERIC; Sample values: ['0', '0', '', '0', '0'])
+    g (Type: INTEGER; Sample values: ['2', '1', '5', '7', '1'])
+    h (Type: INTEGER; Sample values: ['0', '0', '3', '2', '1'])
+    triple (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    rbi (Type: INTEGER; Sample values: ['0', '0', '1', '0', '0'])
+    sb (Type: INTEGER; Sample values: ['0', '0', '0', '1', '0'])
+    ab (Type: INTEGER; Sample values: ['0', '0', '22', '23', '4'])
+    cs (Type: NUMERIC; Sample values: ['0', '0', '0', '1', '0'])
+    so (Type: INTEGER; Sample values: ['0', '0', '4', '0', '0'])
+    sh (Type: NUMERIC; Sample values: ['0', '0', '', '1', '0'])
+    double (Type: INTEGER; Sample values: ['0', '0', '2', '0', '0'])
+    bb (Type: INTEGER; Sample values: ['0', '0', '1', '4', '0'])
+    sf (Type: NUMERIC; Sample values: ['0', '0', '', '0', '0'])
+    g_idp (Type: NUMERIC; Sample values: ['0', '0', '', '1', '0'])
+    ibb (Type: NUMERIC; Sample values: ['0', '0', '', '0', '0'])
+    year (Type: INTEGER; Sample values: ['2007', '2008', '2012', '1985', '1963'])
+    team_id (Type: TEXT; Sample values: ['BOS', 'BOS', 'BAL', 'SLN', 'LAN'])
+    r (Type: INTEGER; Sample values: ['0', '0', '0', '1', '0'])
+    league_id (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'NL', 'NL'])
+    round (Type: TEXT; Sample values: ['WS', 'ALDS1', 'ALDS1', 'WS', 'WS'])
+]
+
+--------------------------------------------------
+
+###Table full name: appearances
+[
+    g_batting (Type: INTEGER; Sample values: ['1', '153', '22', '50', '22'])
+    player_id (Type: TEXT; Sample values: ['newkifl01', 'browned02', 'kirbycl01', 'olivejo01', 'newfima01'])
+    team_id (Type: TEXT; Sample values: ['NYA', 'BRO', 'MON', 'DET', 'SEA'])
+    league_id (Type: TEXT; Sample values: ['AL', 'NL', 'NL', 'AL', 'AL'])
+]
+
+--------------------------------------------------
+
+###Table full name: fielding
+[
+    player_id (Type: TEXT; Sample values: ['beckzi01', 'nageocl01', 'smithdw01', 'russeri01', 'bladera01'])
+    pos (Type: TEXT; Sample values: ['1B', 'P', 'RF', 'OF', 'OF'])
+    team_id (Type: TEXT; Sample values: ['NYA', 'SEA', 'CHN', 'CHN', 'SLN'])
+    league_id (Type: TEXT; Sample values: ['AL', 'AL', 'NL', 'NL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: hall_of_fame
+[
+    player_id (Type: TEXT; Sample values: ['willicy01', 'reisepe01', 'floodcu01', 'heilmha01', 'fostege01'])
+    needed (Type: NUMERIC; Sample values: ['115', '202', '333', '186', '318'])
+    yearid (Type: INTEGER; Sample values: ['1949', '1960', '1991', '1945', '1993'])
+]
+
+--------------------------------------------------
+
+###Table full name: fielding_postseason
+[
+    player_id (Type: TEXT; Sample values: ['lidgebr01', 'mierked01', 'clemero02', 'sotoge01', 'rodrifr03'])
+    po (Type: INTEGER; Sample values: ['0', '0', '1', '2', '0'])
+    pb (Type: NUMERIC; Sample values: ['', '', '', '0', ''])
+    g (Type: INTEGER; Sample values: ['3', '1', '1', '1', '4'])
+    gs (Type: NUMERIC; Sample values: ['0', '0', '1', '1', '0'])
+    a (Type: INTEGER; Sample values: ['1', '0', '0', '0', '0'])
+    tp (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    sb (Type: NUMERIC; Sample values: ['0', '', '0', '1', '0'])
+    e (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    team_id (Type: TEXT; Sample values: ['HOU', 'DET', 'NYA', 'OAK', 'ANA'])
+    league_id (Type: TEXT; Sample values: ['NL', 'AL', 'AL', 'AL', 'AL'])
+]
+
+--------------------------------------------------
+
+###Table full name: all_star
+[
+    game_num (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    game_id (Type: TEXT; Sample values: ['ALS200107100', '', 'NLS201107120', 'NLS194007090', 'NLS199807070'])
+    player_id (Type: TEXT; Sample values: ['quantpa01', 'hackst01', 'phillbr01', 'vaughar01', 'biggicr01'])
+    team_id (Type: TEXT; Sample values: ['TOR', 'CHN', 'CIN', 'PIT', 'HOU'])
+    league_id (Type: TEXT; Sample values: ['AL', 'NL', 'NL', 'NL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: pitching
+[
+    player_id (Type: TEXT; Sample values: ['valdeca01', 'eckerch01', 'brancra01', 'choatdo01', 'garcija01'])
+    hr (Type: INTEGER; Sample values: ['0', '1', '4', '0', '2'])
+    bk (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    hbp (Type: NUMERIC; Sample values: ['0', '0', '0', '0', '4'])
+    team_id (Type: TEXT; Sample values: ['BOS', 'PHA', 'BRO', 'SFN', 'SFN'])
+    league_id (Type: TEXT; Sample values: ['AL', 'AL', 'NL', 'NL', 'NL'])
+    g_idp (Type: NUMERIC; Sample values: ['', '', '', '', ''])
+    so (Type: INTEGER; Sample values: ['4', '6', '69', '7', '56'])
+    r (Type: INTEGER; Sample values: ['0', '9', '44', '4', '14'])
+    bb (Type: INTEGER; Sample values: ['5', '3', '79', '4', '26'])
+    sv (Type: INTEGER; Sample values: ['0', '0', '1', '0', '2'])
+]
+
+--------------------------------------------------
+
+###Table full name: fielding_outfield
+[
+    player_id (Type: TEXT; Sample values: ['rosemch01', 'isbelfr01', 'oullijo01', 'fletcge01', 'ewingbo01'])
+]
+
+--------------------------------------------------
+
+###Table full name: manager_award_vote
+[
+    player_id (Type: TEXT; Sample values: ['coxbo01', 'lasorto01', 'bochybr01', 'coxbo01', 'craigro01'])
+    award_id (Type: TEXT; Sample values: ['Mgr of the year', 'Mgr of the year', 'Mgr of the year', 'Mgr of the year', 'Mgr of the year'])
+    league_id (Type: TEXT; Sample values: ['NL', 'NL', 'NL', 'NL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: player_award
+[
+    notes (Type: TEXT; Sample values: ['OF', '1B', 'SS', 'SS', '3B'])
+    tie (Type: TEXT; Sample values: ['', '', '', '', ''])
+    player_id (Type: TEXT; Sample values: ['mantlmi01', 'terrybi01', 'maranra01', 'bartedi01', 'ensbemo01'])
+    league_id (Type: TEXT; Sample values: ['AL', 'NL', 'ML', 'NL', 'NL'])
+    award_id (Type: TEXT; Sample values: ['TSN All-Star', 'Baseball Magazine All-Star', 'Baseball Magazine All-Star', 'Baseball Magazine All-Star', 'Silver Slugger'])
+]
+
+--------------------------------------------------
+
+###Table full name: manager_award
+[
+    player_id (Type: TEXT; Sample values: ['dyered01', 'blackbu02', 'williji03', 'herzowh01', 'bakerdu01'])
+    award_id (Type: TEXT; Sample values: ['TSN Manager of the Year', 'BBWAA Manager of the year', 'TSN Manager of the Year', 'BBWAA Manager of the year', 'BBWAA Manager of the year'])
+    league_id (Type: TEXT; Sample values: ['ML', 'NL', 'AL', 'NL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: manager
+[
+    player_id (Type: TEXT; Sample values: ['hutchfr01', 'harribu01', 'boudrlo01', 'dressch01', 'larusto01'])
+    team_id (Type: TEXT; Sample values: ['DET', 'PHI', 'BOS', 'CIN', 'SLN'])
+    league_id (Type: TEXT; Sample values: ['AL', 'NL', 'AL', 'NL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: player_award_vote
+[
+    points_max (Type: INTEGER; Sample values: ['336', '280', '280', '336', '392'])
+    points_won (Type: NUMERIC; Sample values: ['286', '13', '202', '4', '12'])
+    player_id (Type: TEXT; Sample values: ['konstji01', 'hansero02', 'mayswi01', 'bickfve01', 'putzjj01'])
+    award_id (Type: TEXT; Sample values: ['MVP', 'MVP', 'MVP', 'MVP', 'MVP'])
+    league_id (Type: TEXT; Sample values: ['NL', 'AL', 'NL', 'NL', 'AL'])
+]
+
+--------------------------------------------------
+
+###Table full name: salary
+[
+    player_id (Type: TEXT; Sample values: ['wellsve01', 'bartlja01', 'humbeph01', 'muldema01', 'batisto01'])
+    team_id (Type: TEXT; Sample values: ['TOR', 'MIN', 'HOU', 'OAK', 'TOR'])
+    league_id (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+]
+
+--------------------------------------------------
+
+###Table full name: pitching_postseason
+[
+    player_id (Type: TEXT; Sample values: ['ligteke01', 'verlaju01', 'hamilst01', 'harrima01', 'brantje01'])
+    hr (Type: INTEGER; Sample values: ['0', '1', '1', '0', '0'])
+    team_id (Type: TEXT; Sample values: ['ATL', 'DET', 'NYA', 'TEX', 'CIN'])
+    league_id (Type: TEXT; Sample values: ['NL', 'AL', 'AL', 'AL', 'NL'])
+    g_idp (Type: NUMERIC; Sample values: ['0', '0', '1', '1', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: manager_half
+[
+    player_id (Type: TEXT; Sample values: ['powerpa99', 'chapmja01', 'herzowh01', 'fregoji01', 'mcnamjo99'])
+    team_id (Type: TEXT; Sample values: ['NY1', 'LS3', 'SLN', 'CAL', 'CIN'])
+    league_id (Type: TEXT; Sample values: ['NL', 'NL', 'NL', 'AL', 'NL'])
+]
+
+--------------------------------------------------
+
+###Table full name: postseason
+[
+    wins (Type: INTEGER; Sample values: ['3', '3', '4', '3', '4'])
+    team_id_winner (Type: TEXT; Sample values: ['TEX', 'NYA', 'CIN', 'SLN', 'PIT'])
+    league_id_winner (Type: TEXT; Sample values: ['AL', 'AL', 'NL', 'NL', 'NL'])
+    team_id_loser (Type: TEXT; Sample values: ['TBA', 'MIN', 'NYA', 'SDN', 'WS1'])
+    league_id_loser (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'NL', 'AL'])
+]
+
+--------------------------------------------------
+
+###Table full name: home_game
+[
+    openings (Type: INTEGER; Sample values: ['77', '81', '65', '0', '6'])
+    league_id (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    team_id (Type: TEXT; Sample values: ['KCA', 'BOS', 'CHA', 'CHA', 'DET'])
+    park_id (Type: TEXT; Sample values: ['KAN06', 'BOS07', 'CHI10', 'CHI09', 'DET04'])
+]
+
+--------------------------------------------------
+
+###Table full name: team
+[
+    name (Type: TEXT; Sample values: ['St. Louis Cardinals', 'Boston Red Sox', 'St. Louis Cardinals', 'Boston Braves', 'New York Yankees'])
+]
+
+--------------------------------------------------
+
+###Table full name: player_college
+[
+    player_id (Type: TEXT; Sample values: ['hazledo01', 'eshelva01', 'espinda01', 'smithto02', 'maholpa01'])
+]
+
+--------------------------------------------------
+
