@@ -18,8 +18,6 @@ def embed_documents(input_file: str, embed_path: str, batch_size: int = 32):
 
     model = SentenceTransformer("BAAI/bge-large-en-v1.5")
 
-    start_time = time.time()
-
     with open(input_file, "r", encoding="utf-8") as f:
         documents = json.load(f)
 
@@ -70,10 +68,6 @@ def embed_documents(input_file: str, embed_path: str, batch_size: int = 32):
 
         with open(os.path.join(db_dir, "metadata.json"), "w", encoding="utf-8") as f_meta:
             json.dump(metadata_mapping, f_meta, ensure_ascii=False, indent=2)
-
-    end_time = time.time()
-    processed_time = end_time - start_time
-    print(processed_time)
 
 if __name__ == "__main__":
     for db in DBS_PATH:
