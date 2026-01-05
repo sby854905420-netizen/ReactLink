@@ -1,0 +1,8 @@
+faiss
+tqdm
+sentence_transformers
+openai
+snowflake
+pandas
+google-cloud-bigquery
+db-dtypes
