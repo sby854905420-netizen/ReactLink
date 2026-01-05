@@ -486,5 +486,9 @@ def complete_schema(log_path, num_threads=3):
         p.join()
         
 if __name__ == "__main__":
-    log_path = "log_v3_topn100"
-    complete_schema(log_path, num_threads=8)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--log_path', type=str, default="log_v3_topn100")
+    args = parser.parse_args()
+    print("Starting schema completion...")
+    complete_schema(args.log_path, num_threads=8)
+    print("Schema completion finished.")
