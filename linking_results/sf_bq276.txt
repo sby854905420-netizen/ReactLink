@@ -1,0 +1,662 @@
+###Table full name: NOAA_PORTS.NOAA_HURRICANES.HURRICANES
+[
+    usa_sshs (Type: NUMBER; Sample values: ['-5', '-5', '-5', '-5', '-5']; Description: Saffir-Simpson Hurricane Scale information based on the wind speed provided by the US agency wind speed (US agencies provide 1-minute wind speeds) -5 = Unknown [XX] -4 = Post-tropical [EX/nET/nPT] -3 = Miscellaneous disturbances [WV/nLO/nDB/nDS/nIN/nMD] -2 = Subtropical [SS/nSD] Tropical systems classified based on wind speeds [TD/nTS/nHU/nTY,/nTC/nST/nHR]  -1 = Tropical depression (W<34)  0 = Tropical storm [34<W<64]  1 = Category 1 [64<=W<83]  2 = Category 2 [83<=W<96]  3 = Category 3 [96<=W<113]  4 = Category 4 [113<=W<137]  5 = Category 5 [W >= 137])
+    ds824_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    usa_r64_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in southeastern quadrant)
+    usa_r50_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 50 kt wind radii maximum extent in southeastern quadrant)
+    usa_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum sustained wind speed in knots: 0 - 300 kts.)
+    usa_r64_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 64 kt wind radii maximum extent in southwestern quadrant)
+    usa_r64_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 64 kt wind radii maximum extent in northeastern quadrant)
+    usa_r34_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 34 kt wind radii maximum extent in southeastern quadrant)
+    td9635_wind (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    neumann_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    usa_r64_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in northwestern quadrant)
+    usa_r50_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 50 kt wind radii maximum extent in southwestern quadrant)
+    usa_rmw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: radius of max winds/n0 - 999 n mi. NOT BEST TRACKED (not reanalyzed))
+    td9636_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Estimated highest wind speed at the time indicated. These estimates are subjective and must be interpreted with caution.)
+    usa_r50_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in northeastern quadrant)
+    hko_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    usa_r50_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in northwestern quadrant)
+    usa_r34_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 34 kt wind radii maximum extent in southwestern quadrant)
+    mlc_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_r64_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; hurricane-force (33m/s) or above. Southeast quadrant)
+    td9636_stage (Type: NUMBER; Sample values: ['nan', '7.0', 'nan', '7.0', '3.0']; Description: This field gives an estimate of the highest winds occurring in the storm at the time and location indicated. The entire storm was coded as to the highest stage reached for some of the earlier years. 0 - Tropical disturbance (1969 onward) 1 - depression < 34 [some variation in definition for S Indian] 2 - Storm 34-63 [with some variation in definition for S Indian] 3 - point where wind reached 64 knots [except N Indian where it is wind 43-47 knots] 4 - Hurricane > 64 [except in N Indian/nWind > 48] 5 - Extratropical 6 - Dissipating 7 - Unknown Intensity or doubtful track)
+    usa_r34_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 34 kt wind radii maximum extent in northeastern quadrant)
+    tokyo_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum sustained wind speed [10-min averaging period])
+    usa_status (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Status of system. Options are:  DB - disturbance/n TD - tropical depression/n TS - tropical storm/n TY - typhoon/n ST - super typhoon/n TC - tropical cyclone/n HU,HR - hurricane/n SD - subtropical depression/n SS - subtropical storm/n EX - extratropical systems/n PT - post tropical/n IN - inland/n DS - dissipating/n LO - low/n WV - tropical wave/n ET - extrapolated/n MD - monsoon depression/n XX - unknown.)
+    usa_atcf_id (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: The ATCF ID is assigned by US agencies and can be used to comparethe storm with other US cyclone-related datasets. If two (or more) ATCF tracks make up one storm/nthen the IDs are separated by a colon. The format of the ATCF ID is B<bb><nn><yyyy> where bb is the basin ID/nnn is the number of the storm in that basin and yyyy is the year. Possible basin values are: AL: North Atlantic/nSL: South Atlantic/nEP: East Pacific/nWP: West Pacific/nSH: Southern Hemisphere/nIO: North Indian For the provisional data/nother basin identifiers were provided that include: CP: Central Pacific/nSP: South Pacific/nSI: South Indian/nAS: Arabian Sea (North Indian) and BB: Bay of Bengal (North Indian))
+    bom_r50_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; storm-force (25m/s) or above. Southeast quadrant.)
+    tokyo_r50_dir (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 1 : Northeast (NE)  2 : East (E)  3 : Southeast (SE)  4 : South (S)  5 : Southwest (SW)  6 : West (W)  7 : Northwest (NW)  8 : North (N)  9 : (symmetric circle))
+    bom_r64_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; hurricane-force (33m/s) or above. Northeast quadrant)
+    usa_r34_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: – 34 kt wind radii maximum extent in northwestern quadrant)
+    nadi_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tokyo_r30_dir (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 1 : Northeast (NE)  2 : East (E)  3 : Southeast (SE)  4 : South (S)  5 : Southwest (SW)  6 : West (W)  7 : Northwest (NW)  8 : North (N)  9 : (symmetric circle))
+    bom_r64_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; hurricane-force (33m/s) or above. Southwest quadrant)
+    bom_r50_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; storm-force (25m/s) or above. Southwest quadrant.)
+    bom_r50_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; storm-force (25m/s) or above. Northeast quadrant.)
+    usa_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Minimum central pressure (mb))
+    usa_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_r64_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; hurricane-force (33m/s) or above. Northwest quadrant)
+    newdelhi_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tokyo_r50_short (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The shortest radius of 50kt winds or greater)
+    ds824_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_r50_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: These are the mean radius (from the system centre) of the extent of winds; storm-force (25m/s) or above. Northwest quadrant.)
+    neumann_class (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: EX - Extratropical TC - Tropical MM - Missing)
+    tokyo_r30_short (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The shortest radius of 30kt winds or greater)
+    latitude (Type: FLOAT; Sample values: ['-29.3', '-12.8829', '-36.1', '10.7703', '19.3758'])
+    hko_cat (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: After 2009/nwe further classified two more storm types above typhoon/nso there are in total 7 storm types LW (Low) <22 kt TD (Tropical Depression) 22 – 33 kt TS (Tropical Storm) 34 – 47 kt STS (Severe Tropical Storm) 48 – 63 kt T (Typhoon) 64 – 80 kt ST (Severe Typhoon) 81 – 99 kt SuperT (Super Typhoon) >= 100 kt)
+    basin (Type: TEXT; Sample values: ['SI', 'SI', 'SI', 'WP', 'WP']; Description: Basins include: NA - North Atlantic EP - Eastern North Pacific WP - Western North Pacific NI - North Indian SI - South Indian SP - Southern Pacific SA - South Atlantic MM - Missing - should not appear in final IBTrACS product)
+    td9635_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    subbasin (Type: TEXT; Sample values: ['MM', 'MM', 'MM', 'MM', 'MM']; Description: Subbasins include: MM - missing - no sub basin for this basin (no subbasins provided for WP/nSI) CS - Caribbean Sea GM - Gulf of Mexico CP - Central Pacific BB - Bay of Bengal AS - Arabian Sea WA - Western Australia EA - Eastern Australia)
+    wellington_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    td9636_latitude (Type: FLOAT; Sample values: ['nan', '-12.9791', 'nan', '10.7703', '19.3758']; Description: Latitude from Dataset of a collection of global storms (1842-1980))
+    wmo_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum sustained wind speed from the WMO agency for the current location. NO adjustment is made for differences in wind speed averaging periods. hurdat/atcf = North Atlantic - U.S. Miami (NOAA NHC) - 1-minute winds tokyo = RSMC Tokyo (JMA) - 10-minute newdelhi = RSMC New Delhi (IMD) - 3-minute reunion = RSMC La Reunion (MFLR) - 10 minute bom = Australian TCWCs (TCWC Perth/nDarwin/nBrisbane) - 10-minute nadi = RSMC Nadi (FMS) - 10 minute wellington = TCWC Wellington (NZMS) - 10-minute)
+    usa_poci (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: pressure in millibars of the last closed isobar/n900 - 1050 mb NOT BEST-TRACKED (not reanalyzed))
+    sid (Type: TEXT; Sample values: ['1903070S13057', '1903080S12057', '1903080S12057', '1903153N11127', '1903153N11127']; Description: Storm Identifier.)
+    td9636_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    neumann_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    newdelhi_grade (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Types of disturbances: Low pressure area W<17 knots D - Depression 17<=W<28 DD - Deep Depression 28<=W<34 CS - Cyclonic Storm 34<=W<48 SCS - Severe Cyclonic Storm 48<=W<64 VSCS - Very Severe Cyclonic Storm 64<=W<120 SCS - Super Cyclonic Storm W>=120 knots)
+    tokyo_r50_longitude (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The longest radius of 50kt winds or greater)
+    wmo_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cma_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Two-minute mean maximum sustained wind (MSW; m/s) near the TC center. WND = 9 indicates MSW < 10 m/s/nWND = 0 indicates unknown intensity)
+    iflag (Type: TEXT; Sample values: ['_________O____', '_____P____P___', '_____O________', '__________P___', '__________P___']; Description: Interpolation Flag A 14 character flag string which denotes the source of each agency's report: Interpolation Flags include: _ == missing reports. No information provided. O == original report as provided by the agency. P == position was interpolated (all variables were interpolated/filled/nincluding intensity) I == Position was provided/nbut Intensity variables (and likely other variables) were interpolated/filled V = Position and intensity variables are original but some variables were interpolated/filled. The order of the 14 characters refers to the following 14 datasets: 1 - USA Agency (see column 18) 2 - Tokyo 3 - CMA 4 - HKO 5 - NewDelhi 6 - Reunion 7 - BoM 8 - Nadi 9 - Wellington 10 - ds824 11 - TD9636 12 - TD9635 13 - Neumann Southern Hemisphere data set 14 - M.L. Chenoweth N Atlantic Historic dataset)
+    usa_roci (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: radius of the last closed isobar/n0 - 999 n mi. NOT BEST TRACKED (not reanalyzed))
+    bom_r34_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the mean radius (from the system centre) of the extent of winds; gale-force (17m/s) or above. The four sectors show the mean extent in the respective quadrant centred on the cardinal point. Southeast quadrant)
+    ds824_latitude (Type: FLOAT; Sample values: ['-29.3', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from DataSet 824 - A historic dataset with data from the 1800s through 1980(ish))
+    cma_cat (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Intensity category according to the Chinese National Standard for Grade of Tropical Cyclones (which has been used since 15 June 2006): 0 –– Weaker than Tropical Depression or unknown intensity; 1 –– Tropical Depression (TD: 10.8–17.1 m/s); 2 –– Tropical Storm (TS:17.2–24.4 m/s); 3 –– Severe Tropical Storm (STS: 24.5–32.6 m/s); 4 –– Typhoon (TY: 32.7–41.4 m/s); 5 –– Severe Typhoon (STY: 41.5–50.9 m/s); 6 –– Super Typhoon (SuperTY: ≥51.0 m/s); 9 –– Extratropical Cyclone (ET) stage.)
+    mlc_class (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Storm classification EX - Extratropical HU - Hurricane LO - Low MH SD - Subtropical depression SS - Subtropical storm TD - Tropical Depression TS - Tropical Storm TW WV - Open Wave)
+    bom_r34_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the mean radius (from the system centre) of the extent of winds; gale-force (17m/s) or above. The four sectors show the mean extent in the respective quadrant centred on the cardinal point. Southwest quadrant)
+    usa_agency (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: The agency file providing the information: The representative US agency data is derived from a hierarchical selection: the first dataset in the following list to provide information at the given time is used as the USA_agency: - HURDAT_ATL - HURSAT_EPA - ATCF (for NA and EP basins only) - JTWC_WP - JTWC_IO - JTWC_EP - JTWC_CP - JTWC_SH - CPHC [separate file provided by CPHC for years TBD] - tcvitals - THIS INDICATES THAT THE DATA ARE PRELIMINARY While these agencies are generally orthogonal/nthere are cases where a system is provided in more than one source. In this case/nthe report from the highest source is used. ATCF format info from: https://www.nrlmry.navy.mil/atcf_web/docs/database/new/abdeck.txt HURDAT2 info from: http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf)
+    name (Type: TEXT; Sample values: ['NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED']; Description: Name provided by the agency. IBTrACS ignores most names that include digits or abbreviations.)
+    td9635_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latitude from Dataset of a collection of western Pacific Storms (~1945-1976))
+    tokyo_r30_long (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The longest radius of 30kt winds or greater)
+    reunion_r64_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in northeastern quadrant)
+    bom_r34_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the mean radius (from the system centre) of the extent of winds; gale-force (17m/s) or above. The four sectors show the mean extent in the respective quadrant centred on the cardinal point. Northeast quadrant)
+    reunion_r64_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in southeastern quadrant)
+    bom_rmw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the mean radius (from the system centre) of the maximum mean wind.)
+    bom_r34_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the mean radius (from the system centre) of the extent of winds; gale-force (17m/s) or above. The four sectors show the mean extent in the respective quadrant centred on the cardinal point. Northwest quadrant)
+    reunion_type (Type: NUMBER; Sample values: ['nan', '99.0', '99.0', 'nan', 'nan']; Description: 01= tropics; disturbance ( no closed isobars)  02= <34 knot winds/n<17m/s winds and at least one closed isobar  03= 34-63 knots/n17-32m/s  04= >63 knots/n>32m/s  05= extratropical  06= dissipating  07= subtropical cyclone (nonfrontal/nlow pressure system that comprises  initially baroclinic circulation developing over subtropical water)  08= overland  09= unknown)
+    usa_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    reunion_r50_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in southeastern quadrant)
+    reunion_r64_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in southwestern quadrant)
+    reunion_r50_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in northeastern quadrant)
+    reunion_r50_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 50 kt wind radii maximum extent in southwestern quadrant)
+    reunion_r34_se (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 34 kt wind radii maximum extent in southeastern quadrant)
+    td9635_roci (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Size. (Radius of system))
+    reunion_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum average wind speed)
+    neumann_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ds824_stage (Type: TEXT; Sample values: ['TC', ' ', ' ', ' ', ' ']; Description: TC - Tropical cyclone)
+    tokyo_grade (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: <Grade> 1 : Not used  2 : Tropical Depression (TD)  3 : Tropical Storm (TS)  4 : Severe Tropical Storm (STS)  5 : Typhoon (TY)  6 : Extratropical Cyclone (L)  7 : Just entering into the responsible area of  Japan Meteorological Agency (JMA)  8 : Not used  9 : Tropical Cyclone of TS intensity or higher)
+    reunion_r34_ne (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 34 kt wind radii maximum extent in northeastern quadrant)
+    usa_record (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Record identifier (see notes below) C – Closest approach to a coast/nnot followed by a landfall G – Genesis I – An intensity peak in terms of both pressure and wind L – Landfall (center of system crossing a coastline) P – Minimum in central pressure R – Provides additional detail on the intensity of the cyclone when rapid changes are underway S – Change of status of the system T – Provides additional detail on the track (position) of the cyclone W – Maximum sustained wind speed)
+    reunion_r34_sw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 34 kt wind radii maximum extent in southwestern quadrant)
+    reunion_r64_nw (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 64 kt wind radii maximum extent in northwestern quadrant)
+    td9636_longitude (Type: FLOAT; Sample values: ['nan', '55.9572', 'nan', '126.9', '107.393']; Description: Longitude from Dataset of a collection of global storms (1842-1980))
+    mlc_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hko_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_wind (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the estimated maximum mean wind around the cyclone – that is in the vicinity of the centre.)
+    ds824_longitude (Type: FLOAT; Sample values: ['49.7', 'nan', 'nan', 'nan', 'nan']; Description: Longitude from DataSet 824 - A historic dataset with data from the 1800s through 1980(ish))
+    nature (Type: TEXT; Sample values: ['TS', 'NR', 'NR', 'NR', 'NR']; Description: Combined storm type. This is assigned based on all available storm types. They include: DS - Disturbance TS - Tropical ET - Extratropical SS - Subtropical NR - Not reported MX - Mixture (contradicting nature reports from different agencies))
+    source_url (Type: TEXT; Sample values: ['https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv', 'https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv', 'https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv', 'https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv', 'https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv']; Description: Source)
+    longitude (Type: FLOAT; Sample values: ['49.7', '56.1095', '59.7', '126.9', '107.393'])
+    tokyo_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    season (Type: TEXT; Sample values: ['1903', '1903', '1903', '1903', '1903'])
+    cma_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latitude from Chinese Meteorological Administration data from Shanghai Typhoon Institute)
+    etl_timestamp (Type: NUMBER; Sample values: ['1729218710034723', '1729218710034723', '1729218710034723', '1729218710034723', '1729218710034723']; Description: Load time for this data row)
+    iso_time (Type: NUMBER; Sample values: ['-2107512000000000', '-2107371600000000', '-2106237600000000', '-2101269600000000', '-2100826800000000']; Description: ISO Time provided in Universal Time Coordinates (UTC). Format is YYYY-MM-DD HH:mm:ss Most points are provided at 6 hour intervals. Some agencies provided 3 hour points (e.g./nNew Delhi) or times at important observations (e.g./nlandfall times in the North Atlantic/netc.).)
+    tokyo_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    newdelhi_dp (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hko_latitude (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Latitude from Hong Kong Observatory)
+    newdelhi_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    nadi_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latitude from Fiji Meteorological Service data from RSMC Hadi)
+    wellington_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latitude from Australian Bureau of Meterology)
+    td9635_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Dataset of a collection of western Pacific Storms (~1945-1976))
+    cma_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Chinese Meteorological Administration data from Shanghai Typhoon Institute)
+    newdelhi_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hko_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Hong Kong Observatory)
+    wellington_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_tnum (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_ci (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    newdelhi_ci (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Australian Bureau of Meterology)
+    tokyo_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Central pressure)
+    mlc_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latitude from Mike Chenoweth data with updated data for the North Atlantic for the 1800s.)
+    reunion_latitude (Type: FLOAT; Sample values: ['nan', '-12.7867', '-36.1', 'nan', 'nan'])
+    nadi_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Fiji Meteorological Service data from RSMC Hadi)
+    neumann_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    dist2land (Type: NUMBER; Sample values: ['539', '656', '1597', '122', '126']; Description: Distance to land from the current position. The land dataset includes all continents and any islands larger than XX. The distance is the nearest at the present time in any direction.)
+    mlc_longitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Longitude from Mike Chenoweth data with updated data for the North Atlantic for the 1800s.)
+    reunion_longitude (Type: FLOAT; Sample values: ['nan', '56.2618', '59.7', 'nan', 'nan'])
+    number (Type: NUMBER; Sample values: ['22', '23', '23', '25', '25']; Description: The cardinal number of the system for that season. The count includes all basins/nso this will not be continuous for basin files.)
+    newdelhi_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    usa_eye (Type: TEXT; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: eye diameter/n0 - 120 n mi. NOT BEST TRACKED (not reanalyzed))
+    newdelhi_poci (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    nadi_pressure (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    bom_roci (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The estimated mean radius of the outermost closed isobar (1-hPa spacing).)
+    tokyo_land (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: <Indicator of landfall or passage>  Landfall or passage over the Japanese islands occurred within  one hour after the time of the analysis with this indicator.)
+    reunion_tnum (Type: FLOAT; Sample values: ['nan', 'nan', '9.9', 'nan', 'nan']; Description: Dvorak T-number)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.NWS_FORECAST_REGIONS
+[
+    name (Type: TEXT; Sample values: ['Perkins', 'Butte', 'Bailey', 'Lamb', 'Hale'])
+    state (Type: TEXT; Sample values: ['SD', 'SD', 'TX', 'TX', 'TX'])
+    shortname (Type: TEXT; Sample values: ['Perkins', 'Butte', 'Bailey', 'Lamb', 'Hale'])
+    time_zone (Type: TEXT; Sample values: ['M', 'M', 'C', 'C', 'C'])
+    state_zone (Type: TEXT; Sample values: ['SD002', 'SD012', 'TX027', 'TX028', 'TX029'])
+    lat (Type: FLOAT; Sample values: ['45.4904', '44.9058', '34.0685', '34.0686', '34.0705'])
+    zone (Type: TEXT; Sample values: ['002', '012', '027', '028', '029'])
+    lon (Type: FLOAT; Sample values: ['-102.4759', '-103.5081', '-102.8298', '-102.3517', '-101.8269'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.METROPOLITAN_DIVISIONS
+[
+    name (Type: TEXT; Sample values: ['Boston, MA', 'Cambridge-Newton-Framingham, MA', 'Elgin, IL', 'Fort Worth-Arlington-Grapevine, TX', 'Dallas-Plano-Irving, TX'])
+    csa_code (Type: TEXT; Sample values: ['148', '148', '176', '206', '206'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3120', 'G3120', 'G3120', 'G3120', 'G3120'])
+    geo_id (Type: TEXT; Sample values: ['1446014454', '1446015764', '1698020994', '1910023104', '1910019124'])
+    lsad_code (Type: TEXT; Sample values: ['M3', 'M3', 'M3', 'M3', 'M3'])
+    cbsa_code (Type: TEXT; Sample values: ['14460', '14460', '16980', '19100', '19100'])
+    metdiv_code (Type: TEXT; Sample values: ['14454', '15764', '20994', '23104', '19124'])
+    lsad_name (Type: TEXT; Sample values: ['Boston, MA Metro Division', 'Cambridge-Newton-Framingham, MA Metro Division', 'Elgin, IL Metro Division', 'Fort Worth-Arlington-Grapevine, TX Metro Division', 'Dallas-Plano-Irving, TX Metro Division'])
+    metdiv_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x004\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\t...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00&d1\\xfb\\x06\\xb8Q\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc4\\xa6\\xdf\\xcf:\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb6r\\xe5\\xa2\\x90%...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x81\\x8ff\\xd1`bX\\x...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x008\\xeds\\xc6A\\\'X\\xc0...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_INTERNATIONAL_PORTS.WORLD_PORT_INDEX
+[
+    port_name (Type: TEXT; Sample values: ['SOUTHWEST PASS', 'DORALEH', 'PORT DE BECANCOUR', 'PORT BERINGOVSKY', 'ST ANDREWS EAST'])
+    index_number (Type: TEXT; Sample values: ['8822', '47855', '2200', '62635', '2340'])
+    port_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xcd\\xcc\\xcc\\xcc\\x...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x00\\xaa\\xaa\\xaa\\xaa\\x...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x89\\x88\\x88\\x88\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb9\\xbb\\xbb\\xbb\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00TUUUU\\x95R\\xc0\\x89...(truncated)"])
+    country (Type: TEXT; Sample values: ['US', 'DJ', 'CA', 'RU', 'CA'])
+    port_latitude (Type: FLOAT; Sample values: ['28.45', '11.6', '46.4', '63.066667', '45.566667'])
+    region_number (Type: TEXT; Sample values: ['8650', '47840', '1930', '62530', '2270'])
+    chart_number (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '1510'])
+    port_longitude (Type: FLOAT; Sample values: ['-90.7', '43.083333', '-72.383333', '179.366667', '-74.333333'])
+    port_of_entry (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    water (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    harbor_type (Type: TEXT; Sample values: ['RN', 'CN', 'RN', 'None', 'RN'])
+    harbor_size (Type: TEXT; Sample values: ['S', 'S', 'V', 'None', 'V'])
+    channel_depth (Type: TEXT; Sample values: ['None', 'None', 'K', 'None', 'P'])
+    cargo_pier_depth (Type: TEXT; Sample values: ['None', 'E', 'K', 'O', 'P'])
+    max_vessel_size (Type: TEXT; Sample values: ['M', 'L', 'M', 'None', 'None'])
+    cargo_anchor (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comms_phone (Type: BOOLEAN; Sample values: ['True', 'True', 'None', 'None', 'None'])
+    us_representative (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cargo_wharf (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'None', 'True'])
+    dry_dock_types (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    provisions (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    lift_0_24_tons (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    anchorage_depth (Type: TEXT; Sample values: ['None', 'None', 'K', 'E', 'P'])
+    publication_number (Type: TEXT; Sample values: ['CP05', '172', 'SCOR', '155', 'SCOR'])
+    cargo_oil_depth (Type: TEXT; Sample values: ['J', 'D', 'None', 'None', 'None'])
+    tide_range (Type: NUMBER; Sample values: ['0', '0', '0', '1', '0'])
+    degauss (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.CNECTA
+[
+    name (Type: TEXT; Sample values: ['Portland-Lewiston-South Portland, ME', 'Pittsfield-North Adams, MA-VT', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME', 'Lebanon-Claremont, NH-VT'])
+    geo_id (Type: TEXT; Sample values: ['775', '770', '715', '725'])
+    name_lsad (Type: TEXT; Sample values: ['Portland-Lewiston-South Portland, ME Combined NECTA', 'Pittsfield-North Adams, MA-VT Combined NECTA', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME Combined NECTA', 'Lebanon-Claremont, NH-VT Combined NECTA'])
+    cnecta_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.NATIONAL_OUTLINE
+[
+    name (Type: TEXT; Sample values: [])
+    geo_id (Type: TEXT; Sample values: [])
+    us_outline_geom (Type: BINARY; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.CSA
+[
+    name (Type: TEXT; Sample values: ['Birmingham-Hoover-Talladega, AL', 'Monroe-Ruston, LA', 'Burlington-Fort Madison-Keokuk, IA-IL-MO', 'Philadelphia-Reading-Camden, PA-NJ-DE-MD', 'Wausau-Stevens Point-Wisconsin Rapids, WI'])
+    geo_id (Type: TEXT; Sample values: ['142', '384', '161', '428', '554'])
+    csa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00t\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00{\\...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc7`j\\xf0\\xe3\\xaf...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x1f\\xa1fH\\x95\\rW\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x98\\xd1\\xd9\\x13\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00F\\xec\\x13@\\xb1\\xd2...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00m \\xb8%MpV\\xc0g\\x1...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.CBSA
+[
+    name (Type: TEXT; Sample values: ['Auburn, IN', 'Angola, IN', 'Grand Rapids-Kentwood, MI', 'Muskegon, MI', 'Big Rapids, MI'])
+    geo_id (Type: TEXT; Sample values: ['12140', '11420', '24340', '34740', '13660'])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xf3\\xbb\\x9f\\t\\x03...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x00\\xfeu\\xb8g\\\'@U\\xc0...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x1a\\x95\\x8a|\\xcdq...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xf0\\x87\\x9f\\xff\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xbbMn\\xcaKUU\\xc0d...(truncated)"])
+    cbsa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00]\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00F\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00F\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.STATES
+[
+    region_code (Type: TEXT; Sample values: ['9', '9', '1', '1', '1'])
+    state (Type: TEXT; Sample values: ['VI', 'AS', 'NH', 'NY', 'NJ'])
+    state_name (Type: TEXT; Sample values: ['United States Virgin Islands', 'American Samoa', 'New Hampshire', 'New York', 'New Jersey'])
+    geo_id (Type: TEXT; Sample values: ['78', '60', '33', '36', '34'])
+    state_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00hF...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x03\\x00\\x00\\x00g\\...(truncated)"])
+    state_gnis_code (Type: TEXT; Sample values: ['01802710', '01802701', '01779794', '01779796', '01779795'])
+    state_fips_code (Type: TEXT; Sample values: ['78', '60', '33', '36', '34'])
+    division_code (Type: TEXT; Sample values: ['0', '0', '1', '2', '2'])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb0\\x8d\\x1d\\xf9(>...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00t\\x7fPrbUe\\xc0\\x05...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\t\\x05\\xa5he\\xe5Q\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb0\\x00KS)\\xe6R\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xa3\\xd0\\r\\xa8\\x92...(truncated)"])
+    int_point_lat (Type: FLOAT; Sample values: ['18.326748', '-14.267159', '43.6726907', '42.9133974', '40.1072744'])
+    int_point_lon (Type: FLOAT; Sample values: ['-64.9712508', '-170.6682674', '-71.5843145', '-75.5962723', '-74.6652012'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.URBAN_AREAS
+[
+    name (Type: TEXT; Sample values: ['Oxnard, CA', 'Texas City, TX', 'Porterville, CA', 'Murrieta--Temecula--Menifee, CA', 'Lewiston, ID--WA'])
+    type (Type: TEXT; Sample values: ['U', 'U', 'U', 'U', 'U'])
+    geo_id (Type: TEXT; Sample values: ['66673', '87220', '71074', '60799', '49312'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.ZIP_CODES
+[
+    state_name (Type: TEXT; Sample values: ['Delaware', 'Wisconsin', 'New York', 'Pennsylvania', 'Maine'])
+    state_code (Type: TEXT; Sample values: ['DE', 'WI', 'NY', 'PA', 'ME'])
+    city (Type: TEXT; Sample values: ['Seaford city, Bridgeville town', 'Clam Lake CDP', 'Pottersville CDP', 'Earlville', 'Damariscotta CDP'])
+    zip_code (Type: TEXT; Sample values: ['19933', '54517', '12860', '19519', '04543'])
+    zip_code_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00>\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00~\\...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x96m\\xf1:\\xac\\xe7...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x10\\xec\\xf8/\\x90\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xdb\\xfbT\\x15\\x1aw...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xafG<4\\x07\\xefR\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00k4o\\x8bh_Q\\xc06\\x0...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.ADJACENT_STATES
+[
+    state (Type: TEXT; Sample values: ['AL', 'CO', 'CT', 'FL', 'GA'])
+    state_name (Type: TEXT; Sample values: ['Alabama', 'Colorado', 'Connecticut', 'Florida', 'Georgia'])
+    state_fips_code (Type: TEXT; Sample values: ['01', '08', '09', '12', '13'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.COASTLINE
+[
+    name (Type: TEXT; Sample values: ['Atlantic', 'Atlantic', 'Atlantic', 'Atlantic', 'Atlantic'])
+    coastline_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00.\\x00\\x00\\x00\\xcdx...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\r\\x00\\x00\\x00\\xe9...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x0b\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.ADJACENT_COUNTIES
+[
+    state (Type: TEXT; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.RAILWAYS
+[
+    full_name (Type: TEXT; Sample values: ['Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR'])
+    railway_geom (Type: TEXT; Sample values: ['{"type":"LineString","coordinates":[[-85.756163,30.789894],[-85.749904,30.79131299999999],[-85.74871499999999,30.79155899999999],[-85.74010599999998,30.79322499999998],[-85.73695699999999,30.793934],[-85.736812,30.79396699999999],[-85.73513699999999,30.79429],[-85.73469899999999,30.79452799999998],[-85.730451,30.79541499999998],[-85.72664999999999,30.79618299999999],[-85.72593499999999,30.79632699999999],[-85.72435899999999,30.79647599999999],[-85.72298599999999,30.79634799999999],[-85.72159299999998,30.79626999999998],[-85.71938999999999,30.79606399999999],[-85.71445399999998,30.79571999999998],[-85.712805,30.79557799999998],[-85.70494399999998,30.79490399999998],[-85.70237899999999,30.794684],[-85.69897499999999,30.79436199999998],[-85.69579699999998,30.79413699999998],[-85.69317199999999,30.79394299999998],[-85.69315299999998,30.79394199999999],[-85.69268699999999,30.79390899999998],[-85.687477,30.79337899999999],[-85.687269,30.793357],[-85.68602199999999,30.79321999999999],[-85.685...(truncated)', '{"type":"LineString","coordinates":[[-86.88663299999998,41.08432899999999],[-86.886527,41.08253899999999],[-86.886476,41.08166599999999],[-86.88644599999999,41.08072599999999],[-86.886437,41.07983],[-86.88639599999999,41.07893699999999],[-86.88622399999998,41.07485499999998],[-86.88606099999998,41.07129199999998],[-86.88602699999998,41.06489099999999],[-86.88579099999998,41.056159],[-86.88535499999999,41.04620599999999],[-86.885333,41.04552899999999],[-86.88475499999999,41.02705999999999],[-86.884726,41.026021],[-86.88431199999999,41.01562399999999],[-86.884151,41.01248199999999],[-86.88374499999999,41.00551399999999],[-86.88369799999999,41.00463699999999],[-86.88366399999999,41.00250899999999],[-86.88362899999999,41.000039],[-86.88325299999999,40.99828799999999],[-86.88332599999998,40.99808499999999],[-86.88297,40.988005],[-86.882913,40.98750499999999]]}', '{"type":"LineString","coordinates":[[-86.794476,36.165807],[-86.79449199999999,36.16579999999999],[-86.79454199999999,36.16577999999999],[-86.79455899999999,36.16577399999999],[-86.79458799999999,36.16576099999999],[-86.794674,36.16572199999999],[-86.79470399999998,36.16570999999999],[-86.79480799999998,36.165666],[-86.79512099999998,36.165537],[-86.79522599999998,36.16549499999998],[-86.79533299999998,36.16545099999999],[-86.79543699999999,36.16540899999999],[-86.79565399999998,36.16531899999999],[-86.79576199999998,36.16527599999999],[-86.79597599999998,36.165182],[-86.79661799999998,36.16490199999999],[-86.79683299999999,36.16480899999999]]}', '{"type":"LineString","coordinates":[[-87.35840199999998,41.20486899999999],[-87.35764999999999,41.20382199999999],[-87.35670199999998,41.20250199999999],[-87.35539299999999,41.200682],[-87.354641,41.19963599999999],[-87.35401299999998,41.19875899999999],[-87.35212899999999,41.196131],[-87.35150199999998,41.19525499999999],[-87.35119999999999,41.19482899999999],[-87.35029399999999,41.193553],[-87.349992,41.193128]]}', '{"type":"LineString","coordinates":[[-87.60019599999998,37.846997],[-87.59918799999998,37.84662199999999]]}'])
+    geo_id (Type: NUMBER; Sample values: ['11094844118', '110168314233', '110230920977', '110343201289', '110456908546'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.COUNTIES
+[
+    county_name (Type: TEXT; Sample values: ['Price', 'Forest', 'Green Lake', 'Clark', 'Rusk'])
+    geo_id (Type: TEXT; Sample values: ['55099', '55041', '55047', '55019', '55107'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_PORTS.GEO_US_BOUNDARIES.CONGRESS_DISTRICT_116
+[
+    geo_id (Type: TEXT; Sample values: ['0624', '4825', '1225', '0625', '4826'])
+]
+**Some other tables have the similar structure: [GEO_US_BOUNDARIES.CONGRESS_DISTRICT_115]**
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+
+
+# Requirements
+
+The following shows the SQL operations you must perform. Please implement the corresponding functionality in your SQL code according to the description.
+
+## `nautical_miles_conversion`
+
+### Description
+Converts nautical miles to statute miles by multiplying the input nautical miles by a fixed conversion factor. This operation is commonly used in geographic analysis to convert marine-based distances into land-based measurements, which are more widely used in logistics and mapping.
+
+### SQL Definition
+```sql
+nautical_miles_conversion(input_nautical_miles FLOAT64)
+AS (
+  input_nautical_miles * 1.15078
+);
+```
+
+## `azimuth_to_geog_point`
+
+### Description
+Calculates a geographic point based on input latitude and longitude, an azimuth, and a distance. This operation is particularly useful for spatial analyses that require generating new locations based on directional and distance parameters from a given point.
+
+### Mathematical Operation
+Employs trigonometric calculations to determine new geographic coordinates, accounting for Earth's curvature. The operation adjusts direction (azimuth) and distance from degrees and nautical miles to radians and kilometers respectively.
+
+### SQL Definition
+```sql
+SELECT
+  ST_MAKEPOINT(
+    57.2958 * (
+      input_lon * (3.14159 / 180) + ATAN2(
+        SIN(azimuth * (3.14159 / 180)) * SIN(distance * 1.61 / 6378.1) * COS(input_lat * (3.14159 / 180)),
+        COS(distance * 1.61 / 6378.1) - SIN(input_lat * (3.14159 / 180)) * SIN(
+          57.2958 * ASIN(
+            SIN(input_lat * (3.14159 / 180)) * COS(distance * 1.61 / 6378.1) +
+            COS(input_lat * (3.14159 / 180)) * SIN(distance * 1.61 / 6378.1) * COS(azimuth * (3.14159 / 180))
+          )
+        )
+      )
+    ),
+    57.2958 * ASIN(
+      SIN(input_lat * (3.14159 / 180)) * COS(distance * 1.61 / 6378.1) +
+      COS(input_lat * (3.14159 / 180)) * SIN(distance * 1.61 / 6378.1) * COS(azimuth * (3.14159 / 180))
+    )
+  ) AS destination_point
+FROM
+  your_table;
+```
+
+
+
+
+# Functions
+
+You should use the following built-in Snowflake functions.
+
+
+## ST_WITHIN
+
+Returns true if the first geospatial object is fully contained by the second geospatial object. In other words:
+
+The first GEOGRAPHY object g1 is fully contained by the second GEOGRAPHY object g2.
+The first GEOMETRY object g1 is fully contained by the second GEOMETRY object g2.
+
+Calling ST_WITHIN(g1, g2) is equivalent to calling ST_CONTAINS(g2, g1).
+Although ST_COVEREDBY and ST_WITHIN might seem similar, the two functions have subtle differences. For details on the differences between “covered by” and “within”, see the Dimensionally Extended 9-Intersection Model (DE-9IM).
+
+Note This function does not support using a GeometryCollection or FeatureCollection as input values.
+
+Tip You can use the search optimization service to improve the performance of queries that call this function.
+For details, see Search Optimization Service.
+
+See also:ST_CONTAINS , ST_COVEREDBY
+
+
+## Syntax
+
+ST_WITHIN( <geography_expression_1> , <geography_expression_2> )
+
+ST_WITHIN( <geometry_expression_1> , <geometry_expression_2> )
+
+
+## Arguments
+
+
+geography_expression_1A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geography_expression_2A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_1A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_2A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+
+## Returns
+
+BOOLEAN.
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+This shows a simple use of the ST_WITHIN function:
+
+create table geospatial_table_01 (g1 GEOGRAPHY, g2 GEOGRAPHY);
+insert into geospatial_table_01 (g1, g2) values 
+    ('POLYGON((0 0, 3 0, 3 3, 0 3, 0 0))', 'POLYGON((1 1, 2 1, 2 2, 1 2, 1 1))');
+
+Copy SELECT ST_WITHIN(g1, g2) 
+    FROM geospatial_table_01;
++-------------------+
+| ST_WITHIN(G1, G2) |
+|-------------------|
+| False             |
++-------------------+
+
+
+
+
+## ST_MAKELINE
+
+Constructs a GEOGRAPHY or GEOMETRY object that represents a line connecting the points in the input objects.
+
+See also:TO_GEOGRAPHY , TO_GEOMETRY
+
+
+## Syntax
+
+ST_MAKELINE( <geography_expression_1> , <geography_expression_2> )
+
+ST_MAKELINE( <geometry_expression_1> , <geometry_expression_2> )
+
+
+## Arguments
+
+
+geography_expression_1A GEOGRAPHY object containing the points to connect. This object must be a Point, MultiPoint, or LineString.
+
+geography_expression_2A GEOGRAPHY object containing the points to connect. This object must be a Point, MultiPoint, or LineString.
+
+geometry_expression_1A GEOMETRY object containing the points to connect. This object must be a Point, MultiPoint, or LineString.
+
+geometry_expression_2A GEOMETRY object containing the points to connect. This object must be a Point, MultiPoint, or LineString.
+
+
+## Returns
+
+The function returns a value of type GEOGRAPHY or GEOMETRY. The value is a LineString that connects all of the points specified by the input GEOGRAPHY or GEOMETRY objects.
+
+## Usage notes
+
+
+If an input GEOGRAPHY object contains multiple points, ST_MAKELINE connects all of the points specified in the object.
+ST_MAKELINE connects the points in the order in which they are specified in the input.
+
+For GEOMETRY objects, the function reports an error if the two input GEOMETRY objects have different SRIDs.
+
+For GEOMETRY objects, the returned GEOMETRY object has the same SRID as the input.
+
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+The examples in this section display output in WKT format:
+
+alter session set GEOGRAPHY_OUTPUT_FORMAT='WKT';
+
+
+The following example uses ST_MAKELINE to construct a LineString that connects two Points:
+
+SELECT ST_MAKELINE(
+                   TO_GEOGRAPHY('POINT(37.0 45.0)'),
+                   TO_GEOGRAPHY('POINT(38.5 46.5)')
+                  ) AS line_between_two_points;
++-----------------------------+
+| LINE_BETWEEN_TWO_POINTS     |
+|-----------------------------|
+| LINESTRING(37 45,38.5 46.5) |
++-----------------------------+
+
+
+The following example constructs a LineString that connects a Point with the points in a MultiPoint:
+
+SELECT ST_MAKELINE(
+                   TO_GEOGRAPHY('POINT(-122.306067 37.55412)'),
+                   TO_GEOGRAPHY('MULTIPOINT((-122.32328 37.561801), (-122.325879 37.586852))')
+                  ) AS line_between_point_and_multipoint;
++-----------------------------------------------------------------------------+
+| LINE_BETWEEN_POINT_AND_MULTIPOINT                                           |
+|-----------------------------------------------------------------------------|
+| LINESTRING(-122.306067 37.55412,-122.32328 37.561801,-122.325879 37.586852) |
++-----------------------------------------------------------------------------+
+
+
+As demonstrated by the output of the example, ST_MAKELINE connects the points in the order in which they are specified in the input.
+The following example constructs a LineString that connects the points in a MultiPoint with another LineString:
+
+SELECT ST_MAKELINE(
+                   TO_GEOGRAPHY('MULTIPOINT((-122.32328 37.561801), (-122.325879 37.586852))'),
+                   TO_GEOGRAPHY('LINESTRING(-122.306067 37.55412, -122.496691 37.495627)')
+                  ) AS line_between_multipoint_and_linestring;
++---------------------------------------------------------------------------------------------------+
+| LINE_BETWEEN_MULTIPOINT_AND_LINESTRING                                                            |
+|---------------------------------------------------------------------------------------------------|
+| LINESTRING(-122.32328 37.561801,-122.325879 37.586852,-122.306067 37.55412,-122.496691 37.495627) |
++---------------------------------------------------------------------------------------------------+
+
+
+
+## GEOMETRY examples
+
+The examples in this section display output in WKT format:
+
+ALTER SESSION SET GEOMETRY_OUTPUT_FORMAT='WKT';
+
+
+The first example constructs a line between two Points:
+
+SELECT ST_MAKELINE(
+  TO_GEOMETRY('POINT(1.0 2.0)'),
+  TO_GEOMETRY('POINT(3.5 4.5)')) AS line_between_two_points;
+
++-------------------------+
+| LINE_BETWEEN_TWO_POINTS |
+|-------------------------|
+| LINESTRING(1 2,3.5 4.5) |
++-------------------------+
+
+
+The next example demonstrates creating a LineString that connects points in a MultiPoint with a Point
+
+SELECT ST_MAKELINE(
+  TO_GEOMETRY('POINT(1.0 2.0)'),
+  TO_GEOMETRY('MULTIPOINT(3.5 4.5, 6.1 7.9)')) AS line_from_point_and_multipoint;
+
++---------------------------------+
+| LINE_FROM_POINT_AND_MULTIPOINT  |
+|---------------------------------|
+| LINESTRING(1 2,3.5 4.5,6.1 7.9) |
++---------------------------------+
+
+
+The following example constructs a LineString that connects the points in a MultiPoint with another LineString:
+
+SELECT ST_MAKELINE(
+  TO_GEOMETRY('LINESTRING(1.0 2.0, 10.1 5.5)'),
+  TO_GEOMETRY('MULTIPOINT(3.5 4.5, 6.1 7.9)')) AS line_from_linestring_and_multipoint;
+
++------------------------------------------+
+| LINE_FROM_LINESTRING_AND_MULTIPOINT      |
+|------------------------------------------|
+| LINESTRING(1 2,10.1 5.5,3.5 4.5,6.1 7.9) |
++------------------------------------------+
+
+
+
+
+
+
+
+## ST_MAKEPOLYGON , ST_POLYGON
+
+Constructs a GEOGRAPHY or GEOMETRY object that represents a Polygon without holes. The function uses the specified LineString as the outer loop.
+This function corrects the orientation of the loop to prevent the creation of Polygons that span more than half of the globe. In contrast, ST_MAKEPOLYGONORIENTED does not attempt to correct the orientation of the loop.
+
+See also:TO_GEOGRAPHY , TO_GEOMETRY , ST_MAKEPOLYGONORIENTED
+
+
+## Syntax
+
+ST_MAKEPOLYGON( <geography_or_geometry_expression> )
+
+
+## Arguments
+
+
+geography_or_geometry_expressionA GEOGRAPHY or GEOMETRY object that represents a LineString in which the last point is the same as the first (i.e. a loop).
+
+
+## Returns
+
+The function returns a value of type GEOGRAPHY or GEOMETRY.
+
+## Usage notes
+
+
+The lines of the Polygon must form a loop. In other words, the last Point in the sequence of Points defining the LineString must be the same Point as the first Point in the sequence.
+ST_POLYGON is an alias for ST_MAKEPOLYGON.
+
+For GEOMETRY objects, the returned GEOMETRY object has the same SRID as the input.
+
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+This shows a simple use of the ST_MAKEPOLYGON function. The sequence of points below defines a geodesic rectangular area 1 degree wide and 2 degrees high, with the lower left corner of the polygon starting at the equator (latitude) and Greenwich (longitude). The last point in the sequence is the same as the first point,
+which completes the loop.
+
+SELECT ST_MAKEPOLYGON(
+   TO_GEOGRAPHY('LINESTRING(0.0 0.0, 1.0 0.0, 1.0 2.0, 0.0 2.0, 0.0 0.0)')
+   ) AS polygon1;
++--------------------------------+
+| POLYGON1                       |
+|--------------------------------|
+| POLYGON((0 0,1 0,1 2,0 2,0 0)) |
++--------------------------------+
+
+
+
+## GEOMETRY examples
+
+This shows a simple use of the ST_MAKEPOLYGON function.
+
+SELECT ST_MAKEPOLYGON(
+  TO_GEOMETRY('LINESTRING(0.0 0.0, 1.0 0.0, 1.0 2.0, 0.0 2.0, 0.0 0.0)')
+  ) AS polygon;
+
++--------------------------------+
+| POLYGON                        |
+|--------------------------------|
+| POLYGON((0 0,1 0,1 2,0 2,0 0)) |
++--------------------------------+

@@ -1,0 +1,419 @@
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_EPITHELIAL_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['0.2110166996717453', '0.3867887258529663', '0.995927631855011', '0.2218872457742691', '0.6146907806396484']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['72792.0', '37287.0', '11530.0', '68959.0', '21582.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['7993', '8577', '8320', '8320', '7993']; Description: Index to gene IDs)
+    assay (Type: TEXT; Sample values: ["10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2"]; Description: An assay based on 10X Genomics. Example : 100x3’ v2)
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    log1p_total_counts (Type: FLOAT; Sample values: ['11.195375442504883', '10.526427268981934', '9.352794647216797', '11.141282081604004', '9.979660987854004']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    log1p_n_genes_by_counts (Type: FLOAT; Sample values: ['8.973731569708402', '8.50086053679534', '7.8160138391590275', '8.955060950631902', '7.9391588179567965']; Description: Log (N+1) on the number of genes)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    batch (Type: TEXT; Sample values: ['RU1057_T', 'RU1057_T', 'RU1057_T', 'RU1057_T', 'RU1057_T']; Description: Sample ID)
+    n_genes_by_counts (Type: NUMBER; Sample values: ['7892', '4918', '2479', '7746', '2804']; Description: Number of genes detected in a given cell)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    feature_name (Type: TEXT; Sample values: ['GYPC', 'HTRA3', 'HLF', 'HLF', 'GYPC']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_1002', 'HTA8_1002', 'HTA8_1002', 'HTA8_1002', 'HTA8_1002']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    donor_id (Type: TEXT; Sample values: ['RU1057', 'RU1057', 'RU1057', 'RU1057', 'RU1057']; Description: Identifies a unique individual that data were derived from)
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000066', 'CL:0000066', 'CL:0000646', 'CL:0000066', 'CL:0000160']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_EPITHELIAL_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['2.677480459213257', '0.9017574191093445', '2.276872158050537', '1.0255203247070312', '0.7213045358657837']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    NEUROD_genes (Type: FLOAT; Sample values: ['0.0008780674543231726', '0.0003169473784510046', '0.001326467376202345', '0.000799063011072576', '0.0007508181151933968']; Description: Average expression of all NEUROD genes)
+    iVar (Type: NUMBER; Sample values: ['13008', '13008', '13008', '13008', '13008']; Description: Index to gene IDs)
+    total_counts (Type: FLOAT; Sample values: ['1525.0', '9479.0', '2140.0', '23842.0', '12689.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    assay (Type: TEXT; Sample values: ["10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2"]; Description: An assay based on 10X Genomics. Example : 100x3’ v2)
+    log1p_n_genes_by_counts (Type: FLOAT; Sample values: ['6.684611727667927', '7.982416346827733', '7.146772179452637', '8.562357743370612', '8.173857454773621']; Description: Log (N+1) on the number of genes per cell)
+    log1p_total_counts (Type: FLOAT; Sample values: ['7.330405235290527', '9.156939506530762', '7.669028282165527', '10.079245567321777', '9.448569297790527']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_2005_3', 'HTA8_2005_3', 'HTA8_2005_3', 'HTA8_2005_3', 'HTA8_2005_3']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    batch (Type: TEXT; Sample values: ['RU1108a_RPMI', 'RU1108a_RPMI', 'RU1108a_RPMI', 'RU1108a_RPMI', 'RU1108a_RPMI']; Description: Sample ID)
+    n_genes_by_counts (Type: FLOAT; Sample values: ['799.0', '2928.0', '1269.0', '5230.0', '3546.0']; Description: Number of genes detected in a given cell)
+    donor_id (Type: TEXT; Sample values: ['RU1108', 'RU1108', 'RU1108', 'RU1108', 'RU1108']; Description: Identifies a unique individual that data were derived from)
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    feature_name (Type: TEXT; Sample values: ['NSMCE1', 'NSMCE1', 'NSMCE1', 'NSMCE1', 'NSMCE1']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_2005', 'HTA8_2005', 'HTA8_2005', 'HTA8_2005', 'HTA8_2005']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000141', 'HsapDv:0000141', 'HsapDv:0000141', 'HsapDv:0000141', 'HsapDv:0000141']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_NSCLC_EPITHELIAL_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['2.026764154434204', '2.026764154434204', '1.304194450378418', '1.9777988195419312', '1.304194450378418']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['1729.0', '1729.0', '3618.0', '3618.0', '3618.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['17263', '3469', '9212', '20377', '24069']; Description: Index to gene IDs)
+    log1p_n_genes_by_counts (Type: FLOAT; Sample values: ['6.261491684321042', '6.261491684321042', '7.007600613951853', '7.007600613951853', '7.007600613951853']; Description: Log (N+1) on the number of genes per cell)
+    assay (Type: TEXT; Sample values: ["10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2", "10x 3' v2"]; Description: An assay based on 10X Genomics. Example : 100x3’ v2)
+    log1p_total_counts (Type: FLOAT; Sample values: ['7.45587682723999', '7.45587682723999', '8.193952560424805', '8.193952560424805', '8.193952560424805']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    batch (Type: TEXT; Sample values: ['RU1038_Sort-Freeze', 'RU1038_Sort-Freeze', 'RU1038_Sort-Freeze', 'RU1038_Sort-Freeze', 'RU1038_Sort-Freeze']; Description: Sample ID)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0005006', 'CL:0005006', 'CL:0005006', 'CL:0005006', 'CL:0005006']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_1001', 'HTA8_1001', 'HTA8_1001', 'HTA8_1001', 'HTA8_1001']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    donor_id (Type: TEXT; Sample values: ['RU1038', 'RU1038', 'RU1038', 'RU1038', 'RU1038']; Description: Identifies a unique individual that data were derived from)
+    feature_name (Type: TEXT; Sample values: ['C2orf49-DT', 'CFDP1', 'ITSN2', 'SFTA3_ENSG00000229415', 'DYNC2I1']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_RU1215_EPITHELIAL_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['3.8289310932159424', '3.8289310932159424', '4.777256488800049', '5.750708103179932', '5.344574928283691']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    iVar (Type: NUMBER; Sample values: ['1839', '1327', '12851', '21498', '20817']; Description: Index to gene IDs)
+    total_counts (Type: FLOAT; Sample values: ['1242.0', '1242.0', '1242.0', '1242.0', '1242.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    log1p_n_genes_by_counts (Type: FLOAT; Sample values: ['6.52795791762255', '6.52795791762255', '6.52795791762255', '6.52795791762255', '6.52795791762255']; Description: Log (N+1) on the number of genes per cell)
+    assay (Type: TEXT; Sample values: ["10x 3' v3", "10x 3' v3", "10x 3' v3", "10x 3' v3", "10x 3' v3"]; Description: An assay based on 10X Genomics. Example : 100x3’ v2)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    log1p_total_counts (Type: FLOAT; Sample values: ['7.125283241271973', '7.125283241271973', '7.125283241271973', '7.125283241271973', '7.125283241271973']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    batch (Type: TEXT; Sample values: ['RU1215', 'RU1215', 'RU1215', 'RU1215', 'RU1215']; Description: Sample ID)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    feature_name (Type: TEXT; Sample values: ['ARL14EP', 'AMD1', 'NOP58', 'SRSF7', 'SLC38A2']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009922', 'EFO:0009922', 'EFO:0009922', 'EFO:0009922', 'EFO:0009922']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_2012', 'HTA8_2012', 'HTA8_2012', 'HTA8_2012', 'HTA8_2012']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    donor_id (Type: TEXT; Sample values: ['RU1215', 'RU1215', 'RU1215', 'RU1215', 'RU1215']; Description: Identifies a unique individual that data were derived from)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_COMBINED_SAMPLES_CURRENT
+[
+    X_VALUE (Type: FLOAT; Sample values: ['0.20909276604652405', '0.15269240736961365', '0.7849897146224976', '0.6463292837142944', '1.2171356678009033']; Description: Expression value for a given gene and cell)
+    SEX (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    NGENES (Type: NUMBER; Sample values: ['5237', '5808', '4995', '4627', '4981']; Description: Number of genes detected in a given cell)
+    IVAR (Type: NUMBER; Sample values: ['14255', '12616', '4046', '6405', '8057']; Description: Index to gene IDs)
+    LIBSIZE (Type: FLOAT; Sample values: ['4.526688098907471', '4.671875953674316', '4.337638854980469', '4.444638252258301', '4.442636489868164']; Description: Log (N+1) on the number of gene expression counts (reads mapped) for a given cell)
+    SEX_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    ASSAY (Type: TEXT; Sample values: ["10x 3' v3", "10x 3' v3", "10x 3' v3", "10x 3' v3", "10x 3' v3"]; Description: An assay based on 10X Genomics. Example : 100x3’ v2)
+    TISSUE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    HTAN_BIOSPECIMEN_ID (Type: TEXT; Sample values: ['HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1', 'HTA8_2012_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    DISEASE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    ORGANISM_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    HTAN_PARTICIPANT_ID (Type: TEXT; Sample values: ['HTA8_2012', 'HTA8_2012', 'HTA8_2012', 'HTA8_2012', 'HTA8_2012']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    FEATURE_NAME (Type: TEXT; Sample values: ['RGS4', 'PER1', 'CTBP2', 'FLOT1', 'IFITM3']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    CELL_TYPE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066', 'CL:0000066']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    DEVELOPMENT_STAGE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169', 'HsapDv:0000169']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    DONOR_ID (Type: TEXT; Sample values: ['RU1215', 'RU1215', 'RU1215', 'RU1215', 'RU1215']; Description: Identifies a unique individual that data were derived from)
+    SELF_REPORTED_ETHNICITY_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    ASSAY_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['EFO:0009922', 'EFO:0009922', 'EFO:0009922', 'EFO:0009922', 'EFO:0009922']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_MYELOID_SCLC_SAMPLES_ONLY_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.179219365119934', '1.8192939758300781', '1.8192939758300781', '1.179219365119934', '1.8192939758300781']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['14329.0', '14329.0', '14329.0', '14329.0', '14329.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['4853', '12747', '5655', '8341', '14379']; Description: Index to gene IDs)
+    IPF_a1 (Type: FLOAT; Sample values: ['-0.8979912671377812', '-0.8979912671377812', '-0.8979912671377812', '-0.8979912671377812', '-0.8979912671377812']; Description: Z-score of the gene signature for idiopathic pulmonary fibrosis (IPF) archetype 1)
+    feature_name (Type: TEXT; Sample values: ['DHDDS', 'PHPT1', 'ERGIC1', 'IRAK2', 'RNF114']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000163', 'HsapDv:0000163', 'HsapDv:0000163', 'HsapDv:0000163', 'HsapDv:0000163']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    donor_id (Type: TEXT; Sample values: ['PleuralEffusion', 'PleuralEffusion', 'PleuralEffusion', 'PleuralEffusion', 'PleuralEffusion']; Description: Free-text identifier that distinguishes the unique individual that data were derived from)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_2001_1', 'HTA8_2001_1', 'HTA8_2001_1', 'HTA8_2001_1', 'HTA8_2001_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000990', 'CL:0000990', 'CL:0000990', 'CL:0000990', 'CL:0000990']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_2001', 'HTA8_2001', 'HTA8_2001', 'HTA8_2001', 'HTA8_2001']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175', 'UBERON:0000175']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_TCELL_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['3.44638729095459', '4.374576091766357', '3.44638729095459', '2.8752169609069824', '3.4425013065338135']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['1010.0', '1013.0', '1010.0', '1578.0', '1013.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['24441', '24440', '1743', '1709', '1855']; Description: Index to gene IDs)
+    log1p_total_counts (Type: FLOAT; Sample values: ['6.918695449829102', '6.921658039093018', '6.918695449829102', '7.364546775817871', '6.921658039093018']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_1002', 'HTA8_1002', 'HTA8_1002', 'HTA8_1002', 'HTA8_1002']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000798', 'CL:0000492', 'CL:0000798', 'CL:0000492', 'CL:0000492']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    donor_id (Type: TEXT; Sample values: ['RU1057', 'RU1057', 'RU1057', 'RU1057', 'RU1057']; Description: Identifies a unique individual that data were derived from)
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    feature_name (Type: TEXT; Sample values: ['ZFP36L1', 'ZFP36', 'ARFGAP2', 'APPL1', 'ARL6IP1']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_MESENCHYMAL_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.4570614099502563', '0.9051528573036194', '0.9051528573036194', '0.9051528573036194', '0.9051528573036194']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['6424.0', '6424.0', '6424.0', '6424.0', '6424.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['4145', '2792', '3060', '21960', '22675']; Description: Index to gene IDs)
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    feature_name (Type: TEXT; Sample values: ['CRBN', 'CASP4', 'CCNY', 'TBC1D1', 'TMEM91']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_1001', 'HTA8_1001', 'HTA8_1001', 'HTA8_1001', 'HTA8_1001']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1', 'HTA8_1001_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    donor_id (Type: TEXT; Sample values: ['RU1038', 'RU1038', 'RU1038', 'RU1038', 'RU1038']; Description: Identifies a unique individual that data were derived from)
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210', 'HsapDv:0000210']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000115', 'CL:0000115', 'CL:0000115', 'CL:0000115', 'CL:0000115']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_IMMUNE_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['2.891124725341797', '2.822798252105713', '2.8642172813415527', '4.716137886047363', '3.224541187286377']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['3278.0', '3155.0', '2994.0', '6165.0', '2756.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['1837', '2109', '2154', '2254', '2254']; Description: Index to gene IDs)
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000236', 'CL:0000236', 'CL:0000236', 'CL:0000236', 'CL:0000236']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433', 'MONDO:0008433']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    donor_id (Type: TEXT; Sample values: ['RU1066', 'RU1066', 'RU1066', 'RU1066', 'RU1066']; Description: Identifies a unique individual that data were derived from)
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_2003', 'HTA8_2003', 'HTA8_2003', 'HTA8_2003', 'HTA8_2003']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_2003_1', 'HTA8_2003_1', 'HTA8_2003_1', 'HTA8_2003_1', 'HTA8_2003_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    feature_name (Type: TEXT; Sample values: ['ARL13B', 'ATP6V1A', 'AUP1', 'BASP1', 'BASP1']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_IMMUNE_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['4.170470237731934', '5.489410400390625', '4.619700908660889', '3.498080015182495', '4.172789573669434']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['588.0', '683.0', '424.0', '971.0', '587.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['15027', '15164', '15164', '15035', '15059']; Description: Index to gene IDs)
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    log1p_total_counts (Type: FLOAT; Sample values: ['6.3784260749816895', '6.527957916259766', '6.052089214324951', '6.8793559074401855', '6.376727104187012']; Description: Log (N+1) on the number of gene expression counts (UMIs mapped) for a given cell)
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168', 'HsapDv:0000168']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_3001', 'HTA8_3001', 'HTA8_3001', 'HTA8_3001', 'HTA8_3001']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    donor_id (Type: TEXT; Sample values: ['RU675', 'RU675', 'RU675', 'RU675', 'RU675']; Description: Identifies a unique individual that data were derived from)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000461', 'PATO:0000461', 'PATO:0000461', 'PATO:0000461', 'PATO:0000461']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    feature_name (Type: TEXT; Sample values: ['PTK2B', 'RAB11FIP1', 'RAB11FIP1', 'PTP4A2', 'PTPRC']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_3001_1', 'HTA8_3001_1', 'HTA8_3001_1', 'HTA8_3001_1', 'HTA8_3001_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0008', 'HANCESTRO:0008', 'HANCESTRO:0008', 'HANCESTRO:0008', 'HANCESTRO:0008']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000763', 'CL:0000763', 'CL:0000084', 'CL:0000763', 'CL:0000763']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_MSK_SCLC_MYELOID_CELLS_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['5.837432861328125', '8.139034271240234', '6.824762344360352', '4.220073223114014', '6.615995407104492']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    total_counts (Type: FLOAT; Sample values: ['236.0', '236.0', '236.0', '672.0', '166.0']; Description: Total number of gene expression counts (or UMIs mapped) for a given cell)
+    iVar (Type: NUMBER; Sample values: ['14180', '14225', '13952', '13603', '13447']; Description: Index to gene IDs)
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899', 'EFO:0009899']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA8_1002', 'HTA8_1002', 'HTA8_1002', 'HTA8_1003', 'HTA8_1003']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000775', 'CL:0000775', 'CL:0000775', 'CL:0000775', 'CL:0000775']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061', 'MONDO:0005061']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048', 'UBERON:0002048']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    feature_name (Type: TEXT; Sample values: ['PKM', 'PLAUR', 'PFDN5', 'PAPOLA', 'OST4']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000161', 'HsapDv:0000170', 'HsapDv:0000170']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1002_1', 'HTA8_1003_1', 'HTA8_1003_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    donor_id (Type: TEXT; Sample values: ['RU1057', 'RU1057', 'RU1057', 'RU1061', 'RU1061']; Description: Identifies a unique individual that data were derived from)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_HTAN_DIS_EPI_CELLXGENE_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['-0.10706587135791779', '-0.10706587135791779', '-0.10706587135791779', '-0.10706587135791779', '-0.10706587135791779']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['male', 'male', 'male', 'male', 'male']; Description: Phenotypic sex)
+    iVar (Type: NUMBER; Sample values: ['2644', '2644', '2644', '2644', '2644']; Description: Index to gene IDs)
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000160', 'CL:0000160', 'CL:0000160', 'CL:0000160', 'CL:0000160']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    feature_name (Type: TEXT; Sample values: ['AR', 'AR', 'AR', 'AR', 'AR']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0001157', 'UBERON:0001157', 'UBERON:0001157', 'UBERON:0001157', 'UBERON:0001157']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000164', 'HsapDv:0000164', 'HsapDv:0000164', 'HsapDv:0000164', 'HsapDv:0000164']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_3410_200000101113111', 'HTA11_3410_200000101113111', 'HTA11_3410_200000101113111', 'HTA11_3410_200000101113111', 'HTA11_3410_200000101113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Specimen_ID (Type: TEXT; Sample values: ['HTA11_3410_2000001011', 'HTA11_3410_2000001011', 'HTA11_3410_2000001011', 'HTA11_3410_2000001011', 'HTA11_3410_2000001011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    donor_id (Type: TEXT; Sample values: ['HTA11_3410', 'HTA11_3410', 'HTA11_3410', 'HTA11_3410', 'HTA11_3410']; Description: Identifies a unique individual that data were derived from)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['MONDO:0024660', 'MONDO:0024660', 'MONDO:0024660', 'MONDO:0024660', 'MONDO:0024660']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000384', 'PATO:0000384', 'PATO:0000384', 'PATO:0000384', 'PATO:0000384']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_HTAN_VAL_EPI_CELLXGENE_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['-0.23852311074733734', '-0.23852311074733734', '-0.23852311074733734', '-0.23852311074733734', '-0.23852311074733734']; Description: Expression value for a given gene and cell)
+    sex (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Phenotypic sex)
+    iVar (Type: NUMBER; Sample values: ['256', '256', '256', '256', '256']; Description: Index to gene IDs)
+    cell_type_ontology_term_id (Type: TEXT; Sample values: ['CL:0000212', 'CL:0000212', 'CL:0000212', 'CL:0000212', 'CL:0000212']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_8920_200000201113111', 'HTA11_8920_200000201113111', 'HTA11_8920_200000201113111', 'HTA11_8920_200000201113111', 'HTA11_8920_200000201113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    disease_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000461', 'PATO:0000461', 'PATO:0000461', 'PATO:0000461', 'PATO:0000461']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    feature_name (Type: TEXT; Sample values: ['AC004951.6', 'AC004951.6', 'AC004951.6', 'AC004951.6', 'AC004951.6']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    tissue_ontology_term_id (Type: TEXT; Sample values: ['UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    development_stage_ontology_term_id (Type: TEXT; Sample values: ['HsapDv:0000145', 'HsapDv:0000145', 'HsapDv:0000145', 'HsapDv:0000145', 'HsapDv:0000145']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    organism_ontology_term_id (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    self_reported_ethnicity_ontology_term_id (Type: TEXT; Sample values: ['HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005', 'HANCESTRO:0005']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    HTAN_Specimen_ID (Type: TEXT; Sample values: ['HTA11_8920_2000002011', 'HTA11_8920_2000002011', 'HTA11_8920_2000002011', 'HTA11_8920_2000002011', 'HTA11_8920_2000002011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    donor_id (Type: TEXT; Sample values: ['HTA11_8920', 'HTA11_8920', 'HTA11_8920', 'HTA11_8920', 'HTA11_8920']; Description: Identifies a unique individual that data were derived from)
+    assay_ontology_term_id (Type: TEXT; Sample values: ['EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    sex_ontology_term_id (Type: TEXT; Sample values: ['PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383', 'PATO:0000383']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_HTAN_DIS_EPI_V2_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0']; Description: Expression value for a given gene and cell.)
+    Gene_Name (Type: TEXT; Sample values: ['CALM2', 'LAMC2', 'SOX4', 'ARL6IP5', 'FER1L6']; Description: Measured gene)
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    Cell_Barcode_Number (Type: TEXT; Sample values: ['AGGGAACGAACCACGCT-10', 'ACGTATACCCTACTAG-10', 'TGATGATAACAAGAACGGG-10', 'TGATGATAACAAGAACGGG-10', 'AAGCTACGGTGTTTGAG-10']; Description: Barcodes used for each droplet that contains the cell in the sequencing process)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_HTAN_VAL_EPI_V2_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.0', '2.0', '1.0', '1.0', '1.0']; Description: Expression value for a given gene and cell.)
+    Gene_Name (Type: TEXT; Sample values: ['USP33', 'ARHGAP8', 'COL4A2', 'MT-TC', 'GPCPD1']; Description: Measured gene)
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_866_300476101113111', 'HTA11_866_300476101113111', 'HTA11_866_300476101113111', 'HTA11_866_300476101113111', 'HTA11_866_300476101113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA11_866_3004761011', 'HTA11_866_3004761011', 'HTA11_866_3004761011', 'HTA11_866_3004761011', 'HTA11_866_3004761011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    Cell_Barcode_Number (Type: TEXT; Sample values: ['GATGTACACGATGCATGG-21-5607', 'TGAAGGATTCAACTCACCG-21-5607', 'TGAAGGATTCAACTCACCG-21-5607', 'TGAAGGATTCAACTCACCG-21-5607', 'GAGAGCCCATTGGGATTC-21-5607']; Description: Barcodes used for each droplet that contains the cell in the sequencing process)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_CHOP_SEURAT_POOL_LOGNORM_GINI_FIVEHD_10XV3_DOWNSAMPLE10000HSPC_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['0.698439', '2.088684', '0.893654', '1.357917', '0.786977']; Description: Expression value for a given gene and cell.)
+    Gene_Name (Type: TEXT; Sample values: ['ARHGDIA', 'CLIC1', 'PHAX', 'TOPORS', 'YPEL3']; Description: Gene Symbol)
+    Cell_Name (Type: TEXT; Sample values: ['donor2153_live_GCGTGCACACGAGGAT', 'donor2153_live_GCGTGCACACGAGGAT', 'donor2689_live_AGAGCCCAGATTGTGA', 'donor2689_live_AGAGCCCAGATTGTGA', 'donor2689_live_GTAGAAAAGTGCACCC']; Description: Cell Barcode)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_VAL_DIS_NOEPI_CELLXGENE_CURRENT
+[
+    X_VALUE (Type: FLOAT; Sample values: ['-0.055034514516592026', '-0.055034514516592026', '-0.055034514516592026', '-0.16386285424232483', '-0.16386285424232483']; Description: Expression value for a given gene and cell)
+    SEX (Type: TEXT; Sample values: ['male', 'male', 'male', 'male', 'male']; Description: Phenotypic sex)
+    SAMPLE_CLASSIFICATION (Type: TEXT; Sample values: ['AD', 'AD', 'AD', 'AD', 'AD']; Description: AD = conventional adenoma, SER = serrated polyp, NL = normal, MSI-H =microsatellite instability high CRC, MSS = microsatellite stable CRC)
+    HTAN_PARENT_DATA_FILE_ID (Type: TEXT; Sample values: ['HTA11_6818_200000102113111', 'HTA11_6818_200000102113111', 'HTA11_6818_200000102113111', 'HTA11_6818_200000102113111', 'HTA11_6818_200000102113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    SEX_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['PATO:0000384', 'PATO:0000384', 'PATO:0000384', 'PATO:0000384', 'PATO:0000384']; Description: Phenotype And Trait Ontology ID, PATO:0000384 for male, PATO:0000383 for female, or unknown if unavailable)
+    HTAN_SPECIMEN_ID (Type: TEXT; Sample values: ['HTA11_6818_2000001021', 'HTA11_6818_2000001021', 'HTA11_6818_2000001021', 'HTA11_6818_2000001021', 'HTA11_6818_2000001021']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    SELF_REPORTED_ETHNICITY_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']; Description: If human, the Human Ancestry Ontology ID (i.e. HANCESTRO:0005) (REF: https://www.ebi.ac.uk/ols/ontologies/hancestro); "multiethnic" if more than one ethnicity. "Unknown" if human and no information, else "na" if non-human)
+    TISSUE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158', 'UBERON:0001158']; Description: Uber-anatomy ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/uberon) (ex.UBERON:2001190))
+    ASSAY_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913', 'EFO:0008913']; Description: Experimental Factor Ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/efo))
+    DISEASE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['MONDO:0024661', 'MONDO:0024661', 'MONDO:0024661', 'MONDO:0024661', 'MONDO:0024661']; Description: MONDO disease ontology ID (REF: https://www.ebi.ac.uk/ols/ontologies/mondo) (ex. MONDO:0100426 or PATO:0000461 for 'normal'))
+    ORGANISM_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606', 'NCBITaxon:9606']; Description: NCBITaxon ID (REF: https://www.ncbi.nlm.nih.gov/taxonomy) (ex. NCBITaxon:9606 for human, NCBITaxon:10090 for mouse))
+    FEATURE_NAME (Type: TEXT; Sample values: ['AR', 'AR', 'AR', 'C2', 'C2']; Description: Gene name from HUGO Human Gene Nomenclature Committee (https://www.genenames.org/))
+    CELL_TYPE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['CL:0000786', 'CL:0000786', 'CL:0000786', 'CL:0000786', 'CL:0000786']; Description: Cell Ontology ID (i.e. CL:0000784)  (REF: https://www.ebi.ac.uk/ols/ontologies/cl))
+    DEVELOPMENT_STAGE_ONTOLOGY_TERM_ID (Type: TEXT; Sample values: ['HsapDv:0000157', 'HsapDv:0000157', 'HsapDv:0000157', 'HsapDv:0000157', 'HsapDv:0000157']; Description: Human Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/hsapdv) or Mouse Developmental Stages ID (REF: https://www.ebi.ac.uk/ols/ontologies/mmusdv) (HsapDv if human, MmusDv if mouse, unknown if information unavailable))
+    DONOR_ID (Type: TEXT; Sample values: ['HTA11_6818', 'HTA11_6818', 'HTA11_6818', 'HTA11_6818', 'HTA11_6818']; Description: Identifies a unique individual that data were derived from)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_ABNORMALS_EPI_V2_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['3.0', '1.0', '1.0', '1.0', '1.0']; Description: Expression value for a given gene and cell.)
+    Gene_Name (Type: TEXT; Sample values: ['PTMA', 'NFE2L2', 'SPATA6L', 'NFKB1', 'MLXIP']; Description: Measured gene)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Cell_Barcode_Number (Type: TEXT; Sample values: ['AATGTTGGCAATCGGGT-10', 'AATGTTGGCAATCGGGT-10', 'TGAGCGCATTCTCCTTATT-10', 'TGAAAACAGGGTCCCTGAT-10', 'TGCGACAGGTCTCTCT-10']; Description: Barcodes used for each droplet that contains the cell in the sequencing process)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_VUMC_HTAN_VAL_DIS_NONEPI_V2_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0']; Description: Expression value for a given gene and cell.)
+    Gene_Name (Type: TEXT; Sample values: ['PRDM1', 'DOPEY1', 'HCLS1', 'ANKMY1', 'RP11-81K2.1']; Description: Measured gene)
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011', 'HTA11_78_2000001011']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111', 'HTA11_78_200000101113111']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Cell_Barcode_Number (Type: TEXT; Sample values: ['AGCACCACCCTACTAG-10', 'AGCACCACCCTACTAG-10', 'AGCACCACCCTACTAG-10', 'CCGCTGTTGAATACGC-10', 'CCGCTGTTGAATACGC-10']; Description: Barcodes used for each droplet that contains the cell in the sequencing process)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.SCRNASEQ_LEVEL3_METADATA_CURRENT
+[
+    Cell_Median_Number_Genes (Type: TEXT; Sample values: ['1268', '1850', '1850', '1160', '1160']; Description: Median number of genes detected per cell. Number)
+    HTAN_Parent_Data_File_ID (Type: TEXT; Sample values: ['HTA12_1_2001', 'HTA12_1_2002', 'HTA12_1_2002', 'HTA12_1_2003', 'HTA12_1_2003']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: TEXT; Sample values: ['syn51117086', 'syn51116879', 'syn51117082', 'syn51117048', 'syn51117083']; Description: Synapse ID of entity)
+    Manifest_Id (Type: TEXT; Sample values: ['syn51122332', 'syn51122332', 'syn51122332', 'syn51122332', 'syn51122332']; Description: Synapse ID of manifest containing file annotation)
+    Filename (Type: TEXT; Sample values: ['sc_RNAseq_level_3/HT056P-S1PAA1-matrix.mtx', 'sc_RNAseq_level_3/HT056P-S1PBA3-features.tsv', 'sc_RNAseq_level_3/HT056P-S1PBA3-matrix.mtx', 'sc_RNAseq_level_3/HT056P-S1R1A1-barcodes.tsv', 'sc_RNAseq_level_3/HT056P-S1R1A1-matrix.mtx']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: TEXT; Sample values: ['HTA12_1_3003', 'HTA12_1_3005', 'HTA12_1_3006', 'HTA12_1_3007', 'HTA12_1_3009']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Id (Type: TEXT; Sample values: ['5db6149b-7859-437b-9a1e-007905943aed', 'a6803698-b037-4980-b63d-f636460fa38c', '1ba9a403-0196-4019-85b2-9f174df5d5bc', '50a2c544-57bf-4a22-b888-8680acff1abf', 'ce0bb4a1-718a-4f7d-8083-355e9f9ca11f']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.IMAGING_LEVEL4_HTAPP_MERFISH_CURRENT
+[
+    X_value (Type: FLOAT; Sample values: ['1.0', '1.0', '1.0', '1.0', '3.0']; Description: Expression value for a given gene and cell)
+    Source_entityId (Type: TEXT; Sample values: ['syn25541290', 'syn25541290', 'syn25541290', 'syn25541290', 'syn25541290']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: TEXT; Sample values: ['HTA1_812_8239304999402', 'HTA1_812_8239304999402', 'HTA1_812_8239304999402', 'HTA1_812_8239304999402', 'HTA1_812_8239304999402']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Biospecimen_ID (Type: TEXT; Sample values: ['HTA1_812_8239304', 'HTA1_812_8239304', 'HTA1_812_8239304', 'HTA1_812_8239304', 'HTA1_812_8239304']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    featureID (Type: TEXT; Sample values: ['134594782163046708889968525197687289614', '165405077511012407098978979213203460046', '263475004383084272954735486700496204358', '236771251857349174383879233135303077420', '64306803672934562460465273721903663529']; Description: Cell barcode)
+    Source_filename (Type: TEXT; Sample values: ['counts_HTAPP-812_slice4.h5ad', 'counts_HTAPP-812_slice4.h5ad', 'counts_HTAPP-812_slice4.h5ad', 'counts_HTAPP-812_slice4.h5ad', 'counts_HTAPP-812_slice4.h5ad']; Description: Name of file record was derived from)
+]
+
+--------------------------------------------------
+
+###Table full name: HTAN_2.HTAN.CLINICAL_TIER3_BREAST_CURRENT
+[
+    Breast_Carcinoma_HER2_Chromosome17_Ratio (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: HER2 chromosome 17 ratio in participants with breast cancer)
+    Id (Type: TEXT; Sample values: ['c8e872f7-2e4b-43ea-9c14-f10e1c3602df', 'f4e60ee3-2215-449e-bbf3-aafe8815955a', '33ecb16e-645a-4de3-a471-2b56370fb89c', 'f7a91b6b-fa99-438b-a752-fc9f7441d54f', '46aaf754-a2d0-4841-8469-b5ec5481064a']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    entityId (Type: TEXT; Sample values: ['syn24999726', 'syn24999745', 'syn24999739', 'syn24999718', 'syn24999736']; Description: Synapse ID of entity)
+    Manifest_Id (Type: TEXT; Sample values: ['syn44551067', 'syn44551067', 'syn44551067', 'syn44551067', 'syn44551067']; Description: Synapse ID of manifest containing file annotation)
+    HTAN_Participant_ID (Type: TEXT; Sample values: ['HTA14_8', 'HTA14_22', 'HTA14_18', 'HTA14_3', 'HTA14_16']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Breast_Carcinoma_Surgical_Procedure_Name (Type: TEXT; Sample values: ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']; Description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer)
+]
+
+--------------------------------------------------
+

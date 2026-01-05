@@ -1,0 +1,174 @@
+###Table full name: PATENTS.PATENTS.PUBLICATIONS
+[
+    ipc (Type: VARIANT; Sample values: ['[\n  {\n    "code": "E05B17/04",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "E05B17/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "H04L9/08",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G06F7/72",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "C12N5/10",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G01N33/50",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12R1/91",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "C12N15/09",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12N5/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61K35/44",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G01N33/48",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12Q1/68",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12N5/071",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "B32B15/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B41C1/10",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "B41N1/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B41N1/14",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B32B27/20",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B32B7/02",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "G01N35/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G01N35/02",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G01N35/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]']; Description: Localized text)
+    cpc (Type: VARIANT; Sample values: ['[\n  {\n    "code": "E05B77/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "E05B17/0058",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "G06F7/725",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "H04L9/0844",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "H04L9/0838",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "H04L9/0844",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G06F7/725",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "C12N2503/02",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "C12N5/0621",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12N2503/02",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "C12N2510/04",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "C12N5/0621",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C12N2510/04",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "B32B15/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/12674",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "B32B27/20",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/31678",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/12458",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/31678",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/12458",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "B32B15/20",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T428/31504",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "B41N1/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B32B15/09",\n    "first": true,\n  ...(truncated)', '[\n  {\n    "code": "Y10T436/115831",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T436/114165",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "G01N2035/0465",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "G01N35/026",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G01N2035/0467",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T436/113332",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T436/114165",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "G01N35/00603",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T436/11",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "G01N2035/00326",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "G01N2035/0467",\n...(truncated)']; Description: Two-letter language code for this text)
+    priority_date (Type: NUMBER; Sample values: ['19951018', '19950421', '19961224', '19960229', '19970129']; Description: Localized text)
+    uspc (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: For US publications only, the description in plain text, limited to the first 9 megabytes)
+    publication_date (Type: NUMBER; Sample values: ['20010621', '20040729', '20071011', '20040812', '20030116']; Description: Two-letter language code for this text)
+    filing_date (Type: NUMBER; Sample values: ['19961015', '19960416', '19961224', '19970115', '19980120']; Description: Is this text truncated?)
+    citation (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Two-letter language code for this text)
+    country_code (Type: TEXT; Sample values: ['DE', 'DE', 'DE', 'DE', 'DE']; Description: Country code, eg: 'US', 'EP', etc)
+    priority_claim (Type: VARIANT; Sample values: ['[\n  {\n    "application_number": "FR-9512326-A",\n    "category": "",\n    "filing_date": 19951018,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "US-42609095-A",\n    "category": "",\n    "filing_date": 19950421,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "EP-96203707-A",\n    "category": "",\n    "filing_date": 19961224,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "US-9700408-W",\n    "category": "",\n    "filing_date": 19970115,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  },\n  {\n    "application_number": "US-60864696-A",\n    "category": "",\n    "filing_date": 19960229,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "JP-1501397-A",\n    "category": "",\n    "filing_date": 19970129,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]']; Description: Two-letter language code for this text)
+    grant_date (Type: NUMBER; Sample values: ['20010621', '20040729', '20071011', '20040812', '20030116']; Description: For US publications only, the claims in plain text)
+    fi (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    application_number (Type: TEXT; Sample values: ['DE-69611147-T', 'DE-69630331-T', 'DE-69636755-T', 'DE-69728658-T', 'DE-69807539-T']; Description: Patent application number (DOCDB compatible), eg: 'US-87124404-A'. This may not always be set.)
+    assignee (Type: VARIANT; Sample values: ['[\n  "Valeo Securite Habitacle, Creteil Cedex"\n]', '[\n  "Certicom Corp., Mississauga"\n]', '[\n  "Société des Produits Nestlé S.A."\n]', '[\n  "Presstek, Inc."\n]', '[\n  "Hitachi, Ltd."\n]']; Description: Localized text)
+    application_kind (Type: TEXT; Sample values: ['T', 'T', 'T', 'T', 'T']; Description: High-level kind of the application: A=patent; U=utility; P=provision; W= PCT; F=design; T=translation.)
+    locarno (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Localized text)
+    kind_code (Type: TEXT; Sample values: ['T2', 'T2', 'T2', 'T2', 'T2']; Description: Kind code, indicating application, grant, search report, correction, etc. These are different for each country.)
+    spif_application_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: SPIF standard (spif.group) application number, after 2000)
+    fterm (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: For US publications only, the description in HTML, limited to the first 9 megabytes)
+    publication_number (Type: TEXT; Sample values: ['DE-69611147-T2', 'DE-69630331-T2', 'DE-69636755-T2', 'DE-69728658-T2', 'DE-69807539-T2']; Description: Patent publication number (DOCDB compatible), eg: 'US-7650331-B1')
+    entity_status (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The filing date.)
+    assignee_harmonized (Type: VARIANT; Sample values: ['[\n  {\n    "country_code": "FR",\n    "name": "VALEO SECURITE HABITACLE"\n  }\n]', '[\n  {\n    "country_code": "CA",\n    "name": "CERTICOM CORP"\n  }\n]', '[\n  {\n    "country_code": "CH",\n    "name": "NESTLE SA"\n  }\n]', '[\n  {\n    "country_code": "US",\n    "name": "PRESSTEK INC"\n  }\n]', '[\n  {\n    "country_code": "JP",\n    "name": "HITACHI LTD"\n  }\n]']; Description: Two-letter language code for this text)
+    pct_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: PCT number for this application if it was part of a PCT filing, eg: 'PCT/EP2008/062623'.)
+    claims_localized (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Two-letter language code for this text)
+    child (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: The publication date.)
+    application_number_formatted (Type: TEXT; Sample values: ['DE1996611147', 'DE1996630331', 'DE1996636755', 'DE1997628658', 'DE1998607539']; Description: Application number, formatted to the patent office format where possible.)
+    parent (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    spif_publication_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: SPIF standard (spif.group) publication number, after 2000)
+    examiner (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    inventor (Type: VARIANT; Sample values: ['[\n  "MENAGER, CHRISTOPHE",\n  "CANARD, LOUIS",\n  "CADOUOT, PATRICK",\n  "GOURDIN, DOMINIQUE"\n]', '[\n  "VANSTONE SCOTT .A, WATERLOO",\n  "MENEZES ALFRED JOHN, AUBURN",\n  "MINGHUA QU,"\n]', '[\n  "OFFORD CAVIN, ELIZABETH",\n  "TROMVOUKIS, YVONNE",\n  "PFEIFER, ANDREA M.A.",\n  "SHARIF, NAJ"\n]', '[\n  "FISHER, P.",\n  "PHILLIPS, W.",\n  "DAVIS, F.",\n  "LEGALLEE, CHARLOTTE"\n]', '[\n  "HANAWA, MASAAKI",\n  "MITSUMAKI, HIROSHI",\n  "OHISHI, TADASHI",\n  "KAI, SUSUMU",\n  "WATANABE, HIROSHI"\n]']; Description: Is this text truncated?)
+    family_id (Type: TEXT; Sample values: ['9483724', '23689246', '8224764', '24437397', '11877005']; Description: Family ID (simple family). Grouping on family ID will return all publications associated with a simple patent family (all publications share the same priority claims).)
+    art_unit (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The grant date, or 0 if not granted.)
+    abstract_localized (Type: VARIANT; Sample values: ['[]', '[]', '[\n  {\n    "language": "en",\n    "text": "Immortalised human corneal epithelial cell line, comprises cells of the cell line which are capable of stratification and expressing metabolic markers specific for nonimmortalised human epithelial cells, differentiation markers specific for nonimmortalised human corneal epithelial cells and markers specific for an inflammatory reaction.",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "en",\n    "text": "A lithographic laser imageable thin film structure comprising a substrate having first and second surfaces. A vacuum-deposited metal layer is carried by the first surface of the substrate. A layer of semiconductor material is adhered to and overlies the metal layer. The metal layer and the semiconductor material have thicknesses which are selected to maximize absorption of laser energy impinging on the same.",\n    "truncated": false\n  }\n]', '[]']; Description: Localized text)
+    claims_localized_html (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    inventor_harmonized (Type: VARIANT; Sample values: ['[\n  {\n    "country_code": "FR",\n    "name": "MENAGER CHRISTOPHE"\n  },\n  {\n    "country_code": "FR",\n    "name": "CANARD LOUIS"\n  },\n  {\n    "country_code": "FR",\n    "name": "CADOUOT PATRICK"\n  },\n  {\n    "country_code": "FR",\n    "name": "GOURDIN DOMINIQUE"\n  }\n]', '[\n  {\n    "country_code": "CA",\n    "name": "VANSTONE SCOTT A WATERLOO"\n  },\n  {\n    "country_code": "US",\n    "name": "MENEZES ALFRED JOHN AUBURN"\n  },\n  {\n    "country_code": "CA",\n    "name": "MINGHUA QU"\n  }\n]', '[\n  {\n    "country_code": "CH",\n    "name": "OFFORD CAVIN ELIZABETH"\n  },\n  {\n    "country_code": "CH",\n    "name": "TROMVOUKIS YVONNE"\n  },\n  {\n    "country_code": "CH",\n    "name": "PFEIFER ANDREA M A"\n  },\n  {\n    "country_code": "US",\n    "name": "SHARIF NAJ"\n  }\n]', '[\n  {\n    "country_code": "US",\n    "name": "FISHER P"\n  },\n  {\n    "country_code": "US",\n    "name": "PHILLIPS W"\n  },\n  {\n    "country_code": "US",\n    "name": "DAVIS F"\n  },\n  {\n    "country_code": "US",\n    "name": "LEGALLEE CHARLOTTE"\n  }\n]', '[\n  {\n    "country_code": "JP",\n    "name": "HANAWA MASAAKI"\n  },\n  {\n    "country_code": "JP",\n    "name": "MITSUMAKI HIROSHI"\n  },\n  {\n    "country_code": "JP",\n    "name": "OHISHI TADASHI"\n  },\n  {\n    "country_code": "JP",\n    "name": "KAI SUSUMU"\n  },\n  {\n    "country_code": "JP",\n    "name": "WATANABE HIROSHI"\n  }\n]']; Description: For US publications only, the claims in HTML)
+    title_localized (Type: VARIANT; Sample values: ['[\n  {\n    "language": "de",\n    "text": "Schloss vom Typ eines entkuppelbaren Rotors",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Verfahren zur gesicherten Sitzungsschlüsselerzeugung und zur Authentifizierung",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Immortalisierte menschliche Epithelzell-Linie",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Lithographische dünne filmstruktur und diese enthaltende druckplatte",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Automatisches Analysegerät",\n    "truncated": false\n  }\n]']; Description: The publication titles in different languages)
+    description_localized (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: The publication abstracts in different languages)
+    description_localized_html (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Localized text)
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS.PATENTS.DISCLOSURES_13
+[
+    date (Type: NUMBER; Sample values: ['19751124', '19751124', '19890711', '19890906', '20020606'])
+    tc_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    standard (Type: TEXT; Sample values: ['X3.55;X3.56', 'X3.55;X3.56', 'X3.55;X3.56;X3.72;X3.116;X3.127;X3.136', '', '1588'])
+    sso (Type: TEXT; Sample values: ['ANSI', 'ANSI', 'ANSI', 'ANSI', 'ANSI'])
+    reciprocity (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    sc_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    third_party (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    wg_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    copyright (Type: TEXT; Sample values: ['', '', '', '', ''])
+    family_id (Type: TEXT; Sample values: ['22549751', '23170520', '23170520', '22549751', '23418274'])
+    licensing_commitment (Type: TEXT; Sample values: ['FRAND', 'FRAND', 'Specific Terms', 'FRAND', 'FRAND'])
+    serial_cleaned (Type: TEXT; Sample values: ['', '', '', '', ''])
+    patent_owner_unharmonized (Type: TEXT; Sample values: ['3M', '3M', '3M', '3M', 'Agilent Technologies'])
+    disclosure_event (Type: TEXT; Sample values: ['DE0001', 'DE0001', 'DE0003', 'DE0004', 'DE0013'])
+    pub_cleaned (Type: TEXT; Sample values: ['US3692255', 'US3861619', 'US3861619', 'US3692255', 'US5566180'])
+    record_id (Type: TEXT; Sample values: ['REC00002', 'REC00001', 'REC00006', 'REC00008', 'REC00024'])
+    patent_owner_harmonized (Type: TEXT; Sample values: ['3M', '3M', '3M', '3M', 'Agilent Technologies'])
+    committee_project (Type: TEXT; Sample values: ['', '', '', '', 'IEEE'])
+    blanket_type (Type: TEXT; Sample values: ['0', '0', '0', '2', '0'])
+    blanket_scope (Type: TEXT; Sample values: ['', '', '', '', ''])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS.PATENTS.CPC_DEFINITION
+[
+    ipcConcordant (Type: TEXT; Sample values: ['CPCONLY', 'CPCONLY', 'CPCONLY', 'CPCONLY', 'CPCONLY'])
+    breakdownCode (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    status (Type: TEXT; Sample values: ['published', 'published', 'published', 'published', 'published'])
+    dateRevised (Type: FLOAT; Sample values: ['20130101.0', '20130101.0', '20130101.0', '20130101.0', '20130101.0'])
+    synonyms (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    symbol (Type: TEXT; Sample values: ['A01K2227/108', 'A01K2227/105', 'A01K2227/107', 'A01K2267/025', 'A01K2267/0306'])
+    level (Type: FLOAT; Sample values: ['9.0', '9.0', '9.0', '9.0', '9.0'])
+    titleFull (Type: TEXT; Sample values: ['Swine', 'Murine', 'Rabbit', 'Animal producing cells or organs for transplantation', 'Animal model for genetic diseases'])
+    definition (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    rules (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    notAllocatable (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    children (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[\n  "A01K2267/0312",\n  "A01K2267/0318",\n  "A01K2267/0325"\n]'])
+    applicationReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    informativeReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    glossary (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    titlePart (Type: VARIANT; Sample values: ['[\n  "Swine"\n]', '[\n  "Murine"\n]', '[\n  "Rabbit"\n]', '[\n  "Animal producing cells or organs for transplantation"\n]', '[\n  "Animal model for genetic diseases"\n]'])
+    precedenceLimitingReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    residualReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    childGroups (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    parents (Type: VARIANT; Sample values: ['[\n  "A01K2227/10",\n  "A01K2227/00",\n  "A01K",\n  "A01",\n  "A"\n]', '[\n  "A01K2227/10",\n  "A01K2227/00",\n  "A01K",\n  "A01",\n  "A"\n]', '[\n  "A01K2227/10",\n  "A01K2227/00",\n  "A01K",\n  "A01",\n  "A"\n]', '[\n  "A01K2267/02",\n  "A01K2267/00",\n  "A01K",\n  "A01",\n  "A"\n]', '[\n  "A01K2267/03",\n  "A01K2267/00",\n  "A01K",\n  "A01",\n  "A"\n]'])
+    limitingReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    scopeLimitingReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+### IPC Codes: Handling Main IPC Code Selection
+
+When dealing with the `ipc` field in the `patents-public-data.patents.publications` dataset, it is important to understand the structure of this field, especially the subfield `first`. This subfield is a boolean that indicates whether a given IPC code is the main code for the publication number in question. This is crucial because each patent publication can be associated with multiple IPC codes, signifying the various aspects of the technology covered by the patent.
+
+However, not every publication in the dataset has a designated main IPC code. This lack of a clearly identified main IPC code complicates the process of determining the most relevant IPC code for each publication, as selecting a single IPC code from multiple possibilities without clear prioritization can lead to inconsistent or skewed analyses.
+
+This approach ensures a more consistent and representative selection of IPC codes across the dataset, facilitating more accurate and meaningful analysis of patent trends and classifications. By focusing on the most frequently occurring 4-digit IPC code, the view helps overcome the limitations posed by the absence of a designated main IPC code, thereby enhancing the reliability of patent-related studies and insights derived from this data.
+
+Here is an example
+
+```
+SELECT 
+    t1.publication_number, 
+    SUBSTR(ipc_u.code, 0, 4) as ipc4, 
+    COUNT(
+    SUBSTR(ipc_u.code, 0, 4)
+    ) as ipc4_count 
+FROM 
+    `patents-public-data.patents.publications` t1, 
+    UNNEST(ipc) AS ipc_u 
+GROUP BY 
+    t1.publication_number, 
+    ipc4
+
+```
+
+
+
+# Text Embeddings (Similarity)
+
+Patent documents are rich with textual data. In fact, most of the information contained in a patent document is text. This includes the `abstract_localized`, `description_localized`, and `claims_localized`. Textual data can be a powerful tool to analyze and compare patent scope and content across patents. However, before being able to use textual data, it needs to be vectorized or transformed into text embeddings that can be used by machine learning models. Therefore, creating text embeddings from the textual data of patents is necessary to compare patent contents. Technically speaking, running an NLP algorithm that creates embeddings for all U.S. patents is computationally difficult.
+
+Nevertheless, Google runs their own machine learning algorithm which transforms patent text metadata into text embeddings which they report in `patents-public-data.google_patents_research.publications` table. The textual embeddings of one patent, without any knowledge on the algorithm being used to create them, are meaningless on their own. However, the embeddings are powerful when it comes to comparing textual content of two or more patents. Embeddings can be used to calculate a similarity score between any two patents. This similarity score is calculated by applying the dot product of the embeddings vector of the patents, as shown below:
+
+The similarity \( \text{Similarty}_{i,k} \) between two patents \( i \) and \( k \) is calculated as the dot product of their embedding vectors:
+
+\[
+\text{Similarty}_{i,k} = \mathbf{v}_i \cdot \mathbf{v}_k
+\]
+
+where
+
+\[
+\mathbf{v}_i = [v_{i1}, v_{i2}, v_{i3}, \ldots, v_{iN}]
+\]
+and
+\[
+\mathbf{v}_k = [v_{k1}, v_{k2}, v_{k3}, \ldots, v_{kN}]
+\]
+
+are the embedding vectors for patents \( i \) and \( k \) respectively. The higher the dot product, the more similar the patents.
+
+
+
+
+
+# Originality (Trajtenberg)
+
+One of the most important measures of a patent is "basicness". The aspects of basicness are tough to measure. Nevertheless, some literature finds that important aspects of these measures are embodied in the relationship between the invention and the technological predcessors and successors it is connected to through, for example, patent citations. We can thus use patent citations to construct measures that identify basicness and appropriability. Trajtenberg et al. 1997 provide a number of these measures. They distinguish between:
+
+1. Forward-looking measures: measures that are derived from the relationship between an invention and subsequent technologies that build upon it. These measures are thus constructed from the forward citations. One example of a forward-looking basicness measure they provide is Generality, which is calculated as:
+
+\[
+\text{GENERALITY}_i = 1 - \sum_{k=1}^{N_i} \left( \frac{\text{NCITING}_{G_k}}{\text{NCITING}_i} \right)
+\]
+
+
+2. Backward-looking measures: measures that are derived from the relationship between a given patent and the body of knowledge that preceded it. These measure are thus constructed from the backward citations. One example of a backward-looking basicness measure they provide is Orginality, which is calculated as:
+
+\[
+\text{ORIGINALITY}_i = 1 - \sum_{k=1}^{N_i} \left( \frac{\text{NCITED}_{i,k}}{\text{NCITED}_i} \right)
+\]
+
+With **NCITING** and **NCITED** defined as the number of patents citing the focal patent and the number of patents cited by the focal patent, respectively. Index `i` corresponds to the focal patent considered, and `k` is the index of patent classes. For example, **NCITED_2,3** refers to the number of patents in patent class 3 and cited by our focal patent 2.
+

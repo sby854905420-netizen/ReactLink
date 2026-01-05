@@ -1,0 +1,492 @@
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.WORLDPOP.POPULATION_GRID_1KM
+[
+    population (Type: FLOAT; Sample values: ['1650.8153076171875', '1161.977783203125', '956.6270751953125', '1322.216796875', '1687.7110595703125'])
+    last_updated (Type: DATE; Sample values: ['2018-01-01', '2005-01-01', '2006-01-01', '2002-01-01', '2017-01-01'])
+    longitude_centroid (Type: FLOAT; Sample values: ['-5.347083296988231', '-5.347083296988231', '-5.347083296988231', '-5.347083296988231', '-5.347083296988231'])
+    latitude_centroid (Type: FLOAT; Sample values: ['36.120416721983034', '36.120416721983034', '36.120416721983034', '36.120416721983034', '36.120416721983034'])
+    geog (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    alpha_3_code (Type: TEXT; Sample values: ['GIB', 'GIB', 'GIB', 'GIB', 'GIB'])
+    geo_id (Type: TEXT; Sample values: ['wpeykjqrd2ev', 'wpeykjqrd2ev', 'wpeykjqrd2ev', 'wpeykjqrd2ev', 'wpeykjqrd2ev'])
+    country_name (Type: TEXT; Sample values: ['Gibraltar', 'Gibraltar', 'Gibraltar', 'Gibraltar', 'Gibraltar'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_NODES
+[
+    longitude (Type: NUMBER; Sample values: ['13.863136700', '13.025633100', '11.779961600', '13.482831700', '13.503087800'])
+    geometry (Type: BINARY; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latitude (Type: NUMBER; Sample values: ['4.890477200', '7.011165500', '6.503585400', '7.384704700', '7.249313300'])
+    id (Type: NUMBER; Sample values: ['7567379700', '7195756138', '7136966285', '7204208818', '7198127485'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1590700726000000', '1581188143000000', '1579185841000000', '1581445682000000', '1581269547000000'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    username (Type: TEXT; Sample values: ['victoire Tsajio', 'victoire Tsajio', 'victoire Tsajio', 'victoire Tsajio', 'victoire Tsajio'])
+    changeset (Type: NUMBER; Sample values: ['85909148', '80731891', '79655185', '80865294', '80758733'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_LAYERS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)'])
+    layer_code (Type: NUMBER; Sample values: ['1500', '1500', '1500', '1500', '1500'])
+    osm_way_id (Type: NUMBER; Sample values: ['80820903', '159980615', '83833925', '79298576', '258762175'])
+    osm_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1286621389000000', '1334665988000000', '1491340214000000', '1285485333000000', '1390915954000000'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '2', '1', '1'])
+    layer_class (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    layer_name (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    gdal_type (Type: TEXT; Sample values: ['multipolygons', 'multipolygons', 'multipolygons', 'multipolygons', 'multipolygons'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2017"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour :2010"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_WAYS
+[
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x0b\\x00\\x00\\x00o\\...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00m\\x00\\x00\\x00g\\x11...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x0c\\x00\\x00\\x00u(...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\n\\x00\\x00\\x00\\x92...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00q\\x00\\x00\\x00v=,/T...(truncated)"])
+    id (Type: NUMBER; Sample values: ['73165139', '75218666', '72995142', '73932029', '79494876'])
+    nodes (Type: VARIANT; Sample values: ['[\n  {\n    "id": 866315580\n  },\n  {\n    "id": 866469140\n  },\n  {\n    "id": 867906160\n  },\n  {\n    "id": 866405284\n  },\n  {\n    "id": 866497492\n  },\n  {\n    "id": 866302007\n  },\n  {\n    "id": 866449818\n  },\n  {\n    "id": 867897625\n  },\n  {\n    "id": 867903637\n  },\n  {\n    "id": 866402859\n  },\n  {\n    "id": 866540640\n  }\n]', '[\n  {\n    "id": 887696362\n  },\n  {\n    "id": 887829439\n  },\n  {\n    "id": 887997465\n  },\n  {\n    "id": 887771891\n  },\n  {\n    "id": 887946345\n  },\n  {\n    "id": 887733187\n  },\n  {\n    "id": 887896126\n  },\n  {\n    "id": 887683316\n  },\n  {\n    "id": 887809856\n  },\n  {\n    "id": 887983189\n  },\n  {\n    "id": 887761266\n  },\n  {\n    "id": 887934769\n  },\n  {\n    "id": 887725502\n  },\n  {\n    "id": 887879212\n  },\n  {\n    "id": 887671531\n  },\n  {\n    "id": 887796830\n  },\n  {\n    "id": 887972053\n  },\n  {\n    "id": 887749910\n  },\n  {\n    "id": 887923069\n  },\n  {\n    "id": 887711659\n  },\n  {\n    "id": 887857327\n  },\n  {\n    "id": 888014154\n  },\n  {\n    "id": 887785787\n  },\n  {\n    "id": 887960678\n  },\n  {\n    "id": 887742561\n  },\n  {\n    "id": 887911649\n  },\n  {\n    "id": 887698676\n  },\n  {\n    "id": 887833997\n  },\n  {\n    "id": 888000588\n  },\n  {\n    "id": 887774554\n  },\n  {\n    "id": 887949557\n  },\n  {\n    "id": 887735182\n  },\n  {\n    "id": 887899156\n  },\n  {\n    "id": 887685989\n  },\n  {\n    "id"...(truncated)', '[\n  {\n    "id": 866335040\n  },\n  {\n    "id": 866036816\n  },\n  {\n    "id": 866172307\n  },\n  {\n    "id": 866076659\n  },\n  {\n    "id": 866236485\n  },\n  {\n    "id": 866118751\n  },\n  {\n    "id": 866308533\n  },\n  {\n    "id": 866190354\n  },\n  {\n    "id": 866003145\n  },\n  {\n    "id": 866155632\n  },\n  {\n    "id": 866344508\n  },\n  {\n    "id": 866224565\n  }\n]', '[\n  {\n    "id": 874606612\n  },\n  {\n    "id": 874647375\n  },\n  {\n    "id": 874790575\n  },\n  {\n    "id": 874685112\n  },\n  {\n    "id": 874550974\n  },\n  {\n    "id": 874743910\n  },\n  {\n    "id": 874584076\n  },\n  {\n    "id": 874799749\n  },\n  {\n    "id": 874617160\n  },\n  {\n    "id": 874557863\n  }\n]', '[\n  {\n    "id": 927804568\n  },\n  {\n    "id": 927952840\n  },\n  {\n    "id": 927834031\n  },\n  {\n    "id": 927859272\n  },\n  {\n    "id": 927947127\n  },\n  {\n    "id": 927896134\n  },\n  {\n    "id": 927971934\n  },\n  {\n    "id": 927894051\n  },\n  {\n    "id": 927971505\n  },\n  {\n    "id": 927921740\n  },\n  {\n    "id": 927802421\n  },\n  {\n    "id": 927826455\n  },\n  {\n    "id": 927915475\n  },\n  {\n    "id": 927857691\n  },\n  {\n    "id": 927945590\n  },\n  {\n    "id": 927964843\n  },\n  {\n    "id": 927852132\n  },\n  {\n    "id": 927794827\n  },\n  {\n    "id": 927882057\n  },\n  {\n    "id": 927908689\n  },\n  {\n    "id": 927784889\n  },\n  {\n    "id": 927942252\n  },\n  {\n    "id": 927820454\n  },\n  {\n    "id": 927953307\n  },\n  {\n    "id": 927835459\n  },\n  {\n    "id": 927978323\n  },\n  {\n    "id": 927866390\n  },\n  {\n    "id": 927897288\n  },\n  {\n    "id": 927973532\n  },\n  {\n    "id": 927926419\n  },\n  {\n    "id": 927807195\n  },\n  {\n    "id": 927828303\n  },\n  {\n    "id": 927917980\n  },\n  {\n    "id": 927861048\n  },\n  {\n    "id"...(truncated)'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1327342614000000', '1327337045000000', '1327346555000000', '1327329609000000', '1327344795000000'])
+    version (Type: NUMBER; Sample values: ['2', '3', '2', '3', '2'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    username (Type: TEXT; Sample values: ['jumbanho', 'jumbanho', 'jumbanho', 'jumbanho', 'jumbanho'])
+    changeset (Type: NUMBER; Sample values: ['10475054', '10475054', '10475054', '10475054', '10475054'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "37346853"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Thu Mar 28 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060005017843"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "146070088"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Wed Jun 02 00:00:00 PDT 2010"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030003021991"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "37347297"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Wed Nov 19 00:00:00 PST 2008"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060005017933"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "27994506"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Wed Oct 17 00:00:00 PDT 2001"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060006001034"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "26977445"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Fri Mar 08 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030006000227"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_RELATIONS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x03\\x00\\x00\\x00/\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00^\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00-\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00?\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    id (Type: NUMBER; Sample values: ['10690020', '8754016', '8749538', '9092068', '9295859'])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 770759858,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 770407551,\n    "role": "inner",\n    "type": "w"\n  },\n  {\n    "id": 770407528,\n    "role": "inner",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 627858735,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 628915282,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 628647161,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 628648352,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 272288816,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 653817673,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 668108442,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 668119267,\n    "role": "outer",\n    "type": "w"\n  }\n]'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '2', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1581117816000000', '1538174385000000', '1538076373000000', '1585647931000000', '1549238500000000'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    username (Type: TEXT; Sample values: ['Marius Geitle_import', 'Reitstoen_import', 'Reitstoen_import', 'Visaman', 'Reitstoen_import'])
+    changeset (Type: NUMBER; Sample values: ['80711931', '63024511', '62988214', '82863954', '66889083'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "natural",\n    "value": "wetland"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  },\n  {\n    "key": "wetland",\n    "value": "bog"\n  }\n]', '[\n  {\n    "key": "natural",\n    "value": "wetland"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  },\n  {\n    "key": "wetland",\n    "value": "bog"\n  }\n]', '[\n  {\n    "key": "natural",\n    "value": "wetland"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  },\n  {\n    "key": "wetland",\n    "value": "bog"\n  }\n]', '[\n  {\n    "key": "natural",\n    "value": "wetland"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  },\n  {\n    "key": "wetland",\n    "value": "bog"\n  }\n]', '[\n  {\n    "key": "natural",\n    "value": "wetland"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  },\n  {\n    "key": "wetland",\n    "value": "bog"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.HISTORY_NODES
+[
+    longitude (Type: NUMBER; Sample values: ['-40.892892400', '-40.963735700', '-40.856078900', '-40.971982200', '-41.083376400'])
+    latitude (Type: NUMBER; Sample values: ['-19.787685100', '-19.771802700', '-19.726630600', '-19.834818800', '-19.877931300'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00ilTLJrD\\xc0\\xe7\\x0...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00m\\xbe\\x00\\xb1[{D\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd8%O\\xfe\\x93mD\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xa6\\xa5\\xa8\\xe9i|...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x0e\\xa1\\xef\\x13\\x...(truncated)"])
+    id (Type: NUMBER; Sample values: ['6927827940', '5949962528', '6643961210', '5932998508', '6656130802'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1572369059000000', '1538519269000000', '1563979319000000', '1538008739000000', '1564360084000000'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    changeset (Type: NUMBER; Sample values: ['76357152', '63140610', '72606663', '62961772', '72749611'])
+    username (Type: TEXT; Sample values: ['importES', 'importES', 'importES', 'importES', 'importES'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_FEATURES_POINTS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xa2\\x9bX;\\xe5,\\x1...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x00r\\xc9\\\'\\x1aZ\\x9b4@...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x94\\xd3\\xe8\\x1f\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb3\\x84\\xc6]\\xce\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x005\\xf7Fc\\xa3VA@\\xf6...(truncated)"])
+    osm_timestamp (Type: NUMBER; Sample values: ['1604175532000000', '1608386913000000', '1608386913000000', '1608386913000000', '1353534859000000'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_id (Type: NUMBER; Sample values: ['8069642225', '8242788835', '8242783616', '8242788671', '2025510744'])
+    osm_way_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "ID",\n    "value": "Friedhof Kottweiler"\n  }\n]', '[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "LAT",\n    "value": "-15.699508"\n  },\n  {\n    "key": "LONG",\n    "value": "34.676861"\n  },\n  {\n    "key": "Village_Na",\n    "value": "Felemu"\n  },\n  {\n    "key": "name",\n    "value": "Felemu"\n  },\n  {\n    "key": "place",\n    "value": "village"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.PLANET_FEATURES
+[
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_timestamp (Type: NUMBER; Sample values: ['1597721403000000', '1448482166000000', '1513122789000000', '1595283501000000', '1547163526000000'])
+    osm_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_way_id (Type: NUMBER; Sample values: ['838028090', '382740968', '546457224', '828271565', '662226180'])
+    feature_type (Type: TEXT; Sample values: ['multipolygons', 'multipolygons', 'multipolygons', 'multipolygons', 'multipolygons'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "residential"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "terrace"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.HISTORY_LAYERS
+[
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_way_id (Type: NUMBER; Sample values: ['741825328', '257038338', '208444794', '239759646', '741576051'])
+    osm_id (Type: NUMBER; Sample values: ['741825328', '257038338', '208444794', '239759646', '741576051'])
+    layer_code (Type: NUMBER; Sample values: ['5260', '5260', '5260', '5260', '5260'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1589776763000000', '1390004985000000', '1362504492000000', '1380380021000000', '1590072866000000'])
+    osm_version (Type: NUMBER; Sample values: ['3', '1', '1', '2', '3'])
+    layer_class (Type: TEXT; Sample values: ['traffic', 'traffic', 'traffic', 'traffic', 'traffic'])
+    layer_name (Type: TEXT; Sample values: ['parking', 'parking', 'parking', 'parking', 'parking'])
+    gdal_type (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "amenity",\n    "value": "parking"\n  }\n]', '[\n  {\n    "key": "amenity",\n    "value": "parking"\n  }\n]', '[\n  {\n    "key": "amenity",\n    "value": "parking"\n  }\n]', '[\n  {\n    "key": "amenity",\n    "value": "parking"\n  }\n]', '[\n  {\n    "key": "amenity",\n    "value": "parking"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.HISTORY_RELATIONS
+[
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x04\\x00\\x00\\x00/\\x00\\x00\\x00\\x01\\...(truncated)', "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xaa\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xac\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00z\\x00\\x00\\x00\\x01\\...(truncated)"])
+    id (Type: NUMBER; Sample values: ['2348169', '10760608', '10760608', '10073013', '10073013'])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 4025962078,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2781144802,\n    "role": "forward_stop",\n    "type": "n"\n  },\n  {\n    "id": 1843860388,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4020137343,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4022911771,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3839518929,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4020137344,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4025962072,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4025083261,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4032336056,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4029732480,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4021927560,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 4020137348,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 300311935,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1617880845,\n    "role": "stop",\n    "ty...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6283002440,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2189440690,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 208670454,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 6268787265,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3226393892,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 686253076,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686253078,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 569586334,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686254004,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 28392446,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 187037129,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 323465900,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 27037904,\n  ...(truncated)', '[\n  {\n    "id": 6283002440,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2189440690,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 208670454,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 6268787265,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3226393892,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 686253076,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686253078,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 569586334,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686254004,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 28392446,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 187037129,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 323465900,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 27037904,\n  ...(truncated)'])
+    version (Type: NUMBER; Sample values: ['343', '405', '422', '411', '409'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1555470815000000', '1601566295000000', '1601640974000000', '1601565431000000', '1601562907000000'])
+    username (Type: TEXT; Sample values: ['ksairus', 'tkoval83', 'jhgsdfjjjskz6437hj', 'tkoval83', 'tkoval83'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    changeset (Type: NUMBER; Sample values: ['69292905', '91835145', '91865782', '91834560', '91833008'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "to",\n    "value": "Київ"\n  },\n  {\n    "key": "ref",\n    "value": "107/108"\n  },\n  {\n    "key": "from",\n    "value": "Караганды"\n  },\n  {\n    "key": "name",\n    "value": "107/108 Караганды<=>Киев"\n  },\n  {\n    "key": "note",\n    "value": "train disappeard from timetable winter 2016/17, in 2015 weekly between Kiev and Astana"\n  },\n  {\n    "key": "type",\n    "value": "collection"\n  },\n  {\n    "key": "route",\n    "value": "collection"\n  },\n  {\n    "key": "source",\n    "value": "Bing"\n  },\n  {\n    "key": "name:de",\n    "value": "107/108 Karaganda<=>Kiev"\n  },\n  {\n    "key": "network",\n    "value": "КТЖ"\n  },\n  {\n    "key": "operator",\n    "value": "КТЖ"\n  },\n  {\n    "key": "public_transport:version",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Київ, Центральний автовокзал"\n  },\n  {\n    "key": "ref",\n    "value": "K3001"\n  },\n  {\n    "key": "from",\n    "value": "Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus K3001: Breslau, Busbahnhof => Kiew, Zentraler Busbahnhof"\n  },\n  {\n    "key": "name:pl",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Kijów, główny dworzec autobusowy"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Киев, Центральный автовокзал"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "website",\n    "value": "https://meinfernbus.de/unser-angebot/l...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Київ, Центральний автовокзал"\n  },\n  {\n    "key": "ref",\n    "value": "K3001"\n  },\n  {\n    "key": "from",\n    "value": "Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus K3001: Breslau, Busbahnhof => Kiew, Zentraler Busbahnhof"\n  },\n  {\n    "key": "name:pl",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Kijów, główny dworzec autobusowy"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Киев, Центральный автовокзал"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "website",\n    "value": "https://meinfernbus.de/unser-angebot/l...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_WORLDPOP.GEO_OPENSTREETMAP.HISTORY_CHANGESETS
+[
+    nodes (Type: VARIANT; Sample values: ['[\n  1270750198,\n  1270750190,\n  977802739,\n  279326703,\n  1803085216,\n  1803085218,\n  1803085222,\n  1803085223,\n  1803085224,\n  1803085225,\n  1803085226,\n  1803085227,\n  1803085229,\n  1803085231,\n  1803085232,\n  1803085237,\n  1803085238,\n  1803085239,\n  1803085240,\n  1803085241,\n  1803085242,\n  1803085243,\n  1803085244,\n  1803085246,\n  1803085247,\n  1803085249,\n  1803085251,\n  1803085252,\n  1803085255,\n  1803085256,\n  1803085257,\n  1803085258,\n  1634427172,\n  1562905956,\n  1332837556,\n  1332837557,\n  1327877593,\n  409099522,\n  409099523,\n  389654981,\n  369393547,\n  1366128065\n]', '[\n  6370504911,\n  6370504912,\n  6370504913,\n  6370504914,\n  6370504915,\n  6370504916,\n  6370504917,\n  6370504918,\n  6370504919,\n  6370504920,\n  6370504921,\n  6370504922,\n  6370504923,\n  6370504924,\n  6370504925,\n  6370504926,\n  6370504927,\n  6370504928,\n  6370504929,\n  6116849903,\n  6116849904,\n  6116849905,\n  6116849906,\n  6243935682,\n  6243935683,\n  6243935684,\n  6243937785,\n  6243937786,\n  6243937787,\n  6243937788,\n  6243937789,\n  6243937790,\n  6243937791,\n  6243937792,\n  6243937793,\n  6243937794,\n  6243937795,\n  6243937796,\n  6243937797,\n  6243937798,\n  6243937799,\n  6243937800\n]', '[\n  3480342612,\n  3480342613,\n  3480342614,\n  3480342615,\n  3480342616,\n  3480342617,\n  3480342618,\n  3480342619,\n  3480342620,\n  3480342621,\n  3480342622,\n  3480342623,\n  3480342624,\n  3480342625,\n  3480342626,\n  3480342627,\n  3480342628,\n  3480342629,\n  3480342630,\n  3480342631,\n  3480340030,\n  3480340031,\n  3480340033,\n  3480340034,\n  3480340035\n]', '[\n  1485084633,\n  1485084639,\n  1485085727,\n  1485085732,\n  1485086318,\n  1485086522,\n  1485086831,\n  1485086844,\n  1485086898,\n  1485086973,\n  1485087011,\n  1485087113,\n  1485087239,\n  1485139138,\n  1485086379,\n  1485087662,\n  1485087689,\n  1485154055,\n  1485154067,\n  1485154120,\n  1485154130,\n  1485156308,\n  1485084637,\n  1485087568,\n  1485156207,\n  1780743742,\n  1780743743,\n  1780743745,\n  1780743747,\n  1780743753,\n  1780743755,\n  1780743760,\n  1780743764,\n  1780743784,\n  1895323173,\n  1895323174,\n  1487539965,\n  1487539979,\n  1487539988,\n  4315852329,\n  4315852330,\n  4315852331,\n  4315852332,\n  4315852333,\n  4315852334,\n  4315852335,\n  4315852336,\n  4315852337,\n  4315852338,\n  4315852339,\n  4315852340,\n  4315852341,\n  4315852342,\n  4315852343,\n  4315852344,\n  4315852345,\n  4315852346,\n  4315852347,\n  4315852348,\n  4315852349,\n  4315852350,\n  4315852351,\n  4315852352,\n  4315852353,\n  4315852354,\n  4315852355,\n  4315852356,\n  4315852357,\n  4315852358,\n  4315852359,\n  4315852360,\n  43...(truncated)', '[\n  3233470876,\n  3233470877,\n  3233470878,\n  3233470879,\n  3233470880,\n  3233470881,\n  3233470882,\n  3233470883,\n  3233470884,\n  3233470885,\n  2296799951,\n  2296799958,\n  2296799960,\n  2296799962,\n  2296799968,\n  2296799982,\n  2709607652,\n  2709607654,\n  2709607661,\n  2709607663,\n  2709607677,\n  2709607685,\n  2709607709,\n  2709607712,\n  2709607714,\n  2709607715,\n  4504190853,\n  4504190854,\n  4504190855,\n  4504190856,\n  4504190857,\n  4504190858,\n  4504190859,\n  4504190860,\n  4504190861,\n  4504190862,\n  4504190863,\n  4504190864,\n  4504190865,\n  4504190866,\n  4504190867,\n  4504190868,\n  4504190869,\n  4504190870,\n  4504190871,\n  4504190872,\n  4504190873,\n  4504190874,\n  4504190875,\n  4504190876,\n  4504190877,\n  4504190878,\n  4504190879,\n  4504190880,\n  4504190881,\n  4504190882,\n  4504190883,\n  4504190884,\n  4504190885,\n  4504190886,\n  4504190887,\n  4504190888,\n  4504190989,\n  4504190990,\n  4504190991,\n  4504190992,\n  4504190993,\n  4504190994,\n  4504190995,\n  4504190996,\n  4504190997,\n  45...(truncated)']; Description: Nodes that are part of this way)
+    osm_timestamp_max (Type: NUMBER; Sample values: ['1340735870', '1553873017', '1430099036', '1469200594', '1479296591']; Description: Maximum timestamp of objects contained in this changeset.)
+    id (Type: NUMBER; Sample values: ['12029340', '68669151', '30522630', '40952840', '43696737']; Description: Changeset ID.)
+    ways (Type: VARIANT; Sample values: ['[\n  24012734,\n  24013188,\n  32787862,\n  122430881,\n  122445966,\n  129713279,\n  34883701,\n  169141542,\n  169141543,\n  169141536,\n  169141544,\n  169141541,\n  169141540,\n  169141537,\n  169141538,\n  169141539,\n  111561168,\n  150543888,\n  150543890,\n  142813428,\n  142812626,\n  122190124,\n  122176895,\n  122190125,\n  25787631\n]', '[\n  680367916,\n  666869508\n]', '[\n  340774909,\n  340774910,\n  340774568\n]', '[\n  135211560,\n  135211590,\n  135211607,\n  135223312,\n  135215151,\n  135214753,\n  135214821,\n  135214808,\n  135215233,\n  135211519,\n  127213464,\n  127215905\n]', '[\n  450096527,\n  450096528,\n  450096529,\n  453721900,\n  453721901,\n  453721902,\n  453721903,\n  453721904,\n  453721905,\n  453721906,\n  453721907,\n  453721908,\n  453721909,\n  453721910,\n  453721911,\n  453721912,\n  453721913,\n  453721914,\n  453721915,\n  453721916,\n  453721917,\n  220581504,\n  354871235,\n  354871238,\n  354871236,\n  265287695\n]']; Description: Ways that are part of this way)
+    osm_timestamp_min (Type: NUMBER; Sample values: ['1340735868', '1553873017', '1430099035', '1469200593', '1479296587']; Description: Minimum timestamp of objects contained in this changeset.)
+    relations (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Relations that are part of this way)
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+# OpenStreetMap Data in Layered GIS Format
+
+## Point Features
+
+### 1. Places (“places”)
+
+Location for cities, towns, etc. Typically somewhere in the centre of the town.
+
+Additional attributes:
+
+| Attribute  | PostGIS Type | Description                           | OSM Tags     |
+| ---------- | ------------ | ------------------------------------- | ------------ |
+| population | INTEGER      | Number of people living in this place | population=* |
+
+Note that for many places the population is not available and will be set to 0. For islands the population is always 0.
+
+The following feature classes exist in this layer:
+
+| code | Layer | fclass | Description                                                  | OSM Tags                  |
+| ---- | ----- | ------ | ------------------------------------------------------------ | ------------------------- |
+| 1000 | place |        |                                                              |                           |
+| 1001 | place | city   | As defined by national/state/provincial government. Often over 100,000 people | place=city (but see 1005) |                       |
+| 1002 | place | town   | As defined by national/state/provincial government. Generally smaller than a city, between 10,000 and 100,000 people | place=town                |
+
+| code | Layer | fclass           | Description                                                  | OSM Tags                                                     |
+| ---- | ----- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1003 | place | village          | As defined by national/state/provincial government. Generally smaller than a town, below 10,000 people | place=village                                                |                                                          |
+| 1004 | place | hamlet           | As defined by national/state/provincial government. Generally smaller than a village, just a few houses | place=hamlet                                                 |                                                           |
+| 1005 | place | national_capital | A national capital                                           | place=city<br />- is_capital=country or<br />- admin_level=2 or<br />- capital=yes and no <br />admin_level set |                                                           |
+| 1010 | place | suburb           | Named area of town or city                                   | place=suburb                                                 |
+| 1020 | place | island           | Identifies an island                                         | place=island                                                 |
+| 1030 | place | farm             | Named farm                                                   | place=farm                                                   |
+| 1031 | place | dwelling         | Isolated dwelling (1 or 2 houses, smaller than hamlet)       | place=isolated_dwelling                                      |
+| 1040 | place | region           | A region label (used in some areas only)                     | place=region                                                 |
+| 1041 | place | county           | A county label (used in some areas only)                     | place=county                                                 |
+| 1050 | place | locality         | Other kind of named place                                    | place=locality                                               |
+
+### 2. Points of Interest
+
+The following feature classes exist in this layer:
+
+| code | layer  | fclass           | Description                                                  | OSM Tags                               |
+| ---- | ------ | ---------------- | ------------------------------------------------------------ | -------------------------------------- |
+| 20xx | public |                  |                                                              |                                        |
+| 2001 |        | police           | A police post or station.                                    | amenity=police                         |
+| 2002 |        | fire_station     | A fire station.                                              | amenity=fire_station                   |
+| 2004 |        | post_box         | A post box (for letters).                                    | amenity=post_box                       |
+| 2005 |        | post_office      | A post office.                                               | amenity=post_office                    |
+| 2006 |        | telephone        | A public telephone booth.                                    | amenity=telephone                      |
+| 2007 |        | library          | A library.                                                   | amenity=library                        |
+| 2008 |        | town_hall        | A town hall.                                                 | amenity=townhall                       |
+| 2009 |        | courthouse       | A court house.                                               | amenity=courthouse                     |
+| 2010 |        | prison           | A prison.                                                    | amenity=prison                         |
+| 2011 |        | embassy          | An embassy or consulate.                                     | amenity=embassy or office=diplomatic   |
+| 2012 |        | community_centre | A public facility which is mostly used by local associations for events and festivities. | amenity=community_centre               |
+| 2013 |        | nursing_home     | A home for disabled or elderly persons who need permanent care. | amenity=nursing_home                   |
+| 2014 |        | arts_centre      | A venue at which a variety of arts are performed or conducted, and may well be involved with the creation of those works, and run occasional courses. | amenity=arts_centre                    |
+| 2015 |        | graveyard        | A graveyard.                                                 | amenity=grave_yard or landuse=cemetery |
+
+| code | layer   | fclass            | Description                                                  | OSM Tags                                                     |
+| ---- | ------- | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 2016 |         | market_place      | A place where markets are held.                              | amenity=marketplace                                          |
+| 2030 |         | recycling         | A place (usually a container) where you can drop waste for recycling. | amenity=recycling                                            |
+| 2031 |         | recycling_glass   | A place for recycling glass.                                 | recycling:glass=yes or recycling:glass_bottles=yes           |
+| 2032 |         | recycling_paper   | A place for recycling paper.                                 | recycling:paper=yes                                          |
+| 2033 |         | recycling_clothes | A place for recycling clothes.                               | recycling:clothes=yes                                        |
+| 2034 |         | recycling_metal   | A place for recycling metal.                                 | recycling:scrap_metal=yes                                    |
+| 208x |         |                   | Education                                                    |                                                              |
+| 2081 |         | university        | A university.                                                | amenity=university                                           |
+| 2082 |         | school            | A school.                                                    | amenity=school                                               |
+| 2083 |         | kindergarten      | A kindergarten (nursery).                                    | amenity=kindergarten                                         |
+| 2084 |         | college           | A college.                                                   | amenity=college                                              |
+| 2099 |         | public_building   | An unspecified public building.                              | amenity=public_building                                      |
+| 21xx | health  |                   |                                                              |                                                              |
+| 2101 |         | pharmacy          | A pharmacy.                                                  | amenity=pharmacy                                             |
+| 2110 |         | hospital          | A hospital.                                                  | amenity=hospital                                             |
+| 2111 |         | clinic            | A medical centre that does not admit inpatients.             | amenity=clinic                                               |
+| 2120 |         | doctors           | A medical practice.                                          | amenity=doctors                                              |
+| 2121 |         | dentist           | A dentist's practice.                                        | amenity=dentist                                              |
+| 2129 |         | veterinary        | A veterinary (animal doctor).                                | amenity=veterinary                                           |
+| 22xx | leisure |                   |                                                              |                                                              |
+| 2201 |         | theatre           | A theatre.                                                   | amenity=theatre                                              |
+| 2202 |         | nightclub         | A night club, or disco.                                      | amenity=nightclub                                            |
+| 2203 |         | cinema            | A cinema.                                                    | amenity=cinema                                               |
+| 2204 |         | park              | A park.                                                      | leisure=park                                                 |
+| 2205 |         | playground        | A playground for children.                                   | leisure=playground                                           |
+| 2206 |         | dog_park          | An area where dogs are allowed to run free without a leash.  | leisure=dog_park                                             |
+| 225x |         |                   | Sports                                                       |                                                              |
+| 2251 |         | sports_centre     | A facility where a range of sports activities can be pursued. | leisure=sports_centre                                        |
+| 2252 |         | pitch             | An area set aside for a specific sport.                      | leisure=pitch                                                |
+| 2253 |         | swimming_pool     | A swimming pool or water park.                               | amenity=swimming_pool,leisure=swimming_pool,sport=swimming, leisure=water_park |
+| 2254 |         | tennis_court      | A tennis court.                                              | sport=tennis                                                 |
+| 2255 |         | golf_course       | A golf course.                                               | leisure=golf_course                                          |
+| 2256 |         | stadium           | A stadium. The area of the stadium may contain one or several pitches. | leisure=stadium                                              |
+| 2257 |         | ice_rink          | An ice rink.                                                 | leisure=ice_rink                                             |
+
+| code | layer         | fclass            | Description                                                  | OSM Tags                  |
+| ---- | ------------- | ----------------- | ------------------------------------------------------------ | ------------------------- |
+| 23xx | catering      |                   | Catering services                                            |                           |
+| 2301 |               | restaurant        | A normal restaurant.                                         | amenity=restaurant        |
+| 2302 |               | fast_food         | A fast-food restaurant.                                      | amenity=fast_food         |
+| 2303 |               | cafe              | A cafe.                                                      | amenity=cafe              |
+| 2304 |               | pub               | A pub.                                                       | amenity=pub               |
+| 2305 |               | bar               | A bar. The difference between a pub and a bar is not clear but pubs tend to offer food while bars do not. | amenity=bar               |
+| 2306 |               | food_court        | A common seating area with various fast-food vendors.        | amenity=food_court        |
+| 2307 |               | biergarten        | An open-air area where food and drinks are served.           | amenity=biergarten        |
+| 24xx | accommodation |                   | (indoor)                                                     |                           |
+| 2401 |               | hotel             | A hotel.                                                     | tourism=hotel             |
+| 2402 |               | motel             | A motel.                                                     | tourism=motel             |
+| 2403 |               | bed_and_breakfast | A facility offering bed and breakfast.                       | tourism=bed_and_breakfast |
+| 2404 |               | guesthouse        | A guesthouse. The difference between hotel, bed and breakfast, and guest houses is not a strict one and OSM tends to use whatever the facility calls itself. | tourism=guest_house       |
+| 2405 |               | hostel            | A hostel (offering cheap accommodation, often bunk beds in dormitories). | tourism=hostel            |
+| 2406 |               | chalet            | A detached cottage, usually self-catering.                   | tourism=chalet            |
+| 2420 |               |                   | (outdoor)                                                    |                           |
+| 2421 |               | shelter           | All sorts of small shelters to protect against bad weather conditions. | amenity=shelter           |
+| 2422 |               | camp_site         | A camp site or camping ground.                               | tourism=camp_site         |
+| 2423 |               | alpine_hut        | An alpine hut is a building typically situated in mountains providing shelter and often food and beverages to visitors. | tourism=alpine_hut        |
+| 2424 |               | caravan_site      | A place where people with caravans or motorhomes can stay overnight or longer. | tourism=caravan_site      |
+| 25xx | shopping      |                   |                                                              |                           |
+| 2501 |               | supermarket       | A supermarket.                                               | shop=supermarket          |
+| 2502 |               | bakery            | A bakery.                                                    | shop=bakery               |
+| 2503 |               | kiosk             | A very small shop usually selling cigarettes, newspapers, sweets, snacks and beverages. | shop=kiosk                |
+| 2504 |               | mall              | A shopping mall.                                             | shop=mall                 |
+| 2505 |               | department_store  | A department store.                                          | shop=department_store     |
+
+| code | layer | fclass            | Description                                                  | OSM Tags                         |
+| ---- | ----- | ----------------- | ------------------------------------------------------------ | -------------------------------- |
+| 2510 |       | general           | A general store, offering a broad range of products on a small area. Exists usually in rural and remote areas. | shop=general                     |
+| 2511 |       | convenience       | A convenience store is a small shop selling a subset of items you might find at a supermarket. | shop=convenience                 |
+| 2512 |       | clothes           | A clothes or fashion store.                                  | shop=clothes                     |
+| 2513 |       | florist           | A store selling flowers.                                     | shop=florist                     |
+| 2514 |       | chemist           | A shop selling articles of personal hygiene, cosmetics, and household cleaning products. | shop=chemist                     |
+| 2515 |       | bookshop          | A book shop.                                                 | shop=books                       |
+| 2516 |       | butcher           | A butcher.                                                   | shop=butcher                     |
+| 2517 |       | shoe_shop         | A shoe shop.                                                 | shop=shoes                       |
+| 2518 |       | beverages         | A place where you can buy alcoholic and non-alcoholic beverages. | shop=alcohol, shop=beverages     |
+| 2519 |       | optician          | A place where you can buy glasses.                           | shop=optician                    |
+| 2520 |       | jeweller          | A jewelry shop.                                              | shop=jewelry                     |
+| 2521 |       | gift_shop         | A gift shop.                                                 | shop=gift                        |
+| 2522 |       | sports_shop       | A shop selling sports equipment.                             | shop=sports                      |
+| 2523 |       | stationery        | A shop selling stationery for private and office use.        | shop=stationery                  |
+| 2524 |       | outdoor_shop      | A shop selling outdoor equipment.                            | shop=outdoor                     |
+| 2525 |       | mobile_phone_shop | A shop for mobile phones.                                    | shop=mobile_phone                |
+| 2526 |       | toy_shop          | A toy store.                                                 | shop=toys                        |
+| 2527 |       | newsagent         | A shop selling mainly newspapers and magazines.              | shop=newsagent                   |
+| 2528 |       | greengrocer       | A shop selling fruit and vegetables.                         | shop=greengrocer                 |
+| 2529 |       | beauty_shop       | A shop that provides personal beauty services like a nail salon or tanning salon. | shop=beauty                      |
+| 2530 |       | video_shop        | A place where you can buy films.                             | shop=video                       |
+| 2541 |       | car_dealership    | A car dealership.                                            | shop=car                         |
+| 2542 |       | bicycle_shop      | A bicycle shop.                                              | shop=bicycle                     |
+| 2543 |       | doityourself      | A do-it-yourself shop where you can buy tools and building materials. | shop=doityourself, shop=hardware |
+| 2544 |       | furniture_shop    | A furniture store.                                           | shop=furniture                   |
+| 2546 |       | computer_shop     | A computer shop.                                             | shop=computer                    |
+| 2547 |       | garden_centre     | A place selling plants and gardening goods.                  | shop=garden_centre               |
+| 2561 |       | hairdresser       | A hair salon.                                                | shop=hairdresser                 |
+| 2562 |       | car_repair        | A car garage.                                                | shop=car_repair                  |
+| 2563 |       | car_rental        | A place where you can rent a car.                            | amenity=car_rental               |
+| 2564 |       | car_wash          | A car wash.                                                  | amenity=car_wash                 |
+| 2565 |       | car_sharing       | A car sharing station.                                       | amenity=car_sharing              |
+
+| code | layer   | fclass            | Description                                                  | OSM Tags                                   |
+| ---- | ------- | ----------------- | ------------------------------------------------------------ | ------------------------------------------ |
+| 2566 |         | bicycle_rental    | A place where you can rent bicycles.                         | amenity=bicycle_rental                     |
+| 2567 |         | travel_agent      | A travel agency.                                             | shop=travel_agency                         |
+| 2568 |         | laundry           | A place where you can wash clothes or have them cleaned.     | shop=laundry, shop=dry_cleaning            |
+| 2590 |         | vending_machine   | An unspecified vending machine with none of the specifics below. | amenity=vending_machine                    |
+| 2591 |         | vending_cigarette | A cigarette vending machine.                                 | vending=cigarettes                         |
+| 2592 |         | vending_parking   | A vending machine for parking tickets.                       | vending=parking_tickets                    |
+| 2600 | money   |                   |                                                              |                                            |
+| 2601 |         | bank              | A bank.                                                      | amenity=bank                               |
+| 2602 |         | atm               | A machine that lets you withdraw cash from your bank account. | amenity=atm                                |
+| 2700 | tourism |                   | information                                                  |                                            |
+| 2701 |         | tourist_info      | Something that provides information to tourists; may or may not be manned. | tourism=information                        |
+| 2704 |         | tourist_map       | A map displayed to inform tourists.                          | tourism=information, information=map       |
+| 2705 |         | tourist_board     | A board with explanations aimed at tourists.                 | tourism=information, information=board     |
+| 2706 |         | tourist_guidepost | A guide post.                                                | tourism=information, information=guidepost |
+|      |         |                   | destinations                                                 |                                            |
+| 2721 |         | attraction        | A tourist attraction.                                        | tourism=attraction                         |
+| 2722 |         | museum            | A museum.                                                    | tourism=museum                             |
+| 2723 |         | monument          | A monument.                                                  | historic=monument                          |
+| 2724 |         | memorial          | A memorial.                                                  | historic=memorial                          |
+| 2725 |         | art               | A permanent work of art.                                     | tourism=artwork                            |
+| 2731 |         | castle            | A castle.                                                    | historic=castle                            |
+| 2732 |         | ruins             | Ruins of historic significance.                              | historic=ruins                             |
+| 2733 |         | archaeological    | An excavation site.                                          | historic=archaeological_site               |
+| 2734 |         | wayside_cross     | A wayside cross, not necessarily old.                        | historic=wayside_cross                     |
+| 2735 |         | wayside_shrine    | A wayside shrine.                                            | historic=wayside_shrine                    |
+| 2736 |         | battlefield       | A historic battlefield.                                      | historic=battlefield                       |
+| 2737 |         | fort              | A fort.                                                      | historic=fort                              |
+| 2741 |         | picnic_site       | A picnic site.                                               | tourism=picnic_site                        |
+| 2742 |         | viewpoint         | A viewpoint.                                                 | tourism=viewpoint                          |
+| 2743 |         | zoo               | A zoo.                                                       | tourism=zoo                                |
+| 2744 |         | theme_park        | A theme park.                                                | tourism=theme_park                         |
+| 2900 | miscpoi |                   |                                                              |                                            |
+| 2901 |         | toilet            | Public toilets.                                              | amenity=toilets                            |
+| 2902 |         | bench             | A public bench.                                              | amenity=bench                              |
+| 2903 |         | drinking_water    | A tap or other source of drinking water.                     | amenity=drinking_water                     |
+
+| code | layer | fclass              | Description                                                  | OSM Tags                                       |
+| ---- | ----- | ------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| 2904 |       | fountain            | A fountain for cultural, decorative, or recreational purposes. | amenity=fountain                               |
+| 2905 |       | hunting_stand       | A hunting stand.                                             | amenity=hunting_stand                          |
+| 2906 |       | waste_basket        | A waste basket.                                              | amenity=waste_basket                           |
+| 2907 |       | camera_surveillance | A surveillance camera.                                       | man_made=surveillance                          |
+| 2921 |       | emergency_phone     | An emergency telephone.                                      | amenity=emergency_phone, emergency=phone       |
+| 2922 |       | fire_hydrant        | A fiery hydrant.                                             | amenity=fire_hydrant, emergency=fire_hydrant   |
+| 2923 |       | emergency_access    | An emergency access point (signposted place in e.g., woods the location of which is known to emergency services). | highway=emergency_access_point                 |
+| 2950 |       | tower               | A tower of some kind.                                        | man_made=tower and none of the specifics below |
+| 2951 |       | tower_comms         | A communications tower.                                      | man_made=tower and tower:type=communication    |
+| 2952 |       | water_tower         | A water tower.                                               | man_made=water_tower                           |
+| 2953 |       | tower_observation   | An observation tower.                                        | man_made=tower and tower:type=observation      |
+| 2954 |       | windmill            | A windmill.                                                  | man_made=windmill                              |
+| 2955 |       | lighthouse          | A lighthouse.                                                | man_made=lighthouse                            |
+| 2961 |       | wastewater_plant    | A wastewater treatment plant.                                | man_made=wastewater_plant                      |
+| 2962 |       | water_well          | A facility to access underground aquifers.                   | man_made=water_well                            |
+| 2963 |       | water_mill          | A mill driven by water. Often historic.                      | man_made=watermill                             |
+| 2964 |       | water_works         | A place where drinking water is processed.                   | man_made=water_works                           |
+
+### 3. Places of Worship (“pofw”)
+
+The following feature classes exist in this layer:
+
+| code | layer | fclass                | Description                                                  | OSM Tags                                     |
+| ---- | ----- | --------------------- | ------------------------------------------------------------ | -------------------------------------------- |
+| 3000 | pofw  |                       | Places of worship                                            |                                              |
+| 3100 | pofw  | christian             | A christian place of worship (usually a church) without one of the denominations below. | amenity=place_of_worship, religion=christian |
+| 3101 | pofw  | christian_anglican    | A christian place of worship where the denomination is known. (Note to German users: “protestant” is “evangelisch” in German; “evangelical” is “evangelikal” in German.) | + denomination=anglican                      |
+| 3102 | pofw  | christian_catholic    |                                                              | + denomination=catholic                      |
+| 3103 | pofw  | christian_evangelical |                                                              | + denomination=evangelical                   |
+| 3104 | pofw  | christian_lutheran    |                                                              | + denomination=lutheran                      |
+| 3105 | pofw  | christian_methodist   |                                                              | + denomination=methodist                     |
+| 3106 | pofw  | christian_orthodox    |                                                              | + denomination=orthodox                      |
+| 3107 | pofw  | christian_protestant  |                                                              | + denomination=protestant                    |
+| 3108 | pofw  | christian_baptist     |                                                              | + denomination=baptist                       |
+| 3109 | pofw  | christian_mormon      |                                                              | + denomination=mormon                        |
+
+| code | layer | fclass       | Description                                                  | OSM Tags                                     |
+| ---- | ----- | ------------ | ------------------------------------------------------------ | -------------------------------------------- |
+| 3200 | pofw  | jewish       | A Jewish place of worship (usually a synagogue).             | amenity=place_of_worship, religion=jewish    |
+| 3300 | pofw  | muslim       | A Muslim place of worship (usually a mosque) without one of the denominations below. | amenity=place_of_worship, religion=muslim    |
+| 3301 | pofw  | muslim_sunni | A Sunni Muslim place of worship.                             | + denomination=sunni                         |
+| 3302 | pofw  | muslim_shia  | A Shia Muslim place of worship.                              | + denomination=shia                          |
+| 3400 | pofw  | buddhist     | A Buddhist place of worship.                                 | amenity=place_of_worship, religion=buddhist  |
+| 3500 | pofw  | hindu        | A Hindu place of worship.                                    | amenity=place_of_worship, religion=hindu     |
+| 3600 | pofw  | taoist       | A Taoist place of worship.                                   | amenity=place_of_worship, religion=taoist    |
+| 3700 | pofw  | shintoist    | A Shintoist place of worship.                                | amenity=place_of_worship, religion=shintoist |
+| 3800 | pofw  | sikh         | A Sikh place of worship.                                     | amenity=place_of_worship, religion=sikh      |
+
+### 4. Natural Features (“natural”)
+
+The following feature classes exist in this layer:
+
+| code | layer   | fclass        | Description                                                  | OSM Tags              |
+| ---- | ------- | ------------- | ------------------------------------------------------------ | --------------------- |
+| 4101 | natural | spring        | A spring, possibly source of a stream.                       | natural=spring        |
+| 4103 | natural | glacier       | A glacier.                                                   | natural=glacier       |
+| 4111 | natural | peak          | A mountain peak.                                             | natural=peak          |
+| 4112 | natural | cliff         | A cliff.                                                     | natural=cliff         |
+| 4113 | natural | volcano       | A volcano.                                                   | natural=volcano       |
+| 4121 | natural | tree          | A tree.                                                      | natural=tree          |
+| 4131 | natural | mine          | A mine.                                                      | natural=mine          |
+| 4132 | natural | cave_entrance | A cave entrance.                                             | natural=cave_entrance |
+| 4141 | natural | beach         | A beach. (Note that beaches are only rarely mapped as point features.) | natural=beach         |
+
+### 5. Traffic Related (“traffic”)
+
+The following feature classes exist in this layer:
+
+| code | layer   | fclass          | Description                                                  | OSM Tags                                 |
+| ---- | ------- | --------------- | ------------------------------------------------------------ | ---------------------------------------- |
+| 5201 | traffic | traffic_signals | Traffic lights.                                              | highway=traffic_signals                  |
+| 5202 | traffic | mini_roundabout | A small roundabout without physical structure, usually just painted onto the road surface. | highway=mini_roundabout                  |
+| 5203 | traffic | stop            | A stop sign.                                                 | highway=stop                             |
+| 5204 | traffic | crossing        | A place where the street is crossed by pedestrians or a railway. | highway=crossing, railway=level_crossing |
+
+| code | layer   | fclass              | Description                                             | OSM Tags                      |
+| ---- | ------- | ------------------- | ------------------------------------------------------- | ----------------------------- |
+| 5205 | traffic | ford                | A place where the road runs through a river or stream.  | highway=ford                  |
+| 5206 | traffic | motorway_junction   | The place where a slipway enters or leaves a motorway.  | highway=motorway_junction     |
+| 5207 | traffic | turning_circle      | An area at the end of a street where vehicles can turn. | highway=turning_circle        |
+| 5208 | traffic | speed_camera        | A camera that photographs speeding vehicles.            | highway=speed_camera          |
+| 5209 | traffic | street_lamp         | A lamp illuminating the road.                           | highway=street_lamp           |
+|      |         |            |Fuel and Parking||
+| 5250 | traffic | fuel                | A gas station.                                          | amenity=fuel                  |
+| 5251 | traffic | service             | A service area, usually along motorways.                | highway=services              |
+| 5260 | traffic | parking             | A car park of unknown type.                             | amenity=parking               |
+| 5261 | traffic | parking_site        | A surface car park.                                     | amenity=parking, parking=site |
+| 5262 | traffic | parking_multistorey | A multi-storey car park.                                | parking=multi-storey          |
+| 5263 | traffic | parking_underground | An underground car park.                                | parking=underground           |
+| 5270 | traffic | parking_bicycle     | A place to park your bicycle.                           | amenity=bicycle_parking       |
+|      |         |                     |Water Traffic||
+| 5301 | traffic | slipway             | A slipway.                                              | leisure=slipway               |
+| 5302 | traffic | marina              | A marina.                                               | leisure=marina                |
+| 5303 | traffic | pier                | A pier.                                                 | man_made=pier                 |
+| 5311 | traffic | dam                 | A dam.                                                  | waterway=dam                  |
+| 5321 | traffic | waterfall           | A waterfall.                                            | waterway=waterfall            |
+| 5331 | traffic | lock_gate           | A lock gate.                                            | waterway=lock_gate            |
+| 5332 | traffic | weir                | A barrier built across a river or stream.               | waterway=weir                 |
+
+Note: Most of the 53xx type objects do sometimes appear as linear features in OSM as well but those are not yet available in the shape files.
+
+### 6. Transport Infrastructure (“transport”)
+
+The following feature classes exist in this layer:
+
+| code | layer     | fclass          | Description                                          | OSM Tags                                                     |
+| ---- | --------- | --------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| 5601 | transport | railway_station | A larger railway station of mainline rail services.  | railway=station                                              |
+| 5602 | transport | railway_halt    | A smaller, local railway station, or subway station. | railway=halt, or public_transport=stop_position + train=yes  |
+| 5603 | transport | tram_stop       | A tram stop.                                         | railway=tram_stop, or public_transport=stop_position + tram=yes |
+| 5621 | transport | bus_stop        | A bus stop.                                          | highway=bus_stop, or public_transport=stop_position + bus=yes |
+
+| code | layer     | fclass            | Description                                  | OSM Tags                                                     |
+| ---- | --------- | ----------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| 5622 | transport | bus_station       | A large bus station with multiple platforms. | amenity=bus_station                                          |
+| 5641 | transport | taxi_rank         | A taxi rank.                                 | amenity=taxi                                                 |
+| 565x |           |                   | Air Traffic                                  |                                                              |
+| 5651 | transport | airport           | A large airport.                             | amenity=airport or aeroway=aerodrome unless type=airstrip    |
+| 5652 | transport | airfield          | A small airport or airfield.                 | aeroway=airfield, military=airfield, aeroway=aeroway with type=airstrip |
+| 5655 | transport | helipad           | A place for landing helicopters.             | aeroway=helipad                                              |
+| 5656 | transport | apron             | An apron (area where aircraft are parked)    | aeroway=apron                                                |
+| 566x |           |                   | Water Traffic                                |                                                              |
+| 5661 | transport | ferry_terminal    | A ferry terminal.                            | amenity=ferry_terminal                                       |
+| 567x |           |                   | Other Traffic                                |                                                              |
+| 5671 | transport | aerialway_station | A station where cable cars or lifts alight.  | aerialway=station                                            |
+
+
+
+
+

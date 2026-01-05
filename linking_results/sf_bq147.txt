@@ -1,0 +1,786 @@
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_BREAST_CANCER_PDC_V2_10
+[
+    case_id (Type: TEXT; Sample values: ['bd4adbe5-63d8-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: TEXT; Sample values: ['2ffecfa6-6420-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    gene_id (Type: TEXT; Sample values: ['f8f1c401-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: TEXT; Sample values: ['105369247']; Description: NCBI gene identifier)
+    gene_description (Type: TEXT; Sample values: ['leukosialin']; Description: Description of the gene, sourced by PDC from NCBI)
+    proteins (Type: TEXT; Sample values: ['XP_016855093.1;XP_016855094.1;XP_016855095.1;XP_016855096.1;XP_016855097.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    uniprotkb_id (Type: TEXT; Sample values: ['None']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    aliquot_submitter_id (Type: TEXT; Sample values: ['AO-A0JE-01A']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    uniprotkb_ids (Type: TEXT; Sample values: ['None']; Description: Every UniProt id found in 'proteins' column list)
+    authority_gene_id (Type: TEXT; Sample values: ['None']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    aliquot_id (Type: TEXT; Sample values: ['f972b320-6428-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['118e7700-5730-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: TEXT; Sample values: ['TCGA Breast Cancer Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.QUANT_PROTEOME_TCGA_BREAST_CANCER_PDC_V1_17, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_BREAST_CANCER_PDC_V1_19, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_BREAST_CANCER_PDC_V1_21]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PHOSPHOPROTEOME_TCGA_BREAST_CANCER_PDC_V1_17
+[
+    case_id (Type: TEXT; Sample values: ['010df72d-63d9-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: TEXT; Sample values: ['9532a8b4-6420-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    study_name (Type: TEXT; Sample values: ['TCGA Breast Cancer Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    aliquot_submitter_id (Type: TEXT; Sample values: ['TCGA-E2-A10A-01A-12-A21V-30']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_id (Type: TEXT; Sample values: ['410a1984-6429-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    refseq_id (Type: TEXT; Sample values: ['NP_001269554.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['27c280fc-5730-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.QUANT_PHOSPHOPROTEOME_TCGA_BREAST_CANCER_PDC_V1_21]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.RNASEQ_HG19_GDC_2017_02
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-04-1348']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    gene_id (Type: NUMBER; Sample values: ['388701']; Description: The gene symbol. In this table, gene symbol is gene namee.g. ENSG00000251562)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-04-1348-01A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-04-1348-01A-01R-1565-13']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_BREAST_CANCER_PDC_2020_09
+[
+    case_id (Type: TEXT; Sample values: ['e0617dfe-63d8-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the patient (e.g. looks like 24cb0fcb-63d6-11e8-bcf1-0a2705229b82 ))
+    sample_id (Type: TEXT; Sample values: ['61b9857d-6420-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the sample (e.g. looks like 1c64cd8f-d028-11ea-b1fd-0aad30af8a83))
+    organism (Type: TEXT; Sample values: ['Homo sapiens']; Description: species investigated in the study (e.g Homo sapiens))
+    gene_id (Type: TEXT; Sample values: ['f8f1c401-b814-11e8-907f-0a2705229b82']; Description: UUID for the gene name (e.g. looks like fa986b85-b814-11e8-907f-0a2705229b82))
+    NCBI_gene_id (Type: TEXT; Sample values: ['105369247']; Description: NCBI Gene Identifier (numeric designation e.g. 6272))
+    description (Type: TEXT; Sample values: ['leukosialin']; Description: Gene description)
+    aliquot_submitter_id (Type: TEXT; Sample values: ['BH-A0E0-01A']; Description: Unique source id provided by the data submitter (e.g. looks like e5e1306b-719e-4c3e-b85b-fd1231_D2))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['2f523634-5732-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    authority_gene_id (Type: TEXT; Sample values: ['None']; Description: HGNC Identifier (e.g. 11186))
+    aliquot_id (Type: TEXT; Sample values: ['1fb9b049-6429-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the aliquot (e.g. looks like 1c6638dc-d028-11ea-b1fd-0aad30af8a83))
+    study_name (Type: TEXT; Sample values: ['TCGA Breast Cancer Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    uniprotkb_id (Type: TEXT; Sample values: ['None']; Description: Oldest Swiss-Prot ID associated with this gene, if available; otherwise, oldest UniProt ID)
+    uniprotkb_ids (Type: TEXT; Sample values: ['None']; Description: List of all UniProt accession numbers associated with this gene)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.RNASEQ_HG38_GDC_R28
+[
+    case_gdc_id (Type: TEXT; Sample values: ['0de19185-3517-4e30-925b-7eb1f5079ec2']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba36)
+    sample_type_name (Type: TEXT; Sample values: ['Primary Tumor']; Description: The longer name of the sample type; eg. Primary Tumor, Recurrent Tumor, etc)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ']; Description: Original case barcode)
+    HTSeq__Counts (Type: NUMBER; Sample values: ['0']; Description: Number of mapped reads to each gene as calculated by the Python package HTSeq. https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-Counts/)
+    primary_site (Type: TEXT; Sample values: ['Gum']; Description: Anatomical site of the cancer under investigation or review)
+    Ensembl_gene_id (Type: TEXT; Sample values: ['ENSG00000199200']; Description: The Ensembl gene ID from the underlying file, but stripped of the version suffix -- eg ENSG00000185028)
+    file_gdc_id_fpkm (Type: TEXT; Sample values: ['a653cebc-947d-4625-9fc6-79a7a9822e28']; Description: Unique GDC identifier for the file containing FPKM values (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba43)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-HNSC']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_gdc_id (Type: TEXT; Sample values: ['4210ffee-2a83-4f05-8935-2687503c83d4']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    file_gdc_id_counts (Type: TEXT; Sample values: ['03f33c10-915f-4523-8871-1482aaff3549']; Description: Unique GDC identifier for the file containing counts values (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba43)
+    Ensembl_gene_id_v (Type: TEXT; Sample values: ['ENSG00000199200.2']; Description: The Ensembl gene ID from the underlying file, including the version suffix  --  eg ENSG00000235943.1)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A-11R-A30B-07']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-31)
+    file_gdc_id_fpkm_uq (Type: TEXT; Sample values: ['09c8ec1d-c1d9-45a9-aab8-d92c0104ea03']; Description: Unique GDC identifier for the file containing FPKM UQ values (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba43)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['1dbe5a97-6470-4669-8c56-43d65e6b6813']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A']; Description: sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    gene_name (Type: TEXT; Sample values: ['Y_RNA']; Description: Gene name e.g. TTN, DDR1, etc.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.RNASEQ_HG38_GDC_R39
+[
+    sample_type_name (Type: TEXT; Sample values: ['Solid Tissue Normal']; Description: The longer name of the sample type; eg. Primary Tumor, Recurrent Tumor, etc)
+    case_gdc_id (Type: TEXT; Sample values: ['f8a32cb0-8c3d-4bc2-8e53-561b89000be7']; Description: Unique GDC identifier for this case (corresponds to the case_barcode))
+    case_barcode (Type: TEXT; Sample values: ['TCGA-HU-A4GN']; Description: Original case barcode)
+    primary_site (Type: TEXT; Sample values: ['Stomach']; Description: Anatomical site of the cancer under investigation or review)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-STAD']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-HU-A4GN-11A']; Description: sample barcode, eg. TCGA-12-1089-01A. One sample may have multiple sets of expression values corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    sample_gdc_id (Type: TEXT; Sample values: ['9776b300-217e-4c5a-b9a5-74bf57d36e59']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode))
+    Ensembl_gene_id_v (Type: TEXT; Sample values: ['N_unmapped']; Description: The Ensembl gene ID from the underlying file, including the version suffix -- eg. ENSG00000235943.1)
+    file_gdc_id (Type: TEXT; Sample values: ['a7474755-f3dc-4a63-bc79-b9d10ee278af']; Description: Unique GDC identifier for the file containing the expression values (corresponds to the file_barcode))
+    gene_name (Type: TEXT; Sample values: ['None']; Description: Gene name eg. TTN, DDR1)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['1cbbed6a-6117-48ff-94b1-c9018c5aaa67']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode))
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-HU-A4GN-11A-12R-A251-31']; Description: TCGA aliquot barcode, eg. TCGA-12-1089-01A-01D-0517-31)
+    Ensembl_gene_id (Type: TEXT; Sample values: ['N_unmapped']; Description: The Ensembl gene ID from the underlying file, but stripped of the version suffix -- eg. ENSG00000185028)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.RNASEQ_HG38_GDC_R35, TCGA_VERSIONED.RNASEQ_HG38_GDC_R40]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.MIRNASEQ_ISOFORM_HG19_GDC_2017_02
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-04-1331']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    case_gdc_id (Type: TEXT; Sample values: ['6d10d4ee-6331-4bba-93bc-a7b64cc0b22a']; Description: GDC unique identifier for this case (corresponds to the case_barcode), eg 6d10d4ee-6331-4bba-93bc-a7b64cc0b22a  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/cases/6d10d4ee-6331-4bba-93bc-a7b64cc0b22a)
+    sample_gdc_id (Type: TEXT; Sample values: ['a1ec9279-c1a6-4e58-97ed-9ec1f36187c5']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    mirna_id (Type: TEXT; Sample values: ['hsa-mir-145']; Description: One of 1788 unique miRNA ids (aka symbols) contained in this table, eg hsa-mir-21)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A-01R-1569-13']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    file_gdc_id (Type: TEXT; Sample values: ['b34ca22e-b977-4af2-8b88-f594e6491da0']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba18)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.MIRNASEQ_HG19_GDC_2017_03
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-04-1331']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    case_gdc_id (Type: TEXT; Sample values: ['6d10d4ee-6331-4bba-93bc-a7b64cc0b22a']; Description: GDC unique identifier for this case (corresponds to the case_barcode), eg 6d10d4ee-6331-4bba-93bc-a7b64cc0b22a  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/cases/6d10d4ee-6331-4bba-93bc-a7b64cc0b22a)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_gdc_id (Type: TEXT; Sample values: ['a1ec9279-c1a6-4e58-97ed-9ec1f36187c5']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A-01R-1569-13']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A  --  note that one sample may have multiple aliquots and therefore multiple sets of CN segmentations; so be sure to use GROUP BY appropriately in your queries)
+    mirna_id (Type: TEXT; Sample values: ['hsa-mir-4535']; Description: One of 1870 unique miRNA ids (aka symbols) contained in this table, eg hsa-mir-21  --  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v20 and miRBase_v20_hsa_gff3)
+    file_gdc_id (Type: TEXT; Sample values: ['ca1bc2d9-4a9c-4190-9dd0-57186110af60']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba17)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.MIRNASEQ_ISOFORM_HG38_GDC_R28
+[
+    case_gdc_id (Type: TEXT; Sample values: ['c9a5b051-0503-4aae-8bc6-270af3033326']; Description: GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba13)
+    sample_type_name (Type: TEXT; Sample values: ['Primary Tumor']; Description: The longer name of the sample type; eg. Primary Tumor, Recurrent Tumor, etc)
+    file_gdc_id (Type: TEXT; Sample values: ['b78e5ac2-7d83-4173-8db6-677cc838eaea']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba13)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-DX-A6Z0-01A']; Description: TARGET sample barcode, eg TARGET-20-PASWAT-09A)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-DX-A6Z0']; Description: Original TARGET case barcode, eg TARGET-20-PASCGR)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-DX-A6Z0-01A-13R-A36A-13']; Description: TARGET aliquot barcode, eg TARGET-20-PAJLIP-01A-01R)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['03c5ae93-6cd7-4309-b053-7fd3a4a20178']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    sample_gdc_id (Type: TEXT; Sample values: ['19c821d5-c05c-42ad-aaca-749565eff239']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    miRNA_id (Type: TEXT; Sample values: ['hsa-mir-222']; Description: Unique miRNA id (aka symbol), eg hsa-mir-21  --  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-SARC']; Description: Project name abbreviation, eg TARGET-AML)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.MIRNASEQ_HG38_GDC_R28
+[
+    case_gdc_id (Type: TEXT; Sample values: ['0de19185-3517-4e30-925b-7eb1f5079ec2']; Description: GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11)
+    sample_type_name (Type: TEXT; Sample values: ['Primary Tumor']; Description: The longer name of the sample type; eg. Primary Tumor, Recurrent Tumor, etc)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-HNSC']; Description: Project name abbreviation, eg TARGET-AML)
+    miRNA_id (Type: TEXT; Sample values: ['hsa-mir-526a-2']; Description: Unique miRNA id (aka symbol), eg hsa-mir-21  --  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A-11R-A30I-13']; Description: TARGET aliquot barcode, eg TARGET-20-PAJLIP-01A-01R)
+    file_gdc_id (Type: TEXT; Sample values: ['a99c39dc-4e3d-45c7-be4e-000612890cff']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A']; Description: TARGET sample barcode, eg TARGET-20-PASWAT-09A)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['6078be42-4bec-4f11-814b-b15acb27109f']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ']; Description: Original TARGET case barcode, eg TARGET-20-PASCGR)
+    sample_gdc_id (Type: TEXT; Sample values: ['4210ffee-2a83-4f05-8935-2687503c83d4']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.RNASEQ_HG38_GDC_2017_12
+[
+    case_gdc_id (Type: TEXT; Sample values: ['6d10d4ee-6331-4bba-93bc-a7b64cc0b22a']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba36)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A-01R-1569-13']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-31)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-04-1331']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    Ensembl_gene_id (Type: TEXT; Sample values: ['ENSG00000069849']; Description: The Ensembl gene ID from the underlying file, but stripped of the version suffix -- eg ENSG00000185028)
+    file_gdc_id (Type: TEXT; Sample values: ['776adc23-7d40-4c1a-94df-7a2ce6188db6']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba43)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    sample_gdc_id (Type: TEXT; Sample values: ['a1ec9279-c1a6-4e58-97ed-9ec1f36187c5']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    gene_name (Type: TEXT; Sample values: ['ATP1B3']; Description: Gene name e.g. TTN, DDR1, etc.)
+    Ensembl_gene_id_v (Type: TEXT; Sample values: ['ENSG00000069849.9']; Description: The Ensembl gene ID from the underlying file, including the version suffix  --  eg ENSG00000235943.1)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PHOSPHOPROTEOME_TCGA_OVARIAN_PNNL_VELOS_QEXACTIVE_PDC_V1_21
+[
+    case_id (Type: TEXT; Sample values: ['0578f49d-63d8-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    refseq_id (Type: TEXT; Sample values: ['NP_001137256.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+    aliquot_id (Type: TEXT; Sample values: ['325759fa-6428-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    sample_id (Type: TEXT; Sample values: ['2cbb60ef-641f-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: TEXT; Sample values: ['TCGA-61-1919-01A-31-2224-29']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['6b55f0ea-5730-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: TEXT; Sample values: ['TCGA Ovarian PNNL Phosphoproteome Velos Qexactive']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.QUANT_PHOSPHOPROTEOME_TCGA_OVARIAN_PNNL_VELOS_QEXACTIVE_PDC_V1_17]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_JHU_PDC_V1_21
+[
+    case_id (Type: TEXT; Sample values: ['06b79e23-63d8-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['08750101-5733-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    NCBI_gene_id (Type: TEXT; Sample values: ['4519']; Description: NCBI gene identifier)
+    study_name (Type: TEXT; Sample values: ['TCGA Ovarian JHU Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    uniprotkb_ids (Type: TEXT; Sample values: ['P00156']; Description: Every UniProt id found in 'proteins' column list)
+    gene_id (Type: TEXT; Sample values: ['618f8f92-b816-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    sample_id (Type: TEXT; Sample values: ['2e4d84eb-641f-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: TEXT; Sample values: ['61-1995-01A']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_id (Type: TEXT; Sample values: ['36835469-6428-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    authority_gene_id (Type: TEXT; Sample values: ['7427']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: TEXT; Sample values: ['P00156']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_JHU_PDC_V1_19, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_JHU_PDC_V1_17, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_JHU_PDC_V2_10]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.MASKED_SOMATIC_MUTATION_HG38_GDC_R39
+[
+    RNA_Support (Type: TEXT; Sample values: ['Unknown']; Description: Indicates if the variant is found and alleles (Match), simply (Overlap), or is not supported (No) by tumor RNA-Seq. If it has not been checked against RNA-Seq data, the value will be 'Unknown'.)
+    Tumor_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2)
+    Tumor_Seq_Allele2 (Type: TEXT; Sample values: ['A']; Description: Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    case_id (Type: TEXT; Sample values: ['df3c1d61-79c1-43e9-971a-8029497ffeab']; Description: Unique GDC identifier for the underlying case)
+    Tumor_Aliquot_Barcode (Type: TEXT; Sample values: ['TCGA-02-0003-01A-01D-1490-08']; Description: Aliquot barcode for the tumor sample)
+    HGNC_ID (Type: TEXT; Sample values: ['HGNC:3330']; Description: Gene identifier from the HUGO Gene Nomenclature Committee if applicable)
+    RNA_depth (Type: TEXT; Sample values: ['None']; Description: Read depth at this locus if the variant is supported by tumor RNA-seq data.)
+    Tumor_Seq_Allele1 (Type: TEXT; Sample values: ['G']; Description: Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    Sequence_Source (Type: TEXT; Sample values: ['None']; Description: Molecular assay type used to produce the analytes used for sequencing. Allowed values are a subset of the SRA 1.5 library_strategy field values. This subset matches those used at CGHub)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-02-0003-01A-01D-1490-08']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-02-0003-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    BIOTYPE (Type: TEXT; Sample values: ['protein_coding']; Description: Biotype of transcript)
+    tumor_submitter_uuid (Type: TEXT; Sample values: ['5aa2d6c0-4a4a-42b7-a663-591c0716b0f2']; Description: Unique GDC identifier for the tumor file submitter)
+    Matched_Norm_Aliquot_Barcode (Type: TEXT; Sample values: ['TCGA-02-0003-10A-01D-1490-08']; Description: Aliquot barcode for the matched normal sample)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-02-0003-10A-01D-1490-08']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01])
+    Validation_Method (Type: TEXT; Sample values: ['None']; Description: The assay platforms used for the validation call)
+    Matched_Norm_Aliquot_UUID (Type: TEXT; Sample values: ['0b63ce82-23d2-48d4-be99-3959917d94ea']; Description: Unique GDC identifier for normal aliquot (10189 unique))
+    case_barcode (Type: TEXT; Sample values: ['TCGA-02-0003']; Description: Original case barcode, eg TCGA-DX-A8BN)
+    Tumor_Aliquot_UUID (Type: TEXT; Sample values: ['458f13e0-34f3-4a92-b3b3-9a3c2ee3ef23']; Description: Unique GDC identifier for tumor aliquot (10189 unique))
+    Validation_Status (Type: TEXT; Sample values: ['None']; Description: Second pass results from orthogonal technology)
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-02-0003-10A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    file_gdc_id (Type: TEXT; Sample values: ['6fd169e5-a79b-405f-8c4e-b20a03d8a4a9']; Description: |-delimited list of unique GDC identifiers for underlying MAF file)
+    Tumor_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-GBM']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Amino_acids (Type: TEXT; Sample values: ['A/T']; Description: Amino acid substitution caused by the mutation. Only given if the variation affects the protein-coding sequence)
+    Entrez_Gene_Id (Type: NUMBER; Sample values: ['2009']; Description: Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID)
+    normal_submitter_uuid (Type: TEXT; Sample values: ['8bdcb466-e141-45b4-8d5a-975bd3dd0cde']; Description: Unique GDC identifier for the normal file submitter)
+    Match_Norm_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 2 (cleared in somatic MAF))
+    MOTIF_NAME (Type: TEXT; Sample values: ['None']; Description: The source and identifier of a transcription factor binding profile aligned at this position)
+    Match_Norm_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF))
+    Transcript_ID (Type: TEXT; Sample values: ['ENST00000262233']; Description: Ensembl ID of the transcript affected by the variant)
+    gnomAD_non_cancer_MID_AF (Type: FLOAT; Sample values: ['nan']; Description: Frequency of exisiting variant in gnomAD genomes non-cancer Middle Eastern population)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.MASKED_SOMATIC_MUTATION_HG38_GDC_R35, TCGA_VERSIONED.MASKED_SOMATIC_MUTATION_HG38_GDC_R34, TCGA_VERSIONED.MASKED_SOMATIC_MUTATION_HG38_GDC_R36]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_PNNL_PDC_V1_19
+[
+    case_id (Type: TEXT; Sample values: ['3f2e40bf-63d7-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_submitter_id (Type: TEXT; Sample values: ['13-1484-01A']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['a1feaa76-5731-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    authority_gene_id (Type: TEXT; Sample values: ['7427']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    NCBI_gene_id (Type: TEXT; Sample values: ['4519']; Description: NCBI gene identifier)
+    study_name (Type: TEXT; Sample values: ['TCGA Ovarian PNNL Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    uniprotkb_id (Type: TEXT; Sample values: ['P00156']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    sample_id (Type: TEXT; Sample values: ['13962897-641e-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    gene_id (Type: TEXT; Sample values: ['618f8f92-b816-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    aliquot_id (Type: TEXT; Sample values: ['428fedc4-6427-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    uniprotkb_ids (Type: TEXT; Sample values: ['P00156']; Description: Every UniProt id found in 'proteins' column list)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_PNNL_PDC_V2_10, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_PNNL_PDC_V1_17, TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_PNNL_PDC_V1_21]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.COPY_NUMBER_GENE_LEVEL_HG38_GDC_R36
+[
+    case_gdc_id (Type: TEXT; Sample values: ['872092b3-d31e-44d7-bd03-e29f52f8ab5a']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba10)
+    sample_gdc_id (Type: TEXT; Sample values: ['614e4163-7da8-4f77-a58d-405b004be3e0']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    gene_name (Type: TEXT; Sample values: ['SPRR1B']; Description: Gene name eg. TTN, DDR1)
+    file_gdc_id (Type: TEXT; Sample values: ['bd9e437f-c04f-406c-aeb1-07140b8db38a']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba17)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-KM-8440-01A-11D-2308-01']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-02)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-KICH']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Ensembl_gene_id (Type: TEXT; Sample values: ['ENSG00000169469']; Description: The Ensembl gene ID from the underlying file, but stripped of the version suffix -- eg. ENSG00000185028)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['abfe497c-2d8d-4761-ba6a-9b672d443553']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-KM-8440']; Description: Original case barcode, eg TCGA-DX-A8BN)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-KM-8440-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    Ensembl_gene_id_v (Type: TEXT; Sample values: ['ENSG00000169469.9']; Description: The Ensembl gene ID from the underlying file, including the version suffix -- eg. ENSG00000235943.1)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R14
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-13-0904']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    case_gdc_id (Type: TEXT; Sample values: ['0b519c08-9f23-4ceb-9a13-e16509ca55d7']; Description: GDC unique identifier for this case (corresponds to the case_barcode), eg 6d10d4ee-6331-4bba-93bc-a7b64cc0b22a  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/cases/6d10d4ee-6331-4bba-93bc-a7b64cc0b22a)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    file_name_key (Type: TEXT; Sample values: ['gs://gdc-tcga-phs000178-controlled/4341632a-09ac-4569-ab12-8c4b08a2ef2b/RACKS_p_TCGAaffxB10b_11_S_GenomeWideSNP_6_F01_429430.birdseed.data.txt']; Description: GDC path to original bam or vcf file)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-13-0904-01A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A  --  note that one sample may have multiple aliquots and therefore multiple sets of CN segmentations; so be sure to use GROUP BY appropriately in your queries)
+    sample_gdc_id (Type: TEXT; Sample values: ['2d424c9d-4835-438c-9d22-9ff1d73f2cdd']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    disease_code (Type: TEXT; Sample values: ['OV']; Description: A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; eg. OV, GBM, LUAD)
+    index_file_id (Type: TEXT; Sample values: ['None']; Description: BAM  or VCF index file GDC file UUID)
+    program_name (Type: TEXT; Sample values: ['TCGA']; Description: Program Name, always TCGA (The Cancer Genome Atlas) in this table.)
+    index_file_name_key (Type: TEXT; Sample values: ['None']; Description: GDC path to original vcf or bam index file)
+    file_gdc_id (Type: TEXT; Sample values: ['4341632a-09ac-4569-ab12-8c4b08a2ef2b']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba19)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R14]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.SOMATIC_MUTATION_HG19_MC3_2017_02
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-R5-A7ZI']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-STAD']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Transcript_ID (Type: TEXT; Sample values: ['ENST00000568128']; Description: Ensembl ID of the transcript affected by the variant)
+    Amino_acids (Type: TEXT; Sample values: ['None']; Description: Amino acid substitution caused by the mutation, only given if the variation affects the protein-coding sequence)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-R5-A7ZI-10A-01D-A34X-08']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01)
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-R5-A7ZI-10A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-R5-A7ZI-01A-11D-A34U-08']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    HGNC_ID (Type: NUMBER; Sample values: ['21744']; Description: Gene identifier from the HUGO Gene Nomenclature Committee if applicable)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-R5-A7ZI-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_JHU_PDC_2020_09
+[
+    case_id (Type: TEXT; Sample values: ['c9374747-63d7-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the patient (e.g. looks like 24cb0fcb-63d6-11e8-bcf1-0a2705229b82 ))
+    uniprotkb_ids (Type: TEXT; Sample values: ['P00156']; Description: List of all UniProt accession numbers associated with this gene)
+    uniprotkb_id (Type: TEXT; Sample values: ['P00156']; Description: Oldest Swiss-Prot ID associated with this gene, if available; otherwise, oldest UniProt ID)
+    study_name (Type: TEXT; Sample values: ['TCGA Ovarian JHU Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    authority_gene_id (Type: TEXT; Sample values: ['7427']; Description: HGNC Identifier (e.g. 11186))
+    NCBI_gene_id (Type: TEXT; Sample values: ['4519']; Description: NCBI Gene Identifier (numeric designation e.g. 6272))
+    gene_id (Type: TEXT; Sample values: ['618f8f92-b816-11e8-907f-0a2705229b82']; Description: UUID for the gene name (e.g. looks like fa986b85-b814-11e8-907f-0a2705229b82))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['1fb9b598-5732-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    aliquot_submitter_id (Type: TEXT; Sample values: ['29-1771-01A']; Description: Unique source id provided by the data submitter (e.g. looks like e5e1306b-719e-4c3e-b85b-fd1231_D2))
+    aliquot_id (Type: TEXT; Sample values: ['ec7ec764-6427-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the aliquot (e.g. looks like 1c6638dc-d028-11ea-b1fd-0aad30af8a83))
+    sample_id (Type: TEXT; Sample values: ['d78c1c9f-641e-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the sample (e.g. looks like 1c64cd8f-d028-11ea-b1fd-0aad30af8a83))
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.QUANT_PROTEOME_TCGA_OVARIAN_PNNL_PDC_2020_09
+[
+    case_id (Type: TEXT; Sample values: ['5bf3a933-63d7-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the patient (e.g. looks like 24cb0fcb-63d6-11e8-bcf1-0a2705229b82 ))
+    authority_gene_id (Type: TEXT; Sample values: ['7427']; Description: HGNC Identifier (e.g. 11186))
+    study_name (Type: TEXT; Sample values: ['TCGA Ovarian PNNL Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    aliquot_id (Type: TEXT; Sample values: ['64153008-6427-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the aliquot (e.g. looks like 1c6638dc-d028-11ea-b1fd-0aad30af8a83))
+    aliquot_run_metadata_id (Type: TEXT; Sample values: ['a74bdc76-5730-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    uniprotkb_ids (Type: TEXT; Sample values: ['P00156']; Description: List of all UniProt accession numbers associated with this gene)
+    gene_id (Type: TEXT; Sample values: ['618f8f92-b816-11e8-907f-0a2705229b82']; Description: UUID for the gene name (e.g. looks like fa986b85-b814-11e8-907f-0a2705229b82))
+    uniprotkb_id (Type: TEXT; Sample values: ['P00156']; Description: Oldest Swiss-Prot ID associated with this gene, if available; otherwise, oldest UniProt ID)
+    aliquot_submitter_id (Type: TEXT; Sample values: ['23-1123-01A']; Description: Unique source id provided by the data submitter (e.g. looks like e5e1306b-719e-4c3e-b85b-fd1231_D2))
+    sample_id (Type: TEXT; Sample values: ['3e3218d9-641e-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier associated with the sample (e.g. looks like 1c64cd8f-d028-11ea-b1fd-0aad30af8a83))
+    NCBI_gene_id (Type: TEXT; Sample values: ['4519']; Description: NCBI Gene Identifier (numeric designation e.g. 6272))
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHRX_HG19_GDC_2017_01
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0628']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A  --  note that one sample may have multiple aliquots and therefore multiple sets of CN segmentations; so be sure to use GROUP BY appropriately in your queries)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    probe_id (Type: TEXT; Sample values: ['cg02096520']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc:platform_reference.methylation_annotation) for more details about any particular probe)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A-01D-0383-05']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.SOMATIC_MUTATION_HG19_DCC_2017_02
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-EW-A2FV']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    Tumor_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-EW-A2FV-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    GENCODE_Transcript_Name (Type: TEXT; Sample values: ['NRG3-004']; Description: Transcript Name from GENCODE)
+    HGNC_OMIM_ID_Supplied_By_NCBI (Type: TEXT; Sample values: ['605533']; Description: OMIM ID)
+    HGNC_UniProt_ID_Supplied_By_UniProt (Type: TEXT; Sample values: ['P56975']; Description: UniProt ID)
+    GENCODE_Transcript_Type (Type: TEXT; Sample values: ['protein_coding']; Description: Transcript Type from GENCODE, for more information: https://www.gencodegenes.org/pages/biotypes.html)
+    Entrez_Gene_Id (Type: NUMBER; Sample values: ['10718']; Description: Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID)
+    Normal_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF))
+    HGNC_UCSC_ID_Supplied_By_UCSC (Type: TEXT; Sample values: ['uc001kco.2']; Description: UCSC ID)
+    GENCODE_Transcript_Status (Type: TEXT; Sample values: ['KNOWN']; Description: Transcript Status from GENCODE)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-BRCA']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-EW-A2FV-01A-11D-A17D-09']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    HGNC_Ensembl_ID_Supplied_By_Ensembl (Type: TEXT; Sample values: ['ENSG00000185737']; Description: Ensembl ID)
+    SwissProt_Entry_Id (Type: TEXT; Sample values: ['NRG3_HUMAN']; Description: SwissProt Entry ID)
+    Refseq_Prot_Id (Type: TEXT; Sample values: ['NP_001010848.2|NP_001159444.1']; Description: RefSeq Protein ID e.g. NP_000134.2)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-EW-A2FV-10A-01D-A17D-09']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01)
+    Validation_Method (Type: TEXT; Sample values: ['None']; Description: The assay platforms used for the validation call)
+    HGNC_CCDS_IDs (Type: TEXT; Sample values: ['CCDS31233.1, CCDS53547.1']; Description: HGNC CCDS IDs)
+    Normal_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 2 (cleared in somatic MAF))
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-EW-A2FV-10A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    SwissProt_Acc_Id (Type: TEXT; Sample values: ['P56975']; Description: SwissProt Accesssion ID)
+    Tumor_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    HGNC_HGNC_ID (Type: NUMBER; Sample values: ['7999']; Description: HGNC ID)
+    OREGANNO_ID (Type: TEXT; Sample values: ['None']; Description: Open Regulatory Annotation Database Id. Example: OREG0026204, OREG0023259)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.COPY_NUMBER_SEGMENT_ALLELIC_HG38_GDC_R23
+[
+    case_gdc_id (Type: TEXT; Sample values: ['0de19185-3517-4e30-925b-7eb1f5079ec2']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba10)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['1410074c-412a-484e-a724-21cbb1fe7dea']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A-11D-A30D-01']; Description: aliquot barcode, eg TCGA-12-1089-01A-01D-0517-02)
+    file_gdc_id (Type: TEXT; Sample values: ['d84a000d-9d28-419c-a609-4ebbc8742cfb']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba17)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-BA-A6DJ-01A']; Description: sample barcode, eg TCGA-12-1089-01A)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-HNSC']; Description: Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.)
+    sample_gdc_id (Type: TEXT; Sample values: ['4210ffee-2a83-4f05-8935-2687503c83d4']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.COPY_NUMBER_SEGMENT_MASKED_HG19_GDC_2017_02
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0628']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A-01D-0356-01']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A  --  note that one sample may have multiple aliquots and therefore multiple sets of CN segmentations; so be sure to use GROUP BY appropriately in your queries)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R30
+[
+    sample_type_name (Type: TEXT; Sample values: ['None']; Description: Sample type, eg Primary Tumor, Solid Tissue Normal)
+    case_gdc_id (Type: TEXT; Sample values: ['1a49a131-d714-40d7-85b6-c4822c0c6264']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/cases/c21b332c-06c6-4403-9032-f91c8f407ba37)
+    project_short_name_suffix (Type: TEXT; Sample values: ['LUSC']; Description: The code representing a project within a program. For some programs, this can be a disease code.)
+    sample_barcode (Type: TEXT; Sample values: ['None']; Description: Submitter sample barcode, eg TCGA-12-1089-01A)
+    program_name (Type: TEXT; Sample values: ['TCGA']; Description: Program name, eg TCGA or TARGET)
+    file_name_key (Type: TEXT; Sample values: ['gs://gdc-tcga-phs000178-open/d6bf019a-a158-4b4d-ab44-ab89ac4d6da2/nationwidechildrens.org_omf.TCGA-O2-A52W.xml']; Description: GDC path to original BAM or VCF file)
+    sample_gdc_id (Type: TEXT; Sample values: ['None']; Description: Unique GDC identifier for sample, eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5, associated with data file. May be null)
+    file_gdc_id (Type: TEXT; Sample values: ['d6bf019a-a158-4b4d-ab44-ab89ac4d6da2']; Description: Unique GDC identifier for this file. This can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba44)
+    index_file_id (Type: TEXT; Sample values: ['None']; Description: BAM or VCF index file GDC file UUID, when present)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-LUSC']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-O2-A52W']; Description: Original submitter case barcode, eg TCGA-DX-A8BN)
+    index_file_name_key (Type: TEXT; Sample values: ['None']; Description: GDC path to original vcf or bam index file, when present)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R25, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R36, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R37, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R36, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R31, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R24, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R32, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R27, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R40, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R26, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R29, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R28, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R26, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R24, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R25, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R34, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R28, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R34, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R27, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R39, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R38, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R35, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R29, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R37, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG19_GDC_R35]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHRY_HG19_GDC_2017_01
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0630']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    probe_id (Type: TEXT; Sample values: ['cg03515901']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc:platform_reference.methylation_annotation) for more details about any particular probe)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0630-11A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0630-11A-01D-0383-05']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHR7_HG19_GDC_2017_01
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0628']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A-01D-0383-05']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A)
+    probe_id (Type: TEXT; Sample values: ['cg11693019']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc:platform_reference.methylation_annotation) for more details about any particular probe)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.DNA_METHYLATION_CHR8_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR15_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR2_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR16_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR14_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR18_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR17_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR6_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR10_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR1_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR20_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR12_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR3_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR9_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR13_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR4_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR19_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR11_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR22_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR5_HG19_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR21_HG19_GDC_2017_01]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.SOMATIC_MUTATION_HG38_GDC_R10
+[
+    Tumor_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2)
+    Tumor_Seq_Allele2 (Type: TEXT; Sample values: ['T']; Description: Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    BIOTYPE (Type: TEXT; Sample values: ['protein_coding']; Description: Biotype of transcript)
+    Tumor_Seq_Allele1 (Type: TEXT; Sample values: ['C']; Description: Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    case_id (Type: TEXT; Sample values: ['acfba23a-06eb-4ff1-be60-0452a13a4978']; Description: Unique GDC identifier for the underlying case)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-ZB-A96O-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-ZB-A96O-01A-11D-A428-09']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    HGNC_ID (Type: TEXT; Sample values: ['HGNC:19702']; Description: Gene identifier from the HUGO Gene Nomenclature Committee if applicable)
+    Tumor_Sample_UUID (Type: TEXT; Sample values: ['1b0ed47c-7cc6-48e7-b054-e2d6541c0f02']; Description: Unique GDC identifier for tumor aliquot (10189 unique))
+    normal_bam_uuid (Type: TEXT; Sample values: ['26f2b486-3cc9-4c5d-95fe-cdf458a50b3a']; Description: Unique GDC identifier for the underlying normal bam file)
+    Entrez_Gene_Id (Type: NUMBER; Sample values: ['9883']; Description: Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-THYM']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Matched_Norm_Sample_UUID (Type: TEXT; Sample values: ['008e6888-064b-4b3f-b265-e22296c972f9']; Description: Unique GDC identifier for normal aliquot (10189 unique))
+    case_barcode (Type: TEXT; Sample values: ['TCGA-ZB-A96O']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    Tumor_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    tumor_bam_uuid (Type: TEXT; Sample values: ['113795b5-2370-437e-abe7-b8af9b8b7e6d']; Description: Unique GDC identifier for the underlying bam file)
+    fileUUID (Type: TEXT; Sample values: ['ad59bbc0-f7c9-4721-9eb1-b0839aa408aa']; Description: |-delimited list of unique GDC identifiers for underlying MAF file)
+    src_vcf_id (Type: TEXT; Sample values: ['c83ffd42-2a73-4e41-ad76-b128de6cae29']; Description: |-delimited list of GDC VCF file identifiers)
+    GDC_Validation_Status (Type: TEXT; Sample values: ['Unknown']; Description: GDC implementation of validation checks. See notes section (#5) below for details)
+    Validation_Method (Type: TEXT; Sample values: ['None']; Description: The assay platforms used for the validation call)
+    Transcript_ID (Type: TEXT; Sample values: ['ENST00000434423']; Description: Ensembl ID of the transcript affected by the variant)
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-ZB-A96O-10A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-ZB-A96O-10A-01D-A42B-09']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01)
+    fileName (Type: TEXT; Sample values: ['TCGA.THYM.varscan.ad59bbc0-f7c9-4721-9eb1-b0839aa408aa.DR-10.0.somatic.maf']; Description: |-delimited list of name of underlying MAF file)
+    callerName (Type: TEXT; Sample values: ['varscan']; Description: |-delimited list of mutation caller(s) that agreed on this particular call, always in alphabetical order: muse, mutect, somaticsniper, varscan)
+    Amino_acids (Type: TEXT; Sample values: ['P/S']; Description: Amino acid substitution caused by the mutation. Only given if the variation affects the protein-coding sequence)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_HG19_GDC_2017_01
+[
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0628']; Description: Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A-01D-0383-05']; Description: Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A']; Description: Original TCGA sample barcode, eg TCGA-12-1089-01A)
+    probe_id (Type: TEXT; Sample values: ['cg00888479']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc:platform_reference.methylation_annotation) for more details about any particular probe)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R33P1
+[
+    sample_type_name (Type: TEXT; Sample values: ['Primary Tumor']; Description: Sample type, eg Primary Tumor, Solid Tissue Normal)
+    case_gdc_id (Type: TEXT; Sample values: ['e9d6e631-a4d9-4855-a8b3-b11e3be63cfc']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/cases/c21b332c-06c6-4403-9032-f91c8f407ba37)
+    program_name (Type: TEXT; Sample values: ['TCGA']; Description: Program name, eg TCGA or TARGET)
+    project_short_name_suffix (Type: TEXT; Sample values: ['TGCT']; Description: The code representing a project within a program. For some programs, this can be a disease code.)
+    file_name_key (Type: TEXT; Sample values: ['gs://gdc-tcga-phs000178-open/b2328175-2d04-4861-9db3-6fdfdcbca851/TCGA-TGCT.a3c7fcb5-5b5f-424e-92d8-a756b5e16cd3.ascat2.allelic_specific.seg.txt']; Description: GDC path to original BAM or VCF file)
+    index_file_id (Type: TEXT; Sample values: ['None']; Description: BAM or VCF index file GDC file UUID, when present)
+    sample_gdc_id (Type: TEXT; Sample values: ['e29a81f4-6ac9-4d10-a5cb-1f879ba0a589']; Description: Unique GDC identifier for sample, eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5, associated with data file. May be null)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-TGCT']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-ZM-AA0B-01A']; Description: Submitter sample barcode, eg TCGA-12-1089-01A)
+    index_file_name_key (Type: TEXT; Sample values: ['None']; Description: GDC path to original vcf or bam index file, when present)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-ZM-AA0B']; Description: Original submitter case barcode, eg TCGA-DX-A8BN)
+    file_gdc_id (Type: TEXT; Sample values: ['b2328175-2d04-4861-9db3-6fdfdcbca851']; Description: Unique GDC identifier for this file. This can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba44)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_HG38_GDC_2017_01
+[
+    case_gdc_id (Type: TEXT; Sample values: ['cc1459be-de8f-482e-9efe-65937db9dc45']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11)
+    sample_gdc_id (Type: TEXT; Sample values: ['b02fd704-03a6-44c4-b224-f5f457e733f3']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    file_gdc_id (Type: TEXT; Sample values: ['5cd6f2f6-7278-4757-be8e-a8ae3a7a81d3']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba18)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['aa761ca4-e8f0-4a43-8262-bd84eedb459a']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    probe_id (Type: TEXT; Sample values: ['cg21301440']; Description: Unique ID for the array probe associated with a CpG site)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-12-1601']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A-01D-0595-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-03)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.SOMATIC_MUTATION_HG38_GDC_R6
+[
+    Tumor_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2)
+    Tumor_Seq_Allele2 (Type: TEXT; Sample values: ['T']; Description: Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    BIOTYPE (Type: TEXT; Sample values: ['protein_coding']; Description: Biotype of transcript)
+    Tumor_Seq_Allele1 (Type: TEXT; Sample values: ['G']; Description: Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    gdc_tumor_sample_uuid (Type: TEXT; Sample values: ['91478a08-9bea-426b-bd0c-ca7cc87297b1']; Description: Unique GDC identifier for the underlying tumor sample)
+    HGNC_ID (Type: TEXT; Sample values: ['HGNC:19239']; Description: Gene identifier from the HUGO Gene Nomenclature Committee if applicable)
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-BQ-7049-11A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    gdc_vcf_uuid (Type: TEXT; Sample values: ['df5e5edc-7b16-4e42-9903-337ab41380a4']; Description: Unique GDC identifier for the underlying vcf file)
+    gdc_normal_bam_uuid (Type: TEXT; Sample values: ['be7bf29a-5da8-4a5b-9576-2dd36c223f1f']; Description: Unique GDC identifier for the underlying normal bam file)
+    Validation_Method (Type: TEXT; Sample values: ['None']; Description: The assay platforms used for the validation call)
+    gdc_normal_sample_uuid (Type: TEXT; Sample values: ['fd0fcf99-b8da-43e8-9ccb-9c792ac32047']; Description: Unique GDC identifier for the underlying normal sample)
+    Validation_Status (Type: TEXT; Sample values: ['None']; Description: Second pass results from orthogonal technology)
+    MOTIF_NAME (Type: TEXT; Sample values: ['None']; Description: The source and identifier of a transcription factor binding profile aligned at this position)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-BQ-7049-11A-01D-1961-08']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01)
+    Tumor_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-KIRP']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Amino_acids (Type: TEXT; Sample values: ['R/L']; Description: Amino acid substitution caused by the mutation. Only given if the variation affects the protein-coding sequence)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-BQ-7049']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    Match_Norm_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 2 (cleared in somatic MAF))
+    GDC_Validation_Status (Type: TEXT; Sample values: ['Unknown']; Description: GDC implementation of validation checks. See notes section (#5) below for details)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-BQ-7049-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    Entrez_Gene_Id (Type: NUMBER; Sample values: ['23208']; Description: Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-BQ-7049-01A-11D-1961-08']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    callerName (Type: TEXT; Sample values: ['mutect']; Description: |-delimited list of mutation caller(s) that agreed on this particular call, always in alphabetical order: muse, mutect, somaticsniper, varscan)
+    gdc_case_uuid (Type: TEXT; Sample values: ['93b05e07-fd17-44ce-8735-dcc28264b229']; Description: Unique GDC identifier for the underlying case)
+    gdc_tumor_bam_uuid (Type: TEXT; Sample values: ['5fc30718-de91-4da1-9d62-80b360717838']; Description: Unique GDC identifier for the underlying tumor bam file)
+    gdc_maf_uuid (Type: TEXT; Sample values: ['b286dd57-b803-4081-90ed-90549f2cd7a7']; Description: Unique GDC indentifier for the underlying MAF file)
+    gdc_maf_file_name (Type: TEXT; Sample values: ['TCGA.KIRP.mutect.b286dd57-b803-4081-90ed-90549f2cd7a7.DR-6.0.somatic.maf']; Description: GDC name for the underlying MAF file)
+    Match_Norm_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF))
+    Transcript_ID (Type: TEXT; Sample values: ['ENST00000368324']; Description: Ensembl ID of the transcript affected by the variant)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.SOMATIC_MUTATION_HG38_GDC_R7
+[
+    Tumor_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2)
+    Tumor_Seq_Allele2 (Type: TEXT; Sample values: ['A']; Description: Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    case_id (Type: TEXT; Sample values: ['1ba4e70c-692c-487a-abc5-36e5f0a03286']; Description: Unique GDC identifier for the case)
+    BIOTYPE (Type: TEXT; Sample values: ['protein_coding']; Description: Biotype of transcript)
+    Tumor_Seq_Allele1 (Type: TEXT; Sample values: ['T']; Description: Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-58-A46L']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    Validation_Status (Type: TEXT; Sample values: ['None']; Description: Second pass results from orthogonal technology)
+    fileUUID (Type: TEXT; Sample values: ['46beab1c-315a-410a-8389-ff60067fc21e|1b492aa9-e708-4bc5-92ab-d7c4cc28a968|b5d4d9a5-b027-4797-9886-d73516af7f51|a5b08ef9-201e-414c-92ab-9f7a22afd945']; Description: Unique GDC identifier for the underlying MAF file(s))
+    Match_Norm_Validation_Allele2 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 2 (cleared in somatic MAF))
+    Amino_acids (Type: TEXT; Sample values: ['R/*']; Description: Amino acid substitution caused by the mutation. Only given if the variation affects the protein-coding sequence)
+    sample_barcode_tumor (Type: TEXT; Sample values: ['TCGA-58-A46L-01A']; Description: TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    src_vcf_id (Type: TEXT; Sample values: ['91bf6a68-994a-407e-a056-1f67d426bc4a|7dfd010f-0df2-4c6d-88f6-4c0a3fd27459|70015e07-1be0-47e8-86dd-71b9240c115a|68705932-70b8-461d-a01c-af056946e775']; Description: GDC UUID for the input VCF file)
+    sample_barcode_normal (Type: TEXT; Sample values: ['TCGA-58-A46L-10A']; Description: TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    Entrez_Gene_Id (Type: NUMBER; Sample values: ['10371']; Description: Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID)
+    fileName (Type: TEXT; Sample values: ['TCGA.LUSC.muse.46beab1c-315a-410a-8389-ff60067fc21e.DR-7.0.somatic.maf|TCGA.LUSC.mutect.1b492aa9-e708-4bc5-92ab-d7c4cc28a968.DR-7.0.somatic.maf|TCGA.LUSC.somaticsniper.b5d4d9a5-b027-4797-9886-d73516af7f51.DR-7.0.somatic.maf|TCGA.LUSC.varscan.a5b08ef9-201e-414c-92ab-9f7a22afd945.DR-7.0.somatic.maf']; Description: Original file name for the underlying MAF file(s), eg TCGA.UCEC.muse.1093fec9-6c39-4589-adeb-95f00e5e2181.DR-6.0.somatic.maf)
+    MOTIF_NAME (Type: TEXT; Sample values: ['None']; Description: The source and identifier of a transcription factor binding profile aligned at this position)
+    Transcript_ID (Type: TEXT; Sample values: ['ENST00000265362']; Description: Ensembl ID of the transcript affected by the variant)
+    Validation_Method (Type: TEXT; Sample values: ['None']; Description: The assay platforms used for the validation call)
+    Match_Norm_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF))
+    tumor_bam_uuid (Type: TEXT; Sample values: ['62000bef-b7d4-4af3-bd57-b824b505744e']; Description: GDC UUID for the tumor bam file)
+    aliquot_barcode_tumor (Type: TEXT; Sample values: ['TCGA-58-A46L-01A-11D-A24D-08']; Description: TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01)
+    GDC_Validation_Status (Type: TEXT; Sample values: ['Unknown']; Description: GDC implementation of validation checks. See notes section (#5) below for details)
+    Tumor_Validation_Allele1 (Type: TEXT; Sample values: ['None']; Description: Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-LUSC']; Description: Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.)
+    Matched_Norm_Sample_UUID (Type: TEXT; Sample values: ['915940a4-34cd-4385-a38c-58fac96ce406']; Description: Unique GDC identifier for the matched normal sample)
+    normal_bam_uuid (Type: TEXT; Sample values: ['fa868318-0a56-4155-93d4-da372206f41b']; Description: GDC UUID for the normal bam file)
+    callerName (Type: TEXT; Sample values: ['muse|mutect|somaticsniper|varscan']; Description: |-delimited list of mutation caller(s) that agreed on this particular call, always in alphabetical order: muse, mutect, somaticsniper, varscan)
+    HGNC_ID (Type: TEXT; Sample values: ['HGNC:10723']; Description: Gene identifier from the HUGO Gene Nomenclature Committee if applicable)
+    aliquot_barcode_normal (Type: TEXT; Sample values: ['TCGA-58-A46L-10A-01D-A24F-08']; Description: TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01)
+    Tumor_Sample_UUID (Type: TEXT; Sample values: ['b830de77-bdc3-4f8b-b24c-28fd40a61c00']; Description: GDC aliquot UUID for tumor sample)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHRX_HG38_GDC_2017_01
+[
+    case_gdc_id (Type: TEXT; Sample values: ['cc1459be-de8f-482e-9efe-65937db9dc45']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba34)
+    probe_id (Type: TEXT; Sample values: ['cg02597128']; Description: Unique ID for the array probe associated with a CpG site)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-12-1601']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    file_gdc_id (Type: TEXT; Sample values: ['5cd6f2f6-7278-4757-be8e-a8ae3a7a81d3']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba41)
+    sample_gdc_id (Type: TEXT; Sample values: ['b02fd704-03a6-44c4-b224-f5f457e733f3']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['aa761ca4-e8f0-4a43-8262-bd84eedb459a']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A-01D-0595-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-26)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHRY_HG38_GDC_2017_01
+[
+    case_gdc_id (Type: TEXT; Sample values: ['65bb7520-f055-43a8-b735-1152fa2c9e04']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba35)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-A6-2670-01A-02D-0820-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-27)
+    sample_gdc_id (Type: TEXT; Sample values: ['724072ae-40b5-45cc-b339-e24f1cb6fbcf']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-A6-2670-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['b8074b70-ad2b-49e5-b70a-c6e8a6681830']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    probe_id (Type: TEXT; Sample values: ['cg03515901']; Description: Unique ID for the array probe associated with a CpG site)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-A6-2670']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    file_gdc_id (Type: TEXT; Sample values: ['cdd5e1a9-1ce8-4361-9fca-61ccb7098b25']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba42)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.DNA_METHYLATION_CHR22_HG38_GDC_2017_01
+[
+    case_gdc_id (Type: TEXT; Sample values: ['cc1459be-de8f-482e-9efe-65937db9dc45']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba26)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-12-1601']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    sample_gdc_id (Type: TEXT; Sample values: ['b02fd704-03a6-44c4-b224-f5f457e733f3']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    file_gdc_id (Type: TEXT; Sample values: ['5cd6f2f6-7278-4757-be8e-a8ae3a7a81d3']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba33)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['aa761ca4-e8f0-4a43-8262-bd84eedb459a']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-12-1601-01A-01D-0595-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-18)
+    probe_id (Type: TEXT; Sample values: ['cg01731685']; Description: Unique ID for the array probe associated with a CpG site)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.DNA_METHYLATION_CHR15_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR12_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR16_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR13_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR6_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR11_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR7_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR1_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR20_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR14_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR3_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR10_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR19_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR8_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR9_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR17_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR2_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR4_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR21_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR5_HG38_GDC_2017_01, TCGA_VERSIONED.DNA_METHYLATION_CHR18_HG38_GDC_2017_01]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_CPTAC_TCGA_PDC_V3_4
+[
+    case_id (Type: TEXT; Sample values: ['367f624e-63d7-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    program_name (Type: TEXT; Sample values: ['Clinical Proteomic Tumor Analysis Consortium']; Description: Name of the data's source program)
+    file_name (Type: TEXT; Sample values: ['TCGA_61-1914_61-1900_09-1664_117C_W_PNNL_B5S2_f01.raw']; Description: Name of file in PDC)
+    sample_id (Type: TEXT; Sample values: ['074e8cf2-641e-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    sample_submitter_id (Type: TEXT; Sample values: ['TCGA-09-1664-01A']; Description: Unique identifier deriving from the data submitter that is associated with a specific sample (e.g. Tumor Pat1))
+    project_submitter_id (Type: TEXT; Sample values: ['CPTAC-TCGA']; Description: Unique identifier deriving from the data submitter that is associated with a specific project (e.g. CPTAC3-Discovery))
+    program_short_name (Type: TEXT; Sample values: ['TCGA']; Description: Program name abbreviation (e.g. CPTAC))
+    project_short_name (Type: TEXT; Sample values: ['CPTAC-TCGA']; Description: Project name abbreviation (e.g. pediatric_brain_cancer))
+    file_id (Type: TEXT; Sample values: ['4d873f08-c214-4f98-8811-18bf3b260f0e']; Description: An identifier (UUID) to uniquely identify the file in PDC (e.g. 795dd383-5efd-484b-9c2f-f061ae617fc7))
+    case_submitter_id (Type: TEXT; Sample values: ['TCGA-09-1664']; Description: Unique identifier deriving from the data submitter that is associated with a specific patient (e.g. 05BR016))
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_CPTAC_TCGA_PDC_V1_17, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_CPTAC_TCGA_PDC_V2_13, TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_CPTAC_TCGA_PDC_V2_14]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.COPY_NUMBER_SEGMENT_MASKED_HG38_GDC_R14
+[
+    case_gdc_id (Type: TEXT; Sample values: ['f88560c8-3475-47f2-9d48-4b8311bc1132']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba10)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-01-0628']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    sample_gdc_id (Type: TEXT; Sample values: ['2a91428d-7099-4635-b059-9e5bad09b68a']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['1592cfef-f2b8-48f5-b61d-9c467b608671']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    file_gdc_id (Type: TEXT; Sample values: ['d09a6e75-b4c8-4575-afe4-d08b8ce33c2d']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba17)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-01-0628-11A-01D-0356-01']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-02)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.CLINICAL_GDC_R39
+[
+    case_id (Type: TEXT; Sample values: ['631dbd88-fc3e-4ed8-b4a7-2da137a49a11']; Description: GDC unique identifier for this case (corresponds to the case_barcode) -- this can be used to access more information from the GDC data portal in the following way: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9.)
+    diag__classification_of_tumor (Type: TEXT; Sample values: ['']; Description: Text that describes the kind of disease present in the tumor specimen as related to a specific timepoint.)
+    submitter_id (Type: TEXT; Sample values: ['TCGA-17-Z008']; Description: The submitter_id of a case entity corresponds to the submitted_subject_id of the study participant in dbGaP records for the project.)
+    proj__project_id (Type: TEXT; Sample values: ['TCGA-LUAD']; Description: GDC-assigned identifier for the project to which a case belongs.)
+    diag__icd_10_code (Type: TEXT; Sample values: ['None']; Description: Alphanumeric value used to describe the disease code from the tenth version of the International Classification of Disease (ICD-10).)
+    demo__demographic_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's demographic data.)
+    proj__name (Type: TEXT; Sample values: ['Lung Adenocarcinoma']; Description: Display name for the project to which a case belongs.)
+    diag__diagnosis_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's diagnosis.)
+    exp__exposure_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's exposure data.)
+]
+**Some other tables have the similar structure: [TCGA_VERSIONED.CLINICAL_GDC_R38, TCGA_VERSIONED.CLINICAL_GDC_R37, TCGA_VERSIONED.CLINICAL_GDC_R31, TCGA_VERSIONED.CLINICAL_GDC_R26, TCGA_VERSIONED.CLINICAL_GDC_R24, TCGA_VERSIONED.CLINICAL_GDC_R29, TCGA_VERSIONED.CLINICAL_GDC_R25]**
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.PER_SAMPLE_FILE_METADATA_HG38_GDC_R39_V2
+[
+    sample_type_name (Type: TEXT; Sample values: ['Primary Tumor']; Description: The longer name of the sample type, e.g. Primary Tumor, Recurrent Tumor, etc.)
+    file_name_key (Type: TEXT; Sample values: ['https://api.gdc.cancer.gov/data/00e4ff7f-2921-4e15-8d7c-b36a71a0e7a9']", "['https://api.gdc.cancer.gov/data/838e51c3-93c5-42ca-8b0b-7f3b2bf2070b', 's3://tcga-2-controlled/838e51c3-93c5-42ca-8b0b-7f3b2bf2070b/11795d18-77a8-4e8a-af4f-08e27139b823.wxs.VarScan2.aliquot.maf.gz', 'gs://gdc-tcga-phs000178-controlled/838e51c3-93c5-42ca-8b0b-7f3b2bf2070b/11795d18-77a8-4e8a-af4f-08e27139b823.wxs.VarScan2.aliquot.maf.gz']", "['https://api.gdc.cancer.gov/data/89227625-b0ce-4559-ab1e-bd56a3761e84', 's3://tcga-2-controlled/89227625-b0ce-4559-ab1e-bd56a3761e84/TCGA_UCEC.cc5ab3d7-3709-4455-800a-1c2c2ad5df6b.wxs.Pindel.somatic_annotation.vcf.gz', 'gs://gdc-tcga-phs000178-controlled/89227625-b0ce-4559-ab1e-bd56a3761e84/TCGA_UCEC.cc5ab3d7-3709-4455-800a-1c2c2ad5df6b.wxs.Pindel.somatic_annotation.vcf.gz']", "['https://api.gdc.cancer.gov/data/ce970b22-ea26-480b-9fb3-b6daf2b1b786', 's3://tcga-2-controlled/ce970b22-ea26-480b-9fb3-b6daf2b1b786/TCGA_UCEC.b7f7cfcb-2e23-44f6-8758-3b622a314eed.wxs.MuSE.somatic_annotation.vcf.gz', 'gs://gdc-tcga-phs000178-controlled/ce970b22-ea26-480b-9fb3-b6daf2b1b786/TCGA_UCEC.b7f7cfcb-2e23-44f6-8758-3b622a314eed.wxs.MuSE.somatic_annotation.vcf.gz']", "['https://api.gdc.cancer.gov/data/40304f68-0296-4530-a55b-aedcb2e0fe6e', 's3://tcga-2-controlled/40304f68-0296-4530-a55b-aedcb2e0fe6e/5320020e-0190-4b67-a915-7297cd974c0e.wxs.MuTect2.aliquot.maf.gz', 'gs://gdc-tcga-phs000178-controlled/40304f68-0296-4530-a55b-aedcb2e0fe6e/5320020e-0190-4b67-a915-7297cd974c0e.wxs.MuTect2.aliquot.maf.gz']"]; Description: GDC path to original bam or vcf file)
+    case_gdc_id (Type: TEXT; Sample values: ['8f2d3495-8ce7-4f6e-a41d-8cfae5750937']; Description: GDC unique identifier)
+    project_short_name_suffix (Type: TEXT; Sample values: ['UCEC']; Description: The code representing a project within a program. For some programs, this can be a disease code.)
+    sample_gdc_id (Type: TEXT; Sample values: ['745f2cc5-f0f1-49d1-899e-72b823802b08']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), e.g. a1ec9279-c1a6-4e58-97ed-9ec1f36187c5--this can be used to access more information from the GDC data portal)
+    index_file_id (Type: TEXT; Sample values: ['82a5b637-013b-4fbf-9944-52dcfeee9a0d']; Description: BAM or VCF index file GDC file UUID)
+    program_name (Type: TEXT; Sample values: ['TCGA']; Description: Program name, e.g. TCGA or TARGET)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-EO-A22S-01A']; Description: Original/submitter sample ID)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-UCEC']; Description: Project name abbreviation; the program name appended with a project name abbreviation, eg. TCGA-OV, etc.)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-EO-A22S']; Description: Submitter identifier, e.g. HCC1954, TCGA-ZX-AA5X, etc.)
+    index_file_name_key (Type: TEXT; Sample values: ['https://api.gdc.cancer.gov/data/82a5b637-013b-4fbf-9944-52dcfeee9a0d']", 'None', "['https://api.gdc.cancer.gov/data/78a679a0-c0e6-4561-a26c-595bcdad555e', 's3://tcga-2-controlled/78a679a0-c0e6-4561-a26c-595bcdad555e/TCGA_UCEC.cc5ab3d7-3709-4455-800a-1c2c2ad5df6b.wxs.Pindel.somatic_annotation.vcf.gz.tbi', 'gs://gdc-tcga-phs000178-controlled/78a679a0-c0e6-4561-a26c-595bcdad555e/TCGA_UCEC.cc5ab3d7-3709-4455-800a-1c2c2ad5df6b.wxs.Pindel.somatic_annotation.vcf.gz.tbi']", "['https://api.gdc.cancer.gov/data/c57054d0-de6b-4da1-8491-42b1b4093dcf', 's3://tcga-2-controlled/c57054d0-de6b-4da1-8491-42b1b4093dcf/TCGA_UCEC.b7f7cfcb-2e23-44f6-8758-3b622a314eed.wxs.MuSE.somatic_annotation.vcf.gz.tbi', 'gs://gdc-tcga-phs000178-controlled/c57054d0-de6b-4da1-8491-42b1b4093dcf/TCGA_UCEC.b7f7cfcb-2e23-44f6-8758-3b622a314eed.wxs.MuSE.somatic_annotation.vcf.gz.tbi']", 'None']; Description: GDC path to original vcf or bam index file)
+    file_gdc_id (Type: TEXT; Sample values: ['00e4ff7f-2921-4e15-8d7c-b36a71a0e7a9']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)--this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba4)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.BIOSPECIMEN_GDC_2017_02
+[
+    case_gdc_id (Type: TEXT; Sample values: ['84cb84d0-7c7e-453c-8cc5-65b5af941028']; Description: GDC unique identifer for this case; e.g. 7b4ce492-ff40-4bf1-b3e8-75ff83e8746d. This identifier can be used to find more information at the GDC Data Portal ( https://portal.gdc.cancer.gov/cases/7b4ce492-ff40-4bf1-b3e8-75ff83e8746d ))
+    num_slides (Type: NUMBER; Sample values: ['0']; Description: In some cases, portions of a sample were placed onto multiple slides -- generally not more than 2, but occasionally more.)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-EA-A411']; Description: TCGA patient/case barcode, eg TCGA-AB-2809 (the first 12 characters of the 16-character sample barcode))
+    project_short_name (Type: TEXT; Sample values: ['TCGA-CESC']; Description: Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.)
+    program_name (Type: TEXT; Sample values: ['TCGA']; Description: Program Name, always TCGA (The Cancer Genome Atlas) in this table.)
+    sample_gdc_id (Type: TEXT; Sample values: ['cb601af7-b63c-4fa2-b8f0-256002e19007']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-EA-A411-10A']; Description: TCGA sample_barcode; e.g. TCGA-AB-2809-03A.)
+    sample_type_name (Type: TEXT; Sample values: ['Blood Derived Normal']; Description: The longer name of the sample type; e.g. Primary Tumor, Recurrent Tumor, etc.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.COPY_NUMBER_SEGMENT_MASKED_HG38_GDC_2017_02
+[
+    case_gdc_id (Type: TEXT; Sample values: ['6d10d4ee-6331-4bba-93bc-a7b64cc0b22a']; Description: Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9)
+    aliquot_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A-01D-0428-01']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01)
+    sample_barcode (Type: TEXT; Sample values: ['TCGA-04-1331-01A']; Description: TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries)
+    sample_gdc_id (Type: TEXT; Sample values: ['a1ec9279-c1a6-4e58-97ed-9ec1f36187c5']; Description: Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal)
+    project_short_name (Type: TEXT; Sample values: ['TCGA-OV']; Description: Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.)
+    aliquot_gdc_id (Type: TEXT; Sample values: ['eb2cd85e-61a9-4180-b953-a8ad5fd9bef0']; Description: Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal)
+    case_barcode (Type: TEXT; Sample values: ['TCGA-04-1331']; Description: Original TCGA case barcode, eg TCGA-DX-A8BN)
+    file_gdc_id (Type: TEXT; Sample values: ['25f7e937-224c-4047-808d-4adf6249db83']; Description: Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba16)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.CLINICAL_DIAGNOSIS_TREATMENT_GDC_R38
+[
+    case_id (Type: TEXT; Sample values: ['a436f4d7-018e-44e3-a615-9c33fcc1167d']; Description: GDC unique identifier for this case (corresponds to the case_barcode) -- this can be used to access more information from the GDC data portal in the following way: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9.)
+    diag__treat__treatment_id (Type: TEXT; Sample values: ['34674e20-dca3-5e9a-bc05-64d8a6ae7100']; Description: GDC-assigned identifier for a case's treatment data.)
+    diag__diagnosis_id (Type: TEXT; Sample values: ['cdddbff2-75cb-5952-bdf3-ae41cafd2c44']; Description: GDC-assigned identifier for a case's diagnosis.)
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.CLINICAL_CPTAC_TCGA_PDC_V1_9
+[
+    case_id (Type: TEXT; Sample values: ['6a477ef6-ec51-11e9-81b4-2a2ae2dbcce4']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    project_submitter_id (Type: TEXT; Sample values: ['CPTAC-TCGA']; Description: Project Name (e.g. CPTAC-2))
+    demographic_submitter_id (Type: TEXT; Sample values: ['None']; Description: Unique identifier deriving from data submitter that is attributed to data for the characterization of the patient by means of segmenting the population (e.g., characterization by age, sex, or race) (e.g. P001-DM))
+    residual_disease (Type: TEXT; Sample values: ['None']; Description: Text terms to describe the status of a tissue margin following surgical resection)
+    diagnosis_id (Type: TEXT; Sample values: ['None']; Description: Unique identifier for data from the investigation, analysis and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such an investigation (e.g. e8dd475b-693a-11ea-b1fd-0aad30af8a83))
+    case_submitter_id (Type: TEXT; Sample values: ['Internal Reference']; Description: Unique identifier deriving from the data submitter that is associated with a specific patient (e.g. 05BR016))
+    demographic_id (Type: TEXT; Sample values: ['None']; Description: Unique identifier attributed to data for the characterization of the patient by means of segmenting the population--for instance, characterization by age, sex, or race (e.g. 848b480c-0f56-11e9-a064-0a9c39d33490))
+    diagnosis_submitter_id (Type: TEXT; Sample values: ['None']; Description: Unique identifier deriving from data submitter attributed to data from the investigation, analysis and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such an investigation (e.g. 33-DX))
+]
+
+--------------------------------------------------
+
+###Table full name: TCGA.TCGA_VERSIONED.CLINICAL_GDC_R27
+[
+    case_id (Type: TEXT; Sample values: ['57a1604c-60b7-4b30-a75e-f70939532c5c']; Description: GDC unique identifier for this case (corresponds to the case_barcode) -- this can be used to access more information from the GDC data portal in the following way: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9.)
+    diag__diagnosis_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's diagnosis.)
+    exp__exposure_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's exposure data.)
+    submitter_id (Type: TEXT; Sample values: ['TCGA-BH-A0B2']; Description: The submitter_id of a case entity corresponds to the submitted_subject_id of the study participant in dbGaP records for the project.)
+    diag__icd_10_code (Type: TEXT; Sample values: ['None']; Description: Alphanumeric value used to describe the  disease code from the tenth version of the International Classification of Disease (ICD-10).)
+    demo__demographic_id (Type: TEXT; Sample values: ['None']; Description: GDC-assigned identifier for a case's demographic data.)
+    proj__name (Type: TEXT; Sample values: ['Breast Invasive Carcinoma']; Description: Display name for the project to which a case belongs.)
+    proj__project_id (Type: TEXT; Sample values: ['TCGA-BRCA']; Description: GDC-assigned identifier for the project to which a case belongs.)
+]
+
+--------------------------------------------------
+

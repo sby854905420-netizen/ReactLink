@@ -1,0 +1,58 @@
+###Table full name: GOOGLE_TRENDS.GOOGLE_TRENDS.TOP_RISING_TERMS
+[
+    refresh_date (Type: DATE; Sample values: ['2024-09-17', '2024-09-17', '2024-09-17', '2024-09-17', '2024-09-17'])
+    week (Type: DATE; Sample values: ['2019-09-15', '2019-11-17', '2019-11-24', '2019-12-29', '2020-01-19'])
+    rank (Type: NUMBER; Sample values: ['13', '13', '13', '13', '13'])
+    term (Type: TEXT; Sample values: ['49ers vs vikings', '49ers vs vikings', '49ers vs vikings', '49ers vs vikings', '49ers vs vikings'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    percent_gain (Type: NUMBER; Sample values: ['1650', '1650', '1650', '1650', '1650'])
+    dma_id (Type: NUMBER; Sample values: ['500', '500', '500', '500', '500'])
+    dma_name (Type: TEXT; Sample values: ['Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME'])
+]
+
+--------------------------------------------------
+
+###Table full name: GOOGLE_TRENDS.GOOGLE_TRENDS.INTERNATIONAL_TOP_RISING_TERMS
+[
+    refresh_date (Type: DATE; Sample values: ['2024-09-17', '2024-09-17', '2024-09-17', '2024-09-17', '2024-09-17'])
+    week (Type: DATE; Sample values: ['2021-03-07', '2021-04-04', '2021-05-16', '2021-05-23', '2021-09-19'])
+    rank (Type: NUMBER; Sample values: ['10', '10', '10', '10', '10'])
+    term (Type: TEXT; Sample values: ['gigi multescu', 'gigi multescu', 'gigi multescu', 'gigi multescu', 'gigi multescu'])
+    percent_gain (Type: NUMBER; Sample values: ['3500', '3500', '3500', '3500', '3500'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    region_name (Type: TEXT; Sample values: ['Sibiu', 'Sibiu', 'Sibiu', 'Sibiu', 'Sibiu'])
+    country_name (Type: TEXT; Sample values: ['Romania', 'Romania', 'Romania', 'Romania', 'Romania'])
+    region_code (Type: TEXT; Sample values: ['RO-SB', 'RO-SB', 'RO-SB', 'RO-SB', 'RO-SB'])
+    country_code (Type: TEXT; Sample values: ['RO', 'RO', 'RO', 'RO', 'RO'])
+]
+
+--------------------------------------------------
+
+###Table full name: GOOGLE_TRENDS.GOOGLE_TRENDS.TOP_TERMS
+[
+    refresh_date (Type: DATE; Sample values: ['2024-09-28', '2024-09-28', '2024-09-28', '2024-09-28', '2024-09-28'])
+    week (Type: DATE; Sample values: ['2019-11-17', '2019-12-15', '2020-02-02', '2020-02-09', '2020-03-22'])
+    rank (Type: NUMBER; Sample values: ['23', '23', '23', '23', '23'])
+    term (Type: TEXT; Sample values: ['AC Milan', 'AC Milan', 'AC Milan', 'AC Milan', 'AC Milan'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    dma_name (Type: TEXT; Sample values: ['Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME', 'Portland-Auburn ME'])
+    dma_id (Type: NUMBER; Sample values: ['500', '500', '500', '500', '500'])
+]
+
+--------------------------------------------------
+
+###Table full name: GOOGLE_TRENDS.GOOGLE_TRENDS.INTERNATIONAL_TOP_TERMS
+[
+    refresh_date (Type: DATE; Sample values: ['2024-09-28', '2024-09-28', '2024-09-28', '2024-09-28', '2024-09-28'])
+    week (Type: DATE; Sample values: ['2022-03-13', '2022-11-13', '2023-01-01', '2023-01-15', '2023-04-02'])
+    rank (Type: NUMBER; Sample values: ['14', '14', '14', '14', '14'])
+    term (Type: TEXT; Sample values: ['Galatasaray  PAOK', 'Galatasaray  PAOK', 'Galatasaray  PAOK', 'Galatasaray  PAOK', 'Galatasaray  PAOK'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    region_name (Type: TEXT; Sample values: ['Kırklareli', 'Kırklareli', 'Kırklareli', 'Kırklareli', 'Kırklareli'])
+    region_code (Type: TEXT; Sample values: ['TR-39', 'TR-39', 'TR-39', 'TR-39', 'TR-39'])
+    country_name (Type: TEXT; Sample values: ['Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey'])
+    country_code (Type: TEXT; Sample values: ['TR', 'TR', 'TR', 'TR', 'TR'])
+]
+
+--------------------------------------------------
+

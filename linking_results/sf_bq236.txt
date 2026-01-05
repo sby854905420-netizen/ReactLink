@@ -1,0 +1,564 @@
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.HAIL_REPORTS
+[
+    county (Type: TEXT; Sample values: ['AUTAUGA', 'BALDWIN', 'BALDWIN', 'BLOUNT', 'BLOUNT'])
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    timestamp (Type: NUMBER; Sample values: ['1620084600000000', '1618042800000000', '1618491360000000', '1617998760000000', '1619300820000000']; Description: Timestamp in UTC)
+    comments (Type: TEXT; Sample values: ['QUARTER SIZE HAIL WAS REPORTED ON OLD RIDGE ROAD NORTH OF PRATTVILLE. (BMX)', 'TWO SEPARATE PHOTOS SHOW HAIL NEAR SOFTBALL SIZE IN ORANGE BEACH. SIGNIFICANT HAIL DAMAGE REPORTED TO NUMEROUS VEHICLES AND METALS ROOFS IN THE AREA. (MOB)', 'CORRECTS PREVIOUS HAIL REPORT FROM 2 WSW FOLEY. REPORT OF QUARTER-SIZE HAIL IN SOUTHWEST FOLEY. TIME AND LOCATION GIVEN BY LOCAL POLICE. (MOB)', 'REPORTS OF QUARTER SIZE HAIL NEAR ARKADELPHIA. (BMX)', '(BMX)'])
+    location (Type: TEXT; Sample values: ['3 NNE PRATTVILLE', '1 SSW ORANGE BEACH', '2 WSW FOLEY', '1 S ARKADELPHIA', 'HAYDEN']; Description: Location of report)
+    size (Type: NUMBER; Sample values: ['100', '400', '100', '100', '125']; Description: Size in 1/100 of an Inch (175 = 1.75in))
+    latitude (Type: FLOAT; Sample values: ['32.5', '30.27', '30.39', '33.86', '33.9']; Description: Latitude to two decimal places)
+    report_point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\\\\\x8f\\xc2\\xf5(\\x9...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xf6(\\\\\\x8f\\xc2\\xe...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xaeG\\xe1z\\x14\\xee...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xecQ\\xb8\\x1e\\x85\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x...(truncated)"])
+    time (Type: TEXT; Sample values: ['2330', '0820', '1256', '2006', '2147']; Description: Hour in UTC)
+    longitude (Type: FLOAT; Sample values: ['-86.44', '-87.59', '-87.72', '-86.93', '-86.75']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PRELIMINARY_SEVERE_STORMS.HAIL_REPORTS
+[
+    county (Type: TEXT; Sample values: ['LEE', 'DALE', 'HALE', 'BLOUNT', 'BLOUNT'])
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    timestamp (Type: NUMBER; Sample values: ['1640896080000000', '1619313060000000', '1618007820000000', '1617998760000000', '1619302380000000']; Description: Timestamp in UTC)
+    comments (Type: TEXT; Sample values: ['SILVER DOLLAR SIZE HAIL IN BEAUREGARD. (BMX)', '(TAE)', 'QUARTER SIZE HAIL WAS REPORTED IN MOUNDVILLE. PICTURES RECEIVED FROM SOCIAL MEDIA. (BMX)', 'REPORTS OF QUARTER SIZE HAIL NEAR ARKADELPHIA. (BMX)', '(BMX)'])
+    location (Type: TEXT; Sample values: ['BEAUREGARD', 'DALEVILLE', '1 ENE MOUNDVILLE', '1 S ARKADELPHIA', '3 W WHITNEY JUNCTION']; Description: Location of report)
+    size (Type: NUMBER; Sample values: ['150', '100', '100', '100', '150']; Description: Size in 1/100 of an Inch (175 = 1.75in))
+    latitude (Type: FLOAT; Sample values: ['32.54', '31.29', '33.0', '33.86', '33.88']; Description: Latitude to two decimal places)
+    time (Type: TEXT; Sample values: ['2028', '0111', '2237', '2006', '2213']; Description: Hour in UTC)
+    report_point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00H\\xe1z\\x14\\xaeWU\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x1f\\x85\\xebQ\\xb8n...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00H\\xe1z\\x14\\xae\\xe7...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xecQ\\xb8\\x1e\\x85\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\x97U\\...(truncated)"])
+    longitude (Type: FLOAT; Sample values: ['-85.37', '-85.73', '-87.62', '-86.93', '-86.36']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_GSOD.GSOD1994
+[
+    hail (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    thunder (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    fog (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    year (Type: TEXT; Sample values: ['1994', '1994', '1994', '1994', '1994']; Description: The year)
+    mo (Type: TEXT; Sample values: ['03', '07', '06', '01', '06']; Description: The month)
+    date (Type: DATE; Sample values: ['', '', '', '', '']; Description: Date of the weather observations)
+    da (Type: TEXT; Sample values: ['20', '25', '18', '05', '28']; Description: The day)
+    stn (Type: TEXT; Sample values: ['722480', '722480', '722540', '722630', '722650']; Description: Station number (WMO/DATSAV3 number) for the location)
+    rain_drizzle (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    tornado_funnel_cloud (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    snow_ice_pellets (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    visib (Type: FLOAT; Sample values: ['12.0', '12.8', '14.1', '24.9', '19.1']; Description: Mean visibility for the day in miles to tenths.  Missing = 999.9)
+    stp (Type: FLOAT; Sample values: ['998.8', '1005.6', '993.4', '949.7', '912.7']; Description: Mean station pressure for the day in millibars to tenths. Missing = 9999.9)
+    count_stp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean station pressure)
+    sndp (Type: FLOAT; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Snow depth in inches to tenths--last report for the day if reported more thanonce. Missing = 999.9)
+    max (Type: FLOAT; Sample values: ['84.0', '97.0', '95.0', '73.0', '116.1']; Description: Maximum temperature reported during the day in Fahrenheit to tenths--time of max temp report varies by country and region, so this will sometimes not be the max for the calendar day. Missing = 9999.9)
+    temp (Type: FLOAT; Sample values: ['70.2', '84.0', '84.0', '51.9', '94.4']; Description: Mean temperature for the day in degrees Fahrenheit to tenths. Missing = 9999.9)
+    min (Type: FLOAT; Sample values: ['57.9', '71.1', '73.9', '34.0', '73.0']; Description: Minimum temperature reported during the day in Fahrenheit to tenths--time of min temp report varies by country and region, so this will sometimes not be the min for the calendar day. Missing = 9999.9)
+    flag_prcp (Type: TEXT; Sample values: ['G', 'G', 'G', 'G', 'G']; Description: A = 1 report of 6-hour precipitation amount)
+    dewp (Type: FLOAT; Sample values: ['59.6', '72.6', '69.2', '21.0', '46.0']; Description: Mean dew point for the day in degreesm Fahrenheit to tenths.  Missing = 9999.9)
+    wdsp (Type: TEXT; Sample values: ['9.7', '6.7', '4.9', '15.3', '10.1']; Description: Mean wind speed for the day in knots to tenths. Missing = 999.9)
+    count_temp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean temperature)
+    count_dewp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean dew point)
+    flag_min (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates min temp was taken from the explicit min temp report and not from the 'hourly' data.)
+    count_wdsp (Type: TEXT; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean wind speed)
+    wban (Type: TEXT; Sample values: ['13957', '13957', '13958', '23034', '23023']; Description: WBAN number where applicable--this is the historical "Weather Bureau Air Force Navy" number - with WBAN being the acronym)
+    flag_max (Type: TEXT; Sample values: ['None', 'None', 'None', '*', 'None']; Description: Blank indicates max temp was taken from the explicit max temp report and not from the 'hourly' data.)
+]
+**Some other tables have the similar structure: [NOAA_GSOD.GSOD1941, NOAA_GSOD.GSOD1947, NOAA_GSOD.GSOD1965, NOAA_GSOD.GSOD1953, NOAA_GSOD.GSOD2009, NOAA_GSOD.GSOD1951, NOAA_GSOD.GSOD1938, NOAA_GSOD.GSOD1962, NOAA_GSOD.GSOD1946, NOAA_GSOD.GSOD2014, NOAA_GSOD.GSOD1992, NOAA_GSOD.GSOD1945, NOAA_GSOD.GSOD1961, NOAA_GSOD.GSOD1967, NOAA_GSOD.GSOD2013, NOAA_GSOD.GSOD2010, NOAA_GSOD.GSOD2008, NOAA_GSOD.GSOD1954, NOAA_GSOD.GSOD2022, NOAA_GSOD.GSOD1937, NOAA_GSOD.GSOD1968, NOAA_GSOD.GSOD1936, NOAA_GSOD.GSOD1949, NOAA_GSOD.GSOD1981, NOAA_GSOD.GSOD1987, NOAA_GSOD.GSOD1935, NOAA_GSOD.GSOD1984, NOAA_GSOD.GSOD1985, NOAA_GSOD.GSOD2003, NOAA_GSOD.GSOD1976, NOAA_GSOD.GSOD2023, NOAA_GSOD.GSOD1999, NOAA_GSOD.GSOD1978, NOAA_GSOD.GSOD1975, NOAA_GSOD.GSOD2006, NOAA_GSOD.GSOD1966, NOAA_GSOD.GSOD1963, NOAA_GSOD.GSOD1980, NOAA_GSOD.GSOD2000, NOAA_GSOD.GSOD1956, NOAA_GSOD.GSOD1996, NOAA_GSOD.GSOD2005, NOAA_GSOD.GSOD1990, NOAA_GSOD.GSOD2019, NOAA_GSOD.GSOD1988, NOAA_GSOD.GSOD1979, NOAA_GSOD.GSOD1995, NOAA_GSOD.GSOD2011, NOAA_GSOD.GSOD1970, NOAA_GSOD.GSOD1989, NOAA_GSOD.GSOD2021, NOAA_GSOD.GSOD1930, NOAA_GSOD.GSOD1933, NOAA_GSOD.GSOD2007, NOAA_GSOD.GSOD1950, NOAA_GSOD.GSOD2015, NOAA_GSOD.GSOD1931, NOAA_GSOD.GSOD1942, NOAA_GSOD.GSOD2016, NOAA_GSOD.GSOD1983, NOAA_GSOD.GSOD1969, NOAA_GSOD.GSOD2018, NOAA_GSOD.GSOD2017, NOAA_GSOD.GSOD1993, NOAA_GSOD.GSOD1986, NOAA_GSOD.GSOD1960, NOAA_GSOD.GSOD1991, NOAA_GSOD.GSOD1932, NOAA_GSOD.GSOD1997, NOAA_GSOD.GSOD1959, NOAA_GSOD.GSOD1964, NOAA_GSOD.GSOD1982, NOAA_GSOD.GSOD2024, NOAA_GSOD.GSOD1977, NOAA_GSOD.GSOD2012, NOAA_GSOD.GSOD1957, NOAA_GSOD.GSOD1952, NOAA_GSOD.GSOD1940, NOAA_GSOD.GSOD2004, NOAA_GSOD.GSOD1958, NOAA_GSOD.GSOD2020, NOAA_GSOD.GSOD1998, NOAA_GSOD.GSOD2002, NOAA_GSOD.GSOD1955, NOAA_GSOD.GSOD1948, NOAA_GSOD.GSOD1939, NOAA_GSOD.GSOD1943, NOAA_GSOD.GSOD1929, NOAA_GSOD.GSOD1973, NOAA_GSOD.GSOD1972, NOAA_GSOD.GSOD2001, NOAA_GSOD.GSOD1934, NOAA_GSOD.GSOD1944, NOAA_GSOD.GSOD1974, NOAA_GSOD.GSOD1971]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.ZIP_CODES
+[
+    zip_code (Type: TEXT; Sample values: ['32336', '28033', '29681', '53061', '25989'])
+    zip_code_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    city (Type: TEXT; Sample values: ['Lamont CDP', 'Cherryville city', 'Simpsonville city, Mauldin city, Fountain Inn city, Five Forks CDP', 'New Holstein city', 'Shady Spring CDP'])
+    county (Type: TEXT; Sample values: ['Jefferson County', 'Gaston County', 'Greenville County, Greenville County, Laurens County', 'Calumet County', 'Raleigh County'])
+    state_code (Type: TEXT; Sample values: ['FL', 'NC', 'SC', 'WI', 'WV'])
+    state_name (Type: TEXT; Sample values: ['Florida', 'North Carolina', 'South Carolina', 'Wisconsin', 'West Virginia'])
+    state_fips_code (Type: TEXT; Sample values: ['12', '37', '45', '55', '54'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G6350', 'G6350', 'G6350', 'G6350', 'G6350'])
+    fips_class_code (Type: TEXT; Sample values: ['B5', 'B5', 'B5', 'B5', 'B5'])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc5\\xe0\\x06!E\\xf6...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00E\\xf9\\xdd\\xcf\\x04U...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe9\\xfffsf\\x8eT\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00l\\x08\\x8e\\xcb\\xb8\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xcd\\xd3o\\x15zDT\\x...(truncated)"])
+    internal_point_lat (Type: FLOAT; Sample values: ['30.260764', '35.4191102', '34.7676794', '43.9454268', '37.680919'])
+    internal_point_lon (Type: FLOAT; Sample values: ['-83.8479693', '-81.3284187', '-82.2250031', '-88.120654', '-81.0699514'])
+    area_land_meters (Type: FLOAT; Sample values: ['469074877.0', '40349419.0', '107103141.0', '118464855.0', '6223190.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.TORNADO_REPORTS
+[
+    county (Type: TEXT; Sample values: ['HENRY', 'PICKENS', 'LAMAR', 'LAMAR', 'COOSA'])
+    comments (Type: TEXT; Sample values: ['TREE DAMAGE FROM A BRIEF TORNADO ABOUT 1.5 MI N OF ABBEVILLE / 2 MI N GRABALL. (TAE)', 'CORRECTS PREVIOUS TORNADO REPORT FROM 3 WSW GAINSVILLE LAKE. THE TORNADO TOUCHED DOWN JUST EAST OF NANCY CLARK ROAD... AND FIRST CAUSED DAMAGE ALONG AN EAST-WEST TREELI (BMX)', 'THE TORNADO TOUCHED DOWN JUST SOUTH OF CRAWFORD RD IN THE KINGVILLE COMMUNITY AND TRAVELED NORTHEAST INTO FAR WESTERN FAYETTE COUNTY BEFORE LIFTING JUST EAST OF HOWTON (BMX)', 'REPORT OF TREES DOWN ALONG CODY RD. NEAR KINGVILLE. (BMX)', 'THE TORNADO TOUCHED DOWN JUST EAST OF CR 40 AND TRAVELED EAST-NORTHEAST CROSSING NIXBURG RD... CR 30 AND HWY 22. THE TORNADO LIFTED BETWEEN HWY 22 AND HWY 9. THE MAJORI (BMX)'])
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    timestamp (Type: NUMBER; Sample values: ['1546598400000000', '1550965440000000', '1550965920000000', '1550966040000000', '1550994840000000']; Description: Timestamp in UTC)
+    location (Type: TEXT; Sample values: ['2 N GRABALL', '3 WSW GAINESVILLE LAKE', '3 SSE HIGHTOGY', '2 NNW CODY', '3 SE ROCKFORD']; Description: Location of report)
+    latitude (Type: FLOAT; Sample values: ['31.62', '33.06', '33.66', '33.7', '32.86']; Description: Latitude to two decimal places)
+    time (Type: TEXT; Sample values: ['1040', '2344', '2352', '2354', '0754']; Description: Hour in UTC)
+    report_point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00R\\xb8\\x1e\\x85\\xebQ...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xa4p=\\n\\xd7\\x13V\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xa4p=\\n\\xd7\\x03V\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x1f\\x85\\xebQ\\xb8\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xecQ\\xb8\\x1e\\x85\\...(truncated)"])
+    longitude (Type: FLOAT; Sample values: ['-85.28', '-88.31', '-88.06', '-87.98', '-86.18']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.NWS_FORECAST_REGIONS
+[
+    state (Type: TEXT; Sample values: ['SD', 'TX', 'TX', 'TX', 'TX'])
+    zone (Type: TEXT; Sample values: ['002', '028', '032', '035', '036'])
+    name (Type: TEXT; Sample values: ['Perkins', 'Lamb', 'Cottle', 'Lubbock', 'Crosby'])
+    state_zone (Type: TEXT; Sample values: ['SD002', 'TX028', 'TX032', 'TX035', 'TX036'])
+    cwa (Type: TEXT; Sample values: ['UNR', 'LUB', 'LUB', 'LUB', 'LUB'])
+    time_zone (Type: TEXT; Sample values: ['M', 'C', 'C', 'C', 'C'])
+    fe_area (Type: TEXT; Sample values: ['nw', 'nw', 'nw', 'nw', 'nw'])
+    lat (Type: FLOAT; Sample values: ['45.4904', '34.0686', '34.0777', '33.6102', '33.6146'])
+    shortname (Type: TEXT; Sample values: ['Perkins', 'Lamb', 'Cottle', 'Lubbock', 'Crosby'])
+    lon (Type: FLOAT; Sample values: ['-102.4759', '-102.3517', '-100.2787', '-101.8205', '-101.3'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.STORMS_1999
+[
+    cz_fips_code (Type: TEXT; Sample values: ['17', '17', '15', '14', '12']; Description: Unique FIPS code identifier assigned to each county.   State names and their corresponding FIPS codes are available as a BigQuery Public Dataset: bigquery-public-data.census_fips_codes.counties_2016  The geographic polygons that define the perimeter of each state are available as a BigQuery Public Dataset: bigquery-public-data.geo_us_boundaries.us_counties)
+    cz_name (Type: TEXT; Sample values: ['CENTRAL GULF COAST', 'CENTRAL GULF COAST', 'COOK INLET', 'COPPER RIVER BASIN', 'WEST ELK AND SAWATCH MOUNTAINS/TAYLOR PARK / W LAKE / W CHAFFEE / WC TO EC GUNNISON']; Description: (County/Parish, Zone or Marine Name assigned to the county FIPS number or NWS Forecast Zone  NWS Forecast Zones are available as a BigQuery Public Dataset: bigquery-public-data.noaa_historic_severe_storms.nws_forecast_zones)
+    magnitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Measured extent of the magnitude type. This is only used for wind speeds and hail size. Wind speeds are in MPH; Hail sizes are in inches)
+    state_fips_code (Type: TEXT; Sample values: ['2', '2', '2', '2', '8']; Description: Unique FIPS code identifier assigned to each state. State names and their corresponding FIPS codes are available as a BigQuery Public Dataset: bigquery-public-data.census_fips_codes.states_2016  The geographic polygons that define the perimeter of each state are available as a BigQuery Public Dataset: bigquery-public-data.geo_us_boundaries.us_states)
+    source (Type: TEXT; Sample values: ['DEPT OF HIGHWAYS', 'NEWSPAPER', 'NEWSPAPER', 'NEWSPAPER', 'BROADCAST MEDIA']; Description: Source reporting the weather event  Note: This can be any entry. Values are not restricted to specific categories)
+    event_type (Type: TEXT; Sample values: ['avalanche', 'avalanche', 'avalanche', 'avalanche', 'avalanche']; Description: The only events permitted in Storm Data are listed in Table 1 of Section 2.1.1 of NWS Directive 10-1605 at http://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf. The chosen event type is the one that most accurately describes the meteorological event leading to fatalities, injuries, damage, etc. However, significant events, such as tornadoes, having no impact or causing no damage, are also included in Storm Data.)
+    state (Type: TEXT; Sample values: ['Al', 'Al', 'Al', 'Al', 'Co']; Description: The full text state name where the event occurred)
+    wfo (Type: TEXT; Sample values: ['AFC', 'AFC', 'AFC', 'AFC', 'GJT']; Description: National Weather Service Forecast Office’s area of responsibility (County Warning Area) in which the event occurred)
+    location_index (Type: TEXT; Sample values: ['1', '1', '1', '1', '1']; Description: Number assigned by NWS to specific locations within the same Storm event. Each event’s sequentially increasing location index number will have a corresponding lat/lon point)
+    magnitude_type (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Differentiates between the type of mangitude measured. - EG = Wind Estimated Gust  - ES = Estimated Sustained Wind  - MS = Measured Sustained Wind  - MG = Measured Wind Gust  No magnitude type is included for hail)
+    cz_type (Type: TEXT; Sample values: ['Z', 'Z', 'Z', 'Z', 'Z']; Description: Indicates whether the event happened in   - C: County/Parish  - Z: NWS zone  - M: Marine)
+    event_range (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A hydro-meteorological event will be referenced, minimally, to the nearest tenth of a mile, to the geographical center (not from the village/city boundaries or limits) of a particular village/city, airport, or inland lake, providing that the reference point is documented in the Storm Data software location database.)
+    event_latitude (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The latitude where the event occurred (rounded to the hundredths in decimal degrees; includes an ‘-‘ if it’s S of the Equator))
+    event_point (Type: BINARY; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Geographic representation of the event_longitude and latitude)
+    event_azimuth (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 16-point compass direction from a particular village/city, airport, or inland lake, providing that the reference point is documented in the Storm Data software location database of > 130,000 locations.)
+    tor_width (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Width of the tornado or tornado segment while on the ground (in feet))
+    episode_id (Type: TEXT; Sample values: ['1500258', '1500259', '1501200', '1501201', '1502019']; Description: ID assigned by NWS to denote the storm episode; links the event details file with the information within location file)
+    event_id (Type: TEXT; Sample values: ['5681121', '5681126', '5681938', '5681939', '5688498']; Description: ID assigned by NWS to note a single, small part that goes into a specific storm episode; links the storm episode between the three files downloaded from SPC’s website)
+]
+**Some other tables have the similar structure: [NOAA_HISTORIC_SEVERE_STORMS.STORMS_1970, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2023, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2019, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2014, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1996, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1985, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1967, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1950, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2004, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2020, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1982, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1975, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1998, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2015, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2003, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1987, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2009, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2000, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1958, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1997, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2022, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1986, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1971, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2002, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1992, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1969, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2021, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1974, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2010, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1973, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1984, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2008, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1952, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2001, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1995, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1957, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2016, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1968, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1961, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2011, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2006, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1990, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1980, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1962, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1993, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1951, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1994, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1972, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1956, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1977, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2017, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2013, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1965, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1954, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1979, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2024, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2012, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1991, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1981, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1983, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1963, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1955, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1959, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2007, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1960, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1964, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2018, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1988, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1978, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1966, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1989, NOAA_HISTORIC_SEVERE_STORMS.STORMS_2005, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1953, NOAA_HISTORIC_SEVERE_STORMS.STORMS_1976]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PRELIMINARY_SEVERE_STORMS.TORNADO_REPORTS
+[
+    comments (Type: TEXT; Sample values: ['TREE DAMAGE FROM A BRIEF TORNADO ABOUT 1.5 MI N OF ABBEVILLE / 2 MI N GRABALL. (TAE)', '*** 2 INJ *** CORRECTS PREVIOUS TORNADO REPORT TO INCLUDE 2 INJURIES. A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... WHICH OCCURRED JUST NORTHWEST OF (BMX)', '*** 4 INJ *** A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF HIGH-END EF-2 INTENSITY THAT BEGAN JUST SOUTHWEST OF WETUMPKA AND CONTINUED NORTHEAST... ENDING JUST BEFORE (BMX)', 'A NWS STORM SURVEY TEAM CONFIRMED A TORNADO OF EF-1 INTENSITY... AFFECTING AREAS JUST SOUTHEAST OF ROCKFORD IN COOSA COUNTY ALONG COUNTY ROAD 101. (BMX)', 'CORRECTS PREVIOUS TORNADO REPORT FROM 3 WSW GAINSVILLE LAKE. THE TORNADO TOUCHED DOWN JUST EAST OF NANCY CLARK ROAD... AND FIRST CAUSED DAMAGE ALONG AN EAST-WEST TREELI (BMX)'])
+    county (Type: TEXT; Sample values: ['HENRY', 'AUTAUGA', 'ELMORE', 'COOSA', 'PICKENS'])
+    timestamp (Type: NUMBER; Sample values: ['1546598400000000', '1547928240000000', '1547931120000000', '1547931480000000', '1550965440000000']; Description: Timestamp in UTC)
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    location (Type: TEXT; Sample values: ['2 N GRABALL', '3 ENE MULBERRY', '3 SW WETUMPKA', '2 W COTTAGE GROVE', '3 WSW GAINESVILLE LAKE']; Description: Location of report)
+    latitude (Type: FLOAT; Sample values: ['31.62', '32.49', '32.52', '32.85', '33.06']; Description: Latitude to two decimal places)
+    time (Type: TEXT; Sample values: ['1040', '2004', '2052', '2058', '2344']; Description: Hour in UTC)
+    longitude (Type: FLOAT; Sample values: ['-85.28', '-86.73', '-86.24', '-86.15', '-88.31']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.METROPOLITAN_DIVISIONS
+[
+    name (Type: TEXT; Sample values: ['Cambridge-Newton-Framingham, MA', 'Elgin, IL', 'Gary, IN', 'Warren-Troy-Farmington Hills, MI', 'Anaheim-Santa Ana-Irvine, CA'])
+    metdiv_code (Type: TEXT; Sample values: ['15764', '20994', '23844', '47664', '11244'])
+    geo_id (Type: TEXT; Sample values: ['1446015764', '1698020994', '1698023844', '1982047664', '3108011244'])
+    cbsa_code (Type: TEXT; Sample values: ['14460', '16980', '16980', '19820', '31080'])
+    metdiv_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x004\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00[\\...(truncated)"])
+    csa_code (Type: TEXT; Sample values: ['148', '176', '176', '220', '348'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3120', 'G3120', 'G3120', 'G3120', 'G3120'])
+    lsad_code (Type: TEXT; Sample values: ['M3', 'M3', 'M3', 'M3', 'M3'])
+    lsad_name (Type: TEXT; Sample values: ['Cambridge-Newton-Framingham, MA Metro Division', 'Elgin, IL Metro Division', 'Gary, IN Metro Division', 'Warren-Troy-Farmington Hills, MI Metro Division', 'Anaheim-Santa Ana-Irvine, CA Metro Division'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.TORNADO_PATHS
+[
+    yearly_tornado_count (Type: TEXT; Sample values: ['614739', '816', '365283', '927', '434']; Description: Count of tornadoes that year after the given tornado is reported to the NWS database. This does not necessarily indicate sequential order because of reporting potential delays.)
+    state_fips_code (Type: TEXT; Sample values: ['19', '19', '19', '19', '19']; Description: 2-digit state FIPS code. This maps to all state_fips_code columns in the BigQuery Public Datasets Program)
+    magnitude (Type: TEXT; Sample values: ['0', '2', '1', '0', '1']; Description: EF-Scale rating for the tornado. Possible values are 0, 1, 2, 3, 4 , 5 and unknown)
+    property_loss (Type: TEXT; Sample values: ['25000', '0.12', '0.075', '0.002', '0.075']; Description: Estimated property loss in USD. Note that zero does not indicate $0. Possible values are: 0 - unknown or not provided; 1 - <50; 2 - 50 - <500; 3 - 500 - <5,000; 4 - 5,000 - <50,000; 5 - 50,000 - <500,000; 6 - 500,000 - <5,000,000; 7 - 5,000,000 - <50,000,000; 8 - 50,000,000 - <500,000,000; 9 - 500,000,000 or greater.)
+    width (Type: FLOAT; Sample values: ['195.0', '0.0', '270.0', '75.0', '90.0']; Description: Width of the tornado in feet)
+    state_name (Type: TEXT; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa']; Description: Full text name of the state in which the tornado occurred)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_HISTORIC_SEVERE_STORMS.WIND_REPORTS
+[
+    county (Type: TEXT; Sample values: ['AUTAUGA', 'AUTAUGA', 'BALDWIN', 'BALDWIN', 'BALDWIN'])
+    comments (Type: TEXT; Sample values: ['TREES DOWN ALONG CR 19 NORTH OF AUTAUGAVILLE. (BMX)', 'TREE DOWN ON SUMMER LN. WINDS ESTIMATED AT 40-50 MPH AS SUGGESTED BY RADAR AND NEARBY SURFACE OB AT K1A9. (BMX)', 'VIEWER REPORTS TREES DOWN IN STOCKTON... AL VIA BROADCAST MEDIA. TIME ESTIMATED BY RADAR. (MOB)', 'TREES DOWN IN THE PINE GROVE COMMUNITY IN BALDWIN CO. AL. TIME ESTIMATED BY RADAR. (MOB)', 'GULF SHORES FIRE DEPARTMENT RESPONDED TO TREES AND POWERLINES DOWN ALONG FORT MORGAN RD. TIME ESTIMATED BY RADAR. (MOB)'])
+    timestamp (Type: NUMBER; Sample values: ['1551641100000000', '1561518900000000', '1555634160000000', '1555635540000000', '1557667200000000']; Description: Timestamp in UTC)
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    speed (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Speed in Miles per hour)
+    latitude (Type: FLOAT; Sample values: ['32.49', '32.46', '30.99', '30.83', '30.26']; Description: Latitude to two decimal places)
+    location (Type: TEXT; Sample values: ['4 NNW AUTAUGAVILLE', '1 E PRATTVILLE', 'STOCKTON', '3 SE DOUGLASVILLE', '1 WSW GULF SHORES']; Description: Location of report)
+    time (Type: TEXT; Sample values: ['1925', '0315', '0036', '0059', '1320']; Description: Hour in UTC)
+    longitude (Type: FLOAT; Sample values: ['-86.69', '-86.43', '-87.86', '-87.74', '-87.7']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_ICOADS.ICOADS_CORE_2001_2004
+[
+    past_weather (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    second_country_code (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The country of immediate receipt (C2), which may differ from the recruiting country (C1) and may also differ from the ship’s registry.)
+    middle_cloud_type (Type: TEXT; Sample values: ['', '', '', '', '']; Description: Codes 0 to 10 [A in base36 encoding] show characteristics observed of clouds of the genera Altocumulus, Altostratus, and Nimbostratus (WMO Code 0515).)
+    source_id (Type: NUMBER; Sample values: ['63', '63', '63', '63', '63']; Description: Number of the source ID from which the report came (Table D7). Each SID may contain a single deck or a mixture of decks, but each SID is generally constrained to a single input format.)
+    id_indicator (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3']; Description: ID Indicator indicates whether a callsign or some other sort of identification is contained in the ID field (and in R3.0 data, II should always be extant when ID information exists; whereas II should always be missing if ID is missing): 0 – ID present, but unknown type 1 – ship, Ocean Station Vessel (OSV), or ice station callsign 2 – generic ID (e.g., SHIP, BUOY, RIGG, PLAT) 3 – WMO 5-digit buoy number 4 – other buoy number (e.g., Argos or national buoy number) 5 – Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations) 6 – station name or number 7 – oceanographic platform/cruise number 8 – fishing vessel psuedo-ID 9 – national ship number 10 – composite information from early ship data 11 – 7-digit buoy ID (proposed))
+    country_code (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The country that recruited a ship, which may differ from the country of immediate receipt (C2, field 15) and may also differ from the ship’s registry)
+    unique_report_id (Type: TEXT; Sample values: ['3P4BHQ', '3OPL85', '3P41WD', '3NYJ9G', '3NHMHY']; Description: A unique ID for each record in ICOADS represented as a base36 number of length 6.)
+    callsign (Type: TEXT; Sample values: ['11901', '11901', '11901', '11901', '11901']; Description: Identification/Callsign)
+    day (Type: NUMBER; Sample values: ['8', '4', '7', '3', '26']; Description: Day of the actual time of observation at which the barometer is read. Days 1-31)
+    timestamp (Type: NUMBER; Sample values: ['1007818560000000', '1004911980000000', '1007767680000000', '999512100000000', '996183000000000']; Description: Converted UTC timestamp for the actual time of observation at which the barometer is read)
+    month (Type: NUMBER; Sample values: ['12', '11', '12', '9', '7']; Description: Month of the actual time of observation at which the barometer is read. (1=January, 2=February, …, 12=December))
+    year (Type: NUMBER; Sample values: ['2001', '2001', '2001', '2001', '2001']; Description: Year of the actual time of observation at which the barometer is read. It is 4-digit)
+    latitude (Type: FLOAT; Sample values: ['-2.77', '1.11', '-2.44', '4.88', '8.54']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+    longitude (Type: FLOAT; Sample values: ['91.56', '73.22', '91.49', '59.65', '58.34']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+]
+**Some other tables have the similar structure: [NOAA_ICOADS.ICOADS_CORE_1662_2000]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_ICOADS.ICOADS_CORE_2013
+[
+    past_weather (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    source_id (Type: NUMBER; Sample values: ['63', '63', '63', '63', '63']; Description: Number of the source ID from which the report came (Table D7). Each SID may contain a single deck or a mixture of decks, but each SID is generally constrained to a single input format.)
+    middle_cloud_type (Type: TEXT; Sample values: ['', '', '', '', '']; Description: Codes 0 to 10 [A in base36 encoding] show characteristics observed of clouds of the genera Altocumulus, Altostratus, and Nimbostratus (WMO Code 0515).)
+    country_code (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The country that recruited a ship, which may differ from the country of immediate receipt (C2, field 15) and may also differ from the ship’s registry)
+    second_country_code (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The country of immediate receipt (C2), which may differ from the recruiting country (C1) and may also differ from the ship’s registry.)
+    unique_report_id (Type: TEXT; Sample values: ['K0B4FG', 'K0N49I', 'K3MAGV', 'K34QBE', 'K2N8VV']; Description: A unique ID for each record in ICOADS represented as a base36 number of length 6.)
+    id_indicator (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3']; Description: ID Indicator indicates whether a callsign or some other sort of identification is contained in the ID field (and in R3.0 data, II should always be extant when ID information exists; whereas II should always be missing if ID is missing): 0 – ID present, but unknown type 1 – ship, Ocean Station Vessel (OSV), or ice station callsign 2 – generic ID (e.g., SHIP, BUOY, RIGG, PLAT) 3 – WMO 5-digit buoy number 4 – other buoy number (e.g., Argos or national buoy number) 5 – Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations) 6 – station name or number 7 – oceanographic platform/cruise number 8 – fishing vessel psuedo-ID 9 – national ship number 10 – composite information from early ship data 11 – 7-digit buoy ID (proposed))
+    callsign (Type: TEXT; Sample values: ['44761', '44761', '44761', '44761', '44761']; Description: Identification/Callsign)
+    day (Type: NUMBER; Sample values: ['16', '4', '19', '23', '29']; Description: Day of the actual time of observation at which the barometer is read. Days 1-31)
+    timestamp (Type: NUMBER; Sample values: ['1358352000000000', '1359946800000000', '1374228000000000', '1372003200000000', '1369792800000000']; Description: Converted UTC timestamp for the actual time of observation at which the barometer is read)
+    month (Type: NUMBER; Sample values: ['1', '2', '7', '6', '5']; Description: Month of the actual time of observation at which the barometer is read. (1=January, 2=February, …, 12=December))
+    year (Type: NUMBER; Sample values: ['2013', '2013', '2013', '2013', '2013']; Description: Year of the actual time of observation at which the barometer is read. It is 4-digit)
+    longitude (Type: FLOAT; Sample values: ['-20.36', '-14.79', '0.89', '-8.63', '-13.62']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+]
+**Some other tables have the similar structure: [NOAA_ICOADS.ICOADS_CORE_2017, NOAA_ICOADS.ICOADS_CORE_2009, NOAA_ICOADS.ICOADS_CORE_2010, NOAA_ICOADS.ICOADS_CORE_2008, NOAA_ICOADS.ICOADS_CORE_2011, NOAA_ICOADS.ICOADS_CORE_2005, NOAA_ICOADS.ICOADS_CORE_2016, NOAA_ICOADS.ICOADS_CORE_2012, NOAA_ICOADS.ICOADS_CORE_2006, NOAA_ICOADS.ICOADS_CORE_2015, NOAA_ICOADS.ICOADS_CORE_2007, NOAA_ICOADS.ICOADS_CORE_2014]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.NWS_FORECAST_REGIONS
+[
+    name (Type: TEXT; Sample values: ['Ontonagon', 'Marquette', 'Alger', 'Luce', 'Gogebic'])
+    zone (Type: TEXT; Sample values: ['002', '005', '006', '007', '009'])
+    state (Type: TEXT; Sample values: ['MI', 'MI', 'MI', 'MI', 'MI'])
+    state_zone (Type: TEXT; Sample values: ['MI002', 'MI005', 'MI006', 'MI007', 'MI009'])
+    shortname (Type: TEXT; Sample values: ['Ontonagon', 'Marquette', 'Alger', 'Luce', 'Gogebic'])
+    lon (Type: FLOAT; Sample values: ['-89.315', '-87.6415', '-86.6018', '-85.5443', '-89.6944'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PRELIMINARY_SEVERE_STORMS.WIND_REPORTS
+[
+    county (Type: TEXT; Sample values: ['LEE', 'LEE', 'LEE', 'LEE', 'LEE'])
+    comments (Type: TEXT; Sample values: ['TREES DOWN NEAR THE INTERSECTION OF LEE RD 440 AND LEE RD 179. ALSO REPORT OF TREES DOWN JUST TO THE EAST NEAR THE INTERSECTION OF LEE RD 240 AND LEE RD 212. TIME ESTIM (BMX)', 'MULTIPLE TREES DOWN IN SMITHS STATION. TIME ESTIMATED FROM RADAR. (BMX)', 'CORRECTS PREVIOUS TSTM WND DMG REPORT FROM 1 ENE MONTEREY HEIGHTS. TREES AND UTILITY LINES REPORTED DOWN SOUTHEAST OF SMITHS STATION. NEARBY... AN EMA COMMUNICATIONS TO (BMX)', 'TREES DOWN AND POWER LINES DOWN ACROSS ROADWAY NEAR INTERSECTION OF LEE COUNTY ROAD 318 AND LEE COUNTY ROAD 319. WINDS ESTIMATED 45-55 MPH. TIME ESTIMATED BY RADAR. (BMX)', 'CORRECTS PREVIOUS NON-TSTM WND DMG REPORT FROM 1 SE LAKE HARDING. TREES WERE BLOWN DOWN NEAR COUNTY RD 379 AND COUNTY RD 372. (BMX)'])
+    timestamp (Type: NUMBER; Sample values: ['1547938440000000', '1559935260000000', '1565045340000000', '1565832600000000', '1572539700000000']; Description: Timestamp in UTC)
+    state (Type: TEXT; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL'])
+    latitude (Type: FLOAT; Sample values: ['32.49', '32.54', '32.52', '32.56', '32.68']; Description: Latitude to two decimal places)
+    longitude (Type: FLOAT; Sample values: ['-85.18', '-85.09', '-85.07', '-85.07', '-85.15']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.URBAN_AREAS
+[
+    name (Type: TEXT; Sample values: ['Tucson, AZ', 'Wilmington, NC', 'Vallejo, CA', 'Oxnard, CA', 'Sebring--Avon Park, FL'])
+    geo_id (Type: TEXT; Sample values: ['88732', '95833', '90028', '66673', '80416'])
+    urban_area_code (Type: TEXT; Sample values: ['88732', '95833', '90028', '66673', '80416'])
+    area_lsad_code (Type: TEXT; Sample values: ['75', '75', '75', '75', '75'])
+    lsad_name (Type: TEXT; Sample values: ['Tucson, AZ Urbanized Area', 'Wilmington, NC Urbanized Area', 'Vallejo, CA Urbanized Area', 'Oxnard, CA Urbanized Area', 'Sebring--Avon Park, FL Urbanized Area'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3500', 'G3500', 'G3500', 'G3500', 'G3500'])
+    type (Type: TEXT; Sample values: ['U', 'U', 'U', 'U', 'U'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.CBSA
+[
+    name (Type: TEXT; Sample values: ['Hereford, TX', 'Silver City, NM', 'Weatherford, OK', 'Sterling, CO', 'Beeville, TX'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['25820', '43500', '48220', '44540', '13300'])
+    csa_geo_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    lsad_code (Type: TEXT; Sample values: ['M2', 'M2', 'M2', 'M2', 'M2'])
+    lsad_name (Type: TEXT; Sample values: ['Hereford, TX Micro Area', 'Silver City, NM Micro Area', 'Weatherford, OK Micro Area', 'Sterling, CO Micro Area', 'Beeville, TX Micro Area'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3110', 'G3110', 'G3110', 'G3110', 'G3110'])
+    geo_id (Type: TEXT; Sample values: ['25820', '43500', '48220', '44540', '13300'])
+    cbsa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00[\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00c\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x01\\x00\\x00\\x00\\\'o\\xdbR\\xe2\\xa6Y\\...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00#\\xf2\\x02\\x91j\\x18...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe0\\xbf\\xd4*\\xd5\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xfe\\xfd\\x18)\\xca\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00V^\\x97\\x86\\x86oX\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.COUNTIES
+[
+    met_div_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', '11540', '20740'])
+    county_gnis_code (Type: TEXT; Sample values: ['01581083', '01581069', '01581114', '01581104', '01581068'])
+    lsad_code (Type: TEXT; Sample values: ['06', '06', '06', '06', '06'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4020', 'G4020', 'G4020', 'G4020', 'G4020'])
+    fips_class_code (Type: TEXT; Sample values: ['H1', 'H1', 'H1', 'H1', 'H1'])
+    geo_id (Type: TEXT; Sample values: ['55047', '55019', '55107', '55087', '55017'])
+    lsad_name (Type: TEXT; Sample values: ['Green Lake County', 'Clark County', 'Rusk County', 'Outagamie County', 'Chippewa County'])
+    county_fips_code (Type: TEXT; Sample values: ['55047', '55019', '55107', '55087', '55017'])
+    state_fips_code (Type: TEXT; Sample values: ['55', '55', '55', '55', '55'])
+    csa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', '118', '232'])
+    county_name (Type: TEXT; Sample values: ['Green Lake', 'Clark', 'Rusk', 'Outagamie', 'Chippewa'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_GSOD.STATIONS
+[
+    name (Type: TEXT; Sample values: ['WXPOD 7026                   ', 'WXPOD 7070                   ', 'WXPOD8278                    ', 'WXPOD 8318                   ', 'RORVIK/RYUM'])
+    begin (Type: TEXT; Sample values: ['20120713', '20140923', '20100519', '20100421', '19870116'])
+    end (Type: TEXT; Sample values: ['20170822', '20150926', '20120323', '20100421', '19910806'])
+    call (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    lat (Type: FLOAT; Sample values: ['0.0', '0.0', '32.95', '0.0', '64.85'])
+    country (Type: TEXT; Sample values: ['AF', 'AF', 'AF', 'AF', 'NO'])
+    state (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    lon (Type: FLOAT; Sample values: ['0.0', '0.0', '65.567', '0.0', '11.233'])
+    elev (Type: TEXT; Sample values: ['+7026.0', '+7070.0', '+1156.7', '+8318.0', '+0014.0'])
+    usaf (Type: TEXT; Sample values: ['007026', '007070', '008268', '008307', '010016'])
+    wban (Type: TEXT; Sample values: ['99999', '99999', '99999', '99999', '99999'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_2020_1705_VISUAL_SIGHTINGS
+[
+    latitude (Type: FLOAT; Sample values: ['19.646', '19.168', '19.494', '20.677', '21.004'])
+    longitude (Type: FLOAT; Sample values: ['-154.756', '-156.258', '-156.078', '-156.752', '-156.97'])
+    point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd5x\\xe9&1Xc\\xc0L...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc7K7\\x89A\\x88c\\x...(truncated)", 'bytearray(b\'\\x01\\x01\\x00\\x00\\x00\\xd1"\\xdb\\xf9~\\x82...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xf2\\xd2Mb\\x10\\x98...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\x9fc\\...(truncated)"])
+]
+**Some other tables have the similar structure: [NOAA_PIFSC_METADATA.DCLDE_2020_1706_VISUAL_SIGHTINGS]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_LASKER_GPS
+[
+    longitude (Type: FLOAT; Sample values: ['-158.39', '-158.46', '-158.46', '-158.46', '-158.42'])
+    latitude (Type: FLOAT; Sample values: ['20.0', '20.0', '20.0', '20.0', '20.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_2020_1705_MINKE_DETECTIONS
+[
+    longitude (Type: FLOAT; Sample values: ['-161.2750067', '-161.2750067', '-152.62861', '-157.5590433', '-157.5590433'])
+    latitude (Type: FLOAT; Sample values: ['21.79686167', '21.79686167', '21.04848167', '22.21893', '22.21893'])
+    point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xca\\xd5\\xd9\\xda\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xca\\xd5\\xd9\\xda\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\t\\xfe\\xb7\\x92\\x1d...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x89Q\\xc6\\xae\\xe3\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x89Q\\xc6\\xae\\xe3\\...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_SETTE_GPS
+[
+    longitude (Type: FLOAT; Sample values: ['-158.72', '-158.72', '-158.72', '-158.72', '-158.72'])
+    latitude (Type: FLOAT; Sample values: ['24.0', '24.0', '24.0', '24.0', '24.0'])
+    point (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\xd7c\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\xd7c\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\xd7c\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\xd7c\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7\\xa3p=\\n\\xd7c\\...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.CNECTA
+[
+    name (Type: TEXT; Sample values: ['Augusta-Waterville, ME', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME', 'Bridgeport-New Haven-Stamford, CT'])
+    geo_id (Type: TEXT; Sample values: ['710', '715', '720'])
+    cnecta_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00?\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.NATIONAL_OUTLINE
+[
+    name (Type: TEXT; Sample values: ['United States'])
+    geo_id (Type: TEXT; Sample values: ['US'])
+    us_outline_geom (Type: BINARY; Sample values: ['bytearray(b\'\\x01\\x06\\x00\\x00\\x00"\\x01\\x00\\x00\\x01\\...(truncated)'])
+    aff_geo_id (Type: TEXT; Sample values: ['0100000US'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.CSA
+[
+    name (Type: TEXT; Sample values: ['Parkersburg-Marietta-Vienna, WV-OH', 'Pueblo-Cañon City, CO', 'Monroe-Ruston, LA', 'Detroit-Warren-Ann Arbor, MI', 'St. Louis-St. Charles-Farmington, MO-IL'])
+    geo_id (Type: TEXT; Sample values: ['425', '444', '384', '220', '476'])
+    csa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00I\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00t\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00f\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    csa_code (Type: TEXT; Sample values: ['425', '444', '384', '220', '476'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.STATES
+[
+    geo_id (Type: TEXT; Sample values: ['72', '69', '78', '44', '25'])
+    region_code (Type: TEXT; Sample values: ['9', '9', '9', '1', '1'])
+    state_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    state_name (Type: TEXT; Sample values: ['Puerto Rico', 'Commonwealth of the Northern Mariana Islands', 'United States Virgin Islands', 'Rhode Island', 'Massachusetts'])
+    state_gnis_code (Type: TEXT; Sample values: ['01779808', '01779809', '01802710', '01219835', '00606926'])
+    state (Type: TEXT; Sample values: ['PR', 'MP', 'VI', 'RI', 'MA'])
+    division_code (Type: TEXT; Sample values: ['0', '0', '0', '1', '1'])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00EN\\xba\\x88J\\x9aP\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb2fd\\x90;3b@f\\xd...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb0\\x8d\\x1d\\xf9(>...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x8d%Q\\xd4\\xbe\\xe1...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x939\\x96wU\\xdfQ\\x...(truncated)"])
+    state_fips_code (Type: TEXT; Sample values: ['72', '69', '78', '44', '25'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.COASTLINE
+[
+    name (Type: TEXT; Sample values: ['Atlantic', 'Atlantic', 'Atlantic', 'Atlantic', 'Atlantic'])
+    coastline_geom (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00[\\...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00^\\x00\\x00\\x00\\x88\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00o\\x00\\x00\\x00\\xfb\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\r\\x00\\x00\\x00\\xb0...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PASSIVE_BIOACOUSTIC.NCEI_SANCTSOUND_PAD_METADATA
+[
+    lat (Type: TEXT; Sample values: ['34.0438', '34.0438', '34.0438', '34.0438', '34.0438'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PASSIVE_ACOUSTIC_INDEX.SANCTSOUND_METADATA
+[
+    longitude (Type: FLOAT; Sample values: ['-120.08105', '-120.08105', '-120.08105', '-120.08105', '-120.08105'])
+    latitude (Type: FLOAT; Sample values: ['34.0438', '34.0438', '34.0438', '34.0438', '34.0438'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PASSIVE_ACOUSTIC_INDEX.NRS_METADATA
+[
+    lon (Type: FLOAT; Sample values: ['-125.5222', '-125.5222', '-125.5222', '-125.5222', '-125.5222'])
+    platform_name (Type: TEXT; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00(~\\x8c\\xb9ka_\\xc0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00(~\\x8c\\xb9ka_\\xc0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00(~\\x8c\\xb9ka_\\xc0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00(~\\x8c\\xb9ka_\\xc0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00(~\\x8c\\xb9ka_\\xc0\\...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.CONGRESS_DISTRICT_116
+[
+    int_point_lon (Type: FLOAT; Sample values: ['-80.2109109', '-120.112845', '-97.8159131', '-81.2029593', '-118.2802639'])
+    geo_id (Type: TEXT; Sample values: ['1224', '0624', '4825', '1225', '0625'])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xadwn\\x90\\x7f\\rT\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x18!<\\xda8\\x07^\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x0018\\x94\\xeb7tX\\xc0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd2\\xfa\\x00I\\xfdL...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xf6/\\xff\\xd7\\xef\\...(truncated)"])
+]
+**Some other tables have the similar structure: [GEO_US_BOUNDARIES.CONGRESS_DISTRICT_115]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_2020_DETECTION_README
+[
+    table (Type: TEXT; Sample values: ['x_Array', 'x_Array', 'x_Array', 'x_Array', 'x_Array'])
+    description (Type: TEXT; Sample values: ['Name of array attached directly to the separator.', 'Start time for provided array parameters in "ship local" time.', 'Additional gain (dB) applied through the SailDAQ to this channel', 'Additional gain (dB) applied through the SailDAQ to this channel', 'Additional gain (dB) applied through the SailDAQ to this channel'])
+    field (Type: TEXT; Sample values: ['Array2', 'ArrayStart_ShipLocal', 'hp1_AD', 'hp6_AD', 'hp4_AD'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PIFSC_METADATA.DCLDE_2020_1705_ARRAY
+[
+    array1 (Type: TEXT; Sample values: ['Numbat    ', 'Sugar Glider '])
+    array2 (Type: TEXT; Sample values: ['Goanna    ', 'Echidna   '])
+]
+**Some other tables have the similar structure: [NOAA_PIFSC_METADATA.DCLDE_2020_1706_ARRAY]**
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_SIGNIFICANT_EARTHQUAKES.EARTHQUAKES
+[
+    year (Type: NUMBER; Sample values: ['1500', '1668', '1755', '1788', '1811']; Description: Century and year of the significant earthquake. Format +/-yyyy (-is B.C, +is A.D.). Valid values: -2000 to present. The Date and Time are given in Universal Coordinated Time.)
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PASSIVE_BIOACOUSTIC.NCEI_AFSC_PAD_METADATA
+[
+    platform_name (Type: TEXT; Sample values: ['Sonobuoy', 'Sonobuoy', 'Sonobuoy', 'Sonobuoy', 'Sonobuoy'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.NOAA_PASSIVE_BIOACOUSTIC.NCEI_NRS_PAD_METADATA
+[
+    platform_name (Type: TEXT; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.ADJACENT_STATES
+[
+    state_name (Type: TEXT; Sample values: ['California', 'Delaware', 'Georgia', 'Iowa', 'Indiana'])
+]
+
+--------------------------------------------------
+
+###Table full name: NOAA_DATA_PLUS.GEO_US_BOUNDARIES.RAILWAYS
+[
+    geo_id (Type: NUMBER; Sample values: ['110194697259', '110215163217', '110230920977', '110456908546', '110464566361'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+Categories: Geospatial functions
+
+
+## ST_WITHIN
+
+Returns true if the first geospatial object is fully contained by the second geospatial object. In other words:
+
+The first GEOGRAPHY object g1 is fully contained by the second GEOGRAPHY object g2.
+The first GEOMETRY object g1 is fully contained by the second GEOMETRY object g2.
+
+Calling ST_WITHIN(g1, g2) is equivalent to calling ST_CONTAINS(g2, g1).
+Although ST_COVEREDBY and ST_WITHIN might seem similar, the two functions have subtle differences. For details on the differences between “covered by” and “within”, see the Dimensionally Extended 9-Intersection Model (DE-9IM).
+
+Note This function does not support using a GeometryCollection or FeatureCollection as input values.
+
+Tip You can use the search optimization service to improve the performance of queries that call this function.
+For details, see Search Optimization Service.
+
+See also:ST_CONTAINS , ST_COVEREDBY
+
+
+## Syntax
+
+ST_WITHIN( <geography_expression_1> , <geography_expression_2> )
+
+ST_WITHIN( <geometry_expression_1> , <geometry_expression_2> )
+
+
+## Arguments
+
+
+geography_expression_1A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geography_expression_2A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_1A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_2A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+
+## Returns
+
+BOOLEAN.
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+This shows a simple use of the ST_WITHIN function:
+
+create table geospatial_table_01 (g1 GEOGRAPHY, g2 GEOGRAPHY);
+insert into geospatial_table_01 (g1, g2) values 
+    ('POLYGON((0 0, 3 0, 3 3, 0 3, 0 0))', 'POLYGON((1 1, 2 1, 2 2, 1 2, 1 1))');
+
+Copy SELECT ST_WITHIN(g1, g2) 
+    FROM geospatial_table_01;
++-------------------+
+| ST_WITHIN(G1, G2) |
+|-------------------|
+| False             |
++-------------------+
