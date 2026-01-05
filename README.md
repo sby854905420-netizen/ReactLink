@@ -3,7 +3,6 @@
 <p align="center">
 | <a href="https://arxiv.org/abs/2511.17190"><b>arXiv</b></a> |
 </p>
-Our codes will be coming soon.
 
 ## Overview
 ![AutoLink](assets/overview.png)
@@ -33,7 +32,17 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
 - Linking_results/                     -- Results after schema linking used to SQL generation
 ```
 
-## RUN
+## Settint Up Environment
+```bash
+conda create -n AutoLink python=3.12
+conda activate AutoLink
+pip install -r requirements.txt
+```
+## Run
+```bash
+cd ./run
+bash main.sh
+```
 
 
 
