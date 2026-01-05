@@ -33,11 +33,18 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
 ```
 
 ## Settint Up Environment
+1. Clone the repository:
+```bash
+git clone 
+```
+3. Create conda environment:
+4. Modify the api key:
 ```bash
 conda create -n AutoLink python=3.12
 conda activate AutoLink
 pip install -r requirements.txt
 ```
+
 ## Run
 ```bash
 cd ./run
