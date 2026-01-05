@@ -1,4 +1,4 @@
-faiss
+faiss-cpu
 tqdm
 sentence_transformers
 openai
