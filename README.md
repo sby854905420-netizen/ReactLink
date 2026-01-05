@@ -34,31 +34,31 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
 
 ## Settint Up Environment
 1. Clone the repository:
-```bash
-git clone https://github.com/wzy416/AutoLink.git
-cd AutoLink
-```
+  ```bash
+  git clone https://github.com/wzy416/AutoLink.git
+  cd AutoLink
+  ```
 2. Create conda environment:
-```bash
-conda create -n AutoLink python=3.12
-conda activate AutoLink
-pip install -r requirements.txt
-```
+  ```bash
+  conda create -n AutoLink python=3.12
+  conda activate AutoLink
+  pip install -r requirements.txt
+  ```
 3. Modify the api key:
 
-To use your own LLM, modify the OPENAI_API_KEY and OPENAI_BASE_URL in `run/main.sh`.
+  To use your own LLM, modify the OPENAI_API_KEY and OPENAI_BASE_URL in `run/main.sh`.
 
 
 4. Copy repository from [`Spider 2.0-lite`](https://github.com/xlang-ai/Spider2/tree/main/spider2-lite)
 
-You should copy [`spdier2-lite/resource`](https://github.com/xlang-ai/Spider2/tree/main/spider2-lite) from [`Spider 2.0`](https://github.com/xlang-ai/Spider2) repo to `run/resource/`. Follow the [`bigquery guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Bigquery_Guideline.md) and  [`snowflake guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Snowflake_Guideline.md) to sign up accounts, then put the credential json files under `run/bigquery_credentials/` and `run/snowflake_credential/` separately.
+  You should copy [`spdier2-lite/resource`](https://github.com/xlang-ai/Spider2/tree/main/spider2-lite) from [`Spider 2.0`](https://github.com/xlang-ai/Spider2) repo to `run/resource/`. Follow the [`bigquery guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Bigquery_Guideline.md) and  [`snowflake guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Snowflake_Guideline.md) to sign up accounts, then put the credential json files under `run/bigquery_credentials/` and `run/snowflake_credential/` separately.
 
 ## Running the code
-```bash
-cd ./run
-bash main.sh
-```
-It will gradually complete the entire process from document construction, document embedding, initial schema retrieval, to schema exploration and expansion.
+  ```bash
+  cd ./run
+  bash main.sh
+  ```
+  It will gradually complete the entire process from document construction, document embedding, initial schema retrieval, to schema exploration and expansion.
 
 # Citation
 If you find this repo helpful, please cite our work:
