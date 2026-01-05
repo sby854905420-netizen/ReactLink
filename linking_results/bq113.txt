@@ -1,0 +1,481 @@
+###Table full name: bigquery-public-data.bls_qcew.1995_q4
+[
+    lq_month3_emplvl_1012_construction (Type: FLOAT64; Sample values: ['1.08', '0.92', '1.0', '1.05', '1.35']; Description: Employment level location quotient in Construction establishments)
+    lq_month3_emplvl_23_construction (Type: FLOAT64; Sample values: ['1.08', '0.92', '1.0', '1.05', '1.35']; Description: Employment level location quotient in Construction establishments)
+    month3_emplvl_1012_construction (Type: FLOAT64; Sample values: ['578.0', '1355.0', '1990.0', '2098.0', '2520.0']; Description: Employees in Construction establishments)
+    month3_emplvl_23_construction (Type: FLOAT64; Sample values: ['578.0', '1355.0', '1990.0', '2098.0', '2520.0']; Description: Employees in Construction establishments)
+    lq_qtrly_estabs_1012_construction (Type: FLOAT64; Sample values: ['0.87', '0.89', '1.34', '0.93', '1.31']; Description: Location quotient of establishments in Construction)
+    lq_qtrly_estabs_23_construction (Type: FLOAT64; Sample values: ['0.87', '0.89', '1.34', '0.93', '1.31']; Description: Location quotient of establishments in Construction)
+    qtrly_estabs_1012_construction (Type: FLOAT64; Sample values: ['72.0', '158.0', '283.0', '240.0', '379.0']; Description: Establishments in Construction)
+    lq_month3_emplvl_21_mining_quarrying_and_oil_and_gas_extraction (Type: FLOAT64; Sample values: ['10.26', '0.41', '0.9', 'nan', '1.87']; Description: Employment level location quotient in Mining, quarrying, and oil and gas extraction establishments)
+    lq_month3_emplvl_10_total_all_industries (Type: FLOAT64; Sample values: ['0.79', '0.85', '1.0', '1.02', '1.07']; Description: Employment level location quotient in Total, all industries establishments)
+    lq_month3_emplvl_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['0.77', '0.71', '0.36', '2.98', '0.77']; Description: Employment level location quotient in Real estate and rental and leasing establishments)
+    lq_month3_emplvl_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['4.67', '0.35', '0.7', '0.68', '0.83']; Description: Employment level location quotient in Natural resources and mining establishments)
+    lq_month3_emplvl_1027_other_services (Type: FLOAT64; Sample values: ['0.98', '0.93', '0.62', '0.85', '0.94']; Description: Employment level location quotient in Other services establishments)
+    qtrly_estabs_23_construction (Type: FLOAT64; Sample values: ['72.0', '158.0', '283.0', '240.0', '379.0']; Description: Establishments in Construction)
+    lq_month3_emplvl_99_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Employment level location quotient in Unclassified establishments)
+    lq_month3_emplvl_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Employment level location quotient in Unclassified establishments)
+    lq_month3_emplvl_1013_manufacturing (Type: FLOAT64; Sample values: ['0.63', '0.84', '2.14', '0.25', '0.97']; Description: Employment level location quotient in Manufacturing establishments)
+    lq_month3_emplvl_71_arts_entertainment_and_recreation (Type: FLOAT64; Sample values: ['0.41', '1.08', '0.51', '2.48', '0.62']; Description: Employment level location quotient in Arts, entertainment, and recreation establishments)
+    lq_month3_emplvl_31_33_manufacturing (Type: FLOAT64; Sample values: ['0.63', '0.84', '2.14', '0.25', '0.97']; Description: Employment level location quotient in Manufacturing establishments)
+    lq_month3_emplvl_1023_financial_activities (Type: FLOAT64; Sample values: ['0.68', '0.97', '0.37', '1.08', '0.95']; Description: Employment level location quotient in Financial activities establishments)
+    lq_month3_emplvl_1026_leisure_and_hospitality (Type: FLOAT64; Sample values: ['0.73', '0.95', '0.77', '3.28', '1.37']; Description: Employment level location quotient in Leisure and hospitality establishments)
+    lq_month3_emplvl_51_information (Type: FLOAT64; Sample values: ['0.61', '0.66', '0.22', '0.24', '0.92']; Description: Employment level location quotient in Information establishments)
+    lq_month3_emplvl_1022_information (Type: FLOAT64; Sample values: ['0.61', '0.66', '0.22', '0.24', '0.92']; Description: Employment level location quotient in Information establishments)
+    lq_month3_emplvl_54_professional_and_technical_services (Type: FLOAT64; Sample values: ['0.22', '0.46', '0.23', '0.35', '0.87']; Description: Employment level location quotient in Professional and technical services establishments)
+    lq_month3_emplvl_56_administrative_and_waste_services (Type: FLOAT64; Sample values: ['0.13', '0.35', '0.84', '0.6', '0.53']; Description: Employment level location quotient in Administrative and waste services establishments)
+    lq_month3_emplvl_44_45_retail_trade (Type: FLOAT64; Sample values: ['1.02', '0.87', '0.87', '1.23', '1.42']; Description: Employment level location quotient in Retail trade establishments)
+    month3_emplvl_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['143.0', '360.0', '250.0', '2040.0', '499.0']; Description: Employees in Real estate and rental and leasing establishments)
+    lq_month3_emplvl_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['0.98', '0.93', '0.62', '0.85', '0.94']; Description: Employment level location quotient in Other services, except public administration establishments)
+    lq_month3_emplvl_62_health_care_and_social_assistance (Type: FLOAT64; Sample values: ['1.15', '0.9', '0.9', '1.2', '1.45']; Description: Employment level location quotient in Health care and social assistance establishments)
+    lq_month3_emplvl_1024_professional_and_business_services (Type: FLOAT64; Sample values: ['0.15', '0.51', '0.76', '0.52', '0.62']; Description: Employment level location quotient in Professional and business services establishments)
+    lq_month3_emplvl_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['0.48', '1.41', '0.72', '0.17', '0.39']; Description: Employment level location quotient in Transportation and warehousing establishments)
+    avg_wkly_wage_1012_construction (Type: FLOAT64; Sample values: ['409.0', '439.0', '509.0', '504.0', '510.0']; Description: Average weekly wage for Construction establishments)
+    lq_avg_wkly_wage_1012_construction (Type: FLOAT64; Sample values: ['0.85', '0.89', '1.01', '1.17', '0.97']; Description: Average weekly wage location quotient for Construction establishments)
+    geoid (Type: STRING; Sample values: ['48227', '28035', '37159', '12097', '26055']; Description: US FIPS County Code)
+    lq_month3_emplvl_11_agriculture_forestry_fishing_and_hunting (Type: FLOAT64; Sample values: ['1.75', '0.32', '0.59', '1.04', '0.29']; Description: Employment level location quotient in Agriculture, forestry, fishing and hunting establishments)
+    month3_emplvl_21_mining_quarrying_and_oil_and_gas_extraction (Type: FLOAT64; Sample values: ['583.0', '63.0', '191.0', 'nan', '370.0']; Description: Employees in Mining, quarrying, and oil and gas extraction establishments)
+    month3_emplvl_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['774.0', '157.0', '429.0', '420.0', '479.0']; Description: Employees in Natural resources and mining establishments)
+    avg_wkly_wage_23_construction (Type: FLOAT64; Sample values: ['409.0', '439.0', '509.0', '504.0', '510.0']; Description: Average weekly wage for Construction establishments)
+    lq_avg_wkly_wage_23_construction (Type: FLOAT64; Sample values: ['0.85', '0.89', '1.01', '1.17', '0.97']; Description: Average weekly wage location quotient for Construction establishments)
+    month3_emplvl_10_total_all_industries (Type: FLOAT64; Sample values: ['8000.0', '23362.0', '37551.0', '38024.0', '37493.0']; Description: Employees in Total, all industries establishments)
+    lq_month3_emplvl_52_finance_and_insurance (Type: FLOAT64; Sample values: ['0.65', '1.07', '0.37', '0.39', '1.02']; Description: Employment level location quotient in Finance and insurance establishments)
+    lq_month3_emplvl_22_utilities (Type: FLOAT64; Sample values: ['0.0', '1.19', 'nan', '0.16', '1.13']; Description: Employment level location quotient in Utilities establishments)
+    month3_emplvl_71_arts_entertainment_and_recreation (Type: FLOAT64; Sample values: ['61.0', '443.0', '286.0', '1376.0', '321.0']; Description: Employees in Arts, entertainment, and recreation establishments)
+    lq_month3_emplvl_61_educational_services (Type: FLOAT64; Sample values: ['nan', '0.58', '0.95', '0.39', '0.91']; Description: Employment level location quotient in Educational services establishments)
+    month3_emplvl_1013_manufacturing (Type: FLOAT64; Sample values: ['1111.0', '4077.0', '14085.0', '1645.0', '5983.0']; Description: Employees in Manufacturing establishments)
+    month3_emplvl_1027_other_services (Type: FLOAT64; Sample values: ['379.0', '979.0', '891.0', '1218.0', '1274.0']; Description: Employees in Other services establishments)
+    lq_month3_emplvl_72_accommodation_and_food_services (Type: FLOAT64; Sample values: ['0.78', '0.92', '0.81', '3.41', '1.5']; Description: Employment level location quotient in Accommodation and food services establishments)
+    month3_emplvl_31_33_manufacturing (Type: FLOAT64; Sample values: ['1111.0', '4077.0', '14085.0', '1645.0', '5983.0']; Description: Employees in Manufacturing establishments)
+    month3_emplvl_56_administrative_and_waste_services (Type: FLOAT64; Sample values: ['81.0', '597.0', '1964.0', '1387.0', '1161.0']; Description: Employees in Administrative and waste services establishments)
+    lq_month3_emplvl_1025_education_and_health_services (Type: FLOAT64; Sample values: ['1.01', '0.86', '0.9', '1.11', '1.39']; Description: Employment level location quotient in Education and health services establishments)
+    lq_month3_emplvl_1021_trade_transportation_and_utilities (Type: FLOAT64; Sample values: ['0.87', '0.97', '0.82', '0.92', '1.09']; Description: Employment level location quotient in Trade, transportation, and utilities establishments)
+    month3_emplvl_62_health_care_and_social_assistance (Type: FLOAT64; Sample values: ['1342.0', '2875.0', '3902.0', '5214.0', '5909.0']; Description: Employees in Health care and social assistance establishments)
+    month3_emplvl_54_professional_and_technical_services (Type: FLOAT64; Sample values: ['123.0', '702.0', '471.0', '729.0', '1678.0']; Description: Employees in Professional and technical services establishments)
+    month3_emplvl_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['187.0', '1486.0', '1037.0', '246.0', '527.0']; Description: Employees in Transportation and warehousing establishments)
+    month3_emplvl_44_45_retail_trade (Type: FLOAT64; Sample values: ['1533.0', '3579.0', '4858.0', '6860.0', '7441.0']; Description: Employees in Retail trade establishments)
+    month3_emplvl_11_agriculture_forestry_fishing_and_hunting (Type: FLOAT64; Sample values: ['191.0', '94.0', '238.0', '420.0', '109.0']; Description: Employees in Agriculture, forestry, fishing and hunting establishments)
+    month3_emplvl_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['379.0', '979.0', '891.0', '1218.0', '1274.0']; Description: Employees in Other services, except public administration establishments)
+    month3_emplvl_1023_financial_activities (Type: FLOAT64; Sample values: ['473.0', '1850.0', '960.0', '2771.0', '2306.0']; Description: Employees in Financial activities establishments)
+    lq_month3_emplvl_55_management_of_companies_and_enterprises (Type: FLOAT64; Sample values: ['nan', '1.29', '2.3', '0.76', '0.12']; Description: Employment level location quotient in Management of companies and enterprises establishments)
+    lq_month3_emplvl_42_wholesale_trade (Type: FLOAT64; Sample values: ['0.64', '0.94', '0.72', '0.71', '0.69']; Description: Employment level location quotient in Wholesale trade establishments)
+    month3_emplvl_1024_professional_and_business_services (Type: FLOAT64; Sample values: ['204.0', '1869.0', '3816.0', '2574.0', '2907.0']; Description: Employees in Professional and business services establishments)
+    month3_emplvl_1026_leisure_and_hospitality (Type: FLOAT64; Sample values: ['777.0', '2763.0', '3048.0', '12993.0', '5117.0']; Description: Employees in Leisure and hospitality establishments)
+    month3_emplvl_1022_information (Type: FLOAT64; Sample values: ['183.0', '538.0', '243.0', '269.0', '958.0']; Description: Employees in Information establishments)
+    lq_qtrly_estabs_10_total_all_industries (Type: FLOAT64; Sample values: ['0.94', '1.0', '0.98', '1.02', '1.01']; Description: Location quotient of establishments in Total, all industries)
+    month3_emplvl_99_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Employees in Unclassified establishments)
+    month3_emplvl_51_information (Type: FLOAT64; Sample values: ['183.0', '538.0', '243.0', '269.0', '958.0']; Description: Employees in Information establishments)
+    month3_emplvl_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Employees in Unclassified establishments)
+    month3_emplvl_22_utilities (Type: FLOAT64; Sample values: ['0.0', '218.0', 'nan', '39.0', '266.0']; Description: Employees in Utilities establishments)
+    month3_emplvl_72_accommodation_and_food_services (Type: FLOAT64; Sample values: ['716.0', '2320.0', '2762.0', '11617.0', '4796.0']; Description: Employees in Accommodation and food services establishments)
+    month3_emplvl_1021_trade_transportation_and_utilities (Type: FLOAT64; Sample values: ['2171.0', '6650.0', '7638.0', '8559.0', '9517.0']; Description: Employees in Trade, transportation, and utilities establishments)
+    lq_qtrly_estabs_31_33_manufacturing (Type: FLOAT64; Sample values: ['0.71', '0.74', '1.41', '0.6', '1.09']; Description: Location quotient of establishments in Manufacturing)
+    qtrly_estabs_1013_manufacturing (Type: FLOAT64; Sample values: ['34.0', '76.0', '173.0', '89.0', '184.0']; Description: Establishments in Manufacturing)
+    lq_qtrly_estabs_1013_manufacturing (Type: FLOAT64; Sample values: ['0.71', '0.74', '1.41', '0.6', '1.09']; Description: Location quotient of establishments in Manufacturing)
+    qtrly_estabs_10_total_all_industries (Type: FLOAT64; Sample values: ['770.0', '1731.0', '2045.0', '2568.0', '2894.0']; Description: Establishments in Total, all industries)
+    month3_emplvl_52_finance_and_insurance (Type: FLOAT64; Sample values: ['330.0', '1490.0', '710.0', '731.0', '1807.0']; Description: Employees in Finance and insurance establishments)
+    month3_emplvl_61_educational_services (Type: FLOAT64; Sample values: ['nan', '249.0', '549.0', '226.0', '493.0']; Description: Employees in Educational services establishments)
+    area_fips (Type: STRING; Sample values: ['48227', '28035', '37159', '12097', '26055']; Description: US FIPS County Code)
+    qtrly_estabs_31_33_manufacturing (Type: FLOAT64; Sample values: ['34.0', '76.0', '173.0', '89.0', '184.0']; Description: Establishments in Manufacturing)
+    month3_emplvl_1025_education_and_health_services (Type: FLOAT64; Sample values: ['1345.0', '3124.0', '4451.0', '5440.0', '6402.0']; Description: Employees in Education and health services establishments)
+    lq_qtrly_estabs_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['0.98', '1.27', '0.67', '1.89', '0.74']; Description: Location quotient of establishments in Real estate and rental and leasing)
+    lq_avg_wkly_wage_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['0.82', '0.7', '1.0', '1.01', '1.22']; Description: Average weekly wage location quotient for Real estate and rental and leasing establishments)
+    qtrly_estabs_21_mining_quarrying_and_oil_and_gas_extraction (Type: FLOAT64; Sample values: ['53.0', '8.0', '10.0', 'nan', '50.0']; Description: Establishments in Mining, quarrying, and oil and gas extraction)
+    qtrly_estabs_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['95.0', '34.0', '23.0', '46.0', '72.0']; Description: Establishments in Natural resources and mining)
+    lq_qtrly_estabs_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['6.1', '1.02', '0.58', '0.95', '1.32']; Description: Location quotient of establishments in Natural resources and mining)
+    lq_qtrly_estabs_1023_financial_activities (Type: FLOAT64; Sample values: ['1.05', '1.5', '0.89', '1.26', '0.91']; Description: Location quotient of establishments in Financial activities)
+    qtrly_estabs_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['34.0', '94.0', '59.0', '202.0', '90.0']; Description: Establishments in Real estate and rental and leasing)
+    avg_wkly_wage_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['320.0', '281.0', '405.0', '348.0', '515.0']; Description: Average weekly wage for Real estate and rental and leasing establishments)
+    lq_qtrly_estabs_21_mining_quarrying_and_oil_and_gas_extraction (Type: FLOAT64; Sample values: ['16.49', '1.17', '1.22', 'nan', '4.44']; Description: Location quotient of establishments in Mining, quarrying, and oil and gas extraction)
+    lq_qtrly_estabs_1027_other_services (Type: FLOAT64; Sample values: ['0.82', '0.92', '0.76', '0.72', '0.66']; Description: Location quotient of establishments in Other services)
+    lq_qtrly_estabs_71_arts_entertainment_and_recreation (Type: FLOAT64; Sample values: ['0.62', '0.96', '1.12', '1.35', '1.63']; Description: Location quotient of establishments in Arts, entertainment, and recreation)
+    month3_emplvl_55_management_of_companies_and_enterprises (Type: FLOAT64; Sample values: ['nan', '570.0', '1381.0', '458.0', '68.0']; Description: Employees in Management of companies and enterprises establishments)
+    month3_emplvl_42_wholesale_trade (Type: FLOAT64; Sample values: ['340.0', '1367.0', '1442.0', '1414.0', '1283.0']; Description: Employees in Wholesale trade establishments)
+    qtrly_estabs_1022_information (Type: FLOAT64; Sample values: ['13.0', '20.0', '15.0', '18.0', '52.0']; Description: Establishments in Information)
+    lq_qtrly_estabs_1022_information (Type: FLOAT64; Sample values: ['0.94', '0.68', '0.42', '0.42', '1.07']; Description: Location quotient of establishments in Information)
+    lq_qtrly_estabs_51_information (Type: FLOAT64; Sample values: ['0.94', '0.68', '0.42', '0.42', '1.07']; Description: Location quotient of establishments in Information)
+    qtrly_estabs_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['28.0', '53.0', '71.0', '48.0', '46.0']; Description: Establishments in Transportation and warehousing)
+    qtrly_estabs_55_management_of_companies_and_enterprises (Type: FLOAT64; Sample values: ['nan', '15.0', '7.0', '7.0', '8.0']; Description: Establishments in Management of companies and enterprises)
+    qtrly_estabs_51_information (Type: FLOAT64; Sample values: ['13.0', '20.0', '15.0', '18.0', '52.0']; Description: Establishments in Information)
+    lq_qtrly_estabs_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['1.25', '1.11', '1.24', '0.69', '0.59']; Description: Location quotient of establishments in Transportation and warehousing)
+    qtrly_estabs_1023_financial_activities (Type: FLOAT64; Sample values: ['80.0', '243.0', '173.0', '297.0', '243.0']; Description: Establishments in Financial activities)
+    qtrly_estabs_1027_other_services (Type: FLOAT64; Sample values: ['82.0', '197.0', '195.0', '225.0', '233.0']; Description: Establishments in Other services)
+    lq_qtrly_estabs_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Location quotient of establishments in Unclassified)
+    qtrly_estabs_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Establishments in Unclassified)
+    lq_qtrly_estabs_55_management_of_companies_and_enterprises (Type: FLOAT64; Sample values: ['nan', '1.92', '0.75', '0.62', '0.62']; Description: Location quotient of establishments in Management of companies and enterprises)
+    lq_qtrly_estabs_99_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Location quotient of establishments in Unclassified)
+    lq_avg_wkly_wage_31_33_manufacturing (Type: FLOAT64; Sample values: ['1.2', '0.83', '0.98', '1.15', '1.03']; Description: Average weekly wage location quotient for Manufacturing establishments)
+    lq_avg_wkly_wage_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['1.44', '0.99', '1.22', '1.14', '1.95']; Description: Average weekly wage location quotient for Natural resources and mining establishments)
+    qtrly_estabs_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['82.0', '197.0', '195.0', '225.0', '233.0']; Description: Establishments in Other services, except public administration)
+    lq_avg_wkly_wage_1013_manufacturing (Type: FLOAT64; Sample values: ['1.2', '0.83', '0.98', '1.15', '1.03']; Description: Average weekly wage location quotient for Manufacturing establishments)
+    avg_wkly_wage_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['590.0', '419.0', '522.0', '414.0', '870.0']; Description: Average weekly wage for Natural resources and mining establishments)
+    lq_avg_wkly_wage_21_mining_quarrying_and_oil_and_gas_extraction (Type: FLOAT64; Sample values: ['0.93', '0.56', '0.86', 'nan', '1.45']; Description: Average weekly wage location quotient for Mining, quarrying, and oil and gas extraction establishments)
+    avg_wkly_wage_1013_manufacturing (Type: FLOAT64; Sample values: ['634.0', '451.0', '542.0', '541.0', '589.0']; Description: Average weekly wage for Manufacturing establishments)
+    lq_avg_wkly_wage_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['1.3', '0.65', '1.06', '0.76', '1.02']; Description: Average weekly wage location quotient for Transportation and warehousing establishments)
+    qtrly_estabs_1021_trade_transportation_and_utilities (Type: FLOAT64; Sample values: ['200.0', '512.0', '608.0', '640.0', '736.0']; Description: Establishments in Trade, transportation, and utilities)
+    lq_qtrly_estabs_44_45_retail_trade (Type: FLOAT64; Sample values: ['0.98', '1.28', '1.26', '1.23', '1.25']; Description: Location quotient of establishments in Retail trade)
+    qtrly_estabs_44_45_retail_trade (Type: FLOAT64; Sample values: ['122.0', '342.0', '401.0', '476.0', '547.0']; Description: Establishments in Retail trade)
+    qtrly_estabs_1024_professional_and_business_services (Type: FLOAT64; Sample values: ['64.0', '226.0', '211.0', '340.0', '416.0']; Description: Establishments in Professional and business services)
+    qtrly_estabs_99_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Establishments in Unclassified)
+    qtrly_estabs_54_professional_and_technical_services (Type: FLOAT64; Sample values: ['45.0', '148.0', '116.0', '167.0', '273.0']; Description: Establishments in Professional and technical services)
+    lq_qtrly_estabs_54_professional_and_technical_services (Type: FLOAT64; Sample values: ['0.58', '0.9', '0.59', '0.7', '1.01']; Description: Location quotient of establishments in Professional and technical services)
+    lq_qtrly_estabs_1024_professional_and_business_services (Type: FLOAT64; Sample values: ['0.53', '0.88', '0.69', '0.91', '0.99']; Description: Location quotient of establishments in Professional and business services)
+    lq_qtrly_estabs_1021_trade_transportation_and_utilities (Type: FLOAT64; Sample values: ['0.94', '1.13', '1.12', '0.97', '0.99']; Description: Location quotient of establishments in Trade, transportation, and utilities)
+    lq_avg_wkly_wage_99_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Average weekly wage location quotient for Unclassified establishments)
+    qtrly_estabs_56_administrative_and_waste_services (Type: FLOAT64; Sample values: ['19.0', '63.0', '88.0', '166.0', '135.0']; Description: Establishments in Administrative and waste services)
+    lq_avg_wkly_wage_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Average weekly wage location quotient for Unclassified establishments)
+    avg_wkly_wage_48_49_transportation_and_warehousing (Type: FLOAT64; Sample values: ['585.0', '300.0', '502.0', '305.0', '500.0']; Description: Average weekly wage for Transportation and warehousing establishments)
+    lq_qtrly_estabs_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['0.82', '0.92', '0.76', '0.72', '0.66']; Description: Location quotient of establishments in Other services, except public administration)
+    qtrly_estabs_22_utilities (Type: FLOAT64; Sample values: ['0.0', '14.0', 'nan', '8.0', '7.0']; Description: Establishments in Utilities)
+    avg_wkly_wage_31_33_manufacturing (Type: FLOAT64; Sample values: ['634.0', '451.0', '542.0', '541.0', '589.0']; Description: Average weekly wage for Manufacturing establishments)
+    lq_qtrly_estabs_56_administrative_and_waste_services (Type: FLOAT64; Sample values: ['0.48', '0.75', '0.87', '1.36', '0.98']; Description: Location quotient of establishments in Administrative and waste services)
+]
+**Some other tables have the similar structure: [2012_q1, 2002_q3, 1990_q4, 2008_q2, 1999_q2, 1992_q1, 2016_q4, 1996_q4, 2009_q1, 2013_q4, 2008_q1, 2009_q3, 2008_q3, 1997_q3, 2011_q2, 2014_q2, 2003_q4, 2007_q2, 2015_q3, 1993_q1, 1999_q3, 2009_q4, 2015_q2, 1994_q3, 2014_q1, 1993_q2, 2007_q4, 2017_q4, 2015_q4, 2012_q3, 2005_q3, 2002_q1, 2018_q3, 2000_q2, 1991_q4, 1999_q1, 2002_q4, 1996_q3, 2013_q2, 1997_q4, 2003_q1, 2015_q1, 2004_q2, 2004_q4, 2009_q2, 1998_q4, 2005_q2, 2006_q3, 2017_q2, 2016_q2, 1992_q3, 2005_q1, 1995_q3, 1991_q1, 2000_q1, 2011_q1, 2019_q2, 2007_q3, 2018_q2, 2010_q1, 1995_q2, 1991_q2, 1993_q3, 1996_q1, 1990_q1, 2016_q1, 2006_q1, 2010_q4, 1990_q2, 2013_q1, 1992_q4, 2005_q4, 1997_q2, 2001_q1, 2010_q2, 2006_q2, 1994_q1, 2003_q3, 2017_q3, 1992_q2, 1998_q1, 1997_q1, 2002_q2, 1995_q1, 2018_q4, 2008_q4, 2004_q3, 2000_q4, 1998_q3, 2001_q4, 1990_q3, 2011_q3, 2004_q1, 2016_q3, 1993_q4, 2003_q2, 2012_q4, 2018_q1, 2007_q1, 1991_q3, 2006_q4, 2001_q2, 1994_q4, 1999_q4, 2012_q2, 2013_q3, 2010_q3, 1998_q2, 2019_q1, 1994_q2, 2014_q3, 2017_q1, 2014_q4, 2000_q3, 1996_q2, 2001_q3, 2011_q4]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.cpsaat18
+[
+    total_employed_in_thousands (Type: INT64; Sample values: ['147795', '152581', '158291', '161037', '2349'])
+    year (Type: INT64; Sample values: ['2020', '2021', '2022', '2023', '2020'])
+    industry (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    subsector (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    sector (Type: STRING; Sample values: ['Total, 16 years and over', 'Total, 16 years and over', 'Total, 16 years and over', 'Total, 16 years and over', 'Agriculture, forestry, fishing, and hunting'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.zip_codes
+[
+    county (Type: STRING; Sample values: ['Colleton County', 'Middlesex County', 'Somerset County', 'District of Columbia', 'Jefferson County'])
+    zip_code (Type: STRING; Sample values: ['29438', '07080', '21821', '20553', '13640'])
+    state_fips_code (Type: STRING; Sample values: ['45', '34', '24', '11', '36'])
+    state_code (Type: STRING; Sample values: ['SC', 'NJ', 'MD', 'DC', 'NY'])
+    state_name (Type: STRING; Sample values: ['South Carolina', 'New Jersey', 'Maryland', 'Washington, D.C.', 'New York'])
+    fips_class_code (Type: STRING; Sample values: ['B5', 'B5', 'B5', 'B5', 'B5'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G6350', 'G6350', 'G6350', 'G6350', 'G6350'])
+    zip_code_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-80.42769 32.623695, -80.427617 32.622253, -80.426739 32.618966, -80.425787 32.614632, -80.425469 32.611869, -80.42445 32.607801, -80.422693 32.605446, -80.421371 32.604776, -80.419801 32.604323, -80.418172 32.604474, -80.413915 32.608237, -...(truncated)', 'POLYGON((-74.440927 40.594078, -74.440841 40.593496, -74.440786 40.593124, -74.440742 40.592831, -74.440737 40.592794, -74.440724 40.592704, -74.440662 40.59224, -74.440633 40.592061, -74.440603 40.591863, -74.440599 40.591836, -74.440575 40.591686, ...(truncated)', 'POLYGON((-75.963377 38.137574, -75.962924 38.133827, -75.960656 38.129632, -75.958912 38.127516, -75.95642 38.125774, -75.954917 38.125121, -75.954317 38.124859, -75.952821 38.124468, -75.951214 38.124468, -75.949777 38.124642, -75.949512 38.12484, -...(truncated)', 'POLYGON((-77.024016 38.887566, -77.024028 38.886334, -77.023966 38.886334, -77.022766 38.886323, -77.022472 38.886322, -77.021912 38.886322, -77.021919 38.886767, -77.021922 38.887098, -77.021923 38.887388, -77.021916 38.887563, -77.022231 38.887568,...(truncated)', 'MULTIPOLYGON(((-75.937516 44.324708, -75.937491 44.324642, -75.937349 44.324528, -75.937246 44.32449, -75.936951 44.324481, -75.936887 44.324415, -75.936797 44.324358, -75.936694 44.324358, -75.936655 44.324471, -75.936553 44.324462, -75.936488 44.32...(truncated)'])
+    city (Type: STRING; Sample values: ['Edisto Beach town', 'South Plainfield borough', 'Dames Quarter CDP, Deal Island CDP, Chance CDP', 'Washington city', 'Thousand Island Park CDP'])
+    internal_point_lat (Type: FLOAT64; Sample values: ['32.5659327', '40.5744129', '38.1645945', '38.8869455', '44.346498'])
+    internal_point_geom (Type: GEOGRAPHY; Sample values: ['POINT(-80.3217298 32.5659327)', 'POINT(-74.4147996 40.5744129)', 'POINT(-75.9166595 38.1645945)', 'POINT(-77.0229684 38.8869455)', 'POINT(-75.928152 44.346498)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.unemployment_cps
+[
+    year (Type: INT64; Sample values: ['1940', '1943', '1945', '1946', '1946'])
+    series_id (Type: STRING; Sample values: ['LNU05023554', 'LNU02323554', 'LNU05023554', 'LNU02023554', 'LNU05023554'])
+    footnote_codes (Type: STRING; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    value (Type: FLOAT64; Sample values: ['44200.0', '57.6', '40230.0', '55250.0', '45550.0'])
+    date (Type: DATE; Sample values: ['1940-12-31', '1943-12-31', '1945-12-31', '1946-12-31', '1946-12-31'])
+    series_title (Type: STRING; Sample values: ['(unadj) Not in labor force - 14 years and over', '(Unadj) Employment-population ratio - 14 years and over', '(unadj) Not in labor force - 14 years and over', '(unadj) Employed - 14 years and over', '(unadj) Not in labor force - 14 years and over'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.employment_hours_earnings_series
+[
+    end_year (Type: INT64; Sample values: ['2021', '2021', '2021', '2021', '2021'])
+    seasonal (Type: STRING; Sample values: ['S', 'S', 'S', 'S', 'S'])
+    series_id (Type: STRING; Sample values: ['CES0000000001', 'CES0000000010', 'CES0000000025', 'CES0000000026', 'CES0500000001'])
+    supersector_code (Type: INT64; Sample values: ['0', '0', '0', '0', '5'])
+    industry_code (Type: INT64; Sample values: ['0', '0', '0', '0', '5000000'])
+    data_type_code (Type: INT64; Sample values: ['1', '10', '25', '26', '1'])
+    footnote_codes (Type: STRING; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    series_title (Type: STRING; Sample values: ['All employees, thousands, total nonfarm, seasonally adjusted', 'Women employees, thousands, total nonfarm, seasonally adjusted', 'All employees, quarterly averages, seasonally adjusted, thousands, total nonfarm, seasonally adjusted', 'All employees, 3-month average change, seasonally adjusted, thousands, total nonfarm, seasonally adjusted', 'All employees, thousands, total private, seasonally adjusted'])
+    begin_year (Type: INT64; Sample values: ['1939', '1964', '1939', '1939', '1939'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.adjacent_counties
+[
+    county (Type: STRING; Sample values: ['Audubon County', 'Boone County', 'Bremer County', 'Calhoun County', 'Cedar County'])
+    county_fips_code (Type: STRING; Sample values: ['19009', '19015', '19017', '19025', '19031'])
+    neighbors_fips_code (Type: ARRAY<STRING>; Sample values: ['"[\\"19165\\" \\"19001\\" \\"19077\\" \\"19047\\" \\"19029\\" \\"19027\\"]"', '"[\\"19153\\" \\"19049\\" \\"19187\\" \\"19073\\" \\"19169\\" \\"19079\\"]"', '"[\\"19067\\" \\"19037\\" \\"19019\\" \\"19023\\" \\"19065\\" \\"19013\\"]"', '"[\\"19161\\" \\"19027\\" \\"19021\\" \\"19187\\" \\"19073\\" \\"19151\\"]"', '"[\\"19163\\" \\"19105\\" \\"19045\\" \\"19103\\" \\"19139\\" \\"19113\\"]"'])
+    state (Type: STRING; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa'])
+    neighbors (Type: ARRAY<STRING>; Sample values: ['"[\\"Shelby\\" \\"Adair\\" \\"Guthrie\\" \\"Crawford\\" \\"Cass\\" \\"Carroll\\"]"', '"[\\"Polk\\" \\"Dallas\\" \\"Webster\\" \\"Greene\\" \\"Story\\" \\"Hamilton\\"]"', '"[\\"Floyd\\" \\"Chickasaw\\" \\"Buchanan\\" \\"Butler\\" \\"Fayette\\" \\"Black Hawk\\"]"', '"[\\"Sac\\" \\"Carroll\\" \\"Buena Vista\\" \\"Webster\\" \\"Greene\\" \\"Pocahontas\\"]"', '"[\\"Scott\\" \\"Jones\\" \\"Clinton\\" \\"Johnson\\" \\"Muscatine\\" \\"Linn\\"]"'])
+    neighbors_state (Type: ARRAY<STRING>; Sample values: ['"[\\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\"]"', '"[\\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\"]"', '"[\\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\"]"', '"[\\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\"]"', '"[\\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\" \\"Iowa\\"]"'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.unemployment_cps_series
+[
+    end_year (Type: INT64; Sample values: ['2021', '2021', '2021', '2021', '2021'])
+    seasonal (Type: STRING; Sample values: ['S', 'S', 'S', 'S', 'S'])
+    mari_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    series_id (Type: STRING; Sample values: ['LNS11000000', 'LNS11000000Q', 'LNS11000001', 'LNS11000001Q', 'LNS11000002'])
+    lfst_code (Type: INT64; Sample values: ['10', '10', '10', '10', '10'])
+    periodicity_code (Type: STRING; Sample values: ['M', 'Q', 'M', 'Q', 'M'])
+    absn_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    activity_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    ages_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    class_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    duration_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    education_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    entr_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    expr_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    hheader_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    hour_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    indy_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    jdes_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    look_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    mjhs_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    occupation_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    orig_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    pcts_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    race_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    rjnw_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    rnlf_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    rwns_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    seek_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    sexs_code (Type: INT64; Sample values: ['0', '0', '1', '1', '2'])
+    tdat_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    vets_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    wkst_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    born_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    chld_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    disa_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    footnote_codes (Type: STRING; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    cert_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    series_title (Type: STRING; Sample values: ['(Seas) Civilian Labor Force Level', '(Seas) Civilian Labor Force Level', '(Seas) Civilian Labor Force Level - Men', '(Seas) Civilian Labor Force Level - Men', '(Seas) Civilian Labor Force Level - Women'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.employment_hours_earnings
+[
+    year (Type: INT64; Sample values: ['1939', '1939', '1939', '1940', '1940'])
+    series_id (Type: STRING; Sample values: ['CES3133660001', 'CES9000000001', 'CEU3000000007', 'CES3200000007', 'CES3000000006'])
+    footnote_codes (Type: STRING; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    value (Type: FLOAT64; Sample values: ['61.4', '3988.0', '36.7', '37.0', '8593.0'])
+    date (Type: DATE; Sample values: ['1939-01-01', '1939-01-01', '1939-01-01', '1940-01-01', '1940-01-01'])
+    series_title (Type: STRING; Sample values: ['All employees, thousands, ship and boat building, seasonally adjusted', 'All employees, thousands, government, seasonally adjusted', 'Average weekly hours of production and nonsupervisory employees, manufacturing, not seasonally adjusted', 'Average weekly hours of production and nonsupervisory employees, nondurable goods, seasonally adjusted', 'Production and nonsupervisory employees, thousands, manufacturing, seasonally adjusted'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.counties
+[
+    area_land_meters (Type: INT64; Sample values: ['1613076054', '3207494106', '1564251834', '1450663786', '1503615937'])
+    geo_id (Type: STRING; Sample values: ['01011', '01025', '01027', '01029', '01111'])
+    state_fips_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01'])
+    county_fips_code (Type: STRING; Sample values: ['01011', '01025', '01027', '01029', '01111'])
+    county_gnis_code (Type: STRING; Sample values: ['00161531', '00161538', '00161539', '00161540', '00161582'])
+    county_name (Type: STRING; Sample values: ['Bullock', 'Clarke', 'Clay', 'Cleburne', 'Randolph'])
+    lsad_name (Type: STRING; Sample values: ['Bullock County', 'Clarke County', 'Clay County', 'Cleburne County', 'Randolph County'])
+    lsad_code (Type: STRING; Sample values: ['06', '06', '06', '06', '06'])
+    fips_class_code (Type: STRING; Sample values: ['H1', 'H1', 'H1', 'H1', 'H1'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G4020', 'G4020', 'G4020', 'G4020', 'G4020'])
+    csa_fips_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cbsa_fips_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    met_div_fips_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    county_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-85.926296 32.054676, -85.920111 32.054699, -85.914451 32.054737, -85.91438 32.054737, -85.911755 32.054752, -85.911606 32.05115, -85.911603 32.051091, -85.911458 32.047355, -85.901874 32.047351, -85.893652 32.047351, -85.893505 32.038151, -...(truncated)', 'POLYGON((-88.080207 31.677064, -88.080058 31.676786, -88.079289 31.674921, -88.078747 31.670682, -88.078711 31.669618, -88.078615 31.666762, -88.078863 31.662555, -88.079488 31.661534, -88.08107 31.660135, -88.082284 31.659548, -88.084041 31.659135, ...(truncated)', 'POLYGON((-85.978793 33.327568, -85.978797 33.327492, -85.978814 33.327093, -85.978819 33.326982, -85.978855 33.326335, -85.97903 33.322713, -85.979191 33.320275, -85.979148 33.320223, -85.9791 33.320129, -85.979089 33.32005, -85.979235 33.319282, -85...(truncated)', 'POLYGON((-85.603465 33.788474, -85.603469 33.787755, -85.62089 33.787944, -85.621019 33.782331, -85.621245 33.773508, -85.62233 33.773491, -85.622699 33.773465, -85.62496 33.773306, -85.630478 33.77332, -85.638049 33.773339, -85.638063 33.772678, -85...(truncated)', 'POLYGON((-85.648139 33.359095, -85.648165 33.358569, -85.648407 33.353813, -85.648713 33.347803, -85.648789 33.346313, -85.649193 33.338341, -85.649392 33.333489, -85.6496 33.329799, -85.649915 33.324211, -85.647575 33.324143, -85.645798 33.324114, -...(truncated)'])
+    int_point_geom (Type: GEOGRAPHY; Sample values: ['POINT(-85.7172613 32.1017589)', 'POINT(-87.8186244 31.6855211)', 'POINT(-85.8635254 33.2703999)', 'POINT(-85.5161261 33.6719637)', 'POINT(-85.4640679 33.2964753)'])
+    int_point_lat (Type: FLOAT64; Sample values: ['32.1017589', '31.6855211', '33.2703999', '33.6719637', '33.2964753'])
+    int_point_lon (Type: FLOAT64; Sample values: ['-85.7172613', '-87.8186244', '-85.8635254', '-85.5161261', '-85.4640679'])
+    functional_status (Type: STRING; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    area_water_meters (Type: INT64; Sample values: ['6038093', '36657891', '5285207', '2354896', '9285420'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.wm
+[
+    date (Type: DATE; Sample values: ['2020-12-31', '2020-12-31', '2020-12-31', '2020-12-31', '2020-12-31'])
+    year (Type: INT64; Sample values: ['2020', '2020', '2020', '2020', '2020'])
+    value (Type: FLOAT64; Sample values: ['8.55', '8.55', '8.56', '8.59', '8.6'])
+    series_id (Type: STRING; Sample values: ['WMU00217801020000003530310001', 'WMU00217801020000003530312601', 'WMU37000031020000003530312601', 'WMU37000031020000003530310001', 'WMU55000001020000003530310001'])
+    period (Type: STRING; Sample values: ['A01', 'A01', 'A01', 'A01', 'A01'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.cpi_u
+[
+    date (Type: DATE; Sample values: ['1997-01-01', '1997-02-01', '1997-03-01', '1997-04-01', '1997-05-01'])
+    area_code (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    area_name (Type: STRING; Sample values: ['U.S. city average', 'U.S. city average', 'U.S. city average', 'U.S. city average', 'U.S. city average'])
+    value (Type: FLOAT64; Sample values: ['159.4', '159.7', '159.8', '159.9', '159.9'])
+    year (Type: INT64; Sample values: ['1997', '1997', '1997', '1997', '1997'])
+    series_id (Type: STRING; Sample values: ['CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0'])
+    item_code (Type: STRING; Sample values: ['SA0', 'SA0', 'SA0', 'SA0', 'SA0'])
+    item_name (Type: STRING; Sample values: ['All items', 'All items', 'All items', 'All items', 'All items'])
+    periodicity_code (Type: STRING; Sample values: ['R', 'R', 'R', 'R', 'R'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.c_cpi_u
+[
+    date (Type: DATE; Sample values: ['1999-12-01', '2000-01-01', '2000-02-01', '2000-03-01', '2000-04-01'])
+    area_code (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    year (Type: INT64; Sample values: ['1999', '2000', '2000', '2000', '2000'])
+    value (Type: FLOAT64; Sample values: ['100.0', '100.3', '100.9', '101.6', '101.6'])
+    area_name (Type: STRING; Sample values: ['U.S. city average', 'U.S. city average', 'U.S. city average', 'U.S. city average', 'U.S. city average'])
+    item_code (Type: STRING; Sample values: ['SA0', 'SA0', 'SA0', 'SA0', 'SA0'])
+    series_id (Type: STRING; Sample values: ['SUUR0000SA0', 'SUUR0000SA0', 'SUUR0000SA0', 'SUUR0000SA0', 'SUUR0000SA0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.csa
+[
+    name (Type: STRING; Sample values: ['Amarillo-Pampa-Borger, TX', 'Birmingham-Hoover-Talladega, AL', 'Parkersburg-Marietta-Vienna, WV-OH', 'Buffalo-Cheektowaga-Olean, NY', 'Mankato-New Ulm, MN'])
+    csa_code (Type: STRING; Sample values: ['108', '142', '425', '160', '359'])
+    geo_id (Type: STRING; Sample values: ['108', '142', '425', '160', '359'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G3100', 'G3100', 'G3100', 'G3100', 'G3100'])
+    lsad_name (Type: STRING; Sample values: ['Amarillo-Pampa-Borger, TX CSA', 'Birmingham-Hoover-Talladega, AL CSA', 'Parkersburg-Marietta-Vienna, WV-OH CSA', 'Buffalo-Cheektowaga-Olean, NY CSA', 'Mankato-New Ulm, MN CSA'])
+    csa_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-101.622831 35.624057, -101.622827 35.623507, -101.622825 35.623288, -101.622824 35.623186, -101.622823 35.623061, -101.6228 35.620196, -101.623076 35.620195, -101.623235 35.620195, -101.623337 35.620195, -101.623485 35.620195, -101.624023 3...(truncated)', 'POLYGON((-87.266923 33.512929, -87.266359 33.512439, -87.265518 33.51162, -87.265146 33.511189, -87.264841 33.510835, -87.264125 33.51005, -87.264084 33.509995, -87.263753 33.509548, -87.262971 33.508561, -87.262475 33.507986, -87.262242 33.507708, -...(truncated)', 'POLYGON((-81.725622 39.215905, -81.72632 39.214955, -81.730099 39.209809, -81.731848 39.206979, -81.732677 39.205481, -81.733406 39.203659, -81.733325 39.202127, -81.73451 39.196145, -81.734549 39.196072, -81.734849 39.195508, -81.736874 39.192628, -...(truncated)', 'POLYGON((-79.060777 42.537853, -79.06078 42.537774, -79.060784 42.537375, -79.060787 42.536915, -79.060939 42.522885, -79.061056 42.520929, -79.061076 42.520127, -79.061041 42.518013, -79.061029 42.516764, -79.061036 42.515162, -79.061007 42.513564, ...(truncated)', 'POLYGON((-94.36885 44.108698, -94.368872 44.108661, -94.368893 44.107737, -94.368909 44.105693, -94.368928 44.103223, -94.368997 44.094316, -94.368998 44.094222, -94.369038 44.087031, -94.369083 44.079757, -94.369086 44.079706, -94.369086 44.079605, ...(truncated)'])
+    msa_lsad_code (Type: STRING; Sample values: ['M0', 'M0', 'M0', 'M0', 'M0'])
+    internal_point_lat (Type: FLOAT64; Sample values: ['35.3963177', '33.5274555', '39.2939918', '42.7528032', '44.1797812'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.cnecta
+[
+    name (Type: STRING; Sample values: ['Augusta-Waterville, ME', 'Portland-Lewiston-South Portland, ME', 'Pittsfield-North Adams, MA-VT', 'Springfield-Hartford-East Hartford, MA-CT', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME'])
+    cnecta_fips_code (Type: STRING; Sample values: ['710', '775', '770', '790', '715'])
+    geo_id (Type: STRING; Sample values: ['710', '775', '770', '790', '715'])
+    name_lsad (Type: STRING; Sample values: ['Augusta-Waterville, ME Combined NECTA', 'Portland-Lewiston-South Portland, ME Combined NECTA', 'Pittsfield-North Adams, MA-VT Combined NECTA', 'Springfield-Hartford-East Hartford, MA-CT Combined NECTA', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME Combined NECTA'])
+    lsad (Type: STRING; Sample values: ['M4', 'M4', 'M4', 'M4', 'M4'])
+    cnecta_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-69.792813 44.57733, -69.795348 44.577668, -69.797891 44.578045, -69.798362 44.578115, -69.800285 44.578423, -69.801184 44.578568, -69.803968 44.579003, -69.80689 44.579468, -69.809712 44.579907, -69.812649 44.580355, -69.815464 44.580825, -...(truncated)', 'POLYGON((-70.480078 44.032078, -70.483885 44.033878, -70.488816 44.036178, -70.495529 44.039336, -70.495719 44.039431, -70.497351 44.040213, -70.498138 44.04059, -70.499502 44.041246, -70.50037 44.041646, -70.500499 44.041706, -70.502371 44.042568, -...(truncated)', 'POLYGON((-73.306984 42.632646, -73.308333 42.629064, -73.309828 42.625081, -73.310116 42.624288, -73.312511 42.617715, -73.314533 42.612215, -73.314611 42.612003, -73.314697 42.61177, -73.31474 42.611653, -73.314751 42.611623, -73.314833 42.611398, -...(truncated)', 'POLYGON((-72.636821 42.577985, -72.637099 42.57691, -72.637355 42.575968, -72.637466 42.575494, -72.638803 42.570324, -72.638879 42.570018, -72.641096 42.569784, -72.645078 42.569361, -72.64875 42.568972, -72.651726 42.568656, -72.651818 42.568647, -...(truncated)', 'MULTIPOLYGON(((-71.471454 43.411298, -71.464171 43.413557, -71.463266 43.414547, -71.462137 43.415768, -71.461023 43.416981, -71.459894 43.418201, -71.45878 43.419414, -71.457941 43.420315, -71.457117 43.421207, -71.456308 43.422085, -71.456247 43.42...(truncated)'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G3200', 'G3200', 'G3200', 'G3200', 'G3200'])
+    int_point_lat (Type: FLOAT64; Sample values: ['44.4092939', '43.8562034', '42.5337519', '42.0359069', '42.3307869'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.metropolitan_divisions
+[
+    name (Type: STRING; Sample values: ['Boston, MA', 'Cambridge-Newton-Framingham, MA', 'Rockingham County-Strafford County, NH', 'Lake County-Kenosha County, IL-WI', 'Elgin, IL'])
+    csa_code (Type: STRING; Sample values: ['148', '148', '148', '176', '176'])
+    geo_id (Type: STRING; Sample values: ['1446014454', '1446015764', '1446040484', '1698029404', '1698020994'])
+    metdiv_code (Type: STRING; Sample values: ['14454', '15764', '40484', '29404', '20994'])
+    cbsa_code (Type: STRING; Sample values: ['14460', '14460', '14460', '16980', '16980'])
+    lsad_name (Type: STRING; Sample values: ['Boston, MA Metro Division', 'Cambridge-Newton-Framingham, MA Metro Division', 'Rockingham County-Strafford County, NH Metro Division', 'Lake County-Kenosha County, IL-WI Metro Division', 'Elgin, IL Metro Division'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G3120', 'G3120', 'G3120', 'G3120', 'G3120'])
+    lsad_code (Type: STRING; Sample values: ['M3', 'M3', 'M3', 'M3', 'M3'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.states
+[
+    state_fips_code (Type: STRING; Sample values: ['66', '72', '69', '78', '60'])
+    state_name (Type: STRING; Sample values: ['Guam', 'Puerto Rico', 'Commonwealth of the Northern Mariana Islands', 'United States Virgin Islands', 'American Samoa'])
+    state (Type: STRING; Sample values: ['GU', 'PR', 'MP', 'VI', 'AS'])
+    geo_id (Type: STRING; Sample values: ['66', '72', '69', '78', '60'])
+    state_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((144.563426 13.448065, 144.56355 13.445248, 144.563611 13.444396, 144.563779 13.442025, 144.563974 13.438904, 144.564474 13.435923, 144.564621 13.435155, 144.565042 13.432977, 144.565852 13.429559, 144.566905 13.425634, 144.568159 13.422257, ...(truncated)', 'MULTIPOLYGON(((-67.543025 18.386123, -67.542438 18.377651, -67.541581 18.373, -67.540525 18.368767, -67.538485 18.364477, -67.535988 18.358278, -67.532155 18.353585, -67.528321 18.349129, -67.523503 18.34457, -67.518333 18.340447, -67.513514 18.33712...(truncated)', 'MULTIPOLYGON(((145.701166 16.724112, 145.700027 16.710897, 145.704424 16.688155, 145.711746 16.665675, 145.721845 16.651846, 145.725491 16.649432, 145.738307 16.64095, 145.75 16.639222, 145.762957 16.632237, 145.781234 16.63047, 145.790512 16.63129, ...(truncated)', 'MULTIPOLYGON(((-64.956714 17.678977, -64.956489 17.672329, -64.955582 17.668772, -64.955032 17.666611, -64.953181 17.661022, -64.949714 17.653274, -64.943583 17.644095, -64.935171 17.635186, -64.925838 17.629043, -64.915914 17.625231, -64.908023 17.6...(truncated)', 'MULTIPOLYGON(((-170.797156 -14.246637, -170.799992 -14.246881, -170.804473 -14.246314, -170.816778 -14.247654, -170.823258 -14.25, -170.82311 -14.249966, -170.823099 -14.24997, -170.822974 -14.25, -170.823922 -14.250682, -170.826823 -14.253572, -170....(truncated)'])
+    region_code (Type: STRING; Sample values: ['9', '9', '9', '9', '9'])
+    state_gnis_code (Type: STRING; Sample values: ['01802705', '01779808', '01779809', '01802710', '01802701'])
+    division_code (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    lsad_code (Type: STRING; Sample values: ['00', '00', '00', '00', '00'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G4000', 'G4000', 'G4000', 'G4000', 'G4000'])
+    int_point_geom (Type: GEOGRAPHY; Sample values: ['POINT(144.7719021 13.4417451)', 'POINT(-66.4107992 18.217648)', 'POINT(145.601021 14.9367835)', 'POINT(-64.9712508 18.326748)', 'POINT(-170.6682674 -14.267159)'])
+    int_point_lat (Type: FLOAT64; Sample values: ['13.4417451', '18.217648', '14.9367835', '18.326748', '-14.267159'])
+    int_point_lon (Type: FLOAT64; Sample values: ['144.7719021', '-66.4107992', '145.601021', '-64.9712508', '-170.6682674'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.adjacent_states
+[
+    state_fips_code (Type: STRING; Sample values: ['01', '05', '04', '06', '08'])
+    neighbors_fips_code (Type: ARRAY<STRING>; Sample values: ['"[\\"12\\" \\"13\\" \\"28\\" \\"47\\"]"', '"[\\"47\\" \\"48\\" \\"29\\" \\"28\\" \\"22\\" \\"40\\"]"', '"[\\"32\\" \\"35\\" \\"08\\" \\"06\\" \\"49\\"]"', '"[\\"04\\" \\"32\\" \\"41\\"]"', '"[\\"20\\" \\"35\\" \\"31\\" \\"49\\" \\"56\\" \\"04\\" \\"40\\"]"'])
+    state_name (Type: STRING; Sample values: ['Alabama', 'Arkansas', 'Arizona', 'California', 'Colorado'])
+    state (Type: STRING; Sample values: ['AL', 'AR', 'AZ', 'CA', 'CO'])
+    neighbors_state (Type: ARRAY<STRING>; Sample values: ['"[\\"Florida\\" \\"Georgia\\" \\"Mississippi\\" \\"Tennessee\\"]"', '"[\\"Tennessee\\" \\"Texas\\" \\"Missouri\\" \\"Mississippi\\" \\"Louisiana\\" \\"Oklahoma\\"]"', '"[\\"Nevada\\" \\"New Mexico\\" \\"Colorado\\" \\"California\\" \\"Utah\\"]"', '"[\\"Arizona\\" \\"Nevada\\" \\"Oregon\\"]"', '"[\\"Kansas\\" \\"New Mexico\\" \\"Nebraska\\" \\"Utah\\" \\"Wyoming\\" \\"Arizona\\" \\"Oklahoma\\"]"'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.congress_district_115
+[
+    state_fips_code (Type: STRING; Sample values: ['10', '50', '46', '56', '30'])
+    district_fips_code (Type: STRING; Sample values: ['00', '00', '00', '00', '00'])
+    geo_id (Type: STRING; Sample values: ['1000', '5000', '4600', '5600', '3000'])
+    lsad_name (Type: STRING; Sample values: ['Congressional District (at Large)', 'Congressional District (at Large)', 'Congressional District (at Large)', 'Congressional District (at Large)', 'Congressional District (at Large)'])
+    district_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-75.789023 39.65979, -75.789014 39.659679, -75.789013 39.659651, -75.789013 39.659633, -75.789013 39.659615, -75.789013 39.659597, -75.789013 39.659579, -75.789013 39.659561, -75.789013 39.659543, -75.789013 39.659525, -75.789013 39.659507, ...(truncated)', 'POLYGON((-73.437706 44.046104, -73.437905 44.045125, -73.437598 44.043864, -73.437566 44.043733, -73.437534 44.043602, -73.4375 44.04346, -73.437323 44.04327, -73.436729 44.042633, -73.43571 44.04188, -73.434046 44.040842, -73.432532 44.039946, -73.4...(truncated)', 'POLYGON((-104.057879 44.997605, -104.057696 44.997363, -104.057696 44.997346, -104.057695 44.997314, -104.057695 44.997298, -104.057693 44.997244, -104.057691 44.997138, -104.05769 44.997081, -104.05769 44.997054, -104.057691 44.997028, -104.057702 4...(truncated)', 'POLYGON((-111.054556 44.999735, -111.054558 44.99452, -111.054537 44.955699, -111.054525 44.952322, -111.05453 44.949622, -111.054527 44.945872, -111.054521 44.942746, -111.054523 44.940096, -111.05452 44.93993, -111.054523 44.939396, -111.054518 44....(truncated)', 'POLYGON((-116.049116 48.000828, -116.049153 47.999923, -116.049114 47.997089, -116.049115 47.995751, -116.049116 47.994447, -116.049111 47.992263, -116.04911 47.985555, -116.049103 47.983404, -116.049109 47.981168, -116.049109 47.979082, -116.049108 ...(truncated)'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G5200', 'G5200', 'G5200', 'G5200', 'G5200'])
+    lsad_code (Type: STRING; Sample values: ['C1', 'C1', 'C1', 'C1', 'C1'])
+    int_point_geom (Type: GEOGRAPHY; Sample values: ['POINT(-75.441692 38.9986239)', 'POINT(-72.6733274 44.0604795)', 'POINT(-100.2381762 44.4467957)', 'POINT(-107.5419255 42.9918024)', 'POINT(-109.6348174 47.0511771)'])
+    int_point_lat (Type: FLOAT64; Sample values: ['38.9986239', '44.0604795', '44.4467957', '42.9918024', '47.0511771'])
+]
+**Some other tables have the similar structure: [congress_district_116]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.cbsa
+[
+    cbsa_fips_code (Type: STRING; Sample values: ['31420', '30700', '33860', '34060', '36220'])
+    name (Type: STRING; Sample values: ['Macon-Bibb County, GA', 'Lincoln, NE', 'Montgomery, AL', 'Morgantown, WV', 'Odessa, TX'])
+    geo_id (Type: STRING; Sample values: ['31420', '30700', '33860', '34060', '36220'])
+    csa_geo_id (Type: STRING; Sample values: ['356', '339', '388', '390', '372'])
+    lsad_code (Type: STRING; Sample values: ['M1', 'M1', 'M1', 'M1', 'M1'])
+    lsad_name (Type: STRING; Sample values: ['Macon-Bibb County, GA Metro Area', 'Lincoln, NE Metro Area', 'Montgomery, AL Metro Area', 'Morgantown, WV Metro Area', 'Odessa, TX Metro Area'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G3110', 'G3110', 'G3110', 'G3110', 'G3110'])
+    cbsa_geom (Type: GEOGRAPHY; Sample values: ['POLYGON((-84.124275 32.849562, -84.124255 32.848751, -84.124242 32.848188, -84.12424 32.844907, -84.124231 32.832061, -84.12423 32.83173, -84.124236 32.829361, -84.124236 32.829248, -84.12424 32.827272, -84.124255 32.819857, -84.124255 32.819803, -84...(truncated)', 'POLYGON((-96.913493 40.697948, -96.913491 40.695784, -96.913493 40.692482, -96.913493 40.691613, -96.913495 40.688114, -96.913496 40.686658, -96.913498 40.68303, -96.913498 40.682963, -96.913498 40.682879, -96.913614 40.671545, -96.913642 40.668732, ...(truncated)', 'POLYGON((-86.814912 32.340803, -86.815356 32.340685, -86.815799 32.34057, -86.817401 32.340148, -86.817775 32.340009, -86.81787 32.339973, -86.817966 32.339937, -86.820994 32.338807, -86.821028 32.338794, -86.821057 32.338784, -86.821281 32.3387, -86...(truncated)', 'POLYGON((-79.894688 39.435588, -79.894691 39.434967, -79.8947 39.433104, -79.894701 39.433072, -79.894702 39.432484, -79.894708 39.431184, -79.894727 39.427285, -79.894734 39.425986, -79.894734 39.42592, -79.894734 39.425706, -79.894738 39.424867, -7...(truncated)', 'POLYGON((-102.504557 32.086987, -102.504862 32.087049, -102.504844 32.086987, -102.507359 32.08699, -102.507452 32.08699, -102.51514 32.086998, -102.515851 32.086998, -102.517984 32.087001, -102.518695 32.087002, -102.520833 32.087004, -102.523367 32...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.wm_series
+[
+    area_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.urban_areas
+[
+    name (Type: STRING; Sample values: ['Phoenix--Mesa, AZ', 'Boulder, CO', 'Hammond, LA', 'Flagstaff, AZ', 'Harrisonburg, VA'])
+    geo_id (Type: STRING; Sample values: ['69184', '09298', '36514', '29818', '37162'])
+    type (Type: STRING; Sample values: ['U', 'U', 'U', 'U', 'U'])
+    urban_area_code (Type: STRING; Sample values: ['69184', '09298', '36514', '29818', '37162'])
+    area_lsad_code (Type: STRING; Sample values: ['75', '75', '75', '75', '75'])
+    lsad_name (Type: STRING; Sample values: ['Phoenix--Mesa, AZ Urbanized Area', 'Boulder, CO Urbanized Area', 'Hammond, LA Urbanized Area', 'Flagstaff, AZ Urbanized Area', 'Harrisonburg, VA Urbanized Area'])
+    mtfcc_feature_class_code (Type: STRING; Sample values: ['G3500', 'G3500', 'G3500', 'G3500', 'G3500'])
+    urban_area_geom (Type: GEOGRAPHY; Sample values: ['MULTIPOLYGON(((-111.471305 33.373296, -111.471432 33.373286, -111.471801 33.37332, -111.47239 33.373455, -111.472618 33.373523, -111.472816 33.373559, -111.473002 33.373537, -111.473195 33.373455, -111.473692 33.373103, -111.474124 33.372902, -111.47...(truncated)', 'MULTIPOLYGON(((-105.215986 40.021871, -105.216112 40.021735, -105.215752 40.021737, -105.215791 40.021947, -105.2159 40.021921, -105.215974 40.021878, -105.215986 40.021871)), ((-105.18363 40.094358, -105.183476 40.094354, -105.179335 40.094345, -105...(truncated)', 'MULTIPOLYGON(((-90.547281 30.432013, -90.54727 30.43206, -90.54719 30.43235, -90.547061 30.43263, -90.547126 30.4332, -90.547179 30.433349, -90.547264 30.43359, -90.54836 30.43479, -90.54871 30.43525, -90.54882 30.43538, -90.54903 30.4355, -90.5493 3...(truncated)', 'MULTIPOLYGON(((-111.503454 35.250453, -111.503322 35.250398, -111.503056 35.25034, -111.502746 35.250341, -111.502547 35.250365, -111.502381 35.250345, -111.502811 35.251228, -111.503175 35.251525, -111.503191 35.251242, -111.503196 35.251157, -111.5...(truncated)', 'MULTIPOLYGON(((-78.882172 38.39397, -78.882033 38.393678, -78.881851 38.393345, -78.88154 38.392773, -78.881352 38.393011, -78.881417 38.39338, -78.881815 38.393807, -78.882172 38.39397)), ((-78.81424 38.450237, -78.814509 38.450385, -78.814515 38.45...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.national_outline
+[
+    name (Type: STRING; Sample values: ['United States'])
+    geo_id (Type: STRING; Sample values: ['US'])
+    aff_geo_id (Type: STRING; Sample values: ['0100000US'])
+    us_outline_geom (Type: GEOGRAPHY; Sample values: ['MULTIPOLYGON(((-168.134663 65.64084, -168.127044 65.626584, -168.100003 65.610972, -168.09614 65.600882, -168.099356 65.599045, -168.099046 65.592239, -168.0752 65.576355, -168.04762 65.569149, -167.997178 65.559346, -167.967065 65.558599, -167.90959...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.nws_forecast_regions
+[
+    name (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    state (Type: STRING; Sample values: ['MI', 'MI', 'MI', 'MI', 'MI'])
+    shortname (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    state_zone (Type: STRING; Sample values: ['MI001', 'MI002', 'MI003', 'MI004', 'MI005'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.coastline
+[
+    name (Type: STRING; Sample values: ['Gulf', 'Gulf', 'Gulf', 'Gulf', 'Gulf'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.geo_us_boundaries.railways
+[
+    full_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    geo_id (Type: INT64; Sample values: ['11020438805', '11020438883', '11020439210', '11020439400', '11020439664'])
+]
+
+--------------------------------------------------
+

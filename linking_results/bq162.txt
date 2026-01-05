@@ -1,0 +1,730 @@
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level2_metadata_r2
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA12_2_102'])
+    Imaging_Assay_Type (Type: STRING; Sample values: ['IMC'])
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA12_2_1112'])
+    md5 (Type: STRING; Sample values: ['224b2ccffeaf0c3e60314fe39768ab03'])
+    HTAN_Center (Type: STRING; Sample values: ['HTAN WUSTL'])
+    entityId (Type: STRING; Sample values: ['syn28564621'])
+    Filename (Type: STRING; Sample values: ['imc_level_2/batch_1_03302022_v2/HT060P1_REMAIN_ROI_01.ome.tiff'])
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HT060P1'])
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['imc_level_2/batch_1_03302022_v2/HT060P1_REMAIN_ROI_01.csv'])
+    Pyramid (Type: STRING; Sample values: ['No'])
+    Image_ID (Type: STRING; Sample values: ['Image:0'])
+    Base_Filename (Type: STRING; Sample values: ['HT060P1_REMAIN_ROI_01.ome.tiff'])
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level1_metadata_r5
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['CODEX']; Description: Type of imaging assay)
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_07_301']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_07_301011001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Component (Type: STRING; Sample values: ['ImagingLevel1']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    HTAN_Center (Type: STRING; Sample values: ['HTAN Stanford']; Description: Name of HTAN Center e.g. HTAN HTAPP)
+    Filename (Type: STRING; Sample values: ['codex_level_1/B001-A-301.zip']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn53254455']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['1221c711-b63a-4c0c-b021-e1168691181f']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn53335738']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.srrs_imaging_level2_metadata_r2
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['H&E']; Description: Type of imaging assay)
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA3_11009_15000002']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_11009_1500000201']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Component (Type: STRING; Sample values: ['SRRSImagingLevel2']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    Filename (Type: STRING; Sample values: ['imaging_level_2/BU/TUCD007823_HA1.svs']; Description: Name of a file)
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA3_11009']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['Not Applicable']; Description: Full path of uploaded companion CSV file containing channel-level metadata details)
+    Pyramid (Type: STRING; Sample values: ['Yes']; Description: Does data file contain pyramid of images)
+    Image_ID (Type: STRING; Sample values: ['398032']; Description: Unique internal image identifier. eg "Image:0". (To be extracted from OME-XML))
+    entityId (Type: STRING; Sample values: ['syn26452527']; Description: Synapse ID of entity)
+    Base_Filename (Type: STRING; Sample values: ['TUCD007823_HA1.svs']; Description: Base name of file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level2_metadata_r4
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['MIBI']; Description: Type of imaging assay)
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA1_853_43814013']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA1_853_438140130001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['None']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Id (Type: STRING; Sample values: ['61f8019a-bd54-448c-a8d1-acdd1e6d2562']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    entityId (Type: STRING; Sample values: ['syn25871142']; Description: Synapse ID of entity)
+    Image_ID (Type: STRING; Sample values: ['MIBITIFF_NB_Point8_combined.tiff SIMS']; Description: Unique internal image identifier. eg "Image:0". (To be extracted from OME-XML))
+    MERFISH_Codebook_File (Type: STRING; Sample values: ['None']; Description: The codebook is an auxiliary MERFISH file that describes how each grouping of bits is converted to a gene name.)
+    Pyramid (Type: STRING; Sample values: ['No']; Description: Does data file contain pyramid of images)
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA1_853']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Filename (Type: STRING; Sample values: ['mibi_level_2/MBC/MIBITIFF_MBC_Point8_combined.ome.tiff']; Description: Name of a file)
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['mibi_auxiliary_files/MBC/Channel-level_Metadata_HTAPP_MBC_level2_panel18.csv']; Description: Full path within Synapse project of uploaded companion CSV file containing channel-level metadata details)
+    Manifest_Id (Type: STRING; Sample values: ['syn41761654']; Description: Synapse ID of manifest containing file annotation)
+    Uuid (Type: STRING; Sample values: ['']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+**Some other tables have the similar structure: [imaging_level2_metadata_r3, imaging_level2_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.srrs_imaging_level2_metadata_r3
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['H&E']; Description: Type of imaging assay)
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA3_11009_11000001']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_11009_1100000101']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Filename (Type: STRING; Sample values: ['imaging_level_2/BU/TUCD007823_HABX1.svs']; Description: Name of a file)
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA3_11009']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['Not Applicable']; Description: Full path within Synapse project of uploaded companion CSV file containing channel-level metadata details)
+    Pyramid (Type: STRING; Sample values: ['Yes']; Description: Does data file contain pyramid of images)
+    Image_ID (Type: STRING; Sample values: ['398033']; Description: Unique internal image identifier. eg "Image:0". (To be extracted from OME-XML))
+    entityId (Type: STRING; Sample values: ['syn26445552']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['9d733a98-bd7f-4658-b4ae-e80ea41d8e33']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Id (Type: STRING; Sample values: ['']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [srrs_imaging_level2_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.other_assay_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_24813251029914057924496372243350']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_002']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Id (Type: STRING; Sample values: ['36c96776-e11a-4cc1-b547-9a6b88cbbc20']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Assay_Type (Type: STRING; Sample values: ['scatacseq']; Description: The type and level of assay this metadata applies to (e.g. RPPA, NanoString DSP, etc.))
+    Component (Type: STRING; Sample values: ['OtherAssay']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    Data_Release (Type: STRING; Sample values: ['Release 2.0']; Description: Inclusion in HTAN Data Release e.g. Release 1.0)
+    HTAN_Center (Type: STRING; Sample values: ['HTAN Stanford']; Description: Name of HTAN Center e.g. HTAN HTAPP)
+    entityId (Type: STRING; Sample values: ['syn26530677']; Description: Synapse ID of entity)
+    Filename (Type: STRING; Sample values: ['scatacseq_level_3/A001-C-002-D_20200702_fragments.tsv.gz.tbi']; Description: Name of a file)
+    Manifest_Id (Type: STRING; Sample values: ['syn39285323']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.electron_microscopy_level1_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_9_39']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_9_3156']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Center (Type: STRING; Sample values: ['HTAN OHSU']; Description: Name of HTAN Center e.g. HTAN HTAPP)
+    Data_Release (Type: STRING; Sample values: ['Release 5.1']; Description: Inclusion in HTAN Data Release e.g. Release 1.0)
+    Filename (Type: STRING; Sample values: ['016/HTA9_9_39_maps2_Tile_001-002-000000_0-000.s0001_e00']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn53323954']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['7a0b890d-5a20-43e6-a245-b494b1f53293']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn53351449']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_OHSU_r5
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_14_7']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    DNA5 (Type: FLOAT64; Sample values: ['nan']; Description: Mean intensity of pixels for specified marker)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_14_1066']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    CellID (Type: INT64; Sample values: ['79']; Description: Unique cell identifier in a specific image)
+    X_centroid (Type: FLOAT64; Sample values: ['396.8723404255319']; Description: X-position of the centroid calculated as the center of mass of the cell.)
+    Y_centroid (Type: FLOAT64; Sample values: ['662.0851063829788']; Description: Y-position of the centroid calculated as the center of mass of the cell.)
+    Solidity (Type: FLOAT64; Sample values: ['0.9591836734693876']; Description: Proportion of the pixels in the convex hull that are also in the region, returned as a scalar. Computed as Area/ConvexArea.)
+    Source_filename (Type: STRING; Sample values: ['LSP12003_nucleiRingMask.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn31547338']; Description: Synapse ID of source file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.electron_microscopy_level2_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_14417']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_20451']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Center (Type: STRING; Sample values: ['HTAN OHSU']; Description: Name of HTAN Center e.g. HTAN HTAPP)
+    Data_Release (Type: STRING; Sample values: ['Release 5.1']; Description: Inclusion in HTAN Data Release e.g. Release 1.0)
+    Component (Type: STRING; Sample values: ['ElectronMicroscopyLevel2']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    Filename (Type: STRING; Sample values: ['001/HTA9_1_8_3DEM-0331.ome.tif']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn31774401']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['fdd5a7f2-44bc-42b1-8f24-bd4b9b0b9d4b']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn53251539']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_channel_metadata_r5
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['H&E']; Description: Type of imaging assay)
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['h_and_e_level_1/metadata/HTA11_1391_20000010116110030010000009999_metadata.csv']; Description: Name of channel metadata file)
+    Channel_Metadata_ID (Type: STRING; Sample values: ['syn25164974']; Description: Synapse file path of channel metadata file)
+]
+**Some other tables have the similar structure: [imaging_channel_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level3_metadata_r2
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA1_272_48311011013'])
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA1_272_4831101101'])
+    md5 (Type: STRING; Sample values: ['3d3d6bb74f4c42a471c72ec259d6e37a'])
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_3_colon/HTAPP-272-SMP-4831_none_channel1_matrix.mtx'])
+    entityId (Type: STRING; Sample values: ['syn24181474'])
+    Base_Filename (Type: STRING; Sample values: ['HTAPP-272-SMP-4831_none_channel1_matrix.mtx'])
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level4_metadata_r2
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA8_4_100090'])
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA8_1001_310001,HTA8_1001_310002,HTA8_1001_310003,HTA8_1001_310004,HTA8_1002_310001,HTA8_1002_310002,HTA8_1002_310003,HTA8_1002_310004,HTA8_1003_310001,HTA8_1003_310002,HTA8_1003_310003,HTA8_1003_310004,HTA8_1004_310001,HTA8_1004_310002,HTA8_1004_31...(truncated)'])
+    md5 (Type: STRING; Sample values: ['fb7c8e2c6107770bd1ef721c3e991026'])
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_4/SCLC/MAST/MAST.individual/RU1066/MAST.clusters_phenographLV/clusters_phenographLV.10.filtered.csv'])
+    entityId (Type: STRING; Sample values: ['syn23626879'])
+    Base_Filename (Type: STRING; Sample values: ['clusters_phenographLV.10.filtered.csv'])
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.rppa_level2_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_13_35']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Assay_Type (Type: STRING; Sample values: ['RPPA level2']; Description: The type and level of assay this metadata applies to (e.g. RPPA, NanoString DSP, etc.))
+    Component (Type: STRING; Sample values: ['RPPALevel2']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    Filename (Type: STRING; Sample values: ['rppa_level_2/RPPA_320184_L2.csv']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA9_13_35']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: STRING; Sample values: ['syn53213303']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['af419a85-831d-4f50-a9b3-71ae6b90cf10']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_13_1021']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA9_13']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Manifest_Id (Type: STRING; Sample values: ['syn53242349']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.rppa_level3_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_1_23']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Assay_Type (Type: STRING; Sample values: ['RPPA']; Description: The type and level of assay this metadata applies to (e.g. RPPA, NanoString DSP, etc.))
+    Filename (Type: STRING; Sample values: ['rppa_level_3/HTA9_1_23_Level3.txt']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_1158']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: STRING; Sample values: ['syn23639581']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['263b6839-47d1-494c-9ccf-1ab6fea32752']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_1160']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA9_1']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Manifest_Id (Type: STRING; Sample values: ['syn53242447']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.massSpectrometry_level1_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_004,HTA10_01_005,HTA10_01_021,HTA10_01_102,HTA10_01_107,HTA10_01_122,HTA10_01_124,HTA10_01_210,HTA10_01_214,HTA10_01_219,HTA10_01_222,HTA10_02_010,HTA10_02_016,HTA10_02_019,HTA10_02_021,HTA10_02_023,HTA10_02_024,HTA10_02_025,HTA10_02_103,HTA...(truncated)']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_0000_06001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    LC_ID_Value (Type: STRING; Sample values: ['100um']; Description: LC column inner diameter in microns.)
+    Filename (Type: STRING; Sample values: ['proteomics_level_1/replicate01/Lumos1_FAP2_C1S1_091120_Fr01.raw']; Description: Name of a file)
+    MS_Batch_ID (Type: STRING; Sample values: ['1']; Description: Batch ID indicating a set of samples that were run together.)
+    entityId (Type: STRING; Sample values: ['syn23875727']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['06458999-77f9-4500-acd5-e62bf41ace45']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn51703772']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [massSpectrometry_level1_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.rppa_level4_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_1_23']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Assay_Type (Type: STRING; Sample values: ['RPPA']; Description: The type and level of assay this metadata applies to (e.g. RPPA, NanoString DSP, etc.))
+    Filename (Type: STRING; Sample values: ['rppa_level_4/HTA9_1_23_Level4.txt']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_1160']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: STRING; Sample values: ['syn23639605']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['3ea8f440-d21d-4afd-bf40-3329857047f5']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_1163']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA9_1']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+    Manifest_Id (Type: STRING; Sample values: ['syn53243031']; Description: Synapse ID of manifest containing file annotation)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.id_provenance_r4
+[
+    HTAN_Assayed_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_1_1']; Description: HTAN ID of the biospecimen directly assayed using the experimental platform)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_1026']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['None']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Filename (Type: STRING; Sample values: ['bulk_dnaseq_level_1/dab2e9d0-78cb-4b44-bcd1-ed30b5d31bbf_R1.fq.gz']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn23640172']; Description: Synapse ID of entity)
+    HTAN_Originating_Biospecimen_ID (Type: STRING; Sample values: ['HTA9_1_1']; Description: HTAN ID of the biopsied or resected biospecimen from the patient from which the assay data were derived)
+    HTAN_Participant_ID (Type: STRING; Sample values: ['HTA9_1']; Description: HTAN ID associated with a patient based on HTAN ID SOP (eg HTANx_yyy ))
+]
+**Some other tables have the similar structure: [id_provenance_r3, id_provenance_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scATACseq_level1_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA12_85_1']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Nucleus_Identifier (Type: STRING; Sample values: ['Nuclei Barcode']; Description: Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from)
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Nucleus']; Description: The source of the input nucleic molecule)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA12_85_1020']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Nuclei_Barcode_Length (Type: STRING; Sample values: ['16']; Description: Nuclei Barcode Length)
+    Nuclei_Barcode_Read (Type: STRING; Sample values: ['Read2']; Description: Nuclei Barcode Read)
+    Filename (Type: STRING; Sample values: ['snATAC-Seq_level_1_atac_tumor/CE336E1-S1-TWCE-CE336E1-S1K1Nd1_2Bma1_1_S7_L001_R1_001.fastq.gz']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn52216243']; Description: Synapse ID of entity)
+    Empty_Well_Barcode (Type: STRING; Sample values: ['None']; Description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.)
+    Id (Type: STRING; Sample values: ['542bf9c4-7d99-4220-b0c5-cd59481f5f29']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn52257214']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [scATACseq_level1_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.bulkWES_level2_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['None']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA4_1016_103337']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA4_1016_93337,HTA4_1016_93338,HTA4_1016_93339,HTA4_1016_93340,HTA4_1016_93341,HTA4_1016_93342,HTA4_1016_93343,HTA4_1016_93344']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Filename (Type: STRING; Sample values: ['WGS_level_2_NBL/NB_7767_1774_REG1/NB_7767_1774_REG1.readgroup.sorted.bam']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn53283268']; Description: Synapse ID of entity)
+    Index_File_Name (Type: STRING; Sample values: ['WGS_level_2_NBL/NB_7767_1774_REG1/NB_7767_1774_REG1.readgroup.sorted.bam.bai']; Description: The name (or part of a name) of a file (of any type). String)
+    Id (Type: STRING; Sample values: ['22b38f7c-842e-48a0-abad-2fcc147076a9']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn53462156']; Description: Synapse ID of manifest containing file annotation)
+    Uuid (Type: STRING; Sample values: ['']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+**Some other tables have the similar structure: [bulkWES_level2_metadata_r3, bulkWES_level2_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level2_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA5_0000_1002140']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA5_0000_10020, HTA5_0000_10021, HTA5_0000_10022, HTA5_0000_10023, HTA5_0000_10024, HTA5_0000_10025, HTA5_0000_10026, HTA5_0000_10027']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Cell_Barcode_Tag (Type: STRING; Sample values: ['CR:Z']; Description: SAM tag for cell barcode field; please provide a valid cell barcode tag (e.g. CB:Z))
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_2_breast/SM-K75P2.genome.bam']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn52589057']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['75a7cc34-3673-4be3-aa41-0d36dbd5652c']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Whitelist_Cell_Barcode_File_Link (Type: STRING; Sample values: ['Not Applicable']; Description: Link to file listing all possible cell barcodes. URL)
+    Manifest_Id (Type: STRING; Sample values: ['syn52598989']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [scRNAseq_level2_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.massSpectrometry_level3_metadata_r4
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_004,HTA10_01_005,HTA10_01_021,HTA10_01_102,HTA10_01_107,HTA10_01_122,HTA10_01_124,HTA10_01_210,HTA10_01_214,HTA10_01_219,HTA10_01_222,HTA10_02_010,HTA10_02_016,HTA10_02_019,HTA10_02_021,HTA10_02_023,HTA10_02_024,HTA10_02_025,HTA10_02_103,HTA...(truncated)']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    entityId (Type: STRING; Sample values: ['syn23879777']; Description: Synapse ID of entity)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_0000_06337']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Id (Type: STRING; Sample values: ['09663275-5e7c-4094-9599-74e7f1867e7f']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Filename (Type: STRING; Sample values: ['proteomics/search-results/replicate01/Lumos1_FAP2_C1S1_HDR_091120_Fr_PeptideGroups.txt']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA10_0000_06001,HTA10_0000_06002,HTA10_0000_06003,HTA10_0000_06004,HTA10_0000_06005,HTA10_0000_06006,HTA10_0000_06007,HTA10_0000_06008,HTA10_0000_06009,HTA10_0000_06010,HTA10_0000_06011,HTA10_0000_06012']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Manifest_Id (Type: STRING; Sample values: ['syn51732852']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [massSpectrometry_level3_metadata_r5, massSpectrometry_level4_metadata_r4, massSpectrometry_level4_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_HMS_crc_r3
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA7_932_3']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    CellID (Type: INT64; Sample values: ['1423041']; Description: Unique cell identifier in a specific image)
+    X_centroid (Type: FLOAT64; Sample values: ['28018.81640625']; Description: X-position of the centroid calculated as the center of mass of the cell.)
+    Y_centroid (Type: FLOAT64; Sample values: ['16079.359375']; Description: Y-position of the centroid calculated as the center of mass of the cell.)
+    column_centroid (Type: FLOAT64; Sample values: ['28018.81640625']; Description: Column position of the centroid calculated as the center of mass of the cell.)
+    row_centroid (Type: FLOAT64; Sample values: ['16079.359375']; Description: Row position of the centroid calculated as the center of mass of the cell.)
+    Solidity (Type: FLOAT64; Sample values: ['0.9660377358490566']; Description: Matlab regionprops function: “Proportion of the pixels in the convex hull that are also in the region, returned as a scalar. Computed as Area/ConvexArea.”)
+    Source_filename (Type: STRING; Sample values: ['unmicst-tnpcrc_03_cell.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn36010294']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA7_932_1010']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Unnamed_46 (Type: FLOAT64; Sample values: ['nan']; Description: Mean intensity of pixels for specified marker)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level1_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_50420_7652137']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA3_50420_3101724']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Cell']; Description: The source of the input nucleic molecule)
+    UMI_Barcode_Offset (Type: STRING; Sample values: ['2']; Description: Start position of UMI barcode in the sequence. Values: number, 0 for start of read)
+    Feature_Reference_Id (Type: STRING; Sample values: ['GRCh38']; Description: Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref])
+    Valid_Barcodes_Cell_Number (Type: STRING; Sample values: ['0']; Description: Number)
+    Nucleic_Acid_Capture_Days_from_Index (Type: STRING; Sample values: ['Not Applicable']; Description: Number of days between sample for single cell assay was received in lab and day of nucleic acid capture part of library construction (in number of days since sample received in lab) [number]. If not applicable please enter 'Not Applicable')
+    Cell_Barcode_Offset (Type: STRING; Sample values: ['2']; Description: Offset in sequence for cell barcode read (in bp): number)
+    Filename (Type: STRING; Sample values: ['sc_rna_seq_Level_1/LUSC/P_LUSC/Roswell/12-PCGA02-10420-1001724_S12_R1_001.fastq.gz']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn53284070']; Description: Synapse ID of entity)
+    Cell_Barcode_Length (Type: STRING; Sample values: ['6']; Description: Length of cell barcode read (in bp): number)
+    Empty_Well_Barcode (Type: STRING; Sample values: ['Not Applicable']; Description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.)
+    Id (Type: STRING; Sample values: ['f8cb08d5-89aa-4417-b732-99093f93007b']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    UMI_Barcode_Length (Type: STRING; Sample values: ['5']; Description: Length of UMI barcode read (in bp): number)
+    Manifest_Id (Type: STRING; Sample values: ['syn39147409']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [scRNAseq_level1_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA7_926_1009']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Component (Type: STRING; Sample values: ['ImagingLevel4']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA7_926_1006']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Center (Type: STRING; Sample values: ['HTAN HMS']; Description: Name of HTAN Center e.g. HTAN HTAPP)
+    HTAN_Parent_Channel_Metadata_ID (Type: STRING; Sample values: ['None']; Description: HTAN ID for a level 3 channels table.)
+    Filename (Type: STRING; Sample values: ['imaging_level_4/CRC202208/191-CRCWSI_Immune-2021JUL/unmicst-tnpcrc_01_cell.csv']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn36010148']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['726ddd18-94c6-4821-8ca3-bc124ce5d662']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn45226943']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [imaging_level4_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scATACseq_level3_metadata_r2
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_014']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['scatacseq_level_2/A001-C-014-D_20200715_possorted_bam.bam']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_90243443196521389339723491376359']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    entityId (Type: STRING; Sample values: ['syn26530850']; Description: Synapse ID of entity)
+    Base_Filename (Type: STRING; Sample values: ['A001-C-014-D_20200715_possorted_bam.bam']; Description: Base name of file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_Duke_mibi_r4
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA6_1135_1']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA6_1135_316']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    IDO1 (Type: FLOAT64; Sample values: ['0.0']; Description: Normalized expression value of given marker. See published study https://doi.org/10.1016/j.cell.2021.12.023, including Table S2.)
+    sublineage_code (Type: INT64; Sample values: ['1']; Description: "sublineage" value coded as an integer)
+    phenotype_code (Type: INT64; Sample values: ['1']; Description: "phenotype" value coded as an integer)
+    compartment_code (Type: INT64; Sample values: ['1']; Description: "compartment" value coded as an integer)
+    celllineage_code (Type: INT64; Sample values: ['1']; Description: "celllineage" value coded as an integer)
+    IDO1status (Type: INT64; Sample values: ['0']; Description: Presence (1) or absence (0) of the given marker as described in https://doi.org/10.1016/j.cell.2021.12.035)
+    celltype_code (Type: INT64; Sample values: ['15']; Description: "celltype" value coded as an integer)
+    duct_mid_mask (Type: INT64; Sample values: ['0']; Description: Presence (1) or absence (0) of the specified mask marker as described in https://doi.org/10.1016/j.cell.2021.12.023)
+    Source_filename (Type: STRING; Sample values: ['Single_cell_data.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn52126197']; Description: Synapse ID of source file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.hiCseq_level1_metadata_r4
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_007']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_13855081584197260642224401723853']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Id (Type: STRING; Sample values: ['65c14dc5-ca89-421a-8c41-68ab70c9573c']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    entityId (Type: STRING; Sample values: ['syn39533306']; Description: Synapse ID of entity)
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Bulk Nuclei']; Description: The source of the input nucleic molecule)
+    Filename (Type: STRING; Sample values: ['hic_level_1/mhc_A001C007_R1.fastq.gz']; Description: Name of a file)
+    Manifest_Id (Type: STRING; Sample values: ['syn51526303']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [hiCseq_level1_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_channel_metadata_r3
+[
+    Imaging_Assay_Type (Type: STRING; Sample values: ['t-CyCIF']; Description: Type of imaging assay)
+    HTAN_Image_File_ID (Type: STRING; Sample values: ['HTA7_1_1001']; Description: Self-identifier for imaging data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    image_synapseID (Type: STRING; Sample values: ['syn25882990']; Description: Synapse ID of image entity)
+    image_filename (Type: STRING; Sample values: ['imaging_level_2/MEL202106/MEL01-1-3.ome.tif']; Description: Name of image file)
+    Channel_Metadata_Filename (Type: STRING; Sample values: ['imaging_level_2/MEL202106/ZM-147-PCA19C-16-5.csv']; Description: Name of channel metadata file)
+    metadata_synapseID (Type: STRING; Sample values: ['syn26560282']; Description: Synapse ID of channel metadata file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scATACseq_level1_metadata_r2_v3
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_218']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['scATAC/A001-C-218_200214/A001-C-218_S3_L001_I1_001.fastq.gz']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_30742335405331783811415522225773']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Nucleus']; Description: The source of the input nucleic molecule)
+    Nucleus_Identifier (Type: STRING; Sample values: ['Nuclei Barcode']; Description: Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from)
+    entityId (Type: STRING; Sample values: ['syn24191517']; Description: Synapse ID of entity)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_TNP_TMA_phase3_r4
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA14_10_55']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    CellID (Type: INT64; Sample values: ['8717']; Description: Unique cell identifier in a specific image)
+    X_centroid (Type: FLOAT64; Sample values: ['161.9895287958115']; Description: X-position of the centroid calculated as the center of mass of the cell.)
+    Y_centroid (Type: FLOAT64; Sample values: ['824.4397905759163']; Description: Y-position of the centroid calculated as the center of mass of the cell.)
+    Solidity (Type: FLOAT64; Sample values: ['0.8925233644859814']; Description: Proportion of the pixels in the convex hull that are also in the region, returned as a scalar. Computed as Area/ConvexArea.)
+    Source_filename (Type: STRING; Sample values: ['LSP12021-A10_LSP12021-A10-cellRingMask.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn52043931']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA14_10_1084']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_TNP_TMA_phase1_r4
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA14_10_13']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    CellID (Type: INT64; Sample values: ['196']; Description: Unique cell identifier in a specific image)
+    Epidermal_growth_factor_receptor (Type: FLOAT64; Sample values: ['nan']; Description: Mean intensity of pixels for specified marker)
+    X_centroid (Type: FLOAT64; Sample values: ['1119.114754098361']; Description: X-position of the centroid calculated as the center of mass of the cell.)
+    Y_centroid (Type: FLOAT64; Sample values: ['195.9016393442623']; Description: Y-position of the centroid calculated as the center of mass of the cell.)
+    Solidity (Type: FLOAT64; Sample values: ['0.8905109489051095']; Description: Proportion of the pixels in the convex hull that are also in the region, returned as a scalar. Computed as Area/ConvexArea.)
+    Source_filename (Type: STRING; Sample values: ['OHSU_TMA1_005-A10_OHSU_TMA1_005-A10-cellRingMask.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn52044560']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA14_10_1072']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scATACseq_level1_metadata_r3
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA4_28_1006']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['single_cell_ATACseq_level_1_CLEAN/HD_2153_Live_scATAC/HD_2153_Live_scATAC_S1_L001_R1_001.fastq.gz']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA4_28_50031']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Nucleus']; Description: The source of the input nucleic molecule)
+    Nucleus_Identifier (Type: STRING; Sample values: ['Nuclei Barcode']; Description: Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from)
+    entityId (Type: STRING; Sample values: ['syn51180099']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['8189eea9-365f-40a4-a121-1ef08ed5ed75']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_HTAPP_merfish_r4
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA1_313_932304']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    featureID (Type: STRING; Sample values: ['196309184612864059165772869392844126266']; Description: Cell barcode)
+    Source_filename (Type: STRING; Sample values: ['counts_HTAPP-313_slice4.h5ad']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn25541295']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA1_313_932304999400']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level2_metadata_r2
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA8_1012_210001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA8_1012_110001,HTA8_1012_110002,HTA8_1012_110003,HTA8_1012_110004,HTA8_1012_110005,HTA8_1012_110006,HTA8_1012_110007,HTA8_1012_110008,HTA8_1012_110009,HTA8_1012_110010,HTA8_1012_110011,HTA8_1012_110012,HTA8_1012_110013,HTA8_1012_110014,HTA8_1012_11...(truncated)']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_2/bam.ENSEMBL/HTA8_1012_1/RU255B_BRAINMET_Aligned.out.bam']; Description: Name of a file)
+    Whitelist_Cell_Barcode_File_Link (Type: STRING; Sample values: ['s3://dplab-data/barcodes/ten_x_v2/flat/']; Description: Link to file listing all possible cell barcodes. URL)
+    Cell_Barcode_Tag (Type: STRING; Sample values: ['First field in read name (column 1)']; Description: SAM tag for cell barcode field; please provide a valid cell barcode tag)
+    entityId (Type: STRING; Sample values: ['syn24988994']; Description: Synapse ID of entity)
+    Base_Filename (Type: STRING; Sample values: ['RU255B_BRAINMET_Aligned.out.bam']; Description: Base name of file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level1_metadata_r2_v2
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_4651918348']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA3_8001_1002']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['sc_rna_seq_level_1/Linh_UCLA/Case1/Ground-glass-opacity/Ground-glass-opacity_S8_L001_R1_001.fastq.gz']; Description: Name of a file)
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Cell']; Description: The source of the input nucleic molecule)
+    Nucleic_Acid_Capture_Days_from_Index (Type: STRING; Sample values: ['0.0']; Description: Number of days between sample for single cell assay was received in lab and day of nucleic acid capture part of library construction (in number of days since sample received in lab) [number]. If not applicable please enter 'Not Applicable')
+    Cell_Barcode_Offset (Type: STRING; Sample values: ['0.0']; Description: Offset in sequence for cell barcode read (in bp): number)
+    Cell_Barcode_Length (Type: STRING; Sample values: ['16.0']; Description: Length of cell barcode read (in bp): number)
+    Valid_Barcodes_Cell_Number (Type: STRING; Sample values: ['None']; Description: Number)
+    UMI_Barcode_Offset (Type: STRING; Sample values: ['16.0']; Description: Start position of UMI barcode in the sequence. Values: number, 0 for start of read)
+    UMI_Barcode_Length (Type: STRING; Sample values: ['10.0']; Description: Length of UMI barcode read (in bp): number)
+    Empty_Well_Barcode (Type: STRING; Sample values: ['None']; Description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.)
+    Feature_Reference_Id (Type: STRING; Sample values: ['GRCh38']; Description: Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref])
+    entityId (Type: STRING; Sample values: ['syn23665348']; Description: Synapse ID of entity)
+    Base_Filename (Type: STRING; Sample values: ['Ground-glass-opacity_S8_L001_R1_001.fastq.gz']; Description: Base name of file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.bulkRNAseq_level2_metadata_r5
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['None']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_19616']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA9_1_19615;HTA9_1_19613']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Filename (Type: STRING; Sample values: ['bulk_rnaseq_level_2/0000321955.bam']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn26535640']; Description: Synapse ID of entity)
+    Index_File_Name (Type: STRING; Sample values: ['Not Available']; Description: The name (or part of a name) of a file (of any type). String)
+    Id (Type: STRING; Sample values: ['b3bfe676-4809-45b7-ad63-fff23243738e']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn39142062']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [bulkRNAseq_level2_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level3_segmentation_metadata_r5
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA7_926_1008']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA7_926_1000']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Filename (Type: STRING; Sample values: ['imaging_level_3_segmentation/CRC202211/165-TNP_CRCTMA-2020AUG/CRC02-cell-mask.ome.tif']; Description: Name of a file)
+    entityId (Type: STRING; Sample values: ['syn44293986']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['e513df3b-f772-43c1-b58e-4349f437ef7a']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['syn45226287']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [imaging_level3_segmentation_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.srrs_biospecimen_r2
+[
+    Assay_Type (Type: STRING; Sample values: ['H&E']; Description: The type and level of assay this metadata applies to (e.g. RPPA, Nanostring DSP, etc.))
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA5_1833_1101']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    Source_HTAN_Biospecimen_ID (Type: STRING; Sample values: ['None']; Description: This is the HTAN ID that may have been assigned to the biospecimen at the site of biospecimen origin (e.g. BU).)
+    HTAN_Parent_ID (Type: STRING; Sample values: ['HTA5_1833_1011']; Description: HTAN ID of parent from which the biospecimen was obtained. Parent could be another biospecimen or a research participant.)
+    Adjacent_Biospecimen_IDs (Type: STRING; Sample values: ['None']; Description: List of HTAN Identifiers (separated by commas) of adjacent biospecimens cut from the same sample; for example HTA3_3000_3, HTA3_3000_4, ...)
+    Topography_Code (Type: STRING; Sample values: ['None']; Description: Topography Code, indicating site within the body, based on ICD-O-3.)
+    Histologic_Morphology_Code (Type: STRING; Sample values: ['8140/3']; Description: Histologic Morphology Code, based on ICD-O-3. Any valid ICD-O-3 morphology code. See https://seer.cancer.gov/icd-o-3/ and https://seer.cancer.gov/icd-o-3/sitetype.icdo3.20200629.xlsx. Examples: 80510)
+    entityId (Type: STRING; Sample values: ['syn26469447']; Description: Synapse ID of entity)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.bulkWES_level1_metadata_r2_v2
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_900']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['wgs/A001_blood.sorted.ir.br.rmDup.md.bam']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_90009001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Sequencing_Batch_ID (Type: STRING; Sample values: ['C202SC19030155']; Description: Links samples to a specific local sequencer run. Can be string or 'null')
+    Library_Preparation_Kit_Name (Type: STRING; Sample values: ['NEBNext® DNA Library Prep Kit']; Description: Name of Library Preparation Kit. String)
+    Adapter_Name (Type: STRING; Sample values: ['None']; Description: Name of the sequencing adapter. String)
+    Base_Caller_Name (Type: STRING; Sample values: ['None']; Description: Name of the base caller. String)
+    Flow_Cell_Barcode (Type: STRING; Sample values: ['None']; Description: Flow cell barcode. Wrong or missing information may affect analysis results. String)
+    Multiplex_Barcode (Type: STRING; Sample values: ['None']; Description: The barcode/index sequence used. Wrong or missing information may affect analysis results. String)
+    entityId (Type: STRING; Sample values: ['syn23594338']; Description: Synapse ID of entity)
+    Base_Filename (Type: STRING; Sample values: ['A001_blood.sorted.ir.br.rmDup.md.bam']; Description: Base name of file)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.bulkWES_level1_metadata_r3
+[
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA10_01_900']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Filename (Type: STRING; Sample values: ['wgs/A001_blood.sorted.ir.br.rmDup.md.bam']; Description: Name of a file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_90009001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Sequencing_Batch_ID (Type: STRING; Sample values: ['C202SC19030155']; Description: Links samples to a specific local sequencer run. Can be string or 'null')
+    Library_Preparation_Kit_Name (Type: STRING; Sample values: ['NEBNext® DNA Library Prep Kit']; Description: Name of Library Preparation Kit. String)
+    Adapter_Name (Type: STRING; Sample values: ['None']; Description: Name of the sequencing adapter. String)
+    Base_Caller_Name (Type: STRING; Sample values: ['None']; Description: Name of the base caller. String)
+    Flow_Cell_Barcode (Type: STRING; Sample values: ['None']; Description: Flow cell barcode. Wrong or missing information may affect analysis results. String)
+    Multiplex_Barcode (Type: STRING; Sample values: ['None']; Description: The barcode/index sequence used. Wrong or missing information may affect analysis results. String)
+    entityId (Type: STRING; Sample values: ['syn23594338']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['4a162096-03c1-4533-9bbc-545f16b275d0']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Id (Type: STRING; Sample values: ['']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Manifest_Id (Type: STRING; Sample values: ['']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [bulkWES_level1_metadata_r5, bulkWES_level1_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level2_metadata_r3
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_4364721293']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Filename (Type: STRING; Sample values: ['sc_rna_seq_level_2/Linh_UCLA/Case1_GGO/possorted_genome_bam.bam']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_7837535366,HTA3_8001_5222399563']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Whitelist_Cell_Barcode_File_Link (Type: STRING; Sample values: ['https://github.com/10XGenomics/cellranger/raw/master/lib/python/cellranger/barcodes/3M-february-2018.txt.gz']; Description: Link to file listing all possible cell barcodes. URL)
+    Cell_Barcode_Tag (Type: STRING; Sample values: ['CB']; Description: SAM tag for cell barcode field; please provide a valid cell barcode tag (e.g. CB:Z))
+    entityId (Type: STRING; Sample values: ['syn24056878']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['89e1bf18-14bc-4cb7-b2de-ad1592737e03']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level3_metadata_r3
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_8036695618']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Filename (Type: STRING; Sample values: ['sc_rna_seq_level_3/Linh_UCLA/Case1_GGO_rawCount.csv']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_4364721293']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: STRING; Sample values: ['syn24827006']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['b3b20601-68d8-47a5-80b0-61422e5e4ed8']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.hiCseq_level2_metadata_r5
+[
+    Component (Type: STRING; Sample values: ['HI-C-seqLevel2']; Description: Category of metadata (e.g. Diagnosis, Biospecimen, scRNA-seq Level 1, etc.); provide the same one for all items/rows.)
+    Filename (Type: STRING; Sample values: ['hic_level_2/A001C007.hg38.nodups.pairs.hic']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_13855081584197260642224401723853']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    entityId (Type: STRING; Sample values: ['syn39637837']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['fc0f21ea-3c35-48fd-88a9-18fe75c76f5a']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA10_01_02111112505221117092515353123518']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Manifest_Id (Type: STRING; Sample values: ['syn51702921']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [hiCseq_level2_metadata_r4]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level4_metadata_r4
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA8_4_100036']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    entityId (Type: STRING; Sample values: ['syn23626805']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['1bdcefd7-d0a2-4c11-9a19-01a93139c70a']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_4/immune.SCLC_samples_only/celltypeComposition.immune.SCLC_samples_only.010920.txt']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA8_1001_310001,HTA8_1001_310002,HTA8_1001_310003,HTA8_1001_310004,HTA8_1002_310001,HTA8_1002_310002,HTA8_1002_310003,HTA8_1002_310004,HTA8_1003_310001,HTA8_1003_310002,HTA8_1003_310003,HTA8_1003_310004,HTA8_1004_310001,HTA8_1004_310002,HTA8_1004_31...(truncated)']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Manifest_Id (Type: STRING; Sample values: ['syn39253706']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [scRNAseq_level4_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level3_metadata_r4
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_8036695618']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    entityId (Type: STRING; Sample values: ['syn24827006']; Description: Synapse ID of entity)
+    Id (Type: STRING; Sample values: ['b3b20601-68d8-47a5-80b0-61422e5e4ed8']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+    Filename (Type: STRING; Sample values: ['sc_rna_seq_level_3/Linh_UCLA/Case1_GGO_rawCount.csv']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA3_8001_4364721293']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    Manifest_Id (Type: STRING; Sample values: ['syn39148008']; Description: Synapse ID of manifest containing file annotation)
+]
+**Some other tables have the similar structure: [scRNAseq_level3_metadata_r5]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scATACseq_level4_metadata_r2
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA4_0_80007'])
+    Filename (Type: STRING; Sample values: ['single_cell_ATACseq_level_4/umap_coordinates_scATAC_healthydonor.tsv'])
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA4_29_50001,HTA4_29_50002,HTA4_29_50003,HTA4_29_50004,HTA4_29_50005,HTA4_29_50006,HTA4_29_50007,HTA4_29_50008,HTA4_29_50009,HTA4_29_50010,HTA4_29_50011,HTA4_29_50012,HTA4_29_50013,HTA4_29_50014,HTA4_29_50015,HTA4_29_50016,HTA4_29_50017,HTA4_29_5001...(truncated)'])
+    entityId (Type: STRING; Sample values: ['syn26410955'])
+    Base_Filename (Type: STRING; Sample values: ['umap_coordinates_scATAC_healthydonor.tsv'])
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.scRNAseq_level1_metadata_r3
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA8_1001_110001']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Filename (Type: STRING; Sample values: ['single_cell_RNAseq_level_1/fastq/HTA8_1001_1/barcode/889_Ru1038_Plus_frozen_IGO_10414_2_S2_L001_R1_001.fastq.gz']; Description: Name of a file)
+    HTAN_Parent_Biospecimen_ID (Type: STRING; Sample values: ['HTA8_1001_1']; Description: HTAN Biospecimen Identifier (eg HTANx_yyy_zzz) indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated)
+    Nucleic_Acid_Source (Type: STRING; Sample values: ['Single Cell']; Description: The source of the input nucleic molecule)
+    Nucleic_Acid_Capture_Days_from_Index (Type: STRING; Sample values: ['56']; Description: Number of days between sample for single cell assay was received in lab and day of nucleic acid capture part of library construction (in number of days since sample received in lab) [number]. If not applicable please enter 'Not Applicable')
+    Cell_Barcode_Offset (Type: STRING; Sample values: ['0']; Description: Offset in sequence for cell barcode read (in bp): number)
+    Cell_Barcode_Length (Type: STRING; Sample values: ['16']; Description: Length of cell barcode read (in bp): number)
+    Valid_Barcodes_Cell_Number (Type: STRING; Sample values: ['180419']; Description: Number)
+    UMI_Barcode_Offset (Type: STRING; Sample values: ['16']; Description: Start position of UMI barcode in the sequence. Values: number, 0 for start of read)
+    UMI_Barcode_Length (Type: STRING; Sample values: ['10']; Description: Length of UMI barcode read (in bp): number)
+    Empty_Well_Barcode (Type: STRING; Sample values: ['None']; Description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.)
+    Feature_Reference_Id (Type: STRING; Sample values: ['None']; Description: Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref])
+    entityId (Type: STRING; Sample values: ['syn23629823']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['592fed5d-29ee-497b-b541-de111a7f11dd']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_metadata_r3
+[
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA7_934_1012']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+    Filename (Type: STRING; Sample values: ['imaging_level_4/CRC202208/165-TNP_CRCTMA-2020AUG/unmicst-crc04.csv']; Description: Name of a file)
+    HTAN_Parent_Data_File_ID (Type: STRING; Sample values: ['HTA7_934_1009']; Description: HTAN Data File Identifier indicating the file(s) from which these files were derived)
+    HTAN_Parent_Channel_Metadata_ID (Type: STRING; Sample values: ['None']; Description: Description unavailable. Contact HTAN DCC for more information)
+    entityId (Type: STRING; Sample values: ['syn36017742']; Description: Synapse ID of entity)
+    Uuid (Type: STRING; Sample values: ['845768c5-7e5a-45d7-a29b-55e7103c02c2']; Description: Unique identifier of entity e.g. a96059eb-81af-4b24-ae50-9242c0d8f819)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.HTAN_versioned.imaging_level4_HMS_orion_r4
+[
+    HTAN_Biospecimen_ID (Type: STRING; Sample values: ['HTA7_917_6']; Description: HTAN ID associated with a biosample based on HTAN ID SOP (eg HTANx_yyy_zzz))
+    CellID (Type: INT64; Sample values: ['1462992']; Description: Unique cell identifier in a specific image)
+    X_centroid (Type: FLOAT64; Sample values: ['9272.91015625']; Description: X-position of the centroid calculated as the center of mass of the cell.)
+    Y_centroid (Type: FLOAT64; Sample values: ['53094.03125']; Description: Y-position of the centroid calculated as the center of mass of the cell.)
+    Solidity (Type: FLOAT64; Sample values: ['0.927536231884058']; Description: Proportion of the pixels in the convex hull that are also in the region, returned as a scalar. Computed as Area/ConvexArea.)
+    Source_filename (Type: STRING; Sample values: ['P37_S82-CRC39.csv']; Description: Name of file record was derived from)
+    Source_entityId (Type: STRING; Sample values: ['syn51613872']; Description: Synapse ID of source file)
+    HTAN_Data_File_ID (Type: STRING; Sample values: ['HTA7_917_1006']; Description: Self-identifier for this data file - HTAN ID of this file HTAN ID SOP (eg HTANx_yyy_zzz))
+]
+
+--------------------------------------------------
+

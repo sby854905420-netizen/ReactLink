@@ -1,0 +1,846 @@
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_HNSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.3506438760398335']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['df4f5bdb-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['df4ea6f3-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['df507d6a-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0278700002']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['422c0f92-8fab-11ea-bc9a-0a16d369a41f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC HNSCC Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_004577.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_HNSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.3596']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    sample_id (Type: STRING; Sample values: ['df5006db-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    assays (Type: STRING; Sample values: ['None']; Description: CPTAC Assay accessions for the peptides associated with the gene)
+    case_id (Type: STRING; Sample values: ['df4f0514-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['df510c28-8f98-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0195680003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['f66afe9f-8fa7-11ea-bc9a-0a16d369a41f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC HNSCC Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_UCEC_confirmatory_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.6794']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['f2921c8f-2065-4c4b-afa4-51a25480b029']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['cb74e02b-315f-4638-8820-56fb0345e9b9']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['025f7122-b19d-45dd-b8f5-f7ea171cab70']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0188030003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['fb55726e-8833-4ae7-bbb7-ed9f19df7826']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Confirmatory Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001243805.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_CCRCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.0405']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['c263ed01-204c-11e9-b7f8-0a80fada099c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['e30c24ef-1fb8-11e9-b7f8-0a80fada099c']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['b8cd9dff-2053-11e9-b7f8-0a80fada099c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0025350003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['a090394f-207c-11e9-b7f8-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC CCRCC Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001294976.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_prospective_breast_BI_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['nan']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['3280be2d-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['327fdb81-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['32819972-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['fb526979-ee2d-4edf-b41d-01074f_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['01664b47-04c1-42e2-a421-49c51c4b5ff3']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Breast BI Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001306007.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_CPTAC_UCEC_confirmatory_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.1884']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['5aa447a4-84ce-4215-81b3-107210b3f38d']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['018273c1-689d-450a-baa3-bb935bc57cea']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['03cb7dd1-c655-4dcf-b3f9-7827f4d6754f']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0133400008']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['3ee09a99-7432-4b48-883c-1c9c96cc50c7']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Confirmatory Study - Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001073027.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_ex_vivo_drug_response_primary_cohort_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.141']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    sample_id (Type: STRING; Sample values: ['aa8dd03f-5015-418c-b9f2-9bdd96899082']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['6a320878-e4fd-4cf2-8639-b01352acd5cf']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['f91c04b3-593b-4252-b1c4-5767e200df14']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['14-00488-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['923af834-5cee-4402-b587-059ea6582590']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Primary Cohort - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_LSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.9566']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['1c6596c8-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['1c6449cd-d028-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['1c671301-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0209510003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['e223b368-d0fa-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LSCC Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001180452.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_prospective_breast_BI_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.2241']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    sample_id (Type: STRING; Sample values: ['3280a58b-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    assays (Type: STRING; Sample values: ['None']; Description: CPTAC Assay accessions for the peptides associated with the gene)
+    case_id (Type: STRING; Sample values: ['327fd1dc-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['32818c85-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['45b99ac4-0859-4a3d-8b1e-ce5590_D2.3']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['b38f2adb-36e6-4d39-9292-276cd4935d0f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Breast BI Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_CCRCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.216']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    sample_id (Type: STRING; Sample values: ['a1a3a269-204c-11e9-b7f8-0a80fada099c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['caf0e98e-1fb8-11e9-b7f8-0a80fada099c']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['7e98f5d2-2053-11e9-b7f8-0a80fada099c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0007320003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['ba739d9f-207c-11e9-b7f8-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC CCRCC Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_ex_vivo_drug_response_sorafenib_treatment_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.8721']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['d4d98800-dd46-4d74-8a94-d39627ae8c3f']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['d52eaff5-927b-4647-85bf-658f62645103']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['c80902c9-a9d8-4454-aad3-931236136687']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['16-00886-2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['ba15cbfe-7a5a-48fd-8963-9c38dcf93dd8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Sorafenib Treatment - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_UCEC_confirmatory_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.4396']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    case_id (Type: STRING; Sample values: ['2bd188fe-2c61-4481-af47-7805ca1d9ea8']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['b32a97d3-71cf-4cb5-acdf-53e9ae8c7f3e']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['ddfa8423-0214-4811-a2c4-c2982be6adc1']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0091910003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['3abbafe3-16b6-4ed0-8eda-29de464b7bca']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Confirmatory Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_prospective_breast_BI_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.0569']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['327f7599-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['32803c33-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['32814606-0a5d-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['01f203fd-e664-4d78-bea0-7c40cf_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['9fb38e9b-0df6-11eb-b456-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Breast BI Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001008564.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_ex_vivo_drug_response_primary_cohort_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.8348']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['1411a35b-1847-4d87-b57f-993dfb9659f8']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['cb883da7-73ff-40b2-8c82-01c85506d538']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['597258f0-ff16-45a3-854e-45aa2b1d747b']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['15-00051-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['695a16a9-027b-43c8-86c9-f5538b778a6f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Primary Cohort - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000601.3']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_UCEC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.0203']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['15cf94d2-125a-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['d4cd4b91-118a-11e9-afb9-0a9c39d33490']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['4110039b-1272-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['NX1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['5e91b4c9-1597-11e9-a0e1-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_683692.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_CPTAC_LSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.4675']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['1c6449cd-d028-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['1c6596c8-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['1c671301-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0209510003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['27f301f6-d0fb-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LSCC Discovery Study - Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001137151.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_ex_vivo_drug_response_combination_treatment_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.0824']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['e4796a23-6e79-4159-8547-d7fbe13098c9']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['dddc3c0f-af7c-453b-9929-fe6896297df1']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['cc445b9a-5a06-48cc-854e-7a7611bf7b22']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['15-00756-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['0b52440e-7094-4574-926d-b2720e6abc40']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Combination Treatment - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000170.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_GBM_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.2915']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['104c98ce-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['104c0406-2139-11ea-aee1-0e1aae319e49']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['104d4cd6-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0092440003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['54d82185-2167-11ea-8856-0aee84e6d0d3']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC GBM Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001129108.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_LUAD_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.9994']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['98c196c9-d0a6-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['f1ed884e-cf1e-11e9-9a07-0a80fada099c']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['5022ebd4-d0b0-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0053040004']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['4642fe4b-becc-11e9-9a07-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LUAD Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_071934.3']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_ex_vivo_drug_response_sorafenib_treatment_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-2.4666']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['ecbde1d1-d1d9-4de5-913d-090a0571edd9']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['c00046d2-ffee-43d8-a72f-64a187590a7b']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['d9a038c8-92b3-4fff-afeb-799d93b97841']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['15-00276-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['0c7495c0-2773-4f0a-aef6-ad497c9e1249']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Sorafenib Treatment - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000436.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_ex_vivo_drug_response_combination_treatment_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.5025']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['e4796a23-6e79-4159-8547-d7fbe13098c9']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['dddc3c0f-af7c-453b-9929-fe6896297df1']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['cc445b9a-5a06-48cc-854e-7a7611bf7b22']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['15-00756-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['980ca58c-8740-4e2d-81fa-c2c73734b4e1']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Ex Vivo Drug Response - Combination Treatment - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_prospective_ovarian_PNNL_qeplus_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.457']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['d8f0cedb-641a-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    gene_id (Type: STRING; Sample values: ['5c920b69-b818-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['XP_003960700.2;XP_005276560.1;XP_005276561.1;XP_011506879.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    case_id (Type: STRING; Sample values: ['c0597d45-63d5-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['b015955b-6424-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['5b5c81b1-4e73-48d3-9469-108edd_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['37ec8fc1-5737-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Ovarian PNNL Proteome Qeplus']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['101060405']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['None']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['None']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['None']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_CPTAC_PDA_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.3407']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['54bd49cd-0642-47b7-b56c-70c1dc358435']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['3dfe6ae9-d5bf-4cb2-ad54-5bea84386e4c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['27b66033-20cc-498f-ae88-b475ed63348d']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['QC1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['d77b875f-53f5-4cb1-aa58-e4aa5d9af097']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC PDA Discovery Study - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001186326.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_CPTAC_UCEC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.2426']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['d4cd4b91-118a-11e9-afb9-0a9c39d33490']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['15cf94d2-125a-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['4110039b-1272-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['NX1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['5308969f-cb98-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Discovery Study - Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000041.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_prospective_ovarian_PNNL_lumos_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-2.4217']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['0633de6c-641d-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['526a8712-0881-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['e56ea641-6424-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['665f4f0f-130c-4b09-9762-cd0696_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['096069d2-5738-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Ovarian PNNL Phosphoproteome Lumos']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_057417.3']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_LSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.6605']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['f727e28b-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['P00846;YP_003024031.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    sample_id (Type: STRING; Sample values: ['1c651f93-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['1c6415e2-d028-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['1c669cae-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0111000004']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['424bca76-d0fd-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LSCC Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4508']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7414']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00846']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00846']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_CPTAC_GBM_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.4322']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['104c0852-2139-11ea-aee1-0e1aae319e49']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['104c9aa3-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['104d4e99-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0002410011']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['a558cb61-f794-11ea-bc0e-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC GBM Discovery Study - Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000087.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_ubiquitylome_CPTAC_LSCC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.8121']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['1c6408e5-d028-11ea-b1fd-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['1c6500c1-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['1c6681c3-d028-11ea-b1fd-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0232690003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['ef747fd5-eecb-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LSCC Discovery Study - Ubiquitylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_003741.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_UCEC_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.1879']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    proteins (Type: STRING; Sample values: ['P00395;YP_003024028.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    gene_id (Type: STRING; Sample values: ['f7b24772-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    case_id (Type: STRING; Sample values: ['e061c1ea-1189-11e9-afb9-0a9c39d33490']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['b0abdd42-1258-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['7d9c0c4e-1271-11e9-afb9-0a9c39d33490']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0002630003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['9f35d9ac-1599-11e9-a0e1-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC UCEC Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4512']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7419']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00395']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00395']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_GBM_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.4023']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    proteins (Type: STRING; Sample values: ['NP_001343434.1;NP_001343435.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    sample_id (Type: STRING; Sample values: ['104d1c5f-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    gene_id (Type: STRING; Sample values: ['0bb3580d-419a-11e9-9a07-0a80fada099c']; Description: Unique gene identifier assigned by PDC)
+    case_id (Type: STRING; Sample values: ['104c7225-2139-11ea-aee1-0e1aae319e49']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['104db824-2139-11ea-aee1-0e1aae319e49']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0205570003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['b635a38e-2154-11ea-8856-0aee84e6d0d3']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC GBM Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['111240474']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['53757']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['None']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['None']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_acetylome_CPTAC_LUAD_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.3146']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['f1ee18d4-cf1e-11e9-9a07-0a80fada099c']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['a679f850-d0a6-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['6345781b-d0b0-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0105230003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['966e76b2-bfbf-11ea-b1fd-0aad30af8a83']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LUAD Discovery Study - Acetylome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_006588.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_PTRC_HGSOC_frozen_validation_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.2788']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['00cb6713-234c-465c-9c2e-397168bb3bca']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['8d9c5933-055c-4b1f-8d81-a7749af94d03']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['47130988-7848-40fc-9076-cb545b4ca065']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['589667']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['05da500b-8226-4f6d-bfb8-34d76ab3693f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC Frozen Validation - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000436.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_quizartinib_resistance_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.6904']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4b2172-550c-4dbd-adad-8b3425f3ddea']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['baf671ff-e1b6-4cd9-9dfd-5d263db4f5df']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['8dc69c53-9a45-4b6d-a3c1-4f3637f26440']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_exp12_P5-1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['dfdf5e29-db86-48bd-83e9-009e078627ea']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Quizartinib Resistance -  Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000356.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_prospective_colon_PNNL_qeplus_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.4967']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['986bfc0f-641b-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    gene_id (Type: STRING; Sample values: ['f8f1c401-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    case_id (Type: STRING; Sample values: ['24cb0fcb-63d6-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['2f10cebf-642a-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['d8805fa4-30f9-4417-907e-fdc50c_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['0619f5e0-5736-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Colon PNNL Proteome Qeplus']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['105369247']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['None']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['None']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['None']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_LUAD_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.455']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['f1ee1feb-cf1e-11e9-9a07-0a80fada099c']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['a76bf6a4-d0a6-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['648a5e8d-d0b0-11e9-9a07-0a80fada099c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0105330003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['467f0d27-becc-11e9-9a07-0a80fada099c']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC LUAD Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f727e28b-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4508']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7414']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00846']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00846']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_CPTAC_PDA_discovery_study_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['6.2537']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4e4119-73e6-468a-8e6b-05acf4c1b7f5']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['05ce4fb2-dcb8-4046-9638-cb1c3be6ff75']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['b09f0386-30fa-4cd2-9564-2269d9680e0a']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['CPT0094030003']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['391a53c2-9dc5-421c-9992-7a2e0bbeefd2']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['CPTAC PDA Discovery Study - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f727e28b-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4508']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7414']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00846']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00846']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_PTRC_HGSOC_FFPE_validation_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.3747']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['094251a9-3970-4f02-bb00-43bce5a6e5d9']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['3bca70fe-48a7-427e-9254-596e7af8062d']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['be2cd61f-f612-46c4-b3fe-4ea2bee978b9']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['B1650']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['27890493-a3f3-4db8-bba2-88b542352c1b']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC FFPE Validation - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001073922.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_prospective_colon_PNNL_lumos_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-1.9183']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['4f9db1ce-641b-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['0bc46cbd-63d6-11e8-bcf1-0a2705229b82']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['263c66c0-642a-11e8-bcf1-0a2705229b82']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['cc271b3d-ed33-481f-9d23-15f2f6_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['868fb8e6-5737-11e8-b664-00a098d917f8']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Colon PNNL Phosphoproteome Lumos']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_116204.3']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_quizartinib_resistance_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.4451']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4b2172-550c-4dbd-adad-8b3425f3ddea']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['9598ad9c-a212-4867-9c95-66bfc772c816']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['5610ffd5-08ea-4a4b-915d-c270a050b3f2']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_exp12_P6-6']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['788a3c6b-81d3-4752-aa7e-e2269227112f']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Quizartinib Resistance -  Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_PTRC_HGSOC_FFPE_discovery_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.4584']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['6dc777d4-4a5b-4387-9ed2-0d2fa9f4ff72']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['16d7cf28-d501-4845-af50-581879c46b79']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['47b273c2-d4a5-4cf6-8ed8-551cd6c5fe0c']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['Frozen-bridge']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['00b4ad2e-0b60-4edb-8d1f-1f4d6d8b9e45']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC FFPE Discovery - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001032752.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_PTRC_TNBC_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['1.2257']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    sample_id (Type: STRING; Sample values: ['ba08cd04-5fa2-4d7a-9c14-b5a572c53efc']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['961fcdab-129c-4ae9-8abc-2ec9ae61c866']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['064b6ce5-2964-4ed0-b258-121db8ceab0d']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['NTN089_Baseline']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['630f5dd6-091d-469f-8cc5-1ed43dfccdb7']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC TNBC - Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000114.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_PTRC_HGSOC_frozen_validation_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['nan']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['0bb3580d-419a-11e9-9a07-0a80fada099c']; Description: Unique gene identifier assigned by PDC)
+    case_id (Type: STRING; Sample values: ['a406851b-a980-4a6b-85fe-074a626a7035']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['ab97466a-ad04-4b53-80f6-08634438781b']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['57e77c63-ad0c-43b4-aa92-9602bbddb6ff']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['494977']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['994de566-e984-4b48-8158-c8b0980725d2']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC Frozen Validation - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['111240474']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['53757']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['None']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['None']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_gilteritinib_timecourse_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.7244']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4b2172-550c-4dbd-adad-8b3425f3ddea']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['171a2f52-7874-4eaf-b6be-b990cf1cb030']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['124d3094-5c2d-4ac2-b7a4-c4854c5d4a7b']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_Ex8_P16']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['71bba39d-a0e6-4362-8419-7025542d52cf']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Gilteritinib TimeCourse -  Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_gilteritinib_timecourse_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.8623']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4b2172-550c-4dbd-adad-8b3425f3ddea']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['1c1f661c-e8d8-44f0-971b-863c32c9ef59']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['2e2c8318-db8c-4131-aaa4-72a8dbfdb229']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_Ex8_P1']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['a44d66b4-e0bf-4c65-afa0-e90f5ef0c6ff']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Gilteritinib TimeCourse -  Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000539.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_prospective_ovarian_JHU_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-2.2904']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    proteins (Type: STRING; Sample values: ['P00403;YP_003024029.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    case_id (Type: STRING; Sample values: ['526a743e-0881-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['526b02b7-0881-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['526ba4fb-0881-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['e9d416e7-f661-400a-896e-388545_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['51b9e74b-dc37-410f-bd3a-95f9f414eed9']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Ovarian JHU Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_phosphoproteome_AML_gilteritinib_resistance_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.1025']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a4b2172-550c-4dbd-adad-8b3425f3ddea']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['baf671ff-e1b6-4cd9-9dfd-5d263db4f5df']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['e8cd8b54-b66a-47da-879f-f135582ea0f5']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_exp12_01']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['85a47ee9-272b-49f0-8f06-eb8ee580eb84']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Gilteritinib Resistance -  Phosphoproteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_001005751.1']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_PTRC_TNBC_PDX_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.0825']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['33626130-6530-3762-2d33-6133622d3131']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['NP_001254737.1;P01897']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    case_id (Type: STRING; Sample values: ['6cea33b1-3543-4a57-942d-e94f76c0c705']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['3edcaec7-359e-40c4-84c4-711e6079cd7e']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['353a06da-ef10-4598-af49-43814857fe09']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['HCI030']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['b5cb0cda-73c0-4498-b6f0-16cf8bda968d']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC TNBC PDX - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['14980']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['None']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P01897']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P01897']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_PTRC_HGSOC_FFPE_validation_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.0572']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['7cc8c834-8568-4272-aa30-95107b456187']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['94fe5a77-a9f2-484b-9498-b10489305c88']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['763a0ebf-e30a-45d4-bd25-a1268ec667f0']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['B1279']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['8b31c12a-7529-4e47-8048-db1bc71bf946']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC FFPE Validation - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_glycoproteome_prospective_ovarian_JHU_N_linked_glycosite_containing_peptide_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['1.783']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['526a3222-0881-11eb-bc0e-0aad30af8a83']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['526ab38d-0881-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['526b6147-0881-11eb-bc0e-0aad30af8a83']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['1abbcb28-f221-4cd4-8c01-37b9bb_D1_D2']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['732221d6-f151-4d24-8797-0367bd7aec38']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['Prospective Ovarian JHU N-linked Glycosite-containing peptide']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    refseq_id (Type: STRING; Sample values: ['NP_000033.2']; Description: Unique identifier given to a sequence in the NCBI RefSeq database)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_AML_gilteritinib_resistance_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.1045']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['4a9ddc6a-11ad-4165-82c4-af3ba4fda9c6']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['907d54f3-7422-455b-892a-17548110df0e']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['1fcbc7fb-75de-4b26-b81e-5170dcc78ded']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['PTRC_exp12_31']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['391b3d8c-589c-4515-a6eb-52d6069d2d81']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['AML Gilteritinib Resistance -  Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_PTRC_HGSOC_FFPE_discovery_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['-0.223']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    case_id (Type: STRING; Sample values: ['1f121037-782c-46b5-a26c-2e2063e0e204']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    sample_id (Type: STRING; Sample values: ['df180ee7-be03-446d-9c2a-4062bb00ccb7']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_id (Type: STRING; Sample values: ['1efa6f14-38c4-4d8e-b49c-4116880ddfaa']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['218201']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['526a2554-69c2-45c6-8b14-e4dbfc158c92']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC HGSOC FFPE Discovery - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.quant_proteome_PTRC_TNBC_pdc_current
+[
+    protein_abundance_log2ratio (Type: FLOAT64; Sample values: ['0.3274']; Description: Average log-ratio of sample reporter-ion to common reference of peptide ions associated with the gene in acquisitions from a specific biological sample)
+    gene_id (Type: STRING; Sample values: ['f7b24ee5-b814-11e8-907f-0a2705229b82']; Description: Unique gene identifier assigned by PDC)
+    proteins (Type: STRING; Sample values: ['P00403;YP_003024029.1']; Description: Semi-colon separated list of protein accessions associated with the gene; includes identifiers from multiple sources (e.g. UniProt, NCBI RefSeq database))
+    sample_id (Type: STRING; Sample values: ['2c90327f-6ced-46ef-afe7-95f67b7f5b35']; Description: Unique PDC identifier for this sample (e.g. e8d83eb9-693a-11ea-b1fd-0aad30af8a83))
+    case_id (Type: STRING; Sample values: ['1bc93e93-d026-4010-b808-26c5d6b76ba7']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    aliquot_id (Type: STRING; Sample values: ['1436c5c6-650f-49aa-85b6-9f550593c873']; Description: Unique PDC identifier for this aliquot (e.g. e8db124a-693a-11ea-b1fd-0aad30af8a83))
+    aliquot_submitter_id (Type: STRING; Sample values: ['NTN052_Baseline']; Description: Aliquot submitter id assigned by program (e.g. T14))
+    aliquot_run_metadata_id (Type: STRING; Sample values: ['ca7707f1-1962-4838-8381-eb1f848cb44a']; Description: Uniquely identifies the aliquot by how it was used in the experiment (based on the labelling reagent and/or biological replicate))
+    study_name (Type: STRING; Sample values: ['PTRC TNBC - Proteome']; Description: Name of the study (e.g. Pediatric Brain Cancer Pilot Study - Phosphoproteome))
+    NCBI_gene_id (Type: STRING; Sample values: ['4513']; Description: NCBI gene identifier)
+    authority_gene_id (Type: STRING; Sample values: ['7421']; Description: Unique identifier assigned by authority (e.g. HGNC))
+    uniprotkb_id (Type: STRING; Sample values: ['P00403']; Description: Oldest UniProt id found in 'proteins' column list, derived programmatically)
+    uniprotkb_ids (Type: STRING; Sample values: ['P00403']; Description: Every UniProt id found in 'proteins' column list)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.CPTAC.clinical_diagnoses_proteogenomic_translational_research_centers_pdc_current
+[
+    tumor_grade (Type: STRING; Sample values: ['None']; Description: Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness)
+    case_id (Type: STRING; Sample values: ['1f44bbcb-2083-482a-9f75-25828c013e96']; Description: Unique identifier associated with a specific patient (e.g. 24cb0fcb-63d6-11e8-bcf1-0a2705229b82))
+    case_submitter_id (Type: STRING; Sample values: ['MOLM14 Pooled Reference']; Description: Unique identifier deriving from the data submitter that is associated with a specific patient (e.g. 05BR016))
+    project_submitter_id (Type: STRING; Sample values: ['Proteogenomic Translational Research Centers (PTRC)']; Description: Unique identifier deriving from the data submitter that is associated with a specific project (e.g. CPTAC3-Discovery))
+    diagnosis_id (Type: STRING; Sample values: ['210e2493-e438-4156-a527-f7fc585c9264']; Description: Unique identifier for data from the investigation, analysis and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such an investigation (e.g. e8dd475b-693a-11ea-b1fd-0aad30af8a83))
+    diagnosis_submitter_id (Type: STRING; Sample values: ['MOLM14 Pooled Reference-DX']; Description: Unique identifier deriving from data submitter attributed to data from the investigation, analysis and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such an investigation (e.g. 33-DX))
+]
+
+--------------------------------------------------
+

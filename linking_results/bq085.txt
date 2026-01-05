@@ -1,0 +1,279 @@
+###Table full name: bigquery-public-data.covid19_jhu_csse.confirmed_cases
+[
+    country_or_region (Type: STRING; Sample values: ['Antarctica', 'Canada', 'Korea, North', 'Nauru', 'New Zealand'])
+    _12_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_20_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _10_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_18_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _6_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _6_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_18_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _10_23_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_17_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_29_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _10_31_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_27_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_13_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_17_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _7_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_20_23 (Type: STRING; Sample values: ['11', '0', '1', '5247', '773'])
+    _7_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_18_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_19_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_29_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_27_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_31_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_23_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _6_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_26_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _6_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_18_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_31_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _5_21_20 (Type: STRING; Sample values: ['0', '1', '0', '0', '0'])
+    _12_27_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_23_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_19_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _6_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_17_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _5_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _7_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_12_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_12_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_17_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_19_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_23_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _4_21_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _4_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _7_29_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_29_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _7_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_2_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_27_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _6_23_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_12_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_17_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_19_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_27_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _7_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_10_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _9_20_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _3_12_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_23_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_13_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_11_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_13_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_2_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_27_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _12_17_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _12_26_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _12_22_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _11_10_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_11_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_30_21 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    province_or_state (Type: STRING; Sample values: ['None', 'Diamond Princess', 'None', 'None', 'Niue'])
+    _1_19_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '725'])
+    _4_19_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_2_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_4_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_20_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '727'])
+    _5_19_20 (Type: STRING; Sample values: ['0', '1', '0', '0', '0'])
+    _12_12_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_2_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '545'])
+    _1_19_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_12_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_19_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_1_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_19_22 (Type: STRING; Sample values: ['11', '0', '1', '4621', '263'])
+    _12_14_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_5_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_20_22 (Type: STRING; Sample values: ['11', '0', '1', '4621', '291'])
+    _1_26_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_1_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_2_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_26_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '741'])
+    _11_1_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_1_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '501'])
+    _1_7_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '644'])
+    _1_23_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '735'])
+    _1_6_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '630'])
+    _2_1_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '747'])
+    _12_12_22 (Type: STRING; Sample values: ['11', '0', '1', '4621', '198'])
+    _1_12_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '699'])
+    _7_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _4_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _12_7_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _4_18_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _2_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_11_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '694'])
+    _12_1_22 (Type: STRING; Sample values: ['11', '0', '1', '4621', '147'])
+    _1_20_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _2_1_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _12_2_22 (Type: STRING; Sample values: ['11', '0', '1', '4621', '156'])
+    _1_26_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_1_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_12_21 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_7_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_11_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _7_12_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _10_20_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+    _1_13_22 (Type: STRING; Sample values: ['11', '0', '0', '0', '0'])
+    _1_8_23 (Type: STRING; Sample values: ['11', '0', '1', '4621', '644'])
+    _7_7_20 (Type: STRING; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_jhu_csse.recovered_cases
+[
+    country_or_region (Type: STRING; Sample values: ['Antarctica', 'China', 'Kiribati', 'Korea, North', 'Nauru'])
+    province_or_state (Type: STRING; Sample values: ['None', 'Unknown', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_jhu_csse.deaths
+[
+    country_or_region (Type: STRING; Sample values: ['Antarctica', 'Australia', 'Canada', 'Canada', 'Canada'])
+    province_or_state (Type: STRING; Sample values: ['None', 'Northern Territory', 'Grand Princess', 'Northwest Territories', 'Prince Edward Island'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_jhu_csse.summary
+[
+    country_region (Type: STRING; Sample values: ['US', 'US', 'US', 'US', 'US'])
+    province_state (Type: STRING; Sample values: ['South Dakota', 'South Carolina', 'Michigan', 'Florida', 'Virginia'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_global_population.population_by_country
+[
+    country (Type: STRING; Sample values: ['Sint Maarten (Dutch part)', 'Not classified', 'West Bank and Gaza', 'Serbia', 'Cambodia'])
+    country_code (Type: STRING; Sample values: ['SXM', 'INX', 'PSE', 'SRB', 'KHM'])
+    year_2017 (Type: INT64; Sample values: ['40574', 'None', '4454805', '7020858', '16009414'])
+    year_2019 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    year_2018 (Type: INT64; Sample values: ['40654', 'None', '4569087', '6982084', '16249798'])
+    year_2013 (Type: INT64; Sample values: ['36607', 'None', '4076708', '7164132', '15026332'])
+    year_2016 (Type: INT64; Sample values: ['39969', 'None', '4367088', '7058322', '15766293'])
+    year_2000 (Type: INT64; Sample values: ['30519', 'None', '2922153', '7516346', '12155239'])
+    year_2015 (Type: INT64; Sample values: ['38825', 'None', '4270092', '7095383', '15521436'])
+    year_1999 (Type: INT64; Sample values: ['31084', 'None', '2848431', '7540401', '11886458'])
+    year_2009 (Type: INT64; Sample values: ['34238', 'None', '3689099', '7320807', '14093604'])
+    year_2014 (Type: INT64; Sample values: ['37685', 'None', '4173398', '7130576', '15274503'])
+    year_2012 (Type: INT64; Sample values: ['34640', 'None', '3979998', '7199077', '14780454'])
+    year_2010 (Type: INT64; Sample values: ['34056', 'None', '3786161', '7291436', '14312212'])
+    year_2005 (Type: INT64; Sample values: ['33011', 'None', '3320396', '7440769', '13273354'])
+    year_2011 (Type: INT64; Sample values: ['33435', 'None', '3882986', '7234099', '14541423'])
+    year_2001 (Type: INT64; Sample values: ['30600', 'None', '2997784', '7503433', '12405408'])
+    year_2008 (Type: INT64; Sample values: ['33964', 'None', '3591977', '7350222', '13883834'])
+    year_2002 (Type: INT64; Sample values: ['30777', 'None', '3075373', '7496522', '12637727'])
+    year_2007 (Type: INT64; Sample values: ['33811', 'None', '3494496', '7381579', '13679962'])
+    year_2006 (Type: INT64; Sample values: ['33441', 'None', '3406334', '7411569', '13477709'])
+    year_2004 (Type: INT64; Sample values: ['32488', 'None', '3236626', '7463157', '13066469'])
+    year_2003 (Type: INT64; Sample values: ['31472', 'None', '3154969', '7480591', '12856163'])
+    year_1998 (Type: INT64; Sample values: ['31240', 'None', '2776568', '7567745', '11600508'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_summary
+[
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS'])
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    long_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.health_nutrition_population
+[
+    country_name (Type: STRING; Sample values: ['Canada', 'Canada', 'Canada', 'Canada', 'Canada'])
+    country_code (Type: STRING; Sample values: ['CAN', 'CAN', 'CAN', 'CAN', 'CAN'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['EAS', 'EAS', 'ECS', 'ECS', 'LCN'])
+    description (Type: STRING; Sample values: ['Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['AUS', 'AUT', 'JPN', 'JPN', 'TUN'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.country_summary
+[
+    country_code (Type: STRING; Sample values: ['EAP', 'ECA', 'IDX', 'LAC', 'LDC'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.indicators_data
+[
+    country_code (Type: STRING; Sample values: ['MOZ', 'MOZ', 'MOZ', 'MOZ', 'MOZ'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.international_debt
+[
+    country_code (Type: STRING; Sample values: ['AFG', 'AFG', 'AFG', 'AGO', 'AGO'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_summary
+[
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS']; Description: A short alphabetic or numeric geographical code representing a specific country or area. In April 2016 WDI has adopted the three digit ISO code to identify countries in its databases.)
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's name as approved by the relevant body (Italy is used as an example): conventional short form (Republic of Italy).)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.country_summary
+[
+    country_code (Type: STRING; Sample values: ['ARB', 'EAP', 'EAS', 'ECA', 'ECS'])
+]
+
+--------------------------------------------------
+

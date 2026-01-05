@@ -1,0 +1,299 @@
+###Table full name: bigquery-public-data.google_dei.dar_non_intersectional_hiring
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.034', '0.044', '0.051', '0.023', '0.043']; Description: The percentage of Googlers hired in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us_men (Type: FLOAT64; Sample values: ['0.77', '0.754', '0.74', '0.725', '0.716']; Description: The percentage of Googlers hired in the U.S. who are men)
+    gender_us_women (Type: FLOAT64; Sample values: ['0.23', '0.246', '0.26', '0.275', '0.284']; Description: The percentage of Googlers hired in the U.S. who are women)
+    gender_global_men (Type: FLOAT64; Sample values: ['0.743', '0.739', '0.741', '0.704', '0.706']; Description: The percentage of global Googlers hired who are men)
+    race_asian (Type: FLOAT64; Sample values: ['0.253', '0.28', '0.327', '0.331', '0.277']; Description: The percentage of Googlers hired in the U.S. who identify as Asian and zero or more other races)
+    gender_global_women (Type: FLOAT64; Sample values: ['0.257', '0.261', '0.259', '0.296', '0.294']; Description: The percentage of global Googlers hired who are women)
+    race_black (Type: FLOAT64; Sample values: ['0.023', '0.036', '0.036', '0.015', '0.057']; Description: The percentage of Googlers hired in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.69', '0.662', '0.597', '0.646', '0.631']; Description: The percentage of Googlers hired in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['0.0', '0.007', '0.005', '0.015', '0.014']; Description: The percentage of Googlers hired in the U.S. who identify as Native American and zero or more other races)
+    workforce (Type: STRING; Sample values: ['leadership', 'leadership', 'leadership', 'leadership', 'leadership']; Description: Overall and sub-categories)
+    report_year (Type: INT64; Sample values: ['2016', '2020', '2019', '2017', '2018']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_intersectional_hiring
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.045', 'nan', 'nan', '0.043', 'nan']; Description: The percentage of Googlers hired in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us (Type: STRING; Sample values: ['men', 'men', 'women', 'men', 'women']; Description: Gender of Googlers in the U.S.)
+    race_asian (Type: FLOAT64; Sample values: ['0.168', '0.208', '0.156', '0.222', '0.119']; Description: The percentage of Googlers hired in the U.S. who identify as Asian and zero or more other races)
+    race_black (Type: FLOAT64; Sample values: ['0.045', 'nan', 'nan', '0.043', '0.047']; Description: The percentage of Googlers hired in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.45', '0.377', '0.175', '0.363', '0.178']; Description: The percentage of Googlers hired in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers hired in the U.S. who identify as Native American and zero or more other races)
+    workforce (Type: STRING; Sample values: ['leadership', 'leadership', 'leadership', 'leadership', 'leadership']; Description: Overall and sub-categories)
+    report_year (Type: INT64; Sample values: ['2021', '2024', '2024', '2023', '2022']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_region_non_intersectional_hiring
+[
+    gender_women (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', '0.41']; Description: The percentage of Googlers hired in the region who are women)
+    gender_men (Type: FLOAT64; Sample values: ['0.75', 'nan', '0.75', 'nan', '0.59']; Description: The percentage of Googlers hired in the region who are men)
+    workforce (Type: STRING; Sample values: ['leadership', 'leadership', 'leadership', 'leadership', 'non_tech']; Description: Overall and sub-categories)
+    region (Type: STRING; Sample values: ['AMERICAS (non-US)', 'AMERICAS (non-US)', 'AMERICAS (non-US)', 'AMERICAS (non-US)', 'AMERICAS (non-US)']; Description: Region)
+    report_year (Type: INT64; Sample values: ['2023', '2022', '2021', '2024', '2021']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_non_intersectional_representation
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.022', '0.02', '0.021', '0.024', '0.027']; Description: The percentage of Googlers in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us_women (Type: FLOAT64; Sample values: ['0.206', '0.232', '0.24', '0.242', '0.253']; Description: The percentage of Googlers in the U.S. who are women)
+    gender_us_men (Type: FLOAT64; Sample values: ['0.794', '0.768', '0.76', '0.758', '0.747']; Description: The percentage of Googlers in the U.S. who are men)
+    gender_global_women (Type: FLOAT64; Sample values: ['0.208', '0.229', '0.242', '0.245', '0.255']; Description: The percentage of global Googlers who are women)
+    workforce (Type: STRING; Sample values: ['leadership', 'leadership', 'leadership', 'leadership', 'leadership']; Description: Overall and sub-categories)
+    gender_global_men (Type: FLOAT64; Sample values: ['0.792', '0.771', '0.758', '0.755', '0.745']; Description: The percentage of global Googlers who are men)
+    race_asian (Type: FLOAT64; Sample values: ['0.242', '0.25', '0.258', '0.271', '0.273']; Description: The percentage of Googlers in the U.S. who identify as Asian and zero or more other races)
+    race_black (Type: FLOAT64; Sample values: ['0.017', '0.02', '0.018', '0.02', '0.024']; Description: The percentage of Googlers in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.732', '0.722', '0.713', '0.696', '0.689']; Description: The percentage of Googlers in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['0.006', '0.009', '0.007', '0.008', '0.008']; Description: The percentage of Googlers in the U.S. who identify as Native American and zero or more other races)
+    report_year (Type: INT64; Sample values: ['2014', '2015', '2016', '2017', '2018']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_intersectional_representation
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.014', '0.025', '0.004', '0.022', '0.016']; Description: The percentage of Googlers in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    workforce (Type: STRING; Sample values: ['leadership', 'leadership', 'leadership', 'leadership', 'leadership']; Description: Overall and sub-categories)
+    race_asian (Type: FLOAT64; Sample values: ['0.087', '0.207', '0.061', '0.211', '0.106']; Description: The percentage of Googlers in the U.S. who identify as Asian and zero or more other races)
+    race_black (Type: FLOAT64; Sample values: ['0.013', '0.018', '0.01', '0.015', '0.024']; Description: The percentage of Googlers in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.178', '0.477', '0.143', '0.491', '0.189']; Description: The percentage of Googlers in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['nan', 'nan', '0.001', '0.002', '0.003']; Description: The percentage of Googlers in the U.S. who identify as Native American and zero or more other races)
+    gender_us (Type: STRING; Sample values: ['women', 'men', 'women', 'men', 'women']; Description: Gender)
+    report_year (Type: INT64; Sample values: ['2021', '2021', '2014', '2020', '2023']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_region_non_intersectional_representation
+[
+    gender_women (Type: FLOAT64; Sample values: ['0.218', '0.227', '0.185', '0.443', '0.488']; Description: The percentage of Googlers in the region who are women)
+    race_hispanic_latino_latinx (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as Hispanic, Latino, or Latinx and zero or more other races)
+    gender_men (Type: FLOAT64; Sample values: ['0.782', '0.774', '0.815', '0.557', '0.512']; Description: The percentage of Googlers in the region who are men)
+    workforce (Type: STRING; Sample values: ['tech', 'tech', 'tech', 'non_tech', 'non_tech']; Description: Overall and sub-categories)
+    race_asian (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as Asian and zero or more other racesion)
+    race_white_european (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as White or European and zero or more other races)
+    race_mena (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as Middle Eastern or North African and zero or more other races)
+    race_black_african (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as Black or African and zero or more other races)
+    race_indigenous (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The percentage of Googlers in the region who identify as Indigenous and zero or more other races)
+    region (Type: STRING; Sample values: ['EMEA', 'APAC', 'AMERICAS (non-US)', 'AMERICAS (non-US)', 'EMEA']; Description: Region)
+    report_year (Type: INT64; Sample values: ['2022', '2022', '2021', '2021', '2021']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_non_intersectional_attrition_index
+[
+    race_hispanic_latinx (Type: INT64; Sample values: ['100', '110', '110', '120', '101']; Description: The attrition index score of Googlers in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us_men (Type: INT64; Sample values: ['108', '108', '106', '107', '107']; Description: The attrition index score of Googlers in the U.S. who are men)
+    race_asian (Type: INT64; Sample values: ['95', '86', '80', '84', '79']; Description: The attrition index score of Googlers in the U.S. who identify as Asian and zero or more other races)
+    gender_us_women (Type: INT64; Sample values: ['77', '76', '76', '81', '79']; Description: The attrition index score of Googlers in the U.S. who are women)
+    gender_global_men (Type: INT64; Sample values: ['107', '107', '107', '105', '105']; Description: The attrition index score of global Googlers who are men)
+    gender_global_women (Type: INT64; Sample values: ['80', '78', '78', '84', '83']; Description: The attrition index score of global Googlers who are women)
+    workforce (Type: STRING; Sample values: ['tech', 'tech', 'tech', 'tech', 'tech']; Description: Overall and sub-categories)
+    race_black (Type: INT64; Sample values: ['92', '130', '120', '155', '121']; Description: The attrition index score of Googlers in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: INT64; Sample values: ['109', '115', '114', '115', '122']; Description: The attrition index score of Googlers in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: INT64; Sample values: ['156', '103', '104', '71', '116']; Description: The attrition index score of Googlers in the U.S. who identify as Native American and zero or more other races)
+    report_year (Type: INT64; Sample values: ['2022', '2021', '2019', '2018', '2020']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_intersectional_attrition_index
+[
+    race_hispanic_latinx (Type: INT64; Sample values: ['78', '92', '115', '117', '118']; Description: The attrition index score of Googlers in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us (Type: STRING; Sample values: ['women', 'women', 'men', 'men', 'women']; Description: Gender of Googler exits in the U.S.)
+    race_asian (Type: INT64; Sample values: ['88', '73', '108', '92', '65']; Description: The attrition index score of Googlers in the U.S. who identify as Asian and zero or more other races)
+    workforce (Type: STRING; Sample values: ['non_tech', 'overall', 'non_tech', 'overall', 'tech']; Description: Overall and sub-categories)
+    race_black (Type: INT64; Sample values: ['68', '90', '122', '145', '124']; Description: The attrition index score of Googlers in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: INT64; Sample values: ['96', '103', '106', '112', '102']; Description: The attrition index score of Googlers in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: INT64; Sample values: ['124', '100', '140', '140', '31']; Description: The attrition index score of Googlers in the U.S. who identify as Native American and zero or more other races)
+    report_year (Type: INT64; Sample values: ['2018', '2018', '2018', '2018', '2018']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_non_intersectional_exits_representation
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.046', '0.047', '0.05', '0.057', '0.056']; Description: The percentage of Googler exits in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_global_women (Type: FLOAT64; Sample values: ['0.168', '0.175', '0.18', '0.181', '0.191']; Description: The percentage of global Googler exits who are women)
+    gender_us_women (Type: FLOAT64; Sample values: ['0.162', '0.175', '0.173', '0.182', '0.196']; Description: The percentage of Googler exits in the U.S. who are women)
+    gender_global_men (Type: FLOAT64; Sample values: ['0.832', '0.825', '0.82', '0.819', '0.809']; Description: The percentage of global Googler exits who are men)
+    gender_us_men (Type: FLOAT64; Sample values: ['0.838', '0.825', '0.827', '0.818', '0.804']; Description: The percentage of Googler exits in the U.S. who are men)
+    workforce (Type: STRING; Sample values: ['tech', 'tech', 'tech', 'tech', 'tech']; Description: Overall and sub-categories)
+    race_asian (Type: FLOAT64; Sample values: ['0.352', '0.358', '0.363', '0.405', '0.465']; Description: The percentage of Googler exits in the U.S. who identify as Asian and zero or more other races)
+    race_black (Type: FLOAT64; Sample values: ['0.03', '0.03', '0.028', '0.031', '0.038']; Description: The percentage of Googler exits in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.612', '0.593', '0.597', '0.547', '0.474']; Description: The percentage of Googler exits in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['0.006', '0.007', '0.009', '0.006', '0.008']; Description: The percentage of Googler exits in the U.S. who identify as Native American and zero or more other races)
+    report_year (Type: INT64; Sample values: ['2018', '2019', '2020', '2021', '2023']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_region_non_intersectional_attrition_index
+[
+    gender_men (Type: INT64; Sample values: ['118', '111', '106', '105', '104']; Description: The attrition index score of Googlers in the region who are women)
+    gender_women (Type: INT64; Sample values: ['75', '79', '79', '87', '90']; Description: The attrition index score of Googlers in the region who are women)
+    workforce (Type: STRING; Sample values: ['non_tech', 'overall', 'tech', 'tech', 'non_tech']; Description: Overall and sub-categories)
+    region (Type: STRING; Sample values: ['APAC', 'APAC', 'APAC', 'APAC', 'APAC']; Description: Region)
+    report_year (Type: INT64; Sample values: ['2021', '2021', '2021', '2022', '2022']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_region_non_intersectional_exits_representation
+[
+    gender_women (Type: FLOAT64; Sample values: ['0.491', '0.486', '0.485', '0.46', '0.45']; Description: The percentage of Googler exits in the region who are women)
+    gender_men (Type: FLOAT64; Sample values: ['0.509', '0.514', '0.515', '0.54', '0.55']; Description: The percentage of Googler exits in the region who are men)
+    workforce (Type: STRING; Sample values: ['non_tech', 'non_tech', 'non_tech', 'non_tech', 'non_tech']; Description: Overall and sub-categories)
+    region (Type: STRING; Sample values: ['AMERICAS (non-US)', 'APAC', 'EMEA', 'APAC', 'APAC']; Description: Region)
+    report_year (Type: INT64; Sample values: ['2024', '2024', '2024', '2023', '2022']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_intersectional_exits_representation
+[
+    race_hispanic_latinx (Type: FLOAT64; Sample values: ['0.041', '0.049', '0.051', '0.048', '0.033']; Description: The percentage of Googler exits in the U.S. who identify as Hispanic or Latinx and zero or more other races)
+    gender_us (Type: STRING; Sample values: ['women', 'women', 'men', 'women', 'women']; Description: Gender of Googler exits in the U.S.)
+    workforce (Type: STRING; Sample values: ['non_tech', 'non_tech', 'non_tech', 'non_tech', 'non_tech']; Description: Overall and sub-categories)
+    race_asian (Type: FLOAT64; Sample values: ['0.12', '0.12', '0.088', '0.109', '0.125']; Description: The percentage of Googler exits in the U.S. who identify as Asian and zero or more other races)
+    race_black (Type: FLOAT64; Sample values: ['0.069', '0.052', '0.062', '0.042', '0.026']; Description: The percentage of Googler exits in the U.S. who identify as Black and zero or more other races)
+    race_white (Type: FLOAT64; Sample values: ['0.256', '0.268', '0.271', '0.281', '0.29']; Description: The percentage of Googler exits in the U.S. who identify as White and zero or more other races)
+    race_native_american (Type: FLOAT64; Sample values: ['0.007', '0.004', '0.007', '0.01', '0.007']; Description: The percentage of Googler exits in the U.S. who identify as Native American and zero or more other races)
+    report_year (Type: INT64; Sample values: ['2023', '2022', '2024', '2020', '2019']; Description: The year the report was published)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.full_csv-latest-data-is-2023
+[
+    percent_hispanic_or_latino (Type: FLOAT64; Sample values: ['0.137', '0.133', '0.18100000000000002', '0.201', '0.18'])
+    percent_black_or_african_american (Type: FLOAT64; Sample values: ['0.154', '0.148', '0.10800000000000001', '0.196', '0.12'])
+    industry (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    percent_women (Type: FLOAT64; Sample values: ['0.746', '0.743', '0.295', '0.248', '0.47'])
+    percent_asian (Type: FLOAT64; Sample values: ['0.068', '0.067', '0.076', '0.055', '0.66'])
+    industry_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    percent_white (Type: FLOAT64; Sample values: ['0.745', '0.752', '0.784', '0.712', '0.78'])
+    year (Type: INT64; Sample values: ['2022', '2021', '2023', '2021', '2021'])
+    subsector (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    sector (Type: STRING; Sample values: ['Education and health services', 'Education and health services', 'Manufacturing', 'Transportation and utilities', 'Total, 16 years and over'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.google_dei.dar_selfid_representation
+[
+    global (Type: FLOAT64; Sample values: ['0.061', '0.075', '0.054', '0.056', '0.065']; Description: The percentage of global Googlers who identify as being part of the self-identification category (i.e., “workforce” type))
+    workforce (Type: STRING; Sample values: ['selfid_disability', 'selfid_disability', 'selfid_disability', 'selfid_disability', 'selfid_disability']; Description: Self-identification category)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.cpsaat18
+[
+    percent_hispanic_or_latino (Type: FLOAT64; Sample values: ['0.18', '0.18', '0.19', '0.188', '0.24'])
+    percent_black_or_african_american (Type: FLOAT64; Sample values: ['0.12', '0.12', '0.13', '0.128', '0.03'])
+    industry (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    industry_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    sector (Type: STRING; Sample values: ['Total, 16 years and over', 'Total, 16 years and over', 'Total, 16 years and over', 'Total, 16 years and over', 'Agriculture, forestry, fishing, and hunting'])
+    year (Type: INT64; Sample values: ['2020', '2021', '2022', '2023', '2020'])
+    percent_asian (Type: FLOAT64; Sample values: ['0.06', '0.66', '0.07', '0.069', '0.01'])
+    percent_white (Type: FLOAT64; Sample values: ['0.78', '0.78', '0.77', '0.765', '0.92'])
+    percent_women (Type: FLOAT64; Sample values: ['0.47', '0.47', '0.47', '0.469', '0.28'])
+    subsector (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls_qcew.1995_q4
+[
+    lq_month3_emplvl_10_total_all_industries (Type: FLOAT64; Sample values: ['0.79', '0.85', '1.0', '1.02', '1.07']; Description: Employment level location quotient in Total, all industries establishments)
+    lq_month3_emplvl_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['0.98', '0.93', '0.62', '0.85', '0.94']; Description: Employment level location quotient in Other services, except public administration establishments)
+    lq_month3_emplvl_1029_unclassified (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Employment level location quotient in Unclassified establishments)
+    month3_emplvl_81_other_services_except_public_administration (Type: FLOAT64; Sample values: ['379.0', '979.0', '891.0', '1218.0', '1274.0']; Description: Employees in Other services, except public administration establishments)
+    lq_month3_emplvl_1011_natural_resources_and_mining (Type: FLOAT64; Sample values: ['4.67', '0.35', '0.7', '0.68', '0.83']; Description: Employment level location quotient in Natural resources and mining establishments)
+    lq_month3_emplvl_1027_other_services (Type: FLOAT64; Sample values: ['0.98', '0.93', '0.62', '0.85', '0.94']; Description: Employment level location quotient in Other services establishments)
+    lq_month3_emplvl_53_real_estate_and_rental_and_leasing (Type: FLOAT64; Sample values: ['0.77', '0.71', '0.36', '2.98', '0.77']; Description: Employment level location quotient in Real estate and rental and leasing establishments)
+    lq_qtrly_estabs_10_total_all_industries (Type: FLOAT64; Sample values: ['0.94', '1.0', '0.98', '1.02', '1.01']; Description: Location quotient of establishments in Total, all industries)
+    lq_month3_emplvl_51_information (Type: FLOAT64; Sample values: ['0.61', '0.66', '0.22', '0.24', '0.92']; Description: Employment level location quotient in Information establishments)
+    lq_month3_emplvl_1022_information (Type: FLOAT64; Sample values: ['0.61', '0.66', '0.22', '0.24', '0.92']; Description: Employment level location quotient in Information establishments)
+]
+**Some other tables have the similar structure: [2012_q1, 2002_q3, 1990_q4, 2008_q2, 1999_q2, 1992_q1, 2016_q4, 1996_q4, 2009_q1, 2013_q4, 2008_q1, 2009_q3, 2008_q3, 1997_q3, 2011_q2, 2014_q2, 2003_q4, 2007_q2, 2015_q3, 1993_q1, 1999_q3, 2009_q4, 2015_q2, 1994_q3, 2014_q1, 1993_q2, 2007_q4, 2017_q4, 2015_q4, 2012_q3, 2005_q3, 2002_q1, 2018_q3, 2000_q2, 1991_q4, 1999_q1, 2002_q4, 1996_q3, 2013_q2, 1997_q4, 2003_q1, 2015_q1, 2004_q2, 2004_q4, 2009_q2, 1998_q4, 2005_q2, 2006_q3, 2017_q2, 2016_q2, 1992_q3, 2005_q1, 1995_q3, 1991_q1, 2000_q1, 2011_q1, 2019_q2, 2007_q3, 2018_q2, 2010_q1, 1995_q2, 1991_q2, 1993_q3, 1996_q1, 1990_q1, 2016_q1, 2006_q1, 2010_q4, 1990_q2, 2013_q1, 1992_q4, 2005_q4, 1997_q2, 2001_q1, 2010_q2, 2006_q2, 1994_q1, 2003_q3, 2017_q3, 1992_q2, 1998_q1, 1997_q1, 2002_q2, 1995_q1, 2018_q4, 2008_q4, 2004_q3, 2000_q4, 1998_q3, 2001_q4, 1990_q3, 2011_q3, 2004_q1, 2016_q3, 1993_q4, 2003_q2, 2012_q4, 2018_q1, 2007_q1, 1991_q3, 2006_q4, 2001_q2, 1994_q4, 1999_q4, 2012_q2, 2013_q3, 2010_q3, 1998_q2, 2019_q1, 1994_q2, 2014_q3, 2017_q1, 2014_q4, 2000_q3, 1996_q2, 2001_q3, 2011_q4]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.wm_series
+[
+    industry_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    datatype_code (Type: INT64; Sample values: ['30', '30', '30', '30', '30'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.unemployment_cps
+[
+    value (Type: FLOAT64; Sample values: ['44200.0', '57.6', '40230.0', '55250.0', '45550.0'])
+    series_id (Type: STRING; Sample values: ['LNU05023554', 'LNU02323554', 'LNU05023554', 'LNU02023554', 'LNU05023554'])
+    year (Type: INT64; Sample values: ['1940', '1943', '1945', '1946', '1946'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.unemployment_cps_series
+[
+    race_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    sexs_code (Type: INT64; Sample values: ['0', '0', '1', '1', '2'])
+    mari_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    class_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    orig_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    look_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    disa_code (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.wm
+[
+    value (Type: FLOAT64; Sample values: ['8.55', '8.55', '8.56', '8.59', '8.6'])
+    year (Type: INT64; Sample values: ['2020', '2020', '2020', '2020', '2020'])
+    period (Type: STRING; Sample values: ['A01', 'A01', 'A01', 'A01', 'A01'])
+    series_id (Type: STRING; Sample values: ['WMU00217801020000003530310001', 'WMU00217801020000003530312601', 'WMU37000031020000003530312601', 'WMU37000031020000003530310001', 'WMU55000001020000003530310001'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.cpi_u
+[
+    item_name (Type: STRING; Sample values: ['All items', 'All items', 'All items', 'All items', 'All items'])
+    value (Type: FLOAT64; Sample values: ['159.4', '159.7', '159.8', '159.9', '159.9'])
+    item_code (Type: STRING; Sample values: ['SA0', 'SA0', 'SA0', 'SA0', 'SA0'])
+    year (Type: INT64; Sample values: ['1997', '1997', '1997', '1997', '1997'])
+    series_id (Type: STRING; Sample values: ['CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0', 'CUSR0000SA0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.employment_hours_earnings_series
+[
+    industry_code (Type: INT64; Sample values: ['0', '0', '0', '0', '5000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.bls.c_cpi_u
+[
+    item_code (Type: STRING; Sample values: ['SA0', 'SA0', 'SA0', 'SA0', 'SA0'])
+    item_name (Type: STRING; Sample values: ['All items', 'All items', 'All items', 'All items', 'All items'])
+    value (Type: FLOAT64; Sample values: ['100.0', '100.3', '100.9', '101.6', '101.6'])
+    year (Type: INT64; Sample values: ['1999', '2000', '2000', '2000', '2000'])
+]
+
+--------------------------------------------------
+

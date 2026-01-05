@@ -1,0 +1,30 @@
+###Table full name: bigquery-public-data.iowa_liquor_sales.sales
+[
+    category (Type: STRING; Sample values: ['1081500.0', '1031100', '1011200.0', '1031100.0', '1901000.0']; Description: Category code associated with the liquor ordered)
+    state_bottle_retail (Type: FLOAT64; Sample values: ['3.2', '15.0', '25.5', '28.5', '22.49']; Description: The amount the store paid for each bottle of liquor ordered)
+    date (Type: DATE; Sample values: ['2023-08-18', '2023-11-07', '2024-05-09', '2023-07-12', '2023-07-19']; Description: Date of order)
+    state_bottle_cost (Type: FLOAT64; Sample values: ['2.13', '10.0', '17.0', '19.0', '14.99']; Description: The amount that Alcoholic Beverages Division paid for each bottle of liquor ordered)
+    sale_dollars (Type: FLOAT64; Sample values: ['-192.0', '-540.0', '-306.0', '-342.0', '-269.88']; Description: Total cost of liquor order (number of bottles multiplied by the state bottle retail))
+    category_name (Type: STRING; Sample values: ['TRIPLE SEC', 'AMERICAN VODKAS', 'STRAIGHT BOURBON WHISKIES', 'AMERICAN VODKAS', 'SPECIAL ORDER ITEMS']; Description: Category of the liquor ordered.)
+    volume_sold_liters (Type: FLOAT64; Sample values: ['-60.0', '-27.0', '-21.0', '-21.0', '-21.0']; Description: Total volume of liquor ordered in liters. (i.e. (Bottle Volume (ml) x Bottles Sold)/1,000)")
+    county (Type: STRING; Sample values: ['WASHINGTON', 'SCOTT', 'BLACK HAWK', 'UNION', 'POWESHIEK']; Description: County where the store who ordered the liquor is located)
+    volume_sold_gallons (Type: FLOAT64; Sample values: ['-15.85', '-7.13', '-5.54', '-5.54', '-5.54']; Description: Total volume of liquor ordered in gallons. (i.e. (Bottle Volume (ml) x Bottles Sold)/3785.411784)")
+    bottles_sold (Type: INT64; Sample values: ['-60', '-36', '-12', '-12', '-12']; Description: The number of bottles of liquor ordered by the store)
+    county_number (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Iowa county number for the county where store who ordered the liquor is located)
+    pack (Type: INT64; Sample values: ['12', '12', '6', '6', '6']; Description: The number of bottles in a case for the liquor ordered)
+    zip_code (Type: STRING; Sample values: ['52353.0', '52722.0', '50702.0', '50801.0', '50171.0']; Description: Zip code where the store who ordered the liquor is located)
+    city (Type: STRING; Sample values: ['WASHINGTON', 'BETTENDORF', 'WATERLOO', 'CRESTON', 'MONTEZUMA']; Description: City where the store who ordered the liquor is located)
+    item_number (Type: STRING; Sample values: ['86390', '38176', '17958', '38178', '903707']; Description: Item number for the individual liquor product ordered.)
+    store_number (Type: STRING; Sample values: ['3525', '2603', '3494', '3830', '3712']; Description: Unique number assigned to the store who ordered the liquor.)
+    bottle_volume_ml (Type: INT64; Sample values: ['1000', '750', '1750', '1750', '1750']; Description: Volume of each liquor bottle ordered in milliliters.)
+    store_location (Type: GEOGRAPHY; Sample values: ['POINT(-91.692147959 41.300652)', 'POINT(-90.483805647 41.55235808)', 'POINT(-92.352287039 42.454405004)', 'POINT(-94.372769023 41.045432981)', 'POINT(-92.523602876 41.585489221)']; Description: Location of store who ordered the liquor. The Address, City, State and Zip Code are geocoded to provide geographic coordinates. Accuracy of geocoding is dependent on how well the address is interpreted and the completeness of the reference data used.)
+    invoice_and_item_number (Type: STRING; Sample values: ['RINV-04809400053', 'RINV-04944900248', 'RINV-05252100041', 'RINV-04746700044', 'RINV-04758800043']; Description: Concatenated invoice and line number associated with the liquor order. This provides a unique identifier for the individual liquor products included in the store order.)
+    vendor_number (Type: STRING; Sample values: ['421', '301', '259', '301', '421']; Description: The vendor number of the company for the brand of liquor ordered)
+    store_name (Type: STRING; Sample values: ['WINES AND SPIRITS / WASHINGTON', 'HY-VEE WINE AND SPIRITS / BETTENDORF', "SAM'S CLUB 6514 / WATERLOO", 'WAL-MART 1435 / CRESTON', 'MONTE SPIRITS']; Description: Name of store who ordered the liquor.)
+    item_description (Type: STRING; Sample values: ['MONTEZUMA TRIPLE SEC', 'TITOS HANDMADE VODKA', 'EVAN WILLIAMS BLACK', 'TITOS HANDMADE VODKA', 'SOOH WISERS DELUXE']; Description: Description of the individual liquor product ordered.)
+    vendor_name (Type: STRING; Sample values: ['SAZERAC COMPANY  INC', 'FIFTH GENERATION INC', 'HEAVEN HILL BRANDS', 'FIFTH GENERATION INC', 'SAZERAC COMPANY  INC']; Description: The vendor name of the company for the brand of liquor ordered)
+    address (Type: STRING; Sample values: ['106 W 2ND ST', '2890 DEVILS GLEN ROAD', '210 EAST TOWER PARK DR', '806 LAUREL ST', '109 N 4TH ST']; Description: Address of store who ordered the liquor.)
+]
+
+--------------------------------------------------
+

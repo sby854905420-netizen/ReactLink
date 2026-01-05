@@ -1,0 +1,387 @@
+###Table full name: bigquery-public-data.noaa_gsod.gsod1973
+[
+    gust (Type: FLOAT64; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Maximum wind gust reported for the day in knots to tenths. Missing = 999.9)
+    mxpsd (Type: STRING; Sample values: ['3.9', '3.9', '5.8', '15.5', '5.8']; Description: Maximum sustained wind speed reported for the day in knots to tenths. Missing = 999.9)
+    wdsp (Type: STRING; Sample values: ['1.5', '1.9', '1.9', '11.2', '3.9']; Description: Mean wind speed for the day in knots to tenths. Missing = 999.9)
+    max (Type: FLOAT64; Sample values: ['6.8', '23.0', '8.6', '24.8', '28.4']; Description: Maximum temperature reported during the day in Fahrenheit to tenths--time of max temp report varies by country and region, so this will sometimes not be the max for the calendar day. Missing = 9999.9)
+    thunder (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    min (Type: FLOAT64; Sample values: ['-0.4', '-4.0', '1.4', '17.6', '14.0']; Description: Minimum temperature reported during the day in Fahrenheit to tenths--time of min temp report varies by country and region, so this will sometimes not be the min for the calendar day. Missing = 9999.9)
+    count_wdsp (Type: STRING; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean wind speed)
+    temp (Type: FLOAT64; Sample values: ['2.3', '19.4', '5.9', '22.1', '20.3']; Description: Mean temperature for the day in degrees Fahrenheit to tenths. Missing = 9999.9)
+    fog (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    stp (Type: FLOAT64; Sample values: ['9999.9', '9999.9', '9999.9', '9999.9', '9999.9']; Description: Mean station pressure for the day in millibars to tenths. Missing = 9999.9)
+    hail (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    flag_prcp (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A = 1 report of 6-hour precipitation amount)
+    flag_max (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates max temp was taken from the explicit max temp report and not from the 'hourly' data.)
+    visib (Type: FLOAT64; Sample values: ['8.4', '21.6', '6.8', '16.3', '19.3']; Description: Mean visibility for the day in miles to tenths.  Missing = 999.9)
+    flag_min (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates min temp was taken from the explicit min temp report and not from the 'hourly' data.)
+    sndp (Type: FLOAT64; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Snow depth in inches to tenths--last report for the day if reported more thanonce. Missing = 999.9)
+    dewp (Type: FLOAT64; Sample values: ['-2.7', '12.2', '1.4', '9.5', '15.3']; Description: Mean dew point for the day in degreesm Fahrenheit to tenths.  Missing = 9999.9)
+    date (Type: DATE; Sample values: ['', '', '', '', '']; Description: Date of the weather observations)
+    snow_ice_pellets (Type: STRING; Sample values: ['1', '1', '1', '1', '1']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    slp (Type: FLOAT64; Sample values: ['1018.2', '1014.7', '996.5', '1002.4', '1012.4']; Description: Mean sea level pressure for the day in millibars to tenths. Missing = 9999.9)
+    da (Type: STRING; Sample values: ['08', '02', '01', '08', '11']; Description: The day)
+    stn (Type: STRING; Sample values: ['317980', '305990', '320570', '321160', '321330']; Description: Station number (WMO/DATSAV3 number) for the location)
+    tornado_funnel_cloud (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    count_temp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean temperature)
+    wban (Type: STRING; Sample values: ['99999', '99999', '99999', '99999', '99999']; Description: WBAN number where applicable--this is the historical "Weather Bureau Air Force Navy" number - with WBAN being the acronym)
+    prcp (Type: FLOAT64; Sample values: ['99.99', '99.99', '99.99', '99.99', '99.99']; Description: Total precipitation (rain and/or melted snow) reported during the day in inches and hundredths; will usually not end with the midnight observation--i.e., may include latter part of previous day.)
+    count_stp (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of observations used in calculating mean station pressure)
+    rain_drizzle (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    count_dewp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean dew point)
+    count_slp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean sea level pressure)
+    count_visib (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean visibility)
+    mo (Type: STRING; Sample values: ['12', '11', '12', '12', '12']; Description: The month)
+    year (Type: STRING; Sample values: ['1973', '1973', '1973', '1973', '1973']; Description: The year)
+]
+**Some other tables have the similar structure: [gsod1938, gsod2020, gsod1945, gsod1948, gsod1949, gsod1983, gsod1998, gsod1930, gsod1995, gsod1960, gsod1987, gsod1975, gsod1992, gsod1954, gsod1990, gsod2019, gsod1977, gsod1964, gsod1970, gsod1969, gsod2003, gsod1951, gsod1937, gsod1952, gsod1997, gsod1984, gsod2008, gsod1953, gsod1940, gsod2004, gsod1955, gsod2011, gsod1959, gsod1947, gsod1974, gsod2015, gsod1993, gsod2007, gsod2002, gsod1944, gsod2023, gsod1999, gsod2024, gsod1932, gsod1965, gsod1939, gsod1982, gsod1968, gsod1946, gsod2005, gsod2010, gsod1931, gsod2018, gsod2012, gsod1956, gsod1941, gsod1979, gsod2017, gsod1935, gsod1961, gsod2014, gsod1991, gsod1958, gsod2000, gsod2009, gsod2013, gsod1989, gsod1933, gsod1996, gsod1985, gsod1980, gsod2006, gsod1988, gsod2001, gsod1971, gsod1934, gsod1936, gsod1929, gsod1981, gsod1972, gsod2021, gsod1986, gsod1967, gsod1978, gsod1963, gsod1942, gsod1966, gsod1950, gsod1943, gsod2016, gsod1957, gsod1994, gsod1976, gsod1962, gsod2022]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.311_service_requests
+[
+    complaint_type (Type: STRING; Sample values: ['Homeless Person Assistance', 'Homeless Encampment', 'Encampment', 'Encampment', 'Encampment'])
+    latitude (Type: FLOAT64; Sample values: ['40.73779442489342', 'nan', '40.7350657642674', 'nan', '40.742452245537685'])
+    status (Type: STRING; Sample values: ['Closed', 'Closed', 'Closed', 'Closed', 'Closed'])
+    location_type (Type: STRING; Sample values: ['Subway', 'Street/Sidewalk', 'Subway', 'Bridge', 'Subway'])
+    landmark (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    location (Type: STRING; Sample values: ['(40.73779442489342, -73.99773386344371)', 'None', '(40.7350657642674, -73.99041983091914)', 'None', '(40.742452245537685, -73.88201910140538)'])
+    longitude (Type: FLOAT64; Sample values: ['-73.99773386344371', 'nan', '-73.99041983091914', 'nan', '-73.88201910140538'])
+    x_coordinate (Type: INT64; Sample values: ['984878', 'None', '986905', 'None', '1016943'])
+    y_coordinate (Type: INT64; Sample values: ['208075', 'None', '207081', 'None', '209794'])
+    descriptor (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    city (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    facility_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    incident_zip (Type: STRING; Sample values: ['None', '10011', 'None', 'None', 'None'])
+    vehicle_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    intersection_street_2 (Type: STRING; Sample values: ['None', '6 AVENUE', 'None', 'None', 'None'])
+    bbl (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    agency (Type: STRING; Sample values: ['DHS', 'NYPD', 'NYPD', 'DHS', 'NYPD'])
+    address_type (Type: STRING; Sample values: ['ADDRESS', 'None', 'None', 'None', 'None'])
+    intersection_street_1 (Type: STRING; Sample values: ['None', '5 AVENUE', 'None', 'None', 'None'])
+    cross_street_2 (Type: STRING; Sample values: ['None', '6 AVENUE', 'None', 'None', 'None'])
+    incident_address (Type: STRING; Sample values: ['None', 'WEST   15 STREET', 'None', 'None', 'None'])
+    cross_street_1 (Type: STRING; Sample values: ['None', '5 AVENUE', 'None', 'None', 'None'])
+    agency_name (Type: STRING; Sample values: ['Department of Homeless Services', 'New York City Police Department', 'New York City Police Department', 'Department of Homeless Services', 'New York City Police Department'])
+    unique_key (Type: INT64; Sample values: ['52528578', '44228236', '53578035', '52161622', '51523512'])
+    resolution_description (Type: STRING; Sample values: ['The Department of Homeless Services has sent a mobile outreach response team to the location.', 'The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.', 'The Police Department visited the location and no Encampment was found.', 'The Department of Homeless Services (DHS) visited the location and is coordinating with their agency partners to address the condition. No further information will be available with 311.', 'The Police Department visited the location and no Encampment was found.'])
+    due_date (Type: TIMESTAMP; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT'])
+    street_name (Type: STRING; Sample values: ['None', 'WEST   15 STREET', 'None', 'None', 'None'])
+    park_facility_name (Type: STRING; Sample values: ['Unspecified', 'Unspecified', 'Unspecified', 'Unspecified', 'Unspecified'])
+    bridge_highway_name (Type: STRING; Sample values: ['F', 'None', '4', 'Manhattan Br', 'R'])
+    bridge_highway_direction (Type: STRING; Sample values: ['F M Uptown & Queens', 'None', '4 5 6 Uptown & The Bronx', 'Manhattan Bound', 'M R to Forest Hills'])
+    bridge_highway_segment (Type: STRING; Sample values: ['Platform', 'None', 'Platform', 'Roadway', 'Platform'])
+    open_data_channel_type (Type: STRING; Sample values: ['MOBILE', 'PHONE', 'MOBILE', 'ONLINE', 'MOBILE'])
+    created_date (Type: TIMESTAMP; Sample values: ['2021-11-15 03:44:35+00:00', '2019-11-04 14:20:06+00:00', '2022-03-06 15:02:29+00:00', '2021-10-12 09:33:23+00:00', '2021-08-14 04:26:34+00:00'])
+    closed_date (Type: TIMESTAMP; Sample values: ['2021-11-22 19:32:48+00:00', '2019-11-04 18:15:43+00:00', '2022-03-06 15:15:53+00:00', '2021-10-18 11:49:08+00:00', '2021-08-14 10:16:25+00:00'])
+    resolution_action_updated_date (Type: TIMESTAMP; Sample values: ['2021-11-15 04:44:17+00:00', '2019-11-04 18:15:55+00:00', '2022-03-06 15:15:57+00:00', '2021-10-18 11:49:12+00:00', '2021-08-14 10:16:29+00:00'])
+    borough (Type: STRING; Sample values: ['MANHATTAN', 'MANHATTAN', 'MANHATTAN', 'MANHATTAN', 'QUEENS'])
+    road_ramp (Type: STRING; Sample values: ['None', 'None', 'None', 'Roadway', 'None'])
+    taxi_pickup_location (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    park_borough (Type: STRING; Sample values: ['MANHATTAN', 'MANHATTAN', 'MANHATTAN', 'MANHATTAN', 'QUEENS'])
+    taxi_company_borough (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    community_board (Type: STRING; Sample values: ['Unspecified MANHATTAN', 'Unspecified MANHATTAN', 'Unspecified MANHATTAN', 'Unspecified MANHATTAN', 'Unspecified QUEENS'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.citibike_stations
+[
+    last_reported (Type: TIMESTAMP; Sample values: ['1970-01-02 00:00:00+00:00', '1970-01-02 00:00:00+00:00', '1970-01-02 00:00:00+00:00', '1970-01-02 00:00:00+00:00', '1970-01-02 00:00:00+00:00']; Description: Timestamp indicating the last time this station reported its status to the backend, in NYC local time.)
+    latitude (Type: FLOAT64; Sample values: ['40.76269882', '40.78524672', '40.7647', '40.730563', '40.71687']; Description: The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format.)
+    capacity (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: ANumber of total docking points installed at this station, both available and unavailable.)
+    name (Type: STRING; Sample values: ['W 47 St & 10 Ave', 'Amsterdam Ave & W 82 St', '31 Ave & 30 St', 'Avenue C & E 18 St', 'Columbus Dr at Exchange Pl']; Description: Public name of the station.)
+    longitude (Type: FLOAT64; Sample values: ['-73.99301222', '-73.97667321', '-73.9240312', '-73.973984', '-74.03281']; Description: The longitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format.)
+    station_id (Type: STRING; Sample values: ['495', '3171', '3603', '3733', '3792']; Description: Unique identifier of a station.)
+    short_name (Type: STRING; Sample values: ['6824.07', '7360.10', '6857.09', '5769.04', 'JC106']; Description: Short name or other type of identifier, as used by the data publisher.)
+    region_id (Type: INT64; Sample values: ['71', '71', '71', '71', '70']; Description: ID of the region where station is located.)
+    eightd_has_available_keys (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    is_installed (Type: BOOL; Sample values: ['True', 'False', 'False', 'False', 'False']; Description: Is the station currently on the street?)
+    eightd_has_key_dispenser (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    num_docks_disabled (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of empty but disabled dock points at the station.)
+    num_bikes_disabled (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of disabled bikes at the station.)
+    is_renting (Type: BOOL; Sample values: ['True', 'False', 'False', 'False', 'False']; Description: Is the station currently renting bikes?)
+    rental_methods (Type: STRING; Sample values: ['KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD']; Description: Array of enumerables containing the payment methods accepted at this station.)
+    num_bikes_available (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of bikes available for rental.)
+    num_docks_available (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of docks accepting bike returns.)
+    is_returning (Type: BOOL; Sample values: ['True', 'False', 'False', 'False', 'False']; Description: Is the station accepting bike returns?)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.stations
+[
+    end (Type: STRING; Sample values: ['20130730', '20170822', '20150926', '20120323', '20100421'])
+    name (Type: STRING; Sample values: ['WXPOD 7018                   ', 'WXPOD 7026                   ', 'WXPOD 7070                   ', 'WXPOD8278                    ', 'WXPOD 8318                   '])
+    call (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    wban (Type: STRING; Sample values: ['99999', '99999', '99999', '99999', '99999'])
+    usaf (Type: STRING; Sample values: ['007018', '007026', '007070', '008268', '008307'])
+    begin (Type: STRING; Sample values: ['20110309', '20120713', '20140923', '20100519', '20100421'])
+    country (Type: STRING; Sample values: ['None', 'AF', 'AF', 'AF', 'AF'])
+    lon (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '65.567', '0.0'])
+    elev (Type: STRING; Sample values: ['+7018.0', '+7026.0', '+7070.0', '+1156.7', '+8318.0'])
+    lat (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '32.95', '0.0'])
+    state (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tlc_green_trips_2014
+[
+    rate_code (Type: INT64; Sample values: ['5', '5', '5', '5', '5']; Description: The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride)
+    extra (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges)
+    trip_type (Type: INT64; Sample values: ['2', 'None', '2', 'None', '2']; Description: A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch)
+    time_between_service (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    dropoff_latitude (Type: FLOAT64; Sample values: ['40.74329376220703', '40.862796783447266', '40.7966423034668', '40.751991271972656', '40.746734619140625']; Description: Latitude where the meter was timed off.)
+    distance_between_service (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    vendor_id (Type: STRING; Sample values: ['1', '1', '1', '1', '1']; Description: A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc.)
+    pickup_latitude (Type: FLOAT64; Sample values: ['40.74329376220703', '40.841575622558594', '40.784610748291016', '40.751983642578125', '40.746734619140625']; Description: Latitude where the meter was engaged)
+    dropoff_longitude (Type: FLOAT64; Sample values: ['-74.03489685058594', '-73.9043960571289', '-73.9366226196289', '-73.86698150634766', '-73.89276123046875']; Description: Longitude where the meter was timed off)
+    pickup_longitude (Type: FLOAT64; Sample values: ['-74.03489685058594', '-73.88511657714844', '-73.94544219970703', '-73.86698150634766', '-73.89276123046875']; Description: Longitude where the meter was engaged.)
+    dropoff_datetime (Type: TIMESTAMP; Sample values: ['2014-06-20 23:03:50+00:00', '2014-01-18 16:48:50+00:00', '2014-07-09 05:04:47+00:00', '2014-02-02 20:50:14+00:00', '2014-07-05 21:22:31+00:00']; Description: The date and time when the meter was disengaged.)
+    trip_distance (Type: FLOAT64; Sample values: ['6.9', '2.5', '1.1', '3.8', '5.4']; Description: The elapsed trip distance in miles reported by the taximeter)
+    ehail_fee (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    pickup_datetime (Type: TIMESTAMP; Sample values: ['2014-06-20 23:03:13+00:00', '2014-01-18 16:34:47+00:00', '2014-07-09 04:59:47+00:00', '2014-02-02 20:49:50+00:00', '2014-07-05 21:22:15+00:00']; Description: The date and time when the meter was engaged)
+    store_and_fwd_flag (Type: STRING; Sample values: ['N', 'N', 'Y', 'N', 'N']; Description: This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka “store and forward,” because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip)
+    passenger_count (Type: INT64; Sample values: ['1', '1', '1', '2', '1']; Description: The number of passengers in the vehicle. This is a driver-entered value.)
+    payment_type (Type: INT64; Sample values: ['4', '2', '2', '3', '2']; Description: A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip)
+    fare_amount (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: The time-and-distance fare calculated by the meter.)
+    imp_surcharge (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: $0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015)
+    mta_tax (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: $0.50 MTA tax that is automatically triggered based on the metered rate in use)
+]
+**Some other tables have the similar structure: [tlc_green_trips_2016, tlc_green_trips_2015, tlc_green_trips_2013]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tree_census_2015
+[
+    problems (Type: STRING; Sample values: ['', '', '', '', ''])
+    x_sp (Type: FLOAT64; Sample values: ['994430.5974', '992863.5612', '1007306.261', '1007646.837', '1005067.616']; Description: X coordinate, in state plane. Units are feet.)
+    latitude (Type: FLOAT64; Sample values: ['40.77784648', '40.77009288', '40.74920717', '40.74893152', '40.74041546']; Description: Latitude of point, in decimal degrees)
+    y_sp (Type: FLOAT64; Sample values: ['222669.4113', '219843.9081', '212243.983', '212143.8825', '209038.8579']; Description: Y coordinate, in state plane. Units are feet)
+    status (Type: STRING; Sample values: ['Dead', 'Dead', 'Dead', 'Dead', 'Dead']; Description: Indicates whether the tree is alive, standing dead, or a stump.)
+    tree_id (Type: INT64; Sample values: ['242259', '407391', '216053', '372922', '29179']; Description: Unique identification number for each tree point)
+    block_id (Type: INT64; Sample values: ['111782', '111770', '304155', '304138', '303241']; Description: Identifier linking each tree to the block in the blockface table/shapefile that it is mapped on.)
+    sidewalk (Type: STRING; Sample values: ['', '', '', '', '']; Description: Indicates whether one of the sidewalk flags immediately adjacent to the tree was damaged, cracked, or lifted. Not recorded for dead trees and stumps.)
+    zipcode (Type: INT64; Sample values: ['83', '83', '11104', '11104', '11104']; Description: Five-digit zipcode in which tree is located)
+    borocode (Type: INT64; Sample values: ['1', '1', '4', '4', '4']; Description: Code for borough in which tree point is located)
+    boroname (Type: STRING; Sample values: ['Manhattan', 'Manhattan', 'Queens', 'Queens', 'Queens']; Description: Name of borough in which tree point is located)
+    nta_name (Type: STRING; Sample values: ['Upper East Side-Carnegie Hill', 'Upper East Side-Carnegie Hill', 'Hunters Point-Sunnyside-West Maspeth', 'Hunters Point-Sunnyside-West Maspeth', 'Hunters Point-Sunnyside-West Maspeth']; Description: This is the NTA name corresponding to the neighborhood tabulation area from the 2010 US Census that the tree point falls into.)
+    longitude (Type: FLOAT64; Sample values: ['-73.96324124', '-73.96890291', '-73.91678727', '-73.91555844', '-73.92487671']; Description: Longitude of point, in decimal degrees)
+    created_at (Type: DATE; Sample values: ['2015-09-20', '2015-10-31', '2015-09-11', '2015-10-24', '2015-06-22']; Description: The date tree points were collected in the census software)
+    address (Type: STRING; Sample values: ['991 5 AVENUE', '871 5 AVENUE', '46-020 39 AVENUE', '39-003 GOSMAN AVENUE', '47-051 40 STREET']; Description: Nearest estimated address to tree)
+    state (Type: STRING; Sample values: ['New York', 'New York', 'New York', 'New York', 'New York']; Description: All features given value 'New York')
+    health (Type: STRING; Sample values: ['', '', '', '', '']; Description: Indicates the user's perception of tree health.)
+    brch_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of other branch problems)
+    root_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of other root problems)
+    spc_common (Type: STRING; Sample values: ['', '', '', '', '']; Description: Common name for species, e.g. "red maple")
+    st_senate (Type: INT64; Sample values: ['29', '29', '12', '12', '12']; Description: State Senate District in which tree point is located)
+    brch_shoe (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a branch problem caused by sneakers in the branches)
+    root_grate (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a root problem caused by metal grates in tree bed)
+    root_stone (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a root problem caused by paving stones in tree bed)
+    trnk_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of other trunk problems)
+    tree_dbh (Type: INT64; Sample values: ['5', '4', '8', '5', '5']; Description: Diameter of the tree, measured at approximately 54" / 137cm above the ground.)
+    nta (Type: STRING; Sample values: ['MN40', 'MN40', 'QN31', 'QN31', 'QN31']; Description: This is the NTA Code corresponding to the neighborhood tabulation area from the 2010 US Census that the tree point falls into.)
+    st_assem (Type: INT64; Sample values: ['69', '75', '37', '30', '37']; Description: State Assembly District in which tree point is located)
+    spc_latin (Type: STRING; Sample values: ['', '', '', '', '']; Description: Scientific name for species, e.g. "Acer rubrum")
+    steward (Type: STRING; Sample values: ['', '', '', '', '']; Description: Indicates the number of unique signs of stewardship observed for this tree. Not recorded for stumps or dead trees.)
+    brch_light (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a branch problem caused by lights (usually string lights) or wires in the branches)
+    boro_ct (Type: INT64; Sample values: ['1014300', '1014300', '4016900', '4016900', '4018502']; Description: This is the boro_ct identifyer for the census tract that the tree point falls into.)
+    trnk_light (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a trunk problem caused by lighting installed on the tree)
+    cncldist (Type: INT64; Sample values: ['6', '6', '26', '26', '26']; Description: Council district in which tree point is located)
+    cb_num (Type: INT64; Sample values: ['108', '108', '402', '402', '402']; Description: Community board in which tree point is located)
+    zip_city (Type: STRING; Sample values: ['Central Park', 'Central Park', 'Sunnyside', 'Sunnyside', 'Sunnyside']; Description: City as derived from zipcode. This is often (but not always) the same as borough.)
+    trunk_wire (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of a trunk problem caused by wires or rope wrapped around the trunk)
+    user_type (Type: STRING; Sample values: ['Volunteer', 'Volunteer', 'Volunteer', 'Volunteer', 'Volunteer']; Description: This field describes the category of user who collected this tree point's data.)
+    guards (Type: STRING; Sample values: ['', '', '', '', '']; Description: Indicates whether a guard is present, and if the user felt it was a helpful or harmful guard. Not recorded for dead trees and stumps)
+    curb_loc (Type: STRING; Sample values: ['OffsetFromCurb', 'OffsetFromCurb', 'OnCurb', 'OnCurb', 'OnCurb']; Description: Location of tree bed in relationship to the curb; trees are either along the curb (OnCurb) or offset from the curb (OffsetFromCurb))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tlc_yellow_trips_2010
+[
+    rate_code (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride)
+    extra (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges.)
+    vendor_id (Type: STRING; Sample values: ['CMT', 'CMT', 'CMT', 'CMT', 'CMT']; Description: A code indicating the TPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc)
+    pickup_latitude (Type: FLOAT64; Sample values: ['40.76072', '40.769465', '40.644175', '40.761368', '40.760183']; Description: Latitude where the meter was engaged)
+    dropoff_latitude (Type: FLOAT64; Sample values: ['40.720758', '40.704124', '40.755511', '40.761368', '40.762841']; Description: Latitude where the meter was disengaged.)
+    dropoff_longitude (Type: FLOAT64; Sample values: ['-73.981036', '-73.933746', '-73.981941', '-73.995773', '-73.982599']; Description: Longitude where the meter was disengaged.)
+    pickup_longitude (Type: FLOAT64; Sample values: ['-73.958222', '-73.992009', '-73.789342', '-73.995773', '-73.979939']; Description: Longitude where the meter was engaged.)
+    dropoff_datetime (Type: TIMESTAMP; Sample values: ['2010-02-16 09:44:33+00:00', '2010-02-20 00:49:20+00:00', '2010-02-23 12:42:12+00:00', '2010-02-16 13:17:47+00:00', '2010-02-01 13:53:24+00:00']; Description: The date and time when the meter was disengaged.)
+    pickup_datetime (Type: TIMESTAMP; Sample values: ['2010-02-16 07:51:56+00:00', '2010-02-20 00:17:34+00:00', '2010-02-23 11:51:51+00:00', '2010-02-16 13:17:44+00:00', '2010-02-01 13:49:39+00:00']; Description: The date and time when the meter was engaged.)
+    payment_type (Type: STRING; Sample values: ['NA', 'NA', 'NA', 'NA', 'NA']; Description: A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip)
+    store_and_fwd_flag (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka “store and forward,” because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip)
+    trip_distance (Type: FLOAT64; Sample values: ['244.8', '8.2', '18.5', '0.0', '0.3']; Description: The elapsed trip distance in miles reported by the taximeter.)
+    passenger_count (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: The number of passengers in the vehicle. This is a driver-entered value)
+    fare_amount (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: The time-and-distance fare calculated by the meter.)
+]
+**Some other tables have the similar structure: [tlc_yellow_trips_2009, tlc_yellow_trips_2013, tlc_yellow_trips_2012, tlc_yellow_trips_2016, tlc_yellow_trips_2014, tlc_yellow_trips_2015, tlc_yellow_trips_2011]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tree_census_1995
+[
+    status (Type: STRING; Sample values: ['Poor', 'Good', 'Good', 'Good', 'Good'])
+    latitude (Type: FLOAT64; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    x (Type: FLOAT64; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    recordid (Type: INT64; Sample values: ['21111', '21116', '3219', '32660', '32661'])
+    sidewalk_condition (Type: STRING; Sample values: ['Good', 'Good', 'Good', 'Good', 'Good'])
+    segmentid (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    location (Type: STRING; Sample values: ['(1.0, 1.0)', '(1.0, 1.0)', '(1.0, 1.0)', '(1.0, 1.0)', '(1.0, 1.0)'])
+    longitude (Type: FLOAT64; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    site (Type: STRING; Sample values: ['Across', 'Across', 'Across', 'Across', 'Across'])
+    address (Type: STRING; Sample values: ['700 W 123 ST', '700 W 123 ST', '53-054 WASHINGTON SQ W', '870/860 1 AV', '870/860 1 AV'])
+    y (Type: FLOAT64; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    diameter (Type: INT64; Sample values: ['15', '13', '7', '11', '11'])
+    wires (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    nta_2010 (Type: STRING; Sample values: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown'])
+    cb_new (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    zip_new (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    support_structure (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    street (Type: STRING; Sample values: ['W 123 ST', 'W 123 ST', 'WASHINGTON SQ W', '1 AV', '1 AV'])
+    spc_common (Type: STRING; Sample values: ['OAK, PIN', 'OAK, PIN', 'OAK, PIN', 'OAK, WILLOW', 'OAK, WILLOW'])
+    house_number (Type: STRING; Sample values: ['700.0', '700.0', 'None', 'None', 'None'])
+    cb_original (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    censusblock_2010 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    species (Type: STRING; Sample values: ['QUPA', 'QUPA', 'QUPA', 'QUPH', 'QUPH'])
+    censustract_2010 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    zip_original (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    borough (Type: STRING; Sample values: ['Manhattan', 'Manhattan', 'Manhattan', 'Manhattan', 'Manhattan'])
+    spc_latin (Type: STRING; Sample values: ['QUERCUS PALUSTRIS', 'QUERCUS PALUSTRIS', 'QUERCUS PALUSTRIS', 'QUERCUS PHELLOS', 'QUERCUS PHELLOS'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tree_species
+[
+    comments (Type: STRING; Sample values: ['', '', '', '', ''])
+    species_scientific_name (Type: STRING; Sample values: ['Quercus phellos', 'Cotinus sp.', "Prunus serrulata 'Kwanzan'", 'Amelanchier sp.', 'Prunus padus'])
+    species_common_name (Type: STRING; Sample values: ['Willow Oak', 'Smoke Tree', 'Japanese Flowering Cherry', 'Serviceberry', 'European Birdcherry'])
+    form (Type: STRING; Sample values: ['Rounded', 'Rounded', 'Rounded', 'Rounded', 'Rounded'])
+    growth_rate (Type: STRING; Sample values: ['Slow', 'Slow', 'Slow', 'Slow', 'Slow'])
+    tree_size (Type: STRING; Sample values: ['Large (Mature Height > 50 ft)', 'Small (Mature Height < 25 ft)', 'Small (Mature Height < 25 ft)', 'Small (Mature Height < 25 ft)', 'Small (Mature Height < 25 ft)'])
+    environmental_tolerances (Type: STRING; Sample values: ['Drought and Pollution Tolerant', 'none', 'none', 'Wet Site and Shade Tolerant', 'none'])
+    location_tolerances (Type: STRING; Sample values: ['Median Tree', 'Small Tree Pit (<3 ft)', 'Small Tree Pit (<3 ft)', 'Small Tree Pit (<3 ft)', 'Small Tree Pit (<3 ft)'])
+    fall_color (Type: STRING; Sample values: ['Yellow/Orange', 'Red/Bronze', 'Red/Orange', 'Red/ Yellow', 'Yellow/Bronze'])
+    notes_suggested_cultivars (Type: STRING; Sample values: ['Plant Spring Only', "'Royal Purple' or 'Grace'", 'Double–flowering', "'Autumn Sunset,' 'Cumulus,' and 'White Pillar'", 'One of the First Trees to Leaf Out in the Spring'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.citibike_trips
+[
+    end_station_latitude (Type: FLOAT64; Sample values: ['40.7245634290432', '40.717590818059804', '40.751593684511114', '40.75898481399634', '40.75898481399634']; Description: End Station Latitude)
+    start_station_latitude (Type: FLOAT64; Sample values: ['40.75992262', '40.75992262', '40.75992262', '40.75992262', '40.75992262']; Description: Start Station Latitude)
+    start_station_longitude (Type: FLOAT64; Sample values: ['-73.97648516', '-73.97648516', '-73.97648516', '-73.97648516', '-73.97648516']; Description: Start Station Longitude)
+    end_station_longitude (Type: FLOAT64; Sample values: ['-73.9894437789917', '-73.99622440338135', '-73.98043155670166', '-73.99379968643188', '-73.99379968643188']; Description: End Station Longitude)
+    start_station_id (Type: INT64; Sample values: ['520', '520', '520', '520', '520']; Description: Start Station ID)
+    start_station_name (Type: STRING; Sample values: ['W 52 St & 5 Ave', 'W 52 St & 5 Ave', 'W 52 St & 5 Ave', 'W 52 St & 5 Ave', 'W 52 St & 5 Ave']; Description: Start Station Name)
+    end_station_id (Type: INT64; Sample values: ['3265', '263', '3234', '3236', '3236']; Description: End Station ID)
+    end_station_name (Type: STRING; Sample values: ['E 2 St & 2 Ave', 'Elizabeth St & Hester St', 'E 40 St & Madison Ave', 'W 42 St & Dyer Ave', 'W 42 St & Dyer Ave']; Description: End Station Name)
+    bikeid (Type: INT64; Sample values: ['17847', '25536', '14914', '18863', '14917']; Description: Bike ID)
+    starttime (Type: TIMESTAMP; Sample values: ['2016-08-07 14:42:39+00:00', '2016-09-27 17:51:51+00:00', '2015-11-16 16:22:47+00:00', '2016-05-09 16:59:20+00:00', '2016-05-31 17:08:55+00:00']; Description: Start Time)
+    gender (Type: STRING; Sample values: ['unknown', 'male', 'male', 'male', 'male']; Description: Gender (unknown, male, female))
+    stoptime (Type: TIMESTAMP; Sample values: ['2016-08-07 15:05:26+00:00', '2016-09-27 18:15:17+00:00', '2015-11-16 16:28:22+00:00', '2016-05-09 17:09:25+00:00', '2016-05-31 17:18:34+00:00']; Description: Stop Time)
+    birth_year (Type: INT64; Sample values: ['None', '1991', '1959', '1960', '1985']; Description: Year of Birth)
+    usertype (Type: STRING; Sample values: ['Customer', 'Subscriber', 'Subscriber', 'Subscriber', 'Subscriber']; Description: User Type (Customer = 24-hour pass or 7-day pass user, Subscriber = Annual Member))
+    tripduration (Type: INT64; Sample values: ['1367', '1405', '335', '605', '579']; Description: Trip Duration (in seconds))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tlc_fhv_trips_2016
+[
+    zone (Type: STRING; Sample values: ['', '', '', '', ''])
+    service_zone (Type: STRING; Sample values: ['', '', '', '', ''])
+    location_id (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The TLC taxi zone of the trip pick-up)
+    borough (Type: STRING; Sample values: ['', '', '', '', ''])
+    pickup_datetime (Type: TIMESTAMP; Sample values: ['2016-04-03 10:40:00+00:00', '2016-04-20 18:33:00+00:00', '2016-05-04 12:19:00+00:00', '2016-02-05 11:08:00+00:00', '2016-10-09 12:00:00+00:00']; Description: The date and time of the trip pick-up.)
+    dispatching_base_num (Type: STRING; Sample values: ['B00001', 'B00001', 'B00001', 'B00001', 'B00001']; Description: The TLC Base License Number of the base that dispatched the trip.)
+]
+**Some other tables have the similar structure: [tlc_fhv_trips_2015]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.nypd_mv_collisions
+[
+    latitude (Type: FLOAT64; Sample values: ['40.68916', '40.71051', '40.699512', '40.842564', '40.841064'])
+    zip_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cross_street_name (Type: STRING; Sample values: ['COURT STREET', 'HOLLIS AVENUE', 'VANWYCK EXPRESSWAY', 'WESTCHESTER AVENUE', 'BLONDELL AVENUE'])
+    off_street_name (Type: STRING; Sample values: ['', '', '', '', ''])
+    on_street_name (Type: STRING; Sample values: ['PACIFIC STREET', 'JAMAICA AVENUE', '91 AVENUE', 'WATERS PLACE', 'WESTCHESTER AVENUE'])
+    vehicle_type_code1 (Type: STRING; Sample values: ['DS', 'BU', 'SPORT UTILITY / STATION WAGON', 'TAXI', 'PICK-UP TRUCK'])
+    vehicle_type_code2 (Type: STRING; Sample values: ['BU', 'DP', 'CM', 'TK', 'MOTORCYCLE'])
+    vehicle_type_code_3 (Type: STRING; Sample values: ['', '', '', '', ''])
+    vehicle_type_code_4 (Type: STRING; Sample values: ['', '', '', '', ''])
+    vehicle_type_code_5 (Type: STRING; Sample values: ['', '', '', '', ''])
+    location (Type: STRING; Sample values: ['(40.68916, -73.99263)', '(40.71051, -73.77117)', '(40.699512, -73.81461)', '(40.842564, -73.83842)', '(40.841064, -73.84126)'])
+    longitude (Type: FLOAT64; Sample values: ['-73.99263', '-73.77117', '-73.81461', '-73.83842', '-73.84126'])
+    timestamp (Type: TIMESTAMP; Sample values: ['2017-11-01 15:55:00+00:00', '2017-11-01 13:30:00+00:00', '2018-01-20 09:01:00+00:00', '2017-12-06 13:48:00+00:00', '2017-11-02 16:27:00+00:00'])
+    unique_key (Type: INT64; Sample values: ['3796076', '3782006', '3832313', '3805363', '3783463'])
+    borough (Type: STRING; Sample values: ['', '', '', '', ''])
+    contributing_factor_vehicle_5 (Type: STRING; Sample values: ['', '', '', '', ''])
+    number_of_cyclist_injured (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    contributing_factor_vehicle_4 (Type: STRING; Sample values: ['', '', '', '', ''])
+    number_of_persons_injured (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    number_of_motorist_injured (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    contributing_factor_vehicle_2 (Type: STRING; Sample values: ['', '', 'Unspecified', 'Unspecified', 'Unspecified'])
+    contributing_factor_vehicle_1 (Type: STRING; Sample values: ['Unspecified', 'Unspecified', 'Driver Inattention/Distraction', 'Reaction to Other Uninvolved Vehicle', 'Unspecified'])
+    contributing_factor_vehicle_3 (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.new_york.tree_census_2005
+[
+    x_sp (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: X field)
+    location_1 (Type: STRING; Sample values: ['(0, 0)', '(0, 0)', '(0, 0)', '(0, 0)', '(0, 0)'])
+    inf_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Other infrastructure conflicts present)
+    nta_name (Type: STRING; Sample values: ['', '', '', '', '']; Description: Nta name for the neighborhood tabulation area the tree point is in)
+    tree_loc (Type: STRING; Sample values: ['Assigned', 'Assigned', 'Front', 'Front', 'Side']; Description: Establishes the location of the tree in relation to the address provided)
+    objectid (Type: INT64; Sample values: ['1090640', '1090639', '1091294', '1099282', '1094575'])
+    objectid_1 (Type: INT64; Sample values: ['498267', '498266', '498921', '506909', '502202'])
+    y_sp (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: y field)
+    soil_lvl (Type: STRING; Sample values: ['Level', 'Level', 'Level', 'Level', 'Level'])
+    boroname (Type: STRING; Sample values: ['5', '5', '5', '5', '5']; Description: Borough tree is in, full text)
+    pit_type (Type: STRING; Sample values: ['Lawn', 'Lawn', 'Lawn', 'Lawn', 'Lawn'])
+    horz_blck (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Block pavers present)
+    wire_htap (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of house tap wires)
+    inf_canopy (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Canopy debris present)
+    inf_paving (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Close paving present)
+    vert_pgrd (Type: STRING; Sample values: ['No', 'No', 'No', 'Yes', 'No']; Description: Perimeter guard present)
+    nta (Type: STRING; Sample values: ['', '', '', '', '']; Description: nta code for the neighborhood tabulation area the tree point is in, from the 2010 census)
+    horz_plant (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Plantings present)
+    spc_common (Type: STRING; Sample values: ['OAK, PIN', 'OAK, PIN', 'UNKNOWN', 'LONDON PLANETREE', 'UNKNOWN']; Description: The common name of the species.)
+    inf_outlet (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Electrical outlet present)
+    st_senate (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: State Senate District tree point is in.)
+    vert_tgrd (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Tall guard present)
+    inf_wires (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Choking wires present)
+    horz_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Other horizontal treatment present)
+    vert_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Other Vertical Treatment Present)
+    sidw_crack (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Cracked sidewalk present)
+    cncldist (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: New York City Council District tree point is in.)
+    sidw_raise (Type: STRING; Sample values: ['Yes', 'No', 'No', 'No', 'No']; Description: Raised sidewalk present)
+    borocode (Type: INT64; Sample values: ['5', '5', '5', '5', '5']; Description: Borough tree is in, using a one-digit borough code: 1 – Manhattan, 2 – Bronx, 3 – Brooklyn, 4 – Queens, 5 – Staten Island)
+    zip_city (Type: STRING; Sample values: ['', '', '', '', '']; Description: City, as derived from the zipcode)
+    cen_year (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: This is the year the tree was inventoried in. Data collection for the 2005 census spanned multiple seasons. Data is in YYYY format.)
+    horz_grate (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Tree grates present)
+    inf_lights (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Tree lights present)
+    zipcode (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: 2005 zipcode that the tree falls in.)
+    wire_other (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of other wires)
+    cb_num (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Community Board that the tree falls in.)
+    wire_prime (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of primary wires)
+    st_assem (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: State Assembly District tree point is in.)
+    wire_2nd (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Indicates the presence of secondary wires)
+    inf_guard (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Choking guard or grate present)
+    vert_wall (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Walled tree well present)
+    tree_dbh (Type: INT64; Sample values: ['12', '13', '8', '13', '1']; Description: The diameter of the tree in whole inches, measured at breast height. (4.5 feet from the ground.))
+    spc_latin (Type: STRING; Sample values: ['QUERCUS PALUSTRIS', 'QUERCUS PALUSTRIS', 'UNKNOWN', 'PLATANUS ACERIFOLIA', 'UNKNOWN']; Description: The scientific name of the species.)
+    trunk_dmg (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Describes specific damage or wounds found on the trunk)
+    boro_ct (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: This is the boro_ct identifier for the census tract that the tree point falls into.)
+    status (Type: STRING; Sample values: ['Good', 'Good', 'Good', 'Good', 'Excellent']; Description: Excellent: full, well balanced crown and limb structure; leaves normal size color; no dead or broken branches; trunk solid; bark intact. Good: crown uneven or misshapen; some mechanical damage to bark or trunk; some signs of insects or disease; leaves somewhat below normal size and quantity; some dead or broken branches (less than half of the tree). Poor: large dead limbs with over one- half of the tree already dead or removed; large cavities; drastic deformities; leaves significantly below normal size and quantity; severe insect or disease damage. Dead: dead tree; leaves absent; twigs brittle. Shaft: all branches removed; trunk left standing; sprouts may or may not be evident. Stump: stump shorter than breast height; leaves entirely absent or present only on stump sprouts Empty pit: Pit contains exposed soil and no tree)
+    inf_shoes (Type: STRING; Sample values: ['No', 'No', 'No', 'No', 'No']; Description: Sneakers present)
+]
+
+--------------------------------------------------
+

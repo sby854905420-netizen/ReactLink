@@ -1,0 +1,472 @@
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_clinical_PANCAN_patient_with_followup
+[
+    kras_mutation_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: kras mutation present)
+    kras_gene_analysis_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not analysis for KRAS gene mutation abnormality was performed. NCI CDE: 6060079)
+    kras_mutation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to signify the ability to detect a mutation on the KRAS non wild-type gene. NCI CDE: 3135074)
+    kras_mutation_codon (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: KRAS Gene Mutation Other Position)
+    ras_family_gene_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the RAS gene. NCI CDE: 3179266)
+    braf_gene_analysis_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for mutation in the BRAF gene was performed. NCI CDE: 6061813)
+    sdhd (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHD gene mutation analysis. NCI CDE: 6790163)
+    p53_gene_analysis (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the status of the p53 gene. NCI CDE: 3124938)
+    sdha (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHA gene mutation analysis.)
+    egfr_mutation_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for mutation in the EGFR gene was performed. NCI CDE: 6063955)
+    genotyping_results_gene_mutation_not_reported_reason (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to capture the explanation related to missing results for genotypic analysis. NCI CDE: 3179383)
+    sdhc (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHC gene mutation analysis. NCI CDE: 6790162)
+    braf_gene_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the BRAF gene. NCI CDE: 3179257)
+    braf_gene_analysis_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify the result of the Mutational analysis and sequencing of the BRAF gene. NCI CDE: 3107189)
+    ret (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: RET Oncogene Mutation Status.)
+    ret_ptc_rearrangement_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the RET/PEC gene. NCI CDE: 3179271)
+    vhl (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a germ-line mutation was identified while performing the VHL gene mutation analysis. NCI CDE: 6790146)
+    mpnst_specific_mutations (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst specific mutations)
+    sdhb (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHB gene mutation analysis. NCI CDE: 6790161)
+    ldh1_mutation_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation tested)
+    ldh1_mutation_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation found)
+    egfr_mutation_identified (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not a mutation abnormality in the EGFR gene was identified.)
+    eml4_alk_translocation_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for translocation in the EML4-ALK gene was performed. NCI CDE: 6063976)
+    egfr_mutation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to signify the ability to detect a mutation on the EGFR gene. NCI CDE: 3774251)
+    genetic_abnormality_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Genetic abnormality tested)
+    loss_expression_of_mismatch_repair_proteins_by_ihc_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Loss expression of mismatch repair proteins by ihc result)
+    genetic_abnormality_tested_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify other genetic abnormalities not otherwise specified for which a patient was tested. NCI CDE: 3234685)
+    tmem127 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: tmem127)
+    other_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of other genotypic assessments of mutation that is not already specified or mentioned. NCI CDE: 3179278)
+    loss_expression_of_mismatch_repair_proteins_by_ihc (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Loss expression of mismatch repair proteins by ihc)
+    eml4_alk_translocation_identified (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not a EML4-ALK chromosomal translocation was identified. NCI CDE: 6063959)
+    eml4_alk_translocation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that represents the specific exon identified with the EML4-ALK chromosomal translocation. NCI CDE: 6063968)
+    genetic_abnormality_tested_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify specific genetic abnormalities for which a patient was tested. NCI CDE: 3234675)
+    malignant_neoplasm_mitotic_count_rate (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Rate measured for the number of mitoses identified under the microscope in malignant neoplasm. NCI CDE: 3186135)
+    her2_neu_and_centromere_17_copy_number_metastatic_breast_carcinoma_analysis_input_total_number_count (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value to represent the total number of cells counted in a sample of metastatic breast carcinoma for HER2 & Centromere 17 copy number. NCI CDE: 3132899)
+    metastatic_breast_carcinoma_her2_erbb_pos_finding_fluorescence_in_situ_hybridization_calculation_method_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text to describe the method used to calculate HER2/ERBB2 Fluorescence in situ Hybridization (FISH) positivity in a specimen or sample of metastatic breast carcinoma. NCI CDE: 3132910)
+    her2_neu_and_centromere_17_copy_number_analysis_input_total_number_count (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value to represent the total number of Cells Counted for HER2 & Centromere 17 copy number. NCI CDE: 3087902)
+    her2_neu_metastatic_breast_carcinoma_copy_analysis_input_total_number (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of HER2 Copy Number testing (for the metastatic tumor), expressed as a range of values NCI CDE: 3133734)
+    ldh1_mutation_test_method (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation test method)
+    disease_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations; eg. OV, GBM, LUAD)
+    her2_and_centromere_17_positive_finding_other_measurement_scale_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text to describe a different scale used to measure HER2 and Centromere 17 positivity. NCI CDE: 3087923)
+    bcr_patient_uuid (Type: STRING; Sample values: ['180A2B9C-9CAC-4D96-86E8-CD6B3B9386B5', '6E534DD3-81AC-4575-AB1E-02C21E10916D', 'FE57B639-DB7A-460F-ADFE-552F1E034E46', '779CE92D-1ABD-44FC-9021-EDA4D7F08FFF', 'a43e5f0e-a21f-48d8-97e0-084d413680b7']; Description: Patient universally unique identifier, eg 180A2B9C-9CAC-4D96-86E8-CD6B3B9386B5)
+    bcr_patient_barcode (Type: STRING; Sample values: ['TCGA-W5-AA2O', 'TCGA-W5-AA2X', 'TCGA-3X-AAVA', 'TCGA-YR-A95A', 'TCGA-FA-8693']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    project_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Project code; TCGA or NULL)
+    patient_id (Type: STRING; Sample values: ['AA2O', 'AA2X', 'AAVA', 'A95A', '8693']; Description: Participant ID; eg. AA2W, AA2T)
+    residual_tumor (Type: STRING; Sample values: ['R0', 'RX', 'R0', 'R1', 'None']; Description: Status of the tissue margin following surgical resection; eg. R0, R1, R2, RX)
+    er_solid_tumor_response_documented_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Solid tumor response type for ER positive tumors. Null for all participants.)
+    er_solid_tumor_response_documented_type_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Additional solid tumor response types for ER positive tumors. Null for all participants.)
+    prior_aids_conditions (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Prior AIDS condition.)
+    her2_erbb_pos_finding_fluorescence_in_situ_hybridization_calculation_method_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text to describe the method used to calculate HER2/ERBB2 Fluorescence in situ Hybridization (FISH) positivity in a specimen or sample. NCI CDE: 3087929)
+    breast_carcinoma_primary_surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer. [Manually-curated])
+    breast_carcinoma_surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer. [Manually-curated] NCI CDE: 2739580)
+    fluorescence_in_situ_hybridization_diagnostic_procedure_chromosome_17_signal_result_range (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of Chromosone 17 testing, expressed as a range of values. NCI CDE: 3104295)
+    metastatic_breast_carcinoma_lab_proc_her2_neu_in_situ_hybridization_outcome_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The type of outcome for HER2 testing in a sample of metastatic breast carcinoma as determined by an in situ hybridization (FISH) assay. NCI CDE: 3132455)
+    lab_procedure_her2_neu_in_situ_hybrid_outcome_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: the type of outcome for HER2 as determined by an in situ hybridization (ISH) assay. NCI CDE: 2854089)
+    metastatic_breast_carcinoma_fluorescence_in_situ_hybridization_diagnostic_proc_centromere_17_signal_result_range (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of Centromere 17 testing in a sample or specimen of metastatic breast carcinoma, expressed as a range of values. NCI CDE: 3132887)
+    post_surgical_procedure_assessment_thyroid_gland_carcinoma_status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe a person's condition within three months after surgery and adjuvant therapy to treat a thyroid gland carcinoma. NCI CDE: 3186684)
+    metastatic_neoplasm_confirmed_diagnosis_method_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method used to establish or verify identification of a tumor that has spread from its original (primary) site of growth to another site. NCI CDE: 3178364)
+    tumor_residual_disease (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Residual disease (RD) status, 1-10 mm, >20 mm,11-20 mm)
+    preoperative_corticosteroids (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Preoperative corticosteroids)
+    extrathyroid_carcinoma_present_extension_status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the degree to which the primary tumor has extra thyroid extension. NCI CDE: 3179452)
+    neoplasm_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Measurement of the width of a tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues within a hollow, thick-walled, muscular organ located within the pelvic cavity of a woman. NCI CDE: 3441689)
+    patient_personal_medical_history_thyroid_gland_disorder_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the thyroid gland disorder, found in the record of a patient's medical background. NCI CDE: 3176743)
+    first_degree_relative_history_thyroid_gland_carcinoma_diagnosis_relationship_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the relationship to the participant of the first degree family member who has a history of thyroid cancer. NCI CDE: 3179002)
+    patient_personal_medical_history_thyroid_other_specify_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the name of the thyroid gland disorder, found in the record of a patient's medical background that is not already specified or mentioned. NCI CDE: 3179397)
+    primary_thyroid_gland_neoplasm_location_anatomic_site (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the specific location within the thyroid where the tumor or cancer first developed. NCI CDE: 3186750)
+    specimen_collection_method_name (Type: STRING; Sample values: ['Extended Lobectomy', 'Pancreaticoduodenectomy (Whipple Resection)', 'Segmentectomy; Single', 'Segmentectomy; Multiple', 'None']; Description: The type of procedure or method used to collect a biospecimen or tissue sample. NCI CDE: 3131309)
+    cancer_diagnosis_cancer_type_icd9_text_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Diagnosis represented as a character short name using ICD-9 cancer types. NCI CDE: 2195089)
+    surgical_procedure_name_other_specify_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The free-text field used to describe the name assigned to a surgical procedure done for diagnostic, surveillance, treatment, palliation, or study-directed purposes. NCI CDE: 3121814)
+    oligonucleotide_primer_pair_laboratory_procedure_performed_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method of oligonucleotide primer pair testing. NCI CDE: 3151487)
+    oligonucleotide_primer_pair_laboratory_procedure_performed_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free-text field to capture another name for the method of oligonucleotide primer pair testing that is not already specified or mentioned. NCI CDE: 3151490)
+    patient_history_immune_system_and_related_disorders_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of immunosuppressive disease in the medical history of a patient. NCI CDE: 3151446)
+    human_papillomavirus_laboratory_procedure_performed_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method of human papillomavirus testing. NCI CDE: 3151457)
+    lymph_node_location_positive_pathology_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the location of the pathologically positive lymph node. NCI CDE: 3151519)
+    radiologic_tumor_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value for the width of the tumor reported on the computed tomography or magnetic resonance imaging immediately preceding the surgical resection. NCI CDE: 3528033)
+    pathologic_tumor_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value for the width of the tumor as examined pathologically at the time of the surgical resection. NCI CDE: 3528041)
+    lymph_node_metastasis_radiographic_evidence (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator to signify whether or not radiographic evidence exists to support the finding of lymph node metastasis. NCI CDE: 3440228)
+    outside_adrenal (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe any tumor related to the specimen that is outside of the adrenal glands. NCI CDE: 3693063)
+    percent_tumor_sarcomatoid (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Percent value of tumor that is sarcomatoid in renal cell carcinoma.)
+    presence_of_sarcomatoid_features (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Presence of sarcomatoid features)
+    therapeutic_mitotane_lvl_macroscopic_residual (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Therapeutic mitotane lvl macroscopic residual)
+    mitotane_therapy_for_macroscopic_residual_disease (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mitotane therapy for macroscopic residual disease)
+    sinusoid_invasion (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Sinusoid invasion)
+    cholangitis_tissue_evidence (Type: STRING; Sample values: ['None', 'None', 'None', '[Not Evaluated]', 'None']; Description: Text term to describe the kind of evidence present in adjacent tissue related to primary sclerosing cholangitis (PSC). NCI CDE: 3916091)
+    surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of surgical procedure. NCI CDE: 7063813)
+    icd_10 (Type: STRING; Sample values: ['C22.1', 'C24.0', 'C22.1', 'C24.0', 'C83.3']; Description: Alphanumeric value used to describe the disease code from the tenth version of the International Classification of Disease (ICD-10). Examples: C01, C55, C40.3)
+    gene_expression_profile (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that represents the class designation resulting from gene expression profiling. NCI CDE: 3870395)
+    inherited_genetic_syndrome_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Inherited genetic syndrome found)
+    genetic_abnormality_results_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that describes a genetic abnormality test result that was not previously mentioned or specified. NCI CDE: 4459354)
+    genetic_abnormality_results (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to define the results of genetic testing. NCI CDE: 3234680)
+    acronym (Type: STRING; Sample values: ['CHOL', 'CHOL', 'CHOL', 'CHOL', 'DLBC']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    sdhaf2_sdh5 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: sdhaf2 sdh5)
+    igcccg_stage (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Igcccg stage)
+    non_mibc_tx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Non mibc tx)
+    gender (Type: STRING; Sample values: ['MALE', 'MALE', 'FEMALE', 'MALE', 'MALE']; Description: Participant gender; eg. MALE, FEMALE)
+    field (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Field. Null for all participants.)
+    weight (Type: STRING; Sample values: ['73', '88', '92', '77', '82.0']; Description: Weight of participant in kilograms)
+    height (Type: STRING; Sample values: ['167', '167', 'None', '177', '169.0']; Description: Height of participant in centimeters)
+    eastern_cancer_oncology_group (Type: STRING; Sample values: ['0', '0', '1', '[Unknown]', '[Unknown]']; Description: Eastern cancer oncology group performance status. Integer number between 0 and 5.)
+    system_version (Type: STRING; Sample values: ['6th', '7th', '7th', '6th', '7th']; Description: System version; eg. 2009, 4th)
+    tumor_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the category for a neoplasm's histologic subtype. NCI CDE: 2831122)
+    testis_tumor_macroextent_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Testis tumor macroextent other)
+    person_neoplasm_cancer_status (Type: STRING; Sample values: ['WITH TUMOR', '[Unknown]', 'WITH TUMOR', 'WITH TUMOR', 'TUMOR FREE']; Description: The participant's cancer status; Either WITH TUMOR or TUMOR FREE, [Unknown], [Discrepancy], and NULL)
+    new_tumor_dx_prior_submitted_specimen_dx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: New tumor dx prior submitted specimen dx)
+    colorectal_cancer (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The yes/no indicator that identifies subjects with a current cancer diagnosis of pancreatic, colorectal or lung cancer. NCI CDE: 3528541)
+    histology_of_bone_marrow_sample (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Histology of bone marrow sample)
+    bone_marrow_sample_histology (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Bone marrow sample histology.)
+    primary_neoplasm_melanoma_dx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Primary neoplasm melanoma dx)
+    tumor_thickness (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Tumor thickness value)
+    mpnst_exisiting_plexiform_neurofibroma (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst exisiting plexiform neurofibroma)
+    tumor_multifocal (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Yes/no indicator to ask if the tumor is multifocal. NCI CDE: 64356)
+    tumor_tissue_site_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Tumor Tissue Site)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_clinical_PANCAN_patient_with_followup
+[
+    kras_gene_analysis_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not analysis for KRAS gene mutation abnormality was performed. NCI CDE: 6060079)
+    kras_mutation_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: kras mutation present)
+    kras_mutation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to signify the ability to detect a mutation on the KRAS non wild-type gene. NCI CDE: 3135074)
+    kras_mutation_codon (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: KRAS Gene Mutation Other Position)
+    ras_family_gene_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the RAS gene. NCI CDE: 3179266)
+    braf_gene_analysis_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for mutation in the BRAF gene was performed. NCI CDE: 6061813)
+    sdhd (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHD gene mutation analysis. NCI CDE: 6790163)
+    sdha (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHA gene mutation analysis.)
+    p53_gene_analysis (Type: STRING; Sample values: ['[Unknown]', 'None', 'None', 'None', 'None']; Description: Text term to describe the status of the p53 gene. NCI CDE: 3124938)
+    egfr_mutation_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for mutation in the EGFR gene was performed. NCI CDE: 6063955)
+    genotyping_results_gene_mutation_not_reported_reason (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to capture the explanation related to missing results for genotypic analysis. NCI CDE: 3179383)
+    sdhc (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHC gene mutation analysis. NCI CDE: 6790162)
+    braf_gene_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the BRAF gene. NCI CDE: 3179257)
+    braf_gene_analysis_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify the result of the Mutational analysis and sequencing of the BRAF gene. NCI CDE: 3107189)
+    ret (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: RET Oncogene Mutation Status.)
+    ret_ptc_rearrangement_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of genotypic assessment of mutation in the RET/PEC gene. NCI CDE: 3179271)
+    mpnst_specific_mutations (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst specific mutations)
+    vhl (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a germ-line mutation was identified while performing the VHL gene mutation analysis. NCI CDE: 6790146)
+    sdhb (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The text response indicating whether a mutation was identified while performing the SDHB gene mutation analysis. NCI CDE: 6790161)
+    egfr_mutation_identified (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not a mutation abnormality in the EGFR gene was identified.)
+    ldh1_mutation_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation found)
+    eml4_alk_translocation_performed (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not an analysis for translocation in the EML4-ALK gene was performed. NCI CDE: 6063976)
+    ldh1_mutation_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation tested)
+    egfr_mutation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to signify the ability to detect a mutation on the EGFR gene. NCI CDE: 3774251)
+    loss_expression_of_mismatch_repair_proteins_by_ihc_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Loss expression of mismatch repair proteins by ihc result)
+    genetic_abnormality_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Genetic abnormality tested)
+    loss_expression_of_mismatch_repair_proteins_by_ihc (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Loss expression of mismatch repair proteins by ihc)
+    other_genotyping_outcome_lab_results_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the results of other genotypic assessments of mutation that is not already specified or mentioned. NCI CDE: 3179278)
+    genetic_abnormality_tested_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify other genetic abnormalities not otherwise specified for which a patient was tested. NCI CDE: 3234685)
+    eml4_alk_translocation_identified (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of whether or not a EML4-ALK chromosomal translocation was identified. NCI CDE: 6063959)
+    eml4_alk_translocation_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that represents the specific exon identified with the EML4-ALK chromosomal translocation. NCI CDE: 6063968)
+    malignant_neoplasm_mitotic_count_rate (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Rate measured for the number of mitoses identified under the microscope in malignant neoplasm. NCI CDE: 3186135)
+    tmem127 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: tmem127)
+    her2_neu_and_centromere_17_copy_number_metastatic_breast_carcinoma_analysis_input_total_number_count (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value to represent the total number of cells counted in a sample of metastatic breast carcinoma for HER2 & Centromere 17 copy number. NCI CDE: 3132899)
+    genetic_abnormality_tested_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify specific genetic abnormalities for which a patient was tested. NCI CDE: 3234675)
+    metastatic_breast_carcinoma_her2_erbb_pos_finding_fluorescence_in_situ_hybridization_calculation_method_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text to describe the method used to calculate HER2/ERBB2 Fluorescence in situ Hybridization (FISH) positivity in a specimen or sample of metastatic breast carcinoma. NCI CDE: 3132910)
+    her2_neu_and_centromere_17_copy_number_analysis_input_total_number_count (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value to represent the total number of Cells Counted for HER2 & Centromere 17 copy number. NCI CDE: 3087902)
+    her2_neu_metastatic_breast_carcinoma_copy_analysis_input_total_number (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of HER2 Copy Number testing (for the metastatic tumor), expressed as a range of values NCI CDE: 3133734)
+    bcr_patient_uuid (Type: STRING; Sample values: ['C2F1B2D5-1302-4E29-8889-37BA34E91DE2', '573E3713-781F-447E-9F4D-A7FAAE4A4F03', '59DD907E-C674-46C2-BCE7-63517D5AE7A7', 'F4CB24E9-E7FD-4245-9C9B-7E0934038446', '9fa752b7-9873-4bad-9eba-8cc113705fed']; Description: Patient universally unique identifier, eg 180A2B9C-9CAC-4D96-86E8-CD6B3B9386B5)
+    bcr_patient_barcode (Type: STRING; Sample values: ['TCGA-IQ-A6SG', 'TCGA-IQ-A6SH', 'TCGA-XP-A8T7', 'TCGA-XP-A8T6', 'TCGA-CD-5804']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    project_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Project code; TCGA or NULL)
+    disease_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations; eg. OV, GBM, LUAD)
+    patient_id (Type: STRING; Sample values: ['A6SG', 'A6SH', 'A8T7', 'A8T6', '5804']; Description: Participant ID; eg. AA2W, AA2T)
+    residual_tumor (Type: STRING; Sample values: ['None', 'None', 'R0', 'R0', 'R0']; Description: Status of the tissue margin following surgical resection; eg. R0, R1, R2, RX)
+    er_solid_tumor_response_documented_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Solid tumor response type for ER positive tumors. Null for all participants.)
+    er_solid_tumor_response_documented_type_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Additional solid tumor response types for ER positive tumors. Null for all participants.)
+    prior_aids_conditions (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Prior AIDS condition.)
+    her2_erbb_pos_finding_fluorescence_in_situ_hybridization_calculation_method_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text to describe the method used to calculate HER2/ERBB2 Fluorescence in situ Hybridization (FISH) positivity in a specimen or sample. NCI CDE: 3087929)
+    breast_carcinoma_primary_surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer. [Manually-curated])
+    breast_carcinoma_surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer. [Manually-curated] NCI CDE: 2739580)
+    fluorescence_in_situ_hybridization_diagnostic_procedure_chromosome_17_signal_result_range (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of Chromosone 17 testing, expressed as a range of values. NCI CDE: 3104295)
+    metastatic_breast_carcinoma_lab_proc_her2_neu_in_situ_hybridization_outcome_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The type of outcome for HER2 testing in a sample of metastatic breast carcinoma as determined by an in situ hybridization (FISH) assay. NCI CDE: 3132455)
+    lab_procedure_her2_neu_in_situ_hybrid_outcome_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: the type of outcome for HER2 as determined by an in situ hybridization (ISH) assay. NCI CDE: 2854089)
+    metastatic_breast_carcinoma_fluorescence_in_situ_hybridization_diagnostic_proc_centromere_17_signal_result_range (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Result of Centromere 17 testing in a sample or specimen of metastatic breast carcinoma, expressed as a range of values. NCI CDE: 3132887)
+    post_surgical_procedure_assessment_thyroid_gland_carcinoma_status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe a person's condition within three months after surgery and adjuvant therapy to treat a thyroid gland carcinoma. NCI CDE: 3186684)
+    metastatic_neoplasm_confirmed_diagnosis_method_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method used to establish or verify identification of a tumor that has spread from its original (primary) site of growth to another site. NCI CDE: 3178364)
+    tumor_residual_disease (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Residual disease (RD) status, 1-10 mm, >20 mm,11-20 mm)
+    preoperative_corticosteroids (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Preoperative corticosteroids)
+    extrathyroid_carcinoma_present_extension_status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the degree to which the primary tumor has extra thyroid extension. NCI CDE: 3179452)
+    neoplasm_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Measurement of the width of a tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues within a hollow, thick-walled, muscular organ located within the pelvic cavity of a woman. NCI CDE: 3441689)
+    patient_personal_medical_history_thyroid_gland_disorder_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the thyroid gland disorder, found in the record of a patient's medical background. NCI CDE: 3176743)
+    first_degree_relative_history_thyroid_gland_carcinoma_diagnosis_relationship_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the relationship to the participant of the first degree family member who has a history of thyroid cancer. NCI CDE: 3179002)
+    patient_personal_medical_history_thyroid_other_specify_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free text field to specify the name of the thyroid gland disorder, found in the record of a patient's medical background that is not already specified or mentioned. NCI CDE: 3179397)
+    primary_thyroid_gland_neoplasm_location_anatomic_site (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the specific location within the thyroid where the tumor or cancer first developed. NCI CDE: 3186750)
+    specimen_collection_method_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The type of procedure or method used to collect a biospecimen or tissue sample. NCI CDE: 3131309)
+    cancer_diagnosis_cancer_type_icd9_text_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Diagnosis represented as a character short name using ICD-9 cancer types. NCI CDE: 2195089)
+    surgical_procedure_name_other_specify_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The free-text field used to describe the name assigned to a surgical procedure done for diagnostic, surveillance, treatment, palliation, or study-directed purposes. NCI CDE: 3121814)
+    oligonucleotide_primer_pair_laboratory_procedure_performed_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method of oligonucleotide primer pair testing. NCI CDE: 3151487)
+    oligonucleotide_primer_pair_laboratory_procedure_performed_text (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Free-text field to capture another name for the method of oligonucleotide primer pair testing that is not already specified or mentioned. NCI CDE: 3151490)
+    patient_history_immune_system_and_related_disorders_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of immunosuppressive disease in the medical history of a patient. NCI CDE: 3151446)
+    human_papillomavirus_laboratory_procedure_performed_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the method of human papillomavirus testing. NCI CDE: 3151457)
+    lymph_node_location_positive_pathology_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the name of the location of the pathologically positive lymph node. NCI CDE: 3151519)
+    radiologic_tumor_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value for the width of the tumor reported on the computed tomography or magnetic resonance imaging immediately preceding the surgical resection. NCI CDE: 3528033)
+    pathologic_tumor_width (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric value for the width of the tumor as examined pathologically at the time of the surgical resection. NCI CDE: 3528041)
+    lymph_node_metastasis_radiographic_evidence (Type: STRING; Sample values: ['None', 'None', 'NO', 'NO', 'None']; Description: Indicator to signify whether or not radiographic evidence exists to support the finding of lymph node metastasis. NCI CDE: 3440228)
+    outside_adrenal (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe any tumor related to the specimen that is outside of the adrenal glands. NCI CDE: 3693063)
+    percent_tumor_sarcomatoid (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Percent value of tumor that is sarcomatoid in renal cell carcinoma.)
+    presence_of_sarcomatoid_features (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Presence of sarcomatoid features)
+    therapeutic_mitotane_lvl_macroscopic_residual (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Therapeutic mitotane lvl macroscopic residual)
+    mitotane_therapy_for_macroscopic_residual_disease (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mitotane therapy for macroscopic residual disease)
+    sinusoid_invasion (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Sinusoid invasion)
+    cholangitis_tissue_evidence (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the kind of evidence present in adjacent tissue related to primary sclerosing cholangitis (PSC). NCI CDE: 3916091)
+    surgical_procedure_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of surgical procedure. NCI CDE: 7063813)
+    icd_10 (Type: STRING; Sample values: ['C02.9', 'C02.9', 'C15.4', 'C15.5', 'C16.0']; Description: Alphanumeric value used to describe the disease code from the tenth version of the International Classification of Disease (ICD-10). Examples: C01, C55, C40.3)
+    tumor_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to represent the category for a neoplasm's histologic subtype. NCI CDE: 2831122)
+    sdhaf2_sdh5 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: sdhaf2 sdh5)
+    ct_scan (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A Yes/No reponse to signify that a lesion or disease was seen on Computer Tomography (CT) scan. NCI CDE: 2004007)
+    gene_expression_profile (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that represents the class designation resulting from gene expression profiling. NCI CDE: 3870395)
+    genetic_abnormality_results_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term that describes a genetic abnormality test result that was not previously mentioned or specified. NCI CDE: 4459354)
+    genetic_abnormality_results (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to define the results of genetic testing. NCI CDE: 3234680)
+    immunophenotypic_analysis_results (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to define the results of immunophenotypic analysis. NCI CDE: 3234626)
+    inherited_genetic_syndrome_found (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Inherited genetic syndrome found)
+    ldh1_mutation_test_method (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: ldh1 mutation test method)
+    other_genetic_abnormality_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to identify other genetic abnormalities not otherwise specified for which a patient was tested.)
+    mpnst_neurofibromatosis_heredity (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst neurofibromatosis heredity)
+    molecular_test_result (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Term to describe an abnormal result of molecular analysis. NCI CDE: 3121628)
+    igk_genotype_results_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to define the results of IgK genotype testing. NCI CDE: 3233565)
+    igk_genotype_results (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: igk genotype results)
+    disease_detected_on_screening (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Disease detected on screening)
+    intratubular_germ_cell_neoplasm (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Intratubular germ cell neoplasm)
+    igcccg_stage (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Igcccg stage)
+    acronym (Type: STRING; Sample values: ['HNSC', 'HNSC', 'ESCA', 'ESCA', 'STAD']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    non_mibc_tx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Non mibc tx)
+    colorectal_cancer (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The yes/no indicator that identifies subjects with a current cancer diagnosis of pancreatic, colorectal or lung cancer. NCI CDE: 3528541)
+    nuclear_grade_III_IV (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Nuclear grade III IV)
+    hist_of_non_mibc (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Hist of non mibc)
+    gender (Type: STRING; Sample values: ['FEMALE', 'MALE', 'FEMALE', 'MALE', 'MALE']; Description: Participant gender; eg. MALE, FEMALE)
+    new_tumor_dx_prior_submitted_specimen_dx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: New tumor dx prior submitted specimen dx)
+    synchronous_tumor_histology_pct (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Synchronous tumor histology pct)
+    field (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Field. Null for all participants.)
+    eastern_cancer_oncology_group (Type: STRING; Sample values: ['None', 'None', '1', '[Not Evaluated]', 'None']; Description: Eastern cancer oncology group performance status. Integer number between 0 and 5.)
+    testis_tumor_macroextent_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Testis tumor macroextent other)
+    testis_tumor_microextent (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Testis tumor microextent)
+    histology_of_bone_marrow_sample (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Histology of bone marrow sample)
+    primary_neoplasm_melanoma_dx (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Primary neoplasm melanoma dx)
+    bone_marrow_sample_histology (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Bone marrow sample histology.)
+    mpnst_exisiting_plexiform_neurofibroma (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst exisiting plexiform neurofibroma)
+    tumor_tissue_site_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Tumor Tissue Site)
+    weight (Type: STRING; Sample values: ['None', 'None', '51', '70', 'None']; Description: Weight of participant in kilograms)
+    height (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Height of participant in centimeters)
+    mpnst_neurofibromatosis (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Mpnst neurofibromatosis)
+    histological_type_1 (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Histological type 1)
+    tumor_thickness (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Tumor thickness value)
+    maximum_tumor_dimension (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum tumor dimension)
+    tumor_location (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The site in or on the body at which the tumor identification test or result is performed or collected. NCI CDE: 6621372)
+    specific_tumor_total_necrosis_percent (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: specific tumor total necrosis percent)
+    tumor_resected_max_dimension (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Tumor resected maximum dimension.)
+    tumor_multifocal (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Yes/no indicator to ask if the tumor is multifocal. NCI CDE: 64356)
+    tumor_level (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe the site (apex, middle, base) within the prostate zonal anatomy used to identify the location of the tumor. NCI CDE: 7063204)
+    anatomic_neoplasm_subdivision_other (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Additional spatial location, subdivisions and/or atomic site name of a tumor.)
+    primary_tumor_multiple_present_ind (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Yes/no indicator to ask if multiple primary tumors were identified. NCI CDE: 64186)
+    primary_neoplasm_focus_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text term to describe whether the tumor or cancer first developed in a single or multiple locations. NCI CDE: 3174022)
+    igh_genotype_results (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: igh genotype results)
+    immunophenotypic_analysis_methodology (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: immunophenotypic analysis methodology)
+    number_of_abnormal_loci (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Text number of the amount of loci found to be abnormal tested to detect recessive mutations)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.merged_sample_quality_annotations
+[
+    cancer_type (Type: STRING; Sample values: ['LUAD', 'LUAD', 'LUAD', 'LUAD', 'LUAD']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    patient_barcode (Type: STRING; Sample values: ['TCGA-05-4244', 'TCGA-05-4250', 'TCGA-05-4397', 'TCGA-05-4427', 'TCGA-05-4434']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    aliquot_barcode (Type: STRING; Sample values: ['TCGA-05-4244-01A-21-2190-20', 'TCGA-05-4250-01A-21-2190-20', 'TCGA-05-4397-01A-21-2190-20', 'TCGA-05-4427-01A-22-2190-20', 'TCGA-05-4434-01A-21-2190-20']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    aliquot_annotation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: TCGA aliquot annotations)
+    sample_annotation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Sample level annotations)
+    patient_annotation (Type: STRING; Sample values: ['None', 'None', 'None', 'Notification:Prior malignancy:Prior malignancy malignant melanoma of the skin. No systemic chemotherapy or radiation.', 'Notification:Prior malignancy:Prior malignancy  breast cancer. No systemic chemotherapy or radiation.']; Description: Participant level annotations)
+    AWG_excluded_because_of_pathology (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicates if participant barcode was excluded because of pathology, according to the TCGA Analysis Working Group. Takes values of null, "1.0" (excluded), or "0.0" (non excluded))
+    Do_not_use (Type: STRING; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Boolean variable that indicates whether aliquot barcodes were flagged as "do not use" by the TCGA PanCancer Atlas Consortium)
+    platform (Type: STRING; Sample values: ['MDA_RPPA_Core', 'MDA_RPPA_Core', 'MDA_RPPA_Core', 'MDA_RPPA_Core', 'MDA_RPPA_Core']; Description: Platform used to generate this data, eg. HumanMethylation450, HumanMethylation27, IlluminaHiSeq_RNASeqV2, etc)
+    aliquot_annotation_updated (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Updated TCGA aliquot annotations)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_jhu_usc_edu_PANCAN_merged_HumanMethylation27_HumanMethylation450_betaValue_whitelisted
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['NT', 'NT', 'NT', 'NT', 'NT']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    ID (Type: STRING; Sample values: ['cg25264554', 'cg12269343', 'cg02425732', 'cg09852871', 'cg23953831']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc-bq.annotations.methylation_annotation_hg19_illumina_current) for more details about any particular probe)
+    SampleType (Type: STRING; Sample values: ['Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_all_CNVR_data_by_gene
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-04-1331-01A-01D-0428-01', 'TCGA-04-1331-01A-01D-0428-01', 'TCGA-04-1331-01A-01D-0428-01', 'TCGA-04-1331-01A-01D-0428-01', 'TCGA-04-1331-01A-01D-0428-01']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['TP', 'TP', 'TP', 'TP', 'TP']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    Locus_ID (Type: INT64; Sample values: ['100313824', '83998', '23523', '1139', '314']; Description: Gene locus ID, eg.  57380, 100616303)
+    Gene_Symbol (Type: STRING; Sample values: ['MIR663B', 'REG4', 'CABIN1', 'CHRNA7', 'AOC2']; Description: eg TP53, LRP1B, etc (same as Hugo_Symbol field except blank instead of Unknown)
+    SampleType (Type: STRING; Sample values: ['Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+    Cytoband (Type: STRING; Sample values: ['2q21.2', '1p12', '22q11.23', '15q13.3', '17q21.31']; Description: Full cytoband name, including chromosome. E.g, 17p13.2 See https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/chrombanding.html)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_jhu_usc_edu_PANCAN_HumanMethylation27_betaValue_whitelisted
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628', 'TCGA-01-0628']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A', 'TCGA-01-0628-11A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['NT', 'NT', 'NT', 'NT', 'NT']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    ID (Type: STRING; Sample values: ['cg03882305', 'cg05523254', 'cg04798158', 'cg06069731', 'cg00943245']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc-bq.annotations.methylation_annotation_hg19_illumina_current) for more details about any particular probe)
+    SampleType (Type: STRING; Sample values: ['Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+]
+**Some other tables have the similar structure: [Filtered_jhu_usc_edu_PANCAN_HumanMethylation450_betaValue_whitelisted]**
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.TCGA_CDR
+[
+    PFI (Type: INT64; Sample values: ['0', '0', 'None', 'None', 'None']; Description: Progression-free interval event, 1 for patient having new tumor event whether it was a progression of disease, local recurrence, distant metastasis, new primary tumors all sites, or died with the cancer without new tumor event, including cases with a new tumor event whose type is N/A. 0 for censored otherwise.)
+    DFI (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Disease-free interval event, 1 for patient having new tumor event whether it is a local recurrence, distant metastasis, new primary tumor of the cancer, including cases with a new tumor event whose type is N/A.  Disease free was defined by: first, treatment_outcome_first_course is "Complete Remission/Response"; if the tumor type doesn't have "treatment_outcome_first_course" then disease-free was defined by the value "R0" in the field of "residual_tumor"; otherwise, disease-free was defined by the value "negative" in the field of "margin_status". If the tumor type did not have any of these fields, then its DFI was NA. 0 for censored otherwise. New primary tumor in other organ was censored; patients who were Dead with tumor without new tumor event are excluded; patients wih stage IV are excluded too.)
+    Study (Type: STRING; Sample values: ['BLCA', 'GBM', 'LAML', 'LAML', 'LAML']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-BT-A20R', 'TCGA-06-0126', 'TCGA-AB-2848', 'TCGA-AB-2851', 'TCGA-AB-2870']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    PFI_time (Type: INT64; Sample values: ['154', '211', 'None', 'None', 'None']; Description: Progression-free interval time in days, for events, either new_tumor_event_dx_days_to or death_days_to,  whichever is applicable; or for censored cases, either last_contact_days_to or death_days_to, whichever is applicable)
+    OS (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Overall survival event, 1 for death from any cause, 0 for alive)
+    OS_time (Type: INT64; Sample values: ['154', '211', '455', '242', '153']; Description: Overall survival time in days, last_contact_days_to or death_days_to, whichever is larger)
+    DSS_time (Type: INT64; Sample values: ['154', '211', 'None', 'None', 'None']; Description: Disease-specific survival time in days, last_contact_days_to or death_days_to, whichever is larger.)
+    DFI_time (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Disease-free interval time in days, new_tumor_event_dx_days_to for events, or for censored cases, either last_contact_days_to or death_days_to, whichever is applicable.)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_MC3_MAF_V5_one_per_tumor_sample
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    CENTERS (Type: STRING; Sample values: ['SOMATICSNIPER|RADIA|MUTECT|MUSE|VARSCANS', 'SOMATICSNIPER|RADIA|MUTECT|MUSE|VARSCANS', 'SOMATICSNIPER|VARSCANS', 'SOMATICSNIPER|VARSCANS', 'SOMATICSNIPER|RADIA|MUTECT|MUSE|VARSCANS']; Description: One or more genome sequencing center reporting the variant)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    Tumor_SampleBarcode (Type: STRING; Sample values: ['TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A', 'TCGA-04-1331-01A']; Description: Original TCGA tumor sample barcode.TCGA-WC-A885-01A, TCGA-HQ-A2OF-01A.)
+    Tumor_AliquotBarcode (Type: STRING; Sample values: ['TCGA-04-1331-01A-01W-0486-08', 'TCGA-04-1331-01A-01W-0486-08', 'TCGA-04-1331-01A-01W-0486-08', 'TCGA-04-1331-01A-01W-0486-08', 'TCGA-04-1331-01A-01W-0486-08']; Description: Original TCGA tumor aliquote barcode. Examples: TCGA-WC-A885-01A,TCGA-XF-AAN3-01A)
+    Normal_SampleBarcode (Type: STRING; Sample values: ['TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A']; Description: Sample Barcode For The Normal Tissue. Examples: TCGA-V4-A9EI-10A, TCGA-V4-A9EI-10A)
+    Normal_AliquotBarcode (Type: STRING; Sample values: ['TCGA-04-1331-10A-01W-0486-08', 'TCGA-04-1331-10A-01W-0486-08', 'TCGA-04-1331-10A-01W-0486-08', 'TCGA-04-1331-10A-01W-0486-08', 'TCGA-04-1331-10A-01W-0486-08']; Description: Aliquot Barcode For The Normal Tissue. Examples: TCGA-CR-7385-10A-01D-2013-08, TCGA-DX-A3M1-10A-01D-A22A-09)
+    Normal_SampleTypeLetterCode (Type: STRING; Sample values: ['NB', 'NB', 'NB', 'NB', 'NB']; Description: Sample Type Letter Code. The subset of 4 values currently used are: NBC, NB, NT, NBM. See https://Gdc.Cancer.Gov/Resources-Tcga-Users/Tcga-Code-Tables/Sample-Type-Codes)
+    HGVSc (Type: STRING; Sample values: ['c.958G>T', 'c.418C>G', 'c.226G>C', 'c.6599C>G', 'c.2133C>A']; Description: The coding sequence of the variant in HGVS recommended format)
+    FILTER (Type: STRING; Sample values: ['wga', 'wga', 'wga', 'wga', 'wga']; Description: List of failed filters (if any), or "PASS" indicating the variant has passed all filters.)
+    Hugo_Symbol (Type: STRING; Sample values: ['ZNF728', 'FAM166A', 'CLDN9', 'CABIN1', 'BRCA2']; Description: HUGO symbol for the gene (HUGO symbols are always in all caps). "Unknown" is used for regions that do not correspond to a gene)
+    Variant_Classification (Type: STRING; Sample values: ['Missense_Mutation', 'Missense_Mutation', 'Missense_Mutation', 'Missense_Mutation', 'Nonsense_Mutation']; Description: Translational effect of variant allele; eg. Missense_Mutation, Nonsense_Mutation, etc.)
+    HGVSp_Short (Type: STRING; Sample values: ['p.A320S', 'p.P140A', 'p.D76H', 'p.T2200R', 'p.C711*']; Description: Protein sequence of the variant in HGVS recommended format, but using 1-letter amino-acid codes. "p.=" signifies no change in the protein)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_TCGA_RPPA_pancan_clean
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    Value (Type: FLOAT64; Sample values: ['1.1373', '-0.0228', '1.4535', '0.84167', '-0.15876']; Description: Expression level of protein as measured by reverse-phase protein arrays (RPPAs).Examples: 0.204238725,-0.01826295)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-36-1577-01A-21-1558-20', 'TCGA-25-1325-01A-21-1562-20', 'TCGA-61-1899-01A-21-1559-20', 'TCGA-61-1916-01A-21-1559-20', 'TCGA-04-1644-01A-11-1562-20']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    Protein (Type: STRING; Sample values: ['AR', 'AR', 'AR', 'AR', 'AR']; Description: Protein symbol and phosphorylation status (if applicable), eg P53, JNK_pT183Y185)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.TCGA_Clinical_Data_Resource_Extra
+[
+    PFI_2 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Progression-free interval event, 1 for patient having new tumor event whether it was a progression of disease, local recurrence, distant metastasis, new primary tumor of the cancer, or died with the cancer without new tumor event, including cases with a new tumor event whose type is N/A. 0 for censored otherwise.)
+    PFI_1 (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Progression-free interval event, 1 for patient having new tumor event whether it was a progression of disease, local recurrence, distant metastasis, new primary tumor of the cancer, or died with the cancer without new tumor event, including cases with a new tumor event whose type is N/A. 0 for censored otherwise. New primary tumor in other organ was censored.)
+    bcr_patient_barcode (Type: STRING; Sample values: ['TCGA-UY-A78L', 'TCGA-A2-A0SW', 'TCGA-A8-A08O', 'TCGA-A8-A08T', 'TCGA-5M-AAT6']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    Row (Type: INT64; Sample values: ['403', '573', '714', '718', '1958']; Description: Data row number from the original file)
+    type (Type: STRING; Sample values: ['BLCA', 'BRCA', 'BRCA', 'BRCA', 'COAD']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    PFI_time_1_cr (Type: INT64; Sample values: ['355', '653', '762', '2557', '219']; Description: progression-free interval time in days, whose values are the same as PFI_time_1)
+    PFI_time_2 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Progression-free interval time in days, for events, either new_tumor_event_dx_days_to or death_days_to,  whichever is applicable; or for censored cases, either last_contact_days_to or death_days_to, whichever is applicable. 0 for censored otherwise.)
+    PFS (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Progression-free interval event, 1 for patient having new tumor event whether it was a progression of disease, local recurrence, distant metastasis, new primary tumor of the cancer, or died with the cancer without new tumor event, including cases with a new tumor event whose type is N/A. 0 for censored otherwise.)
+    PFI_time_2_cr (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: progression-free interval time in days, whose values are the same as PFI_time_2)
+    DSS_time_cr (Type: INT64; Sample values: ['1127', '1365', '943', '3409', '290']; Description: Disease-specific survival time in days, whose values are the same as DSS_time in isb-project-zero:pancancer_atlas.TCGA_CDR.)
+    DFI_time_cr (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Disease-specific survival time in days, whose values are the same as DSS_time in isb-project-zero:pancancer_atlas.TCGA_CDR.)
+    PFS_time (Type: INT64; Sample values: ['355', '653', '762', '2557', '219']; Description: Progression-free interval time in days, for events, either new_tumor_event_dx_days_to or death_days_to,  whichever is applicable; or for censored cases, either last_contact_days_to or death_days_to, whichever is applicable. 0 for censored otherwise.)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_EBpp_AdjustPANCAN_IlluminaHiSeq_RNASeqV2_genExp
+[
+    Study (Type: STRING; Sample values: ['GBM', 'GBM', 'GBM', 'GBM', 'GBM']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-06-0675-11A-32R-A36H-07', 'TCGA-06-0675-11A-32R-A36H-07', 'TCGA-06-0675-11A-32R-A36H-07', 'TCGA-06-0675-11A-32R-A36H-07', 'TCGA-06-0675-11A-32R-A36H-07']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['NT', 'NT', 'NT', 'NT', 'NT']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    Symbol (Type: STRING; Sample values: ['SNORA3', 'SH3TC1', 'F2RL1', 'FGF1', 'LOC728410']; Description: eg TP53, LRP1B, etc (same as Hugo_Symbol field except blank instead of Unknown)
+    SampleType (Type: STRING; Sample values: ['Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+    normalized_count (Type: FLOAT64; Sample values: ['0.0', '270.806', '52.6318', '1356.73', '0.0']; Description: Normalized gene expression)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_TCGA_RPPA_pancan_clean
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-04-1335', 'TCGA-04-1335', 'TCGA-04-1335', 'TCGA-04-1335', 'TCGA-04-1335']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-04-1335-01A', 'TCGA-04-1335-01A', 'TCGA-04-1335-01A', 'TCGA-04-1335-01A', 'TCGA-04-1335-01A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-04-1335-01A-21-20', 'TCGA-04-1335-01A-21-20', 'TCGA-04-1335-01A-21-20', 'TCGA-04-1335-01A-21-20', 'TCGA-04-1335-01A-21-20']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['TP', 'TP', 'TP', 'TP', 'TP']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    Protein (Type: STRING; Sample values: ['EIF4G', 'SF2', 'EGFR', 'P70S6K_pT389', 'PDCD1']; Description: Protein symbol and phosphorylation status (if applicable), eg P53, JNK_pT183Y185)
+    Value (Type: FLOAT64; Sample values: ['-0.51629', '0.018487', '-0.10668', '0.022309', 'nan']; Description: Expression level of protein as measured by reverse-phase protein arrays (RPPAs).Examples: 0.204238725,-0.01826295)
+    SampleType (Type: STRING; Sample values: ['Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor', 'Primary solid Tumor']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Filtered_pancanMiRs_EBadjOnProtocolPlatformWithoutRepsWithUnCorrectMiRs_08_04_16
+[
+    Study (Type: STRING; Sample values: ['GBM', 'GBM', 'GBM', 'GBM', 'GBM']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675', 'TCGA-06-0675']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A', 'TCGA-06-0675-11A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-06-0675-11A-32R-A36C-13', 'TCGA-06-0675-11A-32R-A36C-13', 'TCGA-06-0675-11A-32R-A36C-13', 'TCGA-06-0675-11A-32R-A36C-13', 'TCGA-06-0675-11A-32R-A36C-13']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['NT', 'NT', 'NT', 'NT', 'NT']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+    ID (Type: STRING; Sample values: ['hsa-miR-655-3p', 'hsa-miR-139-5p', 'hsa-miR-202-5p', 'hsa-miR-542-3p', 'hsa-miR-98-3p']; Description: One of 1870 unique miRNA ids (aka symbols) contained in this table, eg hsa-mir-21 -- relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v20 and miRBase_v20_hsa_gff3)
+    SampleType (Type: STRING; Sample values: ['Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal', 'Solid Tissue Normal']; Description: There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal)
+    miRNAexpr (Type: FLOAT64; Sample values: ['29.608492', '4549.497868', '0.255246', '204.706984', '1.276228']; Description: Normalized abundance (i.e., reads per million, RPM))
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.BarcodeMap
+[
+    Study (Type: STRING; Sample values: ['OV', 'OV', 'OV', 'OV', 'OV']; Description: TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations)
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331', 'TCGA-04-1331']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+    SampleBarcode (Type: STRING; Sample values: ['TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A', 'TCGA-04-1331-10A']; Description: Barcode of the biospecimen sample, eg TCGA-13-1489-02A)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-04-1331-10A-01D-0428-01', 'TCGA-04-1331-10A-01D-0429-04', 'TCGA-04-1331-10A-01D-0430-06', 'TCGA-04-1331-10A-01D-0431-02', 'TCGA-04-1331-10A-01D-1036-01']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    SampleTypeLetterCode (Type: STRING; Sample values: ['NB', 'NB', 'NB', 'NB', 'NB']; Description: Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_jhu_usc_edu_PANCAN_merged_HumanMethylation27_HumanMethylation450_betaValue_whitelisted
+[
+    ID (Type: STRING; Sample values: ['cg19510484', 'cg05786809', 'cg18871670', 'cg10795646', 'cg18043280']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc-bq.annotations.methylation_annotation_hg19_illumina_current) for more details about any particular probe)
+    Beta (Type: FLOAT64; Sample values: ['0.0160995221688944', '0.0350495728032872', '0.036090943698553', '0.447475489365782', '0.816155830516454']; Description: Normalized DNA methylation beta value (between 0 and 1, where 0 indicates completely un-methylated and 1 indicates fully methylated))
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05', 'TCGA-01-0628-11A-01D-0383-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_pancanMiRs_EBadjOnProtocolPlatformWithoutRepsWithUnCorrectMiRs_08_04_16
+[
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-A2-A0EW-01A-21R-A114-13', 'TCGA-E9-A1N3-01A-12R-A156-13', 'TCGA-CV-6945-01A-11R-1914-13', 'TCGA-CJ-5680-11A-01R-1540-13', 'TCGA-DD-AADW-01A-11R-A39J-13']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_EBpp_AdjustPANCAN_IlluminaHiSeq_RNASeqV2_genExp
+[
+    symbol (Type: STRING; Sample values: ['A1BG', 'A1BG', 'A1BG', 'A1BG', 'A1BG']; Description: eg TP53, LRP1B, etc (same as Hugo_Symbol field except blank instead of Unknown)
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-A2-A0CK-01A-11R-A22K-07', 'TCGA-14-0817-01A-01R-1849-01', 'TCGA-25-1625-01A-01R-1566-13', 'TCGA-AX-A2H2-01A-11R-A180-07', 'TCGA-97-8172-01A-11R-2287-07']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Whitelist_ParticipantBarcodes
+[
+    ParticipantBarcode (Type: STRING; Sample values: ['TCGA-01-0628', 'TCGA-01-0630', 'TCGA-01-0631', 'TCGA-01-0633', 'TCGA-01-0636']; Description: TCGA barcode identifier for the study participant, eg TCGA-02-0001)
+]
+
+--------------------------------------------------
+
+###Table full name: isb-cgc-bq.pancancer_atlas.Original_jhu_usc_edu_PANCAN_HumanMethylation450_betaValue_whitelisted
+[
+    AliquotBarcode (Type: STRING; Sample values: ['TCGA-05-4384-01A-01D-1756-05', 'TCGA-05-4384-01A-01D-1756-05', 'TCGA-05-4384-01A-01D-1756-05', 'TCGA-05-4384-01A-01D-1756-05', 'TCGA-05-4384-01A-01D-1756-05']; Description: TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28)
+    ID (Type: STRING; Sample values: ['cg02830202', 'cg00492309', 'cg20582984', 'cg08333283', 'cg02312706']; Description: Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc-bq.annotations.methylation_annotation_hg19_illumina_current) for more details about any particular probe)
+]
+**Some other tables have the similar structure: [Original_jhu_usc_edu_PANCAN_HumanMethylation27_betaValue_whitelisted]**
+
+--------------------------------------------------
+

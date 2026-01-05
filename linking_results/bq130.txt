@@ -1,0 +1,53 @@
+###Table full name: bigquery-public-data.covid19_nyt.us_counties
+[
+    confirmed_cases (Type: INT64; Sample values: ['11018', '39911', '3860', '4533', '11256']; Description: The total number of confirmed cases of COVID-19)
+    date (Type: DATE; Sample values: ['2022-01-01', '2022-01-01', '2022-01-01', '2022-01-01', '2022-01-01']; Description: Date reported)
+    deaths (Type: INT64; Sample values: ['160', '593', '81', '95', '198']; Description: The total number of confirmed deaths of COVID-19)
+    county (Type: STRING; Sample values: ['Autauga', 'Baldwin', 'Barbour', 'Bibb', 'Blount']; Description: County in the specified state)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: State reported)
+    county_fips_code (Type: STRING; Sample values: ['01001', '01003', '01005', '01007', '01009']; Description: Standard geographic identifier for the county)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_nyt.us_states
+[
+    confirmed_cases (Type: INT64; Sample values: ['6', '12', '23', '29', '39']; Description: The total number of confirmed cases of COVID-19)
+    date (Type: DATE; Sample values: ['2020-03-13', '2020-03-14', '2020-03-15', '2020-03-16', '2020-03-17']; Description: Date reported)
+    deaths (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: The total number of confirmed deaths of COVID-19)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: State reported)
+    state_fips_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01']; Description: Standard geographic identifier for the state)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_nyt.mask_use_by_county
+[
+    frequently (Type: FLOAT64; Sample values: ['0.151', '0.145', '0.208', '0.087', '0.115']; Description: The estimated share of people in this county who would say frequently)
+    never (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: The estimated share of people in this county who would say never in response to the question "How often do you wear a mask in public when you expect to be within six feet of another person?")
+    always (Type: FLOAT64; Sample values: ['0.784', '0.75', '0.716', '0.884', '0.855']; Description: The estimated share of people in this county who would say always)
+    sometimes (Type: FLOAT64; Sample values: ['0.064', '0.104', '0.072', '0.023', '0.022']; Description: The estimated share of people in this county who would say sometimes)
+    rarely (Type: FLOAT64; Sample values: ['0.001', '0.001', '0.003', '0.006', '0.007']; Description: The estimated share of people in this county who would say rarely)
+    county_fips_code (Type: STRING; Sample values: ['08117', '48255', '48493', '36123', '48209']; Description: Standard geographic identifier for the county)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.covid19_nyt.excess_deaths
+[
+    frequency (Type: STRING; Sample values: ['monthly', 'monthly', 'monthly', 'monthly', 'monthly']; Description: Weekly or monthly, depending on how the data is recorded)
+    week (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Epidemiological week, which is a standardized way of counting weeks to allow for year-over-year comparisons. Most countries start epi weeks on Mondays, but others vary)
+    month (Type: INT64; Sample values: ['1', '2', '3', '4', '5']; Description: Numerical month)
+    start_date (Type: DATE; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: The first date included in the period)
+    placename (Type: STRING; Sample values: ['Mumbai', 'Mumbai', 'Mumbai', 'Mumbai', 'Mumbai']; Description: The place in the country reported)
+    country (Type: STRING; Sample values: ['India', 'India', 'India', 'India', 'India']; Description: The country reported)
+    end_date (Type: DATE; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: The last date included in the period)
+    deaths (Type: INT64; Sample values: ['8397', '7116', '6692', '7092', '13833']; Description: The total number of confirmed deaths recorded from any cause)
+    year (Type: STRING; Sample values: ['2020', '2020', '2020', '2020', '2020']; Description: Year reported)
+    baseline (Type: STRING; Sample values: ['2019 historical data', '2019 historical data', '2019 historical data', '2019 historical data', '2019 historical data']; Description: The years used to calculate expected_deaths)
+    expected_deaths (Type: INT64; Sample values: ['8360', '7797', '7155', '6752', '7335']; Description: The baseline number of expected deaths, calculated from a historical average)
+    excess_deaths (Type: INT64; Sample values: ['37', '-681', '-463', '340', '6498']; Description: The number of deaths minus the expected deaths)
+]
+
+--------------------------------------------------
+

@@ -1,0 +1,112 @@
+###Table full name: bigquery-public-data.eclipse_megamovie.photos_v_0_1
+[
+    user (Type: STRING; Sample values: ['f341da27741e49d4aead0610dd6d0880', 'f341da27741e49d4aead0610dd6d0880', 'f341da27741e49d4aead0610dd6d0880', 'f341da27741e49d4aead0610dd6d0880', 'f341da27741e49d4aead0610dd6d0880'])
+    id (Type: STRING; Sample values: ['d874a8b96c1b7a26a7099949af728bf55557db4940a2cfce8acc0df4b9986cf7', '96544e04ef387e828027cc5311c19790cec0580db60b1fd424cf54a947993f30', '262718e921d5d188f3a0dbd50f115eeb9a3fff5ab6d4c467809152d6f78e7eab', 'b1c9810249c88b3bc752f45f9225de1647a2abc4b005ee14e273bdad621278ad', '37ae78154a2d79d37b9a18d74cace0e4c5f35b808bfdb8e3aa7c0ff6b7259925'])
+    upload_session_id (Type: STRING; Sample values: ['dd9aa9154fcbbc5f4c5dd79123341397ea73da8aaf27e8257e7476774616a358', 'dd9aa9154fcbbc5f4c5dd79123341397ea73da8aaf27e8257e7476774616a358', 'dd9aa9154fcbbc5f4c5dd79123341397ea73da8aaf27e8257e7476774616a358', 'dd9aa9154fcbbc5f4c5dd79123341397ea73da8aaf27e8257e7476774616a358', 'dd9aa9154fcbbc5f4c5dd79123341397ea73da8aaf27e8257e7476774616a358'])
+    jpeg_storage_uri (Type: STRING; Sample values: ['', '', '', '', ''])
+    image_datetime (Type: TIMESTAMP; Sample values: ['2017-08-21 18:12:23+00:00', '2017-08-21 18:12:59+00:00', '2017-08-21 18:12:11+00:00', '2017-08-21 18:12:23+00:00', '2017-08-21 18:11:43+00:00'])
+    lon (Type: FLOAT64; Sample values: ['-94.14550858333334', '-94.14550858333334', '-94.14550858333334', '-94.14550858333334', '-94.14550858333334'])
+    aperture_value (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    camera_datetime (Type: TIMESTAMP; Sample values: ['2017-08-21 13:12:23+00:00', '2017-08-21 13:12:59+00:00', '2017-08-21 13:12:11+00:00', '2017-08-21 13:12:23+00:00', '2017-08-21 13:11:43+00:00'])
+    uploaded_date (Type: TIMESTAMP; Sample values: ['2017-08-21 20:09:17.906157+00:00', '2017-08-21 20:09:05.400535+00:00', '2017-08-21 20:09:20.864372+00:00', '2017-08-21 20:09:14.988849+00:00', '2017-08-21 20:08:58.584515+00:00'])
+    storage_uri (Type: STRING; Sample values: ['https://storage.googleapis.com/gcs-public-data--eclipse-megamovie/v0.1/d874a8b96c1b7a26a7099949af728bf55557db4940a2cfce8acc0df4b9986cf7.arw', 'https://storage.googleapis.com/gcs-public-data--eclipse-megamovie/v0.1/96544e04ef387e828027cc5311c19790cec0580db60b1fd424cf54a947993f30.arw', 'https://storage.googleapis.com/gcs-public-data--eclipse-megamovie/v0.1/262718e921d5d188f3a0dbd50f115eeb9a3fff5ab6d4c467809152d6f78e7eab.arw', 'https://storage.googleapis.com/gcs-public-data--eclipse-megamovie/v0.1/b1c9810249c88b3bc752f45f9225de1647a2abc4b005ee14e273bdad621278ad.arw', 'https://storage.googleapis.com/gcs-public-data--eclipse-megamovie/v0.1/37ae78154a2d79d37b9a18d74cace0e4c5f35b808bfdb8e3aa7c0ff6b7259925.arw'])
+    height (Type: INT64; Sample values: ['3056', '3056', '3056', '3056', '3056'])
+    image_bucket (Type: STRING; Sample values: ['megamovie', 'megamovie', 'megamovie', 'megamovie', 'megamovie'])
+    state (Type: STRING; Sample values: ['MO', 'MO', 'MO', 'MO', 'MO'])
+    model (Type: STRING; Sample values: ['NEX-5', 'NEX-5', 'NEX-5', 'NEX-5', 'NEX-5'])
+    exposure_time (Type: STRING; Sample values: ['1/60', '1/160', '1/60', '1/60', '1/15'])
+    is_mobile (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    image_type (Type: STRING; Sample values: ['ARW', 'ARW', 'ARW', 'ARW', 'ARW'])
+    totality (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    make (Type: STRING; Sample values: ['SONY', 'SONY', 'SONY', 'SONY', 'SONY'])
+    detected_circle (Type: STRUCT<radius FLOAT64, center_y FLOAT64, center_x FLOAT64>; Sample values: ['{"radius": "736.2353515625", "center_y": "1277.5", "center_x": "3613.5"}', '{"radius": "720.1558837890625", "center_y": "1349.5", "center_x": "2660.5"}', '{"radius": "732.291259765625", "center_y": "1275.5", "center_x": "3458.5"}', '{"radius": "725.4381713867188", "center_y": "1288.5", "center_x": "3607.5"}', '{"radius": "740.58251953125", "center_y": "1250.5", "center_x": "3185.5"}'])
+    lat (Type: FLOAT64; Sample values: ['39.13574008333333', '39.13574008333333', '39.13574008333333', '39.13574008333333', '39.13574008333333'])
+    width (Type: INT64; Sample values: ['4592', '4592', '4592', '4592', '4592'])
+    vision_labels (Type: STRING; Sample values: ['atmosphere,atmosphere of earth,phenomenon,sky,eclipse,daytime,night,corona,celestial event,computer wallpaper', 'atmosphere,corona,atmosphere of earth,eclipse,phenomenon,daytime,celestial event,sky,event,night', 'atmosphere,atmosphere of earth,daytime,corona,phenomenon,eclipse,sky,celestial event,night,computer wallpaper', 'atmosphere,light,atmosphere of earth,phenomenon,sky,daytime,eclipse,night,corona,celestial event', 'atmosphere,daytime,light,atmosphere of earth,corona,phenomenon,sky,eclipse,sphere,celestial event'])
+    datetime_repaired (Type: BOOL; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    equatorial_mount (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+]
+**Some other tables have the similar structure: [photos_v_0_2, photos_v_0_3]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.eclipse_megamovie.astrometry_match_v_0_4
+[
+    CRPIX (Type: ARRAY<FLOAT64>; Sample values: ['"[2514.82078552 3109.74308268]"', '"[3861.73266602 1946.07399495]"', '"[1949.48612467 1886.18192546]"', '"[1281.60375468 2169.43892415]"', '"[1415.04612223 2325.20829264]"'])
+    QUADPIX (Type: ARRAY<FLOAT64>; Sample values: ['"[4283.55419922 3484.96679688 89.32637024 2734.8515625 3171.58178711 3109.41088867 0. 0. 0. 0. ]"', '"[1646.67602539 2309.97387695 5425.55322266 830.66436768 4512.96875 2697.58374023 0. 0. 0. 0. ]"', '"[4287.30273438 1226.92553711 461.98022461 3025.48706055 1099.17541504 1406.13317871 0. 0. 0. 0. ]"', '"[ 136.97209167 766.6192627 3145.91357422 3493.38867188 561.92559814 2248.30883789 0. 0. 0. 0. ]"', '"[ 975.16259766 965.72241211 2500.16235352 4004.55834961 769.81341553 2005.34411621 0. 0. 0. 0. ]"'])
+    TIMEUSED (Type: FLOAT64; Sample values: ['22.892000198364258', '33.07600021362305', '1.0839999914169312', '25.351999282836914', '15.027999877929688'])
+    LOGODDS (Type: FLOAT64; Sample values: ['22.124948501586914', '21.188724517822266', '20.942501068115234', '22.56747055053711', '21.67430305480957'])
+    NMATCH (Type: INT64; Sample values: ['2', '2', '2', '2', '2'])
+    QPEERS (Type: INT64; Sample values: ['111', '127', '107', '119', '107'])
+    CODEERR (Type: FLOAT64; Sample values: ['8.134726522257552e-05', '8.887535659596324e-05', '7.80648915679194e-05', '5.56861559743993e-05', '7.285069295903668e-05'])
+    WORSTLOGODDS (Type: FLOAT64; Sample values: ['0.0', '-1.3862943649291992', '0.0', '0.0', '0.0'])
+    FIELDOBJS (Type: ARRAY<INT64>; Sample values: ['"[187 50 91 0 0]"', '"[179 174 15 0 0]"', '"[190 85 79 0 0]"', '"[177 137 10 0 0]"', '"[ 51 196 181 0 0]"'])
+    IDS (Type: ARRAY<INT64>; Sample values: ['"[0 0 0 0 0]"', '"[0 0 0 0 0]"', '"[0 0 0 0 0]"', '"[0 0 0 0 0]"', '"[0 0 0 0 0]"'])
+    CENTERXYZ (Type: ARRAY<FLOAT64>; Sample values: ['"[-0.85663508 0.48849735 0.1659719 ]"', '"[-0.82278494 0.52822471 0.20977036]"', '"[-0.87883487 0.43317988 0.20001113]"', '"[-0.84349644 0.52131233 0.12941101]"', '"[-0.90347735 0.38852231 0.18104998]"'])
+    CD (Type: ARRAY<FLOAT64>; Sample values: ['"[ 0.00011336 -0.0003591 -0.00035765 -0.00011291]"', '"[-7.34577613e-05 -3.45374766e-04 -3.41054578e-04 8.11433324e-05]"', '"[ 0.00031793 -0.00028932 -0.00028978 -0.00031698]"', '"[ 0.00031186 -0.00029066 -0.00029523 -0.0003157 ]"', '"[-5.45723405e-04 -4.82135993e-05 -4.66218088e-05 5.46135082e-04]"'])
+    id (Type: STRING; Sample values: ['d742b86a8318c0000a89c6a1c4663a3fc725a9735ef100fbadffc641ede9ff80', '1433ad8861a423ae81ef770f5d39eb1254bb53061d208dc05585bd4cd1424f7c', '3b356e60bf8dc5e89c41af6c5ea06b4c4c33abc83d6b0b30f68aef78685f3a9b', 'f1e9b2dc093844f93250e5bf787c633a9caa1d3b6ad920fa1d5da47434e4472b', '2fccf2c7ac50b501b0a76e184bc61663d80acc2ddaab3208eb6bbd518d9400ac'])
+    INDEXID (Type: INT64; Sample values: ['4211', '4211', '4211', '4211', '4211'])
+    QMATCHED (Type: INT64; Sample values: ['19887004', '25915608', '1139528', '20048146', '19174642'])
+    STARS (Type: ARRAY<INT64>; Sample values: ['"[139022 139023 139021 0 0]"', '"[149031 149030 149033 0 0]"', '"[139413 139476 139421 0 0]"', '"[148528 148484 148533 0 0]"', '"[138670 139392 138669 0 0]"'])
+    NINDEX (Type: INT64; Sample values: ['18', '11', '19', '22', '22'])
+    QUADXYZ (Type: ARRAY<FLOAT64>; Sample values: ['"[-0.8548384 0.49544024 0.15424094 -0.84896813 0.49628796 0.18152515 -0.85375863 0.49486104 0.16189114 0. 0. 0. 0. 0. 0. ]"', '"[-0.82071182 0.52860336 0.21681927 -0.82715551 0.52792726 0.19263067 -0.82031131 0.5356074 0.20053447 0. 0. 0. 0. 0. 0. ]"', '"[-0.88469576 0.42311828 0.19566381 -0.86954597 0.44932946 0.20492156 -0.87375179 0.43850633 0.2104044 0. 0. 0. 0. 0. 0. ]"', '"[-0.84156172 0.51857887 0.15116157 -0.84636853 0.51867107 0.12099844 -0.84001092 0.52389697 0.14111561 0. 0. 0. 0. 0. 0. ]"', '"[-0.90926622 0.38160597 0.16616807 -0.89792996 0.39530353 0.19353786 -0.90806708 0.37990176 0.17632024 0. 0. 0. 0. 0. 0. ]"'])
+    NFIELD (Type: INT64; Sample values: ['2737', '2759', '365', '2499', '429'])
+    FIELDID (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    QTRIED (Type: INT64; Sample values: ['91152', '116286', '5104', '90285', '85605'])
+    FIELDNUM (Type: INT64; Sample values: ['1', '1', '1', '1', '1'])
+    HEALPIX (Type: INT64; Sample values: ['-1', '-1', '-1', '-1', '-1'])
+    NVERIFIED (Type: INT64; Sample values: ['59721', '79766', '3511', '61060', '58735'])
+    FIELDNAME (Type: STRING; Sample values: ['', '', '', '', ''])
+    DIMQUADS (Type: INT64; Sample values: ['3', '3', '3', '3', '3'])
+    QSCALEOK (Type: INT64; Sample values: ['59722', '79767', '3512', '61061', '58736'])
+    CRVAL (Type: ARRAY<FLOAT64>; Sample values: ['"[149.83306293 9.54890169]"', '"[147.1772173 11.73781938]"', '"[153.48759446 11.75349489]"', '"[148.30121282 7.91804892]"', '"[156.92505191 10.29360601]"'])
+    HPNSIDE (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    NDISTRACT (Type: INT64; Sample values: ['0', '1', '1', '0', '0'])
+    QUAD (Type: INT64; Sample values: ['111627', '260917', '271856', '108946', '102409'])
+    WCS_VALID (Type: BOOL; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    NAGREE (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    PARITY (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    NCONFLICT (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    RADIUS (Type: FLOAT64; Sample values: ['1.2980251098963238', '1.1678559706617095', '1.4167109118779977', '1.5655901790740483', '1.7199652547359436'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.eclipse_megamovie.astrometry_corr_v_0_4
+[
+    index_id (Type: INT64; Sample values: ['84', '47', '6', '34', '38'])
+    index_x (Type: FLOAT64; Sample values: ['6234.903557313227', '800.9291866263275', '2814.4234072944273', '2752.3588853602087', '511.8196863831971'])
+    index_dec (Type: FLOAT64; Sample values: ['12.736253991109848', '13.312603011878483', '12.09638100877288', '12.09638100877288', '12.09638100877288'])
+    index_ra (Type: FLOAT64; Sample values: ['144.56690899364185', '144.82178200756607', '147.24986199521666', '147.24986199521666', '147.24986199521666'])
+    field_id (Type: INT64; Sample values: ['441', '6', '2', '0', '4'])
+    id (Type: STRING; Sample values: ['9ebd03df4d25114ab5d35e35182e19d430759b94c48c581e2b9d4dc29e667cb3', '338318b931d90dfb7bad1bdeb2bec405b3f7e49f139160b2c80fd639fe1fb655', '1433ad8861a423ae81ef770f5d39eb1254bb53061d208dc05585bd4cd1424f7c', '81293752c0a7e2cc62db3522036d71a52d2eb1989d363ba59ef2e8709a4217a2', '338318b931d90dfb7bad1bdeb2bec405b3f7e49f139160b2c80fd639fe1fb655'])
+    index_y (Type: FLOAT64; Sample values: ['393.0832421046689', '1463.4997199682418', '1963.1564315211701', '1808.0479799499778', '4730.492372244495'])
+    field_x (Type: FLOAT64; Sample values: ['6234.71875', '799.48974609375', '2813.794921875', '2753.5', '510.6537170410156'])
+    field_dec (Type: FLOAT64; Sample values: ['12.73648611344751', '13.313923163569392', '12.096619337558728', '12.095320232984513', '12.097485617605203'])
+    match_weight (Type: FLOAT64; Sample values: ['0.9978395466920116', '0.9998885253533747', '0.9999897801245938', '0.9999600220551086', '0.9998790113522937'])
+    field_ra (Type: FLOAT64; Sample values: ['144.56711916886826', '144.8218681490035', '147.24980490858707', '147.2494471741628', '147.24988338429668'])
+    BACKGROUND (Type: FLOAT64; Sample values: ['76.39909362792969', '54.087100982666016', '448.43994140625', '1659.88671875', '40.29490661621094'])
+    field_y (Type: FLOAT64; Sample values: ['393.1032409667969', '1462.72900390625', '1963.451904296875', '1807.5', '4729.78515625'])
+    FLUX (Type: FLOAT64; Sample values: ['1.9159088134765625', '51.86190414428711', '2540.363037109375', '63165.5390625', '75.62533569335938'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.eclipse_megamovie.astrometry_index_v_0_4
+[
+    X (Type: FLOAT64; Sample values: ['1297.3620597183176', '705.9556861080437', '759.4307440013395', '4112.220648139002', '4330.838976545725'])
+    id (Type: STRING; Sample values: ['0017db281c6e70df06091532370a70bc83032438f6764a9a78aa6c437f812430', '0017db281c6e70df06091532370a70bc83032438f6764a9a78aa6c437f812430', '0017db281c6e70df06091532370a70bc83032438f6764a9a78aa6c437f812430', '0017db281c6e70df06091532370a70bc83032438f6764a9a78aa6c437f812430', '0017db281c6e70df06091532370a70bc83032438f6764a9a78aa6c437f812430'])
+    Y (Type: FLOAT64; Sample values: ['2983.658358768668', '1884.7923325319289', '1841.5400416278037', '596.8256923985198', '2063.916811417404'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.eclipse_megamovie.astrometry_rdls_v_0_4
+[
+    id (Type: STRING; Sample values: ['ce4b734fc9a84af8480caad1c0912278b59df446f063486ecf52e1b72b3a583b', '9ebd03df4d25114ab5d35e35182e19d430759b94c48c581e2b9d4dc29e667cb3', '999e2df2e0b6f51de921a10f640144bcad5bd3f317421cb8717e73b4bc7328c1', '46322512242282fe832a3bd60aa3cf3b737f76b2fa6bc8125316b03611d942c0', '544b0e917c506418c2535fbaa1e96f997701565716e55e2668585ad7a9e5447a'])
+    DEC (Type: FLOAT64; Sample values: ['17.567931987208794', '17.567931987208794', '17.567931987208794', '17.567931987208794', '17.567931987208794'])
+    RA (Type: FLOAT64; Sample values: ['150.17478600307095', '150.17478600307095', '150.17478600307095', '150.17478600307095', '150.17478600307095'])
+]
+
+--------------------------------------------------
+

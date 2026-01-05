@@ -1,0 +1,281 @@
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_historical_teams_seasons
+[
+    wins (Type: INT64; Sample values: ['0', '7', '12', '0', '13']; Description: Number of wins in this season)
+    ties (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of ties in this season)
+    name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Team name)
+    season (Type: INT64; Sample values: ['1956', '1903', '1908', '2006', '1908']; Description: Season the game was played in)
+    team_code (Type: INT64; Sample values: ['296', '137', '137', '28593', '479']; Description: School code (see http://stats.ncaa.org/game_upload/team_codes))
+    losses (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of losses in this season)
+    team_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Sportradar team ID)
+    division (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: The division the team played in at this time of this season)
+    alias (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Team alias)
+    market (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Team school name (using Sportradar names))
+    current_division (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The division the team currently plays in)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_historical_teams_games
+[
+    season (Type: INT64; Sample values: ['1996', '1996', '1996', '1996', '1996']; Description: [Game data] Season the game was played in)
+    name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Team data] Team name)
+    team_code (Type: STRING; Sample values: ['121', '200', '511', '570', '267']; Description: [Team data] School code (see http://stats.ncaa.org/game_upload/team_codes))
+    win (Type: BOOL; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: [Game data] Whether the team won the game)
+    team_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Team data] Sportradar team ID)
+    market (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Team data] Team school name (using Sportradar names))
+    points_game (Type: INT64; Sample values: ['85', '72', '78', '64', '77']; Description: [Game data] Points scored by team)
+    alias (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Team data] Team alias)
+    attendance (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: [Game data] Attendance of the game)
+    opp_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Opponent data] Opponent name)
+    opp_code (Type: INT64; Sample values: ['506107', '770', '50', '78', '717']; Description: [Opponent data] Opponent school code (see http://stats.ncaa.org/game_upload/team_codes))
+    opp_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Opponent data] Opponent school ID (using Sportradar IDs))
+    opp_market (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Opponent data] Opponent school name (using Sportradar names))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_teams_games_sr
+[
+    season (Type: INT64; Sample values: ['2015', '2015', '2015', '2015', '2015']; Description: [Game data] Season the game was played in)
+    periods (Type: INT64; Sample values: ['2', '2', '2', '2', '2']; Description: [Game stats] Number of periods the game)
+    win (Type: BOOL; Sample values: ['True', 'True', 'True', 'False', 'False']; Description: [Team stats] Win)
+    points (Type: INT64; Sample values: ['71', '88', '128', '56', '30']; Description: [Team stats] Total points scored)
+    name (Type: STRING; Sample values: ['Toreros', 'Tigers', 'Spartans', 'Flames', 'Flames']; Description: [Team data] Team name)
+    minutes (Type: STRING; Sample values: ['3:20:00', '3:20:00', '3:20:00', '3:20:00', '3:20:00']; Description: [Team stats] Total minutes played)
+    fast_break_pts (Type: INT64; Sample values: ['0', '21', '26', '0', '0']; Description: [Team stats] Fast-break points scored)
+    turnovers (Type: INT64; Sample values: ['13', '17', '11', '23', '21']; Description: [Team stats] Turnovers)
+    rebounds (Type: INT64; Sample values: ['37', '42', '46', '34', '20']; Description: [Team stats] Total rebounds)
+    team_id (Type: STRING; Sample values: ['620d5944-7156-47d3-aad5-5b3824557d03', 'c9570e17-c4fd-41e6-908a-1a083941319d', '29de4e5e-ee5b-48c8-bffc-1972e7da1e30', '78434f3d-9b05-480c-b79f-4f228a0a155b', '78434f3d-9b05-480c-b79f-4f228a0a155b']; Description: [Team data] Team school ID from SportRadar (unique))
+    tournament (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Whether the game was played in a post-season tournament)
+    team_turnovers (Type: INT64; Sample values: ['0', '1', '0', '0', '1']; Description: [Team stats] Team turnovers)
+    team_rebounds (Type: INT64; Sample values: ['7', '3', '4', '4', '4']; Description: [Team stats] Team rebounds)
+    foulouts (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Team stats] Player foul-outs)
+    steals (Type: INT64; Sample values: ['11', '11', '14', '6', '10']; Description: [Team stats] Steals)
+    league_id (Type: STRING; Sample values: ['cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb']; Description: [Team data] Team school league ID (not unique))
+    blocks (Type: INT64; Sample values: ['4', '5', '6', '4', '4']; Description: [Team stats] Blocks)
+    free_throws_pct (Type: FLOAT64; Sample values: ['55.9', '75.0', '88.6', '44.4', '55.6']; Description: [Team stats] Free throw percentage)
+    assists (Type: INT64; Sample values: ['6', '26', '28', '12', '9']; Description: [Team stats] Assists)
+    alias (Type: STRING; Sample values: ['USD', 'PAC', 'SJSU', 'BETH', 'BETH']; Description: [Team data] Team school alias (unique))
+    points_game (Type: INT64; Sample values: ['71', '88', '128', '56', '30']; Description: [Team stats] Points scored)
+    created (Type: TIMESTAMP; Sample values: ['2018-02-20 15:48:54+00:00', '2018-02-20 15:48:54+00:00', '2018-02-20 15:48:53+00:00', '2018-02-20 15:48:54+00:00', '2018-02-20 15:48:54+00:00']; Description: [Table data] Box score data entry time)
+    free_throws_made (Type: INT64; Sample values: ['19', '6', '31', '4', '5']; Description: [Team stats] Free throws made)
+    points_off_turnovers (Type: INT64; Sample values: ['31', '30', '36', '10', '5']; Description: [Team stats] Points off turnovers)
+    assists_turnover_ratio (Type: FLOAT64; Sample values: ['0.46', '1.53', '2.55', '0.52', '0.43']; Description: [Team stats] Assist-to-turnover ratio)
+    field_goals_pct (Type: FLOAT64; Sample values: ['36.9', '57.4', '57.9', '45.1', '22.6']; Description: [Team stats] Field goal percentage)
+    league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: [Team data] Team school league name (not unique))
+    times_tied (Type: INT64; Sample values: ['6', '0', '0', '6', '0']; Description: [Game stats] Number of ties in the game)
+    market (Type: STRING; Sample values: ['San Diego', 'Pacific', 'San Jose State', 'Bethesda', 'Bethesda']; Description: [Team data] Team school name)
+    tournament_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Type of post-season tournament a game was in played)
+    opp_fast_break_pts (Type: INT64; Sample values: ['0', '0', '2', '0', '21']; Description: [Opponent stats] Fast-break points scored)
+    conf_id (Type: STRING; Sample values: ['c664ceee-1dc0-4743-a6d8-11fbdfb87f61', 'c664ceee-1dc0-4743-a6d8-11fbdfb87f61', '93a776e4-d390-48e1-95bb-74945457366a', '53630324-fd56-42e6-ba4c-dc040a31dfff', '53630324-fd56-42e6-ba4c-dc040a31dfff']; Description: [Team data] Team current conference ID (not unique))
+    offensive_rebounds (Type: INT64; Sample values: ['15', '8', '10', '5', '5']; Description: [Team stats] Offensive rebounds)
+    league_alias (Type: STRING; Sample values: ['NCAAM', 'NCAAM', 'NCAAM', 'NCAAM', 'NCAAM']; Description: [Team data] Team school league alias (not unique))
+    two_points_pct (Type: FLOAT64; Sample values: ['0.571', '0.59', '0.603', '0.515', '0.282']; Description: [Team stats] Two-point shot percentage)
+    two_points_made (Type: INT64; Sample values: ['20', '23', '35', '17', '11']; Description: [Team stats] Two-pointers made)
+    field_goals_made (Type: INT64; Sample values: ['24', '35', '44', '23', '12']; Description: [Team stats] Field goals made)
+    gametime (Type: TIMESTAMP; Sample values: ['2015-12-03 03:00:00+00:00', '2016-01-17 02:00:00+00:00', '2015-12-22 20:00:00+00:00', '2015-12-03 03:00:00+00:00', '2016-01-17 02:00:00+00:00']; Description: [Game data] Date and time the game was played)
+    game_id (Type: STRING; Sample values: ['4069f80e-04f0-4f69-a563-86014bbe95a0', '7160a0e0-bbc3-46ad-afc6-e4e6b5b90a51', '320ccf7a-8a32-4ce6-a561-10687985c6a6', '4069f80e-04f0-4f69-a563-86014bbe95a0', '7160a0e0-bbc3-46ad-afc6-e4e6b5b90a51']; Description: [Game data] Unique identifier for the game)
+    tournament_round (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Tournament round)
+    tournament_game_no (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Tournament game number)
+    venue_id (Type: STRING; Sample values: ['68e1c556-3a3d-4806-ba8f-c9407831cb71', 'ee6551cc-e4b5-4e08-906e-6184b5f6ab71', '7ba1442a-fd2a-463f-82c0-c5ac49a7de0d', '68e1c556-3a3d-4806-ba8f-c9407831cb71', 'ee6551cc-e4b5-4e08-906e-6184b5f6ab71']; Description: [Game data] Unique identifier for the venue where the game was played)
+    venue_name (Type: STRING; Sample values: ['Jenny Craig Pavilion', 'Alex G. Spanos Center', 'Event Center Arena', 'Jenny Craig Pavilion', 'Alex G. Spanos Center']; Description: [Game data] Name of the venue where the game was played)
+    conf_name (Type: STRING; Sample values: ['West Coast', 'West Coast', 'Mountain West', 'Division I West Region', 'Division I West Region']; Description: [Team data] Team current conference name (not unique))
+    division_id (Type: STRING; Sample values: ['c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'efdde904-b901-44af-a234-17712072b213', 'efdde904-b901-44af-a234-17712072b213']; Description: [Team data] Team current division ID (not unique))
+    division_name (Type: STRING; Sample values: ['NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCCAA', 'NCCAA']; Description: [Team data] Team current division name (not unique))
+    opp_name (Type: STRING; Sample values: ['Flames', 'Flames', 'Warriors', 'Toreros', 'Tigers']; Description: [Opponent data] Opponent name)
+    opp_id (Type: STRING; Sample values: ['78434f3d-9b05-480c-b79f-4f228a0a155b', '78434f3d-9b05-480c-b79f-4f228a0a155b', '1abe928d-aec9-4133-9193-617b96ddaf42', '620d5944-7156-47d3-aad5-5b3824557d03', 'c9570e17-c4fd-41e6-908a-1a083941319d']; Description: [Opponent data] Opponent school ID from SportRadar (unique))
+    opp_league_id (Type: STRING; Sample values: ['cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb']; Description: [Opponent data] Opponent school league ID (not unique))
+    opp_league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: [Opponent data] Opponent school league name (not unique))
+    opp_conf_id (Type: STRING; Sample values: ['53630324-fd56-42e6-ba4c-dc040a31dfff', '53630324-fd56-42e6-ba4c-dc040a31dfff', 'f4ab39df-c699-4fea-a74e-b49b92de381b', 'c664ceee-1dc0-4743-a6d8-11fbdfb87f61', 'c664ceee-1dc0-4743-a6d8-11fbdfb87f61']; Description: [Opponent data] Opponent current conference ID (not unique))
+    opp_conf_name (Type: STRING; Sample values: ['Division I West Region', 'Division I West Region', 'Division II West Region', 'West Coast', 'West Coast']; Description: [Opponent data] Opponent current conference name (not unique))
+    opp_division_id (Type: STRING; Sample values: ['efdde904-b901-44af-a234-17712072b213', 'efdde904-b901-44af-a234-17712072b213', 'efdde904-b901-44af-a234-17712072b213', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994']; Description: [Opponent data] Opponent current division ID (not unique))
+    opp_division_name (Type: STRING; Sample values: ['NCCAA', 'NCCAA', 'NCCAA', 'NCAA Division I', 'NCAA Division I']; Description: [Opponent data] Opponent current division name (not unique))
+    conf_alias (Type: STRING; Sample values: ['WCC', 'WCC', 'MWC', 'D1-WEST', 'D1-WEST']; Description: [Team data] Team current conference alias (not unique))
+    status (Type: STRING; Sample values: ['closed', 'closed', 'closed', 'closed', 'closed']; Description: [Game data] Indicates the last state of Sportradar's game file)
+    logo_large (Type: STRING; Sample values: ['https://www.ncaa.com/sites/default/files/images/logos/schools/s/san-diego.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/p/pacific.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/s/san-jose-st.200.png', 'None', 'None']; Description: [Team data] Team logo 200x200)
+    coverage (Type: STRING; Sample values: ['full', 'full', 'full', 'full', 'full']; Description: [Game data] Type of coverage provided by Sportradar)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_historical_tournament_games
+[
+    season (Type: INT64; Sample values: ['1989', '1997', '1997', '1994', '1985']; Description: Year the game was played in. Note that this is different from the "season" values in other tables here, which use academic year.)
+    win_school_ncaa (Type: STRING; Sample values: ['Evansville', 'Chattanooga', 'Chattanooga', 'Temple', 'Temple']; Description: School name of the winning team (see http://stats.ncaa.org/game_upload/team_codes))
+    win_pts (Type: INT64; Sample values: ['94', '75', '73', '61', '60']; Description: Points scored by the winning team)
+    win_code_ncaa (Type: INT64; Sample values: ['219', '693', '693', '690', '690']; Description: School code of the winning team (see http://stats.ncaa.org/game_upload/team_codes))
+    win_name (Type: STRING; Sample values: ['Aces', 'Mocs', 'Mocs', 'Owls', 'Owls']; Description: Team name of the winning team)
+    lose_school_ncaa (Type: STRING; Sample values: ['Oregon St.', 'Illinois', 'Georgia', 'Drexel', 'Virginia Tech']; Description: School name of the losing team (see http://stats.ncaa.org/game_upload/team_codes))
+    round (Type: INT64; Sample values: ['64', '32', '64', '64', '64']; Description: Tournament round, indicated by the number of teams playing in that round)
+    win_market (Type: STRING; Sample values: ['Evansville', 'Chattanooga', 'Chattanooga', 'Temple', 'Temple']; Description: School name (using Sportradar names) of the winning team)
+    win_team_id (Type: STRING; Sample values: ['d8217105-e9c2-4267-9538-3aaeea1ae167', '4c9fb59b-6cec-4b0d-bb0f-628b391d138c', '4c9fb59b-6cec-4b0d-bb0f-628b391d138c', '8598d1b6-106b-4083-a512-2e495729525a', '8598d1b6-106b-4083-a512-2e495729525a']; Description: Sportradar team ID of the winning team)
+    academic_year (Type: INT64; Sample values: ['1988', '1996', '1996', '1993', '1984']; Description: The academic year the game was played in)
+    win_kaggle_team_id (Type: INT64; Sample values: ['1191', '1151', '1151', '1396', '1396']; Description: Kaggle team ID of the winning team)
+    lose_code_ncaa (Type: INT64; Sample values: ['528', '301', '257', '191', '742']; Description: School code of the losing team (see http://stats.ncaa.org/game_upload/team_codes))
+    win_seed (Type: STRING; Sample values: ['11', '14', '14', '04', '08']; Description: Seed of the winning team)
+    num_ot (Type: INT64; Sample values: ['1', '0', '0', '0', '0']; Description: Number of overtime periods played in the game)
+    lose_name (Type: STRING; Sample values: ['Beavers', 'Fighting Illini', 'Bulldogs', 'Dragons', 'Hokies']; Description: Team name of the losing team)
+    lose_team_id (Type: STRING; Sample values: ['532d3874-b4b3-4c5c-acc6-749a6db26c8f', '150148c2-ca8f-414f-8f41-d94a55d4a122', '4f4b0771-994c-4126-822d-7525aaa00f65', 'f2d01b77-0f5d-4574-9e49-2a3eaf822e44', '324ccccc-575b-4b82-acb0-fbb8e68da13b']; Description: Sportradar team ID of the losing team)
+    lose_kaggle_team_id (Type: INT64; Sample values: ['1333', '1228', '1208', '1180', '1439']; Description: Kaggle team ID of the losing team)
+    lose_market (Type: STRING; Sample values: ['Oregon State', 'Illinois', 'Georgia', 'Drexel', 'Virginia Tech']; Description: School name (using Sportradar names) of the losing team)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_games_sr
+[
+    season (Type: INT64; Sample values: ['2015', '2015', '2015', '2015', '2015']; Description: [Game data] Season the game was played in)
+    periods (Type: INT64; Sample values: ['2', '2', '2', '2', '2']; Description: [Game stats] Number of periods the game)
+    h_rank (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: [Home Team stats] Home rank)
+    tournament (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Whether the game was played in a post-season tournament)
+    a_rank (Type: INT64; Sample values: ['0', '5', '0', '0', '0']; Description: [Away Team stats] Away rank)
+    h_id (Type: STRING; Sample values: ['ef13a371-76ed-409c-9aa6-35135183e170', 'ef13a371-76ed-409c-9aa6-35135183e170', 'ef13a371-76ed-409c-9aa6-35135183e170', '532d3874-b4b3-4c5c-acc6-749a6db26c8f', '532d3874-b4b3-4c5c-acc6-749a6db26c8f']; Description: [Home Team data] Home team school ID from SportRadar (unique))
+    game_id (Type: STRING; Sample values: ['b4451a02-26c5-4005-9ac8-b06c1f71e661', 'b2f579ca-9eff-4b2b-a747-81169399c2e8', '571be71c-a5bf-446e-bf21-30eb6c54ac5e', 'd6617923-0b23-49e4-af9b-9e4d0243e45c', 'ffb463a4-dd3c-4ed9-b503-311b95ef0295']; Description: [Game data] Unique identifier for the game)
+    tournament_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Type of post-season tournament a game was in played)
+    tournament_round (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Tournament round)
+    tournament_game_no (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: [Game data] Tournament game number)
+    venue_id (Type: STRING; Sample values: ['c69e13a7-4637-4b0e-9ca8-043ac5738a9d', 'c69e13a7-4637-4b0e-9ca8-043ac5738a9d', 'c69e13a7-4637-4b0e-9ca8-043ac5738a9d', '1d1f74a2-7b35-56f0-8cbd-552c51cb2c14', '1d1f74a2-7b35-56f0-8cbd-552c51cb2c14']; Description: [Game data] Unique identifier for the venue where the game was played)
+    venue_name (Type: STRING; Sample values: ['Lahaina Civic Center', 'Lahaina Civic Center', 'Lahaina Civic Center', 'Moda Center', 'Moda Center']; Description: [Game data] Name of the venue where the game was played)
+    h_name (Type: STRING; Sample values: ['Silverswords', 'Silverswords', 'Silverswords', 'Beavers', 'Beavers']; Description: [Home Team data] Home team name)
+    h_league_id (Type: STRING; Sample values: ['cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb']; Description: [Home Team data] Home team school league ID (not unique))
+    h_league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: [Home Team data] Home team school league name (not unique))
+    h_conf_id (Type: STRING; Sample values: ['ff8025b4-2752-413b-a6fe-4a5c36c47bab', 'ff8025b4-2752-413b-a6fe-4a5c36c47bab', 'ff8025b4-2752-413b-a6fe-4a5c36c47bab', '04d5255d-b2dc-43df-9fa8-d296b0f8ccd7', '04d5255d-b2dc-43df-9fa8-d296b0f8ccd7']; Description: [Home Team data] Home team current conference ID (not unique))
+    h_conf_name (Type: STRING; Sample values: ['Pacific West Conference', 'Pacific West Conference', 'Pacific West Conference', 'Pacific 12', 'Pacific 12']; Description: [Home Team data] Home team current conference name (not unique))
+    h_division_id (Type: STRING; Sample values: ['9c6f6fe5-c9a1-4260-8d87-f9866ca271ba', '9c6f6fe5-c9a1-4260-8d87-f9866ca271ba', '9c6f6fe5-c9a1-4260-8d87-f9866ca271ba', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994']; Description: [Home Team data] Home team current division ID (not unique))
+    h_division_name (Type: STRING; Sample values: ['NCAA Division II', 'NCAA Division II', 'NCAA Division II', 'NCAA Division I', 'NCAA Division I']; Description: [Home Team data] Home team current division name (not unique))
+    a_name (Type: STRING; Sample values: ['Rebels', 'Jayhawks', 'Red Storm', 'Titans', 'Golden Hurricane']; Description: [Away Team data] Away team name)
+    a_id (Type: STRING; Sample values: ['68a3227f-677f-43b0-9a3a-cad79d0df9e2', 'fae4855b-1b64-4b40-a632-9ed345e1e952', 'c1f4aae1-aa16-4095-aeab-10e5c2a1236a', 'c009914b-3303-4dee-b915-978aa48a31d0', '2959bd24-7007-41ae-a3a3-abdf26888cfc']; Description: [Away Team data] Away team school ID from SportRadar (unique))
+    a_league_id (Type: STRING; Sample values: ['cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb']; Description: [Away Team data] Away team school league ID (not unique))
+    a_league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: [Away Team data] Away team school league name (not unique))
+    a_conf_id (Type: STRING; Sample values: ['93a776e4-d390-48e1-95bb-74945457366a', '2853cf4d-6d62-4ec6-8e2c-d69f7a01a557', 'd07bc93e-c84c-44a9-a99d-c213bd0014d6', '5f56da49-5d81-43c3-8652-8b8da40c907f', '3b6a48d8-1f9c-484f-8ed0-ef0a540a0efe']; Description: [Away Team data] Away team current conference ID (not unique))
+    a_conf_name (Type: STRING; Sample values: ['Mountain West', 'Big 12', 'Big East', 'Big West', 'American Athletic']; Description: [Away Team data] Away team current conference name (not unique))
+    a_division_id (Type: STRING; Sample values: ['c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994']; Description: [Away Team data] Away team current division ID (not unique))
+    a_division_name (Type: STRING; Sample values: ['NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I']; Description: [Away Team data] Away team current division name (not unique))
+    a_market (Type: STRING; Sample values: ['UNLV', 'Kansas', "St. John's", 'Cal State Fullerton', 'Tulsa']; Description: [Away Team data] Away team school name)
+    created (Type: TIMESTAMP; Sample values: ['2018-02-20 15:48:58+00:00', '2018-02-20 15:48:53+00:00', '2018-02-20 15:48:58+00:00', '2018-02-20 15:48:53+00:00', '2018-02-20 15:48:53+00:00']; Description: [Table data] Box score data entry time)
+    status (Type: STRING; Sample values: ['closed', 'closed', 'closed', 'closed', 'closed']; Description: [Game data] Indicates the last state of Sportradar's game file)
+    h_market (Type: STRING; Sample values: ['Chaminade University', 'Chaminade University', 'Chaminade University', 'Oregon State', 'Oregon State']; Description: [Home Team data] Home team school name)
+    a_alias (Type: STRING; Sample values: ['UNLV', 'KU', 'SJU', 'CSF', 'TLSA']; Description: [Away Team data] Away team school alias (unique))
+    a_logo_large (Type: STRING; Sample values: ['https://www.ncaa.com/sites/default/files/images/logos/schools/u/unlv.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/k/kansas.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/s/st-johns-ny.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/c/cal-st-fullerton.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/t/tulsa.200.png']; Description: [Away Team data] Away team logo 200x200)
+    a_conf_alias (Type: STRING; Sample values: ['MWC', 'BIG12', 'BIGEAST', 'BIGWEST', 'AAC']; Description: [Away Team data] Away team current conference alias (not unique))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_pbp_sr
+[
+    season (Type: INT64; Sample values: ['2017', '2013', '2017', '2017', '2017']; Description: Season the game was played in)
+    period (Type: INT64; Sample values: ['2', '1', '1', '1', '1']; Description: This field indicates which period the event occured in. "1" is the first 20-minute half, "2" is the second 20-minute half, "3" is the first OT, "4" is the second OT, etc.)
+    team_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the school name to which the event was attributed)
+    game_id (Type: STRING; Sample values: ['d5b7a7a6-982c-4233-9b93-b01cc5255ee8', '60f60dfe-4423-4ef2-9b6c-aee096a0b65c', '3d90529c-12ec-40e0-8f31-ddeed234ff76', '3ac25641-fd61-4126-8d43-b375abe8443e', 'acfa32ca-4689-4eea-a51f-e7aba6fe6152']; Description: Unique identifier for the game)
+    venue_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Unique identifier for the venue where the game was played)
+    venue_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Name of the venue where the game was played)
+    tournament (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of what type of tournament (conference or NCAA) a game was played in, if any)
+    tournament_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of which conference tournament a game was played in, if any)
+    away_name (Type: STRING; Sample values: ['Ramblers', 'Cowboys', 'Shockers', 'Buckeyes', 'Blue Devils']; Description: Visiting team name)
+    away_id (Type: STRING; Sample values: ['61a3908a-7492-4b6f-809e-12c61976bb0a', '8fedc1d2-482b-4c00-b581-f0da49935902', 'f38b58de-3273-4723-a78b-2f918e9aa2d5', '857462b3-0ab6-4d26-9669-10ca354e382b', 'faeb1160-5d15-4f26-99fc-c441cf21fc7f']; Description: Visiting team school ID from SportRadar (unique))
+    away_conf_name (Type: STRING; Sample values: ['Missouri Valley', 'American Southwest Conference', 'American Athletic', 'Big Ten', 'Atlantic Coast']; Description: Visiting team current conference name (not unique))
+    away_division_name (Type: STRING; Sample values: ['NCAA Division I', 'NCAA Division III', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I']; Description: Visiting team division name (not unique))
+    away_league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: Visiting team school league name (not unique))
+    home_name (Type: STRING; Sample values: ['Aces', 'Bears', 'Bearcats', 'Wolverines', 'Tigers']; Description: Home team name)
+    home_id (Type: STRING; Sample values: ['d8217105-e9c2-4267-9538-3aaeea1ae167', 'db6e1cab-3fa3-4a93-a673-8b2a358ff4bf', 'a17dfc54-415f-49c3-a2e6-d6fa9db18b0a', 'bdc2561d-f603-4fab-a262-f1d2af462277', 'dcf5c2e7-c227-4c20-af26-715d5f859412']; Description: Home team school ID from SportRadar (unique))
+    home_conf_name (Type: STRING; Sample values: ['Missouri Valley', 'Big 12', 'American Athletic', 'Big Ten', 'Atlantic Coast']; Description: Home team current conference name (not unique))
+    home_division_name (Type: STRING; Sample values: ['NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I']; Description: Home team current division name (not unique))
+    home_league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN']; Description: Home team school league name (not unique))
+    team_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team school ID from SportRadar (unique) to which the event was attributed)
+    team_conf_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team current conference name (not unique) to which the event was attributed)
+    team_division_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team current division name (not unique) to which the event was attributed)
+    team_league_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team school league name (not unique) to which the event was attributed)
+    possession_team_id (Type: STRING; Sample values: ['d8217105-e9c2-4267-9538-3aaeea1ae167', 'db6e1cab-3fa3-4a93-a673-8b2a358ff4bf', 'a17dfc54-415f-49c3-a2e6-d6fa9db18b0a', 'None', 'None']; Description: The id of the team that possessed the ball at the end of the play.)
+    player_id (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Unique identifier for the player to whom the event is attributed)
+    player_full_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Name for the player to whom the event is attributed)
+    event_id (Type: STRING; Sample values: ['ba8c7a27-adac-435d-8528-a20e0f0f972e', 'b1f6e752-4423-4386-873b-3907ba8d3f6d', '72af39a4-04ca-40ce-bf70-11a45535a6e1', 'f13c2146-94f4-4050-8640-0b46becbf463', 'dc191d65-1d26-4da6-8800-76c74c5565e1']; Description: Unique identifier for the event ("play"))
+    team_alias (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team school alias (unique) to which the event was attributed)
+    type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Event subtype giving additional information about the event)
+    team_market (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicator of the team name to which the event was attributed)
+    event_description (Type: STRING; Sample values: ['Aces 30 second timeout', 'Cowboys 30 seconds timeout', 'Bearcats 30 second timeout', "Buckeyes lineup change (C.J. Jackson, Andrew Dakich, Jae'Sean Tate, Kyle Young, Keita Bates-Diop)", 'Blue Devils lineup change (Trevon Duval, Gary Trent Jr., Grayson Allen, Marques Bolden, Wendell Carter Jr.)']; Description: A description of the event)
+    team_basket (Type: STRING; Sample values: ['left', 'left', 'right', 'left', 'left']; Description: The basket (left or right) that the team to which the event is attributed is attacking)
+    home_market (Type: STRING; Sample values: ['Evansville', 'Baylor', 'Cincinnati', 'Michigan', 'Clemson']; Description: Home team school name)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_teams
+[
+    name (Type: STRING; Sample values: ['Tigers', 'Bulldogs', 'Crimson', 'Big Green', 'Big Red'])
+    id (Type: STRING; Sample values: ['fe406882-9f22-495e-9df6-ef357a6803c6', 'ca478771-aa3d-4231-81e0-b70f519134fb', '5c7bf63f-bc39-43c5-9907-73b50b7a6b34', 'd60357bd-1205-42e9-9092-d986a2843a34', '88ff8c00-958e-4ccf-a21d-77fab9e93692'])
+    school_ncaa (Type: STRING; Sample values: ['Princeton', 'Yale', 'Harvard', 'Dartmouth', 'Cornell'])
+    code_ncaa (Type: INT64; Sample values: ['554', '813', '275', '172', '167'])
+    alias (Type: STRING; Sample values: ['PRIN', 'YALE', 'HARV', 'DART', 'COR'])
+    division_name (Type: STRING; Sample values: ['NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I', 'NCAA Division I'])
+    league_id (Type: STRING; Sample values: ['cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb', 'cd4268ee-07aa-4c4d-a435-ec44ad2c76cb'])
+    kaggle_team_id (Type: INT64; Sample values: ['1343', '1463', '1217', '1171', '1165'])
+    division_id (Type: STRING; Sample values: ['c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994', 'c5a8d640-5093-4044-851d-2c562e929994'])
+    conf_id (Type: STRING; Sample values: ['c2d16439-b791-4f9b-84d9-80cf457a0676', 'c2d16439-b791-4f9b-84d9-80cf457a0676', 'c2d16439-b791-4f9b-84d9-80cf457a0676', 'c2d16439-b791-4f9b-84d9-80cf457a0676', 'c2d16439-b791-4f9b-84d9-80cf457a0676'])
+    league_name (Type: STRING; Sample values: ['NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN', 'NCAA MEN'])
+    turner_name (Type: STRING; Sample values: ['Princeton University', 'Yale University', 'Harvard University', 'Dartmouth College', 'Cornell University'])
+    conf_name (Type: STRING; Sample values: ['Ivy', 'Ivy', 'Ivy', 'Ivy', 'Ivy'])
+    venue_id (Type: STRING; Sample values: ['68db797a-0074-4717-a569-08e5fd091f0f', '1a6fd393-b2fb-4210-8082-83e5bbc9d681', '94de06b6-4ae7-4fd1-bbd0-67b03a720215', 'b756945a-1b32-4148-a6ed-f2aea43afec9', '548bbd5b-32e3-42ef-9095-6861af657296'])
+    venue_name (Type: STRING; Sample values: ['Jadwin Gymnasium', 'John J. Lee Amphitheater', 'Lavietes Pavilion', 'Edward Leede Arena', 'Newman Arena'])
+    league_alias (Type: STRING; Sample values: ['NCAAM', 'NCAAM', 'NCAAM', 'NCAAM', 'NCAAM'])
+    conf_alias (Type: STRING; Sample values: ['IVY', 'IVY', 'IVY', 'IVY', 'IVY'])
+    market (Type: STRING; Sample values: ['Princeton', 'Yale', 'Harvard', 'Dartmouth', 'Cornell'])
+    venue_state (Type: STRING; Sample values: ['NJ', 'CT', 'MA', 'NH', 'NY'])
+    logo_large (Type: STRING; Sample values: ['https://www.ncaa.com/sites/default/files/images/logos/schools/p/princeton.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/y/yale.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/h/harvard.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/d/dartmouth.200.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/c/cornell.200.png'])
+    logo_small (Type: STRING; Sample values: ['https://www.ncaa.com/sites/default/files/images/logos/schools/p/princeton.24.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/y/yale.24.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/h/harvard.24.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/d/dartmouth.24.png', 'https://www.ncaa.com/sites/default/files/images/logos/schools/c/cornell.24.png'])
+    venue_address (Type: STRING; Sample values: ['Princeton University', '70 Tower Pkwy', 'Soldiers Field Road', '6 South Park Street', 'Bartels Hall'])
+    venue_city (Type: STRING; Sample values: ['Princeton', 'New Haven', 'Allston', 'Hanover', 'Ithaca'])
+    venue_country (Type: STRING; Sample values: ['USA', 'USA', 'USA', 'USA', 'USA'])
+    division_alias (Type: STRING; Sample values: ['D1', 'D1', 'D1', 'D1', 'D1'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mbb_players_games_sr
+[
+    season (Type: INT64; Sample values: []; Description: [Game data] Season the game was played in)
+    points (Type: INT64; Sample values: []; Description: [Player stats] Points scored)
+    minutes (Type: STRING; Sample values: []; Description: [Player stats] Minutes played)
+    team_name (Type: STRING; Sample values: []; Description: [Team info] Team name)
+    game_id (Type: STRING; Sample values: []; Description: [Game data] Unique identifier for the game)
+    tournament (Type: STRING; Sample values: []; Description: [Game data] Whether the game was played in a post-season tournament)
+    tournament_type (Type: STRING; Sample values: []; Description: [Game data] Type of post-season tournament a game was in played)
+    tournament_round (Type: STRING; Sample values: []; Description: [Game data] Tournament round)
+    tournament_game_no (Type: STRING; Sample values: []; Description: [Game data] Tournament game number)
+    player_id (Type: STRING; Sample values: []; Description: [Player info] Player Sportradar player ID)
+    last_name (Type: STRING; Sample values: []; Description: [Player info] Player last name)
+    first_name (Type: STRING; Sample values: []; Description: [Player info] Player first name)
+    full_name (Type: STRING; Sample values: []; Description: [Player info] Player full name)
+    abbr_name (Type: STRING; Sample values: []; Description: [Player info] Player abbreviated name ("F.Last"))
+    team_id (Type: STRING; Sample values: []; Description: [Team info] Sportradar team ID)
+    conf_name (Type: STRING; Sample values: []; Description: [Team info] Team current conference name)
+    division_name (Type: STRING; Sample values: []; Description: [Team info] Team current division name)
+    league_name (Type: STRING; Sample values: []; Description: [Team info] Team current league name)
+    team_alias (Type: STRING; Sample values: []; Description: [Team info] Team alias)
+    team_market (Type: STRING; Sample values: []; Description: [Team info] Team school name (using Sportradar names))
+    class (Type: STRING; Sample values: []; Description: [Player info] Player's class at game time (Note: this information comes from the school's website, via Sportradar.))
+    conf_alias (Type: STRING; Sample values: []; Description: [Team info] Team current conference alias)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.mascots
+[
+    name (Type: STRING; Sample values: ['Golden Hurricane', 'Sun Devils', 'Dragons', 'Braves', 'Golden Griffins']; Description: The name of the university’s team)
+    id (Type: STRING; Sample values: ['2959bd24-7007-41ae-a3a3-abdf26888cfc', 'ad4bc983-8d2e-4e6f-a8f9-80840a786c64', 'f2d01b77-0f5d-4574-9e49-2a3eaf822e44', 'b47d10b8-a2a5-47df-a2f9-7bd0b9d51beb', '0113eea0-c943-4fff-9780-ae0fb099e7ef']; Description: University unique ID from Sportradar)
+    mascot_name (Type: STRING; Sample values: ['Captain Cane', 'Sparky', 'Mario the Magnificent', 'Kaboom!', 'Petey']; Description: The proper name of the university's mascot, if available (e.g. a character))
+    mascot_common_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The type of being or creature that the mascot embodies)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.ncaa_basketball.team_colors
+[
+    id (Type: STRING; Sample values: ['5d77800f-1ae6-4b66-8e97-b0dbb8bbc717', '9fccbf28-2858-4263-821c-fdefb3c7efa3', '93df9b18-e9fc-42a7-bb45-a736c203b4dc', '6b955b96-b736-475e-bffd-e4acf2054169', '9b66e1e0-aace-4671-9be2-54c8acf5ecfc'])
+    code_ncaa (Type: INT64; Sample values: ['797', '157', '500', '253', '575'])
+    market (Type: STRING; Sample values: ['Milwaukee', 'Colorado', 'Northeastern', 'Georgia Southern', 'Richmond'])
+    color (Type: STRING; Sample values: ['#000000', '#000000', '#000000', '#000066', '#000066'])
+]
+
+--------------------------------------------------
+

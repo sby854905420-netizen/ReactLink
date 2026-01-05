@@ -1,0 +1,173 @@
+###Table full name: bigquery-public-data.sdoh_hud_pit_homelessness.hud_pit_by_coc
+[
+    Homeless_Veterans (Type: INT64; Sample values: ['138', '144', '174', '40', '66'])
+    Sheltered_ES_Homeless_Veterans (Type: INT64; Sample values: ['92', 'None', 'None', '27', 'None']; Description: Emergency Shelter; after 2013)
+    Sheltered_TH_Homeless_Veterans (Type: INT64; Sample values: ['28', 'None', 'None', '13', 'None']; Description: Transitional Housing; after 2013)
+    CoC_Number (Type: STRING; Sample values: ['AK-500', 'AK-500', 'AK-500', 'AK-501', 'AK-501']; Description: Number of the Continuum of Care Area)
+    Sheltered_Total_Homeless_Veterans (Type: INT64; Sample values: ['120', '138', '167', '40', '50'])
+    Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_SH_Homeless_Veterans (Type: INT64; Sample values: ['0', 'None', 'None', '0', 'None']; Description: Safe Haven Housing; after 2013)
+    Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Veterans (Type: INT64; Sample values: ['18', '6', '7', '0', '16'])
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Chronically_Homeless (Type: INT64; Sample values: ['101', '89', '114', '105', '95']; Description: Homelessness for a Year)
+    Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    CoC_Name (Type: STRING; Sample values: ['Anchorage CoC', 'Anchorage CoC', 'Anchorage CoC', 'Alaska Balance of State CoC', 'Alaska Balance of State CoC']; Description: Name of the Continuum of Care Area)
+    Sheltered_Total_Chronically_Homeless (Type: INT64; Sample values: ['59', '68', '109', '78', '70']; Description: Homelessness for a Year)
+    Chronically_Homeless_Individuals (Type: INT64; Sample values: ['94', '83', '113', '88', '83']; Description: Homelessness for a Year)
+    Overall_Homeless (Type: INT64; Sample values: ['1023', '1122', '1147', '761', '824']; Description: Total Homeless Population)
+    Sheltered_Total_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['56', '62', '108', '63', '62']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['3', '6', '1', '15', '8']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['7', '6', '1', '17', '12']; Description: Homelessness for a Year)
+    Sheltered_ES_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_SH_Chronically_Homeless (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Homelessness for a Year)
+    Unsheltered_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Chronically_Homeless (Type: INT64; Sample values: ['42', '21', '5', '27', '25']; Description: Homelessness for a Year)
+    Sheltered_ES_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Count_Year (Type: INT64; Sample values: ['2014', '2013', '2012', '2014', '2013']; Description: Year the Count took Place (January))
+    Unsheltered_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_ES_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Unsheltered_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_TH_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['56', '62', '108', '63', '62']; Description: Emergency Shelter; Homelessness for a Year)
+    Unsheltered_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['38', '21', '5', '25', '21']; Description: Homelessness for a Year)
+    CoC_Category (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Only for 2018)
+    Sheltered_TH_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_TH_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['3', '6', '1', '15', '8']; Description: Emergency Shelter; Homelessness for a Year)
+    Unsheltered_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['4', '0', '0', '2', '4']; Description: Homelessness for a Year)
+    Sheltered_ES_Chronically_Homeless (Type: INT64; Sample values: ['59', '68', '109', '78', '70']; Description: Emergency Shelter; Homelessness for a Year)
+    Unsheltered_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_TH_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_ES_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_TH_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_TH_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_ES_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_Total_Homeless (Type: INT64; Sample values: ['970', '1070', '1097', '669', '671']; Description: Total Sheltered Homeless)
+    Sheltered_TH_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_Total_Homeless_Individuals (Type: INT64; Sample values: ['688', '792', '756', '421', '416'])
+    Sheltered_SH_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Safe Haven Housing; after 2014)
+    Sheltered_Total_Homeless_People_in_Families (Type: INT64; Sample values: ['282', '278', '341', '248', '255'])
+    Homeless_People_in_Families (Type: INT64; Sample values: ['287', '278', '356', '288', '306'])
+    Sheltered_Total_Homeless_Family_Households (Type: INT64; Sample values: ['100', '87', '122', '79', '95'])
+    Sheltered_SH_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Safe Haven Housing; after 2014)
+    Homeless_Family_Households (Type: INT64; Sample values: ['102', '87', '126', '91', '109'])
+    Sheltered_SH_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Safe Haven Housing; after 2014)
+    Sheltered_SH_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Safe Haven Housing; Homelessness for a Year)
+    Homeless_Individuals (Type: INT64; Sample values: ['736', '844', '791', '473', '518']; Description: Individuals not with Families)
+    Sheltered_ES_Homeless_Individuals (Type: INT64; Sample values: ['530', '553', '561', '318', '282']; Description: Emergency Shelter)
+    Sheltered_TH_Homeless_Individuals (Type: INT64; Sample values: ['158', '239', '195', '103', '134']; Description: Transitional Housing)
+    Sheltered_SH_Homeless_Individuals (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Safe Haven Housing)
+    Unsheltered_Homeless_Individuals (Type: INT64; Sample values: ['48', '52', '35', '52', '102'])
+    Unsheltered_Homeless (Type: INT64; Sample values: ['53', '52', '50', '92', '153'])
+    Unsheltered_Homeless_Family_Households (Type: INT64; Sample values: ['2', '0', '4', '12', '14'])
+    Unsheltered_Homeless_People_in_Families (Type: INT64; Sample values: ['5', '0', '15', '40', '51'])
+    Sheltered_ES_Homeless (Type: INT64; Sample values: ['665', '676', '704', '474', '461']; Description: Homeless in Emergency Shelters)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.censustract_2019_5yr
+[
+    vacant_housing_units (Type: FLOAT64; Sample values: ['16.0', '152.0', '68.0', '188.0', '139.0'])
+    vacant_housing_units_for_rent (Type: FLOAT64; Sample values: ['0.0', '46.0', '0.0', '50.0', '0.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['82.0', '145.0', '115.0', '111.0', '148.0'])
+    housing_units (Type: FLOAT64; Sample values: ['725.0', '840.0', '1428.0', '1863.0', '4622.0'])
+    different_house_year_ago_different_city (Type: FLOAT64; Sample values: ['144.0', '137.0', '222.0', '245.0', '1842.0'])
+    vacant_housing_units_for_sale (Type: FLOAT64; Sample values: ['0.0', '0.0', '2.0', '25.0', '34.0'])
+    occupied_housing_units (Type: FLOAT64; Sample values: ['709.0', '688.0', '1360.0', '1675.0', '4483.0'])
+    dwellings_10_to_19_units (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '55.0', '301.0'])
+    housing_built_2000_to_2004 (Type: FLOAT64; Sample values: ['24.0', '7.0', '27.0', '11.0', '286.0'])
+    armed_forces (Type: FLOAT64; Sample values: ['0.0', '10.0', '5.0', '8.0', '292.0'])
+    geo_id (Type: STRING; Sample values: ['1001020100', '1001020200', '1001020300', '1001020400', '1001020500'])
+    pop_widowed (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [censustract_2012_5yr, censustract_2016_5yr, censustract_2017_5yr, censustract_2013_5yr, censustract_2015_5yr, censustract_2018_5yr, censustract_2014_5yr, censustract_2020_5yr, censustract_2010_5yr, censustract_2011_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zip_codes_2018_5yr
+[
+    vacant_housing_units (Type: FLOAT64; Sample values: ['613.0', '2484.0', '1428.0', '314.0', '2099.0'])
+    vacant_housing_units_for_rent (Type: FLOAT64; Sample values: ['93.0', '131.0', '180.0', '39.0', '283.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['57.0', '1020.0', '100.0', '325.0', '1781.0'])
+    civilian_labor_force (Type: FLOAT64; Sample values: ['3712.0', '4352.0', '5632.0', '5888.0', '7168.0'])
+    different_house_year_ago_different_city (Type: FLOAT64; Sample values: ['419.0', '232.0', '1182.0', '675.0', '2247.0'])
+    poverty (Type: FLOAT64; Sample values: ['976.0', '5009.0', '3698.0', '5616.0', '4401.0'])
+    vacant_housing_units_for_sale (Type: FLOAT64; Sample values: ['106.0', '0.0', '81.0', '0.0', '64.0'])
+    armed_forces (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    dwellings_10_to_19_units (Type: FLOAT64; Sample values: ['61.0', '261.0', '0.0', '21.0', '272.0'])
+    geo_id (Type: STRING; Sample values: ['15537', '48215', '29571', '88063', '32310'])
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    geoid (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+**Some other tables have the similar structure: [zip_codes_2013_5yr, zip_codes_2016_5yr, zip_codes_2015_5yr, zip_codes_2014_5yr, zip_codes_2011_5yr, zip_codes_2012_5yr, zip_codes_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2017_5yr
+[
+    vacant_housing_units (Type: FLOAT64; Sample values: ['97.0', '229.0', '109.0', '149.0', '431.0'])
+    vacant_housing_units_for_rent (Type: FLOAT64; Sample values: ['8.0', '0.0', '9.0', '0.0', '33.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['27.0', '8.0', '2.0', '163.0', '212.0'])
+    different_house_year_ago_different_city (Type: FLOAT64; Sample values: ['146.0', '179.0', '66.0', '173.0', '1297.0'])
+    geo_id (Type: STRING; Sample values: ['38037', '39886', '15558', '67467', '70748'])
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+]
+**Some other tables have the similar structure: [zcta5_2014_5yr, zcta5_2016_5yr, zcta5_2011_5yr, zcta5_2013_5yr, zcta5_2015_5yr, zcta_2019_5yr, zcta_2020_5yr, zcta5_2012_5yr, zcta5_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hud_housing.2017_lihtc_database_hud
+[
+    cosubcur (Type: STRING; Sample values: ['73070', '93370', '91753', '91753', '91753']; Description: County Subdivision Code (Minor Civil Division/ Census Civil Division))
+    co_cty (Type: STRING; Sample values: ['Stamford', 'Turlock', 'Denver', 'Denver', 'Lincoln']; Description: Contact's city)
+    hud_id (Type: STRING; Sample values: ['CTA20150006', 'NEA20110817', 'NEA20100806', 'NEA20100810', 'NEA20110819']; Description: Unique Project Identifier for the Database — characters 1-3: Allocating agency code (see table below) digits 4-7: Year placed in service (0000 or 0001 if unknown or missing) digit 8: Number of years property was added to database after initial request, e.g. 1= 2015 property reported to HUD with 2016 update (0 if property added to DB prior to 2015 update) digits 9-11: Record number within allocating agency and year placed in service;* Note: Beginning with the 2015 database update, digit 8 (see variable definition) was added to HUD_ID.)
+    state_id (Type: STRING; Sample values: ['CT-09-021', '7-0728', '7-0720', '7-0718', '7-0723']; Description: State-defined Project ID)
+    co_st (Type: STRING; Sample values: ['CT', 'CA', 'CO', 'CO', 'NE']; Description: Contact's state)
+    x (Type: FLOAT64; Sample values: ['0.213386982679367', '-0.0859191939234734', '-0.0889840722084045', '-0.0882464572787285', '-0.0881798714399338'])
+    st2010 (Type: STRING; Sample values: ['9', '31', '31', '31', '31']; Description: 2010 State FIPS Code)
+    place2010 (Type: STRING; Sample values: ['73000', 'None', 'None', 'None', 'None']; Description: FIPS Place Code (2010))
+    st2000 (Type: STRING; Sample values: ['9', '31', '31', '31', '31']; Description: 2000 State FIPS Code)
+    z (Type: FLOAT64; Sample values: ['0.656834781169891', '0.655049264431', '0.653629183769226', '0.654003858566284', '0.654169857501984'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.state_2020_5yr
+[
+    vacant_housing_units (Type: FLOAT64; Sample values: ['381894.0', '63197.0', '209234.0', '223970.0', '214218.0'])
+    vacant_housing_units_for_rent (Type: FLOAT64; Sample values: ['63532.0', '7555.0', '32241.0', '37263.0', '37160.0'])
+    dwellings_10_to_19_units (Type: FLOAT64; Sample values: ['74170.0', '8692.0', '49764.0', '131707.0', '31851.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['181564.0', '50694.0', '133707.0', '289568.0', '94087.0'])
+    geo_id (Type: STRING; Sample values: ['1', '2', '5', '8', '28'])
+    pop_widowed (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [state_2017_5yr, state_2013_5yr, state_2017_1yr, state_2014_5yr, state_2013_3yr, state_2012_3yr, state_2007_3yr, state_2008_1yr, state_2007_1yr, state_2018_5yr, state_2019_5yr, state_2016_1yr, state_2021_1yr, state_2011_3yr, state_2016_5yr, state_2011_5yr, state_2009_1yr, state_2010_5yr, state_2010_1yr, state_2015_5yr, state_2011_1yr, state_2012_5yr, state_2013_1yr, state_2009_3yr, state_2008_3yr, state_2018_1yr, state_2019_1yr, state_2014_1yr, state_2012_1yr, state_2015_1yr, state_2010_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2019_5yr
+[
+    vacant_housing_units (Type: FLOAT64; Sample values: ['5.0', '0.0', '119.0', '572.0', '0.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['0.0', '0.0', '148.0', '0.0', '0.0'])
+    geo_id (Type: STRING; Sample values: ['1222', '1745', '2163', '2543', '2876'])
+]
+
+--------------------------------------------------
+

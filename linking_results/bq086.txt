@@ -1,0 +1,315 @@
+###Table full name: bigquery-public-data.covid19_open_data.covid19_open_data
+[
+    population (Type: INT64; Sample values: ['7566431', '7566431', '7566431', '7566431', '7566431'])
+    cumulative_confirmed (Type: INT64; Sample values: ['2447084', '644301', '678620', '884595', '2458052'])
+    population_age_20_29 (Type: INT64; Sample values: ['789292', '789292', '789292', '789292', '789292'])
+    population_age_30_39 (Type: INT64; Sample values: ['1003257', '1003257', '1003257', '1003257', '1003257'])
+    population_age_40_49 (Type: INT64; Sample values: ['1270974', '1270974', '1270974', '1270974', '1270974'])
+    cumulative_confirmed_age_3 (Type: INT64; Sample values: ['315989', '73010', '77179', '132090', '317464'])
+    population_age_50_59 (Type: INT64; Sample values: ['1059462', '1059462', '1059462', '1059462', '1059462'])
+    cumulative_confirmed_age_0 (Type: INT64; Sample values: ['217424', '29213', '31253', '40986', '217921'])
+    cumulative_confirmed_age_6 (Type: INT64; Sample values: ['303253', '97426', '102752', '119297', '304870'])
+    population_age_10_19 (Type: INT64; Sample values: ['807782', '807782', '807782', '807782', '807782'])
+    cumulative_confirmed_age_2 (Type: INT64; Sample values: ['355190', '65789', '70228', '104753', '356712'])
+    population_age_60_69 (Type: INT64; Sample values: ['819690', '819690', '819690', '819690', '819690'])
+    cumulative_confirmed_age_4 (Type: INT64; Sample values: ['351648', '81472', '85780', '123621', '353135'])
+    cumulative_confirmed_age_1 (Type: INT64; Sample values: ['62111', '16102', '16628', '22589', '62399'])
+    cumulative_confirmed_age_7 (Type: INT64; Sample values: ['176956', '67612', '71247', '81687', '177890'])
+    population_age_00_09 (Type: INT64; Sample values: ['752275', '752275', '752275', '752275', '752275'])
+    cumulative_confirmed_age_5 (Type: INT64; Sample values: ['437558', '105111', '110950', '138924', '439448'])
+    cumulative_confirmed_age_9 (Type: INT64; Sample values: ['75819', '38204', '39311', '41734', '76212'])
+    cumulative_confirmed_male (Type: INT64; Sample values: ['1120215', '290559', '307253', '408549', '1124930'])
+    cumulative_persons_fully_vaccinated (Type: INT64; Sample values: ['None', '411550', 'None', '3961116', 'None'])
+    population_age_70_79 (Type: INT64; Sample values: ['604552', '604552', '604552', '604552', '604552'])
+    population_clustered (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_persons_fully_vaccinated_moderna (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_confirmed_female (Type: INT64; Sample values: ['1267490', '337349', '354438', '453137', '1273502'])
+    cumulative_tested_age_3 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_tested (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_confirmed (Type: INT64; Sample values: ['2331', '709', '959', '3627', '3921'])
+    cumulative_tested_age_6 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_confirmed_age_8 (Type: INT64; Sample values: ['112305', '47219', '49816', '54542', '112995'])
+    cumulative_persons_vaccinated (Type: INT64; Sample values: ['None', '780641', 'None', '4326134', 'None'])
+    cumulative_tested_age_2 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    population_age_80_and_older (Type: INT64; Sample values: ['459147', '459147', '459147', '459147', '459147'])
+    cumulative_tested_age_0 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    population_density (Type: FLOAT64; Sample values: ['235.5', '235.5', '235.5', '235.5', '235.5'])
+    new_confirmed_age_6 (Type: INT64; Sample values: ['308', '129', '152', '230', '531'])
+    new_confirmed_age_3 (Type: INT64; Sample values: ['299', '70', '91', '796', '560'])
+    cumulative_persons_fully_vaccinated_janssen (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_tested_age_4 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_confirmed_age_2 (Type: INT64; Sample values: ['366', '79', '118', '806', '533'])
+    cumulative_tested_age_5 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_tested_age_7 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_persons_fully_vaccinated_pfizer (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_tested_age_1 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_confirmed_age_0 (Type: INT64; Sample values: ['110', '28', '64', '196', '151'])
+    cumulative_tested_age_9 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    date (Type: DATE; Sample values: ['2022-03-05', '2021-03-28', '2021-04-17', '2021-07-18', '2022-03-08'])
+    country_code (Type: STRING; Sample values: ['ES', 'ES', 'ES', 'ES', 'ES'])
+    new_confirmed_age_7 (Type: INT64; Sample values: ['213', '83', '110', '222', '332'])
+    population_female (Type: INT64; Sample values: ['3867762', '3867762', '3867762', '3867762', '3867762'])
+    new_confirmed_age_4 (Type: INT64; Sample values: ['271', '105', '114', '640', '578'])
+    population_urban (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_confirmed_age_5 (Type: INT64; Sample values: ['395', '119', '188', '462', '670'])
+    new_confirmed_age_9 (Type: INT64; Sample values: ['98', '28', '15', '52', '133'])
+    cumulative_tested_male (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    population_male (Type: INT64; Sample values: ['3698669', '3698669', '3698669', '3698669', '3698669'])
+    new_confirmed_age_1 (Type: INT64; Sample values: ['90', '9', '13', '84', '99'])
+    cumulative_tested_age_8 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    search_trends_bacterial_vaginosis (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    gdp_per_capita_usd (Type: INT64; Sample values: ['35872', '35872', '35872', '35872', '35872'])
+    cumulative_intensive_care_patients_age_6 (Type: INT64; Sample values: ['1420', '1009', '1058', '1149', '1425'])
+    cumulative_intensive_care_patients_age_3 (Type: INT64; Sample values: ['208', '120', '127', '155', '208'])
+    cumulative_intensive_care_patients_age_0 (Type: INT64; Sample values: ['12', '5', '5', '6', '12'])
+    new_confirmed_male (Type: INT64; Sample values: ['1000', '358', '473', '1844', '1712'])
+    cumulative_intensive_care_patients_age_2 (Type: INT64; Sample values: ['58', '36', '36', '45', '58'])
+    international_support (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_tested_female (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_deceased_age_3 (Type: INT64; Sample values: ['41', '22', '22', '25', '42'])
+    cumulative_recovered_age_3 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_deceased_age_6 (Type: INT64; Sample values: ['1725', '1187', '1236', '1315', '1728'])
+    cumulative_deceased_age_0 (Type: INT64; Sample values: ['3', '0', '0', '0', '3'])
+    cumulative_recovered_age_6 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_confirmed_age_8 (Type: INT64; Sample values: ['156', '54', '84', '109', '261'])
+    cumulative_intensive_care_patients_age_1 (Type: INT64; Sample values: ['20', '9', '9', '11', '20'])
+    cumulative_intensive_care_patients_age_5 (Type: INT64; Sample values: ['947', '695', '721', '805', '948'])
+    cumulative_hospitalized_patients_age_3 (Type: INT64; Sample values: ['2665', '1672', '1741', '2078', '2666'])
+    cumulative_hospitalized_patients_age_2 (Type: INT64; Sample values: ['1212', '726', '753', '918', '1214'])
+    cumulative_hospitalized_patients_age_0 (Type: INT64; Sample values: ['281', '129', '136', '157', '282'])
+    cumulative_intensive_care_patients_age_4 (Type: INT64; Sample values: ['495', '321', '333', '401', '495'])
+    cumulative_recovered_age_2 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_intensive_care_patients_age_9 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_intensive_care_patients (Type: INT64; Sample values: ['4655', '3287', '3437', '3795', '4666'])
+    cumulative_intensive_care_patients_age_7 (Type: INT64; Sample values: ['1199', '872', '918', '980', '1204'])
+    cumulative_deceased_age_2 (Type: INT64; Sample values: ['16', '10', '10', '11', '16'])
+    cumulative_hospitalized_patients_age_6 (Type: INT64; Sample values: ['9664', '7032', '7332', '7928', '9680'])
+    cumulative_deceased_age_4 (Type: INT64; Sample values: ['181', '124', '126', '134', '181'])
+    new_confirmed_female (Type: INT64; Sample values: ['1256', '342', '473', '1698', '2127'])
+    cumulative_recovered_age_0 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_recovered_age_7 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    search_trends_hypercholesterolemia (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    cumulative_recovered_age_4 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_deceased_age_7 (Type: INT64; Sample values: ['3877', '2912', '3011', '3162', '3884'])
+    new_tested_age_6 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    place_id (Type: STRING; Sample values: ['ChIJ8_UwhdxbpBIRUMijIeD6AAE', 'ChIJ8_UwhdxbpBIRUMijIeD6AAE', 'ChIJ8_UwhdxbpBIRUMijIeD6AAE', 'ChIJ8_UwhdxbpBIRUMijIeD6AAE', 'ChIJ8_UwhdxbpBIRUMijIeD6AAE'])
+    wikidata_id (Type: STRING; Sample values: ['Q5705', 'Q5705', 'Q5705', 'Q5705', 'Q5705'])
+    datacommons_id (Type: STRING; Sample values: ['nuts/ES51', 'nuts/ES51', 'nuts/ES51', 'nuts/ES51', 'nuts/ES51'])
+    country_name (Type: STRING; Sample values: ['Spain', 'Spain', 'Spain', 'Spain', 'Spain'])
+    openstreetmap_id (Type: INT64; Sample values: ['349053', '349053', '349053', '349053', '349053'])
+    relative_humidity (Type: FLOAT64; Sample values: ['63.602722', '67.957153', '57.094012', '62.203035', '86.283994'])
+    comorbidity_mortality_rate (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    mobility_residential (Type: STRING; Sample values: ['1', '2', '8', '-3', '5'])
+    subregion1_code (Type: STRING; Sample values: ['CT', 'CT', 'CT', 'CT', 'CT'])
+    subregion1_name (Type: STRING; Sample values: ['Cataluña', 'Cataluña', 'Cataluña', 'Cataluña', 'Cataluña'])
+    subregion2_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    subregion2_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    search_trends_avoidant_personality_disorder (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_candidiasis (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_diabetic_ketoacidosis (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_epidermoid_cyst (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hemorrhoids (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hyperemesis_gravidarum (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hyperhidrosis (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hyperlipidemia (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hyperthyroidism (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hypertriglyceridemia (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_hypothyroidism (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_kidney_failure (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_kidney_stone (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_middle_back_pain (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_oral_candidiasis (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_stridor (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_suicidal_ideation (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    search_trends_thyroid_nodule (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    locality_code (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    locality_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_hospitalized_patients (Type: INT64; Sample values: ['53645', '38950', '40333', '43769', '53717'])
+    cumulative_ventilator_patients (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_recovered (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cumulative_intensive_care_patients_male (Type: INT64; Sample values: ['3190', '2299', '2390', '2629', '3201'])
+    cumulative_deceased (Type: INT64; Sample values: ['18698', '14132', '14504', '15028', '18725'])
+    iso_3166_1_alpha_2 (Type: STRING; Sample values: ['ES', 'ES', 'ES', 'ES', 'ES'])
+    iso_3166_1_alpha_3 (Type: STRING; Sample values: ['ESP', 'ESP', 'ESP', 'ESP', 'ESP'])
+    new_tested (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    age_bin_0 (Type: STRING; Sample values: ['0-9', '0-9', '0-9', '0-9', '0-9'])
+    age_bin_7 (Type: STRING; Sample values: ['60-69', '60-69', '60-69', '60-69', '60-69'])
+    location_key (Type: STRING; Sample values: ['ES_CT', 'ES_CT', 'ES_CT', 'ES_CT', 'ES_CT'])
+    age_bin_1 (Type: STRING; Sample values: ['No classificat', 'No classificat', 'No classificat', 'No classificat', 'No classificat'])
+    age_bin_5 (Type: STRING; Sample values: ['40-49', '40-49', '40-49', '40-49', '40-49'])
+    age_bin_2 (Type: STRING; Sample values: ['10-19', '10-19', '10-19', '10-19', '10-19'])
+    age_bin_4 (Type: STRING; Sample values: ['30-39', '30-39', '30-39', '30-39', '30-39'])
+    age_bin_9 (Type: STRING; Sample values: ['80-89', '80-89', '80-89', '80-89', '80-89'])
+    cumulative_hospitalized_patients_male (Type: INT64; Sample values: ['29821', '21562', '22343', '24307', '29862'])
+    cumulative_intensive_care_patients_female (Type: INT64; Sample values: ['1465', '988', '1047', '1166', '1465'])
+    cumulative_vaccine_doses_administered (Type: INT64; Sample values: ['None', '1192191', 'None', '8287250', 'None'])
+    cumulative_hospitalized_patients_female (Type: INT64; Sample values: ['23824', '17388', '17990', '19462', '23855'])
+    cumulative_hospitalized_patients_age_5 (Type: INT64; Sample values: ['7764', '5844', '6104', '6718', '7768'])
+    new_intensive_care_patients_male (Type: INT64; Sample values: ['0', '3', '2', '5', '3'])
+    current_intensive_care_patients (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    new_intensive_care_patients_age_5 (Type: INT64; Sample values: ['0', '2', '1', '3', '1'])
+    new_intensive_care_patients (Type: INT64; Sample values: ['0', '7', '6', '8', '3'])
+    new_hospitalized_patients_male (Type: INT64; Sample values: ['2', '26', '31', '73', '9'])
+    cumulative_hospitalized_patients_age_7 (Type: INT64; Sample values: ['11115', '8365', '8657', '9199', '11129'])
+    cumulative_hospitalized_patients_age_1 (Type: INT64; Sample values: ['308', '159', '167', '214', '310'])
+    cumulative_deceased_age_5 (Type: INT64; Sample values: ['619', '443', '448', '482', '620'])
+    cumulative_deceased_age_1 (Type: INT64; Sample values: ['5', '3', '3', '4', '5'])
+    cumulative_deceased_male (Type: INT64; Sample values: ['10055', '7420', '7632', '7950', '10072'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_summary
+[
+    vital_registration_complete (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Vital registration complete identifies countries that report at least 90 percent complete registries of vital (birth and death) statistics to the United Nations Statistics Division and are reported in its Population and Vital Statistics Reports. Countries with complete vital statistics registries may have more accurate and more timely demographic indicators than other countries.)
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latest population census shows the most recent year in which a census was conducted and in which at least preliminary results have been released. The preliminary results from the very recent censuses could be reflected in timely revisions if basic data are available such as population by age and sex as well as the detailed definition of counting coverage and completeness.)
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS']; Description: A short alphabetic or numeric geographical code representing a specific country or area. In April 2016 WDI has adopted the three digit ISO code to identify countries in its databases.)
+    short_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's official name as approved by the relevant body (Italy is used as an example): conventional short form (Italy).)
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's name as approved by the relevant body (Italy is used as an example): conventional short form (Republic of Italy).)
+    long_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's name as approved by the relevant body (Italy is used as an example): conventional long form (Republic of Italy).)
+    two_alpha_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3']; Description: ISO-2 digit alpha code value of the country. Re: www.iso.org)
+    wb_2_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3']; Description: World Bank 2 digit code value of the country.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_summary
+[
+    vital_registration_complete (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_industrial_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_trade_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS'])
+    short_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    long_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    two_alpha_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3'])
+    wb_2_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3'])
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_global_population.population_by_country
+[
+    year_2018 (Type: INT64; Sample values: ['40654', 'None', '4569087', '6982084', '16249798'])
+    year_2019 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['SXM', 'INX', 'PSE', 'SRB', 'KHM'])
+    country (Type: STRING; Sample values: ['Sint Maarten (Dutch part)', 'Not classified', 'West Bank and Gaza', 'Serbia', 'Cambodia'])
+    year_2017 (Type: INT64; Sample values: ['40574', 'None', '4454805', '7020858', '16009414'])
+    year_2013 (Type: INT64; Sample values: ['36607', 'None', '4076708', '7164132', '15026332'])
+    year_2016 (Type: INT64; Sample values: ['39969', 'None', '4367088', '7058322', '15766293'])
+    year_2014 (Type: INT64; Sample values: ['37685', 'None', '4173398', '7130576', '15274503'])
+    year_2015 (Type: INT64; Sample values: ['38825', 'None', '4270092', '7095383', '15521436'])
+    year_2010 (Type: INT64; Sample values: ['34056', 'None', '3786161', '7291436', '14312212'])
+    year_2009 (Type: INT64; Sample values: ['34238', 'None', '3689099', '7320807', '14093604'])
+    year_2005 (Type: INT64; Sample values: ['33011', 'None', '3320396', '7440769', '13273354'])
+    year_2004 (Type: INT64; Sample values: ['32488', 'None', '3236626', '7463157', '13066469'])
+    year_2000 (Type: INT64; Sample values: ['30519', 'None', '2922153', '7516346', '12155239'])
+    year_2012 (Type: INT64; Sample values: ['34640', 'None', '3979998', '7199077', '14780454'])
+    year_2011 (Type: INT64; Sample values: ['33435', 'None', '3882986', '7234099', '14541423'])
+    year_2002 (Type: INT64; Sample values: ['30777', 'None', '3075373', '7496522', '12637727'])
+    year_2008 (Type: INT64; Sample values: ['33964', 'None', '3591977', '7350222', '13883834'])
+    year_2006 (Type: INT64; Sample values: ['33441', 'None', '3406334', '7411569', '13477709'])
+    year_2001 (Type: INT64; Sample values: ['30600', 'None', '2997784', '7503433', '12405408'])
+    year_1998 (Type: INT64; Sample values: ['31240', 'None', '2776568', '7567745', '11600508'])
+    year_1999 (Type: INT64; Sample values: ['31084', 'None', '2848431', '7540401', '11886458'])
+    year_2007 (Type: INT64; Sample values: ['33811', 'None', '3494496', '7381579', '13679962'])
+    year_2003 (Type: INT64; Sample values: ['31472', 'None', '3154969', '7480591', '12856163'])
+    year_1997 (Type: INT64; Sample values: ['None', 'None', '2706518', '7596501', '11298600'])
+    year_1982 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6919801'])
+    year_1983 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7169997'])
+    year_1992 (Type: INT64; Sample values: ['None', 'None', '2163591', '7646424', '9623889'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.health_nutrition_population
+[
+    country_code (Type: STRING; Sample values: ['CAN', 'CAN', 'CAN', 'CAN', 'CAN'])
+    country_name (Type: STRING; Sample values: ['Canada', 'Canada', 'Canada', 'Canada', 'Canada'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['EAS', 'EAS', 'ECS', 'ECS', 'LCN'])
+    series_code (Type: STRING; Sample values: ['SH.STA.STNT.ME.ZS', 'SH.STA.OWGH.ME.ZS', 'SH.STA.OWGH.ME.ZS', 'SH.STA.STNT.ME.ZS', 'SH.STA.OWGH.ME.ZS'])
+    description (Type: STRING; Sample values: ['Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.country_summary
+[
+    country_code (Type: STRING; Sample values: ['EAP', 'ECA', 'IDX', 'LAC', 'LDC'])
+    table_name (Type: STRING; Sample values: ['East Asia & Pacific (excluding high income)', 'Europe & Central Asia (excluding high income)', 'IDA only', 'Latin America & Caribbean (excluding high income)', 'Least developed countries: UN classification'])
+    wb_2_code (Type: STRING; Sample values: ['4E', '7E', 'XI', 'XJ', 'XL'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.international_debt
+[
+    country_code (Type: STRING; Sample values: ['AFG', 'AFG', 'AFG', 'AGO', 'AGO'])
+    country_name (Type: STRING; Sample values: ['Afghanistan', 'Afghanistan', 'Afghanistan', 'Angola', 'Angola'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['AUS', 'AUT', 'JPN', 'JPN', 'TUN'])
+    series_code (Type: STRING; Sample values: ['MS.MIL.XPND.CN', 'MS.MIL.XPND.CN', 'MS.MIL.XPND.CN', 'MS.MIL.XPND.CD', 'MS.MIL.XPND.CD'])
+    description (Type: STRING; Sample values: ['1950-1999 SIPRI estimates.', '1957-2001 SIPRI estimates.', '1960-1964 SIPRI estimates.', '1960-1964 SIPRI estimates.', '1960-1964 SIPRI estimates.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['AFG', 'AGO', 'ALB', 'ARG', 'ARM'])
+    series_code (Type: STRING; Sample values: ['BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.indicators_data
+[
+    country_code (Type: STRING; Sample values: ['MOZ', 'MOZ', 'MOZ', 'MOZ', 'MOZ'])
+    country_name (Type: STRING; Sample values: ['Mozambique', 'Mozambique', 'Mozambique', 'Mozambique', 'Mozambique'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.country_summary
+[
+    country_code (Type: STRING; Sample values: ['ARB', 'EAP', 'EAS', 'ECA', 'ECS'])
+    table_name (Type: STRING; Sample values: ['Arab World', 'East Asia & Pacific', 'East Asia & Pacific (all income levels)', 'Europe & Central Asia', 'Europe & Central Asia (all income levels)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.international_education
+[
+    country_code (Type: STRING; Sample values: ['TCD', 'TCD', 'TCD', 'TCD', 'TCD'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['VEN', 'TZA', 'TZA', 'TZA', 'TZA'])
+    series_code (Type: STRING; Sample values: ['NY.GNP.PCAP.CD', 'NY.GDP.PCAP.CD', 'NY.GDP.PCAP.KD', 'NY.GDP.PCAP.PP.CD', 'NY.GDP.PCAP.PP.KD'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.footnotes
+[
+    country_code (Type: STRING; Sample values: ['ABW', 'ABW', 'ABW', 'ABW', 'ABW'])
+]
+
+--------------------------------------------------
+
