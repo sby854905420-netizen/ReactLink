@@ -153,7 +153,7 @@ def generate_documents(db: str, output_path: str = "documents"):
 
 
 if __name__ == "__main__":
-    start_time = time.time()
+    print("Gnerate documents ...")
     for db in DBS_PATH:
         if "bigquery" in db:
             print("Processing BigQuery...")
@@ -161,12 +161,6 @@ if __name__ == "__main__":
         if "snowflake" in db:
             print("Processing Snowflake...")
             generate_documents(db, output_path="documents")
-
         if "sqlite" in db:
             print("Processing SQLite...")
             generate_documents(db, output_path="documents")
-
-    end_time = time.time()
-
-    processed_time = end_time - start_time
-    print(processed_time)
