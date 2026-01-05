@@ -1,0 +1,244 @@
+###Table full name: bigquery-public-data.sdoh_hud_pit_homelessness.hud_pit_by_coc
+[
+    Unsheltered_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['38', '21', '5', '25', '21']; Description: Homelessness for a Year)
+    Unsheltered_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['4', '0', '0', '2', '4']; Description: Homelessness for a Year)
+    Unsheltered_Chronically_Homeless (Type: INT64; Sample values: ['42', '21', '5', '27', '25']; Description: Homelessness for a Year)
+    Overall_Homeless (Type: INT64; Sample values: ['1023', '1122', '1147', '761', '824']; Description: Total Homeless Population)
+    Unsheltered_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['56', '62', '108', '63', '62']; Description: Homelessness for a Year)
+    Unsheltered_Homeless_Individuals (Type: INT64; Sample values: ['48', '52', '35', '52', '102'])
+    Unsheltered_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_People_in_Families (Type: INT64; Sample values: ['5', '0', '15', '40', '51'])
+    Unsheltered_Homeless_Family_Households (Type: INT64; Sample values: ['2', '0', '4', '12', '14'])
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Count_Year (Type: INT64; Sample values: ['2014', '2013', '2012', '2014', '2013']; Description: Year the Count took Place (January))
+    Sheltered_Total_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['3', '6', '1', '15', '8']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Chronically_Homeless (Type: INT64; Sample values: ['59', '68', '109', '78', '70']; Description: Homelessness for a Year)
+    Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless (Type: INT64; Sample values: ['53', '52', '50', '92', '153'])
+    Homeless_Unaccompanied_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Unsheltered_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Chronically_Homeless_Individuals (Type: INT64; Sample values: ['94', '83', '113', '88', '83']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_Total_Homeless_Individuals (Type: INT64; Sample values: ['688', '792', '756', '421', '416'])
+    Homeless_Parenting_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_ES_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['56', '62', '108', '63', '62']; Description: Emergency Shelter; Homelessness for a Year)
+    Sheltered_Total_Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['7', '6', '1', '17', '12']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_People_in_Families (Type: INT64; Sample values: ['282', '278', '341', '248', '255'])
+    Sheltered_Total_Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_ES_Chronically_Homeless_People_in_Families (Type: INT64; Sample values: ['3', '6', '1', '15', '8']; Description: Emergency Shelter; Homelessness for a Year)
+    Homeless_Parenting_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Chronically_Homeless (Type: INT64; Sample values: ['101', '89', '114', '105', '95']; Description: Homelessness for a Year)
+    Sheltered_SH_Chronically_Homeless (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Homelessness for a Year)
+    Sheltered_Total_Homeless_Family_Households (Type: INT64; Sample values: ['100', '87', '122', '79', '95'])
+    Homeless_Parenting_Youth_Under_25 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Sheltered_TH_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Homeless_Unaccompanied_Youth_Age_18_24 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_Total_Homeless (Type: INT64; Sample values: ['970', '1070', '1097', '669', '671']; Description: Total Sheltered Homeless)
+    Unsheltered_Homeless_Veterans (Type: INT64; Sample values: ['18', '6', '7', '0', '16'])
+    Sheltered_Total_Homeless_Children_of_Parenting_Youth (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: after 2014)
+    Homeless_Individuals (Type: INT64; Sample values: ['736', '844', '791', '473', '518']; Description: Individuals not with Families)
+    Sheltered_ES_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Emergency Shelter; after 2014)
+    Sheltered_TH_Homeless_Unaccompanied_Youth_Under_18 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Transitional Housing; after 2014)
+    Sheltered_ES_Chronically_Homeless (Type: INT64; Sample values: ['59', '68', '109', '78', '70']; Description: Emergency Shelter; Homelessness for a Year)
+    CoC_Name (Type: STRING; Sample values: ['Anchorage CoC', 'Anchorage CoC', 'Anchorage CoC', 'Alaska Balance of State CoC', 'Alaska Balance of State CoC']; Description: Name of the Continuum of Care Area)
+    Sheltered_ES_Homeless_Individuals (Type: INT64; Sample values: ['530', '553', '561', '318', '282']; Description: Emergency Shelter)
+    Sheltered_TH_Homeless_Individuals (Type: INT64; Sample values: ['158', '239', '195', '103', '134']; Description: Transitional Housing)
+    Sheltered_SH_Homeless_Individuals (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Safe Haven Housing)
+    Sheltered_SH_Chronically_Homeless_Individuals (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Safe Haven Housing; Homelessness for a Year)
+    CoC_Number (Type: STRING; Sample values: ['AK-500', 'AK-500', 'AK-500', 'AK-501', 'AK-501']; Description: Number of the Continuum of Care Area)
+    Homeless_Veterans (Type: INT64; Sample values: ['138', '144', '174', '40', '66'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.state_2020_5yr
+[
+    dwellings_10_to_19_units (Type: FLOAT64; Sample values: ['74170.0', '8692.0', '49764.0', '131707.0', '31851.0'])
+    dwellings_5_to_9_units (Type: FLOAT64; Sample values: ['95518.0', '14546.0', '47030.0', '105955.0', '55428.0'])
+    dwellings_3_to_4_units (Type: FLOAT64; Sample values: ['66766.0', '23257.0', '46975.0', '76871.0', '41694.0'])
+    occupied_housing_units (Type: FLOAT64; Sample values: ['1888504.0', '255173.0', '1170544.0', '2137402.0', '1116649.0'])
+    dwellings_20_to_49_units (Type: FLOAT64; Sample values: ['40650.0', '10679.0', '19323.0', '122801.0', '16093.0'])
+    housing_units (Type: FLOAT64; Sample values: ['2270398.0', '318370.0', '1379778.0', '2361372.0', '1330867.0'])
+    vacant_housing_units (Type: FLOAT64; Sample values: ['381894.0', '63197.0', '209234.0', '223970.0', '214218.0'])
+    dwellings_2_units (Type: FLOAT64; Sample values: ['45054.0', '17295.0', '43501.0', '38048.0', '33102.0'])
+    households_public_asst_or_food_stamps (Type: FLOAT64; Sample values: ['259588.0', '32882.0', '142849.0', '171884.0', '169315.0'])
+    households (Type: FLOAT64; Sample values: ['1888504.0', '255173.0', '1170544.0', '2137402.0', '1116649.0'])
+    poverty (Type: FLOAT64; Sample values: ['762642.0', '74369.0', '470190.0', '544232.0', '564439.0'])
+    geo_id (Type: STRING; Sample values: ['1', '2', '5', '8', '28'])
+    pop_widowed (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+    do_date (Type: STRING; Sample values: ['', '', '', '', ''])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['62298.0', '4492.0', '34131.0', '33251.0', '41781.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['181564.0', '50694.0', '133707.0', '289568.0', '94087.0'])
+    children (Type: FLOAT64; Sample values: ['1092912.0', '183359.0', '702832.0', '1259031.0', '707221.0'])
+    pop_25_64 (Type: FLOAT64; Sample values: ['2516572.0', '395807.0', '1516605.0', '3092417.0', '1508842.0'])
+    male_20 (Type: FLOAT64; Sample values: ['36705.0', '5710.0', '24123.0', '41345.0', '23698.0'])
+    male_21 (Type: FLOAT64; Sample values: ['33089.0', '6184.0', '20634.0', '37714.0', '21600.0'])
+    total_pop (Type: FLOAT64; Sample values: ['4893186.0', '736990.0', '3011873.0', '5684926.0', '2981835.0'])
+]
+**Some other tables have the similar structure: [state_2017_5yr, state_2013_5yr, state_2017_1yr, state_2014_5yr, state_2013_3yr, state_2012_3yr, state_2007_3yr, state_2008_1yr, state_2007_1yr, state_2018_5yr, state_2019_5yr, state_2016_1yr, state_2021_1yr, state_2011_3yr, state_2016_5yr, state_2011_5yr, state_2009_1yr, state_2010_5yr, state_2010_1yr, state_2015_5yr, state_2011_1yr, state_2012_5yr, state_2013_1yr, state_2009_3yr, state_2008_3yr, state_2018_1yr, state_2019_1yr, state_2014_1yr, state_2012_1yr, state_2015_1yr, state_2010_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.censustract_2019_5yr
+[
+    occupied_housing_units (Type: FLOAT64; Sample values: ['709.0', '688.0', '1360.0', '1675.0', '4483.0'])
+    vacant_housing_units (Type: FLOAT64; Sample values: ['16.0', '152.0', '68.0', '188.0', '139.0'])
+    dwellings_10_to_19_units (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '55.0', '301.0'])
+    dwellings_3_to_4_units (Type: FLOAT64; Sample values: ['30.0', '61.0', '86.0', '13.0', '232.0'])
+    dwellings_5_to_9_units (Type: FLOAT64; Sample values: ['0.0', '0.0', '46.0', '0.0', '536.0'])
+    housing_units (Type: FLOAT64; Sample values: ['725.0', '840.0', '1428.0', '1863.0', '4622.0'])
+    dwellings_2_units (Type: FLOAT64; Sample values: ['0.0', '58.0', '0.0', '0.0', '0.0'])
+    dwellings_20_to_49_units (Type: FLOAT64; Sample values: ['0.0', '0.0', '22.0', '53.0', '249.0'])
+    households_public_asst_or_food_stamps (Type: FLOAT64; Sample values: ['124.0', '174.0', '210.0', '82.0', '343.0'])
+    geo_id (Type: STRING; Sample values: ['1001020100', '1001020200', '1001020300', '1001020400', '1001020500'])
+    pop_widowed (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [censustract_2012_5yr, censustract_2016_5yr, censustract_2017_5yr, censustract_2013_5yr, censustract_2015_5yr, censustract_2018_5yr, censustract_2014_5yr, censustract_2020_5yr, censustract_2010_5yr, censustract_2011_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.county_2018_1yr
+[
+    rent_15_to_20_percent (Type: FLOAT64; Sample values: ['3694.0', '4565.0', '14394.0', '11189.0', '7389.0']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_10_to_15_percent (Type: FLOAT64; Sample values: ['2624.0', '3350.0', '12297.0', '9147.0', '3917.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_35_to_40_percent (Type: FLOAT64; Sample values: ['1164.0', '3167.0', '6025.0', '8198.0', '2551.0']; Description: Housing units spending 35 to 39.9% income on rent. Gross rent from 35.0 to 39.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_25_to_30_percent (Type: FLOAT64; Sample values: ['3684.0', '2827.0', '12329.0', '18440.0', '7389.0']; Description: Housing units spending 25 to 29.9% income on rent. Gross rent from 25.0 to 29.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_20_to_25_percent (Type: FLOAT64; Sample values: ['4177.0', '4771.0', '16791.0', '17424.0', '6645.0']; Description: Housing units spending 20 to 24.9% income on rent. Gross rent from 20.0 to 24.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_under_10_percent (Type: FLOAT64; Sample values: ['494.0', '868.0', '5293.0', '2577.0', '2236.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_40_to_50_percent (Type: FLOAT64; Sample values: ['1983.0', '3100.0', '9647.0', '14357.0', '3373.0']; Description: Housing units spending 40 to 49.9% income on rent. Gross rent from 40.0 to 49.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_30_to_35_percent (Type: FLOAT64; Sample values: ['2240.0', '2983.0', '7835.0', '13145.0', '3635.0']; Description: Housing units spending 30 to 34.9% income on rent. Gross rent from 30.0 to 34.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['34035', '51107', '34003', '12103', '34027']; Description: US County Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+**Some other tables have the similar structure: [county_2013_1yr, county_2019_1yr, county_2020_5yr, county_2012_3yr, county_2012_5yr, county_2008_1yr, county_2019_5yr, county_2015_5yr, county_2014_1yr, county_2011_1yr, county_2010_5yr, county_2017_1yr, county_2009_1yr, county_2008_3yr, county_2012_1yr, county_2010_3yr, county_2011_3yr, county_2014_5yr, county_2007_1yr, county_2011_5yr, county_2016_5yr, county_2007_3yr, county_2018_5yr, county_2013_3yr, county_2017_5yr, county_2013_5yr, county_2015_1yr, county_2016_1yr, county_2009_3yr, county_2021_1yr, county_2010_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.place_2010_5yr
+[
+    rent_15_to_20_percent (Type: FLOAT64; Sample values: ['36.0', '220.0', '109.0', '50.0', '266.0']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_10_to_15_percent (Type: FLOAT64; Sample values: ['16.0', '20.0', '27.0', '69.0', '166.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_35_to_40_percent (Type: FLOAT64; Sample values: ['20.0', '215.0', '115.0', '66.0', '73.0']; Description: Housing units spending 35 to 39.9% income on rent. Gross rent from 35.0 to 39.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_25_to_30_percent (Type: FLOAT64; Sample values: ['20.0', '231.0', '142.0', '52.0', '199.0']; Description: Housing units spending 25 to 29.9% income on rent. Gross rent from 25.0 to 29.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_20_to_25_percent (Type: FLOAT64; Sample values: ['23.0', '98.0', '205.0', '175.0', '206.0']; Description: Housing units spending 20 to 24.9% income on rent. Gross rent from 20.0 to 24.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_under_10_percent (Type: FLOAT64; Sample values: ['0.0', '20.0', '79.0', '0.0', '48.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_40_to_50_percent (Type: FLOAT64; Sample values: ['17.0', '140.0', '64.0', '9.0', '116.0']; Description: Housing units spending 40 to 49.9% income on rent. Gross rent from 40.0 to 49.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_30_to_35_percent (Type: FLOAT64; Sample values: ['8.0', '66.0', '96.0', '30.0', '158.0']; Description: Housing units spending 30 to 34.9% income on rent. Gross rent from 30.0 to 34.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['3602902', '1255750', '4214264', '3906670', '5572925']; Description: Incorporated Places Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['154.0', '112.0', '367.0', '263.0', '645.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+]
+**Some other tables have the similar structure: [place_2014_1yr, place_2007_3yr, place_2016_5yr, place_2009_1yr, place_2021_1yr, place_2013_1yr, place_2009_3yr, place_2008_1yr, place_2010_3yr, place_2015_5yr, place_2019_1yr, place_2007_1yr, place_2016_1yr, place_2015_1yr, place_2012_1yr, place_2014_5yr, place_2013_3yr, place_2013_5yr, place_2018_1yr, place_2011_3yr, place_2012_5yr, place_2019_5yr, place_2011_5yr, place_2012_3yr, place_2017_1yr, place_2020_5yr, place_2010_1yr, place_2011_1yr, place_2008_3yr, place_2017_5yr, place_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictelementary_2014_1yr
+[
+    rent_15_to_20_percent (Type: FLOAT64; Sample values: ['2827.0', '1017.0', '1276.0', '804.0', '542.0']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_10_to_15_percent (Type: FLOAT64; Sample values: ['1474.0', '66.0', '615.0', '1074.0', '401.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_25_to_30_percent (Type: FLOAT64; Sample values: ['2139.0', '779.0', '1454.0', '552.0', '798.0']; Description: Housing units spending 25 to 29.9% income on rent. Gross rent from 25.0 to 29.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_20_to_25_percent (Type: FLOAT64; Sample values: ['1965.0', '1475.0', '1492.0', '659.0', '943.0']; Description: Housing units spending 20 to 24.9% income on rent. Gross rent from 20.0 to 24.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_35_to_40_percent (Type: FLOAT64; Sample values: ['1203.0', '844.0', '696.0', '539.0', '433.0']; Description: Housing units spending 35 to 39.9% income on rent. Gross rent from 35.0 to 39.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['0626280', '0630990', '1714460', '0613500', '3406030']; Description: Elementary School District Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['1210.0', '2776.0', '2396.0', '1669.0', '3681.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [schooldistrictelementary_2010_1yr, schooldistrictelementary_2015_1yr, schooldistrictelementary_2021_1yr, schooldistrictelementary_2019_5yr, schooldistrictelementary_2019_1yr, schooldistrictelementary_2010_5yr, schooldistrictelementary_2018_1yr, schooldistrictelementary_2020_5yr, schooldistrictelementary_2016_1yr, schooldistrictelementary_2014_5yr, schooldistrictelementary_2017_5yr, schooldistrictelementary_2015_5yr, schooldistrictelementary_2018_5yr, schooldistrictelementary_2016_5yr, schooldistrictelementary_2017_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.cbsa_2010_5yr
+[
+    rent_under_10_percent (Type: NUMERIC; Sample values: ['939.000000000', '2006.000000000', '4607.000000000', '3797.000000000', '1054.000000000']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_15_to_20_percent (Type: NUMERIC; Sample values: ['4019.000000000', '5703.000000000', '16922.000000000', '13506.000000000', '2652.000000000']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_35_to_40_percent (Type: NUMERIC; Sample values: ['2336.000000000', '3254.000000000', '8070.000000000', '6056.000000000', '1374.000000000']; Description: Housing units spending 35 to 39.9% income on rent. Gross rent from 35.0 to 39.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_25_to_30_percent (Type: NUMERIC; Sample values: ['3204.000000000', '4797.000000000', '14634.000000000', '12483.000000000', '2708.000000000']; Description: Housing units spending 25 to 29.9% income on rent. Gross rent from 25.0 to 29.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_10_to_15_percent (Type: NUMERIC; Sample values: ['2089.000000000', '4416.000000000', '11729.000000000', '9767.000000000', '2551.000000000']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_20_to_25_percent (Type: NUMERIC; Sample values: ['4247.000000000', '5271.000000000', '17681.000000000', '13929.000000000', '3190.000000000']; Description: Housing units spending 20 to 24.9% income on rent. Gross rent from 20.0 to 24.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['34820', '32580', '39580', '36540', '44100']; Description: Core Based Statistical Area (CBSA) Geoids)
+    pop_widowed (Type: NUMERIC; Sample values: ['14046.000000000', '15355.000000000', '34805.000000000', '32891.000000000', '10603.000000000']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [cbsa_2015_1yr, cbsa_2020_5yr, cbsa_2016_1yr, cbsa_2012_5yr, cbsa_2018_5yr, cbsa_2012_3yr, cbsa_2009_1yr, cbsa_2019_1yr, cbsa_2016_5yr, cbsa_2015_5yr, cbsa_2007_1yr, cbsa_2012_1yr, cbsa_2009_3yr, cbsa_2014_5yr, cbsa_2011_1yr, cbsa_2007_3yr, cbsa_2008_1yr, cbsa_2021_1yr, cbsa_2017_1yr, cbsa_2010_1yr, cbsa_2013_1yr, cbsa_2011_3yr, cbsa_2010_3yr, cbsa_2008_3yr, cbsa_2018_1yr, cbsa_2014_1yr, cbsa_2013_3yr, cbsa_2019_5yr, cbsa_2013_5yr, cbsa_2011_5yr, cbsa_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.puma_2016_1yr
+[
+    rent_under_10_percent (Type: FLOAT64; Sample values: ['888.0', '555.0', '526.0', '218.0', '709.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['2701405', '4203210', '0800812', '0603705', '0600105']; Description: US Census Public Use Microdata Areas Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+**Some other tables have the similar structure: [puma_2008_1yr, puma_2007_1yr, puma_2009_1yr, puma_2017_1yr, puma_2019_5yr, puma_2013_3yr, puma_2018_1yr, puma_2014_5yr, puma_2007_3yr, puma_2011_1yr, puma_2016_5yr, puma_2018_5yr, puma_2015_1yr, puma_2017_5yr, puma_2015_5yr, puma_2011_3yr, puma_2014_1yr, puma_2009_3yr, puma_2013_5yr, puma_2021_1yr, puma_2020_5yr, puma_2012_1yr, puma_2019_1yr, puma_2011_5yr, puma_2013_1yr, puma_2010_1yr, puma_2010_3yr, puma_2008_3yr, puma_2012_5yr, puma_2010_5yr, puma_2012_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictsecondary_2010_5yr
+[
+    rent_15_to_20_percent (Type: FLOAT64; Sample values: ['45.0', '280.0', '656.0', '1212.0', '1127.0']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    rent_10_to_15_percent (Type: FLOAT64; Sample values: ['52.0', '226.0', '577.0', '698.0', '547.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['2504290', '0614190', '3412570', '0616500', '1729280']; Description: Secondary School District Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['268.0', '1147.0', '2303.0', '2273.0', '1934.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.blockgroup_2014_5yr
+[
+    rent_15_to_20_percent (Type: FLOAT64; Sample values: ['17.0', '70.0', '305.0', '0.0', '58.0']; Description: Housing units spending 15 to 19.9% income on rent. Gross rent from 15.0 to 19.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: STRING; Sample values: ['360470750001', '060730146012', '530730001003', '340030490022', '060376511021']; Description: US Census Block Groups_2015 Geoids)
+]
+**Some other tables have the similar structure: [blockgroup_2010_5yr, blockgroup_2012_5yr, blockgroup_2018_5yr, blockgroup_2013_5yr, blockgroup_2016_5yr, blockgroup_2011_5yr, blockgroup_2015_5yr, blockgroup_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hud_housing.2017_lihtc_database_hud
+[
+    co_st (Type: STRING; Sample values: ['CT', 'CA', 'CO', 'CO', 'NE']; Description: Contact's state)
+    x (Type: FLOAT64; Sample values: ['0.213386982679367', '-0.0859191939234734', '-0.0889840722084045', '-0.0882464572787285', '-0.0881798714399338'])
+    state_id (Type: STRING; Sample values: ['CT-09-021', '7-0728', '7-0720', '7-0718', '7-0723']; Description: State-defined Project ID)
+    st2010 (Type: STRING; Sample values: ['9', '31', '31', '31', '31']; Description: 2010 State FIPS Code)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hrsa_shortage_areas.hpsa_mua
+[
+    STATE_ABBR (Type: STRING; Sample values: ['CT', 'CT', 'CT', 'CT', 'CT']; Description: State Abbreviation; State; State Code; State_Cd)
+    CMN_STATE_ABBR (Type: STRING; Sample values: ['CT', 'CT', 'CT', 'CT', 'CT']; Description: Common State Abbreviation; Common State Name; State; State Abbreviation)
+    PRIMARY_STATE_ABBR (Type: STRING; Sample values: ['CT', 'CT', 'CT', 'CT', 'CT']; Description: HPSA Primary State Abbreviation; MUA/P Primary State Abbreviation; Primary State Abbreviation; State)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hrsa_shortage_areas.hpsa_mental_health
+[
+    State_Abbr_2 (Type: STRING; Sample values: ['NH', 'RI', 'RI', 'RI', 'RI']; Description: U.S. Postal Service (USPS) two alphabetic character code for a U.S. state or U.S. territory associated with a location where an entity is situated.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hrsa_shortage_areas.hpsa_dental_health
+[
+    State_Abbr_2 (Type: STRING; Sample values: ['OK', 'NE', 'CO', 'AZ', 'WY']; Description: U.S. Postal Service (USPS) two alphabetic character code for a U.S. state or U.S. territory associated with a location where an entity is situated.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cms_dual_eligible_enrollment.dual_eligible_enrollment_by_county_and_program
+[
+    State_Abbr (Type: STRING; Sample values: ['AL', 'AL', 'AL', 'AL', 'AL']; Description: State of Beneficiary)
+]
+
+--------------------------------------------------
+

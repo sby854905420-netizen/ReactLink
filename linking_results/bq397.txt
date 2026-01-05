@@ -1,0 +1,176 @@
+###Table full name: data-to-insights.ecommerce.rev_transactions
+[
+    channelGrouping (Type: STRING; Sample values: ['Organic Search', 'Organic Search', 'Organic Search', 'Organic Search', 'Organic Search'])
+    geoNetwork_country (Type: STRING; Sample values: ['Peru', 'Peru', 'Peru', 'Peru', 'Peru'])
+    totals_transactions (Type: INT64; Sample values: ['1', '1', '1', '1', '1'])
+    totals_totalTransactionRevenue (Type: INT64; Sample values: ['42000000', '42000000', '42000000', '42000000', '42000000'])
+    visitId (Type: INT64; Sample values: ['1470617094', '1470617094', '1470617094', '1470617094', '1470617094'])
+    totals_timeOnSite (Type: INT64; Sample values: ['1834', '1834', '1834', '1834', '1834'])
+    hits_transaction_transactionRevenue (Type: INT64; Sample values: ['42000000', '42000000', '42000000', '42000000', '42000000'])
+    hits_transaction_transactionId (Type: STRING; Sample values: ['ORD20160807983', 'ORD20160807983', 'ORD20160807983', 'ORD20160807983', 'ORD20160807983'])
+    hits_item_currencyCode (Type: STRING; Sample values: ['USD', 'USD', 'USD', 'USD', 'USD'])
+    fullVisitorId (Type: STRING; Sample values: ['7851878234225373633', '7851878234225373633', '7851878234225373633', '7851878234225373633', '7851878234225373633'])
+    totals_pageviews (Type: INT64; Sample values: ['40', '40', '40', '40', '40'])
+    geoNetwork_city (Type: STRING; Sample values: ['La Victoria', 'La Victoria', 'La Victoria', 'La Victoria', 'La Victoria'])
+    date (Type: STRING; Sample values: ['20160807', '20160807', '20160807', '20160807', '20160807'])
+    hits_time (Type: INT64; Sample values: ['1819831', '1819831', '1819831', '1819831', '1819831'])
+    hits_item_itemRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hits_product_v2ProductName (Type: STRING; Sample values: ['Google Sunglasses', 'Recycled Mouse Pad', 'Google Sunglasses', 'Keyboard DOT Sticker', 'Google Sunglasses'])
+    hits_type (Type: STRING; Sample values: ['PAGE', 'PAGE', 'PAGE', 'PAGE', 'PAGE'])
+    hits_product_v2ProductCategory (Type: STRING; Sample values: ['(not set)', '(not set)', '(not set)', '(not set)', '(not set)'])
+    hits_item_itemQuantity (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hits_product_productSKU (Type: STRING; Sample values: ['GGOEGHGC019799', 'GGOEGODR017799', 'GGOEGHGH019699', 'GGOEGFKA022299', 'GGOEGHGR019499'])
+    hits_product_productRevenue (Type: INT64; Sample values: ['7800000', '8300000', '7800000', '3800000', '7800000'])
+    hits_product_productRefundAmount (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hits_product_productQuantity (Type: INT64; Sample values: ['2', '5', '2', '2', '2'])
+    hits_page_pagePathLevel1 (Type: STRING; Sample values: ['/ordercompleted.html', '/ordercompleted.html', '/ordercompleted.html', '/ordercompleted.html', '/ordercompleted.html'])
+    hits_page_searchKeyword (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    hits_product_productPrice (Type: INT64; Sample values: ['3500000', '1500000', '3500000', '1500000', '3500000'])
+    hits_product_productVariant (Type: STRING; Sample values: [' BLUE', 'Single Option Only', ' GREEN', 'Single Option Only', ' RED'])
+    hits_page_pageTitle (Type: STRING; Sample values: ['Checkout Confirmation', 'Checkout Confirmation', 'Checkout Confirmation', 'Checkout Confirmation', 'Checkout Confirmation'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.partitions
+[
+    total_transactions (Type: INT64; Sample values: ['38'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.classification_model_2_results
+[
+    channelGrouping (Type: STRING; Sample values: ['Organic Search', 'Organic Search', 'Organic Search', 'Organic Search', 'Organic Search'])
+    country (Type: STRING; Sample values: ['United States', 'China', 'Denmark', 'Japan', 'France'])
+    latest_ecommerce_progress (Type: INT64; Sample values: ['0', '0', '2', '0', '0'])
+    bounces (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    source (Type: STRING; Sample values: ['aol', 'ask', 'ask', 'ask', 'ask'])
+    unique_session_id (Type: STRING; Sample values: ['039162912574895154-1500907331', '8515268164140442346-1499821254', '9183889190192076181-1500066908', '4953612077845637467-1500391508', '7239412501820855280-1499201744'])
+    predicted_will_buy_on_return_visit (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    will_buy_on_return_visit (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    predicted_will_buy_on_return_visit_probs (Type: ARRAY<STRUCT<label INT64, prob FLOAT64>>; Sample values: ['"[{\\"label\\": 1, \\"prob\\": 0.008711616663146755}]"', '"[{\\"label\\": 1, \\"prob\\": 0.006927288242416253}]"', '"[{\\"label\\": 1, \\"prob\\": 0.011216156414053786}]"', '"[{\\"label\\": 1, \\"prob\\": 0.006455195065441124}]"', '"[{\\"label\\": 1, \\"prob\\": 0.00628555672342287}]"'])
+    pageviews (Type: INT64; Sample values: ['2', '2', '2', '2', '2'])
+    medium (Type: STRING; Sample values: ['organic', 'organic', 'organic', 'organic', 'organic'])
+    deviceCategory (Type: STRING; Sample values: ['desktop', 'desktop', 'desktop', 'desktop', 'desktop'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.web_analytics
+[
+    totals (Type: STRUCT<visits INT64, hits INT64, pageviews INT64, timeOnSite INT64, bounces INT64, transactions INT64, transactionRevenue INT64, newVisits INT64, screenviews INT64, uniqueScreenviews INT64, timeOnScreen INT64, totalTransactionRevenue INT64, sessionQualityDim INT64>; Sample values: ['{"visits": "1", "hits": "5", "pageviews": "5", "timeOnSite": "54", "bounces": "None", "transactions": "None", "transactionRevenue": "None", "newVisits": "1", "screenviews": "None", "uniqueScreenviews": "None", "timeOnScreen": "None", "totalTransactionRevenue": "None", "sessionQualityDim": "None"}', '{"visits": "1", "hits": "5", "pageviews": "5", "timeOnSite": "167", "bounces": "None", "transactions": "None", "transactionRevenue": "None", "newVisits": "1", "screenviews": "None", "uniqueScreenviews": "None", "timeOnScreen": "None", "totalTransactionRevenue": "None", "sessionQualityDim": "None"}', '{"visits": "1", "hits": "5", "pageviews": "5", "timeOnSite": "56", "bounces": "None", "transactions": "None", "transactionRevenue": "None", "newVisits": "None", "screenviews": "None", "uniqueScreenviews": "None", "timeOnScreen": "None", "totalTransactionRevenue": "None", "sessionQualityDim": "None"}', '{"visits": "1", "hits": "5", "pageviews": "5", "timeOnSite": "184", "bounces": "None", "transactions": "None", "transactionRevenue": "None", "newVisits": "1", "screenviews": "None", "uniqueScreenviews": "None", "timeOnScreen": "None", "totalTransactionRevenue": "None", "sessionQualityDim": "None"}', '{"visits": "1", "hits": "5", "pageviews": "5", "timeOnSite": "141", "bounces": "None", "transactions": "None", "transactionRevenue": "None", "newVisits": "1", "screenviews": "None", "uniqueScreenviews": "None", "timeOnScreen": "None", "totalTransactionRevenue": "None", "sessionQualityDim": "None"}'])
+    channelGrouping (Type: STRING; Sample values: ['Direct', 'Direct', 'Organic Search', 'Organic Search', 'Organic Search'])
+    visitNumber (Type: INT64; Sample values: ['1', '1', '2', '1', '1'])
+    geoNetwork (Type: STRUCT<continent STRING, subContinent STRING, country STRING, region STRING, metro STRING, city STRING, cityId STRING, networkDomain STRING, latitude STRING, longitude STRING, networkLocation STRING>; Sample values: ['{"continent": "Americas", "subContinent": "South America", "country": "Argentina", "region": "not available in demo dataset", "metro": "not available in demo dataset", "city": "not available in demo dataset", "cityId": "not available in demo dataset", "networkDomain": "ifxnw.com.ar", "latitude": "not available in demo dataset", "longitude": "not available in demo dataset", "networkLocation": "not available in demo dataset"}', '{"continent": "Asia", "subContinent": "Southern Asia", "country": "India", "region": "not available in demo dataset", "metro": "not available in demo dataset", "city": "not available in demo dataset", "cityId": "not available in demo dataset", "networkDomain": "(not set)", "latitude": "not available in demo dataset", "longitude": "not available in demo dataset", "networkLocation": "not available in demo dataset"}', '{"continent": "Asia", "subContinent": "Eastern Asia", "country": "Hong Kong", "region": "(not set)", "metro": "(not set)", "city": "(not set)", "cityId": "not available in demo dataset", "networkDomain": "solot.com", "latitude": "not available in demo dataset", "longitude": "not available in demo dataset", "networkLocation": "not available in demo dataset"}', '{"continent": "Europe", "subContinent": "Northern Europe", "country": "Ireland", "region": "County Cork", "metro": "(not set)", "city": "Cork", "cityId": "not available in demo dataset", "networkDomain": "unknown.unknown", "latitude": "not available in demo dataset", "longitude": "not available in demo dataset", "networkLocation": "not available in demo dataset"}', '{"continent": "Europe", "subContinent": "Eastern Europe", "country": "Belarus", "region": "not available in demo dataset", "metro": "not available in demo dataset", "city": "not available in demo dataset", "cityId": "not available in demo dataset", "networkDomain": "byfly.by", "latitude": "not available in demo dataset", "longitude": "not available in demo dataset", "networkLocation": "not available in demo dataset"}'])
+    visitId (Type: INT64; Sample values: ['1494259348', '1483188548', '1498630626', '1477577685', '1489607268'])
+    customDimensions (Type: ARRAY<STRUCT<index INT64, value STRING>>; Sample values: ['"[{\\"index\\": 4, \\"value\\": \\"South America\\"}]"', '"[{\\"index\\": 4, \\"value\\": \\"APAC\\"}]"', '"[]"', '"[{\\"index\\": 4, \\"value\\": \\"EMEA\\"}]"', '"[]"'])
+    trafficSource (Type: STRUCT<referralPath STRING, campaign STRING, source STRING, medium STRING, keyword STRING, adContent STRING, adwordsClickInfo STRUCT<campaignId INT64, adGroupId INT64, creativeId INT64, criteriaId INT64, page INT64, slot STRING, criteriaParameters STRING, gclId STRING, customerId INT64, adNetworkType STRING, targetingCriteria STRUCT<boomUserlistId INT64>, isVideoAd BOOL>, isTrueDirect BOOL, campaignCode STRING>; Sample values: ['{"referralPath": "None", "campaign": "(not set)", "source": "(direct)", "medium": "(none)", "keyword": "None", "adContent": "None", "adwordsClickInfo": {"campaignId": "None", "adGroupId": "None", "creativeId": "None", "criteriaId": "None", "page": "None", "slot": "None", "criteriaParameters": "not available in demo dataset", "gclId": "None", "customerId": "None", "adNetworkType": "None", "targetingCriteria": "None", "isVideoAd": "None"}, "istrueDirect": "True", "campaignCode": "None"}', '{"referralPath": "None", "campaign": "(not set)", "source": "(direct)", "medium": "(none)", "keyword": "None", "adContent": "None", "adwordsClickInfo": {"campaignId": "None", "adGroupId": "None", "creativeId": "None", "criteriaId": "None", "page": "None", "slot": "None", "criteriaParameters": "not available in demo dataset", "gclId": "None", "customerId": "None", "adNetworkType": "None", "targetingCriteria": "None", "isVideoAd": "None"}, "istrueDirect": "True", "campaignCode": "None"}', '{"referralPath": "None", "campaign": "(not set)", "source": "baidu", "medium": "organic", "keyword": "None", "adContent": "None", "adwordsClickInfo": {"campaignId": "None", "adGroupId": "None", "creativeId": "None", "criteriaId": "None", "page": "None", "slot": "None", "criteriaParameters": "not available in demo dataset", "gclId": "None", "customerId": "None", "adNetworkType": "None", "targetingCriteria": "None", "isVideoAd": "None"}, "istrueDirect": "True", "campaignCode": "None"}', '{"referralPath": "None", "campaign": "(not set)", "source": "google", "medium": "organic", "keyword": "(not provided)", "adContent": "None", "adwordsClickInfo": {"campaignId": "None", "adGroupId": "None", "creativeId": "None", "criteriaId": "None", "page": "None", "slot": "None", "criteriaParameters": "not available in demo dataset", "gclId": "None", "customerId": "None", "adNetworkType": "None", "targetingCriteria": "None", "isVideoAd": "None"}, "istrueDirect": "None", "campaignCode": "None"}', '{"referralPath": "None", "campaign": "(not set)", "source": "google", "medium": "organic", "keyword": "(not provided)", "adContent": "None", "adwordsClickInfo": {"campaignId": "None", "adGroupId": "None", "creativeId": "None", "criteriaId": "None", "page": "None", "slot": "None", "criteriaParameters": "not available in demo dataset", "gclId": "None", "customerId": "None", "adNetworkType": "None", "targetingCriteria": "None", "isVideoAd": "None"}, "istrueDirect": "None", "campaignCode": "None"}'])
+    visitStartTime (Type: INT64; Sample values: ['1494259348', '1483188548', '1498630626', '1477577685', '1489607268'])
+    fullVisitorId (Type: STRING; Sample values: ['1381334533431476543', '5311982187081347904', '5031267215397151018', '6831428952973633421', '1102296808224463604'])
+    visitorId (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    userId (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.all_sessions_raw
+[
+    transactions (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    transactionRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country (Type: STRING; Sample values: ['United States', 'South Korea', 'United States', 'United States', 'United States'])
+    transactionId (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    totalTransactionRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    channelGrouping (Type: STRING; Sample values: ['Organic Search', 'Direct', 'Direct', 'Paid Search', 'Organic Search'])
+    currencyCode (Type: STRING; Sample values: ['USD', 'USD', 'USD', 'USD', 'USD'])
+    itemRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    productRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    v2ProductName (Type: STRING; Sample values: ['Suitcase Organizer Cubes', 'Suitcase Organizer Cubes', '26 oz Double Wall Insulated Bottle', '26 oz Double Wall Insulated Bottle', 'Foam Can and Bottle Cooler'])
+    itemQuantity (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    visitId (Type: INT64; Sample values: ['1483893305', '1483821753', '1498713485', '1498488812', '1494858170'])
+    v2ProductCategory (Type: STRING; Sample values: ['(not set)', '(not set)', '(not set)', '(not set)', '(not set)'])
+    productSKU (Type: STRING; Sample values: ['9180781', '9180781', '9180793', '9180793', '9180824'])
+    eCommerceAction_step (Type: INT64; Sample values: ['1', '1', '1', '1', '1'])
+    sessionQualityDim (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    productPrice (Type: INT64; Sample values: ['0', '0', '0', '0', '0'])
+    fullVisitorId (Type: STRING; Sample values: ['5504767650716007519', '0091280705703616305', '4784312403795214032', '4530570593036389348', '6349715060829365831'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.all_sessions
+[
+    transactions (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    transactionRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country (Type: STRING; Sample values: ['South Korea', 'United States', 'United States', 'Ireland', 'Poland'])
+    totalTransactionRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    transactionId (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    channelGrouping (Type: STRING; Sample values: ['Direct', 'Paid Search', 'Display', 'Organic Search', 'Organic Search'])
+    currencyCode (Type: STRING; Sample values: ['USD', 'USD', 'USD', 'USD', 'USD'])
+    itemRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    productRevenue (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    v2ProductName (Type: STRING; Sample values: ['Suitcase Organizer Cubes', 'Rubber Grip Ballpoint Pen 4 Pack', 'Rubber Grip Ballpoint Pen 4 Pack', 'Rubber Grip Ballpoint Pen 4 Pack', 'Metal Texture Roller Pen'])
+    itemQuantity (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    productSKU (Type: STRING; Sample values: ['9180781', '9180833', '9180833', '9180833', '9180838'])
+    v2ProductCategory (Type: STRING; Sample values: ['(not set)', '(not set)', '(not set)', '(not set)', '(not set)'])
+    eCommerceAction_step (Type: INT64; Sample values: ['1', '1', '1', '1', '1'])
+    visitId (Type: INT64; Sample values: ['1483821753', '1485987637', '1485988552', '1486130699', '1501238002'])
+    sessionQualityDim (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '1'])
+    fullVisitorId (Type: STRING; Sample values: ['0091280705703616305', '6470524072905607258', '6135979830533561674', '0755589803493813396', '4584480734761524599'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.sales_report
+[
+    total_ordered (Type: INT64; Sample values: ['6', '2', '5', '5', '11'])
+    name (Type: STRING; Sample values: [" Men's Short Sleeve Hero Tee Charcoal", ' Metallic Notebook Set', 'Waterproof Backpack', ' Mood Original Window Decal', ' Rucksack'])
+    stockLevel (Type: INT64; Sample values: ['104', '610', '230', '66', '228'])
+    productSKU (Type: STRING; Sample values: ['GGOEGAAX0325', 'GGOEGOLC014299', 'GGOEGBRA037499', 'GGOEWFKA083199', 'GGOEGBRJ037399'])
+    restockingLeadTime (Type: INT64; Sample values: ['12', '5', '10', '8', '5'])
+    ratio (Type: FLOAT64; Sample values: ['0.057692307692307696', '0.003278688524590164', '0.021739130434782608', '0.07575757575757576', '0.04824561403508772'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.sales_by_sku
+[
+    total_ordered (Type: INT64; Sample values: ['456', '334', '319', '290', '253'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.product_list
+[
+    v2ProductName (Type: STRING; Sample values: ['Lip Balm', 'Maze Pen', 'Maze Pen', 'Yoga Mat', 'Yoga Mat'])
+    productSKU (Type: STRING; Sample values: ['10 55401', '9180842', 'GGOEGGOA017399', 'GGOEGAAX0213', '9182788'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.products
+[
+    name (Type: STRING; Sample values: ['PC gaming speakers', " Women's Colorblock Tee White", " Men's Quilted Insulated Vest Black", " Men's Short Sleeve Performance Badge Tee Pewter", " Women's Quilted Insulated Vest White"])
+    stockLevel (Type: INT64; Sample values: ['100', '0', '32', '29', '16'])
+    restockingLeadTime (Type: INT64; Sample values: ['1', '8', '8', '15', '9'])
+    orderedQuantity (Type: INT64; Sample values: ['0', '0', '26', '27', '10'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.checkout_nudge
+[
+    number_of_products_viewed (Type: INT64; Sample values: ['256', '1', '1', '1', '1'])
+    eCommerceAction_type_max (Type: STRING; Sample values: ['5', '5', '5', '5', '5'])
+    fullVisitorID (Type: STRING; Sample values: ['0697698087141419098', '1495718436219461866', '2728377808603106296', '7564646136287671879', '5385229023191936063'])
+]
+
+--------------------------------------------------
+
+###Table full name: data-to-insights.ecommerce.partition_by_day
+[
+    fullvisitorId (Type: STRING; Sample values: ['9048843609752982673', '9644130921840916570', '5125743408568920135', '7068061647475096007', '0868971251098781302'])
+]
+
+--------------------------------------------------
+

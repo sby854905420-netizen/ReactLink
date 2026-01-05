@@ -1,0 +1,22 @@
+###Table full name: bigquery-public-data.usa_names.usa_1910_current
+[
+    gender (Type: STRING; Sample values: ['F', 'F', 'F', 'F', 'F']; Description: Sex (M=male or F=female))
+    name (Type: STRING; Sample values: ['Mary', 'Annie', 'Anna', 'Margaret', 'Helen']; Description: Given name of a person at birth)
+    state (Type: STRING; Sample values: ['AK', 'AK', 'AK', 'AK', 'AK']; Description: 2-digit state code)
+    number (Type: INT64; Sample values: ['14', '12', '10', '8', '7']; Description: Number of occurrences of the name)
+    year (Type: INT64; Sample values: ['1910', '1910', '1910', '1910', '1910']; Description: 4-digit year of birth)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.usa_names.usa_1910_2013
+[
+    gender (Type: STRING; Sample values: ['F', 'F', 'F', 'F', 'F']; Description: Sex (M=male or F=female))
+    name (Type: STRING; Sample values: ['Vera', 'Viola', 'Alice', 'Edna', 'Ollie']; Description: Given name of a person at birth)
+    state (Type: STRING; Sample values: ['AL', 'AR', 'AR', 'AR', 'AR']; Description: 2-digit state code)
+    number (Type: INT64; Sample values: ['71', '37', '57', '95', '40']; Description: Number of occurrences of the name)
+    year (Type: INT64; Sample values: ['1910', '1910', '1910', '1910', '1910']; Description: 4-digit year of birth)
+]
+
+--------------------------------------------------
+

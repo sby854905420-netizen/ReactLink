@@ -1,0 +1,405 @@
+###Table full name: bigquery-public-data.census_bureau_acs.county_2018_1yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['15867.0', '27970.0', '44269.0', '29875.0', '24950.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['9875.0', '11668.0', '33483.0', '39840.0', '19586.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['12445.0', '24972.0', '70282.0', '17099.0', '20721.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['8067.0', '10885.0', '19493.0', '15396.0', '11244.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['20721.0', '21292.0', '50586.0', '76152.0', '33016.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['nan', 'nan', '30236.0', '27216.0', '20164.0']; Description: Number of workers with a commute between 35 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['19304.0', '25499.0', '53914.0', '59502.0', '29098.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['10067.0', '9575.0', '24219.0', '5285.0', '13181.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['nan', 'nan', '94501.0', '22384.0', '33902.0']; Description: Number of workers with a commute of over 60 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['7879.0', '7595.0', '10743.0', '11820.0', '8920.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_25_29_mins (Type: FLOAT64; Sample values: ['11068.0', '12755.0', '33427.0', '31585.0', '16617.0']; Description: Number of workers with a commute between 25 and 29 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.)
+    commute_10_14_mins (Type: FLOAT64; Sample values: ['17491.0', '19741.0', '47415.0', '59191.0', '27416.0']; Description: Number of workers with a commute between 10 and 14 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.)
+    commute_20_24_mins (Type: FLOAT64; Sample values: ['24558.0', '23435.0', '57013.0', '70297.0', '31069.0']; Description: Number of workers with a commute between 20 and 24 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 20 and 24 minutes.)
+    commute_less_10_mins (Type: FLOAT64; Sample values: ['nan', 'nan', '41588.0', '48477.0', '23334.0']; Description: Number of workers with less than 10 minute commute. The number of workers in a geographic area over the age of 16 who do not work from home and commute in less than 10 minutes.)
+    geo_id (Type: STRING; Sample values: ['34035', '51107', '34003', '12103', '34027']; Description: US County Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+    do_date (Type: STRING; Sample values: ['2018', '2018', '2018', '2018', '2018'])
+    male_62_to_64 (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    male_60_to_61 (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['168756.0', '216325.0', '475178.0', '456377.0', '256257.0']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+    commuters_16_over (Type: FLOAT64; Sample values: ['nan', 'nan', '452949.0', '424679.0', '239566.0']; Description: Workers age 16 and over who do not work from home. The number of workers in a geographic area over the age of 16 who do not work from home)
+    pop_16_over (Type: FLOAT64; Sample values: ['266674.0', '305449.0', '763161.0', '836293.0', '404878.0']; Description: Population age 16 and over. The number of people in each geography who are age 16 or over.)
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Married but separated. The number of people in a geographic area who are married but separated)
+    owner_occupied_housing_units (Type: FLOAT64; Sample values: ['91176.0', '100398.0', '220204.0', '271342.0', '133030.0']; Description: Owner-occupied Housing Units)
+]
+**Some other tables have the similar structure: [county_2013_1yr, county_2019_1yr, county_2020_5yr, county_2012_3yr, county_2012_5yr, county_2008_1yr, county_2019_5yr, county_2015_5yr, county_2014_1yr, county_2011_1yr, county_2010_5yr, county_2017_1yr, county_2009_1yr, county_2008_3yr, county_2012_1yr, county_2010_3yr, county_2011_3yr, county_2014_5yr, county_2007_1yr, county_2011_5yr, county_2016_5yr, county_2007_3yr, county_2018_5yr, county_2013_3yr, county_2017_5yr, county_2013_5yr, county_2015_1yr, county_2016_1yr, county_2009_3yr, county_2021_1yr, county_2010_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictsecondary_2010_5yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['783.0', '615.0', '1309.0', '2088.0', '4759.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['470.0', '315.0', '693.0', '461.0', '2266.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['251.0', '1671.0', '1593.0', '4544.0', '2361.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['249.0', '243.0', '755.0', '670.0', '2904.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['564.0', '759.0', '2781.0', '3904.0', '2021.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['115.0', '167.0', '520.0', '393.0', '424.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['585.0', '949.0', '3804.0', '2433.0', '5709.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['127.0', '148.0', '338.0', '455.0', '1291.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_25_29_mins (Type: FLOAT64; Sample values: ['154.0', '536.0', '1100.0', '1314.0', '1487.0']; Description: Number of workers with a commute between 25 and 29 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.)
+    commute_10_14_mins (Type: FLOAT64; Sample values: ['431.0', '1056.0', '2201.0', '6053.0', '3017.0']; Description: Number of workers with a commute between 10 and 14 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.)
+    commute_20_24_mins (Type: FLOAT64; Sample values: ['297.0', '843.0', '2286.0', '3822.0', '2954.0']; Description: Number of workers with a commute between 20 and 24 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 20 and 24 minutes.)
+    geo_id (Type: STRING; Sample values: ['2504290', '0614190', '3412570', '0616500', '1729280']; Description: Secondary School District Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['268.0', '1147.0', '2303.0', '2273.0', '1934.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    workers_16_and_over (Type: FLOAT64; Sample values: ['4420.0', '8873.0', '18466.0', '28120.0', '32253.0']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictelementary_2014_1yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['1375.0', '1535.0', '6373.0', '1612.0', '3074.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['3383.0', '3881.0', '3024.0', '7541.0', '2968.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['1072.0', '1459.0', '4707.0', '1103.0', '2471.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['735.0', '388.0', '2337.0', '1418.0', '1399.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['9105.0', '5011.0', '3561.0', '2453.0', '3347.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute between 35 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['5077.0', '3198.0', '2725.0', '2764.0', '5602.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute of over 60 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['1206.0', '1018.0', '403.0', '1055.0', '1150.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['629.0', '590.0', '921.0', '626.0', '534.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_25_29_mins (Type: FLOAT64; Sample values: ['2500.0', '2400.0', '2458.0', '683.0', '2595.0']; Description: Number of workers with a commute between 25 and 29 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.)
+    commute_10_14_mins (Type: FLOAT64; Sample values: ['4912.0', '5624.0', '4294.0', '3720.0', '2920.0']; Description: Number of workers with a commute between 10 and 14 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.)
+    geo_id (Type: STRING; Sample values: ['0626280', '0630990', '1714460', '0613500', '3406030']; Description: Elementary School District Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['1210.0', '2776.0', '2396.0', '1669.0', '3681.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    workers_16_and_over (Type: FLOAT64; Sample values: ['37764.0', 'nan', '38757.0', 'nan', 'nan']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+**Some other tables have the similar structure: [schooldistrictelementary_2010_1yr, schooldistrictelementary_2015_1yr, schooldistrictelementary_2021_1yr, schooldistrictelementary_2019_5yr, schooldistrictelementary_2019_1yr, schooldistrictelementary_2010_5yr, schooldistrictelementary_2018_1yr, schooldistrictelementary_2020_5yr, schooldistrictelementary_2016_1yr, schooldistrictelementary_2014_5yr, schooldistrictelementary_2017_5yr, schooldistrictelementary_2015_5yr, schooldistrictelementary_2018_5yr, schooldistrictelementary_2016_5yr, schooldistrictelementary_2017_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.blockgroup_2014_5yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['86.0', '0.0', '61.0', '59.0', '54.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['49.0', '24.0', '72.0', '94.0', '104.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['30.0', '43.0', '805.0', '36.0', '152.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['21.0', '30.0', '34.0', '69.0', '28.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['50.0', '132.0', '199.0', '138.0', '129.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['34.0', '232.0', '359.0', '103.0', '168.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['25.0', '19.0', '0.0', '74.0', '29.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['74.0', '43.0', '72.0', '168.0', '133.0']; Description: Number of workers with a commute of over 60 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.)
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['53.0', '79.0', '105.0', '78.0', '52.0']; Description: Number of workers with a commute between 35 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['32.0', '49.0', '71.0', '9.0', '24.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_25_29_mins (Type: FLOAT64; Sample values: ['46.0', '152.0', '76.0', '72.0', '57.0']; Description: Number of workers with a commute between 25 and 29 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.)
+    commute_10_14_mins (Type: FLOAT64; Sample values: ['34.0', '82.0', '741.0', '59.0', '93.0']; Description: Number of workers with a commute between 10 and 14 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.)
+    geo_id (Type: STRING; Sample values: ['360470750001', '060730146012', '530730001003', '340030490022', '060376511021']; Description: US Census Block Groups_2015 Geoids)
+]
+**Some other tables have the similar structure: [blockgroup_2010_5yr, blockgroup_2012_5yr, blockgroup_2018_5yr, blockgroup_2013_5yr, blockgroup_2016_5yr, blockgroup_2011_5yr, blockgroup_2015_5yr, blockgroup_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.congressionaldistrict_2010_5yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['43502.0', '13485.0', '49048.0', '30672.0', '20771.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['65626.0', '6572.0', '53460.0', '29414.0', '11770.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['9237.0', '15190.0', '7803.0', '12342.0', '33095.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['19316.0', '5518.0', '16694.0', '13421.0', '12898.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['21553.0', '27445.0', '16649.0', '21761.0', '82912.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['44254.0', '27853.0', '43538.0', '37032.0', '82955.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Number of workers with a commute between 35 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['19190.0', '3517.0', '21891.0', '12459.0', '6148.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Number of workers with a commute of over 60 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['6900.0', '5154.0', '9416.0', '8078.0', '11401.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_25_29_mins (Type: FLOAT64; Sample values: ['9764.0', '11272.0', '8192.0', '10796.0', '43437.0']; Description: Number of workers with a commute between 25 and 29 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.)
+    commute_10_14_mins (Type: FLOAT64; Sample values: ['18621.0', '20812.0', '13018.0', '19459.0', '58756.0']; Description: Number of workers with a commute between 10 and 14 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.)
+    geo_id (Type: STRING; Sample values: ['3607', '2613', '3610', '1701', '3203']; Description: US Congressional Districts Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['21676.0', '30222.0', '19016.0', '37433.0', '31237.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['293348.0', '174802.0', '272995.0', '232103.0', '491661.0']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+**Some other tables have the similar structure: [congressionaldistrict_2016_1yr, congressionaldistrict_2009_3yr, congressionaldistrict_2011_1yr, congressionaldistrict_2016_5yr, congressionaldistrict_2010_3yr, congressionaldistrict_2007_1yr, congressionaldistrict_2020_5yr, congressionaldistrict_2007_3yr, congressionaldistrict_2021_1yr, congressionaldistrict_2010_1yr, congressionaldistrict_2019_1yr, congressionaldistrict_2008_3yr, congressionaldistrict_2018_5yr, congressionaldistrict_2018_1yr, congressionaldistrict_2017_5yr, congressionaldistrict_2014_1yr, congressionaldistrict_2012_3yr, congressionaldistrict_2009_1yr, congressionaldistrict_2013_3yr, congressionaldistrict_2015_5yr, congressionaldistrict_2012_1yr, congressionaldistrict_2012_5yr, congressionaldistrict_2019_5yr, congressionaldistrict_2015_1yr, congressionaldistrict_2011_5yr, congressionaldistrict_2008_1yr, congressionaldistrict_2013_5yr, congressionaldistrict_2017_1yr, congressionaldistrict_2011_3yr, congressionaldistrict_2014_5yr, congressionaldistrict_2013_1yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zip_codes_2018_5yr
+[
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['', '', '', '', '']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['278.0', '282.0', '599.0', '323.0', '431.0'])
+    geo_id (Type: STRING; Sample values: ['15537', '48215', '29571', '88063', '32310'])
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    geoid (Type: STRING; Sample values: ['', '', '', '', ''])
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['3444.0', '3719.0', '4720.0', '5358.0', '6521.0'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['76.0', '363.0', '365.0', '180.0', '163.0'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['57.0', '1020.0', '100.0', '325.0', '1781.0'])
+    children (Type: FLOAT64; Sample values: ['1451.0', '3189.0', '3282.0', '4345.0', '3682.0'])
+]
+**Some other tables have the similar structure: [zip_codes_2013_5yr, zip_codes_2016_5yr, zip_codes_2015_5yr, zip_codes_2014_5yr, zip_codes_2011_5yr, zip_codes_2012_5yr, zip_codes_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.place_2010_5yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['63.0', '56.0', '452.0', '127.0', '259.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['48.0', '141.0', '264.0', '83.0', '118.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['73.0', '164.0', '336.0', '279.0', '1292.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['28.0', '168.0', '95.0', '101.0', '169.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['111.0', '480.0', '368.0', '948.0', '343.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['11.0', '15.0', '94.0', '60.0', '93.0']; Description: Number of workers with a commute of more than 90 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.)
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Number of workers with a commute between 35 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.)
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['45.0', '452.0', '326.0', '835.0', '291.0']; Description: Number of workers with a commute between 30 and 34 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.)
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Number of workers with a commute of over 60 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.)
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['12.0', '137.0', '125.0', '57.0', '54.0']; Description: Number of workers with a commute between 35 and 39 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.)
+    geo_id (Type: STRING; Sample values: ['3602902', '1255750', '4214264', '3906670', '5572925']; Description: Incorporated Places Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['154.0', '112.0', '367.0', '263.0', '645.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: STRING; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: STRING; Sample values: ['', '', '', '', ''])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['766.0', '2480.0', '3043.0', '4157.0', '3991.0']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+**Some other tables have the similar structure: [place_2014_1yr, place_2007_3yr, place_2016_5yr, place_2009_1yr, place_2021_1yr, place_2013_1yr, place_2009_3yr, place_2008_1yr, place_2010_3yr, place_2015_5yr, place_2019_1yr, place_2007_1yr, place_2016_1yr, place_2015_1yr, place_2012_1yr, place_2014_5yr, place_2013_3yr, place_2013_5yr, place_2018_1yr, place_2011_3yr, place_2012_5yr, place_2019_5yr, place_2011_5yr, place_2012_3yr, place_2017_1yr, place_2020_5yr, place_2010_1yr, place_2011_1yr, place_2008_3yr, place_2017_5yr, place_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.cbsa_2010_5yr
+[
+    commute_45_59_mins (Type: NUMERIC; Sample values: ['5351.000000000', '7324.000000000', '36690.000000000', '12543.000000000', '2550.000000000']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_60_89_mins (Type: NUMERIC; Sample values: ['2428.000000000', '5068.000000000', '19330.000000000', '6210.000000000', '1897.000000000']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_40_44_mins (Type: NUMERIC; Sample values: ['2462.000000000', '4235.000000000', '19493.000000000', '7414.000000000', '1684.000000000']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    geo_id (Type: STRING; Sample values: ['34820', '32580', '39580', '36540', '44100']; Description: Core Based Statistical Area (CBSA) Geoids)
+    pop_widowed (Type: NUMERIC; Sample values: ['14046.000000000', '15355.000000000', '34805.000000000', '32891.000000000', '10603.000000000']; Description: Widowed. The number of people in a geographic area who are widowed)
+    workers_16_and_over (Type: NUMERIC; Sample values: ['118551.000000000', '260986.000000000', '530723.000000000', '434898.000000000', '102722.000000000']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+**Some other tables have the similar structure: [cbsa_2015_1yr, cbsa_2020_5yr, cbsa_2016_1yr, cbsa_2012_5yr, cbsa_2018_5yr, cbsa_2012_3yr, cbsa_2009_1yr, cbsa_2019_1yr, cbsa_2016_5yr, cbsa_2015_5yr, cbsa_2007_1yr, cbsa_2012_1yr, cbsa_2009_3yr, cbsa_2014_5yr, cbsa_2011_1yr, cbsa_2007_3yr, cbsa_2008_1yr, cbsa_2021_1yr, cbsa_2017_1yr, cbsa_2010_1yr, cbsa_2013_1yr, cbsa_2011_3yr, cbsa_2010_3yr, cbsa_2008_3yr, cbsa_2018_1yr, cbsa_2014_1yr, cbsa_2013_3yr, cbsa_2019_5yr, cbsa_2013_5yr, cbsa_2011_5yr, cbsa_2017_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.puma_2016_1yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['2932.0', '5212.0', '5868.0', '7639.0', '11198.0']; Description: Number of workers with a commute between 45 and 59 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.)
+    commute_5_9_mins (Type: FLOAT64; Sample values: ['6325.0', '3421.0', '6078.0', '3195.0', '3967.0']; Description: Number of workers with a commute between 5 and 9 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.)
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['2679.0', '4961.0', '5180.0', '10250.0', '9928.0']; Description: Number of workers with a commute between 60 and 89 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .)
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['2124.0', '3486.0', '3381.0', '5699.0', '4386.0']; Description: Number of workers with a commute between 40 and 44 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.)
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['15278.0', '6598.0', '14446.0', '8456.0', '9751.0']; Description: Number of workers with a commute between 15 and 19 minutes. The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.)
+    geo_id (Type: STRING; Sample values: ['2701405', '4203210', '0800812', '0603705', '0600105']; Description: US Census Public Use Microdata Areas Geoids)
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Widowed. The number of people in a geographic area who are widowed)
+    workers_16_and_over (Type: FLOAT64; Sample values: ['78824.0', '56632.0', '94832.0', '85423.0', '85755.0']; Description: Workers over the Age of 16. The number of people in each geography who work. Workers include those employed at private for-profit companies, the self-employed, government workers and non-profit employees.)
+]
+**Some other tables have the similar structure: [puma_2008_1yr, puma_2007_1yr, puma_2009_1yr, puma_2017_1yr, puma_2019_5yr, puma_2013_3yr, puma_2018_1yr, puma_2014_5yr, puma_2007_3yr, puma_2011_1yr, puma_2016_5yr, puma_2018_5yr, puma_2015_1yr, puma_2017_5yr, puma_2015_5yr, puma_2011_3yr, puma_2014_1yr, puma_2009_3yr, puma_2013_5yr, puma_2021_1yr, puma_2020_5yr, puma_2012_1yr, puma_2019_1yr, puma_2011_5yr, puma_2013_1yr, puma_2010_1yr, puma_2010_3yr, puma_2008_3yr, puma_2012_5yr, puma_2010_5yr, puma_2012_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality
+[
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.11', '38.18', '38.5', '38.75', '38.41']; Description: Average OE Gestational Age (weeks))
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['10.45', '11.04', '10.75', '11.58', '10.64']; Description: Average Number of Prenatal Visits)
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.25', '38.25', '38.5', '38.5', '38.5']; Description: Average LMP Gestational Age (weeks))
+    County_of_Residence (Type: STRING; Sample values: ['Calhoun County, AL', 'Tulsa County, OK', 'Carroll County, GA', 'Saginaw County, MI', 'Hillsborough County, FL']; Description: County of Residence)
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['01015', '40143', '13045', '26145', '12057']; Description: County of Residence Code)
+    Year (Type: DATE; Sample values: ['2018-01-01', '2018-01-01', '2018-01-01', '2018-01-01', '2018-01-01']; Description: Year)
+    Births (Type: INT64; Sample values: ['1265', '8933', '1540', '2182', '17126']; Description: Number of Births)
+    Ave_Pre_pregnancy_BMI (Type: FLOAT64; Sample values: ['28.85', '27.58', '27.98', '28.85', '26.75']; Description: Average Pre-pregnancy BMI)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_father_race
+[
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['37.78', '39.05', '39.12', '38.84', '39.12']; Description: Average OE Gestational Age (weeks))
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['37.94', '39.15', '39.16', '39.01', '39.17']; Description: Average LMP Gestational Age (weeks))
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['8.42', '10.38', '10.61', '13.42', '11.95']; Description: Average Number of Prenatal Visits)
+    County_of_Residence (Type: STRING; Sample values: ['Imperial County, CA', 'Marin County, CA', 'Boulder County, CO', 'New London County, CT', 'Tolland County, CT']; Description: County of Residence)
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['06025', '06041', '08013', '09011', '09013']; Description: County of Residence Code)
+    Fathers_Single_Race_Code (Type: STRING; Sample values: ['A', 'A', 'A', 'A', 'A']; Description: Father's Single Race 6 Code)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2017_5yr
+[
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['16.0', '18.0', '39.0', '43.0', '176.0'])
+    commute_90_more_mins (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    commute_60_more_mins (Type: FLOAT64; Sample values: ['17.0', '77.0', '43.0', '26.0', '124.0'])
+    geo_id (Type: STRING; Sample values: ['38037', '39886', '15558', '67467', '70748'])
+    pop_widowed (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    pop_separated (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['27.0', '8.0', '2.0', '163.0', '212.0'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['7.0', '24.0', '11.0', '18.0', '532.0'])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['641.0', '645.0', '1002.0', '1277.0', '1596.0'])
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['28.0', '30.0', '105.0', '33.0', '126.0'])
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['', '', '', '', ''])
+    commute_30_34_mins (Type: FLOAT64; Sample values: ['77.0', '57.0', '87.0', '274.0', '260.0'])
+    commute_15_19_mins (Type: FLOAT64; Sample values: ['126.0', '125.0', '142.0', '139.0', '121.0'])
+    population_1_year_and_over (Type: FLOAT64; Sample values: ['1552.0', '1700.0', '2311.0', '2487.0', '7113.0'])
+    population_3_years_over (Type: FLOAT64; Sample values: ['1533.0', '1683.0', '2270.0', '2476.0', '7059.0'])
+]
+**Some other tables have the similar structure: [zcta5_2014_5yr, zcta5_2016_5yr, zcta5_2011_5yr, zcta5_2013_5yr, zcta5_2015_5yr, zcta_2019_5yr, zcta_2020_5yr, zcta5_2012_5yr, zcta5_2018_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity
+[
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.07', '38.11', '38.16', '38.81', '38.95']; Description: Average OE Gestational Age (weeks))
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['10.83', '10.78', '9.66', '11.22', '12.84']; Description: Average Number of Prenatal Visits)
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.27', '38.15', '38.31', '38.89', '39.1']; Description: Average LMP Gestational Age (weeks))
+    County_of_Residence (Type: STRING; Sample values: ['Mobile County, AL', 'Morgan County, AL', 'Tuscaloosa County, AL', 'Butte County, CA', 'Humboldt County, CA']; Description: County of Residence)
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['01097', '01103', '01125', '06007', '06023']; Description: County of Residence Code)
+    Maternal_Morbidity_Desc (Type: STRING; Sample values: ['None checked', 'None checked', 'None checked', 'None checked', 'None checked']; Description: Maternal Morbidity Checked)
+    Maternal_Morbidity_YN (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Maternal Morbidity Checked Code)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_mother_race
+[
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.95', '38.87', '38.79', '39.03', '37.98']; Description: Average OE Gestational Age (weeks))
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['39.15', '38.9', '38.76', '39.06', '38.12']; Description: Average LMP Gestational Age (weeks))
+    County_of_Residence (Type: STRING; Sample values: ['Humboldt County, CA', 'Boulder County, CO', 'Weld County, CO', 'Tolland County, CT', 'Lake County, FL']; Description: County of Residence)
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['06023', '08013', '08123', '09013', '12069']; Description: County of Residence Code)
+    Mothers_Single_Race_Code (Type: STRING; Sample values: ['A', 'A', 'A', 'A', 'A']; Description: Mother's Single Race 6 Code)
+    Year (Type: DATE; Sample values: ['2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01']; Description: Year)
+    Births (Type: INT64; Sample values: ['60', '187', '120', '110', '86']; Description: Number of Births)
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['11.86', '10.28', '10.97', '12.03', '9.21']; Description: Average Number of Prenatal Visits)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_payment
+[
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.95', '38.05', '38.08', '39.22', '38.96']; Description: Average OE Gestational Age (weeks))
+    County_of_Residence (Type: STRING; Sample values: ['Cochise County, AZ', 'Navajo County, AZ', 'Unidentified Counties, AR', 'Humboldt County, CA', 'San Joaquin County, CA']; Description: County of Residence)
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['4003', '4017', '5999', '6023', '6077']; Description: County of Residence Code)
+    Source_of_Payment_Code (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Source of Payment for Delivery Code)
+    Year (Type: DATE; Sample values: ['2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01']; Description: Year)
+    Births (Type: INT64; Sample values: ['126', '59', '801', '298', '130']; Description: Number of Births)
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['9.03', '8.81', '9.76', '10.43', '10.35']; Description: Average Number of Prenatal Visits)
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.96', '37.84', '38.14', '39.51', '39.09']; Description: Average LMP Gestational Age (weeks))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.censustract_2019_5yr
+[
+    geo_id (Type: STRING; Sample values: ['1001020100', '1001020200', '1001020300', '1001020400', '1001020500'])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['948.0', '733.0', '1732.0', '1672.0', '5407.0'])
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['9.0', '61.0', '173.0', '15.0', '82.0'])
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['3.0', '17.0', '43.0', '126.0', '22.0'])
+    commute_40_44_mins (Type: FLOAT64; Sample values: ['38.0', '47.0', '71.0', '45.0', '24.0'])
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['61.0', '102.0', '113.0', '150.0', '24.0'])
+    population_3_years_over (Type: FLOAT64; Sample values: ['1937.0', '1895.0', '3433.0', '3796.0', '10174.0'])
+    population_1_year_and_over (Type: FLOAT64; Sample values: ['1966.0', '1954.0', '3489.0', '3850.0', '10467.0'])
+    pop_16_over (Type: FLOAT64; Sample values: ['1617.0', '1575.0', '2799.0', '3227.0', '8495.0'])
+]
+**Some other tables have the similar structure: [censustract_2012_5yr, censustract_2016_5yr, censustract_2017_5yr, censustract_2013_5yr, censustract_2015_5yr, censustract_2018_5yr, censustract_2014_5yr, censustract_2020_5yr, censustract_2010_5yr, censustract_2011_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.zcta5_2019_5yr
+[
+    geo_id (Type: STRING; Sample values: ['1222', '1745', '2163', '2543', '2876'])
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['11.0', '20.0', '45.0', '16.0', '16.0'])
+    commute_60_89_mins (Type: FLOAT64; Sample values: ['12.0', '32.0', '31.0', '24.0', '25.0'])
+    commute_35_44_mins (Type: FLOAT64; Sample values: ['29.0', '0.0', '60.0', '0.0', '0.0'])
+    commute_35_39_mins (Type: FLOAT64; Sample values: ['29.0', '0.0', '28.0', '0.0', '0.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.state_2020_5yr
+[
+    geo_id (Type: STRING; Sample values: ['1', '2', '5', '8', '28'])
+    do_date (Type: STRING; Sample values: ['', '', '', '', ''])
+    different_house_year_ago_same_city (Type: FLOAT64; Sample values: ['181564.0', '50694.0', '133707.0', '289568.0', '94087.0'])
+    children (Type: FLOAT64; Sample values: ['1092912.0', '183359.0', '702832.0', '1259031.0', '707221.0'])
+    male_45_64_grade_9_12 (Type: FLOAT64; Sample values: ['62298.0', '4492.0', '34131.0', '33251.0', '41781.0'])
+    pop_25_64 (Type: FLOAT64; Sample values: ['2516572.0', '395807.0', '1516605.0', '3092417.0', '1508842.0'])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['2095195.0', '351387.0', '1294646.0', '2919907.0', '1230952.0'])
+    commute_45_59_mins (Type: FLOAT64; Sample values: ['159331.0', '10545.0', '71787.0', '209360.0', '78570.0'])
+]
+**Some other tables have the similar structure: [state_2017_5yr, state_2013_5yr, state_2017_1yr, state_2014_5yr, state_2013_3yr, state_2012_3yr, state_2007_3yr, state_2008_1yr, state_2007_1yr, state_2018_5yr, state_2019_5yr, state_2016_1yr, state_2021_1yr, state_2011_3yr, state_2016_5yr, state_2011_5yr, state_2009_1yr, state_2010_5yr, state_2010_1yr, state_2015_5yr, state_2011_1yr, state_2012_5yr, state_2013_1yr, state_2009_3yr, state_2008_3yr, state_2018_1yr, state_2019_1yr, state_2014_1yr, state_2012_1yr, state_2015_1yr, state_2010_3yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_bea_cainc30.fips
+[
+    GeoName (Type: STRING; Sample values: ['Pennington, MN', 'Passaic, NJ', 'Bristol, MA', 'Sumter, FL', 'Clay, NC']; Description: US County Geoids Description)
+    GeoFIPS (Type: STRING; Sample values: ['27113', '34031', '25005', '12119', '37043']; Description: US County Geoids)
+    Year (Type: DATE; Sample values: ['2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01']; Description: FIPS Year)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictunified_2016_1yr
+[
+    geo_id (Type: STRING; Sample values: ['402860', '402920', '404630', '408170', '506120'])
+    workers_16_and_over (Type: FLOAT64; Sample values: ['45882.0', 'nan', 'nan', 'nan', 'nan'])
+]
+**Some other tables have the similar structure: [schooldistrictunified_2014_1yr, schooldistrictunified_2017_1yr, schooldistrictunified_2017_5yr, schooldistrictunified_2016_5yr, schooldistrictunified_2019_5yr, schooldistrictunified_2018_1yr, schooldistrictunified_2010_5yr, schooldistrictunified_2019_1yr, schooldistrictunified_2018_5yr, schooldistrictunified_2021_1yr, schooldistrictunified_2015_1yr, schooldistrictunified_2020_5yr, schooldistrictunified_2010_1yr, schooldistrictunified_2015_5yr, schooldistrictunified_2014_5yr]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_hud_housing.2017_lihtc_database_hud
+[
+    cnty2010 (Type: STRING; Sample values: ['1', '109', '109', '109', '109']; Description: 2010 County FIPS Code)
+    cnty2000 (Type: STRING; Sample values: ['0', '109', '109', '109', '109']; Description: 2000 County FIPS Code)
+    st2010 (Type: STRING; Sample values: ['9', '31', '31', '31', '31']; Description: 2010 State FIPS Code)
+    fips2010 (Type: STRING; Sample values: ['9001021400', '31109010100', '31109003301', '31109003003', '31109003003']; Description: Unique 2010 Census Tract: Digits 1-2: State FIPS Code Digits 3-5: County FIPS Code Digits 6-11: Census Tract Number (decimal point excluded))
+    st2000 (Type: STRING; Sample values: ['9', '31', '31', '31', '31']; Description: 2000 State FIPS Code)
+    fips2000 (Type: STRING; Sample values: ['9001021400', '31109010100', '31109003300', '31109003003', '31109003003']; Description: Unique 2000 Census Tract ID -- digits 1-2: State FIPS Code digits 3-5: County FIPS Code digits 6-11: Census Tract Number (no decimal point included))
+    cnty1990 (Type: STRING; Sample values: ['None', '109', '109', '109', '109']; Description: 1990 County FIPS Code)
+    placefp (Type: STRING; Sample values: ['73000', '12280', '28000', '28000', '28000']; Description: FIPS Place Code (2000))
+    fips1990 (Type: STRING; Sample values: ['None', '31109010100', '31109003300', '31109003000', '31109003000']; Description: Unique 1990 Census Tract ID -- digits 1-2: State FIPS Code digits 3-5: County FIPS Code digits 6-11: Census Tract Number (no decimal point included))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_congenital_abnormalities
+[
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['13021', '13215', '05131', '05999', '17163']; Description: County of Residence Code)
+    County_of_Residence (Type: STRING; Sample values: ['Bibb County, GA', 'Muscogee County, GA', 'Sebastian County, AR', 'Unidentified Counties, AR', 'St. Clair County, IL']; Description: County of Residence)
+    Year (Type: DATE; Sample values: ['2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01']; Description: Year)
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.38', '38.22', '38.43', '38.49', '38.43']; Description: Average LMP Gestational Age (weeks))
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['12.05', '11.3', '9.44', '10.44', '10.41']; Description: Average Number of Prenatal Visits)
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.0', '38.0', '38.25', '38.25', '38.25']; Description: Average OE Gestational Age (weeks))
+    Births (Type: INT64; Sample values: ['2240', '2786', '1826', '20626', '3209']; Description: Number of Births)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_abnormal_conditions
+[
+    County_of_Residence_FIPS (Type: STRING; Sample values: ['01117', '13135', '06075', '36075', '41017']; Description: County of Residence Code)
+    County_of_Residence (Type: STRING; Sample values: ['Shelby County, AL', 'Gwinnett County, GA', 'San Francisco County, CA', 'Oswego County, NY', 'Deschutes County, OR']; Description: County of Residence)
+    Year (Type: DATE; Sample values: ['2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01', '2017-01-01']; Description: Year)
+    Ave_LMP_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.72', '38.75', '39.08', '39.24', '39.22']; Description: Average LMP Gestational Age (weeks))
+    Ave_Number_of_Prenatal_Wks (Type: FLOAT64; Sample values: ['10.85', '11.49', '11.27', '12.9', '10.96']; Description: Average Number of Prenatal Visits)
+    Births (Type: INT64; Sample values: ['2067', '10199', '8000', '1087', '1639']; Description: Number of Births)
+    Ave_OE_Gestational_Age_Wks (Type: FLOAT64; Sample values: ['38.75', '38.75', '39.0', '39.0', '39.25']; Description: Average OE Gestational Age (weeks))
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_snap_enrollment.snap_enrollment
+[
+    FIPS (Type: STRING; Sample values: ['10001', '10001', '10001', '10001', '10001']; Description: County FIPS Designation)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.sdoh_cms_dual_eligible_enrollment.dual_eligible_enrollment_by_county_and_program
+[
+    FIPS (Type: STRING; Sample values: ['01001', '01001', '01001', '01001', '01001']; Description: Geo FIPS Code)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.census_bureau_acs.schooldistrictsecondary_2020_5yr
+[
+    workers_16_and_over (Type: FLOAT64; Sample values: ['142.0', '12.0', '0.0', '0.0', '55.0'])
+    geo_id (Type: STRING; Sample values: ['606020', '1717902', '1717903', '1799004', '1799008'])
+]
+**Some other tables have the similar structure: [schooldistrictsecondary_2017_1yr, schooldistrictsecondary_2021_1yr, schooldistrictsecondary_2015_5yr, schooldistrictsecondary_2018_1yr, schooldistrictsecondary_2019_1yr, schooldistrictsecondary_2019_5yr, schooldistrictsecondary_2018_5yr, schooldistrictsecondary_2016_1yr, schooldistrictsecondary_2016_5yr, schooldistrictsecondary_2015_1yr, schooldistrictsecondary_2010_1yr, schooldistrictsecondary_2014_5yr, schooldistrictsecondary_2017_5yr]**
+
+--------------------------------------------------
+

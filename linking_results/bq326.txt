@@ -1,0 +1,341 @@
+###Table full name: bigquery-public-data.world_bank_health_population.health_nutrition_population
+[
+    year (Type: INT64; Sample values: ['2007', '2001', '1988', '2020', '2003'])
+    value (Type: FLOAT64; Sample values: ['72.9079895', '1.5104', '6.5', '0.794975936412811', '5.9'])
+    country_code (Type: STRING; Sample values: ['CAN', 'CAN', 'CAN', 'CAN', 'CAN'])
+    country_name (Type: STRING; Sample values: ['Canada', 'Canada', 'Canada', 'Canada', 'Canada'])
+    indicator_name (Type: STRING; Sample values: ['Domestic general government health expenditure (% of current health expenditure)', 'Fertility rate, total (births per woman)', 'Hospital beds (per 1,000 people)', 'Human capital index (HCI), male, upper bound (scale 0-1)', 'Incidence of tuberculosis (per 100,000 people)'])
+    indicator_code (Type: STRING; Sample values: ['SH.XPD.GHED.CH.ZS', 'SP.DYN.TFRT.IN', 'SH.MED.BEDS.ZS', 'HD.HCI.OVRL.UB.MA', 'SH.TBS.INCD'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_summary
+[
+    source_of_most_recent_income_and_expenditure_data (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ppp_survey_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_trade_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    balance_of_payments_manual_in_use (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_industrial_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_base_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_reference_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    currency_unit (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    income_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_agricultural_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_household_survey (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    other_groups (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS'])
+    imf_data_dissemination_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    wb_2_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3'])
+    external_debt_reporting_status (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    system_of_national_accounts (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    government_accounting_concept (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    alternative_conversion_factor (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    vital_registration_complete (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    short_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    long_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states'])
+    two_alpha_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3'])
+    sna_price_valuation (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    system_of_trade (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    special_notes (Type: STRING; Sample values: ['26 countries, stretching from the Red Sea in the North to the Cape of Good Hope in the South (https://www.worldbank.org/en/region/afr/eastern-and-southern-africa)', '22 countries, stretching from the westernmost point of Africa, across the equator, and partly along the Atlantic Ocean till the Republic of Congo in the South (https://www.worldbank.org/en/region/afr/western-and-central-africa)', 'Arab World aggregate. Arab World is composed of members of the League of Arab States.', 'Central Europe and the Baltics aggregate.', 'None'])
+    lending_category (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_global_population.population_by_country
+[
+    year_2018 (Type: INT64; Sample values: ['40654', 'None', '4569087', '6982084', '16249798'])
+    year_2017 (Type: INT64; Sample values: ['40574', 'None', '4454805', '7020858', '16009414'])
+    year_2019 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    year_2013 (Type: INT64; Sample values: ['36607', 'None', '4076708', '7164132', '15026332'])
+    year_2014 (Type: INT64; Sample values: ['37685', 'None', '4173398', '7130576', '15274503'])
+    year_2016 (Type: INT64; Sample values: ['39969', 'None', '4367088', '7058322', '15766293'])
+    year_2012 (Type: INT64; Sample values: ['34640', 'None', '3979998', '7199077', '14780454'])
+    year_2009 (Type: INT64; Sample values: ['34238', 'None', '3689099', '7320807', '14093604'])
+    year_2011 (Type: INT64; Sample values: ['33435', 'None', '3882986', '7234099', '14541423'])
+    year_2015 (Type: INT64; Sample values: ['38825', 'None', '4270092', '7095383', '15521436'])
+    year_2002 (Type: INT64; Sample values: ['30777', 'None', '3075373', '7496522', '12637727'])
+    year_2008 (Type: INT64; Sample values: ['33964', 'None', '3591977', '7350222', '13883834'])
+    year_2007 (Type: INT64; Sample values: ['33811', 'None', '3494496', '7381579', '13679962'])
+    year_2003 (Type: INT64; Sample values: ['31472', 'None', '3154969', '7480591', '12856163'])
+    year_1998 (Type: INT64; Sample values: ['31240', 'None', '2776568', '7567745', '11600508'])
+    year_2005 (Type: INT64; Sample values: ['33011', 'None', '3320396', '7440769', '13273354'])
+    year_2001 (Type: INT64; Sample values: ['30600', 'None', '2997784', '7503433', '12405408'])
+    year_2006 (Type: INT64; Sample values: ['33441', 'None', '3406334', '7411569', '13477709'])
+    year_2010 (Type: INT64; Sample values: ['34056', 'None', '3786161', '7291436', '14312212'])
+    year_1997 (Type: INT64; Sample values: ['None', 'None', '2706518', '7596501', '11298600'])
+    year_1999 (Type: INT64; Sample values: ['31084', 'None', '2848431', '7540401', '11886458'])
+    year_2004 (Type: INT64; Sample values: ['32488', 'None', '3236626', '7463157', '13066469'])
+    year_1991 (Type: INT64; Sample values: ['None', 'None', '2068845', '7595636', '9289299'])
+    year_1987 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '8198082'])
+    year_1986 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7960949'])
+    year_1988 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '8435912'])
+    year_1992 (Type: INT64; Sample values: ['None', 'None', '2163591', '7646424', '9623889'])
+    year_1993 (Type: INT64; Sample values: ['None', 'None', '2262676', '7699307', '9970733'])
+    year_1981 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6749847'])
+    country (Type: STRING; Sample values: ['Sint Maarten (Dutch part)', 'Not classified', 'West Bank and Gaza', 'Serbia', 'Cambodia'])
+    year_1983 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7169997'])
+    year_1989 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '8691334'])
+    year_1985 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7714880'])
+    year_1978 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6957265'])
+    year_1982 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6919801'])
+    year_2000 (Type: INT64; Sample values: ['30519', 'None', '2922153', '7516346', '12155239'])
+    year_1990 (Type: INT64; Sample values: ['None', 'None', '1978248', '7586000', '8975597'])
+    year_1996 (Type: INT64; Sample values: ['None', 'None', '2587997', '7617794', '10982917'])
+    year_1972 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7302111'])
+    year_1979 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6770396'])
+    year_1971 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7139647'])
+    year_1994 (Type: INT64; Sample values: ['None', 'None', '2366298', '7734639', '10317899'])
+    year_1977 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7196042'])
+    year_1995 (Type: INT64; Sample values: ['None', 'None', '2474666', '7625357', '10656138'])
+    year_1980 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6693764'])
+    year_1965 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6467197'])
+    year_1970 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6996576'])
+    year_1976 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7404684'])
+    year_1973 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7449238'])
+    year_1961 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '5872966'])
+    year_1975 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7524447'])
+    year_1962 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6028431'])
+    year_1963 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6183584'])
+    country_code (Type: STRING; Sample values: ['SXM', 'INX', 'PSE', 'SRB', 'KHM'])
+    year_1984 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7447853'])
+    year_1966 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6585035'])
+    year_1968 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6779787'])
+    year_1967 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6685960'])
+    year_1974 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '7533336'])
+    year_1969 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6880623'])
+    year_1960 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '5722370'])
+    year_1964 (Type: INT64; Sample values: ['None', 'None', 'None', 'None', '6331449'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.series_times
+[
+    year (Type: INT64; Sample values: ['1990', '1990', '1990', '1990', '1990'])
+    description (Type: STRING; Sample values: ['Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.'])
+    series_code (Type: STRING; Sample values: ['SP.UWT.TFRT', 'SP.REG.DTHS.ZS', 'SH.FPL.SATM.ZS', 'SP.DYN.CONU.ZS', 'SH.MED.CMHW.P3'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.series_summary
+[
+    source (Type: STRING; Sample values: ['World Bank staff calculations based on the methodology described in World Bank (2018). https://openknowledge.worldbank.org/handle/10986/30498', 'World Bank staff calculations based on the methodology described in World Bank (2018). https://openknowledge.worldbank.org/handle/10986/30498', 'World Bank staff calculations based on the methodology described in World Bank (2018). https://openknowledge.worldbank.org/handle/10986/30498', 'World Bank staff calculations based on the methodology described in World Bank (2018). https://openknowledge.worldbank.org/handle/10986/30498', 'World Bank staff calculations based on the methodology described in World Bank (2018). https://openknowledge.worldbank.org/handle/10986/30498'])
+    topic (Type: STRING; Sample values: ['Public Sector: Policy & institutions', 'Public Sector: Policy & institutions', 'Public Sector: Policy & institutions', 'Public Sector: Policy & institutions', 'Public Sector: Policy & institutions'])
+    series_code (Type: STRING; Sample values: ['HD.HCI.OVRL', 'HD.HCI.OVRL.FE', 'HD.HCI.OVRL.LB', 'HD.HCI.OVRL.LB.FE', 'HD.HCI.OVRL.LB.MA'])
+    base_period (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    related_indicators (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    unit_of_measure (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    indicator_name (Type: STRING; Sample values: ['Human capital index (HCI) (scale 0-1)', 'Human capital index (HCI), female (scale 0-1)', 'Human capital index (HCI), lower bound (scale 0-1)', 'Human capital index (HCI), female, lower bound (scale 0-1)', 'Human capital index (HCI), male, lower bound (scale 0-1)'])
+    aggregation_method (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    other_notes (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    long_definition (Type: STRING; Sample values: ['The HCI calculates the contributions of health and education to worker productivity. The final index score ranges from zero to one and measures the productivity as a future worker of child born today relative to the benchmark of full health and compl...(truncated)', 'The HCI calculates the contributions of health and education to worker productivity. The final index score ranges from zero to one and measures the productivity as a future worker of child born today relative to the benchmark of full health and compl...(truncated)', 'The HCI lower bound reflects uncertainty in the measurement of the components and the overall index. It is obtained by recalculating the HCI using estimates of the lower bounds of each of the components of the HCI. The range between the upper and low...(truncated)', 'The HCI lower bound reflects uncertainty in the measurement of the components and the overall index. It is obtained by recalculating the HCI using estimates of the lower bounds of each of the components of the HCI. The range between the upper and low...(truncated)', 'The HCI lower bound reflects uncertainty in the measurement of the components and the overall index. It is obtained by recalculating the HCI using estimates of the lower bounds of each of the components of the HCI. The range between the upper and low...(truncated)'])
+    periodicity (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    notes_from_original_source (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    short_definition (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    general_comments (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.country_summary
+[
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    source_of_most_recent_Income_and_expenditure_data (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ppp_survey_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['EAP', 'ECA', 'IDX', 'LAC', 'LDC'])
+    short_name (Type: STRING; Sample values: ['East Asia & Pacific (excluding high income)', 'Europe & Central Asia (excluding high income)', 'IDA only', 'Latin America & Caribbean (excluding high income)', 'Least developed countries: UN classification'])
+    table_name (Type: STRING; Sample values: ['East Asia & Pacific (excluding high income)', 'Europe & Central Asia (excluding high income)', 'IDA only', 'Latin America & Caribbean (excluding high income)', 'Least developed countries: UN classification'])
+    long_name (Type: STRING; Sample values: ['East Asia & Pacific (excluding high income)', 'Europe & Central Asia (excluding high income)', 'IDA only', 'Latin America & Caribbean (excluding high income)', 'Least developed countries: UN classification'])
+    two_alpha_code (Type: STRING; Sample values: ['4E', '7E', 'XI', 'XJ', 'XL'])
+    wb_2_code (Type: STRING; Sample values: ['4E', '7E', 'XI', 'XJ', 'XL'])
+    latest_agricultural_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_base_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_water_withdrawal_data (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    other_groups (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_reference_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    vital_registration_complete (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_household_survey (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    income_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_trade_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    imf_data_dissemination_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    currency_unit (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.country_summary
+[
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    source_of_most_recent_income_and_expenditure_data (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ppp_survey_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['ARB', 'EAP', 'EAS', 'ECA', 'ECS'])
+    short_name (Type: STRING; Sample values: ['Arab World', 'East Asia & Pacific (developing only)', 'East Asia & Pacific (all income levels)', 'Europe & Central Asia (developing only)', 'Europe & Central Asia (all income levels)'])
+    table_name (Type: STRING; Sample values: ['Arab World', 'East Asia & Pacific', 'East Asia & Pacific (all income levels)', 'Europe & Central Asia', 'Europe & Central Asia (all income levels)'])
+    long_name (Type: STRING; Sample values: ['Arab World', 'East Asia & Pacific (developing only)', 'East Asia & Pacific (all income levels)', 'Europe & Central Asia (developing only)', 'Europe & Central Asia (all income levels)'])
+    two_alpha_code (Type: STRING; Sample values: ['1A', '4E', 'Z4', '7E', 'Z7'])
+    wb_two_code (Type: STRING; Sample values: ['1A', '4E', 'Z4', '7E', 'Z7'])
+    latest_agricultural_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_reference_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    national_accounts_base_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_trade_data (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    income_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    other_groups (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_household_survey (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    latest_water_withdrawal_data (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    imf_data_dissemination_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    currency_unit (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_health_population.country_series_definitions
+[
+    description (Type: STRING; Sample values: ['Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.', 'Aggregate data are based on UNICEF, WHO, and the World Bank harmonized JME dataset.'])
+    series_code (Type: STRING; Sample values: ['SH.STA.STNT.ME.ZS', 'SH.STA.OWGH.ME.ZS', 'SH.STA.OWGH.ME.ZS', 'SH.STA.STNT.ME.ZS', 'SH.STA.OWGH.ME.ZS'])
+    country_code (Type: STRING; Sample values: ['EAS', 'EAS', 'ECS', 'ECS', 'LCN'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_summary
+[
+    latest_population_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latest population census shows the most recent year in which a census was conducted and in which at least preliminary results have been released. The preliminary results from the very recent censuses could be reflected in timely revisions if basic data are available such as population by age and sex as well as the detailed definition of counting coverage and completeness.)
+    ppp_survey_year (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Purchasing power parity (PPP) survey year is the latest available survey year for the International Comparison Program’s estimates of PPPs.)
+    country_code (Type: STRING; Sample values: ['AFE', 'AFW', 'ARB', 'CEB', 'CSS']; Description: A short alphabetic or numeric geographical code representing a specific country or area. In April 2016 WDI has adopted the three digit ISO code to identify countries in its databases.)
+    short_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's official name as approved by the relevant body (Italy is used as an example): conventional short form (Italy).)
+    table_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's name as approved by the relevant body (Italy is used as an example): conventional short form (Republic of Italy).)
+    long_name (Type: STRING; Sample values: ['Africa Eastern and Southern', 'Africa Western and Central', 'Arab World', 'Central Europe and the Baltics', 'Caribbean small states']; Description: Country name the country's name as approved by the relevant body (Italy is used as an example): conventional long form (Republic of Italy).)
+    two_alpha_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3']; Description: ISO-2 digit alpha code value of the country. Re: www.iso.org)
+    wb_2_code (Type: STRING; Sample values: ['ZH', 'ZI', '1A', 'B8', 'S3']; Description: World Bank 2 digit code value of the country.)
+    region (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: World Bank region to which a country belongs.)
+    latest_agricultural_census (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Latest agricultural census shows the most recent year in which an agricultural census was conducted or planned to be conducted as reported to the Food and Agriculture Organization.)
+    income_group (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: World Bank income group to which a country belongs after the country classification is completed every year.)
+    other_groups (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Other types of grouping approved by the WDI team.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.indicators_data
+[
+    year (Type: INT64; Sample values: ['1998', '2006', '1962', '2012', '2001'])
+    country_name (Type: STRING; Sample values: ['Mozambique', 'Mozambique', 'Mozambique', 'Mozambique', 'Mozambique'])
+    country_code (Type: STRING; Sample values: ['MOZ', 'MOZ', 'MOZ', 'MOZ', 'MOZ'])
+    indicator_name (Type: STRING; Sample values: ['Net official development assistance and official aid received (constant 2018 US$)', 'Net official development assistance and official aid received (current US$)', 'Net official development assistance received (constant 2018 US$)', 'Net official flows from UN agencies, ILO (current US$)', 'Net official flows from UN agencies, UNICEF (current US$)'])
+    indicator_code (Type: STRING; Sample values: ['DT.ODA.ALLD.KD', 'DT.ODA.ALLD.CD', 'DT.ODA.ODAT.KD', 'DT.NFL.ILOG.CD', 'DT.NFL.UNCF.CD'])
+    value (Type: FLOAT64; Sample values: ['1501189941.40625', '1641939941.40625', '670000.016689301', '373041.689395905', '8420000.07629395'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.international_education
+[
+    indicator_code (Type: STRING; Sample values: ['UIS.E.2', 'UIS.E.3', 'UIS.E.3', 'UIS.E.3', 'UIS.R.1'])
+    indicator_name (Type: STRING; Sample values: ['Enrolment in lower secondary education, both sexes (number)', 'Enrolment in upper secondary education, both sexes (number)', 'Enrolment in upper secondary education, both sexes (number)', 'Enrolment in upper secondary education, both sexes (number)', 'Repeaters in primary education, all grades, both sexes (number)'])
+    value (Type: FLOAT64; Sample values: ['321921.0', '68809.0', '30551.0', '79784.0', '282699.0'])
+    year (Type: INT64; Sample values: ['2012', '2006', '1999', '2007', '2006'])
+    country_code (Type: STRING; Sample values: ['TCD', 'TCD', 'TCD', 'TCD', 'TCD'])
+    country_name (Type: STRING; Sample values: ['Chad', 'Chad', 'Chad', 'Chad', 'Chad'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.international_debt
+[
+    indicator_code (Type: STRING; Sample values: ['NY.GNP.MKTP.CD', 'NY.GNP.MKTP.CD', 'NY.GNP.MKTP.CD', 'NY.GNP.MKTP.CD', 'NY.GNP.MKTP.CD'])
+    value (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    year (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country_code (Type: STRING; Sample values: ['AFG', 'AFG', 'AFG', 'AGO', 'AGO'])
+    country_name (Type: STRING; Sample values: ['Afghanistan', 'Afghanistan', 'Afghanistan', 'Angola', 'Angola'])
+    indicator_name (Type: STRING; Sample values: ['GNI (current US$)', 'GNI (current US$)', 'GNI (current US$)', 'GNI (current US$)', 'GNI (current US$)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.series_summary
+[
+    indicator_name (Type: STRING; Sample values: ['Barro-Lee: Percentage of female population age 15-19 with no education', 'Barro-Lee: Percentage of population age 15-19 with no education', 'Barro-Lee: Percentage of female population age 15+ with no education', 'Barro-Lee: Percentage of population age 15+ with no education', 'Barro-Lee: Percentage of female population age 20-24 with no education'])
+    series_code (Type: STRING; Sample values: ['BAR.NOED.1519.FE.ZS', 'BAR.NOED.1519.ZS', 'BAR.NOED.15UP.FE.ZS', 'BAR.NOED.15UP.ZS', 'BAR.NOED.2024.FE.ZS'])
+    unit_of_measure (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    source (Type: STRING; Sample values: ['Robert J. Barro and Jong-Wha Lee: http://www.barrolee.com/', 'Robert J. Barro and Jong-Wha Lee: http://www.barrolee.com/', 'Robert J. Barro and Jong-Wha Lee: http://www.barrolee.com/', 'Robert J. Barro and Jong-Wha Lee: http://www.barrolee.com/', 'Robert J. Barro and Jong-Wha Lee: http://www.barrolee.com/'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.series_time
+[
+    year (Type: INT64; Sample values: ['1990', '1990', '1990', '1990', '1990'])
+    description (Type: STRING; Sample values: ['Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.', 'Averages for regions/groups are based on country-level data around 1990.'])
+    series_code (Type: STRING; Sample values: ['SP.DYN.CONM.ZS', 'SP.UWT.TFRT', 'SP.DYN.CONU.ZS', 'SP.REG.DTHS.ZS', 'SP.DYN.WFRT'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.footnotes
+[
+    year (Type: STRING; Sample values: ['    ', '    ', '    ', '1995', '1994'])
+    country_code (Type: STRING; Sample values: ['ABW', 'ABW', 'ABW', 'ABW', 'ABW'])
+    series_code (Type: STRING; Sample values: ['AG.LND.FRST.K2', 'AG.LND.FRST.K2', 'AG.LND.FRST.K2', 'BM.KLT.DINV.CD.WD', 'BM.KLT.DINV.CD.WD'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.series_times
+[
+    year (Type: INT64; Sample values: ['2018'])
+    description (Type: STRING; Sample values: ['Present value calculations for these countries are for public and publicly guaranteed debt only.'])
+    series_code (Type: STRING; Sample values: ['DT.DOD.PVLX.CD'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['AUS', 'AUT', 'JPN', 'JPN', 'TUN'])
+    series_code (Type: STRING; Sample values: ['MS.MIL.XPND.CN', 'MS.MIL.XPND.CN', 'MS.MIL.XPND.CN', 'MS.MIL.XPND.CD', 'MS.MIL.XPND.CD'])
+    description (Type: STRING; Sample values: ['1950-1999 SIPRI estimates.', '1957-2001 SIPRI estimates.', '1960-1964 SIPRI estimates.', '1960-1964 SIPRI estimates.', '1960-1964 SIPRI estimates.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_education.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['VEN', 'TZA', 'TZA', 'TZA', 'TZA'])
+    series_code (Type: STRING; Sample values: ['NY.GNP.PCAP.CD', 'NY.GDP.PCAP.CD', 'NY.GDP.PCAP.KD', 'NY.GDP.PCAP.PP.CD', 'NY.GDP.PCAP.PP.KD'])
+    description (Type: STRING; Sample values: ['Based on official exchange rates.', 'Covers mainland Tanzania only.', 'Covers mainland Tanzania only.', 'Covers mainland Tanzania only.', 'Covers mainland Tanzania only.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.country_series_definitions
+[
+    country_code (Type: STRING; Sample values: ['AFG', 'AGO', 'ALB', 'ARG', 'ARM'])
+    description (Type: STRING; Sample values: ['Data on Foreign Direct Investment are based on Balance of Payments reported by the International Monetary Fund. Unless otherwise specified in the specific years.', 'Data on Foreign Direct Investment are based on Balance of Payments reported by the International Monetary Fund. Unless otherwise specified in the specific years.', 'Data on Foreign Direct Investment are based on Balance of Payments reported by the International Monetary Fund. Unless otherwise specified in the specific years.', 'Data on Foreign Direct Investment are based on Balance of Payments reported by the International Monetary Fund. Unless otherwise specified in the specific years.', 'Data on Foreign Direct Investment are based on Balance of Payments reported by the International Monetary Fund. Unless otherwise specified in the specific years.'])
+    series_code (Type: STRING; Sample values: ['BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT', 'BX.KLT.DINV.CD.DT'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_intl_debt.series_summary
+[
+    series_code (Type: STRING; Sample values: ['BM.GSR.TOTL.CD', 'BN.CAB.XOKA.CD', 'BX.GRT.EXTA.CD.DT', 'BX.GRT.TECH.CD.DT', 'BX.GSR.TOTL.CD'])
+    indicator_name (Type: STRING; Sample values: ['Imports of goods, services and primary income (current US$)', 'Current account balance (current US$)', 'Grants, excluding technical cooperation (current US$)', 'Technical cooperation grants (current US$)', 'Exports of goods, services and primary income (current US$)'])
+    source (Type: STRING; Sample values: ['International Monetary Fund, Balance of Payments Statistics Yearbook.', 'International Monetary Fund, Balance of Payments Statistics Yearbook.', 'World Bank, International Debt Statistics.', 'World Bank, International Debt Statistics.', 'International Monetary Fund, Balance of Payments Statistics Yearbook.'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.world_bank_wdi.series_summary
+[
+    indicator_name (Type: STRING; Sample values: ['Agricultural machinery, tractors', 'Fertilizer consumption (% of fertilizer production)', 'Fertilizer consumption (kilograms per hectare of arable land)', 'Agricultural land (sq. km)', 'Agricultural land (% of land area)']; Description: Given name of a series.)
+]
+
+--------------------------------------------------
+

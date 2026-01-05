@@ -1,0 +1,51 @@
+###Table full name: bigquery-public-data.london_crime.crime_by_lsoa
+[
+    year (Type: INT64; Sample values: ['2008', '2008', '2008', '2008', '2008'])
+    borough (Type: STRING; Sample values: ['Brent', 'Bexley', 'Brent', 'Brent', 'Bexley'])
+    value (Type: INT64; Sample values: ['0', '0', '1', '0', '0']; Description: Summary of the number of crimes for the month)
+    major_category (Type: STRING; Sample values: ['Sexual Offences', 'Sexual Offences', 'Sexual Offences', 'Sexual Offences', 'Sexual Offences'])
+    month (Type: INT64; Sample values: ['8', '6', '2', '10', '5'])
+    minor_category (Type: STRING; Sample values: ['Rape', 'Rape', 'Rape', 'Rape', 'Rape'])
+    lsoa_code (Type: STRING; Sample values: ['E01000637', 'E01000469', 'E01000591', 'E01000619', 'E01000469']; Description: Lower Layer Super Output Area code according to the Office for National Statistics)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.london_fire_brigade.fire_brigade_service_calls
+[
+    incident_number (Type: STRING; Sample values: ['033152-19032017', '034685-23032017', '043965-10042017', '044075-10042017', '049713-21042017'])
+    borough_code (Type: STRING; Sample values: ['E00000000', 'E00000000', 'E00000000', 'E00000000', 'E00000000'])
+    incident_group (Type: STRING; Sample values: ['Fire', 'Fire', 'Fire', 'Fire', 'Fire'])
+    borough_name (Type: STRING; Sample values: [' NOT GEO-CODED', ' NOT GEO-CODED', ' NOT GEO-CODED', ' NOT GEO-CODED', ' NOT GEO-CODED'])
+    postcode_district (Type: STRING; Sample values: ['RM15', 'CM13', 'DA1', 'UB9', 'IG7'])
+    postcode_full (Type: STRING; Sample values: ['RM15 6RL', 'CM13 3JJ', 'DA1 2PN', 'UB9 5BW', 'IG7 6PE'])
+    cal_year (Type: INT64; Sample values: ['2017', '2017', '2017', '2017', '2017'])
+    property_category (Type: STRING; Sample values: ['Outdoor', 'Outdoor', 'Outdoor', 'Outdoor', 'Outdoor'])
+    proper_case (Type: STRING; Sample values: ['Not geo-coded', 'Not geo-coded', 'Not geo-coded', 'Not geo-coded', 'Not geo-coded'])
+    property_type (Type: STRING; Sample values: ['Tree scrub ', 'Wasteland ', 'Heathland ', 'Scrub land ', 'Domestic garden (vegetation not equipment) '])
+    incident_station_ground (Type: STRING; Sample values: ['OverTheBorder', 'OverTheBorder', 'OverTheBorder', 'OverTheBorder', 'OverTheBorder'])
+    ward_code (Type: STRING; Sample values: ['E00000000', 'E00000000', 'E00000000', 'E00000000', 'E00000000'])
+    num_pumps_attending (Type: INT64; Sample values: ['1', '4', '1', '1', '2'])
+    northing_m (Type: INT64; Sample values: ['180497', '188473', '173317', '186262', '193191'])
+    stop_code_description (Type: STRING; Sample values: ['Secondary Fire', 'Secondary Fire', 'Secondary Fire', 'Secondary Fire', 'Secondary Fire'])
+    easting_m (Type: INT64; Sample values: ['557845', '558977', '552218', '504537', '543731'])
+    timestamp_of_call (Type: TIMESTAMP; Sample values: ['2017-03-19 14:09:14+00:00', '2017-03-23 03:15:54+00:00', '2017-04-10 14:52:13+00:00', '2017-04-10 18:20:10+00:00', '2017-04-21 19:17:09+00:00'])
+    date_of_call (Type: DATE; Sample values: ['2017-03-19', '2017-03-23', '2017-04-10', '2017-04-10', '2017-04-21'])
+    ward_name (Type: STRING; Sample values: [' Not geo-coded', ' Not geo-coded', ' Not geo-coded', ' Not geo-coded', ' Not geo-coded'])
+    num_stations_with_pumps_attending (Type: INT64; Sample values: ['1', '4', '1', '1', '2'])
+    special_service_type (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    frs (Type: STRING; Sample values: ['OverTheBorder', 'OverTheBorder', 'OverTheBorder', 'OverTheBorder', 'OverTheBorder'])
+    ward_name_new (Type: STRING; Sample values: ['Not geo-coded', 'Not geo-coded', 'Not geo-coded', 'Not geo-coded', 'Not geo-coded'])
+    second_pump_arriving_attendance_time (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    second_pump_arriving_deployed_from_station (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    time_of_call (Type: TIME; Sample values: ['14:09:14', '03:15:54', '14:52:13', '18:20:10', '19:17:09'])
+    northing_rounded (Type: INT64; Sample values: ['180450', '188450', '173350', '186250', '193150'])
+    easting_rounded (Type: INT64; Sample values: ['557850', '558950', '552250', '504550', '543750'])
+    address_qualifier (Type: STRING; Sample values: ['Open land/water - nearest gazetteer location', 'Open land/water - nearest gazetteer location', 'Open land/water - nearest gazetteer location', 'Open land/water - nearest gazetteer location', 'On land associated with building'])
+    hour_of_call (Type: INT64; Sample values: ['14', '3', '14', '18', '19'])
+    first_pump_arriving_deployed_from_station (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    first_pump_arriving_attendance_time (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+

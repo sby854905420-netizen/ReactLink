@@ -1,0 +1,57 @@
+###Table full name: bigquery-public-data.noaa_gsod.gsod1973
+[
+    max (Type: FLOAT64; Sample values: ['6.8', '23.0', '8.6', '24.8', '28.4']; Description: Maximum temperature reported during the day in Fahrenheit to tenths--time of max temp report varies by country and region, so this will sometimes not be the max for the calendar day. Missing = 9999.9)
+    temp (Type: FLOAT64; Sample values: ['2.3', '19.4', '5.9', '22.1', '20.3']; Description: Mean temperature for the day in degrees Fahrenheit to tenths. Missing = 9999.9)
+    min (Type: FLOAT64; Sample values: ['-0.4', '-4.0', '1.4', '17.6', '14.0']; Description: Minimum temperature reported during the day in Fahrenheit to tenths--time of min temp report varies by country and region, so this will sometimes not be the min for the calendar day. Missing = 9999.9)
+    flag_max (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates max temp was taken from the explicit max temp report and not from the 'hourly' data.)
+    dewp (Type: FLOAT64; Sample values: ['-2.7', '12.2', '1.4', '9.5', '15.3']; Description: Mean dew point for the day in degreesm Fahrenheit to tenths.  Missing = 9999.9)
+    date (Type: DATE; Sample values: ['', '', '', '', '']; Description: Date of the weather observations)
+    count_temp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean temperature)
+    sndp (Type: FLOAT64; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Snow depth in inches to tenths--last report for the day if reported more thanonce. Missing = 999.9)
+    mo (Type: STRING; Sample values: ['12', '11', '12', '12', '12']; Description: The month)
+    prcp (Type: FLOAT64; Sample values: ['99.99', '99.99', '99.99', '99.99', '99.99']; Description: Total precipitation (rain and/or melted snow) reported during the day in inches and hundredths; will usually not end with the midnight observation--i.e., may include latter part of previous day.)
+    stp (Type: FLOAT64; Sample values: ['9999.9', '9999.9', '9999.9', '9999.9', '9999.9']; Description: Mean station pressure for the day in millibars to tenths. Missing = 9999.9)
+    stn (Type: STRING; Sample values: ['317980', '305990', '320570', '321160', '321330']; Description: Station number (WMO/DATSAV3 number) for the location)
+    da (Type: STRING; Sample values: ['08', '02', '01', '08', '11']; Description: The day)
+    flag_min (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates min temp was taken from the explicit min temp report and not from the 'hourly' data.)
+    flag_prcp (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A = 1 report of 6-hour precipitation amount)
+    wdsp (Type: STRING; Sample values: ['1.5', '1.9', '1.9', '11.2', '3.9']; Description: Mean wind speed for the day in knots to tenths. Missing = 999.9)
+    slp (Type: FLOAT64; Sample values: ['1018.2', '1014.7', '996.5', '1002.4', '1012.4']; Description: Mean sea level pressure for the day in millibars to tenths. Missing = 9999.9)
+    mxpsd (Type: STRING; Sample values: ['3.9', '3.9', '5.8', '15.5', '5.8']; Description: Maximum sustained wind speed reported for the day in knots to tenths. Missing = 999.9)
+    year (Type: STRING; Sample values: ['1973', '1973', '1973', '1973', '1973']; Description: The year)
+    thunder (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    fog (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    gust (Type: FLOAT64; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Maximum wind gust reported for the day in knots to tenths. Missing = 999.9)
+    count_dewp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean dew point)
+    count_stp (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Number of observations used in calculating mean station pressure)
+    visib (Type: FLOAT64; Sample values: ['8.4', '21.6', '6.8', '16.3', '19.3']; Description: Mean visibility for the day in miles to tenths.  Missing = 999.9)
+    hail (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    count_wdsp (Type: STRING; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean wind speed)
+    count_slp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean sea level pressure)
+    snow_ice_pellets (Type: STRING; Sample values: ['1', '1', '1', '1', '1']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    wban (Type: STRING; Sample values: ['99999', '99999', '99999', '99999', '99999']; Description: WBAN number where applicable--this is the historical "Weather Bureau Air Force Navy" number - with WBAN being the acronym)
+    rain_drizzle (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    tornado_funnel_cloud (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    count_visib (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean visibility)
+]
+**Some other tables have the similar structure: [gsod1938, gsod2020, gsod1945, gsod1948, gsod1949, gsod1983, gsod1998, gsod1930, gsod1995, gsod1960, gsod1987, gsod1975, gsod1992, gsod1954, gsod1990, gsod2019, gsod1977, gsod1964, gsod1970, gsod1969, gsod2003, gsod1951, gsod1937, gsod1952, gsod1997, gsod1984, gsod2008, gsod1953, gsod1940, gsod2004, gsod1955, gsod2011, gsod1959, gsod1947, gsod1974, gsod2015, gsod1993, gsod2007, gsod2002, gsod1944, gsod2023, gsod1999, gsod2024, gsod1932, gsod1965, gsod1939, gsod1982, gsod1968, gsod1946, gsod2005, gsod2010, gsod1931, gsod2018, gsod2012, gsod1956, gsod1941, gsod1979, gsod2017, gsod1935, gsod1961, gsod2014, gsod1991, gsod1958, gsod2000, gsod2009, gsod2013, gsod1989, gsod1933, gsod1996, gsod1985, gsod1980, gsod2006, gsod1988, gsod2001, gsod1971, gsod1934, gsod1936, gsod1929, gsod1981, gsod1972, gsod2021, gsod1986, gsod1967, gsod1978, gsod1963, gsod1942, gsod1966, gsod1950, gsod1943, gsod2016, gsod1957, gsod1994, gsod1976, gsod1962, gsod2022]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.stations
+[
+    lat (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '32.95', '0.0'])
+    end (Type: STRING; Sample values: ['20130730', '20170822', '20150926', '20120323', '20100421'])
+    country (Type: STRING; Sample values: ['None', 'AF', 'AF', 'AF', 'AF'])
+    begin (Type: STRING; Sample values: ['20110309', '20120713', '20140923', '20100519', '20100421'])
+    name (Type: STRING; Sample values: ['WXPOD 7018                   ', 'WXPOD 7026                   ', 'WXPOD 7070                   ', 'WXPOD8278                    ', 'WXPOD 8318                   '])
+    lon (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '65.567', '0.0'])
+    state (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    call (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    elev (Type: STRING; Sample values: ['+7018.0', '+7026.0', '+7070.0', '+1156.7', '+8318.0'])
+    wban (Type: STRING; Sample values: ['99999', '99999', '99999', '99999', '99999'])
+    usaf (Type: STRING; Sample values: ['007018', '007026', '007070', '008268', '008307'])
+]
+
+--------------------------------------------------
+

@@ -1,0 +1,54 @@
+###Table full name: bigquery-public-data.open_images.labels
+[
+    image_id (Type: STRING; Sample values: ['48a8ae7dcea2ee7b', '03ebaa6691dd92b8', '001fc547329866a1', '03d684e10a2f30c3', '073b4f8ab735456c'])
+    source (Type: STRING; Sample values: ['human', 'human', 'human', 'human', 'human'])
+    label_name (Type: STRING; Sample values: ['/m/0_k2', '/m/0_k2', '/m/0_k2', '/m/0_k2', '/m/0h5k'])
+    confidence (Type: FLOAT64; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.open_images.dict
+[
+    label_name (Type: STRING; Sample values: ['/m/01www', '/m/0h989', '/m/03bx7vb', '/m/01lgkm', '/m/012wxt'])
+    label_display_name (Type: STRING; Sample values: ['CD', 'Go', 'Ox', 'RV', 'Vj'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.open_images.images
+[
+    thumbnail_300k_url (Type: STRING; Sample values: ['https://c6.staticflickr.com/4/3298/4568682698_a108303ea2_z.jpg', 'https://c2.staticflickr.com/2/1027/540292777_ae94892482_z.jpg', 'https://c2.staticflickr.com/9/8300/8037336388_515c6efb5a_z.jpg', 'https://c8.staticflickr.com/8/7215/7226943088_5e2e5a822f_z.jpg', 'https://c1.staticflickr.com/2/1081/737615063_21403d1ec4_z.jpg'])
+    original_url (Type: STRING; Sample values: ['https://farm5.staticflickr.com/3298/4568682698_4934495448_o.jpg', 'https://farm6.staticflickr.com/1027/540292777_181e68eb01_o.jpg', 'https://c5.staticflickr.com/9/8300/8037336388_e2b170022d_o.jpg', 'https://farm6.staticflickr.com/7215/7226943088_fbd6641ece_o.jpg', 'https://c8.staticflickr.com/2/1081/737615063_5d381867ea_o.jpg'])
+    subset (Type: STRING; Sample values: ['test', 'test', 'test', 'test', 'test'])
+    image_id (Type: STRING; Sample values: ['4bc3355cee62c134', 'c5d3b4d316c5f4c5', '8a5fa5652754f03c', '57f2f8e2a31721e5', '76c1552233203cef'])
+    title (Type: STRING; Sample values: ['torta di mele e cannella#1', 'prima del forno', 'Southern Cali Road Trip', 'A Light Snack at the Gellert Restaurant', 'Opening (2/4)'])
+    license (Type: STRING; Sample values: ['https://creativecommons.org/licenses/by/2.0/', 'https://creativecommons.org/licenses/by/2.0/', 'https://creativecommons.org/licenses/by/2.0/', 'https://creativecommons.org/licenses/by/2.0/', 'https://creativecommons.org/licenses/by/2.0/'])
+    original_landing_url (Type: STRING; Sample values: ['https://www.flickr.com/photos/1la/4568682698', 'https://www.flickr.com/photos/1la/540292777', 'https://www.flickr.com/photos/422/8037336388', 'https://www.flickr.com/photos/ajy/7226943088/', 'https://www.flickr.com/photos/aok/737615063'])
+    original_size (Type: INT64; Sample values: ['1898324', '764512', '613137', '941227', '2107296'])
+    original_md5 (Type: STRING; Sample values: ['N6igOnRKJx5oPmUZ5JLKeg==', 'zq/rYYk0K+VkCcl3SGShhA==', 'ebYHfu22I9PfU89VB05Rmw==', 'mWPkTJIAmNmPoOmYr1NheA==', 'Eeq+MST00TvWRAwMZvKgtw=='])
+    author (Type: STRING; Sample values: ['ilaria', 'ilaria', 'Eli', 'Alistair Young', 'Oskari Kettunen'])
+    author_profile_url (Type: STRING; Sample values: ['https://www.flickr.com/people/1la/', 'https://www.flickr.com/people/1la/', 'https://www.flickr.com/people/422/', 'https://www.flickr.com/people/ajy/', 'https://www.flickr.com/people/aok/'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.open_images.annotations_bbox
+[
+    label_name (Type: STRING; Sample values: ['/m/0_k2', '/m/0_k2', '/m/0_k2', '/m/0_k2', '/m/0_k2'])
+    image_id (Type: STRING; Sample values: ['036b24f92ed0d95e', 'd7f443439c6ffbfe', '39808cdbf12eb7d0', '5e85a77309b69a5f', '540dc51c25dd244c'])
+    x_min (Type: FLOAT64; Sample values: ['0.01', '0.318', '0.019', '0.143', '0.21'])
+    source (Type: STRING; Sample values: ['human', 'human', 'human', 'human', 'human'])
+    x_max (Type: FLOAT64; Sample values: ['0.404', '0.444', '0.966', '0.345', '0.748'])
+    confidence (Type: FLOAT64; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    is_group_of (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    is_truncated (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    is_inside (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    is_occluded (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    y_min (Type: FLOAT64; Sample values: ['0.173', '0.016', '0.335', '0.742', '0.189'])
+    is_depiction (Type: BOOL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    y_max (Type: FLOAT64; Sample values: ['0.416', '0.248', '0.751', '0.925', '0.891'])
+]
+
+--------------------------------------------------
+

@@ -1,0 +1,753 @@
+###Table full name: bigquery-public-data.epa_historical_air_quality.air_quality_annual_summary
+[
+    arithmetic_mean (Type: FLOAT64; Sample values: ['11.814914', '5.548885', '3.603217', '3.223952', '4.054358']; Description: The average (arithmetic mean) value for the year.)
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Knots', 'Knots', 'Knots', 'Knots', 'Knots']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    arithmetic_standard_dev (Type: FLOAT64; Sample values: ['6.874623', '3.002533', '3.318368', '2.158406', '2.783081']; Description: The standard deviation about the mean of the values for the year.)
+    first_max_non_overlapping_value (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: For 8-hour CO averages, the highest value of the year.)
+    year (Type: INT64; Sample values: ['1980', '1980', '1980', '1980', '1980']; Description: The year the annual summary data represents.)
+    second_max_non_overlapping_value (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: For 8-hour CO averages, the second highest value of the year that does not share any hours with the 8-hour period of the first max non overlapping value.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    fourth_max_value (Type: FLOAT64; Sample values: ['32.2', '16.0', '16.5', '12.1', '18.1']; Description: The fourth highest value for the year.)
+    fourth_max_datetime (Type: TIMESTAMP; Sample values: ['1980-01-07 18:00:00+00:00', '1980-12-04 13:00:00+00:00', '1980-03-02 13:00:00+00:00', '1980-02-25 10:00:00+00:00', '1980-05-13 18:00:00+00:00']; Description: The date and time (on a 24-hour clock) when the fourth highest value for the year (the previous field) was taken.)
+    secondary_exceedance_count (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The number of samples during the year that exceeded the secondary air quality standard.)
+    first_no_max_datetime (Type: TIMESTAMP; Sample values: ['NaT', 'NaT', 'NaT', 'NaT', 'NaT']; Description: The date and time (on a 24-hour clock) when the first maximum non overlapping value for the year (the previous field) was taken.)
+    state_code (Type: STRING; Sample values: ['02', '08', '12', '17', '18']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['185', '005', '099', '167', '057']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['61101', '61103', '61101', '61103', '61101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Wind Speed - Scalar', 'Wind Speed - Resultant', 'Wind Speed - Scalar', 'Wind Speed - Resultant', 'Wind Speed - Scalar']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - ELECTRONIC OR MACHINE AVG.', 'INSTRUMENTAL - VECTOR SUMMATION', 'INSTRUMENTAL - ELECTRONIC OR MACHINE AVG.', 'INSTRUMENTAL - VECTOR SUMMATION', 'INSTRUMENTAL - ELECTRONIC OR MACHINE AVG.']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    valid_day_count (Type: INT64; Sample values: ['78', '44', '87', '183', '168']; Description: The number of days during the year where the daily monitoring criteria were met, if the calculation of the summaries is based on valid days.)
+    local_site_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Alaska', 'Colorado', 'Florida', 'Illinois', 'Indiana']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['North Slope ', 'Arapahoe', 'Palm Beach', 'Sangamon', 'Hamilton']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Aurora', 'Not in a city', 'Springfield', 'None']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['None', 'Denver-Aurora-Lakewood, CO', 'Miami-Fort Lauderdale-West Palm Beach, FL', 'Springfield, IL', 'Indianapolis-Carmel-Anderson, IN']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    metric_used (Type: STRING; Sample values: ['Observed Values', 'Observed Values', 'Observed Values', 'Observed Values', 'Observed Values']; Description: The base metric used in the calculation of the aggregate statistics presented in the remainder of the row. For example, if this is Daily Maximum, then the value in the Mean column is the mean of the daily maximums.)
+    first_max_value (Type: FLOAT64; Sample values: ['33.6', '18.0', '19.1', '14.5', '19.3']; Description: The highest value for the year.)
+    address (Type: STRING; Sample values: ['SOHIO DRILL PAD A', '50 S. PEORIA AVE.', 'STATE ROAD 80 AT TWENTY MILE BEND', 'STATE FAIRGROUNDS', 'NEAR LIVESTOCK AUCTION, STATE RD. 37']; Description: The approximate street address of the monitoring site.)
+    fifty_percentile (Type: FLOAT64; Sample values: ['10.8', '5.0', '2.6', '2.9', '3.2']; Description: The value from this monitor for which 50 per cent of the rest of the measured values for the year are equal to or less than (i.e., the median).)
+    first_max_datetime (Type: TIMESTAMP; Sample values: ['1980-01-08 10:00:00+00:00', '1980-11-28 10:00:00+00:00', '1980-03-02 17:00:00+00:00', '1980-06-09 17:00:00+00:00', '1980-05-13 15:00:00+00:00']; Description: The date and time (on a 24-hour clock) when the highest value for the year (the previous field) was taken.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_frm_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['PM25 24-hour 2012', 'PM25 24-hour 2012', 'PM25 24-hour 2012', 'PM25 24-hour 2012', 'PM25 24-hour 2012']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    aqi (Type: INT64; Sample values: ['22', '22', '8', '24', '0']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['5.2', '5.3', '2.0', '5.7', '-0.4']; Description: The average (arithmetic mean) value for the day.)
+    state_code (Type: STRING; Sample values: ['30', '30', '30', '30', '30']; Description: The FIPS code of the state in which the monitor resides.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    county_code (Type: STRING; Sample values: ['031', '031', '031', '031', '031']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['88101', '88101', '88101', '88101', '88101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: [' - ', ' - ', ' - ', ' - ', ' - ']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['West Yellowstone City Center', 'West Yellowstone City Center', 'West Yellowstone City Center', 'West Yellowstone City Center', 'West Yellowstone City Center']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Montana', 'Montana', 'Montana', 'Montana', 'Montana']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Gallatin', 'Gallatin', 'Gallatin', 'Gallatin', 'Gallatin']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['West Yellowstone', 'West Yellowstone', 'West Yellowstone', 'West Yellowstone', 'West Yellowstone']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Bozeman, MT', 'Bozeman, MT', 'Bozeman, MT', 'Bozeman, MT', 'Bozeman, MT']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2009-10-22', '2009-10-23', '2009-05-07', '2011-03-27', '2009-10-28']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['5.2', '5.3', '2.0', '5.7', '-0.4']; Description: The highest value for the day.)
+    poc (Type: INT64; Sample values: ['3', '3', '3', '3', '3']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    address (Type: STRING; Sample values: ['ALLEY', 'ALLEY', 'ALLEY', 'ALLEY', 'ALLEY']; Description: The approximate street address of the monitoring site.)
+    observation_count (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: The number of observations (samples) taken during the day.)
+    site_num (Type: STRING; Sample values: ['0016', '0016', '0016', '0016', '0016']; Description: A unique number within the county identifying the site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_nonfrm_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['35', '20', '24', '45', '33']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['8.53658', '4.78827', '5.70064', '10.894', '8.06122']; Description: The average (arithmetic mean) value for the day.)
+    state_code (Type: STRING; Sample values: ['12', '12', '12', '12', '12']; Description: The FIPS code of the state in which the monitor resides.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    county_code (Type: STRING; Sample values: ['086', '086', '086', '086', '086']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['88502', '88502', '88502', '88502', '88502']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Acceptable PM2.5 AQI & Speciation Mass', 'Acceptable PM2.5 AQI & Speciation Mass', 'Acceptable PM2.5 AQI & Speciation Mass', 'Acceptable PM2.5 AQI & Speciation Mass', 'Acceptable PM2.5 AQI & Speciation Mass']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['707', '707', '707', '707', '707']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['IMPROVE Module A with Cyclone Inlet-Teflon Filter, 2.2 sq. cm. - GRAVIMETRIC', 'IMPROVE Module A with Cyclone Inlet-Teflon Filter, 2.2 sq. cm. - GRAVIMETRIC', 'IMPROVE Module A with Cyclone Inlet-Teflon Filter, 2.2 sq. cm. - GRAVIMETRIC', 'IMPROVE Module A with Cyclone Inlet-Teflon Filter, 2.2 sq. cm. - GRAVIMETRIC', 'IMPROVE Module A with Cyclone Inlet-Teflon Filter, 2.2 sq. cm. - GRAVIMETRIC']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['SITE MOVED ACROSS ROAD FROM BEARD CENTER TO BEHIND IORI RESEARCH BLD', 'SITE MOVED ACROSS ROAD FROM BEARD CENTER TO BEHIND IORI RESEARCH BLD', 'SITE MOVED ACROSS ROAD FROM BEARD CENTER TO BEHIND IORI RESEARCH BLD', 'SITE MOVED ACROSS ROAD FROM BEARD CENTER TO BEHIND IORI RESEARCH BLD', 'SITE MOVED ACROSS ROAD FROM BEARD CENTER TO BEHIND IORI RESEARCH BLD']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Florida', 'Florida', 'Florida', 'Florida', 'Florida']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Miami-Dade', 'Miami-Dade', 'Miami-Dade', 'Miami-Dade', 'Miami-Dade']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Miami-Fort Lauderdale-West Palm Beach, FL', 'Miami-Fort Lauderdale-West Palm Beach, FL', 'Miami-Fort Lauderdale-West Palm Beach, FL', 'Miami-Fort Lauderdale-West Palm Beach, FL', 'Miami-Fort Lauderdale-West Palm Beach, FL']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1988-09-28', '1988-10-01', '1988-10-05', '1988-10-12', '1988-10-15']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['8.53658', '4.78827', '5.70064', '10.894', '8.06122']; Description: The highest value for the day.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    address (Type: STRING; Sample values: ['EVERGLADES NP', 'EVERGLADES NP', 'EVERGLADES NP', 'EVERGLADES NP', 'EVERGLADES NP']; Description: The approximate street address of the monitoring site.)
+    latitude (Type: FLOAT64; Sample values: ['25.39122', '25.39122', '25.39122', '25.39122', '25.39122']; Description: The monitoring site’s angular distance north of the equator measured in decimal degrees.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.lead_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['Lead 3-Month PM10 Surrogate 2009', 'Lead 3-Month PM10 Surrogate 2009', 'Lead 3-Month PM10 Surrogate 2009', 'Lead 3-Month PM10 Surrogate 2009', 'Lead 3-Month PM10 Surrogate 2009']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['0.001', '0.001', '0.018', '0.003', '0.001']; Description: The average (arithmetic mean) value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['16', '16', '16', '16', '16']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['001', '001', '001', '001', '001']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['85129', '85129', '85129', '85129', '85129']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Lead PM10 LC FRM/FEM', 'Lead PM10 LC FRM/FEM', 'Lead PM10 LC FRM/FEM', 'Lead PM10 LC FRM/FEM', 'Lead PM10 LC FRM/FEM']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['811', '811', '811', '811', '811']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['Thermo/R & P 2025 PM10 - X-ray Fluorescence (EDXRF) FRM', 'Thermo/R & P 2025 PM10 - X-ray Fluorescence (EDXRF) FRM', 'Thermo/R & P 2025 PM10 - X-ray Fluorescence (EDXRF) FRM', 'Thermo/R & P 2025 PM10 - X-ray Fluorescence (EDXRF) FRM', 'Thermo/R & P 2025 PM10 - X-ray Fluorescence (EDXRF) FRM']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ["Meridian - St. Luke's", "Meridian - St. Luke's", "Meridian - St. Luke's", "Meridian - St. Luke's", "Meridian - St. Luke's"]; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Idaho', 'Idaho', 'Idaho', 'Idaho', 'Idaho']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Ada', 'Ada', 'Ada', 'Ada', 'Ada']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Boise City, ID', 'Boise City, ID', 'Boise City, ID', 'Boise City, ID', 'Boise City, ID']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2011-12-29', '2011-12-29', '2012-01-04', '2012-01-10', '2012-01-16']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['0.001', '0.001', '0.018', '0.003', '0.001']; Description: The highest value for the day.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    observation_count (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: The number of observations (samples) taken during the day.)
+    first_max_hour (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: The hour (on a 24-hour clock) when the highest value for the day (the previous field) was taken.)
+    address (Type: STRING; Sample values: ['520 S. EAGLE ROAD,  MERIDIAN', '520 S. EAGLE ROAD,  MERIDIAN', '520 S. EAGLE ROAD,  MERIDIAN', '520 S. EAGLE ROAD,  MERIDIAN', '520 S. EAGLE ROAD,  MERIDIAN']; Description: The approximate street address of the monitoring site.)
+    poc (Type: INT64; Sample values: ['1', '2', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    observation_percent (Type: FLOAT64; Sample values: ['100.0', '100.0', '100.0', '100.0', '100.0']; Description: The percent representing the number of observations taken with respect to the number scheduled to be taken during the day. This is only calculated for monitors where measurements are required (e.g., only certain parameters).)
+    latitude (Type: FLOAT64; Sample values: ['43.600699', '43.600699', '43.600699', '43.600699', '43.600699']; Description: The monitoring site’s angular distance north of the equator measured in decimal degrees.)
+    site_num (Type: STRING; Sample values: ['0010', '0010', '0010', '0010', '0010']; Description: A unique number within the county identifying the site.)
+    date_of_last_change (Type: DATE; Sample values: ['2021-11-08', '2021-11-08', '2021-11-08', '2021-11-08', '2021-11-08']; Description: The date the last time any numeric values in this record were updated in the AQS data system.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.so2_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['SO2 1-hour 2010', 'SO2 1-hour 2010', 'SO2 1-hour 2010', 'SO2 1-hour 2010', 'SO2 1-hour 2010']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['1.0', '1.583333', '2.333333', '1.416667', '2.958333']; Description: The average (arithmetic mean) value for the day.)
+    aqi (Type: INT64; Sample values: ['1', '4', '6', '6', '9']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01']; Description: The FIPS code of the state in which the monitor resides.)
+    date_local (Type: DATE; Sample values: ['1996-01-01', '1996-01-02', '1996-01-03', '1996-01-04', '1996-01-05']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    county_code (Type: STRING; Sample values: ['033', '033', '033', '033', '033']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42401', '42401', '42401', '42401', '42401']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['20', '20', '20', '20', '20']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Colbert', 'Colbert', 'Colbert', 'Colbert', 'Colbert']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Florence-Muscle Shoals, AL', 'Florence-Muscle Shoals, AL', 'Florence-Muscle Shoals, AL', 'Florence-Muscle Shoals, AL', 'Florence-Muscle Shoals, AL']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    first_max_value (Type: FLOAT64; Sample values: ['1.0', '3.0', '4.0', '4.0', '6.0']; Description: The highest value for the day.)
+    address (Type: STRING; Sample values: ['TVA COLBERT 14___3.98 MI SE COLBERT FP', 'TVA COLBERT 14___3.98 MI SE COLBERT FP', 'TVA COLBERT 14___3.98 MI SE COLBERT FP', 'TVA COLBERT 14___3.98 MI SE COLBERT FP', 'TVA COLBERT 14___3.98 MI SE COLBERT FP']; Description: The approximate street address of the monitoring site.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    observation_count (Type: INT64; Sample values: ['24', '24', '24', '24', '24']; Description: The number of observations (samples) taken during the day.)
+    site_num (Type: STRING; Sample values: ['0044', '0044', '0044', '0044', '0044']; Description: A unique number within the county identifying the site.)
+    date_of_last_change (Type: DATE; Sample values: ['2021-11-10', '2021-11-10', '2021-11-10', '2021-11-10', '2021-11-10']; Description: The date the last time any numeric values in this record were updated in the AQS data system.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm10_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['PM10 24-hour 2006', 'PM10 24-hour 2006', 'PM10 24-hour 2006', 'PM10 24-hour 2006', 'PM10 24-hour 2006']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['14', '8', '14', '10', '20']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['15.0', '9.0', '15.0', '11.0', '22.0']; Description: The average (arithmetic mean) value for the day.)
+    state_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01']; Description: The FIPS code of the state in which the monitor resides.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    county_code (Type: STRING; Sample values: ['073', '073', '073', '073', '073']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['81102', '81102', '81102', '81102', '81102']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: [' - ', ' - ', ' - ', ' - ', ' - ']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['North Birmingham', 'North Birmingham', 'North Birmingham', 'North Birmingham', 'North Birmingham']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Jefferson', 'Jefferson', 'Jefferson', 'Jefferson', 'Jefferson']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Birmingham', 'Birmingham', 'Birmingham', 'Birmingham', 'Birmingham']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1995-01-01', '1995-01-02', '1995-01-03', '1995-01-04', '1995-01-05']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['15.0', '9.0', '15.0', '11.0', '22.0']; Description: The highest value for the day.)
+    poc (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    address (Type: STRING; Sample values: ["NO. B'HAM,SOU R.R., 3009 28TH ST. NO.", "NO. B'HAM,SOU R.R., 3009 28TH ST. NO.", "NO. B'HAM,SOU R.R., 3009 28TH ST. NO.", "NO. B'HAM,SOU R.R., 3009 28TH ST. NO.", "NO. B'HAM,SOU R.R., 3009 28TH ST. NO."]; Description: The approximate street address of the monitoring site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.nonoxnoy_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    arithmetic_mean (Type: FLOAT64; Sample values: ['0.0', '0.590909', '0.0', '0.227273', '0.181818']; Description: The average (arithmetic mean) value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['38', '38', '38', '38', '38']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['057', '057', '057', '057', '057']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42601', '42601', '42601', '42601', '42601']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Nitric oxide (NO)', 'Nitric oxide (NO)', 'Nitric oxide (NO)', 'Nitric oxide (NO)', 'Nitric oxide (NO)']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['22', '22', '22', '22', '22']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['North Dakota', 'North Dakota', 'North Dakota', 'North Dakota', 'North Dakota']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Mercer', 'Mercer', 'Mercer', 'Mercer', 'Mercer']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Beulah', 'Beulah', 'Beulah', 'Beulah', 'Beulah']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1992-06-17', '1992-01-06', '1992-01-21', '1992-02-04', '1992-02-21']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['0.0', '9.0', '0.0', '5.0', '4.0']; Description: The highest value for the day.)
+    address (Type: STRING; Sample values: ['BEULAH', 'BEULAH', 'BEULAH', 'BEULAH', 'BEULAH']; Description: The approximate street address of the monitoring site.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_frm_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    state_code (Type: STRING; Sample values: ['53', '53', '53', '53', '53']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['063', '063', '063', '063', '063']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['88101', '88101', '88101', '88101', '88101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions', 'PM2.5 - Local Conditions']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['170', '170', '170', '170', '170']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation', 'Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation', 'Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation', 'Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation', 'Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Washington', 'Washington', 'Washington', 'Washington', 'Washington']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Spokane', 'Spokane', 'Spokane', 'Spokane', 'Spokane']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2017-05-09', '2017-05-09', '2017-05-15', '2017-05-28', '2017-05-03']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: ['9.0', '2.0', '6.0', '15.0', '6.0']; Description: The measured value in the standard units of measure for the parameter.)
+    method_type (Type: STRING; Sample values: ['FEM', 'FEM', 'FEM', 'FEM', 'FEM']; Description: An indication of whether the method used to collect the data is a federal reference method (FRM), equivalent to a federal reference method, an approved regional method, or none of the above (non-federal reference method).)
+    poc (Type: INT64; Sample values: ['5', '5', '5', '5', '5']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    time_local (Type: STRING; Sample values: ['04:00', '18:00', '23:00', '01:00', '06:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    date_gmt (Type: DATE; Sample values: ['2017-05-09', '2017-05-10', '2017-05-16', '2017-05-28', '2017-05-03']; Description: The calendar date of the sample in Greenwich Mean Time.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.o3_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['Ozone 8-hour 2015', 'Ozone 8-hour 2015', 'Ozone 8-hour 2015', 'Ozone 8-hour 2015', 'Ozone 8-hour 2015']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    arithmetic_mean (Type: FLOAT64; Sample values: ['0.023', '0.029', '0.039', '0.039647', '0.036']; Description: The average (arithmetic mean) value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Parts per million', 'Parts per million', 'Parts per million', 'Parts per million', 'Parts per million']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['21', '30', '41', '47', '45']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['003', '003', '003', '003', '003']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['44201', '44201', '44201', '44201', '44201']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Ozone', 'Ozone', 'Ozone', 'Ozone', 'Ozone']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: [' - ', ' - ', ' - ', ' - ', ' - ']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['FAIRHOPE, Alabama', 'FAIRHOPE, Alabama', 'FAIRHOPE, Alabama', 'FAIRHOPE, Alabama', 'FAIRHOPE, Alabama']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Baldwin', 'Baldwin', 'Baldwin', 'Baldwin', 'Baldwin']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Fairhope', 'Fairhope', 'Fairhope', 'Fairhope', 'Fairhope']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Daphne-Fairhope-Foley, AL', 'Daphne-Fairhope-Foley, AL', 'Daphne-Fairhope-Foley, AL', 'Daphne-Fairhope-Foley, AL', 'Daphne-Fairhope-Foley, AL']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2018-02-28', '2018-03-01', '2018-03-02', '2018-03-03', '2018-03-04']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['0.023', '0.032', '0.044', '0.051', '0.049']; Description: The highest value for the day.)
+    address (Type: STRING; Sample values: ['FAIRHOPE HIGH SCHOOL, 1 PIRATE DRIVE, FAIRHOPE,  ALABAMA', 'FAIRHOPE HIGH SCHOOL, 1 PIRATE DRIVE, FAIRHOPE,  ALABAMA', 'FAIRHOPE HIGH SCHOOL, 1 PIRATE DRIVE, FAIRHOPE,  ALABAMA', 'FAIRHOPE HIGH SCHOOL, 1 PIRATE DRIVE, FAIRHOPE,  ALABAMA', 'FAIRHOPE HIGH SCHOOL, 1 PIRATE DRIVE, FAIRHOPE,  ALABAMA']; Description: The approximate street address of the monitoring site.)
+    datum (Type: STRING; Sample values: ['NAD83', 'NAD83', 'NAD83', 'NAD83', 'NAD83']; Description: The Datum associated with the Latitude and Longitude measures.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_nonfrm_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: []; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: []; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    datum (Type: STRING; Sample values: []; Description: The Datum associated with the Latitude and Longitude measures.)
+    state_code (Type: STRING; Sample values: []; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: []; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: []; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: []; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: []; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: []; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: []; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: []; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: []; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: []; Description: The measured value in the standard units of measure for the parameter.)
+    date_gmt (Type: DATE; Sample values: []; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: []; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    method_type (Type: STRING; Sample values: []; Description: An indication of whether the method used to collect the data is a federal reference method (FRM), equivalent to a federal reference method, an approved regional method, or none of the above (non-federal reference method).)
+    poc (Type: INT64; Sample values: []; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    mdl (Type: FLOAT64; Sample values: []; Description: The Method Detection Limit. The minimum sample concentration detectable for the monitor and method. Note: if samples are reported below this level, they may have been replaced by 1/2 the MDL.)
+    latitude (Type: FLOAT64; Sample values: []; Description: The monitoring site’s angular distance north of the equator measured in decimal degrees.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.no2_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['NO2 1-hour 2010', 'NO2 1-hour 2010', 'NO2 1-hour 2010', 'NO2 1-hour 2010', 'NO2 1-hour 2010']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['14.333333', '7.761905', '9.52381', '11.347826', '14.521739']; Description: The average (arithmetic mean) value for the day.)
+    aqi (Type: INT64; Sample values: ['24', '21', '33', '20', '25']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['39', '39', '39', '39', '39']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['049', '049', '049', '049', '049']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42602', '42602', '42602', '42602', '42602']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['99', '99', '99', '99', '99']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - GAS PHASE CHEMILUMINESCENCE', 'INSTRUMENTAL - GAS PHASE CHEMILUMINESCENCE', 'INSTRUMENTAL - GAS PHASE CHEMILUMINESCENCE', 'INSTRUMENTAL - GAS PHASE CHEMILUMINESCENCE', 'INSTRUMENTAL - GAS PHASE CHEMILUMINESCENCE']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['Fairgrounds', 'Fairgrounds', 'Fairgrounds', 'Fairgrounds', 'Fairgrounds']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Ohio', 'Ohio', 'Ohio', 'Ohio', 'Ohio']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Franklin', 'Franklin', 'Franklin', 'Franklin', 'Franklin']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Columbus', 'Columbus', 'Columbus', 'Columbus', 'Columbus']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Columbus, OH', 'Columbus, OH', 'Columbus, OH', 'Columbus, OH', 'Columbus, OH']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2023-02-01', '2023-02-15', '2023-02-28', '2023-01-01', '2023-01-02']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['25.0', '22.0', '35.0', '21.0', '26.0']; Description: The highest value for the day.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    datum (Type: STRING; Sample values: ['NAD83', 'NAD83', 'NAD83', 'NAD83', 'NAD83']; Description: The Datum associated with the Latitude and Longitude measures.)
+    address (Type: STRING; Sample values: ['KORBEL AVE.', 'KORBEL AVE.', 'KORBEL AVE.', 'KORBEL AVE.', 'KORBEL AVE.']; Description: The approximate street address of the monitoring site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.so2_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    date_local (Type: DATE; Sample values: ['2001-01-12', '2001-01-19', '2001-01-24', '2001-03-05', '2001-03-20']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['80', '80', '80', '80', '80']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['002', '002', '002', '002', '002']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42401', '42401', '42401', '42401', '42401']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide', 'Sulfur dioxide']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['9', '9', '9', '9', '9']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT', 'INSTRUMENTAL - PULSED FLUORESCENT']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Country Of Mexico', 'Country Of Mexico', 'Country Of Mexico', 'Country Of Mexico', 'Country Of Mexico']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['BAJA CALIFORNIA NORTE', 'BAJA CALIFORNIA NORTE', 'BAJA CALIFORNIA NORTE', 'BAJA CALIFORNIA NORTE', 'BAJA CALIFORNIA NORTE']; Description: The name of the county where the monitoring site is located.)
+    sample_measurement (Type: FLOAT64; Sample values: ['0.0', '4.0', '1.0', '14.0', '1.0']; Description: The measured value in the standard units of measure for the parameter.)
+    datum (Type: STRING; Sample values: ['NAD27', 'NAD27', 'NAD27', 'NAD27', 'NAD27']; Description: The Datum associated with the Latitude and Longitude measures.)
+    time_local (Type: STRING; Sample values: ['16:00', '05:00', '02:00', '17:00', '14:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    date_gmt (Type: DATE; Sample values: ['2001-01-13', '2001-01-19', '2001-01-24', '2001-03-06', '2001-03-20']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    latitude (Type: FLOAT64; Sample values: ['32.5', '32.5', '32.5', '32.5', '32.5']; Description: The monitoring site’s angular distance north of the equator measured in decimal degrees.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm10_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    state_code (Type: STRING; Sample values: ['42', '42', '42', '42', '42']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['003', '003', '003', '003', '003']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['81102', '81102', '81102', '81102', '81102']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP', 'PM10 Total 0-10um STP']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['79', '79', '79', '79', '79']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL-R&P SA246B-INLET - TEOM-GRAVIMETRIC', 'INSTRUMENTAL-R&P SA246B-INLET - TEOM-GRAVIMETRIC', 'INSTRUMENTAL-R&P SA246B-INLET - TEOM-GRAVIMETRIC', 'INSTRUMENTAL-R&P SA246B-INLET - TEOM-GRAVIMETRIC', 'INSTRUMENTAL-R&P SA246B-INLET - TEOM-GRAVIMETRIC']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Pennsylvania', 'Pennsylvania', 'Pennsylvania', 'Pennsylvania', 'Pennsylvania']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Allegheny', 'Allegheny', 'Allegheny', 'Allegheny', 'Allegheny']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2004-02-21', '2004-04-23', '2004-06-08', '2004-06-28', '2004-07-17']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: ['8.0', '26.0', '49.0', '4.0', '36.0']; Description: The measured value in the standard units of measure for the parameter.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    method_type (Type: STRING; Sample values: ['FEM', 'FEM', 'FEM', 'FEM', 'FEM']; Description: An indication of whether the method used to collect the data is a federal reference method (FRM), equivalent to a federal reference method, an approved regional method, or none of the above (non-federal reference method).)
+    poc (Type: INT64; Sample values: ['5', '5', '5', '5', '5']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    date_gmt (Type: DATE; Sample values: ['2004-02-22', '2004-04-24', '2004-06-09', '2004-06-29', '2004-07-18']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: ['19:00', '19:00', '19:00', '19:00', '19:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.co_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['CO 1-hour 1971', 'CO 1-hour 1971', 'CO 1-hour 1971', 'CO 1-hour 1971', 'CO 1-hour 1971']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Parts per million', 'Parts per million', 'Parts per million', 'Parts per million', 'Parts per million']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['1.0375', '0.779167', '1.154167', '1.0125', '0.75']; Description: The average (arithmetic mean) value for the day.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['01', '01', '01', '01', '01']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['073', '073', '073', '073', '073']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42101', '42101', '42101', '42101', '42101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['51', '51', '51', '51', '51']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Alabama', 'Alabama', 'Alabama', 'Alabama', 'Alabama']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Jefferson', 'Jefferson', 'Jefferson', 'Jefferson', 'Jefferson']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Birmingham', 'Birmingham', 'Birmingham', 'Birmingham', 'Birmingham']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL', 'Birmingham-Hoover, AL']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1995-01-01', '1995-01-02', '1995-01-03', '1995-01-04', '1995-01-05']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['1.9', '1.4', '2.9', '1.7', '1.8']; Description: The highest value for the day.)
+    address (Type: STRING; Sample values: ['EAST THOMAS, FINLEY, 841 FINLEY AVE. BP.', 'EAST THOMAS, FINLEY, 841 FINLEY AVE. BP.', 'EAST THOMAS, FINLEY, 841 FINLEY AVE. BP.', 'EAST THOMAS, FINLEY, 841 FINLEY AVE. BP.', 'EAST THOMAS, FINLEY, 841 FINLEY AVE. BP.']; Description: The approximate street address of the monitoring site.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.voc_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    arithmetic_mean (Type: FLOAT64; Sample values: ['22.275', '41.7', '38.889474', '29.524167', '37.1']; Description: The average (arithmetic mean) value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['25', '25', '25', '25', '25']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['009', '009', '009', '009', '009']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['43000', '43000', '43000', '43102', '43102']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Sum of PAMS target compounds', 'Sum of PAMS target compounds', 'Sum of PAMS target compounds', 'Total NMOC (non-methane organic compound)', 'Total NMOC (non-methane organic compound)']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['200', '200', '200', '200', '200']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - SUM OF PEAKS', 'INSTRUMENTAL - SUM OF PEAKS', 'INSTRUMENTAL - SUM OF PEAKS', 'INSTRUMENTAL - SUM OF PEAKS', 'INSTRUMENTAL - SUM OF PEAKS']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['LYNN WATER TREATMENT PLANT', 'LYNN WATER TREATMENT PLANT', 'LYNN WATER TREATMENT PLANT', 'LYNN WATER TREATMENT PLANT', 'LYNN WATER TREATMENT PLANT']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Massachusetts', 'Massachusetts', 'Massachusetts', 'Massachusetts', 'Massachusetts']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Essex', 'Essex', 'Essex', 'Essex', 'Essex']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Lynn', 'Lynn', 'Lynn', 'Lynn', 'Lynn']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Boston-Cambridge-Newton, MA-NH', 'Boston-Cambridge-Newton, MA-NH', 'Boston-Cambridge-Newton, MA-NH', 'Boston-Cambridge-Newton, MA-NH', 'Boston-Cambridge-Newton, MA-NH']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2015-08-08', '2015-09-03', '2015-08-18', '2015-08-22', '2015-08-26']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['38.7', '41.7', '71.7', '48.85', '37.1']; Description: The highest value for the day.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    poc (Type: INT64; Sample values: ['1', '3', '1', '1', '2']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    address (Type: STRING; Sample values: ['390 PARKLAND', '390 PARKLAND', '390 PARKLAND', '390 PARKLAND', '390 PARKLAND']; Description: The approximate street address of the monitoring site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.temperature_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    units_of_measure (Type: STRING; Sample values: ['Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['38', '38', '38', '38', '38']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['057', '057', '057', '057', '057']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['62101', '62101', '62101', '62101', '62101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['41', '41', '41', '41', '41']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - ELEC. OR MACH. AVG. LEVEL 1', 'INSTRUMENTAL - ELEC. OR MACH. AVG. LEVEL 1', 'INSTRUMENTAL - ELEC. OR MACH. AVG. LEVEL 1', 'INSTRUMENTAL - ELEC. OR MACH. AVG. LEVEL 1', 'INSTRUMENTAL - ELEC. OR MACH. AVG. LEVEL 1']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['609 60TH AVE. SW', '609 60TH AVE. SW', '609 60TH AVE. SW', '609 60TH AVE. SW', '609 60TH AVE. SW']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['North Dakota', 'North Dakota', 'North Dakota', 'North Dakota', 'North Dakota']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Mercer', 'Mercer', 'Mercer', 'Mercer', 'Mercer']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1990-01-02', '1990-01-03', '1990-01-15', '1990-01-18', '1990-02-23']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['31.041667', '23.375', '29.416667', '21.625', '31.291667']; Description: The average (arithmetic mean) value for the day.)
+    first_max_value (Type: FLOAT64; Sample values: ['41.0', '28.0', '32.0', '29.0', '40.0']; Description: The highest value for the day.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.wind_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['18', '18', '18', '18', '18']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['127', '127', '127', '127', '127']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['61103', '61103', '61103', '61103', '61103']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['22', '22', '22', '22', '22']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - VECTOR SUMMATION LEVEL 2', 'INSTRUMENTAL - VECTOR SUMMATION LEVEL 2', 'INSTRUMENTAL - VECTOR SUMMATION LEVEL 2', 'INSTRUMENTAL - VECTOR SUMMATION LEVEL 2', 'INSTRUMENTAL - VECTOR SUMMATION LEVEL 2']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['NIPSCO Dunes Acres', 'NIPSCO Dunes Acres', 'NIPSCO Dunes Acres', 'NIPSCO Dunes Acres', 'NIPSCO Dunes Acres']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Indiana', 'Indiana', 'Indiana', 'Indiana', 'Indiana']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Porter', 'Porter', 'Porter', 'Porter', 'Porter']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Dune Acres', 'Dune Acres', 'Dune Acres', 'Dune Acres', 'Dune Acres']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Chicago-Naperville-Elgin, IL-IN-WI', 'Chicago-Naperville-Elgin, IL-IN-WI', 'Chicago-Naperville-Elgin, IL-IN-WI', 'Chicago-Naperville-Elgin, IL-IN-WI', 'Chicago-Naperville-Elgin, IL-IN-WI']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2018-01-01', '2018-01-02', '2018-01-03', '2018-01-04', '2018-01-05']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['10.8875', '11.029167', '13.241667', '15.179167', '16.070833']; Description: The average (arithmetic mean) value for the day.)
+    first_max_value (Type: FLOAT64; Sample values: ['14.7', '16.3', '16.3', '18.1', '18.8']; Description: The highest value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Knots', 'Knots', 'Knots', 'Knots', 'Knots']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.nonoxnoy_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    state_code (Type: STRING; Sample values: ['17', '17', '17', '17', '17']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['019', '019', '019', '019', '019']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42600', '42600', '42600', '42600', '42600']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Reactive oxides of nitrogen (NOy)', 'Reactive oxides of nitrogen (NOy)', 'Reactive oxides of nitrogen (NOy)', 'Reactive oxides of nitrogen (NOy)', 'Reactive oxides of nitrogen (NOy)']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['699', '699', '699', '699', '699']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['Instrumental - Chemiluminescence Teledyne API 200 EU/501', 'Instrumental - Chemiluminescence Teledyne API 200 EU/501', 'Instrumental - Chemiluminescence Teledyne API 200 EU/501', 'Instrumental - Chemiluminescence Teledyne API 200 EU/501', 'Instrumental - Chemiluminescence Teledyne API 200 EU/501']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Illinois', 'Illinois', 'Illinois', 'Illinois', 'Illinois']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Champaign', 'Champaign', 'Champaign', 'Champaign', 'Champaign']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2019-02-04', '2019-02-13', '2019-02-19', '2019-02-28', '2019-02-28']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    time_local (Type: STRING; Sample values: ['20:00', '05:00', '06:00', '10:00', '21:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    sample_measurement (Type: FLOAT64; Sample values: ['4.6', '3.1', '10.8', '9.7', '7.7']; Description: The measured value in the standard units of measure for the parameter.)
+    method_type (Type: STRING; Sample values: ['Non-FRM', 'Non-FRM', 'Non-FRM', 'Non-FRM', 'Non-FRM']; Description: An indication of whether the method used to collect the data is a federal reference method (FRM), equivalent to a federal reference method, an approved regional method, or none of the above (non-federal reference method).)
+    date_gmt (Type: DATE; Sample values: ['2019-02-05', '2019-02-13', '2019-02-19', '2019-02-28', '2019-03-01']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.rh_and_dp_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    arithmetic_mean (Type: FLOAT64; Sample values: ['56.0', '56.0', '56.0', '53.0', '46.0']; Description: The average (arithmetic mean) value for the day.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    units_of_measure (Type: STRING; Sample values: ['Percent relative humidity', 'Percent relative humidity', 'Percent relative humidity', 'Percent relative humidity', 'Percent relative humidity']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['04', '04', '04', '04', '04']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['015', '015', '015', '015', '015']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['62201', '62201', '62201', '62201', '62201']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Relative Humidity ', 'Relative Humidity ', 'Relative Humidity ', 'Relative Humidity ', 'Relative Humidity ']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['899', '899', '899', '899', '899']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['Unknown-Unknown - #', 'Unknown-Unknown - #', 'Unknown-Unknown - #', 'Unknown-Unknown - #', 'Unknown-Unknown - #']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Arizona', 'Arizona', 'Arizona', 'Arizona', 'Arizona']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Mohave', 'Mohave', 'Mohave', 'Mohave', 'Mohave']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Lake Havasu City-Kingman, AZ', 'Lake Havasu City-Kingman, AZ', 'Lake Havasu City-Kingman, AZ', 'Lake Havasu City-Kingman, AZ', 'Lake Havasu City-Kingman, AZ']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1992-01-04', '1992-01-08', '1992-01-11', '1992-02-22', '1992-03-04']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['56.0', '56.0', '56.0', '53.0', '46.0']; Description: The highest value for the day.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.no2_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion', 'Parts per billion']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['06', '06', '06', '06', '06']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['079', '079', '079', '079', '079']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42602', '42602', '42602', '42602', '42602']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)', 'Nitrogen dioxide (NO2)']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['14', '14', '14', '14', '14']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE', 'INSTRUMENTAL - CHEMILUMINESCENCE']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['California', 'California', 'California', 'California', 'California']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['San Luis Obispo', 'San Luis Obispo', 'San Luis Obispo', 'San Luis Obispo', 'San Luis Obispo']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['1992-01-06', '1992-03-25', '1992-06-12', '1992-07-13', '1992-09-13']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    date_gmt (Type: DATE; Sample values: ['1992-01-07', '1992-03-26', '1992-06-13', '1992-07-14', '1992-09-14']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: ['16:00', '16:00', '16:00', '16:00', '16:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    sample_measurement (Type: FLOAT64; Sample values: ['10.0', '10.0', '0.0', '10.0', '10.0']; Description: The measured value in the standard units of measure for the parameter.)
+    datum (Type: STRING; Sample values: ['NAD27', 'NAD27', 'NAD27', 'NAD27', 'NAD27']; Description: The Datum associated with the Latitude and Longitude measures.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.hap_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    arithmetic_mean (Type: FLOAT64; Sample values: ['6e-05', '0.0', '0.0', '0.0', '0.0']; Description: The average (arithmetic mean) value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)', 'Micrograms/cubic meter (25 C)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['06', '06', '06', '06', '06']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['001', '001', '001', '001', '007']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['12115', '12115', '12115', '12115', '12115']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Chromium VI (TSP) STP', 'Chromium VI (TSP) STP', 'Chromium VI (TSP) STP', 'Chromium VI (TSP) STP', 'Chromium VI (TSP) STP']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['920', '920', '920', '920', '920']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['LO-VOL-XONTECH 920 or 924 - ION CHROMATOGRAPH UV VISIBLE', 'LO-VOL-XONTECH 920 or 924 - ION CHROMATOGRAPH UV VISIBLE', 'LO-VOL-XONTECH 920 or 924 - ION CHROMATOGRAPH UV VISIBLE', 'LO-VOL-XONTECH 920 or 924 - ION CHROMATOGRAPH UV VISIBLE', 'LO-VOL-XONTECH 920 or 924 - ION CHROMATOGRAPH UV VISIBLE']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['Fremont - Chapel Way', 'Fremont - Chapel Way', 'Fremont - Chapel Way', 'Fremont - Chapel Way', 'Chico-Manzanita Ave.']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['California', 'California', 'California', 'California', 'California']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Alameda', 'Alameda', 'Alameda', 'Alameda', 'Butte']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Fremont', 'Fremont', 'Fremont', 'Fremont', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['San Francisco-Oakland-Hayward, CA', 'San Francisco-Oakland-Hayward, CA', 'San Francisco-Oakland-Hayward, CA', 'San Francisco-Oakland-Hayward, CA', 'Chico, CA']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2008-01-01', '2008-04-01', '2008-07-01', '2008-10-01', '2008-01-01']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    first_max_value (Type: FLOAT64; Sample values: ['6e-05', '0.0', '0.0', '0.0', '0.0']; Description: The highest value for the day.)
+    address (Type: STRING; Sample values: ['40733 CHAPEL WAY., FREMONT', '40733 CHAPEL WAY., FREMONT', '40733 CHAPEL WAY., FREMONT', '40733 CHAPEL WAY., FREMONT', '468 MANZANITA AVE, CHICO']; Description: The approximate street address of the monitoring site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pressure_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    state_code (Type: STRING; Sample values: ['22', '22', '22', '22', '22']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['033', '033', '033', '033', '033']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['64101', '64101', '64101', '64101', '64101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Barometric pressure', 'Barometric pressure', 'Barometric pressure', 'Barometric pressure', 'Barometric pressure']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['11', '11', '11', '11', '11']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - ANEROID', 'INSTRUMENTAL - ANEROID', 'INSTRUMENTAL - ANEROID', 'INSTRUMENTAL - ANEROID', 'INSTRUMENTAL - ANEROID']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['Capitol', 'Capitol', 'Capitol', 'Capitol', 'Capitol']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Louisiana', 'Louisiana', 'Louisiana', 'Louisiana', 'Louisiana']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['East Baton Rouge', 'East Baton Rouge', 'East Baton Rouge', 'East Baton Rouge', 'East Baton Rouge']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Baton Rouge', 'Baton Rouge', 'Baton Rouge', 'Baton Rouge', 'Baton Rouge']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['Baton Rouge, LA', 'Baton Rouge, LA', 'Baton Rouge, LA', 'Baton Rouge, LA', 'Baton Rouge, LA']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04', '2023-01-05']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['1002.791667', '1001.208333', '997.458333', '1001.875', '1008.416667']; Description: The average (arithmetic mean) value for the day.)
+    first_max_value (Type: FLOAT64; Sample values: ['1005.0', '1004.0', '999.0', '1006.0', '1010.0']; Description: The highest value for the day.)
+    units_of_measure (Type: STRING; Sample values: ['Millibars', 'Millibars', 'Millibars', 'Millibars', 'Millibars']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    poc (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: This is the “Parameter Occurrence Code” used to distinguish different instruments that measure the same parameter at the same site.)
+    address (Type: STRING; Sample values: ['1061-A Leesville Ave', '1061-A Leesville Ave', '1061-A Leesville Ave', '1061-A Leesville Ave', '1061-A Leesville Ave']; Description: The approximate street address of the monitoring site.)
+    datum (Type: STRING; Sample values: ['NAD83', 'NAD83', 'NAD83', 'NAD83', 'NAD83']; Description: The Datum associated with the Latitude and Longitude measures.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.o3_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per million', 'Parts per million', 'Parts per million', 'Parts per million', 'Parts per million']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    state_code (Type: STRING; Sample values: ['02', '02', '02', '02', '02']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['068', '068', '068', '068', '068']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['44201', '44201', '44201', '44201', '44201']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Ozone', 'Ozone', 'Ozone', 'Ozone', 'Ozone']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['47', '47', '47', '47', '47']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - ULTRA VIOLET', 'INSTRUMENTAL - ULTRA VIOLET', 'INSTRUMENTAL - ULTRA VIOLET', 'INSTRUMENTAL - ULTRA VIOLET', 'INSTRUMENTAL - ULTRA VIOLET']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Alaska', 'Alaska', 'Alaska', 'Alaska', 'Alaska']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Denali ', 'Denali ', 'Denali ', 'Denali ', 'Denali ']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2009-01-02', '2009-01-08', '2009-01-09', '2009-01-10', '2009-01-24']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: ['0.032', '0.037', '0.039', '0.04', '0.039']; Description: The measured value in the standard units of measure for the parameter.)
+    date_gmt (Type: DATE; Sample values: ['2009-01-02', '2009-01-08', '2009-01-10', '2009-01-10', '2009-01-25']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: ['02:00', '12:00', '21:00', '06:00', '19:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.voc_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon', 'Parts per billion Carbon']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['24', '24', '24', '24', '24']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['005', '005', '005', '005', '005']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['43202', '43202', '43202', '43202', '43202']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Ethane', 'Ethane', 'Ethane', 'Ethane', 'Ethane']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['228', '228', '228', '228', '228']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['preconcentrator trap/thermal desorber - electronic drier - Markes CIA TD/Agilent GC dual FID - carbon response', 'preconcentrator trap/thermal desorber - electronic drier - Markes CIA TD/Agilent GC dual FID - carbon response', 'preconcentrator trap/thermal desorber - electronic drier - Markes CIA TD/Agilent GC dual FID - carbon response', 'preconcentrator trap/thermal desorber - electronic drier - Markes CIA TD/Agilent GC dual FID - carbon response', 'preconcentrator trap/thermal desorber - electronic drier - Markes CIA TD/Agilent GC dual FID - carbon response']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['Maryland', 'Maryland', 'Maryland', 'Maryland', 'Maryland']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Baltimore', 'Baltimore', 'Baltimore', 'Baltimore', 'Baltimore']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2020-06-06', '2020-06-16', '2020-06-23', '2020-07-18', '2020-07-29']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: ['7.7609', '3.6405', '3.2568', '4.0849', '4.7844']; Description: The measured value in the standard units of measure for the parameter.)
+    datum (Type: STRING; Sample values: ['WGS84', 'WGS84', 'WGS84', 'WGS84', 'WGS84']; Description: The Datum associated with the Latitude and Longitude measures.)
+    date_gmt (Type: DATE; Sample values: ['2020-06-06', '2020-06-16', '2020-06-23', '2020-07-18', '2020-07-29']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: ['06:00', '12:00', '12:00', '18:00', '17:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_speciation_daily_summary
+[
+    pollutant_standard (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A description of the ambient air quality standard rules used to aggregate statistics. (See description at beginning of document.))
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['23', '23', '23', '23', '23']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['009', '009', '009', '009', '009']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['88305', '88305', '88312', '88312', '88307']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['OC CSN Unadjusted PM2.5 LC TOT', 'OC CSN Unadjusted PM2.5 LC TOT', 'Total Carbon PM2.5 LC TOT', 'Total Carbon PM2.5 LC TOT', 'EC CSN PM2.5 LC TOT']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: INT64; Sample values: ['867', '867', '867', '867', '867']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['Sunset Labs - TOT', 'Sunset Labs - TOT', 'Sunset Labs - TOT', 'Sunset Labs - TOT', 'Sunset Labs - TOT']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    local_site_name (Type: STRING; Sample values: ['MCFARLAND HILL Air Pollutant Research Site', 'MCFARLAND HILL Air Pollutant Research Site', 'MCFARLAND HILL Air Pollutant Research Site', 'MCFARLAND HILL Air Pollutant Research Site', 'MCFARLAND HILL Air Pollutant Research Site']; Description: The name of the site (if any) given by the State, local, or tribal air pollution control agency that operates it.)
+    state_name (Type: STRING; Sample values: ['Maine', 'Maine', 'Maine', 'Maine', 'Maine']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Hancock', 'Hancock', 'Hancock', 'Hancock', 'Hancock']; Description: The name of the county where the monitoring site is located.)
+    city_name (Type: STRING; Sample values: ['Not in a city', 'Not in a city', 'Not in a city', 'Not in a city', 'Not in a city']; Description: The name of the city where the monitoring site is located. This represents the legal incorporated boundaries of cities and not urban areas.)
+    cbsa_name (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the core bases statistical area (metropolitan area) where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2021-05-11', '2021-10-22', '2021-01-15', '2021-04-25', '2021-02-23']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    arithmetic_mean (Type: FLOAT64; Sample values: ['1.715', '4.803333', '1.256667', '2.124167', '0.093636']; Description: The average (arithmetic mean) value for the day.)
+    first_max_value (Type: FLOAT64; Sample values: ['2.78', '5.95', '1.48', '2.65', '0.27']; Description: The highest value for the day.)
+    aqi (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The Air Quality Index for the day for the pollutant, if applicable.)
+    address (Type: STRING; Sample values: ['567 Eagle Lake Road', '567 Eagle Lake Road', '567 Eagle Lake Road', '567 Eagle Lake Road', '567 Eagle Lake Road']; Description: The approximate street address of the monitoring site.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.co_hourly_summary
+[
+    units_of_measure (Type: STRING; Sample values: ['Parts per million', 'Parts per million', 'Parts per million', 'Parts per million', 'Parts per million']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    state_code (Type: STRING; Sample values: ['06', '06', '06', '06', '06']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['001', '001', '001', '001', '001']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['42101', '42101', '42101', '42101', '42101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    parameter_name (Type: STRING; Sample values: ['Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide', 'Carbon monoxide']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    method_code (Type: STRING; Sample values: ['008', '008', '008', '008', '008']; Description: An internal system code indicating the method (processes, equipment, and protocols) used in gathering and measuring the sample. The method name is in the next column.)
+    method_name (Type: STRING; Sample values: ['INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED', 'INSTRUMENTAL - NONDISPERSIVE INFRARED']; Description: A short description of the processes, equipment, and protocols used in gathering and measuring the sample.)
+    state_name (Type: STRING; Sample values: ['California', 'California', 'California', 'California', 'California']; Description: The name of the state where the monitoring site is located.)
+    county_name (Type: STRING; Sample values: ['Alameda', 'Alameda', 'Alameda', 'Alameda', 'Alameda']; Description: The name of the county where the monitoring site is located.)
+    date_local (Type: DATE; Sample values: ['2002-01-06', '2002-01-09', '2002-02-04', '2002-02-06', '2002-02-10']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    time_local (Type: STRING; Sample values: ['02:00', '04:00', '07:00', '05:00', '07:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    sample_measurement (Type: FLOAT64; Sample values: ['1.5', '0.5', '2.1', '1.2', '1.7']; Description: The measured value in the standard units of measure for the parameter.)
+    date_gmt (Type: DATE; Sample values: ['2002-01-06', '2002-01-09', '2002-02-04', '2002-02-06', '2002-02-10']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    datum (Type: STRING; Sample values: ['NAD83', 'NAD83', 'NAD83', 'NAD83', 'NAD83']; Description: The Datum associated with the Latitude and Longitude measures.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.hap_hourly_summary
+[
+    date_local (Type: DATE; Sample values: []; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: []; Description: The FIPS code of the state in which the monitor resides.)
+    state_name (Type: STRING; Sample values: []; Description: The name of the state where the monitoring site is located.)
+    county_code (Type: STRING; Sample values: []; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: []; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    units_of_measure (Type: STRING; Sample values: []; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    sample_measurement (Type: FLOAT64; Sample values: []; Description: The measured value in the standard units of measure for the parameter.)
+    county_name (Type: STRING; Sample values: []; Description: The name of the county where the monitoring site is located.)
+    date_gmt (Type: DATE; Sample values: []; Description: The calendar date of the sample in Greenwich Mean Time.)
+    uncertainty (Type: FLOAT64; Sample values: []; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    time_local (Type: STRING; Sample values: []; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    parameter_name (Type: STRING; Sample values: []; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.temperature_hourly_summary
+[
+    date_local (Type: DATE; Sample values: ['2021-01-10', '2021-01-24', '2021-02-28', '2021-03-09', '2021-03-11']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['48', '48', '48', '48', '48']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['245', '245', '245', '245', '245']; Description: The FIPS code of the county in which the monitor resides.)
+    state_name (Type: STRING; Sample values: ['Texas', 'Texas', 'Texas', 'Texas', 'Texas']; Description: The name of the state where the monitoring site is located.)
+    parameter_code (Type: INT64; Sample values: ['62101', '62101', '62101', '62101', '62101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    units_of_measure (Type: STRING; Sample values: ['Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    sample_measurement (Type: FLOAT64; Sample values: ['37.0', '69.0', '70.0', '63.0', '70.0']; Description: The measured value in the standard units of measure for the parameter.)
+    county_name (Type: STRING; Sample values: ['Jefferson', 'Jefferson', 'Jefferson', 'Jefferson', 'Jefferson']; Description: The name of the county where the monitoring site is located.)
+    date_gmt (Type: DATE; Sample values: ['2021-01-11', '2021-01-24', '2021-03-01', '2021-03-10', '2021-03-12']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    time_local (Type: STRING; Sample values: ['22:00', '17:00', '18:00', '20:00', '23:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    parameter_name (Type: STRING; Sample values: ['Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature', 'Outdoor Temperature']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.rh_and_dp_hourly_summary
+[
+    date_local (Type: DATE; Sample values: ['2017-01-01', '2017-01-27', '2017-01-31', '2017-02-01', '2017-02-03']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['18', '18', '18', '18', '18']; Description: The FIPS code of the state in which the monitor resides.)
+    state_name (Type: STRING; Sample values: ['Indiana', 'Indiana', 'Indiana', 'Indiana', 'Indiana']; Description: The name of the state where the monitoring site is located.)
+    county_code (Type: STRING; Sample values: ['127', '127', '127', '127', '127']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['62103', '62103', '62103', '62103', '62103']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    units_of_measure (Type: STRING; Sample values: ['Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit', 'Degrees Fahrenheit']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    sample_measurement (Type: FLOAT64; Sample values: ['17.0', '14.0', '26.0', '24.0', '2.0']; Description: The measured value in the standard units of measure for the parameter.)
+    date_gmt (Type: DATE; Sample values: ['2017-01-01', '2017-01-28', '2017-01-31', '2017-02-01', '2017-02-03']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    county_name (Type: STRING; Sample values: ['Porter', 'Porter', 'Porter', 'Porter', 'Porter']; Description: The name of the county where the monitoring site is located.)
+    time_local (Type: STRING; Sample values: ['16:00', '20:00', '10:00', '08:00', '14:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    parameter_name (Type: STRING; Sample values: ['Dew Point', 'Dew Point', 'Dew Point', 'Dew Point', 'Dew Point']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.wind_hourly_summary
+[
+    date_local (Type: DATE; Sample values: ['2012-03-25', '2012-04-07', '2012-04-11', '2012-04-17', '2012-04-19']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['02', '02', '02', '02', '02']; Description: The FIPS code of the state in which the monitor resides.)
+    state_name (Type: STRING; Sample values: ['Alaska', 'Alaska', 'Alaska', 'Alaska', 'Alaska']; Description: The name of the state where the monitoring site is located.)
+    county_code (Type: STRING; Sample values: ['068', '068', '068', '068', '068']; Description: The FIPS code of the county in which the monitor resides.)
+    parameter_code (Type: INT64; Sample values: ['61103', '61103', '61103', '61103', '61103']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    units_of_measure (Type: STRING; Sample values: ['Knots', 'Knots', 'Knots', 'Knots', 'Knots']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    sample_measurement (Type: FLOAT64; Sample values: ['0.0', '2.3000000000000003', '1.9', '3.3000000000000003', '1.0']; Description: The measured value in the standard units of measure for the parameter.)
+    time_local (Type: STRING; Sample values: ['19:00', '23:00', '11:00', '13:00', '13:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    date_gmt (Type: DATE; Sample values: ['2012-03-26', '2012-04-08', '2012-04-11', '2012-04-17', '2012-04-19']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    parameter_name (Type: STRING; Sample values: ['Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant', 'Wind Speed - Resultant']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pressure_hourly_summary
+[
+    date_local (Type: DATE; Sample values: ['2014-05-03', '2014-05-04', '2014-05-10', '2014-05-19', '2014-05-21']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['06', '06', '06', '06', '06']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['071', '071', '071', '071', '071']; Description: The FIPS code of the county in which the monitor resides.)
+    state_name (Type: STRING; Sample values: ['California', 'California', 'California', 'California', 'California']; Description: The name of the state where the monitoring site is located.)
+    parameter_code (Type: INT64; Sample values: ['64101', '64101', '64101', '64101', '64101']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    county_name (Type: STRING; Sample values: ['San Bernardino', 'San Bernardino', 'San Bernardino', 'San Bernardino', 'San Bernardino']; Description: The name of the county where the monitoring site is located.)
+    units_of_measure (Type: STRING; Sample values: ['Millibars', 'Millibars', 'Millibars', 'Millibars', 'Millibars']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    date_gmt (Type: DATE; Sample values: ['2014-05-03', '2014-05-04', '2014-05-10', '2014-05-19', '2014-05-22']; Description: The calendar date of the sample in Greenwich Mean Time.)
+    sample_measurement (Type: FLOAT64; Sample values: ['910.9', '907.9', '907.2', '907.6', '908.6']; Description: The measured value in the standard units of measure for the parameter.)
+    uncertainty (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: The total measurement uncertainty associated with a reported measurement as indicated by the reporting agency.)
+    time_local (Type: STRING; Sample values: ['01:00', '14:00', '09:00', '05:00', '19:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    parameter_name (Type: STRING; Sample values: ['Barometric pressure', 'Barometric pressure', 'Barometric pressure', 'Barometric pressure', 'Barometric pressure']; Description: The name or description assigned in AQS to the parameter measured by the monitor. Parameters may be pollutants or non-pollutants.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.epa_historical_air_quality.pm25_speciation_hourly_summary
+[
+    date_local (Type: DATE; Sample values: ['2024-01-01', '2024-01-01', '2024-01-01', '2024-01-01', '2024-01-01']; Description: The calendar date for the summary. All daily summaries are for the local standard day (midnight to midnight) at the monitor.)
+    state_code (Type: STRING; Sample values: ['09', '09', '09', '09', '09']; Description: The FIPS code of the state in which the monitor resides.)
+    county_code (Type: STRING; Sample values: ['001', '001', '001', '001', '001']; Description: The FIPS code of the county in which the monitor resides.)
+    state_name (Type: STRING; Sample values: ['Connecticut', 'Connecticut', 'Connecticut', 'Connecticut', 'Connecticut']; Description: The name of the state where the monitoring site is located.)
+    parameter_code (Type: INT64; Sample values: ['88313', '88313', '88313', '88313', '88313']; Description: The AQS code corresponding to the parameter measured by the monitor.)
+    sample_measurement (Type: FLOAT64; Sample values: ['1.41', '1.35', '0.77', '0.6', '1.18']; Description: The measured value in the standard units of measure for the parameter.)
+    county_name (Type: STRING; Sample values: ['Fairfield', 'Fairfield', 'Fairfield', 'Fairfield', 'Fairfield']; Description: The name of the county where the monitoring site is located.)
+    units_of_measure (Type: STRING; Sample values: ['Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)', 'Micrograms/cubic meter (LC)']; Description: The unit of measure for the parameter. QAD always returns data in the standard units for the parameter. Submitters are allowed to report data in any unit and EPA converts to a standard unit so that we may use the data in calculations.)
+    method_type (Type: STRING; Sample values: ['Non-FRM', 'Non-FRM', 'Non-FRM', 'Non-FRM', 'Non-FRM']; Description: An indication of whether the method used to collect the data is a federal reference method (FRM), equivalent to a federal reference method, an approved regional method, or none of the above (non-federal reference method).)
+    time_local (Type: STRING; Sample values: ['01:00', '02:00', '03:00', '04:00', '05:00']; Description: The time of day that sampling began on a 24-hour clock in Local Standard Time.)
+    date_gmt (Type: DATE; Sample values: ['2024-01-01', '2024-01-01', '2024-01-01', '2024-01-01', '2024-01-01']; Description: The calendar date of the sample in Greenwich Mean Time.)
+]
+
+--------------------------------------------------
+

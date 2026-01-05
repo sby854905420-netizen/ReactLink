@@ -1,0 +1,10 @@
+###Table full name: bigquery-public-data.bbc_news.fulltext
+[
+    category (Type: STRING; Sample values: ['tech', 'tech', 'tech', 'tech', 'tech'])
+    title (Type: STRING; Sample values: ['Global blogger action day called', "Global digital divide 'narrowing'", 'Sporting rivals go to extra time', 'Warning over Windows Word files', 'Satellite mapping aids Darfur relief'])
+    body (Type: STRING; Sample values: ['The global web blog community is being called into action to lend support to two imprisoned Iranian bloggers.\n\nThe month-old Committee to Protect Bloggers\' is asking those with blogs to dedicate their sites on 22 February to the "Free Mojtaba and Ara...(truncated)', 'The "digital divide" between rich and poor nations is narrowing fast, according to a World Bank report.\n\nThe World Bank questioned a United Nation\'s campaign to increase usage and access to technology in poorer nations. "People in the developing worl...(truncated)', 'The current slew of sports games offers unparalleled opportunities for fans who like to emulate on-field action without ever moving from the couch.\n\nThe two giants in the field - ESPN and EA Sports - have been locked in a heavyweight battle for years...(truncated)', 'Writing a Microsoft Word document can be a dangerous business, according to document security firm Workshare.\n\nUp to 75% of all business documents contained sensitive information most firms would not want exposed, a survey by the firm revealed. To ma...(truncated)', 'Aid workers trying to house, feed and clothe millions of homeless refugees in the Sudanese region of Darfur are getting a helping hand from advanced mapping technology.\n\nA European consortium of companies and university groups known as Respond is wor...(truncated)'])
+    filename (Type: STRING; Sample values: ['bbc/tech/016.txt', 'bbc/tech/033.txt', 'bbc/tech/056.txt', 'bbc/tech/086.txt', 'bbc/tech/223.txt'])
+]
+
+--------------------------------------------------
+

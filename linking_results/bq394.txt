@@ -1,0 +1,486 @@
+###Table full name: bigquery-public-data.noaa_icoads.icoads_core_2011
+[
+    wetbulb_temperature (Type: FLOAT64; Sample values: ['15.0', '26.0', '26.0', '17.0', '24.0']; Description: Wet-bulb temperature, Celsius)
+    dewpoint_temperature (Type: FLOAT64; Sample values: ['14.0', '24.0', '25.0', '16.0', '23.2']; Description: Dew-point temperature, Celsius)
+    sea_surface_temp (Type: FLOAT64; Sample values: ['19.0', '30.0', '32.0', '19.0', '26.0']; Description: Temperatures are stored in tenths of a degree Celsius.)
+    air_temperature (Type: FLOAT64; Sample values: ['16.0', '31.0', '29.0', '18.0', '26.0']; Description: Air temperature, Celsius)
+    past_weather (Type: INT64; Sample values: ['0', '1', '1', '2', '1']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    present_weather (Type: INT64; Sample values: ['28', '2', '2', '81', '3']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    month (Type: INT64; Sample values: ['10', '10', '10', '11', '5']; Description: Month of the actual time of observation at which the barometer is read. (1=January, 2=February, …, 12=December))
+    indicator_for_temp (Type: INT64; Sample values: ['3', '3', '3', '3', '0']; Description: Indicator provides information about the precision and/or units that the Core temperature elements were translated from: 0 – tenths °C 1 – half °C 2 – whole °C 3 – whole or tenths °C (mixed precision among temperature fields) 4 – tenths °F 5 – half °F 6 – whole °F 7 – whole or tenths °F (mixed precision among temperature fields) 8 – high resolution data (e.g., hundredths °C) 9 – other)
+    year (Type: INT64; Sample values: ['2011', '2011', '2011', '2011', '2011']; Description: Year of the actual time of observation at which the barometer is read. It is 4-digit)
+    lower_cloud_amount (Type: INT64; Sample values: ['0', '1', '2', '8', '5']; Description: 0 – clear 1 – 1 okta or less, but not zero 2-6 – 2-6 oktas 7 – 7 oktas or more, but not 8 oktas 8 – 8 oktas 9 – sky obscured by fog and/or other meteorological phenomena)
+    ten_degree_box_number (Type: INT64; Sample values: ['202', '239', '239', '238', '226']; Description: 10° box numbers (see Release 1, supp. G; http://icoads.noaa.gov/Release_1/suppG.html) are available e.g., for use in sorting operations)
+    dpt_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: WBTI and DPTI indicate which of WBT or DPT was measured or computed, and ice bulb conditions: 0 – measured 1 – computed 2 – iced measured 3 – iced computed)
+    wbt_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: WBTI and DPTI indicate which of WBT or DPT was measured or computed, and ice bulb conditions: 0 – measured 1 – computed 2 – iced measured 3 – iced computed)
+    one_degree_box_number (Type: INT64; Sample values: ['27', '29', '18', '96', '53']; Description: 1° box numbers (see Release 1, supp. G; http://icoads.noaa.gov/Release_1/suppG.html) are available e.g., for use in sorting operations)
+    wind_speed (Type: FLOAT64; Sample values: ['6.7', '6.7', '5.1', 'nan', '6.7']; Description: Wind speed which is stored in tenths of a meter per second (to retain adequate precision for winds converted from knots, or high-resolution data))
+    cloud_height (Type: STRING; Sample values: ['8', '7', '7', '5', '5']; Description: Codes 0 to 9 and “A” (following WMO Code 1600) show the height above surface of the base of the lowest cloud seen (such that a height exactly equal to one of the values at  60 the ends of the ranges shall be coded in the higher range, e.g., a height of 600 m shall be reported by code 5): 0 – 0 to 50 m 1 – 50 to 100 m 2 – 100 to 200 m 3 – 200 to 300 m 4 – 300 to 600 m 5 – 600 to 1000 m 6 – 1000 to 1500 m 7 – 1500 to 2000 m 8 – 2000 to 2500 m 9 – 2500 m or more, or no clouds 10 [A in base36 encoding] – height of base of cloud not known or base of clouds at a level lower and tops at a level higher than that of the station)
+    hour (Type: FLOAT64; Sample values: ['4.0', '7.0', '5.0', '22.0', '6.25']; Description: Hour of the actual time of observation at which the barometer is read. Hours 0.00 to 23.99)
+    wave_period (Type: INT64; Sample values: ['4', '5', '5', '6', '4']; Description: Period of wind waves, in seconds. Starting in 1968, WP was reported in seconds; prior to 1968 the period was reported as a code, which was converted into whole seconds following Table D5a, with WX (C1, field 13) set accordingly.)
+    time_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '2']; Description: Time indicator preserves the incoming precision of time fields: 0 – nearest whole hour 1 – hour to tenths 2 – hour plus minutes 3 – high resolution (e.g., hour to hundredths))
+    timestamp (Type: TIMESTAMP; Sample values: ['2011-10-10 04:00:00+00:00', '2011-10-05 07:00:00+00:00', '2011-10-06 05:00:00+00:00', '2011-11-12 22:00:00+00:00', '2011-05-05 06:15:00+00:00']; Description: Converted UTC timestamp for the actual time of observation at which the barometer is read)
+    wind_speed_indicator (Type: INT64; Sample values: ['3', '3', '3', '3', '4']; Description: Wind speed is stored in tenths of a meter per second (to retain adequate precision for winds converted from knots, or high-resolution data). WI shows the units in which and/or the method by which W was originally recorded (0, 1, 3, 4 follow WMO Code 1855): 0 – meter per second, estimated 53 1 – meter per second, obtained from anemometer (measured) 2 – estimated (original units unknown) 3 – knot, estimated 4 – knot, obtained from anemometer (measured) 5 – Beaufort force (based on documentation) 6 – estimated (original units unknown)/unknown method 7 – measured (original units unknown) 8 – high-resolution measurement (e.g., hundredths of a meter per second))
+    latitude (Type: FLOAT64; Sample values: ['32.6', '22.8', '21.9', '29.6', '25.0']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+    sst_measurement_method (Type: INT64; Sample values: ['1', '1', '1', '1', '3']; Description: Shows the method by which SST was taken: 0 – bucket 1 – condenser inlet (intake) 2 – trailing thermistor 3 – hull contact sensor 4 – through hull sensor 5 – radiation thermometer 6 – bait tanks thermometer 7 – others 9 – unknown or non-bucket 10 – “implied” bucket [note: applicable to early ICOADS data] 11 – reversing thermometer or mechanical sensor 12 – electronic sensor)
+    id_indicator (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: ID Indicator indicates whether a callsign or some other sort of identification is contained in the ID field (and in R3.0 data, II should always be extant when ID information exists; whereas II should always be missing if ID is missing): 0 – ID present, but unknown type 1 – ship, Ocean Station Vessel (OSV), or ice station callsign 2 – generic ID (e.g., SHIP, BUOY, RIGG, PLAT) 3 – WMO 5-digit buoy number 4 – other buoy number (e.g., Argos or national buoy number) 5 – Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations) 6 – station name or number 7 – oceanographic platform/cruise number 8 – fishing vessel psuedo-ID 9 – national ship number 10 – composite information from early ship data 11 – 7-digit buoy ID (proposed))
+    country_code (Type: STRING; Sample values: ['', '', '', '', '']; Description: The country that recruited a ship, which may differ from the country of immediate receipt (C2, field 15) and may also differ from the ship’s registry)
+    middle_cloud_type (Type: STRING; Sample values: ['A', 'A', 'A', 'A', '1']; Description: Codes 0 to 10 [A in base36 encoding] show characteristics observed of clouds of the genera Altocumulus, Altostratus, and Nimbostratus (WMO Code 0515).)
+    source_id (Type: INT64; Sample values: ['114', '114', '114', '114', '114']; Description: Number of the source ID from which the report came (Table D7). Each SID may contain a single deck or a mixture of decks, but each SID is generally constrained to a single input format.)
+    second_country_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The country of immediate receipt (C2), which may differ from the recruiting country (C1) and may also differ from the ship’s registry.)
+    unique_report_id (Type: STRING; Sample values: ['91BOBM', '90R3SD', '90UYC7', '9570W9', '8ITNZU']; Description: A unique ID for each record in ICOADS represented as a base36 number of length 6.)
+    callsign (Type: STRING; Sample values: ['3EUS', '3EUS', '3EUS', '3EUS', '3FJQ']; Description: Identification/Callsign)
+    deck (Type: INT64; Sample values: ['992', '992', '992', '992', '992']; Description: Number of the deck from which the report came (Table D6a), with Tables D6b and D6c providing additional information about selected DCK ranges. “Deck” originally referred to a punched card deck, but is now used as the primary field to track ICOADS data collections.)
+    external (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The single extant value of the external flags is defined as 1 = erroneous (based on external OSD buoy quality control) They range from 0-63)
+    dup_status (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Indicates duplicate status. 0 unique 1 best duplicate 2 best duplicate with substitution)
+    imma_version (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: IMMA Version: 0=2010, 1=2016)
+    track_check (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicates if a report was: 0 – not track checked 1 – track checked)
+    ncdc_qc_flags (Type: STRING; Sample values: ['11111111111111', '11111111111111', '11111111111111', '11111111111111', '11111111111111']; Description: Possible NCDC-QC flag values, where “–” indicates an undefined flag value, or letters included in the table indicate a defined flag value. For the letters, lower-case “x” indicates a flag value not utilized, whereas upper-case flag values were utilized, in preparing enhanced or standard trimmed data)
+    day (Type: INT64; Sample values: ['10', '5', '6', '12', '5']; Description: Day of the actual time of observation at which the barometer is read. Days 1-31)
+    wave_height (Type: FLOAT64; Sample values: ['0.5', '0.5', '0.5', '4.0', '1.5']; Description: Height of wind waves, in metres.)
+    cloud_height_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Shows if cloud height H was: 0 – estimated 1 – measured)
+    longitude (Type: FLOAT64; Sample values: ['-117.9', '-109.0', '-108.1', '-116.5', '123.2']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+    sea_level_pressure (Type: FLOAT64; Sample values: ['1011.0', '1009.0', '1008.0', '1007.0', '1011.1']; Description: Amount of pressure tendency at station level during the three hours preceding the time of observation in tenths of hPa (i.e., millibars))
+    box_system_indicator (Type: STRING; Sample values: ['', '', '', '', '']; Description: The box system indicator is currently unused.)
+    trimming_flags (Type: STRING; Sample values: ['111111', '111111', '311111', '111721', '111111']; Description: These flags indicate the relationship of a given observational data value to the legacy trimming limits, or to indicate if those limits, which were calculated separately for three historical periods are unavailable, or other conditions.)
+    national_source_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A field available for national use in identifying data subsets.)
+    nightday_flag (Type: INT64; Sample values: ['1', '1', '1', '2', '2']; Description: The night/day report flag was set to indicate whether the report fell in local nighttime or daytime, as determined according to Slutz et al. 1 = report time is local nighttime 2 = report time is local daytime)
+    wind_direction_true (Type: INT64; Sample values: ['360', '250', '350', 'None', '150']; Description: The direction (true) from which wind is blowing (or will blow), stored in whole degrees (i.e., 360-point compass; range: 1-360°), or special codes: 361 – calm 362 – variable, or all directions)
+    wind_direction_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Gives the compass (and approximate precision) used for reporting the wind direction: 0 – 36-point compass 1 – 32-point compass 2 – 16 of 36-point compass 3 – 16 of 32-point compass 4 – 8-point compass 5 – 360-point compass 6 – high resolution data (e.g., tenths of degrees))
+    swell_height (Type: FLOAT64; Sample values: ['5.0', '0.5', '1.0', '4.0', '1.5']; Description: Height of wind waves, in metres.)
+    release_no_tertiary (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Third of the three elements that make up the full release number associated with the record. For example, Release 3.0.1 is represented with RN1=3, RN2=0, and RN3=1)
+    release_no_primary (Type: INT64; Sample values: ['3', '3', '3', '3', '3']; Description: First of the three elements that make up the full release number associated with the record. For example, Release 3.0.1 is represented with RN1=3, RN2=0, and RN3=1)
+    visibility_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: shows whether visibility was: 0 – estimated (or unknown method of observation) 1 – measured 2 – fog present (obsolete))
+    latlong_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Latlong indicator preserves the precision at which LAT and LON were recorded or translated from, or if they were derived later by interpolation between known positions: 0 – degrees and tenths 1 – whole degrees 2 – mixed precision 3 – interpolated 4 – degrees and minutes 5 – high resolution data (e.g., degrees to seconds) 6 – other)
+    attm_count (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: The attm count: 0 – abbreviated record (no attm) 1 – one attm 2 – two attms etc.)
+]
+**Some other tables have the similar structure: [icoads_core_2009, icoads_core_2005, icoads_core_2017, icoads_core_2007, icoads_core_2013, icoads_core_2008, icoads_core_2010, icoads_core_2016, icoads_core_2014, icoads_core_2015, icoads_core_2012, icoads_core_2006]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_icoads.icoads_core_1662_2000
+[
+    wetbulb_temperature (Type: FLOAT64; Sample values: ['17.8', '26.8', '24.4', '11.7', '20.2']; Description: Wet-bulb temperature, Celsius)
+    dewpoint_temperature (Type: FLOAT64; Sample values: ['17.0', '26.1', '22.9', '7.9', '18.8']; Description: Dew-point temperature, Celsius)
+    sea_surface_temp (Type: FLOAT64; Sample values: ['17.8', '30.0', '30.0', '17.3', '23.5']; Description: Temperatures are stored in tenths of a degree Celsius.)
+    air_temperature (Type: FLOAT64; Sample values: ['19.4', '28.8', '28.3', '16.1', '23.0']; Description: Air temperature, Celsius)
+    past_weather (Type: INT64; Sample values: ['0', '2', '0', '2', '0']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    present_weather (Type: INT64; Sample values: ['1', '2', '1', '2', '2']; Description: WMO Codes 4677 (Table D3) for WW, and 4561 for W1: 0 – Cloud covering 1/2 or less of the sky throughout the appropriate period 1 – Cloud covering more than 1/2 of the sky during part of the appropriate period and covering 1/2 or less during part of the period 2 – Cloud covering more than 1/2 of the sky throughout the appropriate period 54 3 – Sandstorm, duststorm or blowing snow 4 – Fog or ice fog or thick haze 5 – Drizzle 6 – Rain 7 – Snow, or rain and snow mixed 8 – Shower(s) 9 – Thunderstorm(s) with or without precipitation)
+    month (Type: INT64; Sample values: ['5', '7', '4', '12', '7']; Description: Month of the actual time of observation at which the barometer is read. (1=January, 2=February, …, 12=December))
+    indicator_for_temp (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Indicator provides information about the precision and/or units that the Core temperature elements were translated from: 0 – tenths °C 1 – half °C 2 – whole °C 3 – whole or tenths °C (mixed precision among temperature fields) 4 – tenths °F 5 – half °F 6 – whole °F 7 – whole or tenths °F (mixed precision among temperature fields) 8 – high resolution data (e.g., hundredths °C) 9 – other)
+    year (Type: INT64; Sample values: ['1969', '1969', '1964', '1969', '1965']; Description: Year of the actual time of observation at which the barometer is read. It is 4-digit)
+    lower_cloud_amount (Type: INT64; Sample values: ['2', 'None', '2', '5', '2']; Description: 0 – clear 1 – 1 okta or less, but not zero 2-6 – 2-6 oktas 7 – 7 oktas or more, but not 8 oktas 8 – 8 oktas 9 – sky obscured by fog and/or other meteorological phenomena)
+    ten_degree_box_number (Type: INT64; Sample values: ['194', '260', '301', '200', '235']; Description: 10° box numbers (see Release 1, supp. G; http://icoads.noaa.gov/Release_1/suppG.html) are available e.g., for use in sorting operations)
+    dpt_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: WBTI and DPTI indicate which of WBT or DPT was measured or computed, and ice bulb conditions: 0 – measured 1 – computed 2 – iced measured 3 – iced computed)
+    wbt_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: WBTI and DPTI indicate which of WBT or DPT was measured or computed, and ice bulb conditions: 0 – measured 1 – computed 2 – iced measured 3 – iced computed)
+    one_degree_box_number (Type: INT64; Sample values: ['37', '7', '34', '18', '12']; Description: 1° box numbers (see Release 1, supp. G; http://icoads.noaa.gov/Release_1/suppG.html) are available e.g., for use in sorting operations)
+    cloud_height (Type: STRING; Sample values: ['4', '', '4', '4', '4']; Description: Codes 0 to 9 and “A” (following WMO Code 1600) show the height above surface of the base of the lowest cloud seen (such that a height exactly equal to one of the values at  60 the ends of the ranges shall be coded in the higher range, e.g., a height of 600 m shall be reported by code 5): 0 – 0 to 50 m 1 – 50 to 100 m 2 – 100 to 200 m 3 – 200 to 300 m 4 – 300 to 600 m 5 – 600 to 1000 m 6 – 1000 to 1500 m 7 – 1500 to 2000 m 8 – 2000 to 2500 m 9 – 2500 m or more, or no clouds 10 [A in base36 encoding] – height of base of cloud not known or base of clouds at a level lower and tops at a level higher than that of the station)
+    time_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Time indicator preserves the incoming precision of time fields: 0 – nearest whole hour 1 – hour to tenths 2 – hour plus minutes 3 – high resolution (e.g., hour to hundredths))
+    hour (Type: FLOAT64; Sample values: ['12.0', '0.0', '0.0', '18.0', '6.0']; Description: Hour of the actual time of observation at which the barometer is read. Hours 0.00 to 23.99)
+    timestamp (Type: TIMESTAMP; Sample values: ['1969-05-07 12:00:00+00:00', '1969-07-18 00:00:00+00:00', '1964-04-12 00:00:00+00:00', '1969-12-26 18:00:00+00:00', '1965-07-31 06:00:00+00:00']; Description: Converted UTC timestamp for the actual time of observation at which the barometer is read)
+    wave_period (Type: INT64; Sample values: ['5', '5', '5', '5', '5']; Description: Period of wind waves, in seconds. Starting in 1968, WP was reported in seconds; prior to 1968 the period was reported as a code, which was converted into whole seconds following Table D5a, with WX (C1, field 13) set accordingly.)
+    wind_speed (Type: FLOAT64; Sample values: ['6.2', '12.9', '2.1', '8.2', '7.2']; Description: Wind speed which is stored in tenths of a meter per second (to retain adequate precision for winds converted from knots, or high-resolution data))
+    id_indicator (Type: INT64; Sample values: ['9', '9', '9', '9', '9']; Description: ID Indicator indicates whether a callsign or some other sort of identification is contained in the ID field (and in R3.0 data, II should always be extant when ID information exists; whereas II should always be missing if ID is missing): 0 – ID present, but unknown type 1 – ship, Ocean Station Vessel (OSV), or ice station callsign 2 – generic ID (e.g., SHIP, BUOY, RIGG, PLAT) 3 – WMO 5-digit buoy number 4 – other buoy number (e.g., Argos or national buoy number) 5 – Coastal-Marine Automated Network (C-MAN) ID (assigned by US NDBC or other organizations) 6 – station name or number 7 – oceanographic platform/cruise number 8 – fishing vessel psuedo-ID 9 – national ship number 10 – composite information from early ship data 11 – 7-digit buoy ID (proposed))
+    country_code (Type: STRING; Sample values: ['02', '02', '00', '02', '12']; Description: The country that recruited a ship, which may differ from the country of immediate receipt (C2, field 15) and may also differ from the ship’s registry)
+    middle_cloud_type (Type: STRING; Sample values: ['0', '', '0', '8', '0']; Description: Codes 0 to 10 [A in base36 encoding] show characteristics observed of clouds of the genera Altocumulus, Altostratus, and Nimbostratus (WMO Code 0515).)
+    source_id (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Number of the source ID from which the report came (Table D7). Each SID may contain a single deck or a mixture of decks, but each SID is generally constrained to a single input format.)
+    second_country_code (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The country of immediate receipt (C2), which may differ from the recruiting country (C1) and may also differ from the ship’s registry.)
+    unique_report_id (Type: STRING; Sample values: ['1EHHH5', '1EZJTJ', '12VQOE', '1G15WL', '15GPEK']; Description: A unique ID for each record in ICOADS represented as a base36 number of length 6.)
+    callsign (Type: STRING; Sample values: ['2201', '8448', '-582', '1228', '2398']; Description: Identification/Callsign)
+    deck (Type: INT64; Sample values: ['128', '128', '128', '128', '128']; Description: Number of the deck from which the report came (Table D6a), with Tables D6b and D6c providing additional information about selected DCK ranges. “Deck” originally referred to a punched card deck, but is now used as the primary field to track ICOADS data collections.)
+    external (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The single extant value of the external flags is defined as 1 = erroneous (based on external OSD buoy quality control) They range from 0-63)
+    dup_status (Type: INT64; Sample values: ['1', '1', '1', '1', '0']; Description: Indicates duplicate status. 0 unique 1 best duplicate 2 best duplicate with substitution)
+    latitude (Type: FLOAT64; Sample values: ['33.1', '10.4', '3.8', '31.8', '21.9']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+    wave_height (Type: FLOAT64; Sample values: ['1.0', '1.0', '0.5', '1.0', '1.0']; Description: Height of wind waves, in metres.)
+    track_check (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicates if a report was: 0 – not track checked 1 – track checked)
+    imma_version (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: IMMA Version: 0=2010, 1=2016)
+    day (Type: INT64; Sample values: ['7', '18', '12', '26', '31']; Description: Day of the actual time of observation at which the barometer is read. Days 1-31)
+    cloud_height_indicator (Type: INT64; Sample values: ['0', 'None', '0', '0', '0']; Description: Shows if cloud height H was: 0 – estimated 1 – measured)
+    ncdc_qc_flags (Type: STRING; Sample values: ['11111111111111', '11111111111111', '11111111111111', '11111111111111', '11111111111111']; Description: Possible NCDC-QC flag values, where “–” indicates an undefined flag value, or letters included in the table indicate a defined flag value. For the letters, lower-case “x” indicates a flag value not utilized, whereas upper-case flag values were utilized, in preparing enhanced or standard trimmed data)
+    sea_level_pressure (Type: FLOAT64; Sample values: ['1024.0', '1008.0', '1010.2', '1036.9', '1020.2']; Description: Amount of pressure tendency at station level during the three hours preceding the time of observation in tenths of hPa (i.e., millibars))
+    box_system_indicator (Type: STRING; Sample values: ['', '', '', '', '']; Description: The box system indicator is currently unused.)
+    wind_direction_true (Type: INT64; Sample values: ['200', '180', '130', '20', '90']; Description: The direction (true) from which wind is blowing (or will blow), stored in whole degrees (i.e., 360-point compass; range: 1-360°), or special codes: 361 – calm 362 – variable, or all directions)
+    longitude (Type: FLOAT64; Sample values: ['167.5', '107.9', '154.4', '-138.1', '-142.6']; Description: Position to hundredths of a degree +N or –S (measured north or south of the equator) and +E or −W (measured east or west of the Greenwich Meridian).)
+    swell_height (Type: FLOAT64; Sample values: ['1.5', '4.0', '0.5', '3.0', '1.5']; Description: Height of wind waves, in metres.)
+    sst_measurement_method (Type: INT64; Sample values: ['0', '0', 'None', '0', 'None']; Description: Shows the method by which SST was taken: 0 – bucket 1 – condenser inlet (intake) 2 – trailing thermistor 3 – hull contact sensor 4 – through hull sensor 5 – radiation thermometer 6 – bait tanks thermometer 7 – others 9 – unknown or non-bucket 10 – “implied” bucket [note: applicable to early ICOADS data] 11 – reversing thermometer or mechanical sensor 12 – electronic sensor)
+    release_no_tertiary (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: Third of the three elements that make up the full release number associated with the record. For example, Release 3.0.1 is represented with RN1=3, RN2=0, and RN3=1)
+    visibility_indicator (Type: INT64; Sample values: ['0', '0', '0', '0', '0']; Description: shows whether visibility was: 0 – estimated (or unknown method of observation) 1 – measured 2 – fog present (obsolete))
+    trimming_flags (Type: STRING; Sample values: ['111111', '111511', '111111', '111131', '111111']; Description: These flags indicate the relationship of a given observational data value to the legacy trimming limits, or to indicate if those limits, which were calculated separately for three historical periods are unavailable, or other conditions.)
+    release_no_primary (Type: INT64; Sample values: ['3', '3', '3', '3', '3']; Description: First of the three elements that make up the full release number associated with the record. For example, Release 3.0.1 is represented with RN1=3, RN2=0, and RN3=1)
+    national_source_indicator (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A field available for national use in identifying data subsets.)
+    nightday_flag (Type: INT64; Sample values: ['1', '2', '2', '2', '1']; Description: The night/day report flag was set to indicate whether the report fell in local nighttime or daytime, as determined according to Slutz et al. 1 = report time is local nighttime 2 = report time is local daytime)
+]
+**Some other tables have the similar structure: [icoads_core_2001_2004]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.gsod1973
+[
+    min (Type: FLOAT64; Sample values: ['-0.4', '-4.0', '1.4', '17.6', '14.0']; Description: Minimum temperature reported during the day in Fahrenheit to tenths--time of min temp report varies by country and region, so this will sometimes not be the min for the calendar day. Missing = 9999.9)
+    dewp (Type: FLOAT64; Sample values: ['-2.7', '12.2', '1.4', '9.5', '15.3']; Description: Mean dew point for the day in degreesm Fahrenheit to tenths.  Missing = 9999.9)
+    temp (Type: FLOAT64; Sample values: ['2.3', '19.4', '5.9', '22.1', '20.3']; Description: Mean temperature for the day in degrees Fahrenheit to tenths. Missing = 9999.9)
+    max (Type: FLOAT64; Sample values: ['6.8', '23.0', '8.6', '24.8', '28.4']; Description: Maximum temperature reported during the day in Fahrenheit to tenths--time of max temp report varies by country and region, so this will sometimes not be the max for the calendar day. Missing = 9999.9)
+    flag_min (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates min temp was taken from the explicit min temp report and not from the 'hourly' data.)
+    sndp (Type: FLOAT64; Sample values: ['999.9', '999.9', '999.9', '999.9', '999.9']; Description: Snow depth in inches to tenths--last report for the day if reported more thanonce. Missing = 999.9)
+    count_temp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean temperature)
+    count_dewp (Type: INT64; Sample values: ['4', '4', '4', '4', '4']; Description: Number of observations used in calculating mean dew point)
+    mo (Type: STRING; Sample values: ['12', '11', '12', '12', '12']; Description: The month)
+    flag_max (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates max temp was taken from the explicit max temp report and not from the 'hourly' data.)
+    year (Type: STRING; Sample values: ['1973', '1973', '1973', '1973', '1973']; Description: The year)
+    slp (Type: FLOAT64; Sample values: ['1018.2', '1014.7', '996.5', '1002.4', '1012.4']; Description: Mean sea level pressure for the day in millibars to tenths. Missing = 9999.9)
+    prcp (Type: FLOAT64; Sample values: ['99.99', '99.99', '99.99', '99.99', '99.99']; Description: Total precipitation (rain and/or melted snow) reported during the day in inches and hundredths; will usually not end with the midnight observation--i.e., may include latter part of previous day.)
+    stp (Type: FLOAT64; Sample values: ['9999.9', '9999.9', '9999.9', '9999.9', '9999.9']; Description: Mean station pressure for the day in millibars to tenths. Missing = 9999.9)
+    date (Type: DATE; Sample values: ['', '', '', '', '']; Description: Date of the weather observations)
+    wdsp (Type: STRING; Sample values: ['1.5', '1.9', '1.9', '11.2', '3.9']; Description: Mean wind speed for the day in knots to tenths. Missing = 999.9)
+    visib (Type: FLOAT64; Sample values: ['8.4', '21.6', '6.8', '16.3', '19.3']; Description: Mean visibility for the day in miles to tenths.  Missing = 999.9)
+    mxpsd (Type: STRING; Sample values: ['3.9', '3.9', '5.8', '15.5', '5.8']; Description: Maximum sustained wind speed reported for the day in knots to tenths. Missing = 999.9)
+    da (Type: STRING; Sample values: ['08', '02', '01', '08', '11']; Description: The day)
+    thunder (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    fog (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    hail (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    rain_drizzle (Type: STRING; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    snow_ice_pellets (Type: STRING; Sample values: ['1', '1', '1', '1', '1']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    flag_prcp (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A = 1 report of 6-hour precipitation amount)
+    stn (Type: STRING; Sample values: ['317980', '305990', '320570', '321160', '321330']; Description: Station number (WMO/DATSAV3 number) for the location)
+]
+**Some other tables have the similar structure: [gsod1938, gsod2020, gsod1945, gsod1948, gsod1949, gsod1983, gsod1998, gsod1930, gsod1995, gsod1960, gsod1987, gsod1975, gsod1992, gsod1954, gsod1990, gsod2019, gsod1977, gsod1964, gsod1970, gsod1969, gsod2003, gsod1951, gsod1937, gsod1952, gsod1997, gsod1984, gsod2008, gsod1953, gsod1940, gsod2004, gsod1955, gsod2011, gsod1959, gsod1947, gsod1974, gsod2015, gsod1993, gsod2007, gsod2002, gsod1944, gsod2023, gsod1999, gsod2024, gsod1932, gsod1965, gsod1939, gsod1982, gsod1968, gsod1946, gsod2005, gsod2010, gsod1931, gsod2018, gsod2012, gsod1956, gsod1941, gsod1979, gsod2017, gsod1935, gsod1961, gsod2014, gsod1991, gsod1958, gsod2000, gsod2009, gsod2013, gsod1989, gsod1933, gsod1996, gsod1985, gsod1980, gsod2006, gsod1988, gsod2001, gsod1971, gsod1934, gsod1936, gsod1929, gsod1981, gsod1972, gsod2021, gsod1986, gsod1967, gsod1978, gsod1963, gsod1942, gsod1966, gsod1950, gsod1943, gsod2016, gsod1957, gsod1994, gsod1976, gsod1962, gsod2022]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_1706_array
+[
+    array_start_utc (Type: TIMESTAMP; Sample values: ['2017-07-11 18:18:03+00:00', '2017-08-27 19:00:17+00:00', '2017-08-11 20:06:02+00:00', '2017-07-18 22:05:46+00:00', '2017-09-13 17:44:35+00:00'])
+    array1 (Type: STRING; Sample values: ['Iiwi      ', 'Iiwi      ', 'Kolea     ', 'Kolea     ', 'Kolea     '])
+    array_end_utc (Type: TIMESTAMP; Sample values: ['2017-07-16 05:26:21+00:00', '2017-08-28 04:10:59+00:00', '2017-08-24 03:30:13+00:00', '2017-08-01 04:01:10+00:00', '2017-09-19 02:10:20+00:00'])
+    array2 (Type: STRING; Sample values: ['Pueo      ', 'Pueo      ', 'Pueo      ', 'Pueo      ', 'Moli      '])
+    array_start_local (Type: DATETIME; Sample values: ['2017-07-11 08:18:03', '2017-08-27 09:00:17', '2017-08-11 10:06:02', '2017-07-18 12:05:46', '2017-09-13 07:44:35'])
+    array_end_local (Type: DATETIME; Sample values: ['2017-07-15 19:26:21', '2017-08-27 18:10:59', '2017-08-23 17:30:13', '2017-07-31 18:01:10', '2017-09-18 16:10:20'])
+    hp5_dist (Type: STRING; Sample values: ['-387.33', '-387.33', '-387.83', '-387.83', '-392.15'])
+    hp3_dist (Type: FLOAT64; Sample values: ['-350.05', '-350.05', '-350.31', '-350.31', '-350.31'])
+    hp1_dist (Type: FLOAT64; Sample values: ['-348.07', '-348.07', '-348.33', '-348.33', '-348.33'])
+    hp4_dist (Type: STRING; Sample values: ['-386.37', '-386.37', '-386.87', '-386.87', '-391.19'])
+    hp6_dist (Type: STRING; Sample values: ['-388.33', '-388.33', '-388.83', '-388.83', '-393.15'])
+    hp2_dist (Type: FLOAT64; Sample values: ['-349.05', '-349.05', '-349.31', '-349.31', '-349.31'])
+    hp5_ad (Type: STRING; Sample values: ['6', '12', '12', '12', '12'])
+    hp6_ad (Type: STRING; Sample values: ['6', '12', '12', '12', '12'])
+    hp4_ad (Type: STRING; Sample values: ['6', '12', '12', '12', '12'])
+    hp3_ad (Type: INT64; Sample values: ['6', '6', '6', '0', '6'])
+    hp2_ad (Type: INT64; Sample values: ['6', '6', '6', '0', '6'])
+    hp1_ad (Type: INT64; Sample values: ['6', '6', '6', '0', '6'])
+]
+**Some other tables have the similar structure: [dclde_2020_1705_array]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_1705_visual_sightings
+[
+    total_best (Type: FLOAT64; Sample values: ['2.0', '13.4', '45.8', '2.4', '4.0'])
+    total_low (Type: INT64; Sample values: ['2', '10', '35', '1', '3'])
+    species_id (Type: STRING; Sample values: ['49', '177', '2', '177', '2'])
+    bearing (Type: INT64; Sample values: ['0', '50', '34', '10', '29'])
+    latitude (Type: FLOAT64; Sample values: ['19.646', '19.168', '19.494', '20.677', '20.802'])
+    effort (Type: STRING; Sample values: ['ON', 'ON', 'ON', 'ON', 'ON'])
+    local_ship_date (Type: DATE; Sample values: ['2017-08-27', '2017-08-31', '2017-08-31', '2017-10-09', '2017-10-09'])
+    sighting_number (Type: STRING; Sample values: ['21', '33', '34', '80', '81'])
+    total_high (Type: INT64; Sample values: ['3', '19', '70', '4', '6'])
+]
+**Some other tables have the similar structure: [dclde_2020_1706_visual_sightings]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_nrs_pad_metadata
+[
+    start_date (Type: STRING; Sample values: ['2014-10-14', '2014-10-15', '2014-10-15', '2014-10-15', '2014-10-15'])
+    start_time (Type: STRING; Sample values: ['23:40:15', '03:40:21', '07:40:26', '11:40:32', '15:40:38'])
+    file_name (Type: STRING; Sample values: ['NRS01_20141014_234015.flac', 'NRS01_20141015_034021.flac', 'NRS01_20141015_074026.flac', 'NRS01_20141015_114032.flac', 'NRS01_20141015_154038.flac'])
+    deployment_name (Type: STRING; Sample values: ['NRS_01_2014-2015', 'NRS_01_2014-2015', 'NRS_01_2014-2015', 'NRS_01_2014-2015', 'NRS_01_2014-2015'])
+    project_name (Type: STRING; Sample values: ['NRS', 'NRS', 'NRS', 'NRS', 'NRS'])
+    platform_name (Type: STRING; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    lat (Type: STRING; Sample values: ['72.49', '72.49', '72.49', '72.49', '72.49'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_acoustic_index.nrs_metadata
+[
+    start_date (Type: DATE; Sample values: ['2014-11-10', '2014-11-10', '2014-11-10', '2014-11-10', '2014-11-10'])
+    start_time (Type: TIME; Sample values: ['13:17:36', '17:17:42', '01:17:15', '21:17:49', '09:17:29'])
+    file_name (Type: STRING; Sample values: ['NRS03_20141110_131736.wav', 'NRS03_20141110_171742.wav', 'NRS03_20141110_011715.wav', 'NRS03_20141110_211749.wav', 'NRS03_20141110_091729.wav'])
+    deployment_name (Type: STRING; Sample values: ['NRS-2014-2015-03', 'NRS-2014-2015-03', 'NRS-2014-2015-03', 'NRS-2014-2015-03', 'NRS-2014-2015-03'])
+    project_name (Type: STRING; Sample values: ['NRS', 'NRS', 'NRS', 'NRS', 'NRS'])
+    platform_name (Type: STRING; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    lat (Type: FLOAT64; Sample values: ['47.7651', '47.7651', '47.7651', '47.7651', '47.7651'])
+    duration (Type: INT64; Sample values: ['60', '60', '60', '60', '60'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_nefsc_pad_metadata
+[
+    start_date (Type: STRING; Sample values: ['18-Dec-07', '18-Dec-07', '18-Dec-07', '18-Dec-07', '18-Dec-07'])
+    start_time (Type: STRING; Sample values: ['13:30:00', '13:45:00', '14:00:00', '14:15:00', '14:30:00'])
+    file_name (Type: STRING; Sample values: ['SBNMS_20071218_133000.aif', 'SBNMS_20071218_134500.aif', 'SBNMS_20071218_140000.aif', 'SBNMS_20071218_141500.aif', 'SBNMS_20071218_143000.aif'])
+    data_collection_name (Type: STRING; Sample values: ['NEFSC_SBNMS_200712', 'NEFSC_SBNMS_200712', 'NEFSC_SBNMS_200712', 'NEFSC_SBNMS_200712', 'NEFSC_SBNMS_200712'])
+    project_name (Type: STRING; Sample values: ['NEFSC', 'NEFSC', 'NEFSC', 'NEFSC', 'NEFSC'])
+    platform_name (Type: STRING; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    shape5 (Type: STRING; Sample values: [' (-70.33297 42.68407)', ' (-70.33297 42.68407)', ' (-70.33297 42.68407)', ' (-70.33297 42.68407)', ' (-70.33297 42.68407)'])
+    duration (Type: STRING; Sample values: ['60', '60', '60', '60', '60'])
+    shape8 (Type: STRING; Sample values: [' (-70.33237 42.63483)', ' (-70.33237 42.63483)', ' (-70.33237 42.63483)', ' (-70.33237 42.63483)', ' (-70.33237 42.63483)'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_afsc_pad_metadata
+[
+    start_date (Type: STRING; Sample values: ['24-Jun-13', '24-Jun-13', '24-Jun-13', '24-Jun-13', '24-Jun-13'])
+    start_time (Type: STRING; Sample values: ['0:00:00', '21:55:20', '22:00:00', '22:10:00', '22:20:00'])
+    file_name (Type: STRING; Sample values: ['SonobuoyDeployments.xlsx', 'SB-GAGL01-130624-215520.flac', 'SB-GAGL01-130624-220000.flac', 'SB-GAGL01-130624-221000.flac', 'SB-GAGL01-130624-222000.flac'])
+    data_collection_name (Type: STRING; Sample values: ['GA13_SB_GL01', 'GA13_SB_GL01', 'GA13_SB_GL01', 'GA13_SB_GL01', 'GA13_SB_GL01'])
+    project_name (Type: STRING; Sample values: ['GA13', 'GA13', 'GA13', 'GA13', 'GA13'])
+    platform_name (Type: STRING; Sample values: ['Sonobuoy', 'Sonobuoy', 'Sonobuoy', 'Sonobuoy', 'Sonobuoy'])
+    duration (Type: STRING; Sample values: ['60', '60', '60', '60', '60'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_bioacoustic.ncei_sanctsound_pad_metadata
+[
+    start_date (Type: STRING; Sample values: ['31-Oct-18', '31-Oct-18', '31-Oct-18', '31-Oct-18', '31-Oct-18'])
+    start_time (Type: STRING; Sample values: ['22:00:00', '22:00:00', '22:00:00', '22:00:00', '22:00:00'])
+    file_name (Type: STRING; Sample values: ['SanctSound_CI01_01_671379494_CalibrationInfo.pdf', 'CI01_01_RBRsT_101567.mat', 'CI01_01_RBRsT_101567.png', 'CI01_01_RBRsT_101567.rsk', 'Thumbs.db'])
+    data_collection_name (Type: STRING; Sample values: ['SanctSound_CI01_01', 'SanctSound_CI01_01', 'SanctSound_CI01_01', 'SanctSound_CI01_01', 'SanctSound_CI01_01'])
+    project_name (Type: STRING; Sample values: ['SanctSound', 'SanctSound', 'SanctSound', 'SanctSound', 'SanctSound'])
+    platform_name (Type: STRING; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    lat (Type: STRING; Sample values: ['34.0438', '34.0438', '34.0438', '34.0438', '34.0438'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_passive_acoustic_index.sanctsound_metadata
+[
+    start_date (Type: DATE; Sample values: ['2019-03-25', '2019-03-25', '2019-03-25', '2019-03-25', '2019-03-25'])
+    file_name (Type: STRING; Sample values: ['SanctSound_CI01_02.xml', 'SanctSound_CI01_02.json', 'CI01_02_RBRsT_101578.mat', 'CI01_02_RBRsT_101578.png', 'CI01_02_RBRsT_101578.rsk'])
+    data_collection_name (Type: STRING; Sample values: ['SanctSound_CI01_02', 'SanctSound_CI01_02', 'SanctSound_CI01_02', 'SanctSound_CI01_02', 'SanctSound_CI01_02'])
+    project_name (Type: STRING; Sample values: ['SanctSound', 'SanctSound', 'SanctSound', 'SanctSound', 'SanctSound'])
+    platform_name (Type: STRING; Sample values: ['Mooring', 'Mooring', 'Mooring', 'Mooring', 'Mooring'])
+    latitude (Type: FLOAT64; Sample values: ['34.0438', '34.0438', '34.0438', '34.0438', '34.0438'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_hurricanes.hurricanes
+[
+    ds824_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from DataSet 824 - A historic dataset with data from the 1800s through 1980(ish))
+    tokyo_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    latitude (Type: FLOAT64; Sample values: ['-8.90673', '-9.24269', '-27.2929', '-19.5419', '-14.3345'])
+    bom_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from Australian Bureau of Meterology)
+    iso_time (Type: TIMESTAMP; Sample values: ['1848-01-12 03:00:00+00:00', '1848-01-12 12:00:00+00:00', '1848-01-12 09:00:00+00:00', '1848-03-04 12:00:00+00:00', '1848-04-25 21:00:00+00:00']; Description: ISO Time provided in Universal Time Coordinates (UTC). Format is YYYY-MM-DD HH:mm:ss Most points are provided at 6 hour intervals. Some agencies provided 3 hour points (e.g./nNew Delhi) or times at important observations (e.g./nlandfall times in the North Atlantic/netc.).)
+    wmo_wind (Type: INT64; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Maximum sustained wind speed from the WMO agency for the current location. NO adjustment is made for differences in wind speed averaging periods. hurdat/atcf = North Atlantic - U.S. Miami (NOAA NHC) - 1-minute winds tokyo = RSMC Tokyo (JMA) - 10-minute newdelhi = RSMC New Delhi (IMD) - 3-minute reunion = RSMC La Reunion (MFLR) - 10 minute bom = Australian TCWCs (TCWC Perth/nDarwin/nBrisbane) - 10-minute nadi = RSMC Nadi (FMS) - 10 minute wellington = TCWC Wellington (NZMS) - 10-minute)
+    sid (Type: STRING; Sample values: ['1848011S09080', '1848011S09080', '1848011S16057', '1848061S12075', '1848112S07084']; Description: Storm Identifier.)
+    name (Type: STRING; Sample values: ['NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED', 'NOT_NAMED']; Description: Name provided by the agency. IBTrACS ignores most names that include digits or abbreviations.)
+    usa_atcf_id (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: The ATCF ID is assigned by US agencies and can be used to comparethe storm with other US cyclone-related datasets. If two (or more) ATCF tracks make up one storm/nthen the IDs are separated by a colon. The format of the ATCF ID is B<bb><nn><yyyy> where bb is the basin ID/nnn is the number of the storm in that basin and yyyy is the year. Possible basin values are: AL: North Atlantic/nSL: South Atlantic/nEP: East Pacific/nWP: West Pacific/nSH: Southern Hemisphere/nIO: North Indian For the provisional data/nother basin identifiers were provided that include: CP: Central Pacific/nSP: South Pacific/nSI: South Indian/nAS: Arabian Sea (North Indian) and BB: Bay of Bengal (North Indian))
+    cma_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from Chinese Meteorological Administration data from Shanghai Typhoon Institute)
+    wellington_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    newdelhi_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    td9636_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', '-27.2929', '-20.0898', 'nan']; Description: Latitude from Dataset of a collection of global storms (1842-1980))
+    neumann_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    td9635_wind (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan'])
+    td9635_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from Dataset of a collection of western Pacific Storms (~1945-1976))
+    nadi_latitude (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Latitude from Fiji Meteorological Service data from RSMC Hadi)
+    hko_latitude (Type: STRING; Sample values: [' ', ' ', ' ', ' ', ' ']; Description: Latitude from Hong Kong Observatory)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_1705_minke_detections
+[
+    latitude (Type: FLOAT64; Sample values: ['21.79686167', '21.79686167', '21.04848167', '23.78285667', '22.21893'])
+    detection_time_start_local (Type: DATETIME; Sample values: ['2017-11-07 14:15:08', '2017-11-07 14:15:13', '2017-11-23 11:36:53', '2017-11-02 17:17:19', '2017-11-21 14:17:57'])
+    detection_time_start_utc (Type: TIMESTAMP; Sample values: ['2017-11-08 00:15:08+00:00', '2017-11-08 00:15:13+00:00', '2017-11-23 21:36:53+00:00', '2017-11-03 03:17:19+00:00', '2017-11-22 00:17:57+00:00'])
+    detection_time_end_utc (Type: TIMESTAMP; Sample values: ['2017-11-08 00:15:24+00:00', '2017-11-08 00:15:33+00:00', '2017-11-23 21:37:04+00:00', '2017-11-03 03:17:39+00:00', '2017-11-22 00:18:20+00:00'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_lasker_array_depth
+[
+    utc_time (Type: TIMESTAMP; Sample values: ['2017-11-22 02:53:30+00:00', '2017-11-26 20:43:32+00:00', '2017-11-26 20:43:31+00:00', '2017-10-10 01:12:45+00:00', '2017-10-10 01:12:42+00:00'])
+    local_time (Type: DATETIME; Sample values: ['2017-11-21 16:53:29', '2017-11-26 10:43:31', '2017-11-26 10:43:30', '2017-10-09 15:12:44', '2017-10-09 15:12:41'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_sette_array_depth
+[
+    utc_time (Type: TIMESTAMP; Sample values: ['2017-09-17 03:34:35+00:00', '2017-07-16 01:20:19+00:00', '2017-07-15 16:15:01+00:00', '2017-07-15 17:54:52+00:00', '2017-07-15 17:56:06+00:00'])
+    local_time (Type: DATETIME; Sample values: ['2017-09-16 17:34:35', '2017-07-15 15:20:19', '2017-07-15 06:15:00', '2017-07-15 07:54:51', '2017-07-15 07:56:05'])
+    end_depth (Type: FLOAT64; Sample values: ['6.76', '7.51', '7.76', '7.76', '8.52'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_tsunami.historical_source_event
+[
+    month (Type: INT64; Sample values: ['9', 'None', '11', '4', '1']; Description: Valid values: 1-12 The Date and Time are given in Universal Coordinated Time (also known as Greenwich Mean Time). The local date may be one day different.)
+    year (Type: INT64; Sample values: ['1774', 'None', '1099', '1580', '1609']; Description: Valid values: -2000 to Present Format +/-yyyy (-is B.C, +is A.D.)  The Date and Time are given in Universal Coordinated Time (also known as Greenwich Mean Time). The local date may be one day different.  Please see the Caveat and Uncertainties in the Significant Earthquake and Tsunami Databases in the Significant Earthquake Database Introduction for more information on the completeness and accuracy of this database.)
+    id (Type: INT64; Sample values: ['3190', '3650', '97', '187', '224']; Description: The unique numeric identifier of the record.)
+    event_validity (Type: INT64; Sample values: ['1', 'None', '1', '0', '1']; Description: Valid values: -1 to 4 Validity of the actual tsunami occurrence is indicated by a numerical rating of the reports of that event:  4 = definite tsunami 3 = probable tsunami 2 = questionable tsunami 1 = very doubtful tsunami 0 = event that only caused a seiche or disturbance in an inland river -1 = erroneous entry)
+    cause_code (Type: INT64; Sample values: ['0', 'None', '0', '1', '0']; Description: Valid values: 0 to 11 The source of the tsunami:  0 = Unknown 1 = Earthquake 2 = Questionable Earthquake 3 = Earthquake and Landslide 4 = Volcano and Earthquake 5 = Volcano, Earthquake, and Landslide 6 = Volcano 7 = Volcano and Landslide 8 = Landslide 9 = Meteorological 10 = Explosion 11 = Astronomical Tide)
+    location_name (Type: STRING; Sample values: ['MEDITERRANEAN SEA', 'None', 'WEST CORNWALL, ENGLAND', 'DOVER STRAITS, ENGLAND', 'ENGLAND']; Description: The Country, State, Province or Island where the tsunami source occurred (For example enter: Japan or Honshu) This is only an approximate geographic location. Events prior to 1900 were not instrumentally located, therefore, the location given is based on the latitude and longitude of the city where the maximum effects occurred. If there are different spellings of a city name the additional names are in parentheses.)
+    region_code (Type: INT64; Sample values: ['50', 'None', '73', '73', '73']; Description: Regional boundaries are based on frequency of occurrence of tsunamigenic events, geophysical relations, risk in distant areas and political justification. 77 =	West Coast of Africa 78 =	Central Africa 73 =	Northeast Atlantic Ocean 72 =	Northwest Atlantic Ocean 70 =	Southeast Atlantic Ocean 71 =	Southwest Atlantic Ocean 75 =	E. Coast USA and Canada, St Pierre and Miquelon 76 =	Gulf of Mexico 74 =	Caribbean Sea 40 =	Black Sea and Caspian Sea 50 =	Mediterranean Sea 30 =	Red Sea and Persian Gulf 60 =	Indian Ocean (including west coast of Australia) 87 =	Alaska (including Aleutian Islands) 84 =	China, North and South Korea, Philippines, Taiwan 81 =	E. Coast Australia, New Zealand, South Pacific Is. 80 =	Hawaii, Johnston Atoll, Midway I 83 =	E. Indonesia (Pacific Ocean) and Malaysia 82 =	New Caledonia, New Guinea, Solomon Is., Vanuatu 86 =	Kamchatka and Kuril Islands 85 =	Japan 88 =	West Coast of North and Central America 89 =	West Coast of South America)
+    iida (Type: FLOAT64; Sample values: ['nan', 'nan', 'nan', 'nan', 'nan']; Description: Valid values: -5 to 10 Tsunami magnitude (M) is defined by Iida and others (1967) as  M = log2h, where "h" is the maximum runup height of the wave.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.wind_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['32.49', '32.49', '32.6', '32.55', '32.6']; Description: Latitude to two decimal places)
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-19 22:54:00+00:00', '2019-02-12 18:11:00+00:00', '2019-03-03 20:22:00+00:00', '2019-03-26 00:13:00+00:00', '2019-06-07 17:56:00+00:00']; Description: Timestamp in UTC)
+    time (Type: STRING; Sample values: ['2254', '1811', '2022', '0013', '1756']; Description: Hour in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-85.18', '-85.13', '-85.24', '-85.1', '-85.42']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_tsunami.historical_runups
+[
+    month (Type: INT64; Sample values: ['11', '12', '12', '8', '9']; Description: Valid values: 1-12 The Date and Time are given in Universal Coordinated Time (also known as Greenwich Mean Time). The local date may be one day different.)
+    year (Type: INT64; Sample values: ['1867', '1917', '1917', '1868', '1918']; Description: Valid values: -2000 to Present Format +/-yyyy (-is B.C, +is A.D.)  The Date and Time are given in Universal Coordinated Time (also known as Greenwich Mean Time). The local date may be one day different.)
+    id (Type: INT64; Sample values: ['942', '9647', '9946', '1004', '1787']; Description: The unique numeric identifier of the record.)
+    tsevent_id (Type: INT64; Sample values: ['966', '2792', '2792', '983', '1457']; Description: The unique numeric identifier of the tsunami source event record that links the runup with the event.)
+    location_name (Type: STRING; Sample values: ['ST. CROIX:  FREDERIKSTED', 'TUFTS COVE, NOVA SCOTIA', 'TURTLE GROVE, NOVA SCOTIA', 'TUPUNGA, CHATHAM IS.', 'OPASNAIA BAY, URUP I,  KURILSKIYE']; Description: The location (city, state or island) where the tsunami effects were observed.)
+    region_code (Type: INT64; Sample values: ['74', '75', '75', '81', '86']; Description: Regional boundaries are based on frequency of occurrence of tsunamigenic events, geophysical relations, risk in distant areas and political justification. 77 =	West Coast of Africa 78 =	Central Africa 73 =	Northeast Atlantic Ocean 72 =	Northwest Atlantic Ocean 70 =	Southeast Atlantic Ocean 71 =	Southwest Atlantic Ocean 75 =	E. Coast USA and Canada, St Pierre and Miquelon 76 =	Gulf of Mexico 74 =	Caribbean Sea and Bermuda 40 =	Black Sea and Caspian Sea 50 =	Mediterranean Sea 30 =	Red Sea and Persian Gulf 60 =	Indian Ocean (including west coast of Australia) 87 =	Alaska (including Aleutian Islands) 84 =	China, North and South Korea, Philippines, Taiwan 81 =	E Coast Australia, New Zealand, South Pacific Is. 80 =	Hawaii, Johnston Atoll, Midway I 83 =	E. Indonesia (Pacific Ocean) and Malaysia 82 =	New Caledonia, New Guinea, Solomon Is., Vanuatu 86 =	Kamchatka and Kuril Islands 85 =	Japan 88 =	West Coast of North and Central America 89 =	West Coast of South America)
+    type_measurement_id (Type: INT64; Sample values: ['1', '1', '1', '1', '1']; Description: Valid values: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10  See text below for more information. 1 = Eyewitness measurement 5 = Runup Height, Post-tsunami survey measurement 4 = Water height, Post-tsunami survey measurement 8 = Water height in harbor, Post-tsunami survey measurement 10 = Flow Depth, Post-tsunami survey measurement 9 = Splash mark, Post-tsunami survey measurement 2 = Tide-gauge measurement 3 = Deep ocean gauge 6 = Atmospheric Wave 7 = Seiche)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.wind_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['32.54', '32.46', '32.49', '32.46', '30.52']; Description: Latitude to two decimal places)
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-19 20:17:00+00:00', '2019-02-12 16:36:00+00:00', '2019-03-03 19:25:00+00:00', '2019-06-26 03:15:00+00:00', '2019-04-19 00:33:00+00:00']; Description: Timestamp in UTC)
+    time (Type: STRING; Sample values: ['2017', '1636', '1925', '0315', '0033']; Description: Hour in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-86.6', '-86.45', '-86.69', '-86.43', '-87.47']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_significant_earthquakes.earthquakes
+[
+    month (Type: INT64; Sample values: ['None', '4', '7', 'None', '4']; Description: Month of the significant earthquake. Valid values: 1-12. The Date and Time are given in Universal Coordinated Time. The local date may be one day different.)
+    id (Type: INT64; Sample values: ['338', '771', '7889', '6697', '6013'])
+    location_name (Type: STRING; Sample values: ['UNITED KINGDOM:  BRITIAN', 'UNITED KINGDOM:  DOVER STRAITS', 'UNITED KINGDOM:  ENGLAND: ST. MARY, SCILLY ISLANDS', 'HAWAII', 'BOSTON AND SALEM, MASSACHUSETTS']; Description: Earthquake Location Name. The location (city, state or island) where the earthquake was located.)
+    region_code (Type: INT64; Sample values: ['120', '120', '120', '150', '150']; Description: Region Name (Code). Regional boundaries were assigned based on the frequency of occurrence of earthquakes, geophysical relations, risk in distant areas and political justification. The codes are defined as: 10 = Central, Western and S. Africa 15 = Northern Africa 20 = Antarctica 30 = East Asia 40 = Central Asia and Caucasus 50 = Kamchatka and Kuril Islands 60 = S. and SE. Asia and Indian Ocean 70 = Atlantic Ocean 80 = Bering Sea 90 = Caribbean 100 = Central America 110 = Eastern Europe 120 = Northern and Western Europe 130 = Southern Europe 140 = Middle East 150 = North America and Hawaii 160 = South America 170 = Central and South Pacific)
+    year (Type: INT64; Sample values: ['1048', '1580', '1757', '1500', '1668']; Description: Century and year of the significant earthquake. Format +/-yyyy (-is B.C, +is A.D.). Valid values: -2000 to present. The Date and Time are given in Universal Coordinated Time.)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_detection_readme
+[
+    description (Type: STRING; Sample values: ['Name of array attached directly to the separator.', 'Name of array attached directly to the tow cable.', 'End time for the provided array parameters in UTC time. ', 'Start time for the provided array parameters in UTC time. ', 'Start time for provided array parameters in "ship local" time.'])
+    table (Type: STRING; Sample values: ['x_Array', 'x_Array', 'x_Array', 'x_Array', 'x_Array'])
+    field (Type: STRING; Sample values: ['Array2', 'Array1', 'ArrayEnd_UTC', 'ArrayStart_UTC', 'ArrayStart_ShipLocal'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_gsod.stations
+[
+    name (Type: STRING; Sample values: ['WXPOD 7018                   ', 'WXPOD 7026                   ', 'WXPOD 7070                   ', 'WXPOD8278                    ', 'WXPOD 8318                   '])
+    begin (Type: STRING; Sample values: ['20110309', '20120713', '20140923', '20100519', '20100421'])
+    end (Type: STRING; Sample values: ['20130730', '20170822', '20150926', '20120323', '20100421'])
+    call (Type: STRING; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    country (Type: STRING; Sample values: ['None', 'AF', 'AF', 'AF', 'AF'])
+    elev (Type: STRING; Sample values: ['+7018.0', '+7026.0', '+7070.0', '+1156.7', '+8318.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_species_lookup
+[
+    code (Type: STRING; Sample values: ['98', '96', '79', '78', '77'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_sette_gps
+[
+    utc_time (Type: TIMESTAMP; Sample values: ['2017-08-11 20:19:19+00:00', '2017-08-11 20:18:05+00:00', '2017-08-11 20:19:59+00:00', '2017-08-11 20:19:39+00:00', '2017-08-11 20:19:08+00:00'])
+    latitude (Type: FLOAT64; Sample values: ['24.0', '24.0', '24.0', '24.0', '24.0'])
+    local_time (Type: DATETIME; Sample values: ['2017-08-11 10:19:19', '2017-08-11 10:18:05', '2017-08-11 10:19:59', '2017-08-11 10:19:39', '2017-08-11 10:19:08'])
+    speed (Type: FLOAT64; Sample values: ['10.26', '10.37', '10.26', '10.6', '10.49'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.hail_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['32.67', '32.5', '30.27', '30.38', '30.39']; Description: Latitude to two decimal places)
+    time (Type: STRING; Sample values: ['1501', '2330', '0820', '0840', '1256']; Description: Hour in UTC)
+    timestamp (Type: TIMESTAMP; Sample values: ['2021-04-09 15:01:00+00:00', '2021-05-03 23:30:00+00:00', '2021-04-10 08:20:00+00:00', '2021-04-10 08:40:00+00:00', '2021-04-15 12:56:00+00:00']; Description: Timestamp in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-86.42', '-86.44', '-87.59', '-87.48', '-87.72']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.hail_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['4.23', '32.67', '32.6', '32.54', '32.54']; Description: Latitude to two decimal places)
+    timestamp (Type: TIMESTAMP; Sample values: ['2021-05-26 23:28:00+00:00', '2021-04-24 21:22:00+00:00', '2021-12-30 20:05:00+00:00', '2021-12-30 20:28:00+00:00', '2021-12-30 20:47:00+00:00']; Description: Timestamp in UTC)
+    time (Type: STRING; Sample values: ['2328', '2122', '2005', '2028', '2047']; Description: Hour in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-10.32', '-85.51', '-85.61', '-85.37', '-85.09']; Description: Longitude to two decimal places)
+    location (Type: STRING; Sample values: ['10 WEST HEMINGFORD', '1 SSW EW SHELL FISHERIE', '1 W LOACHAPOKA', 'BEAUREGARD', 'SMITHS STATION']; Description: Location of report)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.tornado_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['31.62', '32.49', '32.52', '32.85', '33.06']; Description: Latitude to two decimal places)
+    time (Type: STRING; Sample values: ['1040', '2004', '2052', '2058', '2344']; Description: Hour in UTC)
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-04 10:40:00+00:00', '2019-01-19 20:04:00+00:00', '2019-01-19 20:52:00+00:00', '2019-01-19 20:58:00+00:00', '2019-02-23 23:44:00+00:00']; Description: Timestamp in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-85.28', '-86.73', '-86.24', '-86.15', '-88.31']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_preliminary_severe_storms.tornado_reports
+[
+    latitude (Type: FLOAT64; Sample values: ['31.62', '32.49', '32.52', '32.85', '33.06']; Description: Latitude to two decimal places)
+    timestamp (Type: TIMESTAMP; Sample values: ['2019-01-04 10:40:00+00:00', '2019-01-19 20:04:00+00:00', '2019-01-19 20:52:00+00:00', '2019-01-19 20:58:00+00:00', '2019-02-23 23:44:00+00:00']; Description: Timestamp in UTC)
+    time (Type: STRING; Sample values: ['1040', '2004', '2052', '2058', '2344']; Description: Hour in UTC)
+    longitude (Type: FLOAT64; Sample values: ['-85.28', '-86.73', '-86.24', '-86.15', '-88.31']; Description: Longitude to two decimal places)
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_2020_1705_odontocete_detections
+[
+    latitude (Type: FLOAT64; Sample values: ['21.03715833', '21.02911', '21.71451833', '19.86543667', '22.14156833'])
+    sighting_number (Type: STRING; Sample values: ['84', '84/85', '129', '47', '143'])
+]
+**Some other tables have the similar structure: [dclde_2020_1706_odontocete_detections]**
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_historic_severe_storms.nws_forecast_regions
+[
+    name (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    shortname (Type: STRING; Sample values: ['Keweenaw', 'Ontonagon', 'Houghton', 'Baraga', 'Marquette'])
+    lat (Type: FLOAT64; Sample values: ['47.6104', '46.6644', '47.0531', '46.6626', '46.4314'])
+    time_zone (Type: STRING; Sample values: ['E', 'E', 'E', 'E', 'E'])
+]
+
+--------------------------------------------------
+
+###Table full name: bigquery-public-data.noaa_pifsc_metadata.dclde_lasker_gps
+[
+    utc_time (Type: TIMESTAMP; Sample values: ['0017-09-05 00:09:00+00:00', '0017-09-05 00:57:00+00:00', '0017-09-05 00:57:00+00:00', '0017-09-05 00:57:00+00:00', '0017-09-05 00:57:00+00:00'])
+    latitude (Type: FLOAT64; Sample values: ['20.0', '20.0', '20.0', '20.0', '20.0'])
+    local_time (Type: DATETIME; Sample values: ['0017-09-04 14:09:00', '0017-09-04 14:57:00', '0017-09-04 14:57:00', '0017-09-04 14:57:00', '0017-09-04 14:57:00'])
+]
+
+--------------------------------------------------
+
