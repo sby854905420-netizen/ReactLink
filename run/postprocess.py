@@ -112,4 +112,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--log_path', type=str, default="log_v3_topn100")
     args = parser.parse_args()
+    print("Merging candidate schemas...")
     merge(log_path=args.log_path, is_preprocess=True)
+    print("Merging completed.")
