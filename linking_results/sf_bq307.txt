@@ -1,0 +1,324 @@
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.BADGES
+[
+    user_id (Type: NUMBER; Sample values: ['9846917', '9883762', '5470122', '9898077', '9910977'])
+    date (Type: NUMBER; Sample values: ['1527259383990000', '1527907395610000', '1528196038383000', '1528207278410000', '1528404148933000'])
+    id (Type: NUMBER; Sample values: ['28291962', '28374828', '28405886', '28408527', '28441480'])
+    name (Type: TEXT; Sample values: ['Informed', 'Informed', 'Informed', 'Informed', 'Informed'])
+    class (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    tag_based (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.USERS
+[
+    id (Type: NUMBER; Sample values: ['4391515', '4398511', '4406201', '4410767', '4418661'])
+    last_access_date (Type: NUMBER; Sample values: ['1647675999303000', '1458871817860000', '1565563339513000', '1420140172070000', '1536030205753000'])
+    creation_date (Type: NUMBER; Sample values: ['1419420461190000', '1419710146767000', '1419961433747000', '1420140172070000', '1420426722493000'])
+    display_name (Type: TEXT; Sample values: ['Jaideep Datta', 'Roland Zhou', 'Nizar Driouich', 'TC Abdurrahman Canbulat', 'Graphire'])
+    reputation (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    up_votes (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    age (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    views (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    about_me (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    location (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    website_url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    profile_image_url (Type: TEXT; Sample values: ['https://www.gravatar.com/avatar/9a78031187f403ddbdd4a98498324819?s=128&d=identicon&r=PG&f=1', 'https://graph.facebook.com/100002177295288/picture?type=large', 'https://graph.facebook.com/1582610258/picture?type=large', 'https://graph.facebook.com/545739678/picture?type=large', 'https://lh3.googleusercontent.com/-zNiP-aDTfz4/AAAAAAAAAAI/AAAAAAAAADU/_nz_DoTPa2k/photo.jpg'])
+    down_votes (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POST_HISTORY
+[
+    user_id (Type: NUMBER; Sample values: ['3128057', '3128057', '506873', '506873', '1031417'])
+    creation_date (Type: NUMBER; Sample values: ['1387754944993000', '1387754944993000', '1387400631630000', '1387904289427000', '1388227526490000'])
+    id (Type: NUMBER; Sample values: ['54201121', '54201122', '53944729', '54309014', '54494550'])
+    post_history_type_id (Type: NUMBER; Sample values: ['2', '1', '3', '1', '5'])
+    post_id (Type: NUMBER; Sample values: ['20735186', '20735186', '20668336', '20764316', '20812985'])
+    revision_guid (Type: TEXT; Sample values: ['8b6aaedc-d207-4081-97a9-7035207f386d', '8b6aaedc-d207-4081-97a9-7035207f386d', 'f61e987f-c4bd-424d-9b1f-b54d4c3a34b5', '7f13aafd-4c01-4b0f-9774-b7785dcc257c', '68ca3962-da5a-4592-8766-307c297f5d84'])
+    text (Type: TEXT; Sample values: ['I am converting tutorials for students (2nd language speakers, 9 to 12 yrs old) to access in an offline / intranet context.  Hence the websites I would like them to use are unavailable.\n\nI am trying to mimic the \'alter the code\' style of tutorials for helping with JavaScript / HTML5 Canvas.\n\nThis works :\n\n    <canvas id="myCanvas" height="400px" width="400px"></canvas>\n    <script>\n    function update(){\n       eval(document.getElementById(\'demoScript\').value);\n    }\n    \n    var ctx = document.getElementById("myCanvas").getContext("2d");\n    \n    </script>\n    <textarea id="demoScript">\n    ctx.fillRect(100,100,50,50);\n    </textarea>\n    <input type="button" value="update" onClick="update()">\n\n... but everything I have read says eval() is a bad idea.\n\nI can get the textarea content to pop-up in a div if I want, but I can\'t get it to pop-up in a script anywhere ... leaving me with just eval().\n\nOptions and recommendations for alternatives please ... or this is as good as it gets ?', 'alternative to eval() in DOM manipulation', '<javascript><jquery>', 'PHP $_FILES superglobal only containing name', "Let's assume I have `N` git projects, which combined together define a release/ repository `R`.\n\nWhen `R` pass a sanity test, `T` we name it a good `R` and if it fails we name it a bad `R`.\n\nI want to write a script, and in the future push it to [google repo][1], which generalizes the `git bisect` mechanism for a repository `R` defined by `N` git projects.\n\nThe aim is to find the latest good `R` named best `R`.\n\n\n\n\n  [1]: https://code.google.com/p/git-repo/"])
+    comment (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'added 2 characters in body'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.STACKOVERFLOW_POSTS
+[
+    score (Type: NUMBER; Sample values: ['3', '39', '1', '5', '14'])
+    creation_date (Type: NUMBER; Sample values: ['1345488922380000', '1384075370847000', '1343243633750000', '1277402054163000', '1341051808937000'])
+    id (Type: NUMBER; Sample values: ['12043418', '19888120', '11656918', '3112592', '11273340'])
+    owner_user_id (Type: NUMBER; Sample values: ['846892', '1232826', '400654', '73656', '11354'])
+    last_activity_date (Type: NUMBER; Sample values: ['1345489443110000', '1458102533000000', '1343243633750000', '1436303301943000', '1341051808937000'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent_id (Type: NUMBER; Sample values: ['12043365', '12165636', '11656868', '3112550', '11273313'])
+    last_edit_date (Type: NUMBER; Sample values: ['1345489443110000.0', '1458102533000000.0', 'nan', '1436303301943000.0', 'nan'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['846892.0', '1673391.0', 'nan', '63550.0', 'nan'])
+    tags (Type: TEXT; Sample values: ['', '', '', '', ''])
+    favorite_count (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    accepted_answer_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ["<pre><code>lis = ['fi' 'do' 'ca'] for item in lis: for name in glob.glob('*.html'): if item in name: with open(name) as k: </code></pre> <p>or create a list of all files first and then filter that list with every iteration of <code>list</code>:</p> <pre><code>&gt;&gt;&gt; names=glob.glob('*.html') &gt;&gt;&gt; lis=['fi''do''ca'] &gt;&gt;&gt; for item in lis: ... for name in filter(lambda x:item in xnames): ... with open('name') as k: </code></pre>", "<p>it's possible using Django ORM:</p> <p>here's what you should do:</p> <pre><code>from django.db.models import Sum total = ( Task.objects .filter(your-filter-here) .aggregate( total=Sum('progress' field= progress*estimated_days ) )['total'] ) </code></pre> <p>Note: if the two fields are of different types say <code>integer</code> &amp; <code>float</code> the type you want to return should be passed as the first parameter of <code>Sum</code></p> <p>It's a late answer but I guess it'll help someone looking for the same.</p>", '<p>Your code as-is works: <a href= http://jsfiddle.net/vWRAw/ rel= nofollow >http://jsfiddle.net/vWRAw/</a></p> <p>The json being returned from your temp-webserver however is JSON and not JSONP. If you want to request it as JSON remove the <code>?callback=?</code> however that would mean your temp webserver would need to be on the same domain as the page making the request.</p>', "<p>Reference arguments were originally invented AFAIK for one thing: <strong>operator overloading semantics</strong>. For example operator[] just must return a reference.</p> <p>It was then a subject of great debate whether the 'concealed pointer' should be used for anything else ever. </p> <p>Many development convention documents of many firms said never use references. If you need a pointer say so .</p> <p>However it was then discovered that references have one major advantage (no not the syntax sugar). It is this: a reference is guaranteed to be valid unless you work really hard to break it.</p> <p>Personally I still don't understand why I cannot do this in C++:</p> <pre><code>int a1 a2; int &amp;b = a1; &amp;b = a2; // Error. address of referenced is not an lvalue. Why?! </code></pre>", '<p><code>Ishoppingcart::addToCart()</code> states that the method does not take any parameter while the implementation <code>Shoppingcart::addToCart(Product $product)</code> requires that a parameter of type <code>Product</code> must be passed into the method. This means that both declarations are incompatible and while the implemented interface must be satisfied PHP throws the shown error.</p> <p>Solution would be to either change <code>Ishoppingcart::addToCart()</code> to <code>Ishoppingcart::addToCart(Product $product)</code> so that it requires a parameter of type <code>Product</code> or to change <code>Shoppingcart::addToCart(Product $product)</code> to allow no parameter to passed into the method: <code>Shoppingcart::addToCart(Product $product = null)</code>;</p> <p>The correct way depends on your application requirements.</p>'])
+    view_count (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.COMMENTS
+[
+    user_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    user_id (Type: NUMBER; Sample values: ['32632', '98642', '102896', '31326', '197229'])
+    score (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    creation_date (Type: NUMBER; Sample values: ['1264110960193000', '1264111921023000', '1264117573140000', '1264119787647000', '1264156166353000'])
+    id (Type: NUMBER; Sample values: ['2048980', '2049122', '2049812', '2050020', '2052751'])
+    post_id (Type: NUMBER; Sample values: ['2113099', '2113226', '2113685', '2113685', '2116559'])
+    text (Type: TEXT; Sample values: ["This Won't work for non-virtual methods, as it will return the name of the type that the method is declared and implemented in, (possibly up the inheritance chain), not the concrete type of the instance you are actually executing the code from.", 'I believe he was saying the opposite, that foo.get(i) can be a lot less efficient.  Think of LinkedList.  If you do a foo.get(i) on the middle of a LinkedList it has to traverse all the previous nodes to get to i.  An iterator, on the other hand, will keep a handle to the underlying data structure and will allow you to walk over the nodes one at a time.', 'Are you trying to estimate the life expectancy of your toilet seat hinges?', "Unless the man is married to and wants to stay married to the woman then any solution that leaved the toilet seat up after his use is moot.  Also the premise is badly flawed as some proportion of the man's toilet seat usage does require it to remain down.", 'Is that really any faster, with all those conditional logic tests? Multiplication is hardly inefficient on modern CPUs.'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_ANSWERS
+[
+    score (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    creation_date (Type: NUMBER; Sample values: ['1302952732137000', '1303285246993000', '1303348543150000', '1304042291093000', '1304072956473000'])
+    id (Type: NUMBER; Sample values: ['5686118', '5727069', '5738452', '5827093', '5830898'])
+    owner_user_id (Type: NUMBER; Sample values: ['155861', '697968', '679733', '521034', '211659'])
+    last_activity_date (Type: NUMBER; Sample values: ['1302954623957000', '1303285246993000', '1303352091643000', '1304044855097000', '1304072956473000'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_edit_date (Type: NUMBER; Sample values: ['1302954623957000.0', 'nan', '1303352091643000.0', '1304044855097000.0', 'nan'])
+    parent_id (Type: NUMBER; Sample values: ['5686086', '5726895', '5738395', '5826824', '5830868'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['155861.0', 'nan', '679733.0', '521034.0', 'nan'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>first do</p>\n\n<pre><code>// only for the GUY who didn\'t read the complete answer :(\n$param=addslashes($param); \n</code></pre>\n\n<p>then write code in simple HTML    </p>\n\n<pre><code>&lt;input type=\'button\' onclick="myFunc(&lt;?php echo $param?&gt;);" /&gt;\n</code></pre>\n\n<p><strong>Note:</strong> <code>mysql_real_escape_string</code> works when we handle with mysqltry with <code>addslashes</code></p>', '<p>I agree with Noel</p>\n\n<p>There are many ways to achieve what you are trying. One way to do this is using <code>System.Reflection</code></p>\n\n<p>like this in formA </p>\n\n<pre><code> Assembly a = Assembly.LoadFrom("WindowsApplication1.exe");\n        Form frm = a.CreateInstance("WindowsApplication1.FormB") as Form;\n        frm.MdiParent = this;\n        frm.Show();\n</code></pre>', "<h2>Example</h2>\n\n<pre><code>$dt = time();   // today... or use $dt = strtotime('2010-04-20'); to set custom start date.\n$past_days = 7; // number of past days\n$filesindir = dirTxt('your_dir');\n\nfor ($i=0; $i&lt;=$past_days; $i++) {\n  $filename = 'abcd_' . date('Y_m_d', $dt) . '.txt';\n  $files[] = $filename;\n  $dt = strtotime('-1 day', $dt);\n  } \n\n$files = array_intersect($filesindir, $files);\n\nprint_r($files);\n</code></pre>\n\n<h2>Output (might be like this, depends of $filesindir array)</h2>\n\n<pre><code>Array\n(\n    [0] =&gt; abcd_2011_04_21.txt\n    [1] =&gt; abcd_2011_04_20.txt\n    [2] =&gt; abcd_2011_04_18.txt\n    [3] =&gt; abcd_2011_04_15.txt\n)\n</code></pre>", '<p>Signal handlers mostly work in Python. But there are some problems. One is that your handler won\'t run until the interpreter re-enters it\'s bytecode interpreter. if your program is blocked in a C function the signal handler is not called until it returns. You don\'t show the code where you are waiting. Are you using signal.pause()?</p>\n\n<p>Another is that if you are in a system call you will get an exception after the singal handler returns. You need to wrap all system calls with a retry handler (at least on Linux). </p>\n\n<p>It\'s interesting that you are writing an init replacement... That\'s something like a process manager. The <a href="http://code.google.com/p/pycopia/source/browse/trunk/process/pycopia/proctools.py" rel="nofollow">proctools</a> code might interest you, since it does handle SIGCHLD. </p>\n\n<p>By the way, this code:</p>\n\n<pre><code>import signal\n\ndef SigTest(SIG, FRM):\n    print "SIGINT Caught"\n\nsignal.signal(signal.SIGHUP, SigTest)\n\nwhile True:\n    signal.pause()\n</...(truncated)', '<p>Have you considered using <code>lexical_cast</code> from boost?</p>\n\n<p><a href="http://www.boost.org/doc/libs/1_46_1/libs/conversion/lexical_cast.htm" rel="nofollow">http://www.boost.org/doc/libs/1_46_1/libs/conversion/lexical_cast.htm</a></p>\n\n<p>Edit: btw, the <code>clear()</code> should be redundant.</p>'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['14', '14', '14', '14', '14'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_PRIVILEGE_WIKI
+[
+    score (Type: NUMBER; Sample values: ['1', '1'])
+    creation_date (Type: NUMBER; Sample values: ['1361967204423000', '1368022830940000'])
+    id (Type: NUMBER; Sample values: ['15111874', '16443138'])
+    last_activity_date (Type: NUMBER; Sample values: ['1361967204423000', '1368022830940000'])
+    owner_user_id (Type: NUMBER; Sample values: ['-1', '-1'])
+    last_edit_date (Type: NUMBER; Sample values: ['1361967204423000', '1368022830940000'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['1583', '1583'])
+    post_type_id (Type: NUMBER; Sample values: ['8', '8'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None'])
+    body (Type: TEXT; Sample values: ["<h3>What is edit questions and answers?</h3>\n\n<p>We believe in the power of community editing. That means once you've generated enough reputation, we trust you to edit <em>anything</em> in the system without it going through the peer review system. Not just your posts—<em>anyone's posts!</em></p>\n\n<h3>When should I edit posts?</h3>\n\n<p>Any time you feel you can make the post better, and are inclined to do so. Editing is encouraged!</p>\n\n<p>Some common reasons to edit are:</p>\n\n<ul>\n<li>to fix grammatical or spelling mistakes</li>\n<li>to clarify the meaning of a post without changing it</li>\n<li>to correct minor mistakes or add addendums / updates as the post ages</li>\n<li>to add related resources or hyperlinks</li>\n</ul>\n\n<p>Try to make the post substantively better when you edit, not just change a single character. Tiny, trivial edits are discouraged.</p>\n\n<h3>How do I edit posts?</h3>\n\n<p>The <code>edit</code> link is available under each post.</p>\n\n<h3>What happens when I edit a pos...(truncated)", '<h3>What is retagging a question?</h3>\n\n<p>A tag is a keyword or label that categorizes your question with other, similar questions. When you retag a question, you\'re correcting the existing tags on the question. </p>\n\n<p>When you receive this privilege you get the ability to retag posts without having to go through the peer review system (this applied to edits that change tags and <em>nothing else</em>). When you reach 2000 reputation <a href="/privileges/edit">all of your edits will bypass the peer review system</a>.</p>\n\n<h3>When should I retag a question?</h3>\n\n<p>Questions should be tagged correctly so others can more easily find them and answer them. Retag when a community member has:</p>\n\n<ul>\n<li>chosen incorrect tags that don\'t properly represent the actual question topic</li>\n<li>added excess, superfluous tags</li>\n<li>created an inappropriate new tag</li>\n<li>made a mistake with tags, such as using spaces instead of hyphens</li>\n</ul>\n\n<h3>How do I retag a question?</h3>\n\n<p...(truncated)'])
+    community_owned_date (Type: TEXT; Sample values: ['None', 'None'])
+    view_count (Type: TEXT; Sample values: ['None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POST_LINKS
+[
+    creation_date (Type: NUMBER; Sample values: ['1394603209690000', '1394606380723000', '1394611923473000', '1394618690033000', '1394621954830000'])
+    id (Type: NUMBER; Sample values: ['880002256', '880016624', '880046283', '880086523', '880107154'])
+    post_id (Type: NUMBER; Sample values: ['22342898', '22343608', '22341042', '22347936', '22349258'])
+    related_post_id (Type: NUMBER; Sample values: ['21111070', '2743989', '5596747', '7606681', '9191388'])
+    link_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_QUESTIONS
+[
+    score (Type: NUMBER; Sample values: ['7', '7', '8', '8', '8'])
+    creation_date (Type: NUMBER; Sample values: ['1301581207630000', '1301678181983000', '1296458999860000', '1296595798163000', '1296637482200000'])
+    owner_user_id (Type: NUMBER; Sample values: ['302677', '45580', '56648', '182360', '148496'])
+    id (Type: NUMBER; Sample values: ['5501349', '5516641', '4848534', '4868170', '4872476'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_activity_date (Type: NUMBER; Sample values: ['1301584636283000', '1451160022947000', '1357233622743000', '1338570435463000', '1371169408853000'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_edit_date (Type: NUMBER; Sample values: ['1301584153647000.0', 'nan', '1296556692013000.0', '1297330614700000.0', 'nan'])
+    accepted_answer_id (Type: NUMBER; Sample values: ['5501615.0', '5516812.0', 'nan', '4868352.0', '4872493.0'])
+    post_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['302677.0', 'nan', '56648.0', '182360.0', 'nan'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tags (Type: TEXT; Sample values: ['c#|.net|desktop-application', 'c++|embedded|battery', 'visual-studio-2010|resharper|intellisense', '.net|security|encryption|obfuscation|tpm', 'javascript|jquery'])
+    title (Type: TEXT; Sample values: ["Open website in the user's default browser without letting them launch anything else?", 'Smoothing function for battery voltage display to reduce spikes in embedded system', 'Resharper (or Visual Studio) auto completion', 'Protecting a system deployed in a "hostile" environment', 'Get first and last class with jQuery'])
+    body (Type: TEXT; Sample values: ['<p>I would like to open a website in a user\'s default web browser, however since the url is user-defined I would also like to prevent them from doing anything other than opening a website.</p>\n\n<p>I have seen people use <code>Process.Start(url);</code> to open a site in the default browser, but since the url is user-defined I want to be sure they don\'t enter something like a script location and execute it. </p>\n\n<p>I also don\'t want to use <code>Process.Start("iexplore", url);</code> since I would rather open the link in the user\'s default browser.</p>\n\n<p>Is there a way I can open a website in the user\'s default browser, without letting them launch any other process or command?</p>\n\n<p><strong>EDIT</strong></p>\n\n<p>For example, I don\'t want users to be able to enter <code>C:\\Windows\\Notepad.exe</code> into the Customer\'s Website field and open Notepad when they click the Website link</p>\n\n<p><strong>EDIT #2</strong></p>\n\n<p>I am <strong>not</strong> looking for a way to filter user\'s ...(truncated)', "<p>Reading a battery voltage in an embedded device.  However, the actual voltage varies greatly depending upon system load.  We need a method to reduce the fluctuation of the voltage to display the best value.</p>\n\n<p>Currently, we're using a rolling/moving average.  However, over the last 15 readings, the result still fluctuates too much.</p>\n\n<p>In reading about smoothing algorithms, it appears that b-splines, kernel filters, or some other smoothing algorithms would be ideal.  However, I can't find a simple example that doesn't use numpy or intrinsic functions within mathcad or some such.</p>\n\n<p>Anybody know of a simple-to-implement function that could help with this?  This is a C++ project (using Qt 4.5) with just the bar minimum of libraries.  I'd prefer to stay in the integer domain (showing the voltage in millivolts from 3300-4200).</p>\n\n<p>TIA\nMike</p>", '<p>I\'m using VS 2010 with resharper. If I have a class called ConfigParserTests and then write </p>\n\n<p><code>new ConfigParser( </code></p>\n\n<p>the code will auto complete to </p>\n\n<p><code>new ConfigParserTests() </code></p>\n\n<p>which is not what I want. Any idea how to disable this nasty feature.</p>\n\n<p>[Edit] </p>\n\n<p>What is want is to write out  </p>\n\n<p><code>new ConfigParser()</code> </p>\n\n<p>without pressing "Esc". In this case I am using TDD so ConfigParser does not exist.</p>\n\n<p>[/Edit]</p>\n\n<p>I have been looking around in both the resharper and VS intellisense menus without finding anything helpful.</p>', "<p>At my company we are developing a large system, comprised of several servers.\nThe system is comprised from about 5 logical components. Data is stored in XMLs, MS SQL, and SQLite. It's a .Net system(mostly) ,the components communicate using WCF, and some custom UDP.\nClients access the system mostly through the custom UDP or WEB(ASP.NET &amp; Silverlight). </p>\n\n<p>Protecting the communication is easy, some SSL, and some security on the WCF and we're done.</p>\n\n<p>The main problem we are facing is that the system needs to be deployed on a client's site, a client that we dont necessarily trust. We need to defend the data on the servers, and the software itself from reverse engineering. Both are crucially important to us.</p>\n\n<p>Also we need a kill switch, i would like something that destroys the data and the software, upon command, or if unable to call home for a certain period of time.</p>\n\n<p>The direction that i was thinking of is using TPM, or something alike - some hardware encry...(truncated)", '<p>Might be a newbie question. I have a code line like this:</p>\n\n<pre><code>&lt;div class="template active"&gt;\n</code></pre>\n\n<p>I need to get each class for itself.</p>\n\n<p><strong>I tried this code:</strong></p>\n\n<pre><code>$(this).attr("class");\n</code></pre>\n\n<p>From that code I get "template active". What I need is one string with "template" and another with "active".</p>\n\n<p>What is the best jQuery function for that? Example?</p>'])
+    view_count (Type: NUMBER; Sample values: ['13116', '3023', '6904', '764', '8548'])
+    answer_count (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+    favorite_count (Type: NUMBER; Sample values: ['nan', '2.0', '1.0', '2.0', '4.0'])
+    comment_count (Type: NUMBER; Sample values: ['19', '0', '0', '2', '2'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_TAG_WIKI
+[
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    creation_date (Type: NUMBER; Sample values: ['1298763517057000', '1300540917987000', '1300835798970000', '1300910873303000', '1302648894283000'])
+    owner_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_activity_date (Type: NUMBER; Sample values: ['1307203546443000', '1355950093273000', '1311717572400000', '1300910873303000', '1302650078190000'])
+    id (Type: NUMBER; Sample values: ['5130474', '5362329', '5399041', '5410995', '5642566'])
+    owner_display_name (Type: TEXT; Sample values: ['user290102', 'user614868', 'user806549', 'user1228', 'user131441'])
+    last_edit_date (Type: NUMBER; Sample values: ['1307203546443000', '1355950093273000', '1311717572400000', '1300910873303000', '1302650078190000'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['user290102', 'user195488', 'user806549', 'user1228', 'user131441'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>Ramaze is a web application framework created by Michael Fellinger (also known as manveru) for Ruby. The philosophy of it could be expressed in a mix of <a href="http://en.wikipedia.org/wiki/KISS_principle" rel="nofollow">KISS</a> and <a href="http://en.wikipedia.org/wiki/Principle_of_least_surprise" rel="nofollow">POLS</a>, trying to make simple things simple and complex things possible. This of course is nothing new to anyone who knows some Ruby, but is often forgotten in a chase for new functionality and features. Ramaze only tries to give you the ultimate tools, but you have to use them yourself to achieve perfect custom-tailored results. </p>\n\n<p>Another one of the goals during development of Ramaze was to make every part as modular and therefore reusable as possible, not only to provide a basic understanding after the first glance, but also to make it as simple as possible to reuse parts of the code. </p>\n\n<p>The original purpose of Ramaze was to act as a kind of framework to ...(truncated)', '<p>SmartGWT is based on the powerful and mature SmartClient library. SmartGWT provides a wide-array of rich components that are based on GWT. In addition to SmartGWT LGPL, Pro &amp; Enterprise editions of Smart GWT are available with additional features &amp; tools, as well as commercial support. </p>\n\n<p>SmartGWT is compatible with GWT 1.5.3, GWT 1.6.4, GWT 1.7.x and GWT 2.x </p>\n\n<p>More info at : <a href="http://www.smartclient.com/smartgwt/" rel="nofollow">www.smartclient.com/smartgwt/</a></p>', '<p>Questions in this category contains all aspects of development relating to poker - ie. hand evaluation, game engine, statistics, etc.</p>', '<p><a href="http://msdn.microsoft.com/en-us/library/system.windows.automation.automationelement.aspx" rel="nofollow">AutomationElement</a> represents a UI Automation element in the UI Automation tree, and contains values used as identifiers by UI Automation client applications.  It is found within the <a href="http://msdn.microsoft.com/en-us/library/ms590934.aspx" rel="nofollow">System.Windows.Automation</a> namespace.</p>', '<p>Hpricot is a Ruby library intended for parsing HTML. Until the release of Nokogiri, a competing HTML and css parser, Hpricot was the defacto HTML parser for the ruby community.</p>'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.VOTES
+[
+    creation_date (Type: NUMBER; Sample values: ['1384473600000000', '1384473600000000', '1384560000000000', '1384560000000000', '1384560000000000'])
+    id (Type: NUMBER; Sample values: ['57399609', '57404642', '57410834', '57417663', '57429609'])
+    vote_type_id (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    post_id (Type: NUMBER; Sample values: ['20009129', '18740897', '20012668', '8667195', '267469'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_WIKI_PLACEHOLDER
+[
+    score (Type: NUMBER; Sample values: ['0', '1'])
+    creation_date (Type: NUMBER; Sample values: ['1571972295170000', '1357842193957000'])
+    owner_user_id (Type: NUMBER; Sample values: ['-1', '-1'])
+    last_activity_date (Type: NUMBER; Sample values: ['1591680744067000', '1358385729657000'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None'])
+    id (Type: NUMBER; Sample values: ['58551602', '14264713'])
+    last_edit_date (Type: NUMBER; Sample values: ['1591680744067000', '1358385729657000'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['584192', '811'])
+    post_type_id (Type: NUMBER; Sample values: ['7', '7'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None'])
+    community_owned_date (Type: TEXT; Sample values: ['None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None'])
+    body (Type: TEXT; Sample values: ['<p><br></p>\n\n<h2>Welcome to the Stack Overflow Help Center!</h2>\n\n<p>If you are unable to find the answer you need here, you can also search for or ask a question about Stack Overflow on <a href="https://meta.stackoverflow.com">Meta</a>!</p>\n\n<p><a href="https://meta.stackoverflow.com/questions/tagged/faq?tab=Votes">Frequently Asked Questions</a> on Meta:<br></p>\n\n<ul>\n  <li><a href="https://meta.stackoverflow.com/q/334822">How do I ask and answer homework questions?</a>\n  <li><a href="https://meta.stackoverflow.com/q/261592">How much research effort is expected of Stack Overflow users?</a>\n  <li><a href="https://meta.stackoverflow.com/q/269653">Why did I gain/lose reputation?</a>\n  <li><a href="https://meta.stackoverflow.com/q/252252">What can I do when I think my question is not a duplicate?</a>\n  <li><a href="https://meta.stackoverflow.com/q/255583">What can I do when getting “We are no longer accepting questions/answers from this account”?</a>\n  <li><i>see also</i> <a href="https:/...(truncated)', '<ul>\n    <li>Specific programming problems</li>\n    <li>Software algorithms</li>\n    <li>Coding techniques</li>\n    <li>Software development tools</li></ul>'])
+    view_count (Type: TEXT; Sample values: ['None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.TAGS
+[
+    id (Type: NUMBER; Sample values: ['2136', '8287', '9136', '15213', '25272'])
+    count (Type: NUMBER; Sample values: ['256', '256', '256', '256', '256'])
+    tag_name (Type: TEXT; Sample values: ['regsvr32', 'rpg', 'dbexpress', 'fileserver', 'bad-alloc'])
+    excerpt_post_id (Type: NUMBER; Sample values: ['10051236', '7080550', '7663373', '9275976', '14261589'])
+    wiki_post_id (Type: NUMBER; Sample values: ['10051235', '7080549', '7663372', '9275975', '14261588'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_ORPHANED_TAG_WIKI
+[
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    creation_date (Type: NUMBER; Sample values: ['1289567414273000', '1280773367767000', '1280773367767000', '1298942026040000', '1303398901707000'])
+    owner_user_id (Type: NUMBER; Sample values: ['-1', '-1', '-1', '-1', '-1'])
+    last_activity_date (Type: NUMBER; Sample values: ['1289576937237000', '1280773367767000', '1280773367767000', '1298944243913000', '1303400090673000'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_edit_date (Type: NUMBER; Sample values: ['1289576937237000', '1280773367767000', '1280773367767000', '1298944243913000', '1303400090673000'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['Roger Pate', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['nan', '6148.0', '6148.0', '7173.0', '638471.0'])
+    id (Type: NUMBER; Sample values: ['4164934', '3625171', '3625172', '5149478', '5746108'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['ADL is argument-dependent lookup, sometimes called Koenig lookup.', '<p><a href="http://www.gnu.org/software/emacs/manual/html_node/elisp/index.html" rel="nofollow noreferrer">Emacs Lisp</a> is the extension language for the <a href="http://www.gnu.org/software/emacs/" rel="nofollow noreferrer">GNU Emacs text editor</a>, and in fact, most of the functionality of Emacs is implemented using Emacs Lisp.  Users generally customize Emacs\' behavior by adding Emacs Lisp statements to their .emacs, or writing separate packages.  A guide to learning Emacs Lisp for non-programmers can be found <a href="http://www.gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html" rel="nofollow noreferrer">here</a>.</p>\n\n<p>Emacs Lisp differs from most other lisps in two main ways:</p>\n\n<ol>\n<li>It has special features for scanning and parsing text, as well as features for handling files, buffers, arrays, displays, and subprocesses.  This is due to the fact that it is designed to be used in a text editor</li>\n<li>It uses <a href="http://en.wikipedia.org/wiki/Scope_(prog...(truncated)', "<p>Emacs Lisp is the extension language for the GNU Emacs text editor, and in fact, most of the functionality of Emacs is implemented using Emacs Lisp.  Users generally customize Emacs' behavior by adding Emacs Lisp statements to their .emacs, or writing separate packages.  A guide to learning Emacs Lisp for non-programmers can be found here.</p>\n\n<p>Emacs Lisp differs from most other lisps in two main ways:</p>\n\n<p>It has special features for scanning and parsing text, </p>", '<p><a href="http://api.jquery.com/jQuery.ajax/" rel="nofollow">See more here</a> (scroll to <strong>dataFilter</strong>)</p>', 'The manager is a pre-installed webapp on Apache Tomcat to remotely manage (install, remove, restart etc.) webapps.'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_MODERATOR_NOMINATION
+[
+    creation_date (Type: NUMBER; Sample values: ['1295388234897000', '1295388481350000', '1295388989163000', '1295389653187000', '1295391300247000'])
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    owner_user_id (Type: NUMBER; Sample values: ['171206', '3312', '205930', '555384', '295783'])
+    last_activity_date (Type: NUMBER; Sample values: ['1295388234897000', '1295388481350000', '1295388989163000', '1295389653187000', '1295391300247000'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['171206', '3312', '205930', '555384', '295783'])
+    id (Type: NUMBER; Sample values: ['4729565', '4729601', '4729675', '4729774', '4730004'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_edit_date (Type: NUMBER; Sample values: ['1295388234897000', '1295388481350000', '1295388989163000', '1295389653187000', '1295391300247000'])
+    community_owned_date (Type: NUMBER; Sample values: ['1295388234897000', '1295388481350000', '1295388989163000', '1295389653187000', '1295391300247000'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>I am detail oriented and would like to moderate this site to keep it a clean and fun place to visit everyday.</p>', '<p>Back when he was in high school, my dad ran for senior class president on the slogan of </p>\n\n<blockquote>\n  <p>"Slicer is Nicer".</p>\n</blockquote>\n\n<p>Well, I may certainly be nice too, and that will be tempered with patience, respect and professionalism.  As a professional developer for over 15 years and a technology hobbyist since 1982, I believe you\'ll find I will do well to keep this community moving forward and bringing the best practices of development to aspiring technologists.</p>', "<p>I would love an opportunity to assist in continuing to make SO the great place it is. I'm young, but youth is not a measure of character or maturity. I believe that I can contribute to SO as a moderator, by keeping things running smoothly. I also believe that as a moderator, I will have a greater opportunity to learn from those more experienced than me.</p>", '<p>Just another avid SO lover and proponent throwing his hat in the ring to hopefully continue to  grow and continue to refine the community and the invaluable intellectual resource that is StackOverflow.</p>\n\n<p>One merit I would say proves my dedication and love of this place is my receiving the designation as the Top "Top New User" my joining week.</p>\n\n<p>Thanks!</p>', "<p>Real name on the line. Been in IT since 1986 and answering questions since 1997 on various sites including the hyphened one where I have been zone advisor for many years.   </p>\n\n<p>In the 10 months I have been here, I have enjoyed gaining enough rep to help edit question and would be happy to give more assistance since that is what I like to do in general, help people.  </p>\n\n<p>I am fair, level-headed, tolerant and patient with people who's first language (as in my case) is not English - ditto with people who's first language IS English ;)  </p>\n\n<p>I am critical and can receive constructive criticism. It will be interesting to see if the SO community feel I am too tainted with hyphens...</p>\n\n<p>Best regards<br>\nMichel Plungjan</p>"])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW.STACKOVERFLOW.POSTS_TAG_WIKI_EXCERPT
+[
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    creation_date (Type: NUMBER; Sample values: ['1295489672800000', '1300134045170000', '1300461877813000', '1300540917987000', '1300835798970000'])
+    owner_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['4', '4', '4', '4', '4'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['user197015', 'user177800', 'user614868', 'user614868', 'user806549'])
+    id (Type: NUMBER; Sample values: ['4742863', '5304008', '5354120', '5362330', '5399042'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['user197015', 'user177800', 'user614868', 'user614868', 'user806549'])
+    last_edit_date (Type: NUMBER; Sample values: ['1295489672800000', '1300135451377000', '1300462071537000', '1300870268977000', '1311717574007000'])
+    community_owned_date (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_activity_date (Type: NUMBER; Sample values: ['1295489672800000', '1300135451377000', '1300462071537000', '1300870268977000', '1311717574007000'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ["SlimDX is an MIT-licensed, open-source framework that allows developers working with managed languages like C# and IronPython to leverage DirectX and many of Microsoft's other gaming-related multimedia APIs.", 'WebMachine is an Erlang framework for creating RESTful Web Services using Erlang/OTP best practices.', 'TCP/IP (Transmission Control Protocol/Internet Protocol) is the basic communication language or protocol of the Internet. It can also be used as a communications protocol in a private network (either an intranet or an extranet).', 'Smart GWT is a GWT-based framework that allows you to not only utilize its comprehensive widget library for your application UI, but also tie these widgets in with your server-side for data management', 'Questions relating to development on the subject of all variants of poker.'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+

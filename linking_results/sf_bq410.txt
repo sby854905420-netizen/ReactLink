@@ -1,0 +1,469 @@
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.STATE_2014_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['657639.0', '6402523.0', '1462037.0', '2824735.0', '2045247.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['2643.0', '12121.0', '2920.0', '6483.0', '7538.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['45335.0', '566058.0', '160867.0', '309636.0', '183011.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['1399952.0', '9415088.0', '2306384.0', '4868842.0', '3076534.0']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['9818.0', '53131.0', '17405.0', '37238.0', '27217.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    civilian_labor_force (Type: FLOAT; Sample values: ['1395556.0', '9359928.0', '2274142.0', '4819365.0', '3059049.0']; Description: Population in Civilian Labor Force. The number of civilians 16 years and over in each geography who can be classified as either "employed" or "unemployed" below.)
+    median_income (Type: FLOAT; Sample values: ['59846.0', '47212.0', '45033.0', '49342.0', '49928.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    income_30000_34999 (Type: FLOAT; Sample values: ['42382.0', '419178.0', '101444.0', '191394.0', '134217.0']; Description: Households with income of $30,000 to $34,999. The number of households in a geographic area whose annual income was between $30,000 and $34,999.)
+    income_35000_39999 (Type: FLOAT; Sample values: ['41513.0', '386724.0', '95552.0', '175601.0', '121824.0']; Description: Households with income of $35,000 to $39,999. The number of households in a geographic area whose annual income was between $35,000 and $39,999.)
+    income_10000_14999 (Type: FLOAT; Sample values: ['34879.0', '409607.0', '116071.0', '199294.0', '124156.0']; Description: Households with income of $10,000 to $14,999. The number of households in a geographic area whose annual income was between $10,000 and $14,999.)
+    rent_10_to_15_percent (Type: FLOAT; Sample values: ['23657.0', '127066.0', '41510.0', '89984.0', '67623.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    not_hispanic_pop (Type: FLOAT; Sample values: ['2478657.0', '14844601.0', '4478814.0', '9011039.0', '4584490.0']; Description: Population not Hispanic. The number of people not identifying as Hispanic or Latino in each geography.)
+    income_50000_59999 (Type: FLOAT; Sample values: ['82015.0', '599079.0', '146985.0', '285491.0', '200101.0']; Description: Households with income of $50,000 to $59,999. The number of households in a geographic area whose annual income was between $50,000 and $59,999.)
+    income_45000_49999 (Type: FLOAT; Sample values: ['40085.0', '325496.0', '80382.0', '149141.0', '107092.0']; Description: Households with income of $45,000 to $49,999. The number of households in a geographic area whose annual income was between $45,000 and $49,999.)
+    income_60000_74999 (Type: FLOAT; Sample values: ['109228.0', '708470.0', '176174.0', '350185.0', '241557.0']; Description: Households with income of $60,000 to $74,999. The number of households in a geographic area whose annual income was between $60,000 and $74,999.)
+    rent_35_to_40_percent (Type: FLOAT; Sample values: ['16951.0', '168117.0', '34323.0', '80309.0', '55631.0']; Description: Housing units spending 35 to 39.9% income on rent. Gross rent from 35.0 to 39.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    nonfamily_households (Type: FLOAT; Sample values: ['222753.0', '2567346.0', '591443.0', '1133592.0', '817847.0']; Description: Nonfamily Households. A householder living alone or with nonrelatives only. Unmarried couples households, whether opposite-sex or same-sex, with no relatives of the householder present are tabulated in nonfamily households.)
+    two_parents_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['110028.0', '433690.0', '112370.0', '267888.0', '157779.0']; Description: Two-parent families, both parents in labor force with young children (under 6 years of age))
+    geo_id (Type: TEXT; Sample values: ['49', '12', '45', '13', '04']; Description: US States Geoids)
+    pop_widowed (Type: FLOAT; Sample values: ['71390.0', '894258.0', '252189.0', '402965.0', '248376.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    unemployed_pop (Type: FLOAT; Sample values: ['95738.0', '1024905.0', '242145.0', '519291.0', '304067.0'])
+    group_quarters (Type: FLOAT; Sample values: ['46145.0', '429335.0', '138013.0', '261096.0', '147867.0']; Description: Population living in group quarters)
+    total_pop (Type: FLOAT; Sample values: ['2858111.0', '19361792.0', '4727273.0', '9907756.0', '6561516.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.STATE_2010_1YR, CENSUS_BUREAU_ACS.STATE_2012_5YR, CENSUS_BUREAU_ACS.STATE_2016_1YR, CENSUS_BUREAU_ACS.STATE_2009_1YR, CENSUS_BUREAU_ACS.STATE_2011_3YR, CENSUS_BUREAU_ACS.STATE_2015_5YR, CENSUS_BUREAU_ACS.STATE_2020_5YR, CENSUS_BUREAU_ACS.STATE_2010_5YR, CENSUS_BUREAU_ACS.STATE_2013_3YR, CENSUS_BUREAU_ACS.STATE_2013_1YR, CENSUS_BUREAU_ACS.STATE_2016_5YR, CENSUS_BUREAU_ACS.STATE_2007_1YR, CENSUS_BUREAU_ACS.STATE_2008_3YR, CENSUS_BUREAU_ACS.STATE_2014_1YR, CENSUS_BUREAU_ACS.STATE_2017_5YR, CENSUS_BUREAU_ACS.STATE_2017_1YR, CENSUS_BUREAU_ACS.STATE_2012_1YR, CENSUS_BUREAU_ACS.STATE_2021_1YR, CENSUS_BUREAU_ACS.STATE_2009_3YR, CENSUS_BUREAU_ACS.STATE_2010_3YR, CENSUS_BUREAU_ACS.STATE_2018_1YR, CENSUS_BUREAU_ACS.STATE_2018_5YR, CENSUS_BUREAU_ACS.STATE_2007_3YR, CENSUS_BUREAU_ACS.STATE_2013_5YR, CENSUS_BUREAU_ACS.STATE_2015_1YR, CENSUS_BUREAU_ACS.STATE_2008_1YR, CENSUS_BUREAU_ACS.STATE_2019_1YR, CENSUS_BUREAU_ACS.STATE_2011_1YR, CENSUS_BUREAU_ACS.STATE_2011_5YR, CENSUS_BUREAU_ACS.STATE_2012_3YR, CENSUS_BUREAU_ACS.STATE_2019_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.ZCTA5_2016_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['206.0', '298.0', '437.0', '1546.0', '2641.0'])
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['2.0', '0.0', '0.0', '0.0', '0.0'])
+    pop_in_labor_force (Type: FLOAT; Sample values: ['368.0', '608.0', '832.0', '1730.0', '2433.0'])
+    income_less_10000 (Type: FLOAT; Sample values: ['1.0', '17.0', '32.0', '53.0', '375.0'])
+    nonfamily_households (Type: FLOAT; Sample values: ['70.0', '103.0', '203.0', '782.0', '1092.0'])
+    median_income (Type: FLOAT; Sample values: ['43333.0', '64167.0', '60871.0', '61106.0', '29209.0'])
+    civilian_labor_force (Type: FLOAT; Sample values: ['368.0', '608.0', '832.0', '1664.0', '2433.0'])
+    income_35000_39999 (Type: FLOAT; Sample values: ['27.0', '15.0', '7.0', '48.0', '188.0'])
+    geo_id (Type: TEXT; Sample values: ['65025', '56324', '50130', '28594', '04276'])
+    pop_widowed (Type: FLOAT; Sample values: ['', '', '', '', ''])
+    unemployed_pop (Type: FLOAT; Sample values: ['7.0', '29.0', '5.0', '127.0', '297.0'])
+    total_pop (Type: FLOAT; Sample values: ['727.0', '1146.0', '1661.0', '3709.0', '5749.0'])
+    income_20000_24999 (Type: FLOAT; Sample values: ['30.0', '15.0', '6.0', '83.0', '137.0'])
+    population_1_year_and_over (Type: FLOAT; Sample values: ['722.0', '1131.0', '1646.0', '3709.0', '5720.0'])
+    population_3_years_over (Type: FLOAT; Sample values: ['706.0', '1115.0', '1613.0', '3686.0', '5691.0'])
+    group_quarters (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '49.0'])
+    pop_separated (Type: FLOAT; Sample values: ['', '', '', '', ''])
+    income_125000_149999 (Type: FLOAT; Sample values: ['19.0', '14.0', '29.0', '98.0', '14.0'])
+    income_150000_199999 (Type: FLOAT; Sample values: ['0.0', '18.0', '22.0', '87.0', '8.0'])
+    income_50000_59999 (Type: FLOAT; Sample values: ['27.0', '40.0', '70.0', '225.0', '122.0'])
+    income_25000_29999 (Type: FLOAT; Sample values: ['8.0', '9.0', '8.0', '70.0', '211.0'])
+    income_100000_124999 (Type: FLOAT; Sample values: ['10.0', '34.0', '82.0', '150.0', '120.0'])
+    income_10000_14999 (Type: FLOAT; Sample values: ['17.0', '16.0', '16.0', '78.0', '233.0'])
+    income_40000_44999 (Type: FLOAT; Sample values: ['17.0', '16.0', '36.0', '65.0', '21.0'])
+    income_45000_49999 (Type: FLOAT; Sample values: ['12.0', '25.0', '38.0', '124.0', '87.0'])
+    dwellings_1_units_detached (Type: FLOAT; Sample values: ['287.0', '505.0', '682.0', '3801.0', '1989.0'])
+    income_200000_or_more (Type: FLOAT; Sample values: ['0.0', '16.0', '13.0', '123.0', '16.0'])
+    income_30000_34999 (Type: FLOAT; Sample values: ['33.0', '27.0', '49.0', '126.0', '128.0'])
+    income_75000_99999 (Type: FLOAT; Sample values: ['31.0', '86.0', '90.0', '263.0', '204.0'])
+    income_60000_74999 (Type: FLOAT; Sample values: ['31.0', '64.0', '121.0', '214.0', '232.0'])
+    income_15000_19999 (Type: FLOAT; Sample values: ['13.0', '22.0', '56.0', '40.0', '234.0'])
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.ZCTA5_2015_5YR, CENSUS_BUREAU_ACS.ZCTA5_2011_5YR, CENSUS_BUREAU_ACS.ZCTA5_2012_5YR, CENSUS_BUREAU_ACS.ZCTA5_2017_5YR, CENSUS_BUREAU_ACS.ZCTA5_2014_5YR, CENSUS_BUREAU_ACS.ZCTA5_2018_5YR, CENSUS_BUREAU_ACS.ZCTA_2019_5YR, CENSUS_BUREAU_ACS.ZCTA_2020_5YR, CENSUS_BUREAU_ACS.ZCTA5_2013_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.CENSUSTRACT_2017_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['1211.0', '1310.0', '727.0', '1116.0', '1279.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['78.0', '6.0', '41.0', '143.0', '152.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['2615.0', '2497.0', '1320.0', '2454.0', '2287.0']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    median_income (Type: FLOAT; Sample values: ['82617.0', '119006.0', '84643.0', '62403.0', '87580.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['0.0', '10.0', '5.0', '0.0', '25.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    civilian_labor_force (Type: FLOAT; Sample values: ['2595.0', '2429.0', '1320.0', '2370.0', '2287.0']; Description: Population in Civilian Labor Force. The number of civilians 16 years and over in each geography who can be classified as either "employed" or "unemployed" below.)
+    income_35000_39999 (Type: FLOAT; Sample values: ['18.0', '17.0', '7.0', '76.0', '6.0']; Description: Households with income of $35,000 to $39,999. The number of households in a geographic area whose annual income was between $35,000 and $39,999.)
+    income_10000_14999 (Type: FLOAT; Sample values: ['42.0', '0.0', '31.0', '103.0', '57.0']; Description: Households with income of $10,000 to $14,999. The number of households in a geographic area whose annual income was between $10,000 and $14,999.)
+    income_30000_34999 (Type: FLOAT; Sample values: ['109.0', '36.0', '14.0', '65.0', '29.0']; Description: Households with income of $30,000 to $34,999. The number of households in a geographic area whose annual income was between $30,000 and $34,999.)
+    rent_10_to_15_percent (Type: FLOAT; Sample values: ['0.0', '0.0', '37.0', '19.0', '37.0']; Description: Housing units spending 10 to 14.9% income on rent. Gross rent from 10.0 to 14.9 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    pop_widowed (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geo_id (Type: TEXT; Sample values: ['25023530802', '51199050205', '06037463101', '34005703103', '34039033000']; Description: US Census Tracts Geoids)
+    unemployed_pop (Type: FLOAT; Sample values: ['150.0', '187.0', '61.0', '267.0', '169.0'])
+    group_quarters (Type: FLOAT; Sample values: ['21.0', '0.0', '0.0', '0.0', '0.0']; Description: Population living in group quarters)
+    total_pop (Type: FLOAT; Sample values: ['4542.0', '4722.0', '2414.0', '4729.0', '4444.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    population_1_year_and_over (Type: FLOAT; Sample values: ['4482.0', '4692.0', '2395.0', '4678.0', '4373.0']; Description: Population 1 year and over. All people, male and female, child and adult, living in a given geographic area that are 1 year and older.)
+    male_62_to_64 (Type: FLOAT; Sample values: ['', '', '', '', ''])
+    income_20000_24999 (Type: FLOAT; Sample values: ['33.0', '32.0', '19.0', '139.0', '16.0']; Description: Households with income of $20,000 to $24,999. The number of households in a geographic area whose annual income was between $20,000 and $24,999.)
+    income_200000_or_more (Type: FLOAT; Sample values: ['227.0', '315.0', '96.0', '132.0', '94.0']; Description: Households with income of $200,000 Or More. The number of households in a geographic area whose annual income was more than $200,000.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.CENSUSTRACT_2012_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2014_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2019_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2018_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2016_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2011_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2010_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2015_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2020_5YR, CENSUS_BUREAU_ACS.CENSUSTRACT_2013_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2017_1YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['22351.0', '19577.0', '21201.0', '15527.0', '32078.0'])
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '119.0'])
+    pop_in_labor_force (Type: FLOAT; Sample values: ['29993.0', '33350.0', '39153.0', '37032.0', '45185.0'])
+    income_less_10000 (Type: FLOAT; Sample values: ['2276.0', '662.0', '727.0', '340.0', '1229.0'])
+    nonfamily_households (Type: FLOAT; Sample values: ['6245.0', '4108.0', '8953.0', '3324.0', '8185.0'])
+    median_income (Type: FLOAT; Sample values: ['52217.0', '105321.0', '107111.0', '58790.0', '69449.0'])
+    civilian_labor_force (Type: FLOAT; Sample values: ['29993.0', '32984.0', '39035.0', '21419.0', '44639.0'])
+    geo_id (Type: TEXT; Sample values: ['401710', '605910', '612750', '613500', '624540'])
+    pop_widowed (Type: NUMBER; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+    total_pop (Type: FLOAT; Sample values: ['66892.0', '65934.0', '74535.0', '65207.0', '98102.0'])
+    unemployed_pop (Type: FLOAT; Sample values: ['2340.0', '1606.0', '1874.0', '1347.0', '2907.0'])
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2016_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2015_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2015_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2010_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2019_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2018_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2014_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2016_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2019_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2021_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2017_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2020_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2014_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2018_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.BLOCKGROUP_2016_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['645.0', '272.0', '515.0', '557.0', '390.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['13.0', '38.0', '37.0', '54.0', '56.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['770.0', '375.0', '458.0', '1406.0', '660.0']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    median_income (Type: FLOAT; Sample values: ['51125.0', '37232.0', '45494.0', '36389.0', '31700.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['0.0', '6.0', '0.0', '0.0', '29.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    civilian_labor_force (Type: FLOAT; Sample values: ['763.0', '375.0', '458.0', '1406.0', '660.0']; Description: Population in Civilian Labor Force. The number of civilians 16 years and over in each geography who can be classified as either "employed" or "unemployed" below.)
+    geo_id (Type: TEXT; Sample values: ['420750035003', '421298052002', '360050396001', '130890232041', '540390012002']; Description: US Census Block Groups_2016 Geoids)
+    unemployed_pop (Type: FLOAT; Sample values: ['68.0', '28.0', '5.0', '286.0', '8.0'])
+    total_pop (Type: FLOAT; Sample values: ['1716.0', '899.0', '1337.0', '2692.0', '1266.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.BLOCKGROUP_2011_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2015_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2017_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2018_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2010_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2012_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2014_5YR, CENSUS_BUREAU_ACS.BLOCKGROUP_2013_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2018_1YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['184177.0', '225328.0', '221733.0', '172963.0', '183208.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['630.0', '742.0', '526.0', '129.0', '328.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['18180.0', '15802.0', '13426.0', '7173.0', '10482.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['399895.0', '422465.0', '403163.0', '425345.0', '470357.0']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['21790.0', '1448.0', '2133.0', '3469.0', '2533.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    median_income (Type: FLOAT; Sample values: ['93766.0', '105917.0', '70694.0', '97290.0', '82450.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    pop_widowed (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geo_id (Type: TEXT; Sample values: ['3610', '0645', '5302', '1306', '0806']; Description: US Congressional Districts Geoids)
+    geoidsc (Type: TEXT; Sample values: ['', '', '', '', ''])
+    geoidsl (Type: TEXT; Sample values: ['', '', '', '', ''])
+    group_quarters (Type: FLOAT; Sample values: ['21546.0', '12970.0', '13636.0', '3145.0', '6405.0']; Description: Population living in group quarters)
+    total_pop (Type: FLOAT; Sample values: ['711678.0', '797608.0', '755546.0', '754299.0', '835273.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2011_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2008_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2016_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2011_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2021_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2012_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2019_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2012_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2013_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2014_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2016_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2015_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2015_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2018_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2010_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2017_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2014_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2009_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2011_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2017_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2007_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2013_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2008_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2010_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2020_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2010_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2019_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2013_3YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2009_1YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2012_5YR, CENSUS_BUREAU_ACS.CONGRESSIONALDISTRICT_2007_3YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.ZIP_CODES_2014_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['646.0', '3432.0', '2816.0', '4929.0', '2941.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '22.0', '5.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['32.0', '1097.0', '997.0', '1010.0', '161.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['1158.0', '11722.0', '3892.0', '8680.0', '4854.0']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    median_income (Type: FLOAT; Sample values: ['44063.0', '39567.0', '21769.0', '25753.0', '45594.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['9.0', '494.0', '206.0', '176.0', '93.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: TEXT; Sample values: ['13425', '14607', '44707', '40208', '73601']; Description: US Census Zip Code Tabulation Areas Geoids)
+    pop_widowed (Type: FLOAT; Sample values: ['58.0', '494.0', '669.0', '330.0', '661.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoid (Type: TEXT; Sample values: ['', '', '', '', ''])
+    unemployed_pop (Type: FLOAT; Sample values: ['86.0', '611.0', '946.0', '1191.0', '197.0'])
+    group_quarters (Type: FLOAT; Sample values: ['7.0', '853.0', '59.0', '3080.0', '385.0']; Description: Population living in group quarters)
+    total_pop (Type: FLOAT; Sample values: ['2348.0', '16159.0', '8804.0', '15480.0', '10241.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.ZIP_CODES_2016_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2012_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2011_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2017_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2015_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2013_5YR, CENSUS_BUREAU_ACS.ZIP_CODES_2018_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.COUNTY_2008_1YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['384.0', '249.0', '358.0', '146.0', '68.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['22499.0', '18069.0', '21230.0', '11893.0', '15444.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['2734.0', '3786.0', '10053.0', '2003.0', '4079.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    geo_id (Type: TEXT; Sample values: ['36055', '09001', '06085', '42045', '25027']; Description: US County Geoids)
+    pop_widowed (Type: FLOAT; Sample values: ['31683.0', '34531.0', '40993.0', '29213.0', '34045.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsl (Type: TEXT; Sample values: ['', '', '', '', ''])
+    geoidsc (Type: TEXT; Sample values: ['', '', '', '', ''])
+    median_income (Type: FLOAT; Sample values: ['51762.0', '84545.0', '88846.0', '65025.0', '66878.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    unemployed_pop (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    group_quarters (Type: FLOAT; Sample values: ['26465.0', '24564.0', '30895.0', '21289.0', '29534.0']; Description: Population living in group quarters)
+    total_pop (Type: FLOAT; Sample values: ['732762.0', '895030.0', '1764499.0', '553619.0', '783806.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.COUNTY_2010_1YR, CENSUS_BUREAU_ACS.COUNTY_2017_5YR, CENSUS_BUREAU_ACS.COUNTY_2011_5YR, CENSUS_BUREAU_ACS.COUNTY_2014_1YR, CENSUS_BUREAU_ACS.COUNTY_2007_3YR, CENSUS_BUREAU_ACS.COUNTY_2019_5YR, CENSUS_BUREAU_ACS.COUNTY_2010_3YR, CENSUS_BUREAU_ACS.COUNTY_2018_5YR, CENSUS_BUREAU_ACS.COUNTY_2011_3YR, CENSUS_BUREAU_ACS.COUNTY_2015_1YR, CENSUS_BUREAU_ACS.COUNTY_2016_5YR, CENSUS_BUREAU_ACS.COUNTY_2013_5YR, CENSUS_BUREAU_ACS.COUNTY_2007_1YR, CENSUS_BUREAU_ACS.COUNTY_2008_3YR, CENSUS_BUREAU_ACS.COUNTY_2012_5YR, CENSUS_BUREAU_ACS.COUNTY_2015_5YR, CENSUS_BUREAU_ACS.COUNTY_2017_1YR, CENSUS_BUREAU_ACS.COUNTY_2020_5YR, CENSUS_BUREAU_ACS.COUNTY_2010_5YR, CENSUS_BUREAU_ACS.COUNTY_2012_3YR, CENSUS_BUREAU_ACS.COUNTY_2009_3YR, CENSUS_BUREAU_ACS.COUNTY_2013_1YR, CENSUS_BUREAU_ACS.COUNTY_2016_1YR, CENSUS_BUREAU_ACS.COUNTY_2012_1YR, CENSUS_BUREAU_ACS.COUNTY_2021_1YR, CENSUS_BUREAU_ACS.COUNTY_2009_1YR, CENSUS_BUREAU_ACS.COUNTY_2019_1YR, CENSUS_BUREAU_ACS.COUNTY_2014_5YR, CENSUS_BUREAU_ACS.COUNTY_2018_1YR, CENSUS_BUREAU_ACS.COUNTY_2013_3YR, CENSUS_BUREAU_ACS.COUNTY_2011_1YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2019_1YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['39138.0', '29756.0', '31701.0', '21981.0', '21125.0'])
+    pop_in_labor_force (Type: FLOAT; Sample values: ['56023.0', '67156.0', '48207.0', '40917.0', '37769.0'])
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    income_less_10000 (Type: FLOAT; Sample values: ['1452.0', '957.0', '740.0', '1065.0', '1211.0'])
+    nonfamily_households (Type: FLOAT; Sample values: ['17226.0', '19821.0', '11151.0', '13403.0', '11615.0'])
+    median_income (Type: FLOAT; Sample values: ['133188.0', '170322.0', '95261.0', '92913.0', '91936.0'])
+    civilian_labor_force (Type: FLOAT; Sample values: ['56023.0', '66844.0', '48076.0', '40917.0', '37769.0'])
+    geo_id (Type: TEXT; Sample values: ['601650', '626310', '630750', '635110', '699011'])
+    pop_widowed (Type: FLOAT; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+    income_20000_24999 (Type: FLOAT; Sample values: ['1065.0', '601.0', '2087.0', '413.0', '813.0'])
+    income_50000_59999 (Type: FLOAT; Sample values: ['1946.0', '1684.0', '2513.0', '1455.0', '561.0'])
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2016_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2018_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2019_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2014_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2020_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2018_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2015_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2016_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2021_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2017_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2015_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2017_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2020_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['1475.0', '9.0', '115.0', '0.0', '194.0'])
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    pop_in_labor_force (Type: FLOAT; Sample values: ['919.0', '2.0', '228.0', '0.0', '171.0'])
+    income_less_10000 (Type: FLOAT; Sample values: ['99.0', '0.0', '12.0', '0.0', '13.0'])
+    nonfamily_households (Type: FLOAT; Sample values: ['536.0', '0.0', '15.0', '0.0', '56.0'])
+    geo_id (Type: TEXT; Sample values: ['400520', '699997', '800018', '999997', '1600150'])
+    pop_widowed (Type: NUMBER; Sample values: ['', '', '', '', '']; Description: Widowed. The number of people in a geographic area who are widowed)
+    median_income (Type: FLOAT; Sample values: ['41032.0', '-666666666.0', '70000.0', '-666666666.0', '33125.0'])
+    unemployed_pop (Type: FLOAT; Sample values: ['147.0', '2.0', '2.0', '0.0', '19.0'])
+    income_20000_24999 (Type: FLOAT; Sample values: ['109.0', '0.0', '10.0', '0.0', '15.0'])
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2014_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2018_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2016_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2015_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2019_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2014_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2021_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2016_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2017_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2010_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2010_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2017_1YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2018_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2015_5YR, CENSUS_BUREAU_ACS.SCHOOLDISTRICTUNIFIED_2019_1YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.PLACE_2007_1YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['486.0', '236.0', '1881.0', '268.0', '232.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['24018.0', '21076.0', '54828.0', '14984.0', '3281.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    median_income (Type: FLOAT; Sample values: ['29075.0', '42123.0', '28097.0', '34452.0', '57059.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    rent_under_10_percent (Type: FLOAT; Sample values: ['1653.0', '2635.0', '3677.0', '2577.0', '853.0']; Description: Housing units spending less than 10% on rent. Gross rent less than 10 percent of household income. Computed ratio of monthly gross rent to monthly household income (total household income divided by 12). The ratio is computed separately for each unit and is rounded to the nearest tenth. Units for which no rent is paid and units occupied by households that report no income or a net loss comprise the category, "Not computed". Gross rent as a percentage of household income provides information on the monthly housing cost expenses for renters.)
+    pop_in_labor_force (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Population in Labor Force. The number of people in each geography who are either in the civilian labor force or are members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard).)
+    geo_id (Type: TEXT; Sample values: ['1245000', '2938000', '2622000', '3451000', '0602000']; Description: Incorporated Places Geoids)
+    pop_widowed (Type: FLOAT; Sample values: ['4780.0', '19092.0', '47365.0', '11170.0', '6867.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geoidsc (Type: TEXT; Sample values: ['', '', '', '', ''])
+    geoidsl (Type: TEXT; Sample values: ['', '', '', '', ''])
+    total_pop (Type: FLOAT; Sample values: ['348827.0', '437657.0', '808327.0', '270007.0', '342856.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+    unemployed_pop (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    group_quarters (Type: FLOAT; Sample values: ['12238.0', '8518.0', '14037.0', '16735.0', '2951.0']; Description: Population living in group quarters)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.PLACE_2016_5YR, CENSUS_BUREAU_ACS.PLACE_2016_1YR, CENSUS_BUREAU_ACS.PLACE_2010_1YR, CENSUS_BUREAU_ACS.PLACE_2011_5YR, CENSUS_BUREAU_ACS.PLACE_2011_3YR, CENSUS_BUREAU_ACS.PLACE_2017_1YR, CENSUS_BUREAU_ACS.PLACE_2007_3YR, CENSUS_BUREAU_ACS.PLACE_2010_5YR, CENSUS_BUREAU_ACS.PLACE_2012_5YR, CENSUS_BUREAU_ACS.PLACE_2011_1YR, CENSUS_BUREAU_ACS.PLACE_2010_3YR, CENSUS_BUREAU_ACS.PLACE_2012_3YR, CENSUS_BUREAU_ACS.PLACE_2009_1YR, CENSUS_BUREAU_ACS.PLACE_2014_5YR, CENSUS_BUREAU_ACS.PLACE_2009_3YR, CENSUS_BUREAU_ACS.PLACE_2019_5YR, CENSUS_BUREAU_ACS.PLACE_2018_1YR, CENSUS_BUREAU_ACS.PLACE_2020_5YR, CENSUS_BUREAU_ACS.PLACE_2021_1YR, CENSUS_BUREAU_ACS.PLACE_2013_3YR, CENSUS_BUREAU_ACS.PLACE_2014_1YR, CENSUS_BUREAU_ACS.PLACE_2013_5YR, CENSUS_BUREAU_ACS.PLACE_2019_1YR, CENSUS_BUREAU_ACS.PLACE_2017_5YR, CENSUS_BUREAU_ACS.PLACE_2008_1YR, CENSUS_BUREAU_ACS.PLACE_2018_5YR, CENSUS_BUREAU_ACS.PLACE_2013_1YR, CENSUS_BUREAU_ACS.PLACE_2008_3YR, CENSUS_BUREAU_ACS.PLACE_2015_5YR, CENSUS_BUREAU_ACS.PLACE_2012_1YR, CENSUS_BUREAU_ACS.PLACE_2015_1YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.CBSA_2014_5YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['1284385.0', '445492.0', '198699.0', '146664.0', '129602.0']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['6035.0', '1271.0', '272.0', '507.0', '197.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['78985.0', '41744.0', '15520.0', '16534.0', '9121.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_widowed (Type: FLOAT; Sample values: ['120614.0', '69456.0', '33351.0', '20348.0', '23143.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geo_id (Type: TEXT; Sample values: ['40140', '34980', '37340', '20500', '41540']; Description: Core Based Statistical Area (CBSA)_2015 Geoids)
+    unemployed_pop (Type: FLOAT; Sample values: ['281052.0', '70920.0', '31085.0', '23354.0', '17154.0'])
+    group_quarters (Type: FLOAT; Sample values: ['81173.0', '37496.0', '7092.0', '25234.0', '14743.0']; Description: Population living in group quarters)
+    median_income (Type: FLOAT; Sample values: ['55362.0', '52805.0', '48483.0', '52925.0', '53004.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    total_pop (Type: FLOAT; Sample values: ['4345485.0', '1730515.0', '548891.0', '525050.0', '381868.0']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.CBSA_2011_5YR, CENSUS_BUREAU_ACS.CBSA_2007_3YR, CENSUS_BUREAU_ACS.CBSA_2013_1YR, CENSUS_BUREAU_ACS.CBSA_2010_3YR, CENSUS_BUREAU_ACS.CBSA_2016_1YR, CENSUS_BUREAU_ACS.CBSA_2015_5YR, CENSUS_BUREAU_ACS.CBSA_2011_3YR, CENSUS_BUREAU_ACS.CBSA_2019_1YR, CENSUS_BUREAU_ACS.CBSA_2007_1YR, CENSUS_BUREAU_ACS.CBSA_2011_1YR, CENSUS_BUREAU_ACS.CBSA_2008_3YR, CENSUS_BUREAU_ACS.CBSA_2017_5YR, CENSUS_BUREAU_ACS.CBSA_2008_1YR, CENSUS_BUREAU_ACS.CBSA_2013_5YR, CENSUS_BUREAU_ACS.CBSA_2010_5YR, CENSUS_BUREAU_ACS.CBSA_2010_1YR, CENSUS_BUREAU_ACS.CBSA_2020_5YR, CENSUS_BUREAU_ACS.CBSA_2014_1YR, CENSUS_BUREAU_ACS.CBSA_2019_5YR, CENSUS_BUREAU_ACS.CBSA_2013_3YR, CENSUS_BUREAU_ACS.CBSA_2015_1YR, CENSUS_BUREAU_ACS.CBSA_2018_1YR, CENSUS_BUREAU_ACS.CBSA_2012_1YR, CENSUS_BUREAU_ACS.CBSA_2009_1YR, CENSUS_BUREAU_ACS.CBSA_2009_3YR, CENSUS_BUREAU_ACS.CBSA_2012_5YR, CENSUS_BUREAU_ACS.CBSA_2012_3YR, CENSUS_BUREAU_ACS.CBSA_2017_1YR, CENSUS_BUREAU_ACS.CBSA_2018_5YR, CENSUS_BUREAU_ACS.CBSA_2016_5YR, CENSUS_BUREAU_ACS.CBSA_2021_1YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.PUMA_2008_3YR
+[
+    not_in_labor_force (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Population Not in Labor Force. The number of people in each geography who are 16 years old and over who are not classified as members of the labor force. This category consists mainly of students, homemakers, retired workers, seasonal workers interviewed in an off season who were not looking for work, institutionalized people, and people doing only incidental unpaid family work (less than 15 hours during the reference week).)
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['549.0', '198.0', '417.0', '197.0', '91.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['2560.0', '6090.0', '3984.0', '3278.0', '1912.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    pop_widowed (Type: FLOAT; Sample values: ['4662.0', '9525.0', '9357.0', '4395.0', '4731.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geo_id (Type: TEXT; Sample values: ['1301502', '3603400', '1703405', '4802102', '3400902']; Description: US Census Public Use Microdata Areas Geoids)
+    median_income (Type: FLOAT; Sample values: ['78016.0', '54432.0', '80355.0', '79820.0', '89400.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.PUMA_2007_3YR, CENSUS_BUREAU_ACS.PUMA_2009_1YR, CENSUS_BUREAU_ACS.PUMA_2017_5YR, CENSUS_BUREAU_ACS.PUMA_2017_1YR, CENSUS_BUREAU_ACS.PUMA_2008_1YR, CENSUS_BUREAU_ACS.PUMA_2016_1YR, CENSUS_BUREAU_ACS.PUMA_2011_1YR, CENSUS_BUREAU_ACS.PUMA_2021_1YR, CENSUS_BUREAU_ACS.PUMA_2010_1YR, CENSUS_BUREAU_ACS.PUMA_2011_3YR, CENSUS_BUREAU_ACS.PUMA_2014_1YR, CENSUS_BUREAU_ACS.PUMA_2010_3YR, CENSUS_BUREAU_ACS.PUMA_2007_1YR, CENSUS_BUREAU_ACS.PUMA_2010_5YR, CENSUS_BUREAU_ACS.PUMA_2020_5YR, CENSUS_BUREAU_ACS.PUMA_2015_5YR, CENSUS_BUREAU_ACS.PUMA_2015_1YR, CENSUS_BUREAU_ACS.PUMA_2018_5YR, CENSUS_BUREAU_ACS.PUMA_2016_5YR, CENSUS_BUREAU_ACS.PUMA_2019_1YR, CENSUS_BUREAU_ACS.PUMA_2009_3YR, CENSUS_BUREAU_ACS.PUMA_2012_3YR, CENSUS_BUREAU_ACS.PUMA_2011_5YR, CENSUS_BUREAU_ACS.PUMA_2013_5YR, CENSUS_BUREAU_ACS.PUMA_2018_1YR, CENSUS_BUREAU_ACS.PUMA_2012_1YR, CENSUS_BUREAU_ACS.PUMA_2019_5YR, CENSUS_BUREAU_ACS.PUMA_2013_3YR, CENSUS_BUREAU_ACS.PUMA_2013_1YR, CENSUS_BUREAU_ACS.PUMA_2012_5YR, CENSUS_BUREAU_ACS.PUMA_2014_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.ZCTA5_2019_5YR
+[
+    income_less_10000 (Type: FLOAT; Sample values: ['9.0', '0.0', '71.0', '70.0', '3.0'])
+    pop_in_labor_force (Type: FLOAT; Sample values: ['399.0', '355.0', '724.0', '227.0', '271.0'])
+    nonfamily_households (Type: FLOAT; Sample values: ['123.0', '81.0', '422.0', '156.0', '68.0'])
+    geo_id (Type: TEXT; Sample values: ['1222', '1745', '2163', '3751', '5042'])
+    total_pop (Type: FLOAT; Sample values: ['807.0', '595.0', '2621.0', '468.0', '546.0'])
+    income_20000_24999 (Type: FLOAT; Sample values: ['10.0', '0.0', '24.0', '55.0', '18.0'])
+    income_125000_149999 (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    income_50000_59999 (Type: FLOAT; Sample values: ['36.0', '11.0', '39.0', '0.0', '22.0'])
+    income_10000_14999 (Type: FLOAT; Sample values: ['22.0', '0.0', '43.0', '0.0', '7.0'])
+    population_1_year_and_over (Type: FLOAT; Sample values: ['807.0', '595.0', '2621.0', '448.0', '546.0'])
+    income_45000_49999 (Type: FLOAT; Sample values: ['35.0', '0.0', '29.0', '5.0', '7.0'])
+    income_15000_19999 (Type: FLOAT; Sample values: ['0.0', '8.0', '29.0', '0.0', '25.0'])
+    dwellings_1_units_attached (Type: FLOAT; Sample values: ['0.0', '26.0', '0.0', '0.0', '0.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2010_1YR
+[
+    two_parents_not_in_labor_force_families_with_young_children (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '0.0']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: FLOAT; Sample values: ['1388.0', '834.0', '3230.0', '2242.0', '847.0']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    median_income (Type: FLOAT; Sample values: ['55687.0', '70492.0', '54264.0', '43841.0', '48892.0']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    pop_widowed (Type: FLOAT; Sample values: ['4570.0', '1766.0', '5255.0', '4278.0', '2211.0']; Description: Widowed. The number of people in a geographic area who are widowed)
+    geo_id (Type: TEXT; Sample values: ['1733420', '1740800', '1707050', '0401740', '0616500']; Description: Secondary School District Geoids)
+    group_quarters (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '1526.0']; Description: Population living in group quarters)
+]
+**Some other tables have the similar structure: [CENSUS_BUREAU_ACS.SCHOOLDISTRICTSECONDARY_2010_5YR]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CENSUS_BUREAU_ACS.SCHOOLDISTRICTELEMENTARY_2010_5YR
+[
+    two_parents_not_in_labor_force_families_with_young_children (Type: NUMBER; Sample values: ['0E-9', '0E-9', '112.000000000', '0E-9', '0E-9']; Description: Two-parent families, neither parent in labor force with young children (under 6 years of age))
+    income_less_10000 (Type: NUMBER; Sample values: ['130.000000000', '270.000000000', '520.000000000', '276.000000000', '34.000000000']; Description: Households with income less than $10,000. The number of households in a geographic area whose annual income was less than $10,000.)
+    geo_id (Type: TEXT; Sample values: ['3415600', '0642960', '0607680', '1741520', '3408280']; Description: Elementary School District Geoids)
+    pop_widowed (Type: NUMBER; Sample values: ['457.000000000', '119.000000000', '1109.000000000', '434.000000000', '108.000000000']; Description: Widowed. The number of people in a geographic area who are widowed)
+    group_quarters (Type: NUMBER; Sample values: ['0E-9', '0E-9', '0E-9', '344.000000000', '0E-9']; Description: Population living in group quarters)
+    median_income (Type: NUMBER; Sample values: ['72083.000000000', '29830.000000000', '35430.000000000', '46694.000000000', '69405.000000000']; Description: Median Household Income in the past 12 Months. Within a geographic area, the median income received by every household on a regular basis before payments for personal income taxes, social security, union dues, medicare deductions, etc.  It includes income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker's compensation, child support, and alimony.)
+    total_pop (Type: NUMBER; Sample values: ['4810.000000000', '11245.000000000', '15135.000000000', '11022.000000000', '2157.000000000']; Description: Total Population. The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.)
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.STATES
+[
+    state_name (Type: TEXT; Sample values: ['Commonwealth of the Northern Mariana Islands', 'Rhode Island', 'Connecticut', 'Vermont', 'New York'])
+    state_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00x\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)"])
+    state (Type: TEXT; Sample values: ['MP', 'RI', 'CT', 'VT', 'NY'])
+    state_fips_code (Type: TEXT; Sample values: ['69', '44', '09', '50', '36'])
+    geo_id (Type: TEXT; Sample values: ['69', '44', '09', '50', '36'])
+    region_code (Type: TEXT; Sample values: ['9', '1', '1', '1', '1'])
+    state_gnis_code (Type: TEXT; Sample values: ['01779809', '01219835', '01779780', '01779802', '01779796'])
+    division_code (Type: TEXT; Sample values: ['0', '1', '1', '1', '2'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4000', 'G4000', 'G4000', 'G4000', 'G4000'])
+    lsad_code (Type: TEXT; Sample values: ['00', '00', '00', '00', '00'])
+    functional_status (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb2fd\\x90;3b@f\\xd...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x8d%Q\\xd4\\xbe\\xe1...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xab\\xd4G;\\xc9/R\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x9f`\\xb5\\xe8\\xd3*...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb0\\x00KS)\\xe6R\\x...(truncated)"])
+    int_point_lat (Type: FLOAT; Sample values: ['14.9367835', '41.5974187', '41.5798637', '44.0685773', '42.9133974'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.ZIP_CODES
+[
+    state_name (Type: TEXT; Sample values: ['Alaska', 'Ohio', 'Wisconsin', 'Ohio', 'Illinois'])
+    state_fips_code (Type: TEXT; Sample values: ['02', '39', '55', '39', '17'])
+    fips_class_code (Type: TEXT; Sample values: ['B5', 'B5', 'B5', 'B5', 'B5'])
+    state_code (Type: TEXT; Sample values: ['AK', 'OH', 'WI', 'OH', 'IL'])
+    zip_code (Type: TEXT; Sample values: ['99615', '43536', '53210', '44082', '61911'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G6350', 'G6350', 'G6350', 'G6350', 'G6350'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.ADJACENT_STATES
+[
+    state_name (Type: TEXT; Sample values: ['Florida', 'Georgia', 'Iowa', 'Idaho', 'Illinois'])
+    state_fips_code (Type: TEXT; Sample values: ['12', '13', '19', '16', '17'])
+    state (Type: TEXT; Sample values: ['FL', 'GA', 'IA', 'ID', 'IL'])
+    neighbors_fips_code (Type: VARIANT; Sample values: ['[\n  "01",\n  "13"\n]', '[\n  "47",\n  "12",\n  "01",\n  "45",\n  "37"\n]', '[\n  "27",\n  "55",\n  "17",\n  "31",\n  "29",\n  "46"\n]', '[\n  "56",\n  "49",\n  "30",\n  "32",\n  "53",\n  "41"\n]', '[\n  "29",\n  "55",\n  "18",\n  "21",\n  "26",\n  "19"\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.COUNTIES
+[
+    state_fips_code (Type: TEXT; Sample values: ['39', '39', '39', '39', '39'])
+    fips_class_code (Type: TEXT; Sample values: ['H1', 'H1', 'H1', 'H1', 'H1'])
+    csa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    county_fips_code (Type: TEXT; Sample values: ['39121', '39071', '39069', '39067', '39111'])
+    met_div_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4020', 'G4020', 'G4020', 'G4020', 'G4020'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.CONGRESS_DISTRICT_116
+[
+    state_fips_code (Type: TEXT; Sample values: ['53', '55', '13', '06', '37'])
+    district_fips_code (Type: TEXT; Sample values: ['08', '08', '08', '08', '08'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G5200', 'G5200', 'G5200', 'G5200', 'G5200'])
+]
+**Some other tables have the similar structure: [GEO_US_BOUNDARIES.CONGRESS_DISTRICT_115]**
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.CNECTA
+[
+    cnecta_fips_code (Type: TEXT; Sample values: ['770', '790', '715', '720'])
+    name (Type: TEXT; Sample values: ['Pittsfield-North Adams, MA-VT', 'Springfield-Hartford-East Hartford, MA-CT', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME', 'Bridgeport-New Haven-Stamford, CT'])
+    geo_id (Type: TEXT; Sample values: ['770', '790', '715', '720'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.CBSA
+[
+    cbsa_fips_code (Type: TEXT; Sample values: ['30820', '27660', '31940', '34700', '46020'])
+    name (Type: TEXT; Sample values: ['Lock Haven, PA', 'Jennings, LA', 'Marinette, WI-MI', 'Muscatine, IA', 'Truckee-Grass Valley, CA'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3110', 'G3110', 'G3110', 'G3110', 'G3110'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.NATIONAL_OUTLINE
+[
+    name (Type: TEXT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.CSA
+[
+    name (Type: TEXT; Sample values: ['Amarillo-Pampa-Borger, TX', 'Parkersburg-Marietta-Vienna, WV-OH', 'Buffalo-Cheektowaga-Olean, NY', 'Mankato-New Ulm, MN', 'Monroe-Ruston, LA'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3100', 'G3100', 'G3100', 'G3100', 'G3100'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.RAILWAYS
+[
+    full_name (Type: TEXT; Sample values: ['Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.URBAN_AREAS
+[
+    name (Type: TEXT; Sample values: ['Wilmington, NC', 'Lynchburg, VA', 'Davis, CA', 'Oxnard, CA', 'Sebring--Avon Park, FL'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.COASTLINE
+[
+    name (Type: TEXT; Sample values: ['Atlantic', 'Atlantic', 'Atlantic', 'Atlantic', 'Atlantic'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CYCLISTIC.STATE_FIPS
+[
+    fips (Type: NUMBER; Sample values: ['1', '5', '15', '16', '17'])
+    state (Type: TEXT; Sample values: ['Alabama', 'Arkansas', 'Hawaii', 'Idaho', 'Illinois'])
+    postal_code (Type: TEXT; Sample values: ['AL', 'AR', 'HI', 'ID', 'IL'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.CYCLISTIC.ZIP_CODES
+[
+    zip (Type: NUMBER; Sample values: ['10453', '10451', '10452', '10456', '10455'])
+    borough (Type: TEXT; Sample values: ['Bronx', 'Bronx', 'Bronx', 'Bronx', 'Bronx'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.NWS_FORECAST_REGIONS
+[
+    state (Type: TEXT; Sample values: ['MI', 'MI', 'MI', 'MI', 'MI'])
+    name (Type: TEXT; Sample values: ['Houghton', 'Marquette', 'Alger', 'Luce', 'Gogebic'])
+]
+
+--------------------------------------------------
+
+###Table full name: CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.ADJACENT_COUNTIES
+[
+    county_fips_code (Type: TEXT; Sample values: ['19017', '19055', '19091', '19107', '19123'])
+    state (Type: TEXT; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa'])
+    neighbors_fips_code (Type: VARIANT; Sample values: ['[\n  "19067",\n  "19037",\n  "19019",\n  "19023",\n  "19065",\n  "19013"\n]', '[\n  "19105",\n  "19065",\n  "19043",\n  "19019",\n  "19061",\n  "19113"\n]', '[\n  "19147",\n  "19197",\n  "19187",\n  "19081",\n  "19109",\n  "19151"\n]', '[\n  "19101",\n  "19183",\n  "19157",\n  "19095",\n  "19179",\n  "19123"\n]', '[\n  "19135",\n  "19157",\n  "19107",\n  "19125",\n  "19099",\n  "19179"\n]'])
+]
+
+--------------------------------------------------
+

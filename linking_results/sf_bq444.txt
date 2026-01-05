@@ -1,0 +1,406 @@
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.EVENT_LOGS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1626601281000000', '1626611915000000', '1626611588000000', '1626609131000000', '1626601559000000'])
+    block_number (Type: NUMBER; Sample values: ['1292028', '1292323', '1292313', '1292248', '1292036'])
+    index (Type: NUMBER; Sample values: ['1', '1', '1', '0', '0'])
+    transaction_id (Type: TEXT; Sample values: ['af8827f3abf77159c8b4a5836854310cd5abea08e057dd3d6deaa0bef18a735d', '59affee306573f6918395b8bfb75f59c0d714a032dd21d0ff1e58b0a82a1b186', '3d9c183d4c4d2c3b40dc6fb7360a8c76a17cd74581407b0d0be9c3b254aafeb1', '8763921930416d3c1c8f383d9ca6af8a9fbb9a4c9a83abd0281895349f6aa8ff', '2ffe6b346ad0fa0dccf640ee2198fe942401a606dfb325a9c0124c8aec19905c'])
+    event_name (Type: TEXT; Sample values: ['TransferSuccess', 'TransferSuccess', 'TransferSuccess', 'IncreasedAllowance', 'IncreasedAllowance'])
+    address (Type: TEXT; Sample values: ['zil12drvflckms6874ffuujcdxj75raavl4yfn4ssc', 'zil14d6wwelssqumu6w9c6kaucz2r57z34cxuh96lf', 'zil14d6wwelssqumu6w9c6kaucz2r57z34cxuh96lf', 'zil14d6wwelssqumu6w9c6kaucz2r57z34cxuh96lf', 'zil14d6wwelssqumu6w9c6kaucz2r57z34cxuh96lf'])
+    params (Type: VARIANT; Sample values: ['[\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xba11eb7bcc0a02e947acf03cc651bfaf19c9ec00\\",\\"vname\\":\\"sender\\"}",\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xa5d3b90d17ff0dbe4d8caf30cad1ad2108074289\\",\\"vname\\":\\"recipient\\"}",\n  "{\\"type\\":\\"Uint128\\",\\"value\\":\\"235568293162207\\",\\"vname\\":\\"amount\\"}"\n]', '[\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xba11eb7bcc0a02e947acf03cc651bfaf19c9ec00\\",\\"vname\\":\\"sender\\"}",\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0x5abbab562630f415b0d0707634ba82a9029faf80\\",\\"vname\\":\\"recipient\\"}",\n  "{\\"type\\":\\"Uint128\\",\\"value\\":\\"696030103442616\\",\\"vname\\":\\"amount\\"}"\n]', '[\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xba11eb7bcc0a02e947acf03cc651bfaf19c9ec00\\",\\"vname\\":\\"sender\\"}",\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0x5abbab562630f415b0d0707634ba82a9029faf80\\",\\"vname\\":\\"recipient\\"}",\n  "{\\"type\\":\\"Uint128\\",\\"value\\":\\"1251993838435842\\",\\"vname\\":\\"amount\\"}"\n]', '[\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0x2966d1cd46937efda876be88509d02cc055b69d1\\",\\"vname\\":\\"token_owner\\"}",\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xba11eb7bcc0a02e947acf03cc651bfaf19c9ec00\\",\\"vname\\":\\"spender\\"}",\n  "{\\"type\\":\\"Uint128\\",\\"value\\":\\"340282366920938463463374607431768211455\\",\\"vname\\":\\"new_allowance\\"}"\n]', '[\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xa5d3b90d17ff0dbe4d8caf30cad1ad2108074289\\",\\"vname\\":\\"token_owner\\"}",\n  "{\\"type\\":\\"ByStr20\\",\\"value\\":\\"0xba11eb7bcc0a02e947acf03cc651bfaf19c9ec00\\",\\"vname\\":\\"spender\\"}",\n  "{\\"type\\":\\"Uint128\\",\\"value\\":\\"340282366920938463463374607431768211455\\",\\"vname\\":\\"new_allowance\\"}"\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.LOGS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1719238631000000', '1702516559000000', '1687745903000000', '1700755271000000', '1617386800000000']; Description: Timestamp of the block where this log was in)
+    block_number (Type: NUMBER; Sample values: ['20162083', '18781051', '17560590', '18635488', '12161595']; Description: The block number where this log was in)
+    block_hash (Type: TEXT; Sample values: ['0x7b782c6f4bf52787f5c4790b3dbdfa9c4ea41d6dc0964d64bb599d1f173dec16', '0x93f8d1ec09b21f8205812736b8ad0d5e7fee21bcbdd3173829918dd0c1e1fb9e', '0x8008aa7848be9aec7a3a5d699ee9862cc97fddb048e48fc03f2920bbd86a9658', '0x506a4b97227fa5b66e12ff3ce7a253bb62b4f31c9fbd84e5273d47fcf5f895f0', '0x57be820ef4b7fbcb8113db23de43cb68f9e0538f1aeec71d65513e3d94ecc8c8']; Description: Hash of the block where this log was in)
+    log_index (Type: NUMBER; Sample values: ['244', '244', '244', '244', '244']; Description: Integer of the log index position in the block)
+    transaction_index (Type: NUMBER; Sample values: ['97', '98', '100', '100', '101']; Description: Integer of the transactions index position log was created from)
+    transaction_hash (Type: TEXT; Sample values: ['0x8d2aeccb668f0c7cecce04784366c738e058741b3769a0a8b453f09ec4e17da5', '0xa0383b2d1dd47f17d47532d1941c5828de645a44f9f820dba6a3591dd473ae3d', '0xd5a7f22a4c94547373f40997d28a2eb3d5a8efb8d9c23c24cc9ba914865c533b', '0xc83d5c8fd7b2e2092c22b843376c7e4ec9a31080ee7547f0110108b0c6e9c6a6', '0x220517d9df157a5868f5112805514d14d8bc696e57d5e200bbbb99f6536c1543']; Description: Hash of the transactions this log was created from)
+    topics (Type: VARIANT; Sample values: ['[\n  "0x1ec042c965e2edd7107b51188ee0f383e22e76179041ab3a9d18ff151405166c",\n  "0x0000000000000000000000005accc90436492f24e6af278569691e2c942a676d"\n]', '[\n  "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",\n  "0x000000000000000000000000962827ba450d5d319e07da61b4bb508af077500a",\n  "0x0000000000000000000000001715a3e4a142d8b698131108995174f37aeba10d"\n]', '[\n  "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31",\n  "0x000000000000000000000000b1978234d50f74a3f5869fc2ebe22604e7acf15f",\n  "0x0000000000000000000000001e0049783f008a0085193e00003d00cd54003c71"\n]', '[\n  "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",\n  "0x000000000000000000000000ca22185b0681b33ef73f6e27c4baa26bb94ad4f0",\n  "0x00000000000000000000000090d7e8b37cd1d1bbe772cc06705835acd877a128",\n  "0x00000000000000000000000000000000000000000000000000000000000026f9"\n]', '[\n  "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",\n  "0x0000000000000000000000007a250d5630b4cf539739df2c5dacb4c659f2488d"\n]']; Description: Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.))
+    data (Type: TEXT; Sample values: ['0x000000000000000000000000754238f520b0d11e700e31190133a15f635dd3aa000000000000000000000000acb55c530acdb2849e6d4f36992cd8c9d50ed8f7000000000000000000000000000000000000000000000005f68e8131ecf80000', '0x00000000000000000000000000000000000000000000000000000000ed864640', '0x0000000000000000000000000000000000000000000000000000000000000001', '0x', '0x000000000000000000000000000000000000000000000000054607fc96a60000']; Description: Contains one or more 32 Bytes non-indexed arguments of the log)
+    address (Type: TEXT; Sample values: ['0x39053d51b77dc0d36036fc1fcc8cb819df8ef37a', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85', '0x00000000005316fe469550d85f2e5ae85b7db719', '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2']; Description: Address from which this log originated)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.LOGS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1563860384000000', '1563913655000000', '1563875195000000', '1563844343000000', '1563844343000000']; Description: Timestamp of the block where this log was in)
+    block_number (Type: NUMBER; Sample values: ['8458134', '8461978', '8459243', '8457018', '8457018']; Description: The block number where this log was in)
+    block_hash (Type: TEXT; Sample values: ['0x54d046f68f4aef69d14c18b1d09f736a4bce29e7359e0f82b76284c71faf6357', '0x70911f1af934a64c07023534108f722dfe9577ec2f452f21473c7c62a55f5c49', '0x8d3f0bc76880e156c3740d58b4796870f4d8b2d788298dbb7516be173db4fcb2', '0x6b69c4156a1d100bc65423fc8a10d9457a1a152983992d6b3374c667ea742249', '0x6b69c4156a1d100bc65423fc8a10d9457a1a152983992d6b3374c667ea742249']; Description: Hash of the block where this log was in)
+    log_index (Type: NUMBER; Sample values: ['1', '1', '1', '2', '1']; Description: Integer of the log index position in the block)
+    transaction_hash (Type: TEXT; Sample values: ['0x81a30ae78bb4fa6339d9ad0e848277ff7f20c2f30b3506e9421d0f43c6be38f2', '0x504c574f828725e10b50ceaa038bae8375b81efa7a99b7f911b0c38e14d562f7', '0x907e583e0792a9bb612e641933224444b5b0ebcd627cc42f4447c9c85eab679d', '0x723f0b374b99365c04cdb3d977cd883c6e530d3be4375bb80141b6eea83680fa', '0x723f0b374b99365c04cdb3d977cd883c6e530d3be4375bb80141b6eea83680fa']; Description: Hash of the transactions this log was created from)
+    transaction_index (Type: NUMBER; Sample values: ['2', '18', '3', '1', '1']; Description: Integer of the transactions index position log was created from)
+    topics (Type: VARIANT; Sample values: ['[\n  "0x0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885",\n  "0x000000000000000000000000a5de6d4184016708c1040c355f1c958192276db5"\n]', '[\n  "0x9bfafdc2ae8835972d7b64ef3f8f307165ac22ceffde4a742c52da5487f45fd1",\n  "0x0000000000000000000000003ec00ee8a4fbe81e7eea328029ce490654e8e11a",\n  "0x000000000000000000000000fcdd89dacc211c0ae2d3a0ba5319f50f78c436ba"\n]', '[\n  "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",\n  "0x000000000000000000000000d12a5a8f80750137b9d069dc0e9735d46f324e21",\n  "0x0000000000000000000000003ec00ee8a4fbe81e7eea328029ce490654e8e11a"\n]', '[\n  "0x6149d6fbfad1c173e29b8de83d7df1b09c0eaba8c3040a4c287f6f1333e60e27",\n  "0x000000000000000000000000f5269caa54f1f776dd996db35992d599e14d8a3b"\n]', '[\n  "0xce45c14a6c726f7154c3b98d500c578e3d8e91aeb29d5f9d12edb07b88f85482",\n  "0x000000000000000000000000f5269caa54f1f776dd996db35992d599e14d8a3b"\n]']; Description: Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.))
+    data (Type: TEXT; Sample values: ['0x00000000000000000000000000000000000000000000000b61c6b5cb43a2497b', '0x000000000000000000000000000000000000000000000002b5e3af16b188000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000', '0x00000000000000000000000000000000000000000000000f2dc7d47f15600000', '0x0000000000000000000000000000000000000000000000000938d48915ed76db', '0x0000000000000000000000000000000000000000000000000084d2085ed5f8a2']; Description: Contains one or more 32 Bytes non-indexed arguments of the log)
+    address (Type: TEXT; Sample values: ['0x085b0fdf115aa9e16ae1bddd396ce1f993c52220', '0x085b0fdf115aa9e16ae1bddd396ce1f993c52220', '0x085b0fdf115aa9e16ae1bddd396ce1f993c52220', '0x09aced531359ceffad9759a9252e1d82e3557eb2', '0x09aced531359ceffad9759a9252e1d82e3557eb2']; Description: Address from which this log originated)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.TRACES
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1476750975000000', '1476483740000000', '1476793175000000', '1476311216000000', '1577536254000000']; Description: Timestamp of the block where this trace was in)
+    transaction_index (Type: NUMBER; Sample values: ['59', '31', '66', '39', '32']; Description: Integer of the transactions index position in the block)
+    transaction_hash (Type: TEXT; Sample values: ['0xbe4d37ffd3ebbd7a13858793c00402993e28a4d16408c8a2d6ba8810fdb72999', '0x9914c06d31abf6025a7cb2589baac2d0a3f696d71444ce7b1c9c890e7b4694ed', '0xe7e4c5b85342c50fec604c504a6d2f2ea1dd24933f338b26565de53bf61e6d9b', '0x148ea25252cfbd12e31f349c6180bf7fe1c6953d4ba7b5445d8d9d9742221a81', '0x78c64b4f62008b2b03e5da5e5290a208e70e7af39497129a23bc886a8c2fbe7a']; Description: Transaction hash where this trace was in)
+    block_number (Type: NUMBER; Sample values: ['2456721', '2437841', '2459505', '2425743', '9476048']; Description: Block number where this trace was in)
+    block_hash (Type: TEXT; Sample values: ['0x51606e9793bac4bb00e7d48a40bd0fd56481c04927670e612bab4434f48e1765', '0xeed9fc4e077eeb8bbb4f8b90d8527a40acf24959f707c94794e85be594e5f74b', '0xbcc6d2d64847cf5d59a358773e3f61bc7b2b017788571f47aaeac8ea46a6d1a2', '0x655c135c6fcb1f961a3a95f9ecc11de8baccdcee34f1c886997b2e89d1790df3', '0x7d9a0aa73c1aae8d7624b8b0be29a23da7ae440801e30a284536f48ff3cd689c']; Description: Hash of the block where this trace was in)
+    subtraces (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Number of subtraces)
+    trace_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    input (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The data sent along with the message call)
+    from_address (Type: TEXT; Sample values: ['0xb95c2395ebb349d2058f0102e1ae483dcf3803fb', '0x03ceea9ea1bd690a28f74420adf3b50f89b66d58', '0x04ffc24161999f8461fe8129fd5145f9a35fd5b2', '0x167c9d39ebb553fbef5aa3ce99ab46917b4c23d3', '0x69e67e3bdf4f1de6f1c7b02a1fe1f6036b4d3c5f']; Description: Address of the sender, null when trace_type is genesis or reward)
+    trace_address (Type: TEXT; Sample values: ['127,0', '93,0', '128,0', '237,0', '555,0']; Description: Comma separated list of trace address in call tree)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.TRACES
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1630735736000000', '1681745987000000', '1696445387000000', '1681718675000000', '1621002580000000']; Description: Timestamp of the block where this trace was in)
+    transaction_index (Type: NUMBER; Sample values: ['127', '53', '31', '182', '79']; Description: Integer of the transactions index position in the block)
+    block_number (Type: NUMBER; Sample values: ['13157503', '17067435', '18279052', '17065205', '12433034']; Description: Block number where this trace was in)
+    transaction_hash (Type: TEXT; Sample values: ['0x48d0e5ceea7c75c4a5604c237c34be896ea56b656c76263151cbbd47b39c24e9', '0xbc644d31459d6400aacc0e6a40a0e391a2b01b2c9fa40dad8fa94f4aa9e8ae51', '0x82d086036d280f7066f9b11e0d962bd0e74d1a93a4cb1e4d6885e481dccaf67c', '0x30c59028bb9f65a9d4e5136d02421f4ba00cbf103aa7d18060b2d9d0fe7042bf', '0x50f8a88cd75f16588706d66ceaf2281ac848d90e54df5efa0b5c4c80901c2f52']; Description: Transaction hash where this trace was in)
+    block_hash (Type: TEXT; Sample values: ['0x5bacef170983a9481b1a64ac9fe34f9944ce68280a1f278b7984b761848e9663', '0x60cbb4475aabc5c613aa9f0eb545693425fb29b47b209fd64b88e7ea1d550d40', '0x196c87500e835c676d4914a32b6c842f176432643d18685018e707207a8fae25', '0xb3f0bd037a8ce962789143faa7de7986b300a786d1cbfe2879177f819c39f27e', '0xed2d9ce918bb83c22e1dbbb7322fe7b6174482dbd02ee9f13b1f13c59b9602ba']; Description: Hash of the block where this trace was in)
+    subtraces (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Number of subtraces)
+    trace_id (Type: TEXT; Sample values: ['call_0x48d0e5ceea7c75c4a5604c237c34be896ea56b656c76263151cbbd47b39c24e9_0', 'call_0xbc644d31459d6400aacc0e6a40a0e391a2b01b2c9fa40dad8fa94f4aa9e8ae51_0', 'call_0x82d086036d280f7066f9b11e0d962bd0e74d1a93a4cb1e4d6885e481dccaf67c_0', 'call_0x30c59028bb9f65a9d4e5136d02421f4ba00cbf103aa7d18060b2d9d0fe7042bf_0', 'call_0x50f8a88cd75f16588706d66ceaf2281ac848d90e54df5efa0b5c4c80901c2f52_0'])
+    input (Type: TEXT; Sample values: ['0xa9059cbb00000000000000000000000011fc728dc0867a66fa10d609ca6051cdaf15f26b000000000000000000000000000000000000000000000000000000000bfb0440', '0xa9059cbb0000000000000000000000005f41e3076a04761d38d3aad6aae525d32e4ef89b000000000000000000000000000000000000000000000000000000000299bdb0', '0xa9059cbb000000000000000000000000d69e09c11ca7df40822df09e49b26c92651039cc00000000000000000000000000000000000000000000000000000000018cba80', '0xa9059cbb000000000000000000000000359b0c6c4942f6307c414602e3453c2a4d964fd2000000000000000000000000000000000000000000000000000000009fab7c48', '0xa9059cbb000000000000000000000000f99c507883ad1e0edde428ebbaeda2ca385d7f9f000000000000000000000000000000000000000000000000000000001e4b4790']; Description: The data sent along with the message call)
+    trace_address (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Comma separated list of trace address in call tree)
+    from_address (Type: TEXT; Sample values: ['0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48']; Description: Address of the sender, null when trace_type is genesis or reward)
+    gas (Type: NUMBER; Sample values: ['67472', '67587', '54286', '69292', '217692']; Description: Gas provided with the message call)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.BLOCK_EVENTS
+[
+    block_timestamp (Type: TEXT; Sample values: ['2021-03-29T23:27:14.111869Z', '2021-03-29T22:59:30.7985516Z', '2021-03-29T23:02:53.2451133Z', '2021-03-29T23:05:06.2300993Z', '2021-03-29T23:15:18.9655276Z'])
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1617060434111869', '1617058770798551', '1617058973245113', '1617059106230099', '1617059718965527'])
+    event_type (Type: TEXT; Sample values: ['proposer_reward', 'mint', 'proposer_reward', 'proposer_reward', 'liveness'])
+    block_event_type (Type: TEXT; Sample values: ['begin', 'begin', 'begin', 'begin', 'begin'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1646634980000000', '1642481236000000', '1642990866000000', '1645898647000000', '1638501915000000']; Description: Timestamp of the block which contains this transaction)
+    nonce (Type: NUMBER; Sample values: ['7', '2', '3505', '1', '4693075'])
+    hash (Type: TEXT; Sample values: ['0x0de6003c11d90bf7a9ddb269337db936f4d78bbd8b44c10b96f85c601854a05a', '0xe4b7c0cdd9b61b75e2efb557215151e17bcf04d3cbd96aec5492fd462d0be607', '0x0d6a308118c5bb6a4f8d7ce4e3df6dc286d69ae13ab405a0b97a6f932aa5f851', '0x662b7d68201eddfa915db1d4d0a8faa135b403bc286419f4d0d7f6c9f1df9ea7', '0x1195903417e807ebccf7dd1b676a99a73d5d51f0cf40111d5ee1da58bb059f01']; Description: The hash of this transaction)
+    transaction_index (Type: NUMBER; Sample values: ['85', '43', '100', '54', '246'])
+    block_hash (Type: TEXT; Sample values: ['0x3b508ea0b89d64c36bbba416084bdc31477f5e1ce3567cb3a22082e3b4c2f20f', '0x99964ef701668d019999f2699846cb4f31039531e5a642a1ef66ad76abf68e84', '0x315cbbc618ac6261deca8ae9a0700fdab479d697ee0075d38d391e49ff758ee2', '0x21cd6400ee66114f29508d80991b5132bb7cf01e15c99ab8e1386503047b917a', '0xccbb8cd9f0f3a1209d170b6100b7b9de25890666a06c62f474d07d5f666cc9c8']; Description: Hash of the block which contains this transaction)
+    from_address (Type: TEXT; Sample values: ['0x2f58378a25efba25e9465a192455357baa0cece3', '0x3d4f965d933c66994fed31a78024230d1cf0ef69', '0x7dbdec4edbeb5fa3c9f79a87af427b970a88d90d', '0x4eaafd93768e41f73c7d4acfefe6cd6fb7cfdc72', '0x3cd751e6b0078be393132286c442345e5dc49699'])
+    block_number (Type: NUMBER; Sample values: ['14338172', '14027480', '14065623', '14283257', '13731226']; Description: Number of the block which contains this transaction)
+    input (Type: TEXT; Sample values: ['0x', '0x', '0x', '0x', '0x'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1601883066000000', '1564190465000000', '1601883066000000', '1601883182000000', '1601883066000000']; Description: Timestamp of the block which contains this transaction)
+    hash (Type: TEXT; Sample values: ['0xed8dffadb17c412e94d135ccbd2185dc5a482afab1bfae9d97ed6c0a59e082da', '0xde6e242f61af018df4edf471fc9ffd5b257f299ec0c9d7a875c3a3207ea1b915', '0x29a5c0acf6c88801fd5c3714d43e522b116af52a9106185fdeb1f1786c696a0e', '0x10ab473bb63c26442e609a15f2c89502c0619f8947c80420e032768ffd405ec4', '0xc88da0801c6af04b65333a8e6dc4638fd8c8083b773eb0b7b73e0fab8cbed9cd']; Description: The hash of this transaction)
+    nonce (Type: NUMBER; Sample values: ['13917', '0', '13780', '14331', '13897'])
+    transaction_index (Type: NUMBER; Sample values: ['240', '4', '103', '271', '220'])
+    block_hash (Type: TEXT; Sample values: ['0xeb2ec5e716d79e7e93fd746fd2034c02c3ac45638b8c13d60059b576cfcfb37c', '0x2b2dba6d8a997cb53e2f2a1d17bffe5d1beb8d4f8d5a0dc0d43c91eda914f74f', '0xeb2ec5e716d79e7e93fd746fd2034c02c3ac45638b8c13d60059b576cfcfb37c', '0xb1e48df9b2458bbd702a88f81ee6d105f7b5e64f4005847d0b6a7b06f1ae64f9', '0xeb2ec5e716d79e7e93fd746fd2034c02c3ac45638b8c13d60059b576cfcfb37c']; Description: Hash of the block which contains this transaction)
+    block_number (Type: NUMBER; Sample values: ['11340491', '8481481', '11340491', '11340497', '11340491']; Description: Number of the block which contains this transaction)
+    input (Type: TEXT; Sample values: ['0x', '0x', '0x', '0x', '0x'])
+    from_address (Type: TEXT; Sample values: ['0x13198af175291a4a33a9f3e982d7b603b39529db', '0xc1e57e7bbff036649c2ea2b52f1ff558d77ab85f', '0x13198af175291a4a33a9f3e982d7b603b39529db', '0x13198af175291a4a33a9f3e982d7b603b39529db', '0x13198af175291a4a33a9f3e982d7b603b39529db'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.TX_BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1658115107000000', '1658115042000000', '1658115867000000', '1658115005000000', '1658115935000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.LOGS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1621725640055018', '1621656684197429', '1621667116733445', '1621670337208993', '1621698287871945']; Description: Timestamp of the block where this log was in)
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1621725640055018', '1621656684197429', '1621667116733445', '1621670337208993', '1621698287871945'])
+    events (Type: VARIANT; Sample values: ['[\n  {\n    "attributes": [\n      {\n        "key": "action",\n        "value": "request"\n      }\n    ],\n    "type": "message"\n  },\n  {\n    "attributes": [\n      {\n        "key": "data_source_id",\n        "value": "4"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "07be7bd61667327aae10b7a13a542c7dfba31b8f4c52b0b60bf9c7b11b1a72ef"\n      },\n      {\n        "key": "external_id",\n        "value": "6"\n      },\n      {\n        "key": "calldata",\n        "value": "DAI"\n      },\n      {\n        "key": "data_source_id",\n        "value": "5"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "107048da9dbf7960c79fb20e0585e080bb9be07d42a1ce09c5479bbada8d0289"\n      },\n      {\n        "key": "external_id",\n        "value": "3"\n      },\n      {\n        "key": "calldata",\n        "value": "NXM AMPL DAI TUSD BAND EGLD ANT"\n      },\n      {\n        "key": "data_source_id",\n        "value": "11"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "c2b...(truncated)', '[\n  {\n    "attributes": [\n      {\n        "key": "action",\n        "value": "request"\n      }\n    ],\n    "type": "message"\n  },\n  {\n    "attributes": [\n      {\n        "key": "data_source_id",\n        "value": "4"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "07be7bd61667327aae10b7a13a542c7dfba31b8f4c52b0b60bf9c7b11b1a72ef"\n      },\n      {\n        "key": "external_id",\n        "value": "6"\n      },\n      {\n        "key": "calldata",\n        "value": "LINK XLM XRP"\n      },\n      {\n        "key": "data_source_id",\n        "value": "5"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "107048da9dbf7960c79fb20e0585e080bb9be07d42a1ce09c5479bbada8d0289"\n      },\n      {\n        "key": "external_id",\n        "value": "3"\n      },\n      {\n        "key": "calldata",\n        "value": "ADA BNB DOT LINA LINK TRX UNI VET XLM XRP YFI"\n      },\n      {\n        "key": "data_source_id",\n        "value": "3"\n      },\n      {\n        "key": "data_source_hash",...(truncated)', '[\n  {\n    "attributes": [\n      {\n        "key": "action",\n        "value": "request"\n      }\n    ],\n    "type": "message"\n  },\n  {\n    "attributes": [\n      {\n        "key": "data_source_id",\n        "value": "4"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "07be7bd61667327aae10b7a13a542c7dfba31b8f4c52b0b60bf9c7b11b1a72ef"\n      },\n      {\n        "key": "external_id",\n        "value": "6"\n      },\n      {\n        "key": "calldata",\n        "value": "DAI"\n      },\n      {\n        "key": "data_source_id",\n        "value": "5"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "107048da9dbf7960c79fb20e0585e080bb9be07d42a1ce09c5479bbada8d0289"\n      },\n      {\n        "key": "external_id",\n        "value": "3"\n      },\n      {\n        "key": "calldata",\n        "value": "NXM AMPL DAI TUSD BAND EGLD ANT"\n      },\n      {\n        "key": "data_source_id",\n        "value": "11"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "c2b...(truncated)', '[\n  {\n    "attributes": [\n      {\n        "key": "action",\n        "value": "request"\n      }\n    ],\n    "type": "message"\n  },\n  {\n    "attributes": [\n      {\n        "key": "data_source_id",\n        "value": "4"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "07be7bd61667327aae10b7a13a542c7dfba31b8f4c52b0b60bf9c7b11b1a72ef"\n      },\n      {\n        "key": "external_id",\n        "value": "6"\n      },\n      {\n        "key": "calldata",\n        "value": "LINK XLM XRP"\n      },\n      {\n        "key": "data_source_id",\n        "value": "5"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "107048da9dbf7960c79fb20e0585e080bb9be07d42a1ce09c5479bbada8d0289"\n      },\n      {\n        "key": "external_id",\n        "value": "3"\n      },\n      {\n        "key": "calldata",\n        "value": "ADA BNB DOT LINA LINK TRX UNI VET XLM XRP YFI"\n      },\n      {\n        "key": "data_source_id",\n        "value": "3"\n      },\n      {\n        "key": "data_source_hash",...(truncated)', '[\n  {\n    "attributes": [\n      {\n        "key": "action",\n        "value": "request"\n      }\n    ],\n    "type": "message"\n  },\n  {\n    "attributes": [\n      {\n        "key": "data_source_id",\n        "value": "4"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "07be7bd61667327aae10b7a13a542c7dfba31b8f4c52b0b60bf9c7b11b1a72ef"\n      },\n      {\n        "key": "external_id",\n        "value": "6"\n      },\n      {\n        "key": "calldata",\n        "value": "LINK XLM XRP"\n      },\n      {\n        "key": "data_source_id",\n        "value": "5"\n      },\n      {\n        "key": "data_source_hash",\n        "value": "107048da9dbf7960c79fb20e0585e080bb9be07d42a1ce09c5479bbada8d0289"\n      },\n      {\n        "key": "external_id",\n        "value": "3"\n      },\n      {\n        "key": "calldata",\n        "value": "ADA BNB DOT LINA LINK TRX UNI VET XLM XRP YFI"\n      },\n      {\n        "key": "data_source_id",\n        "value": "3"\n      },\n      {\n        "key": "data_source_hash",...(truncated)'])
+    txhash (Type: TEXT; Sample values: ['AD1E4CC752B9860DD494AEEF63843D552E6170E1591DF56F71388C8B3B42BDFF', '485C665F88341AFF8D645E44553C2B725249384D5B96843A2B8517B984BE1998', '8A78F8F511D1687F3EF71B89B10E328F9115257E9FF66BAEEE7DB64A8D768C71', '8C999B17036D0606A7F2DACA7474F7F596526464AA8EA11F6C77004956CE9829', 'A6039F64EC620751A3D6C012336A76F2E5E4A92D77D32398A100066B3E67FE21'])
+    log_index (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Integer of the log index position in the block)
+    log (Type: TEXT; Sample values: ['', '', '', '', ''])
+    msg_index (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    block_height (Type: NUMBER; Sample values: ['6050867', '6028851', '6032180', '6033204', '6042164'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.TOKENS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1532523239000000', '1532553651000000', '1532574711000000', '1532363732000000', '1453904744000000']; Description: Timestamp of the block where this token was created)
+    name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The name of the ERC20 token)
+    address (Type: TEXT; Sample values: ['0x1141608659ed28bdc60c4915b86907b4e24bde5e', '0xbd3419e2d4a4b3a34a92ccb8927e99ac0da1f75e', '0xc80d7b787470221079348a40120bd37a4ec4467a', '0x571230e3b5dfa68801cfab669a0b58606b9293c3', '0x7063732ced55cfa08aea520f3fe200c39b3df0f5']; Description: The address of the ERC20 token)
+    block_number (Type: NUMBER; Sample values: ['6245977', '6248211', '6249643', '6234840', '912691']; Description: Block number where this token was created)
+    block_hash (Type: TEXT; Sample values: ['0x8b621fa3ed26005a446fed69395f16a3b982f556ec03e2b0608c2de7a91cba4f', '0x402274814d248a1867145d588229224c01bf545a0f3e492f22296edb389c6808', '0x4d59e762caf3bfcc6f7c9db2eb6086b19f4c5032d25b7527e379259484f48b3d', '0xcd8ccdf69224468d904e71869f8a74f7842add236c53d13251b7c58967fcb8ca', '0x31e4c69c925af13c18e476f6890c7c3e35edd413279a9ade5808517282593f6c']; Description: Hash of the block where this token was created)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.EXCEPTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1640712045000000', '1640708226000000', '1640690885000000', '1640722206000000', '1640709424000000'])
+    transaction_id (Type: TEXT; Sample values: ['b950420f43241bdfa73f95bfd73e7cb90fa5239dad60aa85bd5aeb6f28bb9e32', 'd703ddf86db9e870dc49dbc851f6ec1e8460174ce97a5ea101aebbb0ff47ce44', 'f109271aca720223364537a39254bbbab4869ed8042bf74af657cb4bba6ea4c4', '77d9e3c64d9b72995e77f7248f0c55cff54a9165608c0a36ee1f57922a5c7f0d', 'c9d268848c40c130274b88c629ae9bebfe2744c2c642ac7c2b9ce69ade7a14ec'])
+    message (Type: TEXT; Sample values: ['Exception thrown', 'Ran out of gas.\n', 'Ran out of gas.\n', 'Ran out of gas.\n', 'Raised from Deposit'])
+    index (Type: NUMBER; Sample values: ['0', '0', '0', '0', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN.OUTPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1582800007000000', '1580885897000000', '1635175811000000', '1634167649000000', '1633966637000000'])
+    block_number (Type: NUMBER; Sample values: ['619203', '616047', '706649', '704895', '704537'])
+    transaction_hash (Type: TEXT; Sample values: ['34d8931632a117f53c6db9c54f70b61b0fbf67b4a10bfbe24e8f0a372c8fbd0a', '69e0b0062f498e4859fcababf847b841c77540e13d81af1e8bc5cc305f16c521', '2741d85e689a1df30558ac6b9d95a5a393f6164282ac6d296d1f7f269db4db34', 'c3f216314c7de8a0408f6f92100a68ef7248566f4cb122f5bc314c0681c3bf13', 'f6fb1e90ff3bf92ca83a428e76b8dd1e41217767e32d15a96f7c5ee55ea9cf34'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_DASH.OUTPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1519952693000000', '1521155610000000', '1622632577000000', '1521769945000000', '1622664357000000'])
+    transaction_hash (Type: TEXT; Sample values: ['d8e3ee4b126fcea18d82af9945370d8db4e4bf08d884bbb6b38f6fae97483790', '592f9f9565b0c97460e52f125165fe9332e8ba93fcff93cb8bc3c9f7189d2e06', 'debccd4ce5b3571570d12c5d9e2ddb6243d5b44cfb1e70aa37f788344490e0b3', '95b71c1892d5996d183fa6cb91f93186816cd918394b34074c4aaeec32e3fbb2', '730990b243b594df64080c813772c34b05572037f99a7778b92207aab8f68d18'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN_CASH.OUTPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1582183140000000', '1497401226000000', '1614668599000000', '1496356283000000', '1494247825000000'])
+    transaction_hash (Type: TEXT; Sample values: ['746dc1f7266897ac047acda6cee2ab97bb7bea7c76f330e51bd557f9a97a5000', '48d76f258b83d6aff8fd05073d61b353b87755cdb7f5a015cb3788920d3def23', '4be25dacc786858fc8fef0ce4708d5d715fe90b1f4978adbe640e0bf7adcad68', 'dc76690f572dc2a21a21f0a36716b0bd275c8938c8598a75e40754b8beb28c3f', '99bf4b790b9c198ff9c4f793bd332959047865cca57379f989f0ac2948d4b3f6'])
+    type (Type: TEXT; Sample values: ['pubkeyhash', 'pubkeyhash', 'pubkeyhash', 'pubkeyhash', 'pubkeyhash'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1466168298000000', '1466200222000000', '1466203570000000', '1466198358000000', '1466199124000000']; Description: Block creation timestamp specified in block header)
+    logs_bloom (Type: TEXT; Sample values: ['0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'])
+    hash (Type: TEXT; Sample values: ['0xda7b01b00021b2d7626621887998eda9c971a4abeb61ae5e6176f779ba284641', '0xa04692ec8e653ad94047a169dc444bc2112b30f57f7f20b33e451df13847cd07', '0xf34be88d6d0fafb72b4d2fcba008d6815babdc63621ad44ffd5e75d7761fb651', '0xbe49e4b044be9bf4cd714d83c68775f427cd04113a20f194ce0983f716decb27', '0x534c182a5c0d8efaab8d070631f66da84063ad7cfd1c230c7bd5169fdc7a32de']; Description: Hash of this block)
+    transactions_root (Type: TEXT; Sample values: ['0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421', '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421', '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421', '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421', '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'])
+    number (Type: NUMBER; Sample values: ['1720715', '1722896', '1723123', '1722774', '1722831']; Description: The number of the block)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN.INPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1497661993000000', '1599198455000000', '1603221517000000', '1531452772000000', '1665490257000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_DASH.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1682640175000000', '1680426669000000', '1680974945000000', '1681240265000000', '1682530260000000']; Description: Timestamp of the block which contains this transaction)
+    block_timestamp_month (Type: DATE; Sample values: ['2023-04-01', '2023-04-01', '2023-04-01', '2023-04-01', '2023-04-01']; Description: Month of the block which contains this transaction)
+    hash (Type: TEXT; Sample values: ['2b02c8fc751a891e10509a36ae0662c835c8d5238af5381f76df5bc664822acd', 'c13fe342f93176ccd3aa9036b6a3c8ac142194185941c689b1d396a213b2b307', '53dc0d4fe700d9c1c4a640aa8b2f40cc1302beb4d78303ad0ddb3b525244b463', '9bcb0c61f24fdc569ed75d794365112c5f39edef89695bc106d9c1dca4da05ce', 'aa09e9070fc7b6f0bc27b3f7405538919ce2c53638e32ca3669094c35a2d0aee']; Description: The hash of this transaction)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1623698578000000', '1624267038000000', '1624249216000000', '1624261598000000', '1624294341000000']; Description: Timestamp of the block which contains this transaction)
+    id (Type: TEXT; Sample values: ['0e1be9d0ef463a5a73a413daa2e52c494717f73437017d7f00d3e96d3e6bd25c', '1f8ed0062cda90810d5362c7f43b3a1bc5de6654ffee89084b0a991eec9ae426', '095d7e2eb11fe58f0a14462bd8a62f565637da70306a0b1b8b6d822180c593e1', '09a213c26bbd915bbb810be4caeae9c7f586d089d3745fa0a27470fb5ebbef1d', 'd639c710172afd630c9b0c576e00a254214ae9b6fdb691eca808f3de69847a17'])
+    code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    block_number (Type: NUMBER; Sample values: ['1223518', '1235741', '1235324', '1235610', '1236397']; Description: Number of the block which contains this transaction)
+    data (Type: TEXT; Sample values: ['{"_tag":"WithdrawStakeRewards","params":[{"vname":"ssnaddr","type":"ByStr20","value":"0xB83fC2C72c44B6B869C64384375C979Dc3f7cf05"}]}', '{"_tag":"SwapExactTokensForTokens","params":[{"vname":"token0_address","type":"ByStr20","value":"0xa845c1034cd077bd8d32be0447239c7e4be6cb21"},{"vname":"token1_address","type":"ByStr20","value":"0x173ca6770aa56eb00511dac8e6e13b3d7f16a5a5"},{"vname":"token0_amount","type":"Uint128","value":"3107911954931743"},{"vname":"min_token1_amount","type":"Uint128","value":"398560201"},{"vname":"deadline_block","type":"BNum","value":"1235745"},{"vname":"recipient_address","type":"ByStr20","value":"0x3d460912273389640b46e2beec7ce4f801fdfdd6"}]}', '{"_tag":"SwapExactTokensForTokens","params":[{"vname":"token0_address","type":"ByStr20","value":"0xa845c1034cd077bd8d32be0447239c7e4be6cb21"},{"vname":"token1_address","type":"ByStr20","value":"0x173ca6770aa56eb00511dac8e6e13b3d7f16a5a5"},{"vname":"token0_amount","type":"Uint128","value":"29074816043992962"},{"vname":"min_token1_amount","type":"Uint128","value":"3840668165"},{"vname":"deadline_block","type":"BNum","value":"1235325"},{"vname":"recipient_address","type":"ByStr20","value":"0x814a2c3f4f56fc5a75b12c2f9e7a39e4dfaa7660"}]}', '{"_tag":"SwapExactTokensForTokens","params":[{"vname":"token0_address","type":"ByStr20","value":"0xa845c1034cd077bd8d32be0447239c7e4be6cb21"},{"vname":"token1_address","type":"ByStr20","value":"0x173ca6770aa56eb00511dac8e6e13b3d7f16a5a5"},{"vname":"token0_amount","type":"Uint128","value":"400135025551564"},{"vname":"min_token1_amount","type":"Uint128","value":"51520500"},{"vname":"deadline_block","type":"BNum","value":"1235611"},{"vname":"recipient_address","type":"ByStr20","value":"0x8450c86dde47fab67bf7de0133485a0a2f2c0911"}]}', '{"_tag":"SwapExactTokensForTokens","params":[{"vname":"token0_address","type":"ByStr20","value":"0xa845c1034cd077bd8d32be0447239c7e4be6cb21"},{"vname":"token1_address","type":"ByStr20","value":"0x173ca6770aa56eb00511dac8e6e13b3d7f16a5a5"},{"vname":"token0_amount","type":"Uint128","value":"17000000000000000"},{"vname":"min_token1_amount","type":"Uint128","value":"1984198530"},{"vname":"deadline_block","type":"BNum","value":"1236399"},{"vname":"recipient_address","type":"ByStr20","value":"0x35e0a4dc3b3e12a04b93118d3c3ddbecdf356ce3"}]}'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.DS_BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1550318189000000', '1563055966000000', '1659239158000000', '1555626347000000', '1553974017000000'])
+    number (Type: NUMBER; Sample values: ['134', '1699', '22313', '766', '577'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1492548513000000', '1492214906000000', '1492039760000000', '1493500264000000', '1492735560000000']; Description: Timestamp of the block which contains this transaction)
+    block_timestamp_month (Type: DATE; Sample values: ['2017-04-01', '2017-04-01', '2017-04-01', '2017-04-01', '2017-04-01']; Description: Month of the block which contains this transaction)
+    hash (Type: TEXT; Sample values: ['035fd8df8740ebc03839d8fbef2030d376e6589956ac4ac6d9edf0be053fb450', 'd1058bd3d8f1ef294d34febf5b5e7d2e832eefc9d94bed47a614b9401d94d99a', '4fe9a2fcfbd2d7cdb42a820eda184915f76f35e658f89a8840cbd98a77d785f9', '47be74abd10a737936c55247be8d5cc383268a40797967014de3ec04e09ea62c', 'aecf805b33d28f0cf0e84693b82e5a561ea73f0280cc2890d2ea267b7daafee4']; Description: The hash of this transaction)
+    block_number (Type: NUMBER; Sample values: ['462467', '461913', '461641', '464096', '462777']; Description: Number of the block which contains this transaction)
+    block_hash (Type: TEXT; Sample values: ['00000000000000000126fd575309a6f67f2a2f530a84490e9f8f87334161aafb', '0000000000000000018eb24676fac1821b44fcb2baf50838074c8a96fd5bbae8', '00000000000000000202bec9d4b3a720d3617729e6365d4c548b8565c6bc74b3', '000000000000000000d909d49fe1e477b6529fb3eb462d4fbf6d270dca441e35', '000000000000000001134475f218cff915341423bdf419c6f340a1a47a79c9b9']; Description: Hash of the block which contains this transaction)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN_CASH.INPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1679241843000000', '1440602603000000', '1535974586000000', '1536081903000000', '1535829579000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1491836340000000', '1493505728000000', '1493081161000000', '1484968573000000', '1492739070000000']; Description: Block creation timestamp specified in block header)
+    logs_bloom (Type: TEXT; Sample values: ['0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004040000004000000000000000000000000000000000000000000000000000000000000000100000000000000100000000000000000000000000000000000000000000000020000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020080000000000000000000000000000000000002', '0x000001000c1000080000001000000000000000080400000000800000000000080002800000000000000002000081000008000000200400580000102000000000000000000000004008000008000000000001001000000000000102000000000000000004020000000000004000040002200000000400000000000010000000000000010000000800000000000040000010000000000000800000040100040500400000000000000080000004000000800000010002008000400000010001200010004002020400000008000010804000000000840000000120000000000000000040000040101000000000408000000000000000400000082000000020000080', '0x000000000000110000000000000000000000000804000000000002000000000400008000000000000000000000800000080000000014004800000000000000000000000000000000000000000000000000010000000100000000000000000000000000000000000100000000000c0000200000000000000000000000000000000000001000000000000000000000000000000000800000000000000000002000000000000000000000000000000000800000000000000000400000000000200000000000000020000000000050000000000000020000000000000000000000010000000040100000000000000000000000000000400000200008000800000000', '0x00000000000080000000000000000000000000000000000000000000000000000000100000008200000200000000002100000000000000000000000000000000000000000000000080000004000000000000000000000000000000008000000000000000080020000000000000000000004000200000000000020000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000004000100000000000000000000000100000000002000000000000000000000000000000000400000100000000400000000002000000', '0x00000000000000000000000000000000000000000000000000000000000020000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120000000000200000000000000000000000000000000000000000000000000000000000000000'])
+    transactions_root (Type: TEXT; Sample values: ['0xbb44b12b00899e91656679f6386496d85952b6a1da44d288354ca072db41cde8', '0xe38c1464cbbda9211a340bedce20f814f959c769bdebedbd27ad803bf8472e76', '0x6bd427f6fd4ec4545ccfd4adda6cc9ce536b9ab7f02cd1cfa571ea863b3614df', '0x0dc1901cc748a2039a7a7d32b8e77170b9c9f4cc6a94e10e5489082b2718204b', '0x8270b83e7e2f89a51d21eb3d46af5f7a426a7c9a8366fcf7f99b81df718c6f3c'])
+    hash (Type: TEXT; Sample values: ['0x9dbc18ef34d8101b13bec0053ab5bfab7f4f43841b8d1b0bb130d4f9aa061d92', '0x215a29ccbb317313f3c03e701443ca4c6c87ebc118550f1b67e3ce796b0f920f', '0x0035b2c9ee7c7556b84b5c7c65f3b7a164bf23605fd33ec28cf9ff1531b7ec53', '0x37fe0f7af9377ffe279956ba62ab12d0c47a9d9eb6e797acead2e9a6072342a1', '0xf9075d09945a958cbcf387df3eea15f2966021252c3846dccbba74a63ca66c20']; Description: Hash of this block)
+    number (Type: NUMBER; Sample values: ['3511373', '3623144', '3595129', '3034603', '3572110']; Description: The number of the block)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.TOKEN_TRANSFERS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1532759268000000', '1532786744000000', '1532788489000000', '1532789955000000', '1532789392000000']; Description: Timestamp of the block where this transfer was in)
+    log_index (Type: NUMBER; Sample values: ['0', '0', '12', '0', '2']; Description: Log index in the transaction receipt)
+    transaction_hash (Type: TEXT; Sample values: ['0x8aa13c540244a8056a4e876e8270dcd893636efe8fbdb2069f847719f9106cd9', '0xa7f04f01d6b73362c5fb76bbbf96d3487ea48b4c66f36480aa9fdb8bd1ed1e54', '0x0c5066efc1338a874ea69399d504a7c8669f84b8e8eed96aaa4ccbd9850d9c01', '0x4c1b5c680d1b3f87a0ccf54ec8fb1ae697ea2313e728d35e8d07ba9605a4164d', '0x48d49ec87f71753d5915054a7640c063fc08d57a6fc2d0dfdba2e4a4cf4e5b3f']; Description: Transaction hash)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_DASH.INPUTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1637402788000000', '1623866837000000', '1622690648000000', '1604853256000000', '1618444279000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.TOKEN_TRANSFERS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1660275833000000', '1620758235000000', '1660328696000000', '1609999950000000', '1602954731000000']; Description: Timestamp of the block where this transfer was in)
+    log_index (Type: NUMBER; Sample values: ['205', '205', '205', '205', '205']; Description: Log index in the transaction receipt)
+    transaction_hash (Type: TEXT; Sample values: ['0xfe3f77e61c8bf9e13bd31ff08eac0b0ae13fa18fa514b6e57ed4bb654dcdee14', '0xf160fa3511463539ed4cc2036e6379d00edf04c35d591d5314ae65924dbb708a', '0x5f1ef4bd9058ed788f9627a64ba7c0cb8698d7f86bc0ce8bd5a626932cf33975', '0x3d236866be88d6a24cb1fe69198e46ccb95f11a792c418dffa775c58b19fe5ed', '0x003250a0b922bcf2790c8ffb0b76b5187fd96bada27366e7d534ff4a2fc2257d']; Description: Transaction hash)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN_CASH.TRANSACTIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1395888795000000', '1394630782000000', '1497322790000000', '1394901707000000', '1416724700000000']; Description: Timestamp of the block which contains this transaction)
+    block_timestamp_month (Type: DATE; Sample values: ['2014-03-01', '2014-03-01', '2017-06-01', '2014-03-01', '2014-11-01']; Description: Month of the block which contains this transaction)
+    hash (Type: TEXT; Sample values: ['9550ead74f556be17c85fdb7e3cc145c823ed7f0b8e828de74dee0118c92aa91', '7496715db2fe51ca3e66a10725c4aa8edd8f0bfd87fb33cf1e1f762bfd298849', '04f13869c6768ec60104c7de98b361529f69a2cddda7df5bd22c33b671df7873', 'ba6be87459d4b6b4cebe9c10cd0a8eea1a0bad3940d9997bf7dfc1aded3222dd', 'b074c19420b84b1cd2e07c15c75fa5d6c605716fb7141c388ad4e62764e49316']; Description: The hash of this transaction)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ZILLIQA.TRANSITIONS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1653325996000000', '1653301895000000', '1648875238000000', '1648869070000000', '1648882539000000'])
+    transaction_id (Type: TEXT; Sample values: ['f00eb0dcb417601b330e6808f261eec52cdc2676880398b3d88af9626c3cdd9b', '99d36f692be23e1628d2f4df1a620c42f8a33cc409ac018df579303d1885d56d', '02b09405369ffc942beeb7a6838c1b8f2f9eefe91510fddc63e9529426108df6', '00facd06fe4c27ce28d685d2d4d522932707750185cd6e73539e6e9219d4b700', 'f9f103d3478c8478a74f4bfca118d46d272ac0ac3abb4bb6afa2d8220c6f8804'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.TRANSACTIONS
+[
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1621252763539267', '1621233837331940', '1621238655927855', '1621265729687681', '1621266175817214'])
+    block_timestamp (Type: TEXT; Sample values: ['2021-05-17T11:59:23.53926789Z', '2021-05-17T06:43:57.331940073Z', '2021-05-17T08:04:15.927855292Z', '2021-05-17T15:35:29.687681794Z', '2021-05-17T15:42:55.817214715Z']; Description: Timestamp of the block which contains this transaction)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.MESSAGES
+[
+    block_timestamp (Type: TEXT; Sample values: ['2021-05-06T03:58:01.899848143Z', '2021-05-06T14:09:43.281723906Z', '2021-05-06T00:54:04.601265224Z', '2021-05-06T12:41:49.073078012Z', '2021-05-06T12:51:42.143555392Z'])
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1620273481899848', '1620310183281723', '1620262444601265', '1620304909073078', '1620305502143555'])
+    cosmos_sdk_MsgWithdrawValidatorCommission (Type: VARIANT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cosmos_sdk_MsgEditValidator (Type: VARIANT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cosmos_sdk_MsgCreateValidator (Type: VARIANT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    cosmos_sdk_MsgSubmitEvidence (Type: VARIANT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN.BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1298469082000000', '1298142674000000', '1298483045000000', '1298253067000000', '1298777346000000']; Description: Block creation timestamp specified in block header)
+    timestamp_month (Type: DATE; Sample values: ['2011-02-01', '2011-02-01', '2011-02-01', '2011-02-01', '2011-02-01']; Description: Month of the block creation timestamp specified in block header)
+    number (Type: NUMBER; Sample values: ['109930', '109157', '109977', '109402', '110786']; Description: The number of the block)
+    hash (Type: TEXT; Sample values: ['00000000000137ecfcf59721de0732c82482b22536214e1a5ed6ff3701088d66', '00000000000059365a4d643b35aafb39611cc4187e3379e31ed8035676ae810c', '0000000000017ce55029a299f020d7f8e6df6b1990711c8464050d4d54a3c54f', '00000000000118cfd55d57546b617611cb1d77fd92eae3c806cb76ec366f90b0', '000000000000d19129c9fe962dc0b6b69f4164cdb6d67c73607e1b8ea410cffa']; Description: Hash of this block)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.ORACLE_REQUESTS
+[
+    block_timestamp (Type: TEXT; Sample values: ['2021-06-23T10:48:23.446070108Z', '2021-09-05T08:34:21.417317401Z', '2021-09-05T08:43:35.601482188Z', '2021-09-05T19:18:45.736687007Z', '2021-09-05T21:23:39.602643163Z'])
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1624445303446070', '1630830861417317', '1630831415601482', '1630869525736687', '1630877019602643'])
+    oracle_request_id (Type: NUMBER; Sample values: ['6957743', '10182920', '10183230', '10204861', '10209115'])
+    decoded_result (Type: VARIANT; Sample values: ['{\n  "calldata": "{\\"symbols\\":[\\"BTCB\\",\\"BETH\\"],\\"multiplier\\":1000000000}",\n  "result": "{\\"rates\\":[34153437899999,2003365500000]}"\n}', '{\n  "calldata": "{\\"symbols\\":[\\"BTCB\\",\\"BETH\\"],\\"multiplier\\":1000000000}",\n  "result": "{\\"rates\\":[49956329300000,3880739100000]}"\n}', '{\n  "calldata": "{\\"symbols\\":[\\"BTCB\\",\\"BETH\\"],\\"multiplier\\":1000000000}",\n  "result": "{\\"rates\\":[50057000000000,3897629400000]}"\n}', '{\n  "calldata": "{\\"symbols\\":[\\"BTCB\\",\\"BETH\\"],\\"multiplier\\":1000000000}",\n  "result": "{\\"rates\\":[50776882200000,3941924150000]}"\n}', '{\n  "calldata": "{\\"symbols\\":[\\"BTCB\\",\\"BETH\\"],\\"multiplier\\":1000000000}",\n  "result": "{\\"rates\\":[51601990000000,3965255000000]}"\n}'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BITCOIN_CASH.BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1382772110000000', '1381711472000000', '1381707719000000', '1381235248000000', '1380938295000000']; Description: Block creation timestamp specified in block header)
+    timestamp_month (Type: DATE; Sample values: ['2013-10-01', '2013-10-01', '2013-10-01', '2013-10-01', '2013-10-01']; Description: Month of the block creation timestamp specified in block header)
+    number (Type: NUMBER; Sample values: ['266149', '263467', '263453', '262389', '261763']; Description: The number of the block)
+    hash (Type: TEXT; Sample values: ['0000000000000004753bd3347b58e55805fb17fb28116ca91962bd32e0fefdb9', '0000000000000000a9a4b9e17411828902e555579256fa34e87a406496ec36ba', '000000000000000cb4fe468e60bf9f1dd14fcd16c17e9ae2e89fa669c6d30f32', '000000000000000a4b97c0c77d5144230012829dc6121a4a886d5840fc369ab8', '00000000000000079e66a8b7ccda1d0534a8eb27db601f45d2f052463fc836ad']; Description: Hash of this block)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_BAND.BLOCKS
+[
+    block_timestamp (Type: TEXT; Sample values: ['2021-06-09T10:16:12.655083898Z', '2021-06-09T10:14:26.642437525Z', '2021-06-09T10:20:48.940756623Z', '2021-06-09T10:09:18.585105254Z', '2021-06-09T10:11:01.741161695Z'])
+    block_timestamp_truncated (Type: NUMBER; Sample values: ['1623233772655083', '1623233666642437', '1623234048940756', '1623233358585105', '1623233461741161'])
+    evidence_hash (Type: TEXT; Sample values: ['', '', '', '', ''])
+    validators_hash (Type: TEXT; Sample values: ['00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4'])
+    next_validators_hash (Type: TEXT; Sample values: ['00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4', '00E1F37BAE108336B8E3129DF8CE85B6E0F77054372A945CBEACFD34635E7CD4'])
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_DASH.BLOCKS
+[
+    timestamp (Type: NUMBER; Sample values: ['1528924702000000', '1528982631000000', '1527951486000000', '1530389104000000', '1683612505000000']; Description: Block creation timestamp specified in block header)
+    timestamp_month (Type: DATE; Sample values: ['2018-06-01', '2018-06-01', '2018-06-01', '2018-06-01', '2023-05-01']; Description: Month of the block creation timestamp specified in block header)
+    number (Type: NUMBER; Sample values: ['886481', '886849', '880306', '895771', '1867815']; Description: The number of the block)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.CONTRACTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1515253760000000', '1515253760000000', '1515253760000000', '1515253760000000', '1515253760000000']; Description: Timestamp of the block where this contract was created)
+    bytecode (Type: TEXT; Sample values: ['0x606060405236156100465763ffffffff60e060020a600035041663395ede4d811461004a57806383197ef01461006b5780638da5cb5b14610080578063e5225381146100af575b5b5b005b341561005557600080fd5b610046600160a060020a03600435166100c4565b005b341561007657600080fd5b6100466101df565b005b341561008b57600080fd5b61009361020b565b604051600160a060020a03909116815260200160405180910390f35b34156100ba57600080fd5b61004661021a565b005b60008054819033600160a060020a039081169116146100e257600080fd5b82915081600160a060020a03166370a082313060006040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b151561013c57600080fd5b6102c65a03f1151561014d57600080fd5b505050604051805160008054919350600160a060020a03808616935063a9059cbb92169084906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b15156101bd57600080fd5b6102c65a03f115156101ce57600080fd5b505050604051805150505b5b505050565b60005433600160a060020a0390811691161461...(truncated)', '0x606060405236156100465763ffffffff60e060020a600035041663395ede4d811461004a57806383197ef01461006b5780638da5cb5b14610080578063e5225381146100af575b5b5b005b341561005557600080fd5b610046600160a060020a03600435166100c4565b005b341561007657600080fd5b6100466101df565b005b341561008b57600080fd5b61009361020b565b604051600160a060020a03909116815260200160405180910390f35b34156100ba57600080fd5b61004661021a565b005b60008054819033600160a060020a039081169116146100e257600080fd5b82915081600160a060020a03166370a082313060006040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b151561013c57600080fd5b6102c65a03f1151561014d57600080fd5b505050604051805160008054919350600160a060020a03808616935063a9059cbb92169084906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b15156101bd57600080fd5b6102c65a03f115156101ce57600080fd5b505050604051805150505b5b505050565b60005433600160a060020a0390811691161461...(truncated)', '0x606060405236156100465763ffffffff60e060020a600035041663395ede4d811461004a57806383197ef01461006b5780638da5cb5b14610080578063e5225381146100af575b5b5b005b341561005557600080fd5b610046600160a060020a03600435166100c4565b005b341561007657600080fd5b6100466101df565b005b341561008b57600080fd5b61009361020b565b604051600160a060020a03909116815260200160405180910390f35b34156100ba57600080fd5b61004661021a565b005b60008054819033600160a060020a039081169116146100e257600080fd5b82915081600160a060020a03166370a082313060006040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b151561013c57600080fd5b6102c65a03f1151561014d57600080fd5b505050604051805160008054919350600160a060020a03808616935063a9059cbb92169084906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b15156101bd57600080fd5b6102c65a03f115156101ce57600080fd5b505050604051805150505b5b505050565b60005433600160a060020a0390811691161461...(truncated)', '0x606060405236156100465763ffffffff60e060020a600035041663395ede4d811461004a57806383197ef01461006b5780638da5cb5b14610080578063e5225381146100af575b5b5b005b341561005557600080fd5b610046600160a060020a03600435166100c4565b005b341561007657600080fd5b6100466101df565b005b341561008b57600080fd5b61009361020b565b604051600160a060020a03909116815260200160405180910390f35b34156100ba57600080fd5b61004661021a565b005b60008054819033600160a060020a039081169116146100e257600080fd5b82915081600160a060020a03166370a082313060006040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b151561013c57600080fd5b6102c65a03f1151561014d57600080fd5b505050604051805160008054919350600160a060020a03808616935063a9059cbb92169084906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b15156101bd57600080fd5b6102c65a03f115156101ce57600080fd5b505050604051805150505b5b505050565b60005433600160a060020a0390811691161461...(truncated)', '0x606060405236156100465763ffffffff60e060020a600035041663395ede4d811461004a57806383197ef01461006b5780638da5cb5b14610080578063e5225381146100af575b5b5b005b341561005557600080fd5b610046600160a060020a03600435166100c4565b005b341561007657600080fd5b6100466101df565b005b341561008b57600080fd5b61009361020b565b604051600160a060020a03909116815260200160405180910390f35b34156100ba57600080fd5b61004661021a565b005b60008054819033600160a060020a039081169116146100e257600080fd5b82915081600160a060020a03166370a082313060006040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b151561013c57600080fd5b6102c65a03f1151561014d57600080fd5b505050604051805160008054919350600160a060020a03808616935063a9059cbb92169084906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b15156101bd57600080fd5b6102c65a03f115156101ce57600080fd5b505050604051805150505b5b505050565b60005433600160a060020a0390811691161461...(truncated)']; Description: Bytecode of the contract)
+    address (Type: TEXT; Sample values: ['0x85d2a5e3cbc28c2cb7760227b602922b74836b82', '0x19aa56e5092a8f115b0951c68a0aa701c9295993', '0xf1b09126c6c5cdd8f80be0e10c26d3a8d205dc07', '0x52c37eb714643889f1d4c47b12e0ff2912fedae4', '0x2bb586e1ef52e4ff27220f998eaad6b9fa0dae9d']; Description: Address of the contract)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM.CONTRACTS
+[
+    block_timestamp (Type: NUMBER; Sample values: ['1708580231000000', '1720454267000000', '1597969158000000', '1529993370000000', '1701450227000000']; Description: Timestamp of the block where this contract was created)
+    bytecode (Type: TEXT; Sample values: ['0x00483473494141414141414141412b3161793435647478483846574e574358417859504e4e4c59503851786143466b4930646f77345371434d466f6d6766303958565a506e536f706a655a4d346747466f357378356b4d31696433563130392b2b662f7648352b2f2f2b76616237353665662f2f2b7a644e766e6d3676662f76683364507a2b336476503778392f5a656e46772b342f63306658762f77352b2f666676664e372f3778635076623633665066332f7838734f6231382b7658377838654f505048323450396e424c2f7038396c7475442f2f6e747536656e662b4c2b7779762f34506c502f73484c334f646a752b565362376b33584932436e37336a353872343264617470486e4c7464364b4a64354a2f6f7a7674587a4c302f7a5a3844456133764737747677757837585662326547563764665a2f742f6e57307566796635654a68702b486a2b356d722b39337263502f6d333452336a7637797135686a46763858496e4e6e387a76513743525a7756497776717a4a6d4c4e6e6636414e587861305976677173636a552b38792f58306c7634596d4b39786370652f7941573155646f65474a7a3843337a713336376d3257767951726e4554726c5668712b354e776459324b4f306f6a6d6f47316c415265664865757850562f68477858584e71723234576164714f785a4d4f...(truncated)', '0x60806040526004361061008a5760003560e01c806330f0dbe01161005957806330f0dbe01461017e578063bb4b5734146101ca578063c940baf8146101fe578063f12c2eb41461024a578063f676d67a1461029657610091565b806301b4f0f81461009b57806305d1294a146100e25780630d9019e11461011657806316e73a551461014a57610091565b3661009157005b6100996104ca565b005b3480156100a757600080fd5b506100cf7f053c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a881565b6040519081526020015b60405180910390f35b3480156100ee57600080fd5b506100cf7f0000000000000000000000000000000000000000000000000021b6e7ce44ffdb81565b34801561012257600080fd5b506100cf7f0685fc1b003cdcc592202dc2e44c9ce54ed87f8744d175fc91848e98fbee23e281565b34801561015657600080fd5b506100cf7f000000000000000000000000000000000000000000000000000000000000000081565b34801561018a57600080fd5b506101b27f00000000000000000000000000000000000000000000000000000000002dc6c081565b6040516001600160801b0390911681526020016100d9565b3480156101d657600080fd5b506101b27f0000000000000000000000000000000000000000000000...(truncated)', '0x6080604052600436106100865760003560e01c8063313ce56711610059578063313ce567146102b257806370a08231146102e357806395d89b4114610348578063a9059cbb146103d8578063dd62ed3e1461044b57610086565b806306fdde03146100f1578063095ea7b31461018157806318160ddd146101f457806323b872dd1461021f575b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156100ee573d6000803e3d6000fd5b50005b3480156100fd57600080fd5b506101066104d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561014657808201518184015260208101905061012b565b50505050905090810190601f1680156101735780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561018d57600080fd5b506101da600480360360408110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610509565b604051808215151515815260200191505060405180910390...(truncated)', '0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063315a095d14610046575b600080fd5b34801561005257600080fd5b5061007160048036038101908080359060200190929190505050610073565b005b600073b13d7dab5505512924cb8e1be970b849009d34da73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156100c357600080fd5b732604fa406be957e542beb89e6754fcde6815e83f90508073ffffffffffffffffffffffffffffffffffffffff1663a9059cbb7323859dbf88d714125c65d1b41a8808cadb199d9e846040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561019157600080fd5b505af11580156101a5573d6000803e3d6000fd5b505050506040513d60208110156101bb57600080fd5b81019080805190602001909291905050505050505600a165627a7a7230582037e513c24d750a5c72fa6100074e3380fbddc8579af35a8d...(truncated)', '0x0025324677446a78253246384125324248783741414141414141414148253246253246414541473335596f7738467734414f2532462532464358253246415038412532467744253246414141414148674137414a776625324638417625324638412532467744762532467744253246415038412532467744253246415038412532467744253246415035253246332532463367253246774425324641504e4967422532465425324650305a253246465941413738635741426b53585a62324d58754c2532463841253246774477416f63253246346e2532424d4c50344b253246774425324641503841253246774425324225324246755825324677442532464150384125324225324638412532467744253246415038412532467744253246415038412532467744253246415038412532467741447741454134253246384134666e774141414141414141414141414141414150253246384125324677444d66382532466741253246674e2532466c34454d504945374166253246414f41436625324638412532467744344141414163414234456a4544253246774425324641503841253246774350253246774425324641503841253246774425324641503841253246774425324641503525324648335877502532463841386a556125324677444425324276355a71443441416f64306d41...(truncated)']; Description: Bytecode of the contract)
+    address (Type: TEXT; Sample values: ['0x1babaff436c67963582cd95c468bf7f1bfaf1cfd', '0xc3c64bf8778946ad819fd40c00c225408cc6782c', '0x80f4fa459da10fa9a9c13095f68b942bfefa1273', '0x805d6453110f1a54a9fbdd5d37ade0c4380efabc', '0x18b88432a3753dbe075432e350bcbc17c3413824']; Description: Address of the contract)
+    block_number (Type: NUMBER; Sample values: ['19281125', '20262832', '10700322', '5855918', '18692931']; Description: Block number where this contract was created)
+]
+
+--------------------------------------------------
+
+###Table full name: CRYPTO.CRYPTO_ETHEREUM_CLASSIC.BALANCES
+[
+    address (Type: TEXT; Sample values: ['0xe485aee166761631ee5f0d0ce27c6f69dd7a3c5d', '0x2f3b226c145870235b502117358ddc09652cdbbd', '0xd6908376abeefc94d2eb3f698bab3e7d69e4a109', '0x2d9a3b587fb75d23204fb72dfd91463f1798f142', '0xcfac9df6c5f9e9ed14362dd5851c45089bbf6da0']; Description: Address)
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+Ethereum Logs Overview: Ethereum logs represent activities recorded by smart contracts on the Ethereum blockchain. These logs can be filtered using specific topics associated with contract events, such as minting or burning tokens.
+
+Understanding Mint and Burn Events: Mint events generally refer to the creation of tokens, whereas burn events refer to their removal from circulation. These processes are tracked and verified on the blockchain, allowing transparent transaction history and token supply management.
+
+Event Topics in Ethereum: Each event in Ethereum is identified by a topic, which is typically the hash of the event's signature. This allows for efficient filtering and retrieval of events related to specific actions or contracts.
+
+JavaScript Functions in SQL Queries: SQL queries might use JavaScript functions to parse complex data structures from blockchain logs. These functions typically utilize libraries to decode the data according to the Ethereum ABI, which defines how data is structured in blockchain interactions.
+
+Use of External Libraries for Data Decoding: External libraries can be employed within SQL queries to handle specific data decoding tasks related to blockchain data. These libraries facilitate the interpretation of raw data encoded according to the blockchain’s standards.

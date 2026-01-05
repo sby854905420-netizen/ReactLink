@@ -1,0 +1,384 @@
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.COMPANY_INDEX
+[
+    GLOBAL_TICKERS (Type: ARRAY; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: An array of ticker symbols under which the security may be traded globally on all exchanges.)
+    COMPANY_NAME (Type: TEXT; Sample values: ['VENDERA RESOURCES VI-A LP', 'RT-AI I LLC', 'PANTHEON GLOBAL SECONDARY FUND III B L P', 'SCI NEW CAP WEST', 'MADCAP MOTEL LOS ANGELES LLC']; Description: The name of the company.)
+    COMPANY_ID (Type: TEXT; Sample values: ['9cee45c58a4fdb6bb265552a0db62a00', '7766ef904f8648e8b8ac520b7267d5b5', 'bfd8994995275e9917290bc423536fd6', '878d19cbba19e94e8645afbabd4a14c2', 'fcff55343666f5399f3e288f4c38c46b']; Description: Unique identifier assigned by Cybersyn to each company.)
+    PRIMARY_EXCHANGE_CODE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The exchange code for the primary trading venue of a security.)
+    PERMID_COMPANY_ID (Type: TEXT; Sample values: ['5087020389', '5087193531', '4297623383', '5057843478', '5067944874']; Description: Permanent Identifier, which is a identifier provided by Refinitiv (via PermID) to provide a way to uniquely identify a company.)
+    CIK (Type: TEXT; Sample values: ['0002011467', '0002018929', '0001371639', 'None', '0001766936']; Description: Central Index Key, a unique identifier for corporations registered with the United States Securities and Exchange Commission (SEC).)
+    PRIMARY_TICKER (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The ticker for the primary trading venue of a security. If a security trades on multiple exchanges or has numerous tickers, an attempt is made to select the ticker from the home market.)
+    PRIMARY_EXCHANGE_NAME (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The exchange name for the primary trading venue of a security.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.STOCK_PRICE_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['1.19', '17249.0', '817.51', '2028.0', '2373734.0']; Description: Value reported for the variable.)
+    TICKER (Type: TEXT; Sample values: ['FAMI', 'TIPT', 'BLK', 'BRN', 'XLP']; Description: Alphanumeric code that represents a specific publicly traded security on the NASDAQ exchange.)
+    VARIABLE (Type: TEXT; Sample values: ['all-day_high', 'nasdaq_volume', 'post-market_close', 'nasdaq_volume', 'nasdaq_volume']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    DATE (Type: DATE; Sample values: ['2022-08-08', '2023-02-16', '2021-04-26', '2018-09-18', '2023-11-16']; Description: Date associated with the value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['All-Day High', 'Nasdaq Volume', 'Post-Market Close', 'Nasdaq Volume', 'Nasdaq Volume']; Description: Human-readable unique name for the variable.)
+    ASSET_CLASS (Type: TEXT; Sample values: ['Common Shares', 'Equity', 'Equity', 'Equity', 'ETF-Index Fund Shares']; Description: Type of security.)
+    PRIMARY_EXCHANGE_CODE (Type: TEXT; Sample values: ['NAS', 'NAS', 'NYS', 'ASE', 'PSE']; Description: The exchange code for the primary trading venue of a security.)
+    PRIMARY_EXCHANGE_NAME (Type: TEXT; Sample values: ['NASDAQ CAPITAL MARKET', 'NASDAQ CAPITAL MARKET', 'NEW YORK STOCK EXCHANGE', 'NYSE MKT LLC', 'NYSE ARCA']; Description: The exchange name for the primary trading venue of a security.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.OPENFIGI_SECURITY_INDEX
+[
+    GLOBAL_TICKERS (Type: ARRAY; Sample values: ['[\n  "FEBO"\n]', '[\n  "034B",\n  "0MXC",\n  "2368787D",\n  "MJ",\n  "MJ1EUR",\n  "MJN",\n  "MJXGBP",\n  "MJXUSD"\n]', '[\n  "ASCB"\n]', '[\n  "NSEAX"\n]', '[\n  "CHEA"\n]']; Description: An array of ticker symbols under which the security may be traded globally on all exchanges.)
+    EXCHANGE_CODES (Type: ARRAY; Sample values: ['[\n  "PQ",\n  "UA",\n  "UB",\n  "UC",\n  "UD",\n  "UF",\n  "UM",\n  "UN",\n  "UP",\n  "UR",\n  "US",\n  "UX",\n  "VF",\n  "VG",\n  "VJ",\n  "VK",\n  "VL",\n  "VP",\n  "VY"\n]', '[\n  "B1",\n  "B2",\n  "B3",\n  "B4",\n  "E1",\n  "EP",\n  "EU",\n  "EZ",\n  "GB",\n  "GC",\n  "GD",\n  "GE",\n  "GF",\n  "GH",\n  "GI",\n  "GM",\n  "GQ",\n  "GR",\n  "GS",\n  "GT",\n  "GW",\n  "GY",\n  "GZ",\n  "L1",\n  "L3",\n  "LA",\n  "LC",\n  "LN",\n  "LT",\n  "LU",\n  "PO",\n  "PQ",\n  "S2",\n  "T2",\n  "TH",\n  "UA",\n  "UB",\n  "UC",\n  "UD",\n  "UF",\n  "UI",\n  "UJ",\n  "UM",\n  "UN",\n  "UP",\n  "UQ",\n  "UR",\n  "US",\n  "UT",\n  "UU",\n  "UV",\n  "UW",\n  "UX",\n  "VF",\n  "VG",\n  "VJ",\n  "VK",\n  "VL",\n  "VP",\n  "VY",\n  "X2",\n  "XA",\n  "XB",\n  "XC",\n  "XD",\n  "XE",\n  "XF",\n  "XG",\n  "XH",\n  "XI",\n  "XJ",\n  "XL",\n  "XM",\n  "XN",\n  "XO",\n  "XP",\n  "XQ",\n  "XR",\n  "XS",\n  "XT",\n  "XU",\n  "XV",\n  "XW",\n  "XX",\n  "XZ"\n]', '[\n  "PQ",\n  "UA",\n  "UB",\n  "UC",\n  "UD",\n  "UF",\n  "UM",\n  "UN",\n  "UP",\n  "UQ",\n  "US",\n  "UX",\n  "VF",\n  "VG",\n  "VJ",\n  "VK",\n  "VL",\n  "VP",\n  "VY"\n]', '[\n  "US"\n]', '[\n  "PQ",\n  "UA",\n  "UB",\n  "UC",\n  "UD",\n  "UF",\n  "UM",\n  "UN",\n  "UP",\n  "UQ",\n  "US",\n  "UX",\n  "VF",\n  "VG",\n  "VJ",\n  "VK",\n  "VL",\n  "VP",\n  "VY"\n]']; Description: Codes representing the exchanges where the security is traded. An empty array means that exchange information is not available.)
+    OPENFIGI_SHARE_CLASS_ID (Type: ARRAY; Sample values: ['[\n  "BBG01J992SY7"\n]', '[\n  "BBG00B9M3PB6"\n]', '[\n  "BBG016DX8D38"\n]', '[\n  "BBG01MZLLPT5"\n]', '[\n  "BBG016M1QVF5"\n]']; Description: The global share class FIGI ID(s) for the security. This is meant to be the most broad classification in the FIGI classification hierarchy.)
+    TOP_LEVEL_OPENFIGI_ID_TYPE (Type: TEXT; Sample values: ['openfigi_share_class_id', 'openfigi_share_class_id', 'openfigi_share_class_id', 'openfigi_share_class_id', 'openfigi_share_class_id']; Description: The highest level of the OpenFIGI ID in the hierarchy for the security held. The hierarchy follows the order "share class FIGI" (global) > "composite FIGI" (country-level) > "FIGI" (exchange-level). For example, if the highest level of ID (recorded in TOP_LEVEL_OPENFIGI_ID) is the composite FIGI, then this will be equal to 'openfigi_composite_id'.)
+    SECURITY_TYPE (Type: ARRAY; Sample values: ['[\n  "Common Stock"\n]', '[\n  "ETP"\n]', '[\n  "Common Stock"\n]', '[\n  "Open-End Fund"\n]', '[\n  "Common Stock"\n]']; Description: The type of security, such as "Common Stock" for equities. Securities can fall into multiple categories such as when a company has both tradable shares of Common Stock and an ADR.)
+    PRIMARY_TICKER (Type: TEXT; Sample values: ['FEBO', 'MJ', 'ASCB', 'NSEAX', 'CHEA']; Description: The ticker for the primary trading venue of a security. If a security trades on multiple exchanges or has numerous tickers, an attempt is made to select the ticker from the home market.)
+    OPENFIGI_FIGI_ID (Type: ARRAY; Sample values: ['[\n  "BBG01J992S31",\n  "BBG01J992S40",\n  "BBG01J992S59",\n  "BBG01J992S77",\n  "BBG01J992S86",\n  "BBG01J992SB2",\n  "BBG01J992SD0",\n  "BBG01J992SF8",\n  "BBG01J992SG7",\n  "BBG01J992SJ4",\n  "BBG01J992SL1",\n  "BBG01J992SP7",\n  "BBG01J992SQ6",\n  "BBG01J992SR5",\n  "BBG01J992SS4",\n  "BBG01J992ST3",\n  "BBG01J992SV0",\n  "BBG01J992SW9",\n  "BBG01J992SX8"\n]', '[\n  "BBG00B9M3P99",\n  "BBG00B9M3PC5",\n  "BBG00B9M3PD4",\n  "BBG00B9M3PF2",\n  "BBG00B9M3PG1",\n  "BBG00B9M3PJ8",\n  "BBG00B9M3PK6",\n  "BBG00B9M3PL5",\n  "BBG00B9M3PM4",\n  "BBG00B9M3PN3",\n  "BBG00B9M3PP1",\n  "BBG00B9M3PQ0",\n  "BBG00B9M3PR9",\n  "BBG00B9M3PS8",\n  "BBG00B9M3PT7",\n  "BBG00B9M3PV4",\n  "BBG00B9M3PW3",\n  "BBG00B9M3PX2",\n  "BBG00B9M3PY1",\n  "BBG00B9M3PZ0",\n  "BBG00B9M3Q06",\n  "BBG00B9M3Q15",\n  "BBG00DJH1W74",\n  "BBG00JQ3WF31",\n  "BBG00JR2C4C9",\n  "BBG00JR2C4D8",\n  "BBG00JR2C4F6",\n  "BBG00JR2C4G5",\n  "BBG00JR2C4H4",\n  "BBG00JR2C4J2",\n  "BBG00JR2C4K0",\n  "BBG00JR2C4L9",\n  "BBG00JR2C4M8",\n  "BBG00JR2C4N7",\n  "BBG00JR2C4P5",\n  "BBG00JR2C4Q4",\n  "BBG00JR2C4R3",\n  "BBG00JR2C4S2",\n  "BBG00JRQK632",\n  "BBG00JRQK641",\n  "BBG00JRQK650",\n  "BBG00JRQK669",\n  "BBG00JRQK678",\n  "BBG00JRQK687",\n  "BBG00JRQK696",\n  "BBG00JRQK6B3",\n  "BBG00JRQK6C2",\n  "BBG00JRQK6D1",\n  "BBG00JRQK6F9",\n  "BBG00JRQK6H7",\n  "BBG00JRQK6J5",\n  "BBG00JRQK6K3",\n  "BBG00JRQK6L2",\n  "BBG00JRQK6M1",\n  "BBG00JRQK6N0",\n  "BBG00...(truncated)', '[\n  "BBG016DX8C85",\n  "BBG016DX8C94",\n  "BBG016DX8CB1",\n  "BBG016DX8CD9",\n  "BBG016DX8CF7",\n  "BBG016DX8CG6",\n  "BBG016DX8CH5",\n  "BBG016DX8CK1",\n  "BBG016DX8CL0",\n  "BBG016DX8CP6",\n  "BBG016DX8CR4",\n  "BBG016DX8CV9",\n  "BBG016DX8CW8",\n  "BBG016DX8CX7",\n  "BBG016DX8CY6",\n  "BBG016DX8CZ5",\n  "BBG016DX8D01",\n  "BBG016DX8D10",\n  "BBG016DX8D29"\n]', '[\n  "BBG01MZLLPS6"\n]', '[\n  "BBG016M1QSC5",\n  "BBG016M1QSF2",\n  "BBG016M1QSG1",\n  "BBG016M1QSL5",\n  "BBG016M1QSN3",\n  "BBG016M1QSQ0",\n  "BBG016M1QSR9",\n  "BBG016M1QSV4",\n  "BBG016M1QSX2",\n  "BBG016M1QT42",\n  "BBG016M1QT79",\n  "BBG016M1QTF0",\n  "BBG016M1QTH8",\n  "BBG016M1QTJ6",\n  "BBG016M1QTL3",\n  "BBG016M1QTM2",\n  "BBG016M1QTQ8",\n  "BBG016M1QTS6",\n  "BBG016M1QTT5"\n]']; Description: Array of the FIGI (Financial Instrument Global Identifier) ID(s) for the security. In cases where there is a share class FIGI (global ID) or composite FIGI (country-level ID) because a security trades across multiple countries or exchanges, there may be multiple FIGI IDs associated with a single security.)
+    ASSET_CLASS (Type: TEXT; Sample values: ['Equity', 'Equity', 'Equity', 'Equity', 'Equity']; Description: Broad-based class of the asset, such as 'Equity', 'Muni', etc.)
+    OPENFIGI_COMPOSITE_ID (Type: ARRAY; Sample values: ['[\n  "BBG01J992S31"\n]', '[\n  "BBG00B9M3P99",\n  "BBG00JQ3WF22",\n  "BBG00JR2C4C9",\n  "BBG00JRQK632",\n  "BBG00JRQK703",\n  "BBG00JVQN9M7",\n  "BBG00JVQNBH8",\n  "BBG00KL6RHH3",\n  "BBG00KL6S7D8",\n  "BBG00KL6SMD5",\n  "BBG00KL6T0M2",\n  "BBG00LJZ6DX4",\n  "BBG00N334PB7",\n  "BBG00N5HZ631",\n  "BBG00N5HZ702",\n  "BBG00P4PVMC8",\n  "BBG00PPZPTY1",\n  "BBG00PPZPV03",\n  "BBG00Y924FZ5",\n  "BBG00Z1TJYL9",\n  "BBG0169510Y5"\n]', '[\n  "BBG016DX8C85"\n]', '[\n  "BBG01MZLLPS6"\n]', '[\n  "BBG016M1QSC5"\n]']; Description: Array of the country-level composite FIGI ID(s) for the security. In cases where there is a share class FIGI (global ID) and the security is tradable in more than one country there may be multiple composite IDs associated with a single security.)
+    TOP_LEVEL_OPENFIGI_ID (Type: TEXT; Sample values: ['BBG01J992SY7', 'BBG00B9M3PB6', 'BBG016DX8D38', 'BBG01MZLLPT5', 'BBG016M1QVF5']; Description: OpenFIGI ID of the highest, most widely encompassing level for a particular security. The hierarchy follows the order "share class FIGI" (global) > "composite FIGI" (country-level) > "FIGI" (exchange-level).)
+    SECURITY_NAME (Type: TEXT; Sample values: ['FENBO HOLDINGS LTD', 'ETFMG ALTERNATIVE HARVEST', 'A SPAC II ACQUISITION CORP', 'COLUMB SEL LAR CAP EQ-S', 'CHENGHE ACQUISITION CO-A']; Description: Name of the security.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FHFA_HOUSE_PRICE_TIMESERIES
+[
+    VALUE (Type: NUMBER; Sample values: ['236.84', '65.97', '141.57', '142.64', '116.05']; Description: The reported numeric value for the variable and date)
+    DATE (Type: DATE; Sample values: ['2009-09-30', '1987-06-30', '2005-03-31', '1999-09-30', '1998-12-31']; Description: Date associated with the value)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['FHFA_HPI traditional purchase-only quarterly Not Seasonally Adjusted', 'FHFA_HPI traditional all-transactions quarterly Not Seasonally Adjusted', 'FHFA_HPI traditional all-transactions quarterly Not Seasonally Adjusted', 'FHFA_HPI traditional purchase-only quarterly Not Seasonally Adjusted', 'FHFA_HPI traditional all-transactions quarterly Not Seasonally Adjusted']; Description: Human-readable description for the variable)
+    VARIABLE (Type: TEXT; Sample values: ['FHFA_HPI_traditional_purchase-only_quarterly_NSA', 'FHFA_HPI_traditional_all-transactions_quarterly_NSA', 'FHFA_HPI_traditional_all-transactions_quarterly_NSA', 'FHFA_HPI_traditional_purchase-only_quarterly_NSA', 'FHFA_HPI_traditional_all-transactions_quarterly_NSA']; Description: A unique identifier for a variable joinable to the attributes table for filtering)
+    UNIT (Type: TEXT; Sample values: ['Index', 'Index', 'Index', 'Index', 'Index']; Description: Unit of measure for the variable (e.g., Index))
+    GEO_ID (Type: TEXT; Sample values: ['geoId/53', 'geoId/C22660', 'geoId/C47580', 'geoId/39', 'geoId/C39580']; Description: A unique geographic identifier joinable to the geography_index/relationships tables)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.PERMID_SECURITY_INDEX
+[
+    GLOBAL_TICKERS (Type: ARRAY; Sample values: ['[\n  "EVN",\n  "XEVNX"\n]', '[\n  "LENB*",\n  "LENb",\n  "LNN0"\n]', '[\n  "TSLF",\n  "XFSLX"\n]', '[\n  "0LFD",\n  "0LFDl",\n  "TIF*"\n]', '[\n  "RWJ",\n  "RWSl"\n]']; Description: An array of ticker symbols under which the security may be traded globally on all exchanges.)
+    EXCHANGE_CODE (Type: ARRAY; Sample values: ['[\n  "NAS",\n  "NYQ"\n]', '[\n  "FRA",\n  "ISS",\n  "MEX"\n]', '[\n  "NAS",\n  "WCB"\n]', '[\n  "BCO",\n  "LSE",\n  "MXQ"\n]', '[\n  "BCO",\n  "TDG"\n]']; Description: An array of codes representing the exchanges where the security is traded. An empty array means that exchange information is not available.)
+    SECURITY_STATUS (Type: TEXT; Sample values: ['Active', 'Active', 'Inactive', 'Inactive', 'Active']; Description: Status of the security, i.e. 'Active' or 'Inactive'. An active security is a security that has active quotes and an inactive security has no active quotes. This status changes over time.)
+    PERMID_QUOTE_ID (Type: ARRAY; Sample values: ['[\n  "55835369644",\n  "55839104515"\n]', '[\n  "21627275840",\n  "21736829361",\n  "55836192793"\n]', '[\n  "21529763349",\n  "21529826402"\n]', '[\n  "21633621402",\n  "21634297966",\n  "21667705791"\n]', '[\n  "21475037440",\n  "21538768765"\n]']; Description: An array of PermIDs for the quotes for each exchange where the security is traded. An empty array means that quote information is not available.)
+    PRIMARY_EXCHANGE_CODE (Type: TEXT; Sample values: ['NYQ', 'ISS', 'NAS', 'MXQ', 'BCO']; Description: The exchange code for the primary trading venue of a security.)
+    PRIMARY_TICKER (Type: TEXT; Sample values: ['EVN', 'LENb', 'XFSLX', 'TIF*', 'RWSl']; Description: The ticker for the primary trading venue of a security. If a security trades on multiple exchanges or has numerous tickers, an attempt is made to select the ticker from the home market.)
+    SECURITY_NAME (Type: TEXT; Sample values: ['EATON VANCE MUNICIPAL INCOME CLOSED FUND', 'LENNAR ORD SHS CLASS B', 'FIRST EAGLE SENIOR LOAN FUND', 'TIFFANY ORD SHS', 'RWS HOLDINGS ORD SHS']; Description: Name of the security.)
+    PERMID_SECURITY_ID (Type: TEXT; Sample values: ['8589975674', '8589959375', '18040205046', '8590935543', '8590923465']; Description: PermID for the security.)
+    PRIMARY_EXCHANGE_NAME (Type: TEXT; Sample values: ['NYSE CONSOLIDATED', 'ISE when trading NYSE and AMEX Stocks', 'NASDAQ CAPITAL MARKET', 'None', 'BATS CHI-X Trade Reporting']; Description: The exchange name for the primary trading venue of a security.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FHFA_MORTGAGE_PERFORMANCE_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['0.003', '0.002', '0.017', '0.021', '0.002']; Description: The reported numeric value for the variable and date)
+    DATE (Type: DATE; Sample values: ['2022-12-31', '2023-09-30', '2024-03-31', '2020-12-31', '2024-03-31']; Description: Date associated with the value)
+    UNIT (Type: TEXT; Sample values: ['Percent', 'Percent', 'Percent', 'Percent', 'Percent']; Description: Unit of measure for the variable (e.g., Percent))
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional', 'Percent in Forbearance - Enterprise Acquisitions', 'Percent 30 or 60 Days Past Due Date - All Mortgages', 'Percent in Forbearance - Enterprise Acquisitions', 'Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional']; Description: Human-readable description for the variable)
+    GEO_ID (Type: TEXT; Sample values: ['geoId/50', 'geoId/34', 'geoId/C12580', 'geoId/02', 'geoId/C49180']; Description: A unique geographic identifier joinable to the geography_index/relationships tables)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FHFA_UNIFORM_APPRAISAL_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['0.51', '264000.0', '0.004', '95500.0', '0.83']; Description: The reported numeric value for the variable and date)
+    DATE (Type: DATE; Sample values: ['2015-12-31', '2023-12-31', '2023-12-31', '2021-12-31', '2021-03-31']; Description: Date associated with the value)
+    UNIT (Type: TEXT; Sample values: ['Percent', 'USD', 'Percent', 'USD', 'Miles']; Description: Unit of measure for the variable (e.g., Count, Percent, Ratio, USD))
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Annual % of Appraisals Above Contract Price Ratio of Tract Med. Inc. to MSA Med. Inc. Purchase Missing', 'Quarterly 25% Quartile of Appraised Value Year Built Purchase 1980 to 1989', 'Annual Mean Comps Adjustment Percent Effective Age Purchase & Refinance 6 to 10 years', 'Annual 25% Quartile of Appraised Value Refinance All Appraisals', 'Quarterly Mean Distance to Comps Number of Rooms Above Grade Refinance 7 Rooms']; Description: Human-readable description for the variable)
+    GEO_ID (Type: TEXT; Sample values: ['geoId/C41740', 'geoId/M19804', 'geoId/C36540', 'geoId/39153502101', 'geoId/M33874']; Description: A unique geographic identifier joinable to the geography_index/relationships tables)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.BUREAU_OF_LABOR_STATISTICS_PRICE_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['2.093', '4.556', '126.853', '153.3', '98.0']; Description: Value of the metric)
+    DATE (Type: DATE; Sample values: ['2001-06-30', '2007-08-31', '2024-06-30', '1994-12-31', '1990-08-31']; Description: Date associated with the value, which is set to the last day of the reporting period)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Average Price: All Ham (Excluding Canned Ham and Luncheon Slices), per lb. (453.6 gm)', 'Average Price: American processed cheese, per lb. (453.6 gm)', 'CPI: Services less rent of shelter, Not seasonally adjusted, Semi-annual, 2017-12 Index Date', 'CPI: All items less energy, Not seasonally adjusted, Semi-annual', 'CPI: Gasoline, unleaded regular, Not seasonally adjusted, Monthly']; Description: Human-readable name for a variable)
+    GEO_ID (Type: TEXT; Sample values: ['censusRegion/03', 'censusRegion/01', 'censusDivision/05', 'geoId/C42660', 'censusRegion/03']; Description: A unique identifier for a place, joinable to the geography_index/relationships tables)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.COMPANY_RELATIONSHIPS
+[
+    COMPANY_NAME (Type: TEXT; Sample values: ['WYNN RESORTS LTD', 'RITZ-CARLTON HOTEL COMPANY LLC', 'TOWNEPLACE SUITES BY MARRIOTT', 'WYNDHAM HOTELS & RESORTS, INC.', 'COMCAST CORP']; Description: The name of the company.)
+    COMPANY_ID (Type: TEXT; Sample values: ['ca52d8c892a8ffe6e8368f2bd7a5fca7', '61042fb57d4bc5965ff4f0dfa55f3aa2', '9d60e1934f9141a0991597d08181e126', 'b5647b2c2c12a1b09f5ce31802833f10', 'b00320b7fdfbd6ecdbe7379e1e1e1d61']; Description: Unique identifier assigned by Cybersyn to each company. Joinable to the COMPANY_INDEX table.)
+    RELATIONSHIP_START_DATE (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The beginning of a company being associated with the related company. In cases where the start date is unknown, NULL is assigned.)
+    RELATED_COMPANY_ID (Type: TEXT; Sample values: ['5a2aaa890644211a8e69ad206ee9d4de', 'd0d371457687b60bbb116b9fc9ae65ea', 'd0d371457687b60bbb116b9fc9ae65ea', '015a8a998d3e9492c6ff9ed4e452d802', '36df5b636ad537c1a94fb35cd7c91f80']; Description: Unique identifier assigned by Cybersyn to the related company. Joinable to the COMPANY_INDEX table.)
+    RELATED_COMPANY_NAME (Type: TEXT; Sample values: ['WYNN LAS VEGAS LLC', 'MARRIOTT INTERNATIONAL INC /MD/', 'MARRIOTT INTERNATIONAL INC /MD/', 'SUPER 8 WORLDWIDE, INC.', 'FANDANGO MEDIA LLC']; Description: The name of the related company.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_BRANCH_ENTITIES
+[
+    END_DATE (Type: DATE; Sample values: ['None', '2024-08-27', 'None', '2024-07-31', '2024-08-16']; Description: Last date for which the branch was open. NULL if still active)
+    START_DATE (Type: DATE; Sample values: ['2024-08-13', '2008-12-31', '2024-07-22', '1997-10-14', '2005-08-01']; Description: First date for which the branch was open)
+    ID_COUNTRY (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: Unique identifier of the country where the entity is located)
+    ZIP_CODE (Type: TEXT; Sample values: ['02653', '92626', '11233', '63147', '43230']; Description: Zip code the entity is physically located in)
+    ID_COUNTY (Type: TEXT; Sample values: ['geoId/25001', 'geoId/06059', 'geoId/36047', 'geoId/29510', 'geoId/39049']; Description: Unique identifier of the county where the entity is located)
+    NAME_PARENT (Type: TEXT; Sample values: ['JPMORGAN CHASE BANK, NATIONAL ASSOCIATION', 'WILMINGTON TRUST, NATIONAL ASSOCIATION', 'FLAGSTAR BANK, NATIONAL ASSOCIATION', 'MIDWEST BANKCENTRE', 'Benchmark Bank']; Description: Name of the parent bank)
+    ID_ZIP (Type: TEXT; Sample values: ['zip/02653', 'zip/92626', 'zip/11233', 'zip/63147', 'zip/43230']; Description: Unique identifier of the zip code where the entity is located)
+    BRANCH_NAME (Type: TEXT; Sample values: ['ORLEANS', 'COSTA MESA OFFICE', 'BEDFORD-STUYVESANT (BED-STUY)', 'NORTH BROADWAY BRANCH', 'Benchmark Bank']; Description: Name of the banking branch)
+    ID_RSSD (Type: NUMBER; Sample values: ['5973668', '4270061', '5971589', '2621520', '3369007']; Description: A unique identifier assigned by the Federal Reserve for the financial institution)
+    ID_RSSD_PARENT (Type: NUMBER; Sample values: ['852218', '2265456', '694904', '657459', '780218']; Description: Unique identifier for the head office of the entity if the entity is a branch)
+    ID_STATE (Type: TEXT; Sample values: ['geoId/25', 'geoId/06', 'geoId/36', 'geoId/29', 'geoId/39']; Description: Unique identifier of the state where the entity is located)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FX_RATES_TIMESERIES
+[
+    DATE (Type: DATE; Sample values: ['2011-03-10', '2013-03-13', '2024-04-25', '2012-12-24', '1981-07-28']; Description: Date for the foreign exchange spot rate)
+    VALUE (Type: FLOAT; Sample values: ['6.8232', '1.8111', '57.61', '1.229', '8.98']; Description: Price for the base currency in terms of the quote currency)
+    VARIABLE (Type: TEXT; Sample values: ['chf_sek', 'usd_try', 'usd_mkd', 'cad_sgd', 'usd_inr']; Description: A unique identifier for the currency pair)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['CHF/SEK Exchange Rate', 'USD/TRY Exchange Rate', 'USD/MKD Exchange Rate', 'CAD/SGD Exchange Rate', 'USD/INR Exchange Rate']; Description: A human-readable unique identifier for the currency pair)
+    BASE_CURRENCY_NAME (Type: TEXT; Sample values: ['Swiss Franc', 'United States Dollar', 'United States Dollar', 'Canadian Dollar', 'United States Dollar']; Description: Long name of base currency)
+    QUOTE_CURRENCY_NAME (Type: TEXT; Sample values: ['Swedish Krona', 'Turkish Lira', 'Macedonian Denar', 'Singapore Dollar', 'Indian Rupee']; Description: Long name of quote currency)
+    BASE_CURRENCY_ID (Type: TEXT; Sample values: ['CHF', 'USD', 'USD', 'CAD', 'USD']; Description: ISO 4217 currency code for the base currency)
+    QUOTE_CURRENCY_ID (Type: TEXT; Sample values: ['SEK', 'TRY', 'MKD', 'SGD', 'INR']; Description: ISO 4217 currency code for the quote currency)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.COMPANY_SECURITY_RELATIONSHIPS
+[
+    COMPANY_NAME (Type: TEXT; Sample values: ['UNITED NATURAL FOODS INC', 'POWER REIT', 'NORTH AMERICAN CONSTRUCTION GROUP LTD.', 'TESLA, INC.', 'FIRST MAJESTIC SILVER CORP']; Description: The name of the company.)
+    COMPANY_ID (Type: TEXT; Sample values: ['db61b5dc8b1d123383774189e8b57f47', '748f82a466853b495ff37302758e0618', '03e0eb1fe93fafd66765ef15997156d3', '796aed24f8c91888e412d0a6e8dcffed', '702df1f0a8462880ff1c0a772b0eff49']; Description: Unique identifier assigned by Cybersyn to each company.)
+    SECURITY_ID (Type: TEXT; Sample values: ['BBG00Q6SF3X5', 'BBG000KX4134', 'BBG00KN97NR3', 'BBG00JPVPVD2', 'BBG00JR59ZL7']; Description: Unique identifier for a particular security.)
+    SECURITY_NAME (Type: TEXT; Sample values: ['UNITED NATURAL FOODS INC', 'POWER REIT', 'NORTH AMERICAN CONSTRUCTION', 'TESLA INC', 'FIRST MAJESTIC SILVER CORP']; Description: Name of the security.)
+    SECURITY_ID_TYPE (Type: TEXT; Sample values: ['openfigi_figi_id', 'openfigi_figi_id', 'openfigi_figi_id', 'openfigi_figi_id', 'openfigi_figi_id']; Description: The type of ID that is provided in the SECURITY_ID column. Examples of different ID types include OpenFIGI FIGI ID, OpenFIGI Share Class ID, PermID Security ID, and others.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.US_ECONOMIC_CENSUS_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0']; Description: Value reported for the variable.)
+    DATE (Type: TEXT; Sample values: ['2017-12-31', '2012-12-31', '2012-12-31', '2012-12-31', '2017-12-31']; Description: Date associated with the value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Employers cost for legally required fringe benefits | Remediation and other waste management services (NAICS 2017 code: 5629)', 'Production workers average for year | Specialized freight (except used goods) trucking, local (NAICS 2012 code: 484220)', 'Advertising and promotional services | Landscaping services (NAICS 2012 code: 56173)', 'Gross value of depreciable assets (acquisition costs, end of year) | Offices of real estate agents and brokers (NAICS 2012 code: 53121)', 'Production workers for pay period including sept 12 | Offices of real estate agents and brokers (NAICS 2017 code: 53121)']; Description: Human-readable unique name for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['geoId/34039', 'geoId/1734670', 'geoId/5111032', 'geoId/0174592', 'geoId/0654848']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_FRED_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['889757000000.0', '1.64', '0.0', '11.77', '0.0088']; Description: the actual numeric value for the variable)
+    UNIT (Type: TEXT; Sample values: ['USD', 'Percent', 'USD', 'Percent', 'Percent']; Description: Unit of measure for the value, such as dollars, percent, or ratio)
+    DATE (Type: DATE; Sample values: ['2008-05-07', '2018-08-15', '2005-07-27', '1989-08-23', '2017-05-17']; Description: Date associated with the value, which is set to the last day of the reporting period.)
+    GEO_ID (Type: TEXT; Sample values: ['country/USA', 'country/CAN', 'country/USA', 'country/CAN', 'country/USA']; Description: a unique identifier for a place)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Liabilities and Capital: Total Liabilities and Capital: Total Liabilities and Capital: Wednesday Level, Not seasonally adjusted, Weekly, USD', 'Bank of Canada Treasury Bills: 6 month', 'Liabilities and Capital: Liabilities: Other Liabilities and Accrued Dividends and Total Deferred Credit Items: Wednesday Level in Federal Reserve District 3: Philadelphia, Not seasonally adjusted, Weekly, USD', 'Bank of Canada Chartered bank - daily interest savings (balance over $100,000)', '60-Day AA Nonfinancial Commercial Paper Interest Rate, Not seasonally adjusted, Daily, Percent']; Description: English name for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.PUBLIC_HOLIDAY_CALENDAR
+[
+    IS_FINANCIAL (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Boolean denoting a stock market closure for the given region)
+    HOLIDAY_NAME (Type: TEXT; Sample values: ["Immaculate Conception's Day", 'Corpus Christi', "Prince's Day", "Ascension's Day", "All Saints' Day"]; Description: Name of the Holiday)
+    GEO_ID (Type: TEXT; Sample values: ['country/MCO', 'country/MCO', 'country/MCO', 'country/MCO', 'country/MCO']; Description: GEO_ID from GEOGRAPHY_INDEX table)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_FRED_ATTRIBUTES
+[
+    MEASUREMENT_METHOD (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Type of percent change measurement)
+    VARIABLE_GROUP (Type: TEXT; Sample values: ['Industrial Production: Nondurable Consumer Goods', 'Assets: Liquidity and Credit Facilities: Net Portfolio Holdings of MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level in Federal Reserve District 1: Boston', 'Assets: Liquidity and Credit Facilities: Net Portfolio Holdings of MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level in Federal Reserve District 11: Dallas', 'Supplementary Information: Supplemental Information on 2020 Credit Facilities: Outstanding Principal Amount of Loan Extended to the MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level', 'Employment Cost Index: Wages and Salaries: Private Industry Workers']; Description: Description of what is being measured)
+    SEASONALLY_ADJUSTED (Type: BOOLEAN; Sample values: ['True', 'False', 'False', 'False', 'True']; Description: Boolean variable denoting if value is seasonally adjusted)
+    RELEASE_NAME (Type: TEXT; Sample values: ['G.17 Industrial Production and Capacity Utilization', 'H.4.1 Factors Affecting Reserve Balances', 'H.4.1 Factors Affecting Reserve Balances', 'H.4.1 Factors Affecting Reserve Balances', 'Employment Cost Index']; Description: The individual report or collection of data in which the data was released. Sample reports include the Consumer Price Index release from the Bureau of Labor Statistics and the G.5 Foreign Exchange Rates release from the Federal Reserve.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Industrial Production: Nondurable Consumer Goods, Seasonally adjusted, Monthly, Index 2017=100', 'Assets: Liquidity and Credit Facilities: Net Portfolio Holdings of MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level in Federal Reserve District 1: Boston, Not seasonally adjusted, Weekly, USD', 'Assets: Liquidity and Credit Facilities: Net Portfolio Holdings of MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level in Federal Reserve District 11: Dallas, Not seasonally adjusted, Weekly, USD', 'Supplementary Information: Supplemental Information on 2020 Credit Facilities: Outstanding Principal Amount of Loan Extended to the MS Facilities 2020 LLC (Main Street Lending Program): Wednesday Level, Not seasonally adjusted, Weekly, USD', 'Employment Cost Index: Wages and Salaries: Private Industry Workers, Seasonally adjusted, Quarterly, Index Dec 2005=100']; Description: English name for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.OECD_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['3361249000.0', '0.0', '98.93938', '94.93137', '333100000.0']; Description: Value reported for the variable.)
+    DATE (Type: DATE; Sample values: ['2007-03-31', '2011-03-31', '2012-06-30', '1991-03-31', '1999-06-30']; Description: Date associated with the value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Balance of payments to rest of the world: expenditure from secondary income in US dollars, exchange rate converted, Quarterly', 'Balance of payments to rest of the world: revenue from gross acquisitions / disposals of nonproduced nonfinancial assets in Euro, Quarterly', 'OECD harmonised Composite Consumer Confidence, Index, Monthly (Amplitude adjusted)', 'OECD harmonised Composite Business Confidence, Index, Monthly (Amplitude adjusted)', 'Balance of payments to rest of the world: revenue from secondary income in US dollars, exchange rate converted, Monthly (Calendar and seasonally adjusted)']; Description: Human-readable unique name for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['country/CAN', 'country/LTU', 'country/EST', 'country/GBR', 'country/KOR']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.CYBERSYN_DATA_CATALOG
+[
+    LISTING_URL (Type: ARRAY; Sample values: ['[\n  "https://app.snowflake.com/marketplace/listing/GZTSZ290BUX66"\n]', '[\n  "https://app.snowflake.com/marketplace/listing/GZTSZ290BUX66"\n]', '[\n  "https://app.snowflake.com/marketplace/listing/GZTSZ290BUX66"\n]', '[\n  "https://app.snowflake.com/marketplace/listing/GZTSZAS2KF7",\n  "https://app.snowflake.com/marketplace/listing/GZTSZAS2KH9",\n  "https://app.snowflake.com/marketplace/listing/GZTSZ290BUX66"\n]', '[\n  "https://app.snowflake.com/marketplace/listing/GZTSZAS2KF7",\n  "https://app.snowflake.com/marketplace/listing/GZTSZ290BUX66"\n]']; Description: URLs of listing(s) associated with table.)
+    CREATED_DATE (Type: DATE; Sample values: ['2023-10-31', '2023-11-06', '2023-11-06', '2023-09-17', '2024-03-12']; Description: Date for the table's addition to the Snowflake Marketplace.)
+    LISTING_NAME (Type: ARRAY; Sample values: ['[\n  "Financials & Economics: Enterprise "\n]', '[\n  "Financials & Economics: Enterprise "\n]', '[\n  "Financials & Economics: Enterprise "\n]', '[\n  "Finance & Economics",\n  "SEC Filings",\n  "Financials & Economics: Enterprise "\n]', '[\n  "Finance & Economics",\n  "Financials & Economics: Enterprise "\n]']; Description: Human-readable name of listing(s) associated with table.)
+    TABLE_NAME_PROPER (Type: TEXT; Sample values: ['BLS Employment Timeseries Point in Time History', 'Company Characteristics Point in Time History', 'Company Index Point in Time History', 'Company Security Relationships', 'Cybersyn Financial & Economic Indicators Timeseries']; Description: Human-readable table name.)
+    TABLE_NAME (Type: TEXT; Sample values: ['bureau_of_labor_statistics_employment_timeseries_history', 'company_characteristics_history', 'company_index_history', 'company_security_relationships', 'cybersyn_financial_economic_indicators_timeseries']; Description: Machine-readable table name.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.EUROPEAN_CENTRAL_BANK_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['0.024', '89.94', '-0.072', '0.002', '66.2']; Description: Value reported for the variable.)
+    DATE (Type: DATE; Sample values: ['1997-03-31', '2012-03-31', '2020-04-30', '2016-08-31', '2000-05-31']; Description: Date associated with the value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Harmonized Index Of Consumer Prices - Seasonal Food, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Canteens, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Mobile Telephone Equipment, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Margarine And Other Vegetable Fats, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Passenger Transport By Railway, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100']; Description: Human-readable unique name for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['country/LTU', 'country/BGR', 'country/DEU', 'country/PRT', 'country/DEU']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.CYBERSYN_FINANCIAL_ECONOMIC_INDICATORS_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['9.32', '472.26', '63600.0', '375.0', '153782000.0']; Description: Value reported for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'geoId/21167', 'country/USA']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Current Employment: Average hourly earnings of production and nonsupervisory employees, 1982-84 dollars, construction of buildings, Monthly (Seasonally adjusted)', 'Current Employment: Average weekly earnings of production and nonsupervisory employees, periodical publishers, Monthly (Seasonally adjusted)', 'Current Employment: Production and nonsupervisory employees, industrial machinery manufacturing, Monthly (Seasonally adjusted)', 'Local Area Unemployment: Unemployment, Not seasonally adjusted, Monthly', 'Current Employment: Aggregate weekly payrolls of production and nonsupervisory employees, grantmaking and giving services, Monthly (Not seasonally adjusted)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_CFPB_COMPLAINT
+[
+    COMPANY_RESPONSE_TO_CONSUMER (Type: TEXT; Sample values: ['Closed with explanation', 'Closed with explanation', 'Closed with non-monetary relief', 'Closed with explanation', 'Closed with non-monetary relief']; Description: Company explanation of how the issue was closed, selected from a list)
+    TIMELY_RESPONSE (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True']; Description: Indicates whether the company gave a timely response)
+    ZIP_CODE (Type: TEXT; Sample values: ['92805', '10705', '91311', '206XX', '30045']; Description: mailing zip code provided by the consumer)
+    ID_STATE (Type: TEXT; Sample values: ['geoId/06', 'geoId/36', 'geoId/06', 'geoId/24', 'geoId/13']; Description: a unique identifier of the mailing state provided by the consumer)
+    ID_ZIP (Type: TEXT; Sample values: ['zip/92805', 'zip/10705', 'zip/91311', 'None', 'zip/30045']; Description: a unique identifier of the mailing zip code provided by the consumer)
+    CONSUMER_CONSENT_PROVIDED (Type: TEXT; Sample values: ['Consent not provided', 'Consent not provided', 'Consent not provided', 'Consent provided', 'Consent not provided']; Description: Identifies consumer consent in publishing their complaint narrative)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_INSTITUTION_ENTITIES
+[
+    END_DATE (Type: TIMESTAMP_NTZ; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Last date for which the bank was open. NULL if still active)
+    NAME (Type: TEXT; Sample values: ['First Capital Bank', 'The Bank of Princeton', 'Lone Star National Bank', "Citizens' Bank, Inc.", 'Miners & Merchants Bank']; Description: Name of the bank)
+    ID_COUNTRY (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: A unique geographic identifier for the country where the bank is located)
+    NAICS_CODE (Type: TEXT; Sample values: ['52211', '52211', '52211', '52211', '52211']; Description: NAICS code of the primary activity conducted by an entity.)
+    ID_STATE (Type: TEXT; Sample values: ['geoId/45', 'geoId/34', 'geoId/48', 'geoId/01', 'geoId/54']; Description: A unique geographic identifier for the state where the bank is located)
+    ID_ZIP (Type: TEXT; Sample values: ['zip/29401', 'zip/08540', 'zip/78577', 'zip/36567', 'zip/26292']; Description: A unique geographic identifier for the zip code where the bank is located)
+    LEGAL_ENTITY_IDENTIFIER (Type: TEXT; Sample values: ['254900LDLCTUL5TXVH85', '549300EMC7T53UNNNA58', '549300IRQPG1Q6VZ8Y58', '5493000XGU4RX824L971', 'None']; Description: Code to identify a legally distinct entity that engages in a financial transaction. Issued by approved local operating units around the world in conjunction with the Global LEI Foundation.)
+    ZIP_CODE (Type: TEXT; Sample values: ['29401', '08540', '78577', '36567', '26292']; Description: Zip code of the bank)
+    ID_COUNTY (Type: TEXT; Sample values: ['geoId/45019', 'geoId/34021', 'geoId/48215', 'geoId/01003', 'geoId/54093']; Description: A unique geographic identifier for the county where the bank is located)
+    EMPLOYER_IDENTIFICATION_NUMBER (Type: TEXT; Sample values: ['571084848', '680645074', '742237409', '630808871', 'None']; Description: Employer identification number (EIN), a number assigned to a business by the Internal Revenue Service, effective 2008-12-31.)
+    THRIFT_ID (Type: TEXT; Sample values: ['None', 'None', 'None', '13156', 'None']; Description: A unique identifier for the financial institution assigned by the Office of Thrift Supervision, last 5 characters only)
+    ID_RSSD (Type: NUMBER; Sample values: ['2849463', '3595271', '842460', '563336', '913436']; Description: A unique identifier assigned by the Federal Reserve for the financial institution)
+    OCC_ID (Type: NUMBER; Sample values: ['nan', 'nan', '17611.0', 'nan', 'nan']; Description: A unique identifier for the financial institution assigned by the Office of the Comptroller of the Currency)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.BUREAU_OF_LABOR_STATISTICS_EMPLOYMENT_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['169.0', '0.051', '2900.0', '7328.0', '76400.0']; Description: Value of the metric)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Local Area Unemployment: Unemployment, Not seasonally adjusted, Monthly', 'Local Area Unemployment: Unemployment Rate, Not seasonally adjusted, Monthly', 'State and Metro Employment: All Employees, Financial Activities, Not seasonally adjusted, Monthly', 'Local Area Unemployment: Employment, Not seasonally adjusted, Monthly', 'State and Metro Employment: All Employees, Manufacturing, Not seasonally adjusted, Monthly']; Description: Human-readable name for a variable)
+    GEO_ID (Type: TEXT; Sample values: ['geoId/31127', 'geoId/22015', 'geoId/C39820', 'geoId/51520', 'geoId/16']; Description: A unique identifier for a place, joinable to the geography_index/relationships tables)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.BUREAU_OF_LABOR_STATISTICS_PRICE_ATTRIBUTES
+[
+    SEASONALLY_ADJUSTED (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Boolean variable denoting if value is seasonally adjusted)
+    REPORT (Type: TEXT; Sample values: ['Consumer Price Index', 'Consumer Price Index', 'Consumer Price Index', 'Consumer Price Index', 'Consumer Price Index']; Description: BLS dataset the time series originates from)
+    VARIABLE (Type: TEXT; Sample values: ['CPI:_Household_furnishings_and_operations,_Not_seasonally_adjusted,_Monthly,_2001-12_Index_Date', "CPI:_Men's_underwear,_nightwear,_swimwear_and_accessories,_Not_seasonally_adjusted,_Semi-annual", 'CPI:_Utility_(piped)_gas_service,_Not_seasonally_adjusted,_Annual,_2001-12_Index_Date', 'CPI:_Recorded_music_and_music_subscriptions,_Not_seasonally_adjusted,_Annual,_1997-12_Index_Date', 'CPI:_Dairy_and_related_products,_Not_seasonally_adjusted,_Annual,_1987_Index_Date']; Description: A unique identifier for a variable joinable to the timeseries table)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['CPI: Household furnishings and operations, Not seasonally adjusted, Monthly, 2001-12 Index Date', "CPI: Men's underwear, nightwear, swimwear and accessories, Not seasonally adjusted, Semi-annual", 'CPI: Utility (piped) gas service, Not seasonally adjusted, Annual, 2001-12 Index Date', 'CPI: Recorded music and music subscriptions, Not seasonally adjusted, Annual, 1997-12 Index Date', 'CPI: Dairy and related products, Not seasonally adjusted, Annual, 1987 Index Date']; Description: Human-readable name for a variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.CYBERSYN_FINANCIAL_ECONOMIC_INDICATORS_ATTRIBUTES
+[
+    SEASONALLY_ADJUSTED (Type: TEXT; Sample values: ['Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted']; Description: Indicates whether the value is seasonally adjusted.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Current Labor Force: Employed full time - Lost-time Universe, Private wage and salary workers, excluding incorporated self employed, Management, administrative, and waste services, Percent of employed within group, Annual (Not seasonally adjusted)', 'Current Labor Force: Employed - Durable goods manufacturing, White, Quarterly (Not seasonally adjusted)', 'Current Labor Force: Employed - Construction, Black or African American, Quarterly (Not seasonally adjusted)', 'Current Labor Force: Employed - Nondurable goods manufacturing, Black or African American, Quarterly (Not seasonally adjusted)', 'Current Labor Force: Employed - Retail trade, White, Quarterly (Not seasonally adjusted)']; Description: Human-readable unique name for the variable.)
+    FRED_SERIES_ID (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Unique identifier for the variable from the FRED database. Visualize the timeseries by inputing this into https://fred.stlouisfed.org/series/{fred_series_id}.)
+    RELEASE_NAME (Type: TEXT; Sample values: ['Current Population Survey (CPS)', 'Current Population Survey (CPS)', 'Current Population Survey (CPS)', 'Current Population Survey (CPS)', 'Current Population Survey (CPS)']; Description: The individual report or collection of data in which the data was released.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.NEWYORKFED_CONSUMER_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['0.19138706206999997', '3.322753668', '1.18092072', '0.37023681641000006', '0.20577831268000002']; Description: Value reported for the variable.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Probability of Different Inflation Outcomes; One year ahead; Numeracy High; <0%', 'Inflation uncertainty; Median one-year ahead uncertainty and Median three-year ahead uncertainty, by Demographics; Region West', 'One-year ahead household income growth expectations; 25th Percentile point prediction', 'Change in credit availability; Year ago; Somewhat harder', 'Probability of Different Inflation Outcomes; Three year ahead; Age Under 40; 2-4%']; Description: Human-readable unique name for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['country/USA', 'censusRegion/04', 'country/USA', 'country/USA', 'country/USA']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.OECD_ATTRIBUTES
+[
+    SEASONALLY_ADJUSTED (Type: TEXT; Sample values: ['Neither seasonally adjusted nor calendar adjusted', 'Calendar and seasonally adjusted', 'Neither seasonally adjusted nor calendar adjusted', 'Neither seasonally adjusted nor calendar adjusted', 'Neither seasonally adjusted nor calendar adjusted']; Description: Indicates whether the value is seasonally adjusted.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Balance of payments to rest of the world: balance (revenue minus expenditure) from secondary income in US dollar, Annual', 'Balance of payments to rest of the world: balance (revenue minus expenditure) from secondary income in US dollar, Quarterly (Calendar and seasonally adjusted)', 'Balance of payments to rest of the world: balance (revenue minus expenditure) from secondary income in Rand, Annual', 'Balance of payments to rest of the world: balance (revenue minus expenditure) from capital account in Swiss franc, Quarterly', 'Balance of payments to rest of the world: balance (revenue minus expenditure) from capital account in Indian rupee, Annual']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FHFA_HOUSE_PRICE_ATTRIBUTES
+[
+    VARIABLE (Type: TEXT; Sample values: ['FHFA_HPI_traditional_purchase-only_monthly_SA', 'FHFA_HPI_non-metro_all-transactions_quarterly_NSA', 'FHFA_HPI_traditional_purchase-only_quarterly_SA', 'FHFA_HPI_distress-free_purchase-only_quarterly_SA', 'FHFA_HPI_distress-free_purchase-only_quarterly_NSA']; Description: A unique identifier for a variable joinable to the timeseries table for filtering)
+    SEASONALLY_ADJUSTED (Type: BOOLEAN; Sample values: ['True', 'False', 'True', 'True', 'False']; Description: Boolean field indicating if a series is seasonally adjusted)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['FHFA_HPI traditional purchase-only monthly Seasonally Adjusted', 'FHFA_HPI non-metro all-transactions quarterly Not Seasonally Adjusted', 'FHFA_HPI traditional purchase-only quarterly Seasonally Adjusted', 'FHFA_HPI distress-free purchase-only quarterly Seasonally Adjusted', 'FHFA_HPI distress-free purchase-only quarterly Not Seasonally Adjusted']; Description: Human-readable description for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_INSTITUTION_TIMESERIES
+[
+    UNIT (Type: TEXT; Sample values: ['Percent', 'Percent', 'Percent', 'USD', 'Percent']; Description: Unit of measure for the value, examples (e.g., percentage, USD))
+    VALUE (Type: NUMBER; Sample values: ['0E-11', '0.00020890000', '0E-11', 'None', '0.78737600000']; Description: Numeric value for the given data point)
+    DATE (Type: DATE; Sample values: ['1991-09-30', '2008-06-30', '2015-06-30', '1990-03-31', '2008-12-31']; Description: Date associated with the value)
+    VARIABLE (Type: TEXT; Sample values: ['P3OTHLNR', 'DRLNLSQR', 'CRCINUSQR', 'EQCCOMPI', 'DEPIDOMR']; Description: Unique identifier for a variable joinable to the timeseries table)
+    ID_RSSD (Type: TEXT; Sample values: ['582971', '1005655', '568470', '321170', '21658']; Description: A unique identifier assigned by the Federal Reserve for the financial institution)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Other Loans, Past Due 30 - 89 Days', 'Total Charge-Offs', 'To Non-U.S. Addressees', 'Other Comprehensive Income', 'Interest-Bearing Deposits in Domestic Offices']; Description: Human-readable name for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FINANCIAL_INSTITUTION_EVENTS
+[
+    TRANSACTION_DATE (Type: DATE; Sample values: ['2021-10-02', '2024-07-02', '2014-11-08', '1995-08-28', '1989-06-04']; Description: Date of transaction)
+    TRANSFORMATION_TYPE (Type: TEXT; Sample values: ['Charter Discontinued', 'Charter Discontinued', 'Failure', 'Charter Discontinued', 'Charter Discontinued']; Description: Description of transformation)
+    MERGER_ACCOUNTING_METHOD_UTILIZED (Type: TEXT; Sample values: ['Purchase/Acquisition', 'Purchase/Acquisition', 'None', 'Pooling of interests or entities under common control.', 'None']; Description: Accounting method used in resolving a non-failure merger)
+    NAME_SUCCESSOR (Type: TEXT; Sample values: ['California Bank of Commerce, National Association', 'Equity Bank', 'California Bank of Commerce, National Association', 'Firstar Bank Council Bluffs', 'First of America Bank-Illinois, National Association']; Description: Name of successor entity)
+    NAME_PREDECESSOR (Type: TEXT; Sample values: ['Bank of Santa Clarita', 'KansasLand Bank', 'Frontier Bank, FSB', 'Firstar Bank Red Oak, National Association', 'First of America Bank - Grayslake, National Association']; Description: Name of predecessor entity)
+    ID_RSSD_PREDECESSOR (Type: NUMBER; Sample values: ['3302312', '422059', '2704740', '467649', '794130']; Description: Unique identifier for predecessor entity joinable to entities table)
+    ID_RSSD_SUCCESSOR (Type: NUMBER; Sample values: ['3076453', '139656', '3076453', '213248', '363835']; Description: Unique identifier for successor entity joinable to entities table)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.EUROPEAN_CENTRAL_BANK_ATTRIBUTES
+[
+    SEASONALLY_ADJUSTED (Type: TEXT; Sample values: ['Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted']; Description: Indicates whether the value is seasonally adjusted.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Harmonized Index Of Consumer Prices - Services Of Plumbers, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Garments, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Paper Products, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Liquid Fuels And Fuels And Lubricants For Pers. Transport Equip., Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Products For Pets, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.FHFA_MORTGAGE_PERFORMANCE_ATTRIBUTES
+[
+    VARIABLE_GROUP (Type: TEXT; Sample values: ['Percent 90 to 180 Days Past Due Date', 'Percent 30 or 60 Days Past Due Date', 'Percent in Forbearance', 'Percent in Forbearance', 'Percent 90 to 180 Days Past Due Date']; Description: Overall variable grouping for the timeseries (e.g., Percent in Forbearance, Percent 30 or 60 Days Past Due Date, etc.))
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Percent 90 to 180 Days Past Due Date - Other Conventional Market', 'Percent 30 or 60 Days Past Due Date - Government / Non-Conventional', 'Percent in Forbearance - Government / Non-Conventional', 'Percent in Forbearance - Other Conventional Market', 'Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions']; Description: Human-readable description for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.INTERNATIONAL_MONETARY_FUND_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['2238764366.3715', '0.0', '3.33333333333333', '19392718282.8283', '29000000000.0']; Description: Value reported for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['country/FRA', 'country/LUX', 'country/GRD', 'country/MAR', 'country/RWA']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Balance Of Payments: Current Account, Primary Income, Investment Income, Portfolio Investment, Investment Income on Equity and Investment Fund Shares, Investment Income Attributable to Investment Fund Shareholders, Reinvested Earnings, Debit | USD | Annual', 'Balance Of Payments: Financial Account, Other Investment, Loans, Net Acquisition of Financial Assets, Deposit-taking Corporations, Except the Central Bank, Short-term | EUR | Quarterly', 'International Financial Statistics: Fund Accounts, SDR Holdings as % of Allocation | Percent, Percent per annum | Monthly', 'International Financial Statistics: Fiscal, Budgetary Central Government, Revenue, 2001 Manual | Domestic Currency | Monthly', 'International Financial Statistics: Exports of Services, Nominal, Unadjusted | Domestic Currency | Quarterly']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: FINANCE__ECONOMICS.CYBERSYN.BANK_FOR_INTERNATIONAL_SETTLEMENTS_TIMESERIES
+[
+    VALUE (Type: FLOAT; Sample values: ['7561000000.0', '57000000.0', '-1230000.0', '30000000.0', '-1417108000.0']; Description: Value reported for the variable.)
+    COUNTERPARTY_GEO_ID (Type: TEXT; Sample values: ['country/TUR', 'country/MWI', 'country/ETH', 'country/TON', 'country/AUS']; Description: A unique identifier for a country or country group, joinable to the GEOGRAPHY_INDEX table, representing the counterparty geography for the variable.)
+    GEO_ID (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: A unique identifier for a country or country group, joinable to the GEOGRAPHY_INDEX table, representing the primary geography for the variable.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['All reporting countries - Cross-border Total liabilities of banks with headquarters in All countries (total) vis-a-vis residents of Turkey, Non-banks, total (Amounts outstanding / Stocks, Loans and deposits in All currencies (=D+F+U), All currencies excl. core, All reporting banks/institutions (domestic, foreign, consortium and unclassified)', 'All reporting countries - Cross-border Total claims of banks with headquarters in All countries (total) vis-a-vis residents of Malawi, Banks, total (Amounts outstanding / Stocks, Loans and deposits in All currencies (=D+F+U), All currencies, All reporting banks/institutions (domestic, foreign, consortium and unclassified)', 'All reporting countries - Cross-border Total liabilities of banks with headquarters in All countries (total) vis-a-vis residents of Ethiopia, All sectors (FX and break adjusted change (BIS calculated), All instruments in All currencies (=D+F+U), Unallocated currencies, All reporting banks/institutions (domestic, foreign, consortium and unclassified)', 'All reporting countries - Cross-border Total liabilities of banks with headquarters in All countries (total) vis-a-vis residents of Tonga, All sectors (Amounts outstanding / Stocks, Credit (loans & debt securities) in All currencies (=D+F+U), All currencies, All reporting banks/institutions (domestic, foreign, consortium and unclassified)', 'All reporting countries - Cross-border Total claims of banks with headquarters in All countries (total) vis-a-vis residents of Australia, Banks, total (FX and break adjusted change (BIS calculated), Loans and deposits in All currencies (=D+F+U), Unallocated currencies, All reporting banks/institutions (domestic, foreign, consortium and unclassified)']; Description: Human-readable name for the variable.)
+]
+
+--------------------------------------------------
+

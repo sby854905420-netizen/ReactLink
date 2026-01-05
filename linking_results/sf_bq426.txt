@@ -1,0 +1,399 @@
+###Table full name: NEW_YORK_CITIBIKE_1.NOAA_GSOD.GSOD1994
+[
+    max (Type: FLOAT; Sample values: ['39.9', '68.0', '79.0', '33.3', '19.0']; Description: Maximum temperature reported during the day in Fahrenheit to tenths--time of max temp report varies by country and region, so this will sometimes not be the max for the calendar day. Missing = 9999.9)
+    temp (Type: FLOAT; Sample values: ['31.9', '52.6', '64.4', '21.3', '7.1']; Description: Mean temperature for the day in degrees Fahrenheit to tenths. Missing = 9999.9)
+    min (Type: FLOAT; Sample values: ['27.0', '34.0', '45.1', '1.6', '1.2']; Description: Minimum temperature reported during the day in Fahrenheit to tenths--time of min temp report varies by country and region, so this will sometimes not be the min for the calendar day. Missing = 9999.9)
+    prcp (Type: FLOAT; Sample values: ['0.01', '0.0', '0.0', '0.0', '0.0']; Description: Total precipitation (rain and/or melted snow) reported during the day in inches and hundredths; will usually not end with the midnight observation--i.e., may include latter part of previous day.)
+    count_temp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean temperature)
+    flag_max (Type: TEXT; Sample values: ['*', '*', '*', 'None', 'None']; Description: Blank indicates max temp was taken from the explicit max temp report and not from the 'hourly' data.)
+    sndp (Type: FLOAT; Sample values: ['7.1', '999.9', '999.9', '17.7', '19.7']; Description: Snow depth in inches to tenths--last report for the day if reported more thanonce. Missing = 999.9)
+    mxpsd (Type: TEXT; Sample values: ['13.0', '12.0', '8.0', '16.9', '28.9']; Description: Maximum sustained wind speed reported for the day in knots to tenths. Missing = 999.9)
+    date (Type: DATE; Sample values: ['', '', '', '', '']; Description: Date of the weather observations)
+    dewp (Type: FLOAT; Sample values: ['22.7', '33.4', '57.8', '17.1', '5.3']; Description: Mean dew point for the day in degreesm Fahrenheit to tenths.  Missing = 9999.9)
+    wdsp (Type: TEXT; Sample values: ['6.7', '6.0', '1.6', '8.2', '24.5']; Description: Mean wind speed for the day in knots to tenths. Missing = 999.9)
+    count_wdsp (Type: TEXT; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean wind speed)
+    flag_prcp (Type: TEXT; Sample values: ['G', 'G', 'G', 'G', 'G']; Description: A = 1 report of 6-hour precipitation amount)
+    rain_drizzle (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    gust (Type: FLOAT; Sample values: ['999.9', '999.9', '999.9', '24.9', '36.9']; Description: Maximum wind gust reported for the day in knots to tenths. Missing = 999.9)
+    flag_min (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Blank indicates min temp was taken from the explicit min temp report and not from the 'hourly' data.)
+    thunder (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    mo (Type: TEXT; Sample values: ['03', '05', '08', '01', '04']; Description: The month)
+    stn (Type: TEXT; Sample values: ['703610', '710660', '710660', '710680', '710830']; Description: Station number (WMO/DATSAV3 number) for the location)
+    stp (Type: FLOAT; Sample values: ['995.6', '978.6', '973.4', '962.0', '1007.8']; Description: Mean station pressure for the day in millibars to tenths. Missing = 9999.9)
+    count_dewp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean dew point)
+    hail (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    fog (Type: TEXT; Sample values: ['0', '0', '1', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    da (Type: TEXT; Sample values: ['21', '20', '14', '31', '20']; Description: The day)
+    snow_ice_pellets (Type: TEXT; Sample values: ['1', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    count_stp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean station pressure)
+    tornado_funnel_cloud (Type: TEXT; Sample values: ['0', '0', '0', '0', '0']; Description: Indicators (1 = yes, 0 = no/not reported) for the occurrence during the day)
+    year (Type: TEXT; Sample values: ['1994', '1994', '1994', '1994', '1994']; Description: The year)
+    slp (Type: FLOAT; Sample values: ['996.8', '1020.0', '1014.2', '1034.1', '1011.9']; Description: Mean sea level pressure for the day in millibars to tenths. Missing = 9999.9)
+    visib (Type: FLOAT; Sample values: ['23.2', '15.0', '4.2', '15.0', '0.4']; Description: Mean visibility for the day in miles to tenths.  Missing = 999.9)
+    wban (Type: TEXT; Sample values: ['25339', '99999', '99999', '99999', '99999']; Description: WBAN number where applicable--this is the historical "Weather Bureau Air Force Navy" number - with WBAN being the acronym)
+    count_slp (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean sea level pressure)
+    count_visib (Type: NUMBER; Sample values: ['24', '24', '24', '24', '24']; Description: Number of observations used in calculating mean visibility)
+]
+**Some other tables have the similar structure: [NOAA_GSOD.GSOD1941, NOAA_GSOD.GSOD1947, NOAA_GSOD.GSOD1965, NOAA_GSOD.GSOD1953, NOAA_GSOD.GSOD2009, NOAA_GSOD.GSOD1951, NOAA_GSOD.GSOD1938, NOAA_GSOD.GSOD1962, NOAA_GSOD.GSOD1946, NOAA_GSOD.GSOD2014, NOAA_GSOD.GSOD1992, NOAA_GSOD.GSOD1945, NOAA_GSOD.GSOD1961, NOAA_GSOD.GSOD1967, NOAA_GSOD.GSOD2013, NOAA_GSOD.GSOD2010, NOAA_GSOD.GSOD2008, NOAA_GSOD.GSOD1954, NOAA_GSOD.GSOD2022, NOAA_GSOD.GSOD1937, NOAA_GSOD.GSOD1968, NOAA_GSOD.GSOD1936, NOAA_GSOD.GSOD1949, NOAA_GSOD.GSOD1981, NOAA_GSOD.GSOD1987, NOAA_GSOD.GSOD1935, NOAA_GSOD.GSOD1984, NOAA_GSOD.GSOD1985, NOAA_GSOD.GSOD2003, NOAA_GSOD.GSOD1976, NOAA_GSOD.GSOD2023, NOAA_GSOD.GSOD1999, NOAA_GSOD.GSOD1978, NOAA_GSOD.GSOD1975, NOAA_GSOD.GSOD2006, NOAA_GSOD.GSOD1966, NOAA_GSOD.GSOD1963, NOAA_GSOD.GSOD1980, NOAA_GSOD.GSOD2000, NOAA_GSOD.GSOD1956, NOAA_GSOD.GSOD1996, NOAA_GSOD.GSOD2005, NOAA_GSOD.GSOD1990, NOAA_GSOD.GSOD2019, NOAA_GSOD.GSOD1988, NOAA_GSOD.GSOD1979, NOAA_GSOD.GSOD1995, NOAA_GSOD.GSOD2011, NOAA_GSOD.GSOD1970, NOAA_GSOD.GSOD1989, NOAA_GSOD.GSOD2021, NOAA_GSOD.GSOD1930, NOAA_GSOD.GSOD1933, NOAA_GSOD.GSOD2007, NOAA_GSOD.GSOD1950, NOAA_GSOD.GSOD2015, NOAA_GSOD.GSOD1931, NOAA_GSOD.GSOD1942, NOAA_GSOD.GSOD2016, NOAA_GSOD.GSOD1983, NOAA_GSOD.GSOD1969, NOAA_GSOD.GSOD2018, NOAA_GSOD.GSOD2017, NOAA_GSOD.GSOD1993, NOAA_GSOD.GSOD1986, NOAA_GSOD.GSOD1960, NOAA_GSOD.GSOD1991, NOAA_GSOD.GSOD1932, NOAA_GSOD.GSOD1997, NOAA_GSOD.GSOD1959, NOAA_GSOD.GSOD1964, NOAA_GSOD.GSOD1982, NOAA_GSOD.GSOD2024, NOAA_GSOD.GSOD1977, NOAA_GSOD.GSOD2012, NOAA_GSOD.GSOD1957, NOAA_GSOD.GSOD1952, NOAA_GSOD.GSOD1940, NOAA_GSOD.GSOD2004, NOAA_GSOD.GSOD1958, NOAA_GSOD.GSOD2020, NOAA_GSOD.GSOD1998, NOAA_GSOD.GSOD2002, NOAA_GSOD.GSOD1955, NOAA_GSOD.GSOD1948, NOAA_GSOD.GSOD1939, NOAA_GSOD.GSOD1943, NOAA_GSOD.GSOD1929, NOAA_GSOD.GSOD1973, NOAA_GSOD.GSOD1972, NOAA_GSOD.GSOD2001, NOAA_GSOD.GSOD1934, NOAA_GSOD.GSOD1944, NOAA_GSOD.GSOD1974, NOAA_GSOD.GSOD1971]**
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.CYCLISTIC.ZIP_CODES
+[
+    zip (Type: NUMBER; Sample values: ['10458', '10468', '10453', '10457', '10456'])
+    borough (Type: TEXT; Sample values: ['Bronx', 'Bronx', 'Bronx', 'Bronx', 'Bronx'])
+    neighborhood (Type: TEXT; Sample values: ['Bronx Park and Fordham', 'Bronx Park and Fordham', 'Central Bronx', 'Central Bronx', 'High Bridge and Morrisania'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.ZIP_CODES
+[
+    city (Type: TEXT; Sample values: ['Ringgold', 'Wollochet CDP, Rosedale CDP, Gig Harbor city, Artondale CDP, Raft Island CDP', 'Java center', 'Post', 'Foster city'])
+    zip_code (Type: TEXT; Sample values: ['24586', '98335', '14082', '97752', '49834'])
+    state_code (Type: TEXT; Sample values: ['VA', 'WA', 'NY', 'OR', 'MI'])
+    zip_code_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00<\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00p\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00u\\...(truncated)"])
+    internal_point_lat (Type: FLOAT; Sample values: ['36.6070441', '47.2969474', '42.6565634', '44.1429198', '45.9456636'])
+    county (Type: TEXT; Sample values: ['Pittsylvania', 'Pierce County', 'Wyoming', 'Crook', 'Dickinson'])
+    state_name (Type: TEXT; Sample values: ['Virginia', 'Washington', 'New York', 'Oregon', 'Michigan'])
+    state_fips_code (Type: TEXT; Sample values: ['51', '53', '36', '41', '26'])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00t\\xf1\\x12\\xf7\\xb3\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x9a\\xb2\\xd3\\x0f\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00(=\\x1d\\xd9\\xa6\\x98...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xca}a\\xe8G\\x10^\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x9c\\xcbh?-\\xf1U\\x...(truncated)"])
+    area_water_meters (Type: FLOAT; Sample values: ['646363.0', '27538317.0', '288258.0', '451263.0', '1696444.0'])
+    area_land_meters (Type: FLOAT; Sample values: ['137409956.0', '57085147.0', '25716717.0', '394574538.0', '93414763.0'])
+    fips_class_code (Type: TEXT; Sample values: ['B5', 'B5', 'B5', 'B5', 'B5'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G6350', 'G6350', 'G6350', 'G6350', 'G6350'])
+    internal_point_lon (Type: FLOAT; Sample values: ['-79.2766092', '-122.623661', '-78.3851836', '-120.2543889', '-87.7683867'])
+    functional_status (Type: TEXT; Sample values: ['S', 'S', 'S', 'S', 'S'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.NEW_YORK_CITIBIKE.CITIBIKE_STATIONS
+[
+    last_reported (Type: NUMBER; Sample values: ['1726578102000000', '1726661906000000', '1727268154000000', '1725540317000000', '1729013059000000']; Description: Timestamp indicating the last time this station reported its status to the backend, in NYC local time.)
+    latitude (Type: FLOAT; Sample values: ['40.770513', '40.73532427', '40.73143724085228', '40.67669', '40.75863']; Description: The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format.)
+    name (Type: TEXT; Sample values: ['W 59 St & 10 Ave', 'W 11 St & 6 Ave', 'University Pl & E 8 St', 'Brooklyn Ave & Dean St', 'Madison Ave & E 51 St']; Description: Public name of the station.)
+    longitude (Type: FLOAT; Sample values: ['-73.988038', '-73.99800419', '-73.99490341544151', '-73.94437', '-73.97513000000001']; Description: The longitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format.)
+    region_id (Type: NUMBER; Sample values: ['71', '71', '71', '71', '71']; Description: ID of the region where station is located.)
+    station_id (Type: TEXT; Sample values: ['66dc0dab-0aca-11e7-82f6-3863bb44ef7c', '66db4282-0aca-11e7-82f6-3863bb44ef7c', '66ddb6d9-0aca-11e7-82f6-3863bb44ef7c', '9b70cbe2-25fc-42f8-b6e6-ac21ef248e4b', '821b19c1-ab13-4482-9580-770288a377a7']; Description: Unique identifier of a station.)
+    num_bikes_available (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Number of bikes available for rental.)
+    short_name (Type: TEXT; Sample values: ['7023.04', '5914.03', '5755.14', '4131.03', '6659.09']; Description: Short name or other type of identifier, as used by the data publisher.)
+    is_installed (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Is the station currently on the street?)
+    eightd_has_available_keys (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    num_bikes_disabled (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Number of disabled bikes at the station.)
+    eightd_has_key_dispenser (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    num_docks_disabled (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0']; Description: Number of empty but disabled dock points at the station.)
+    capacity (Type: NUMBER; Sample values: ['117', '47', '79', '19', '43']; Description: ANumber of total docking points installed at this station, both available and unavailable.)
+    is_renting (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Is the station currently renting bikes?)
+    rental_methods (Type: TEXT; Sample values: ['KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD', 'KEY, CREDITCARD']; Description: Array of enumerables containing the payment methods accepted at this station.)
+    is_returning (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False']; Description: Is the station accepting bike returns?)
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.NWS_FORECAST_REGIONS
+[
+    state (Type: TEXT; Sample values: ['MI', 'MI', 'MI', 'MI', 'MI'])
+    zone (Type: TEXT; Sample values: ['001', '002', '005', '006', '011'])
+    name (Type: TEXT; Sample values: ['Keweenaw', 'Ontonagon', 'Marquette', 'Alger', 'Dickinson'])
+    lat (Type: FLOAT; Sample values: ['47.6104', '46.6644', '46.4314', '46.4099', '46.0091'])
+    state_zone (Type: TEXT; Sample values: ['MI001', 'MI002', 'MI005', 'MI006', 'MI011'])
+    time_zone (Type: TEXT; Sample values: ['E', 'E', 'E', 'E', 'C'])
+    shortname (Type: TEXT; Sample values: ['Keweenaw', 'Ontonagon', 'Marquette', 'Alger', 'Dickinson'])
+    cwa (Type: TEXT; Sample values: ['MQT', 'MQT', 'MQT', 'MQT', 'MQT'])
+    fe_area (Type: TEXT; Sample values: ['wu', 'wu', 'nr', 'nr', 'sr'])
+    lon (Type: FLOAT; Sample values: ['-88.4287', '-89.315', '-87.6415', '-86.6018', '-87.8704'])
+    shape_geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00n\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x05\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.NOAA_GSOD.STATIONS
+[
+    end (Type: TEXT; Sample values: ['20130730', '20100421', '20050228', '20050210', '20140523'])
+    state (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    lat (Type: FLOAT; Sample values: ['0.0', '0.0', '59.98', '78.217', '77.517'])
+    country (Type: TEXT; Sample values: ['None', 'AF', 'NO', 'SV', 'NO'])
+    name (Type: TEXT; Sample values: ['WXPOD 7018                   ', 'WXPOD 8318                   ', 'FRIGG', 'LONGYEARBYEN', 'SVARTTANGEN'])
+    call (Type: TEXT; Sample values: ['None', 'None', 'ENFR', 'None', 'None'])
+    begin (Type: TEXT; Sample values: ['20110309', '20100421', '19880320', '20050210', '20100825'])
+    elev (Type: TEXT; Sample values: ['+7018.0', '+8318.0', '+0048.0', '+0037.0', '+0020.0'])
+    usaf (Type: TEXT; Sample values: ['007018', '008307', '010017', '010071', '010190'])
+    lon (Type: FLOAT; Sample values: ['0.0', '0.0', '2.25', '15.583', '20.817'])
+    wban (Type: TEXT; Sample values: ['99999', '99999', '99999', '99999', '99999'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.NEW_YORK_CITIBIKE.CITIBIKE_TRIPS
+[
+    end_station_latitude (Type: FLOAT; Sample values: ['40.71427487', '40.7158155', '40.75001986', '40.75172632', '40.74025878']; Description: End Station Latitude)
+    end_station_id (Type: NUMBER; Sample values: ['307', '412', '455', '362', '537']; Description: End Station ID)
+    start_station_latitude (Type: FLOAT; Sample values: ['40.68676793', '40.70905623', '40.7014851', '40.75724567911726', '40.749156']; Description: Start Station Latitude)
+    starttime (Type: NUMBER; Sample values: ['1468270231000000', '1507990925000000', '1505328388000000', '1502200470000000', '1524485470888000']; Description: Start Time, in NYC local time.)
+    start_station_id (Type: NUMBER; Sample values: ['120', '195', '430', '3233', '379']; Description: Start Station ID)
+    end_station_longitude (Type: FLOAT; Sample values: ['-73.98990025', '-73.99422366', '-73.96905301', '-73.98753523', '-73.98409214']; Description: End Station Longitude)
+    stoptime (Type: NUMBER; Sample values: ['1468271840000000', '1507992100000000', '1505330019000000', '1502200863000000', '1524486122811000']; Description: Stop Time, in NYC local time.)
+    usertype (Type: TEXT; Sample values: ['Subscriber', 'Subscriber', 'Subscriber', 'Subscriber', 'Subscriber']; Description: User Type (Customer = 24-hour pass or 7-day pass user, Subscriber = Annual Member))
+    end_station_name (Type: TEXT; Sample values: ['Canal St & Rutgers St', 'Forsyth St & Canal St', '1 Ave & E 44 St', 'Broadway & W 37 St', 'Lexington Ave & E 24 St']; Description: End Station Name)
+    start_station_longitude (Type: FLOAT; Sample values: ['-73.95928168', '-74.01043382', '-73.98656928', '-73.97805914282799', '-73.9916']; Description: Start Station Longitude)
+    start_station_name (Type: TEXT; Sample values: ['Lexington Ave & Classon Ave', 'Liberty St & Broadway', 'York St & Jay St', 'E 48 St & 5 Ave', 'W 31 St & 7 Ave']; Description: Start Station Name)
+    bikeid (Type: NUMBER; Sample values: ['25672', '30676', '20702', '21577', '30984']; Description: Bike ID)
+    tripduration (Type: NUMBER; Sample values: ['1609', '1174', '1631', '393', '651']; Description: Trip Duration (in seconds))
+    gender (Type: TEXT; Sample values: ['female', 'female', 'female', 'female', 'female']; Description: Gender (unknown, male, female))
+    birth_year (Type: NUMBER; Sample values: ['1995', '1995', '1995', '1995', '1995']; Description: Year of Birth)
+    customer_plan (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The name of the plan that determines the rate charged for the trip)
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.RAILWAYS
+[
+    geo_id (Type: NUMBER; Sample values: ['11094844118', '110168314233', '110194697259', '110230920977', '110343201289'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['R1011', 'R1011', 'R1011', 'R1011', 'R1011'])
+    full_name (Type: TEXT; Sample values: ['Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR'])
+    railway_geom (Type: TEXT; Sample values: ['{"type":"LineString","coordinates":[[-85.756163,30.789894],[-85.749904,30.79131299999999],[-85.74871499999999,30.79155899999999],[-85.74010599999998,30.79322499999998],[-85.73695699999999,30.793934],[-85.736812,30.79396699999999],[-85.73513699999999,30.79429],[-85.73469899999999,30.79452799999998],[-85.730451,30.79541499999998],[-85.72664999999999,30.79618299999999],[-85.72593499999999,30.79632699999999],[-85.72435899999999,30.79647599999999],[-85.72298599999999,30.79634799999999],[-85.72159299999998,30.79626999999998],[-85.71938999999999,30.79606399999999],[-85.71445399999998,30.79571999999998],[-85.712805,30.79557799999998],[-85.70494399999998,30.79490399999998],[-85.70237899999999,30.794684],[-85.69897499999999,30.79436199999998],[-85.69579699999998,30.79413699999998],[-85.69317199999999,30.79394299999998],[-85.69315299999998,30.79394199999999],[-85.69268699999999,30.79390899999998],[-85.687477,30.79337899999999],[-85.687269,30.793357],[-85.68602199999999,30.79321999999999],[-85.685...(truncated)', '{"type":"LineString","coordinates":[[-86.88663299999998,41.08432899999999],[-86.886527,41.08253899999999],[-86.886476,41.08166599999999],[-86.88644599999999,41.08072599999999],[-86.886437,41.07983],[-86.88639599999999,41.07893699999999],[-86.88622399999998,41.07485499999998],[-86.88606099999998,41.07129199999998],[-86.88602699999998,41.06489099999999],[-86.88579099999998,41.056159],[-86.88535499999999,41.04620599999999],[-86.885333,41.04552899999999],[-86.88475499999999,41.02705999999999],[-86.884726,41.026021],[-86.88431199999999,41.01562399999999],[-86.884151,41.01248199999999],[-86.88374499999999,41.00551399999999],[-86.88369799999999,41.00463699999999],[-86.88366399999999,41.00250899999999],[-86.88362899999999,41.000039],[-86.88325299999999,40.99828799999999],[-86.88332599999998,40.99808499999999],[-86.88297,40.988005],[-86.882913,40.98750499999999]]}', '{"type":"LineString","coordinates":[[-89.45165399999999,38.37588099999998],[-89.45124899999999,38.375692],[-89.45003699999998,38.37512499999999],[-89.44963299999999,38.37493699999999],[-89.44701499999997,38.37370399999998],[-89.44075699999999,38.37075899999998],[-89.43915499999998,38.37002499999999],[-89.43652499999998,38.36881999999998],[-89.43456599999999,38.36792299999999],[-89.43027099999999,38.36595599999999],[-89.42869899999998,38.365217],[-89.42674999999998,38.36430199999999]]}', '{"type":"LineString","coordinates":[[-86.794476,36.165807],[-86.79449199999999,36.16579999999999],[-86.79454199999999,36.16577999999999],[-86.79455899999999,36.16577399999999],[-86.79458799999999,36.16576099999999],[-86.794674,36.16572199999999],[-86.79470399999998,36.16570999999999],[-86.79480799999998,36.165666],[-86.79512099999998,36.165537],[-86.79522599999998,36.16549499999998],[-86.79533299999998,36.16545099999999],[-86.79543699999999,36.16540899999999],[-86.79565399999998,36.16531899999999],[-86.79576199999998,36.16527599999999],[-86.79597599999998,36.165182],[-86.79661799999998,36.16490199999999],[-86.79683299999999,36.16480899999999]]}', '{"type":"LineString","coordinates":[[-87.35840199999998,41.20486899999999],[-87.35764999999999,41.20382199999999],[-87.35670199999998,41.20250199999999],[-87.35539299999999,41.200682],[-87.354641,41.19963599999999],[-87.35401299999998,41.19875899999999],[-87.35212899999999,41.196131],[-87.35150199999998,41.19525499999999],[-87.35119999999999,41.19482899999999],[-87.35029399999999,41.193553],[-87.349992,41.193128]]}'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.CYCLISTIC.STATE_FIPS
+[
+    postal_code (Type: TEXT; Sample values: ['AL', 'AK', 'AR', 'CA', 'CO'])
+    state (Type: TEXT; Sample values: ['Alabama', 'Alaska', 'Arkansas', 'California', 'Colorado'])
+    fips (Type: NUMBER; Sample values: ['1', '2', '5', '6', '8'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.METROPOLITAN_DIVISIONS
+[
+    metdiv_code (Type: TEXT; Sample values: ['40484', '29404', '16984', '23104', '11244'])
+    geo_id (Type: TEXT; Sample values: ['1446040484', '1698029404', '1698016984', '1910023104', '3108011244'])
+    name (Type: TEXT; Sample values: ['Rockingham County-Strafford County, NH', 'Lake County-Kenosha County, IL-WI', 'Chicago-Naperville-Evanston, IL', 'Fort Worth-Arlington-Grapevine, TX', 'Anaheim-Santa Ana-Irvine, CA'])
+    internal_point_latitude (Type: FLOAT; Sample values: ['43.0866384', '42.326441', '41.7921868', '32.8073714', '33.6756872'])
+    cbsa_code (Type: TEXT; Sample values: ['14460', '16980', '16980', '19100', '31080'])
+    csa_code (Type: TEXT; Sample values: ['148', '176', '176', '206', '348'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3120', 'G3120', 'G3120', 'G3120', 'G3120'])
+    lsad_code (Type: TEXT; Sample values: ['M3', 'M3', 'M3', 'M3', 'M3'])
+    lsad_name (Type: TEXT; Sample values: ['Rockingham County-Strafford County, NH Metro Division', 'Lake County-Kenosha County, IL-WI Metro Division', 'Chicago-Naperville-Evanston, IL Metro Division', 'Fort Worth-Arlington-Grapevine, TX Metro Division', 'Anaheim-Santa Ana-Irvine, CA Metro Division'])
+    internal_point_longitude (Type: FLOAT; Sample values: ['-71.0697777', '-87.435976', '-87.9717839', '-97.5371593', '-117.7772068'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.URBAN_AREAS
+[
+    name (Type: TEXT; Sample values: ['Christopher, IL', 'Athens, OH', 'Sylvania, GA', 'Prescott, AR', 'Harrison, AR'])
+    type (Type: TEXT; Sample values: ['C', 'C', 'C', 'C', 'C'])
+    urban_area_code (Type: TEXT; Sample values: ['16777', '03682', '86221', '72073', '37108'])
+    geo_id (Type: TEXT; Sample values: ['16777', '03682', '86221', '72073', '37108'])
+    area_lsad_code (Type: TEXT; Sample values: ['76', '76', '76', '76', '76'])
+    lsad_name (Type: TEXT; Sample values: ['Christopher, IL Urban Cluster', 'Athens, OH Urban Cluster', 'Sylvania, GA Urban Cluster', 'Prescott, AR Urban Cluster', 'Harrison, AR Urban Cluster'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3500', 'G3500', 'G3500', 'G3500', 'G3500'])
+    urban_area_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x05\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x...(truncated)"])
+    functional_status (Type: TEXT; Sample values: ['S', 'S', 'S', 'S', 'S'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.CBSA
+[
+    name (Type: TEXT; Sample values: ['Glasgow, KY', 'Wahpeton, ND-MN', 'Kill Devil Hills, NC', 'Lock Haven, PA', 'Mount Pleasant, MI'])
+    geo_id (Type: TEXT; Sample values: ['23980', '47420', '28620', '30820', '34380'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['23980', '47420', '28620', '30820', '34380'])
+    csa_geo_id (Type: TEXT; Sample values: ['150', '244', '545', '558', '394'])
+    lsad_code (Type: TEXT; Sample values: ['M2', 'M2', 'M2', 'M2', 'M2'])
+    lsad_name (Type: TEXT; Sample values: ['Glasgow, KY Micro Area', 'Wahpeton, ND-MN Micro Area', 'Kill Devil Hills, NC Micro Area', 'Lock Haven, PA Micro Area', 'Mount Pleasant, MI Micro Area'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3110', 'G3110', 'G3110', 'G3110', 'G3110'])
+    internal_point_latitude (Type: FLOAT; Sample values: ['36.9675705', '46.2939501', '35.6062688', '41.262624', '43.6452331'])
+    cbsa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00V\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00,\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_longitude (Type: FLOAT; Sample values: ['-85.8154965', '-96.7907012', '-75.7675364', '-77.69636', '-84.8394245'])
+    msa_indicator (Type: TEXT; Sample values: ['2', '2', '2', '2', '2'])
+    area_water_meters (Type: FLOAT; Sample values: ['36168371.0', '25517798.0', '3000513932.0', '23178644.0', '12948097.0'])
+    area_land_meters (Type: FLOAT; Sample values: ['2013003235.0', '5663458888.0', '992557887.0', '2299868389.0', '1483282623.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.CNECTA
+[
+    name (Type: TEXT; Sample values: ['Augusta-Waterville, ME', 'Portland-Lewiston-South Portland, ME', 'Pittsfield-North Adams, MA-VT', 'Springfield-Hartford-East Hartford, MA-CT', 'Lebanon-Claremont, NH-VT'])
+    geo_id (Type: TEXT; Sample values: ['710', '775', '770', '790', '725'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3200', 'G3200', 'G3200', 'G3200', 'G3200'])
+    name_lsad (Type: TEXT; Sample values: ['Augusta-Waterville, ME Combined NECTA', 'Portland-Lewiston-South Portland, ME Combined NECTA', 'Pittsfield-North Adams, MA-VT Combined NECTA', 'Springfield-Hartford-East Hartford, MA-CT Combined NECTA', 'Lebanon-Claremont, NH-VT Combined NECTA'])
+    cnecta_fips_code (Type: TEXT; Sample values: ['710', '775', '770', '790', '725'])
+    int_point_lat (Type: FLOAT; Sample values: ['44.4092939', '43.8562034', '42.5337519', '42.0359069', '43.6727226'])
+    lsad (Type: TEXT; Sample values: ['M4', 'M4', 'M4', 'M4', 'M4'])
+    cnecta_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00?\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    area_water_meters (Type: NUMBER; Sample values: ['183936850', '1537827560', '24514153', '256922043', '58476158'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.STATES
+[
+    geo_id (Type: TEXT; Sample values: ['66', '69', '78', '60', '09'])
+    area_water_meters (Type: NUMBER; Sample values: ['934337453', '4644252458', '1550236199', '1307243751', '1815617293'])
+    state_fips_code (Type: TEXT; Sample values: ['66', '69', '78', '60', '09'])
+    division_code (Type: TEXT; Sample values: ['0', '0', '0', '0', '1'])
+    state_gnis_code (Type: TEXT; Sample values: ['01802705', '01779809', '01802710', '01802701', '01779780'])
+    region_code (Type: TEXT; Sample values: ['9', '9', '9', '9', '1'])
+    state_name (Type: TEXT; Sample values: ['Guam', 'Commonwealth of the Northern Mariana Islands', 'United States Virgin Islands', 'American Samoa', 'Connecticut'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4000', 'G4000', 'G4000', 'G4000', 'G4000'])
+    lsad_code (Type: TEXT; Sample values: ['00', '00', '00', '00', '00'])
+    state (Type: TEXT; Sample values: ['GU', 'MP', 'VI', 'AS', 'CT'])
+    state_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00`\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00x\\...(truncated)"])
+    int_point_lat (Type: FLOAT; Sample values: ['13.4417451', '14.9367835', '18.326748', '-14.267159', '41.5798637'])
+    functional_status (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    int_point_lon (Type: FLOAT; Sample values: ['144.7719021', '145.601021', '-64.9712508', '-170.6682674', '-72.7466572'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.CSA
+[
+    name (Type: TEXT; Sample values: ['Amarillo-Pampa-Borger, TX', 'Birmingham-Hoover-Talladega, AL', 'Buffalo-Cheektowaga-Olean, NY', 'Pueblo-Cañon City, CO', 'Monroe-Ruston, LA'])
+    geo_id (Type: TEXT; Sample values: ['108', '142', '160', '444', '384'])
+    lsad_name (Type: TEXT; Sample values: ['Amarillo-Pampa-Borger, TX CSA', 'Birmingham-Hoover-Talladega, AL CSA', 'Buffalo-Cheektowaga-Olean, NY CSA', 'Pueblo-Cañon City, CO CSA', 'Monroe-Ruston, LA CSA'])
+    msa_lsad_code (Type: TEXT; Sample values: ['M0', 'M0', 'M0', 'M0', 'M0'])
+    csa_code (Type: TEXT; Sample values: ['108', '142', '160', '444', '384'])
+    internal_point_lat (Type: FLOAT; Sample values: ['35.3963177', '33.5274555', '42.7528032', '38.2835543', '32.7100624'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3100', 'G3100', 'G3100', 'G3100', 'G3100'])
+    csa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00t\\...(truncated)"])
+    internal_point_lon (Type: FLOAT; Sample values: ['-101.5947616', '-86.7482873', '-78.739697', '-104.8591613', '-92.2122365'])
+    area_water_meters (Type: FLOAT; Sample values: ['115547029.0', '347190038.0', '2112550760.0', '32454825.0', '159703707.0'])
+    area_land_meters (Type: FLOAT; Sample values: ['20428899559.0', '17485172162.0', '7441960512.0', '10150629225.0', '7132860794.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.NATIONAL_OUTLINE
+[
+    name (Type: TEXT; Sample values: ['United States'])
+    geo_id (Type: TEXT; Sample values: ['US'])
+    aff_geo_id (Type: TEXT; Sample values: ['0100000US'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.CONGRESS_DISTRICT_116
+[
+    geo_id (Type: TEXT; Sample values: ['5308', '2708', '3503', '2003', '2804'])
+    congress_session (Type: TEXT; Sample values: ['116', '116', '116', '116', '116'])
+    int_point_lat (Type: FLOAT; Sample values: ['47.3623847', '47.250337', '36.0098523', '38.8950035', '30.9941864'])
+    district_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00 ,...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00?#...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x007 ...(truncated)"])
+    lsad_code (Type: TEXT; Sample values: ['C2', 'C2', 'C2', 'C2', 'C2'])
+    lsad_name (Type: TEXT; Sample values: ['Congressional District 8', 'Congressional District 8', 'Congressional District 3', 'Congressional District 3', 'Congressional District 4'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G5200', 'G5200', 'G5200', 'G5200', 'G5200'])
+    area_water_meters (Type: NUMBER; Sample values: ['369956145', '12448157466', '302596186', '32773681', '2218354350'])
+    state_fips_code (Type: TEXT; Sample values: ['53', '27', '35', '20', '28'])
+    int_point_lon (Type: FLOAT; Sample values: ['-121.0393849', '-92.9638699', '-105.831857', '-94.7906431', '-89.0903341'])
+]
+**Some other tables have the similar structure: [GEO_US_BOUNDARIES.CONGRESS_DISTRICT_115]**
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.COASTLINE
+[
+    name (Type: TEXT; Sample values: ['Atlantic', 'Atlantic', 'Atlantic', 'Atlantic', 'Atlantic'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.ADJACENT_STATES
+[
+    state (Type: TEXT; Sample values: ['AZ', 'CA', 'CT', 'FL', 'KS'])
+    state_name (Type: TEXT; Sample values: ['Arizona', 'California', 'Connecticut', 'Florida', 'Kansas'])
+    state_fips_code (Type: TEXT; Sample values: ['04', '06', '09', '12', '20'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.COUNTIES
+[
+    geo_id (Type: TEXT; Sample values: ['55081', '55099', '55019', '55107', '55087'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '11540'])
+    lsad_name (Type: TEXT; Sample values: ['Monroe County', 'Price County', 'Clark County', 'Rusk County', 'Outagamie County'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4020', 'G4020', 'G4020', 'G4020', 'G4020'])
+    functional_status (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    area_water_meters (Type: NUMBER; Sample values: ['18586826', '62098964', '23243273', '44813690', '18206595'])
+    lsad_code (Type: TEXT; Sample values: ['06', '06', '06', '06', '06'])
+    csa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '118'])
+    county_name (Type: TEXT; Sample values: ['Monroe', 'Price', 'Clark', 'Rusk', 'Outagamie'])
+]
+
+--------------------------------------------------
+
+###Table full name: NEW_YORK_CITIBIKE_1.GEO_US_BOUNDARIES.ADJACENT_COUNTIES
+[
+    state (Type: TEXT; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa'])
+    county (Type: TEXT; Sample values: ['Audubon County', 'Bremer County', 'Cedar County', 'Grundy County', 'Hamilton County'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+Categories: Geospatial functions
+
+
+## ST_WITHIN
+
+Returns true if the first geospatial object is fully contained by the second geospatial object. In other words:
+
+The first GEOGRAPHY object g1 is fully contained by the second GEOGRAPHY object g2.
+The first GEOMETRY object g1 is fully contained by the second GEOMETRY object g2.
+
+Calling ST_WITHIN(g1, g2) is equivalent to calling ST_CONTAINS(g2, g1).
+Although ST_COVEREDBY and ST_WITHIN might seem similar, the two functions have subtle differences. For details on the differences between “covered by” and “within”, see the Dimensionally Extended 9-Intersection Model (DE-9IM).
+
+Note This function does not support using a GeometryCollection or FeatureCollection as input values.
+
+Tip You can use the search optimization service to improve the performance of queries that call this function.
+For details, see Search Optimization Service.
+
+See also:ST_CONTAINS , ST_COVEREDBY
+
+
+## Syntax
+
+ST_WITHIN( <geography_expression_1> , <geography_expression_2> )
+
+ST_WITHIN( <geometry_expression_1> , <geometry_expression_2> )
+
+
+## Arguments
+
+
+geography_expression_1A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geography_expression_2A GEOGRAPHY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_1A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+geometry_expression_2A GEOMETRY object that is not a GeometryCollection or FeatureCollection.
+
+
+## Returns
+
+BOOLEAN.
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+This shows a simple use of the ST_WITHIN function:
+
+create table geospatial_table_01 (g1 GEOGRAPHY, g2 GEOGRAPHY);
+insert into geospatial_table_01 (g1, g2) values 
+    ('POLYGON((0 0, 3 0, 3 3, 0 3, 0 0))', 'POLYGON((1 1, 2 1, 2 2, 1 2, 1 1))');
+
+Copy SELECT ST_WITHIN(g1, g2) 
+    FROM geospatial_table_01;
++-------------------+
+| ST_WITHIN(G1, G2) |
+|-------------------|
+| False             |
++-------------------+

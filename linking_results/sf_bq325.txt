@@ -1,0 +1,293 @@
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.DISEASE_VARIANT_GENE
+[
+    num_assoc_loci (Type: NUMBER; Sample values: ['1036', '1036', '1036', '1036', '1036'])
+    fpred_max_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    beta_ci_lower (Type: FLOAT; Sample values: ['-0.0567646', '0.0271668799999999', '0.00833312', '0.0184794', '-0.0147196799999999'])
+    qtl_score (Type: FLOAT; Sample values: ['21.10217834439148', '11.319796880446816', '5.555919274729758', '6.085902360060772', '6.70363980030569'])
+    study_id (Type: TEXT; Sample values: ['GCST90002340', 'GCST90002340', 'GCST90002340', 'GCST90002340', 'GCST90002340'])
+    beta_ci_upper (Type: FLOAT; Sample values: ['-0.0445734', '0.03499512', '0.01755688', '0.0258686', '-0.0073383199999999'])
+    qtl_score_q (Type: FLOAT; Sample values: ['0.9', '0.6', '0.1', '0.2', '0.4'])
+    oddsr_ci_lower (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pval (Type: FLOAT; Sample values: ['1.2900000000000001e-59', '1.46e-54', '3.87e-08', '6.450000000000002e-32', '4.82e-09'])
+    fpred_scores (Type: VARIANT; Sample values: ['{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}'])
+    beta (Type: FLOAT; Sample values: ['-0.050669', '0.0310809999999999', '0.012945', '0.022174', '-0.0110289999999999'])
+    d (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    overall_r2 (Type: FLOAT; Sample values: ['0.522729', '0.8490369306240001', 'nan', '0.771704270089', '0.843956406241'])
+    pmid (Type: TEXT; Sample values: ['PMID:32888493', 'PMID:32888493', 'PMID:32888493', 'PMID:32888493', 'PMID:32888493'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000111801', 'ENSG00000100304', 'ENSG00000185829', 'ENSG00000179921', 'ENSG00000127483'])
+    log10_ABF (Type: FLOAT; Sample values: ['nan', 'nan', '19.918723504570625', 'nan', 'nan'])
+    interval_score_q (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    interval_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fpred_max_label (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    distance_score_q (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_pval (Type: FLOAT; Sample values: ['7.90354e-22', '4.78854e-12', '2.78023e-06', '8.20536e-07', '1.97861e-07'])
+    odds_ratio (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_beta (Type: FLOAT; Sample values: ['-0.257172', '0.0799647', '0.191121', '-0.0702148', '-0.0926721'])
+    distance_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    oddsr_ci_upper (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    has_sumstats (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    EUR_1000G_prop (Type: FLOAT; Sample values: ['1.0', '1.0', 'nan', '1.0', '1.0'])
+    pval_exponent (Type: NUMBER; Sample values: ['-59', '-54', '-8', '-32', '-9'])
+    n_initial (Type: NUMBER; Sample values: ['521594', '521594', '521594', '521594', '521594'])
+    lead_pos (Type: NUMBER; Sample values: ['26328125', '43164757', '48011578', '218250385', '21190868'])
+    pval_mantissa (Type: FLOAT; Sample values: ['1.29', '1.46', '3.87', '6.450000000000001', '4.82'])
+    posterior_prob (Type: FLOAT; Sample values: ['nan', 'nan', '0.001628938604659', 'nan', 'nan'])
+    tag_pos (Type: NUMBER; Sample values: ['26378060', '43169437', '46118058', '218295047', '20763288'])
+    SAS_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', 'nan', '0.0', '0.0'])
+    AMR_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', 'nan', '0.0', '0.0'])
+    source (Type: TEXT; Sample values: ['GCST', 'GCST', 'GCST', 'GCST', 'GCST'])
+    n_cases (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_se (Type: FLOAT; Sample values: ['0.0244489', '0.0113161', '0.0402591', '0.0140197', '0.0160588'])
+    n_replication (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fpred_labels (Type: VARIANT; Sample values: ['{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}'])
+    tag_ref (Type: TEXT; Sample values: ['T', 'C', 'A', 'G', 'T'])
+    type_id (Type: TEXT; Sample values: ['eqtl', 'eqtl', 'eqtl', 'eqtl', 'eqtl'])
+    source_id (Type: TEXT; Sample values: ['eqtl', 'eqtl', 'eqtl', 'eqtl', 'eqtl'])
+    feature (Type: TEXT; Sample values: ['CEDAR-T-CELL_CD8', 'ROSMAP-BRAIN_NAIVE', 'GTEx-eQTL-ESOPHAGUS_MUSCULARIS', 'Fairfax_2014-MONOCYTE_NAIVE', 'Alasoo_2018-MACROPHAGE_IFNG'])
+    AFR_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', 'nan', '0.0', '0.0'])
+    pub_title (Type: TEXT; Sample values: ['Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746,667 Individuals from 5 Global Populations.', 'Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746,667 Individuals from 5 Global Populations.', 'Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746,667 Individuals from 5 Global Populations.', 'Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746,667 Individuals from 5 Global Populations.', 'Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746,667 Individuals from 5 Global Populations.'])
+    EAS_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', 'nan', '0.0', '0.0'])
+    trait_efos (Type: VARIANT; Sample values: ['{\n  "list": [\n    {\n      "element": "EFO_0005091"\n    }\n  ]\n}', '{\n  "list": [\n    {\n      "element": "EFO_0005091"\n    }\n  ]\n}', '{\n  "list": [\n    {\n      "element": "EFO_0005091"\n    }\n  ]\n}', '{\n  "list": [\n    {\n      "element": "EFO_0005091"\n    }\n  ]\n}', '{\n  "list": [\n    {\n      "element": "EFO_0005091"\n    }\n  ]\n}'])
+    lead_chrom (Type: TEXT; Sample values: ['6', '22', '17', '2', '1'])
+    tag_chrom (Type: TEXT; Sample values: ['6', '22', '17', '2', '1'])
+    direction (Type: TEXT; Sample values: ['-', '+', '+', '+', '-'])
+    trait_reported (Type: TEXT; Sample values: ['Monocyte count', 'Monocyte count', 'Monocyte count', 'Monocyte count', 'Monocyte count'])
+    lead_ref (Type: TEXT; Sample values: ['T', 'C', 'C', 'C', 'A'])
+    lead_alt (Type: TEXT; Sample values: ['C', 'T', 'T', 'T', 'G'])
+    tag_alt (Type: TEXT; Sample values: ['A', 'T', 'C', 'A', 'C'])
+    pub_journal (Type: TEXT; Sample values: ['Cell', 'Cell', 'Cell', 'Cell', 'Cell'])
+    pub_date (Type: TEXT; Sample values: ['2020-09-01', '2020-09-01', '2020-09-01', '2020-09-01', '2020-09-01'])
+    trait_category (Type: TEXT; Sample values: ['measurement', 'measurement', 'measurement', 'measurement', 'measurement'])
+    ancestry_replication (Type: VARIANT; Sample values: ['{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.VARIANT_DISEASE
+[
+    num_assoc_loci (Type: NUMBER; Sample values: ['835', '835', '835', '835', '835'])
+    beta_ci_lower (Type: FLOAT; Sample values: ['0.0166737468', '0.0118647195999999', '0.0116080236', '-0.0637803639999999', '0.008151214'])
+    beta_ci_upper (Type: FLOAT; Sample values: ['0.0287166531999999', '0.0206944804', '0.0200461764', '-0.053682836', '0.016511986'])
+    study_id (Type: TEXT; Sample values: ['GCST90002396', 'GCST90002396', 'GCST90002396', 'GCST90002396', 'GCST90002396'])
+    pval (Type: FLOAT; Sample values: ['1.5000000000000002e-13', '4.9e-13', '1.9e-13', '4.5e-115', '7.400000000000002e-09'])
+    oddsr_ci_lower (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pmid (Type: TEXT; Sample values: ['PMID:32888494', 'PMID:32888494', 'PMID:32888494', 'PMID:32888494', 'PMID:32888494'])
+    overall_r2 (Type: FLOAT; Sample values: ['0.692728283809', '0.966161214225', '0.886853509441', '0.9827430995560001', '0.8591380486089999'])
+    beta (Type: FLOAT; Sample values: ['0.0226952', '0.0162795999999999', '0.0158271', '-0.0587315999999999', '0.0123316'])
+    log10_ABF (Type: FLOAT; Sample values: ['nan', '20.488303155989882', 'nan', 'nan', 'nan'])
+    oddsr_ci_upper (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    odds_ratio (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    source (Type: TEXT; Sample values: ['GCST', 'GCST', 'GCST', 'GCST', 'GCST'])
+    n_cases (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    n_initial (Type: NUMBER; Sample values: ['408112', '408112', '408112', '408112', '408112'])
+    pub_title (Type: TEXT; Sample values: ['The Polygenic and Monogenic Basis of Blood Traits and Diseases.', 'The Polygenic and Monogenic Basis of Blood Traits and Diseases.', 'The Polygenic and Monogenic Basis of Blood Traits and Diseases.', 'The Polygenic and Monogenic Basis of Blood Traits and Diseases.', 'The Polygenic and Monogenic Basis of Blood Traits and Diseases.'])
+    EUR_1000G_prop (Type: FLOAT; Sample values: ['1.0', '1.0', '1.0', '1.0', '1.0'])
+    SAS_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    pval_mantissa (Type: FLOAT; Sample values: ['1.5', '4.9', '1.9', '4.5', '7.400000000000001'])
+    n_replication (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pval_exponent (Type: NUMBER; Sample values: ['-13', '-13', '-13', '-115', '-9'])
+    trait_reported (Type: TEXT; Sample values: ['Mean reticulocyte volume', 'Mean reticulocyte volume', 'Mean reticulocyte volume', 'Mean reticulocyte volume', 'Mean reticulocyte volume'])
+    AFR_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    EAS_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    lead_chrom (Type: TEXT; Sample values: ['9', '5', '3', '9', '20'])
+    tag_chrom (Type: TEXT; Sample values: ['9', '5', '3', '9', '20'])
+    direction (Type: TEXT; Sample values: ['+', '+', '+', '-', '+'])
+    tag_pos (Type: NUMBER; Sample values: ['110274252', '180526646', '50129991', '98001173', '2985884'])
+    tag_ref (Type: TEXT; Sample values: ['T', 'T', 'CT', 'C', 'CTTGT'])
+    lead_pos (Type: NUMBER; Sample values: ['110256475', '180560937', '49994700', '98031425', '3015777'])
+    lead_ref (Type: TEXT; Sample values: ['T', 'T', 'C', 'G', 'T'])
+    tag_alt (Type: TEXT; Sample values: ['C', 'G', 'C', 'T', 'C'])
+    lead_alt (Type: TEXT; Sample values: ['C', 'G', 'T', 'A', 'A'])
+    pub_journal (Type: TEXT; Sample values: ['Cell', 'Cell', 'Cell', 'Cell', 'Cell'])
+    pub_date (Type: TEXT; Sample values: ['2020-09-01', '2020-09-01', '2020-09-01', '2020-09-01', '2020-09-01'])
+    posterior_prob (Type: FLOAT; Sample values: ['nan', '0.006984791309124', 'nan', 'nan', 'nan'])
+    AMR_1000G_prop (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    has_sumstats (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    pics_95perc_credset (Type: BOOLEAN; Sample values: ['False', 'True', 'True', 'False', 'True'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.STUDIES
+[
+    num_assoc_loci (Type: NUMBER; Sample values: ['0', '0', '1', '0', '2'])
+    pmid (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    n_initial (Type: NUMBER; Sample values: ['174889', '174013', '200156', '173615', '88919'])
+    study_id (Type: TEXT; Sample values: ['FINNGEN_R6_M13_RECUDISLOCATIO', 'FINNGEN_R6_M13_TOEDEFORMOTH', 'FINNGEN_R6_M13_TRIGGERFINGER', 'FINNGEN_R6_M13_VARUS', 'FINNGEN_R6_N14_ABNORMALBLEED'])
+    source (Type: TEXT; Sample values: ['FINNGEN', 'FINNGEN', 'FINNGEN', 'FINNGEN', 'FINNGEN'])
+    n_cases (Type: NUMBER; Sample values: ['1475', '599', '2432', '201', '7326'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.VARIANT_GENE
+[
+    fpred_max_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_score_q (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fpred_scores (Type: VARIANT; Sample values: ['{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}'])
+    d (Type: NUMBER; Sample values: ['377016', '377016', '377016', '377016', '377016'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000275954', 'ENSG00000181038', 'ENSG00000164056', 'ENSG00000152592', 'ENSG00000183684'])
+    interval_score_q (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    interval_score (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fpred_max_label (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    distance_score_q (Type: FLOAT; Sample values: ['0.2', '0.2', '0.2', '0.2', '0.2'])
+    distance_score (Type: FLOAT; Sample values: ['2.6524073248880684e-06', '2.6524073248880684e-06', '2.6524073248880684e-06', '2.6524073248880684e-06', '2.6524073248880684e-06'])
+    position (Type: NUMBER; Sample values: ['36816582', '77103846', '123019779', '87273264', '81514570'])
+    qtl_beta (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    qtl_pval (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    source_id (Type: TEXT; Sample values: ['canonical_tss', 'canonical_tss', 'canonical_tss', 'canonical_tss', 'canonical_tss'])
+    chr_id (Type: TEXT; Sample values: ['17', '17', '4', '4', '17'])
+    type_id (Type: TEXT; Sample values: ['distance', 'distance', 'distance', 'distance', 'distance'])
+    feature (Type: TEXT; Sample values: ['unspecified', 'unspecified', 'unspecified', 'unspecified', 'unspecified'])
+    fpred_labels (Type: VARIANT; Sample values: ['{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}', '{\n  "list": []\n}'])
+    qtl_se (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    alt_allele (Type: TEXT; Sample values: ['T', 'C', 'A', 'A', 'T'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.VARIANT_DISEASE_CREDSET
+[
+    postprob (Type: FLOAT; Sample values: ['0.001186556345535', '0.003396616630789', '0.001271014620772', '0.002924729433072', '0.003862589176249'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000167515', 'ENSG00000167515', 'ENSG00000167515', 'ENSG00000167515', 'ENSG00000167515'])
+    study_id (Type: TEXT; Sample values: ['GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL'])
+    postprob_cumsum (Type: FLOAT; Sample values: ['0.127989430022184', '0.022010837942402', '0.084389300877985', '0.520190461093556', '0.513579000285566'])
+    lead_variant_id (Type: TEXT; Sample values: ['16:88859681:C:T', '16:88859681:C:T', '16:88859681:C:T', '16:88859681:C:T', '16:88859681:C:T'])
+    tag_variant_id (Type: TEXT; Sample values: ['16:88835979:A:G', '16:88859681:C:T', '16:88818829:G:A', '16:88757658:T:A', '16:88822333:A:G'])
+    phenotype_id (Type: TEXT; Sample values: ['chr16:88858789:88859893:clu_14174:ENSG00000167515', 'chr16:88858789:88859893:clu_14742:ENSG00000167515', 'chr16:88858789:88859893:clu_17208:ENSG00000167515', 'chr16:88858789:88859893:clu_19318:ENSG00000167515', 'chr16:88858789:88859893:clu_19318:ENSG00000167515'])
+    type (Type: TEXT; Sample values: ['sqtl', 'sqtl', 'sqtl', 'sqtl', 'sqtl'])
+    bio_feature (Type: TEXT; Sample values: ['Brain_Hypothalamus', 'Brain_Nucleus_accumbens_basal_ganglia', 'Esophagus_Muscularis', 'Skin_Sun_Exposed_Lower_leg', 'Skin_Sun_Exposed_Lower_leg'])
+    tag_se (Type: FLOAT; Sample values: ['0.165198702143443', '0.232980618529962', '0.145518235428382', '0.103485795075938', '0.097908345103703'])
+    tag_beta (Type: FLOAT; Sample values: ['0.51591145992279', '1.435778379440308', '0.433811098337173', '0.366225868463516', '0.354627251625061'])
+    tag_ref (Type: TEXT; Sample values: ['A', 'C', 'G', 'T', 'A'])
+    tag_pval (Type: FLOAT; Sample values: ['0.002204009576863', '5.849564e-09', '0.003067051370895', '0.00044064790691', '0.00032322780011'])
+    lead_pos (Type: NUMBER; Sample values: ['88859681', '88859681', '88859681', '88859681', '88859681'])
+    tag_pos (Type: NUMBER; Sample values: ['88835979', '88859681', '88818829', '88757658', '88822333'])
+    tag_alt (Type: TEXT; Sample values: ['G', 'T', 'A', 'A', 'G'])
+    tag_se_cond (Type: FLOAT; Sample values: ['0.165198702143443', '0.232980618529962', '0.145518235428382', '0.104685', '0.0990842'])
+    lead_chrom (Type: TEXT; Sample values: ['16', '16', '16', '16', '16'])
+    lead_ref (Type: TEXT; Sample values: ['C', 'C', 'C', 'C', 'C'])
+    lead_alt (Type: TEXT; Sample values: ['T', 'T', 'T', 'T', 'T'])
+    tag_chrom (Type: TEXT; Sample values: ['16', '16', '16', '16', '16'])
+    tag_pval_cond (Type: FLOAT; Sample values: ['0.002204009576863', '5.849564e-09', '0.003067051370895', '0.000198651', '0.000151549'])
+    logABF (Type: FLOAT; Sample values: ['1.676584172519616', '2.929041280206965', '1.804649280449579', '3.369933972014137', '3.648069726782077'])
+    is95_credset (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.SA_GWAS
+[
+    pval (Type: FLOAT; Sample values: ['2.1656700000000002e-05', '0.00408', '5.3e-05', '7.448e-08', '3.04e-06'])
+    study_id (Type: TEXT; Sample values: ['NEALE2_6152_100', 'FINNGEN_R6_Z21_ROUTI_GENERAL_HEALTH_CHECK_DEFIN_SUBPO', 'GCST90002412', 'GCST005038', 'GCST90002292'])
+    pos (Type: NUMBER; Sample values: ['32849516', '32849516', '32849516', '32849516', '32849516'])
+    beta (Type: FLOAT; Sample values: ['0.07621831832999174', '0.57301', '0.0277622', '-0.1245', '-0.034161'])
+    info (Type: FLOAT; Sample values: ['0.999724', 'nan', 'nan', 'nan', 'nan'])
+    se (Type: FLOAT; Sample values: ['0.017946159706930698', '0.19954', '0.00686612', '0.0231', '0.007313'])
+    n_total (Type: NUMBER; Sample values: ['360527', '137627', '431167', '360838', '474001'])
+    alt (Type: TEXT; Sample values: ['T', 'T', 'T', 'T', 'T'])
+    chrom (Type: TEXT; Sample values: ['6', '6', '6', '6', '6'])
+    ref (Type: TEXT; Sample values: ['C', 'C', 'C', 'C', 'C'])
+    type_id (Type: TEXT; Sample values: ['gwas', 'gwas', 'gwas', 'gwas', 'gwas'])
+    n_cases (Type: NUMBER; Sample values: ['116005.0', '461.0', 'nan', '180129.0', 'nan'])
+    mac (Type: FLOAT; Sample values: ['14458.199999999999', '8918.229599999999', '17000.91481000003', '17183.10556', '18903.15988'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.VARIANTS
+[
+    most_severe_consequence (Type: TEXT; Sample values: ['intergenic_variant', 'intron_variant', 'downstream_gene_variant', 'downstream_gene_variant', 'intergenic_variant'])
+    gene_id_any (Type: TEXT; Sample values: ['ENSG00000124496', 'ENSG00000124596', 'ENSG00000124602', 'ENSG00000124615', 'ENSG00000124615'])
+    gene_id_any_distance (Type: NUMBER; Sample values: ['18396', '24496', '15976', '67413', '10442'])
+    gene_id_prot_coding_distance (Type: NUMBER; Sample values: ['18396', '24496', '15976', '67413', '10442'])
+    gene_id_prot_coding (Type: TEXT; Sample values: ['ENSG00000124496', 'ENSG00000124596', 'ENSG00000124602', 'ENSG00000124615', 'ENSG00000124615'])
+    chr_id_b37 (Type: TEXT; Sample values: ['6', '6', '6', '6', '6'])
+    chr_id (Type: TEXT; Sample values: ['6', '6', '6', '6', '6'])
+    rs_id (Type: TEXT; Sample values: ['rs531169951', 'rs184798575', 'rs112292329', 'rs183541452', 'rs9296316'])
+    cadd (Type: VARIANT; Sample values: ['{\n  "phred": 8.746000000000000e+00,\n  "raw": 4.342410000000000e-01\n}', '{\n  "phred": 6.941000000000000e+00,\n  "raw": 2.792420000000000e-01\n}', '{\n  "phred": 1.224000000000000e+00,\n  "raw": -1.201120000000000e-01\n}', '{\n  "phred": 1.291000000000000e+01,\n  "raw": 9.445340000000000e-01\n}', '{\n  "phred": 6.460000000000000e-01,\n  "raw": -2.151350000000000e-01\n}'])
+    af (Type: VARIANT; Sample values: ['{\n  "gnomad_afr": 3.442735827404177e-04,\n  "gnomad_amr": 0.000000000000000e+00,\n  "gnomad_asj": 0.000000000000000e+00,\n  "gnomad_eas": 0.000000000000000e+00,\n  "gnomad_fin": 0.000000000000000e+00,\n  "gnomad_nfe": 5.833549390718175e-04,\n  "gnomad_nfe_est": 2.180549498473615e-04,\n  "gnomad_nfe_nwe": 4.652244708071644e-04,\n  "gnomad_nfe_onf": 1.870907390084191e-03,\n  "gnomad_nfe_seu": 0.000000000000000e+00,\n  "gnomad_oth": 0.000000000000000e+00\n}', '{\n  "gnomad_afr": 3.444316877152698e-04,\n  "gnomad_amr": 2.364066193853428e-03,\n  "gnomad_asj": 0.000000000000000e+00,\n  "gnomad_eas": 0.000000000000000e+00,\n  "gnomad_fin": 7.200460829493088e-03,\n  "gnomad_nfe": 2.786417833074132e-03,\n  "gnomad_nfe_est": 1.741401828471920e-03,\n  "gnomad_nfe_nwe": 3.607167791482430e-03,\n  "gnomad_nfe_onf": 1.870907390084191e-03,\n  "gnomad_nfe_seu": 0.000000000000000e+00,\n  "gnomad_oth": 9.191176470588235e-04\n}', '{\n  "gnomad_afr": 0.000000000000000e+00,\n  "gnomad_amr": 0.000000000000000e+00,\n  "gnomad_asj": 0.000000000000000e+00,\n  "gnomad_eas": 0.000000000000000e+00,\n  "gnomad_fin": 7.479861910241657e-03,\n  "gnomad_nfe": 3.175631885936487e-03,\n  "gnomad_nfe_est": 8.936355710549258e-03,\n  "gnomad_nfe_nwe": 4.652244708071644e-04,\n  "gnomad_nfe_onf": 1.870907390084191e-03,\n  "gnomad_nfe_seu": 0.000000000000000e+00,\n  "gnomad_oth": 5.514705882352942e-03\n}', '{\n  "gnomad_afr": 3.441945846718678e-04,\n  "gnomad_amr": 0.000000000000000e+00,\n  "gnomad_asj": 0.000000000000000e+00,\n  "gnomad_eas": 0.000000000000000e+00,\n  "gnomad_fin": 0.000000000000000e+00,\n  "gnomad_nfe": 1.101607050285122e-03,\n  "gnomad_nfe_est": 2.177700348432056e-04,\n  "gnomad_nfe_nwe": 1.395998138669149e-03,\n  "gnomad_nfe_onf": 1.870907390084191e-03,\n  "gnomad_nfe_seu": 0.000000000000000e+00,\n  "gnomad_oth": 0.000000000000000e+00\n}', '{\n  "gnomad_afr": 7.571231617647059e-02,\n  "gnomad_amr": 3.537735849056604e-03,\n  "gnomad_asj": 3.448275862068965e-03,\n  "gnomad_eas": 0.000000000000000e+00,\n  "gnomad_fin": 0.000000000000000e+00,\n  "gnomad_nfe": 4.538381742738589e-04,\n  "gnomad_nfe_est": 0.000000000000000e+00,\n  "gnomad_nfe_nwe": 2.327746741154562e-04,\n  "gnomad_nfe_onf": 1.870907390084191e-03,\n  "gnomad_nfe_seu": 9.433962264150943e-03,\n  "gnomad_oth": 7.352941176470588e-03\n}'])
+    position (Type: NUMBER; Sample values: ['42470447', '41122283', '41023245', '40001964', '39944993'])
+    position_b37 (Type: NUMBER; Sample values: ['42438185', '41090022', '40990984', '39969703', '39912732'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.GENES
+[
+    end (Type: NUMBER; Sample values: ['105588395', '105601728', '105626066', '105644790', '105771405'])
+    start (Type: NUMBER; Sample values: ['105583731', '105597691', '105620506', '105639559', '105764503'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000211890', 'ENSG00000211891', 'ENSG00000211892', 'ENSG00000211893', 'ENSG00000211897'])
+    gene_name (Type: TEXT; Sample values: ['IGHA2', 'IGHE', 'IGHG4', 'IGHG2', 'IGHG3'])
+    description (Type: TEXT; Sample values: ['immunoglobulin heavy constant alpha 2 (A2m marker) [Source:HGNC Symbol;Acc:HGNC:5479]', 'immunoglobulin heavy constant epsilon [Source:HGNC Symbol;Acc:HGNC:5522]', 'immunoglobulin heavy constant gamma 4 (G4m marker) [Source:HGNC Symbol;Acc:HGNC:5528]', 'immunoglobulin heavy constant gamma 2 (G2m marker) [Source:HGNC Symbol;Acc:HGNC:5526]', 'immunoglobulin heavy constant gamma 3 (G3m marker) [Source:HGNC Symbol;Acc:HGNC:5527]'])
+    exons (Type: TEXT; Sample values: ['[105583731,105583853,105584133,105584368,105586999,105587331,105587554,105587874,105588089,105588395]', '[105597691,105597774,105597859,105597980,105600074,105600397,105600481,105600804,105600891,105601211,105601419,105601728]', '[105620506,105621995,105623068,105623198,105624484,105624798,105624896,105625225,105625344,105625379,105625772,105626066]', '[105639559,105641048,105641779,105641909,105643211,105643525,105643623,105643949,105644068,105644103,105644496,105644790]', '[105769657,105769986,105770105,105770149,105770293,105770337,105770481,105770525,105770669,105770719,105771112,105771405,105764503,105765997,105767813,105767943,105769245,105769559]'])
+    chr (Type: TEXT; Sample values: ['14', '14', '14', '14', '14'])
+    biotype (Type: TEXT; Sample values: ['IG_C_gene', 'IG_C_gene', 'IG_C_gene', 'IG_C_gene', 'IG_C_gene'])
+    tss (Type: NUMBER; Sample values: ['105588395', '105601728', '105626066', '105644790', '105771405'])
+    fwdstrand (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.VARIANT_DISEASE_COLOC
+[
+    left_var_right_study_pval (Type: FLOAT; Sample values: ['1.0833125072276179e-06', '6.193301480196858e-11', '3.683362769182143e-18', '1.498499324516224e-35', '6.065659953083562e-13'])
+    left_var_right_study_beta (Type: FLOAT; Sample values: ['0.6359093189239502', '0.5891572833061218', '-0.7500088214874268', '-0.8709172606468201', '-0.6809600591659546'])
+    left_var_right_study_se (Type: FLOAT; Sample values: ['0.122081605153034', '0.0815866344266889', '0.07228759360806572', '0.06116593300438732', '0.08638264645732746'])
+    right_study (Type: TEXT; Sample values: ['GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL', 'GTEx-sQTL'])
+    right_gene_id (Type: TEXT; Sample values: ['ENSG00000163072', 'ENSG00000163072', 'ENSG00000163072', 'ENSG00000163072', 'ENSG00000163072'])
+    coloc_n_vars (Type: NUMBER; Sample values: ['2541', '2590', '2554', '2783', '2671'])
+    right_chrom (Type: TEXT; Sample values: ['2', '2', '2', '2', '2'])
+    right_bio_feature (Type: TEXT; Sample values: ['Vagina', 'Ovary', 'Ovary', 'Heart_Left_Ventricle', 'Artery_Coronary'])
+    coloc_log2_h4_h3 (Type: FLOAT; Sample values: ['1.4857297758441592', '6.258711968373418', '7.824169583924788', '6.9345376450211695', '6.862207217081331'])
+    left_study (Type: TEXT; Sample values: ['NEALE2_20153_raw', 'NEALE2_23101_raw', 'NEALE2_30130_raw', 'NEALE2_23114_raw', 'NEALE2_20015_raw'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.LOCUS2GENE
+[
+    study_id (Type: TEXT; Sample values: ['GCST011521', 'GCST008059', 'GCST90025966', 'GCST90025983', 'GCST90025989'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000239474', 'ENSG00000239474', 'ENSG00000239474', 'ENSG00000239697', 'ENSG00000239697'])
+    alt (Type: TEXT; Sample values: ['GT', 'T', 'G', 'A', 'T'])
+    ref (Type: TEXT; Sample values: ['G', 'C', 'A', 'G', 'C'])
+    y_proba_logo_molecularQTL (Type: FLOAT; Sample values: ['0.010547985322773457', '0.009728365577757359', '0.008792259730398655', '0.008686564862728119', '0.010006439872086048'])
+    chrom (Type: TEXT; Sample values: ['2', '2', '2', '17', '17'])
+    pos (Type: NUMBER; Sample values: ['169155682', '169139071', '169013391', '7851675', '7176997'])
+    y_proba_logo_pathogenicity (Type: FLOAT; Sample values: ['0.012834045104682446', '0.011792142875492573', '0.011257052421569824', '0.010919488966464996', '0.06870497763156891'])
+    y_proba_logo_distance (Type: FLOAT; Sample values: ['0.021092426031827927', '0.023806001991033554', '0.022378509864211082', '0.013296891003847122', '0.23689737915992737'])
+    y_proba_logi_molecularQTL (Type: FLOAT; Sample values: ['0.02663401886820793', '0.04719509184360504', '0.044152189046144485', '0.041536081582307816', '0.24548295140266418'])
+    y_proba_full_model (Type: FLOAT; Sample values: ['0.012625353410840034', '0.011795265600085258', '0.011175764724612236', '0.011318651959300041', '0.0864158496260643'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.STUDIES_OVERLAP
+[
+    A_distinct (Type: NUMBER; Sample values: ['7', '7', '25', '25', '5'])
+    B_distinct (Type: NUMBER; Sample values: ['4', '4', '0', '0', '7'])
+    A_study_id (Type: TEXT; Sample values: ['NEALE2_50_raw', 'NEALE2_50_raw', 'NEALE2_50_raw', 'NEALE2_50_raw', 'NEALE2_50_raw'])
+    B_study_id (Type: TEXT; Sample values: ['GCST90002381', 'GCST90002382', 'GCST90025949', 'GCST90025987', 'NEALE2_30150'])
+]
+
+--------------------------------------------------
+
+###Table full name: OPEN_TARGETS_GENETICS_2.OPEN_TARGETS_GENETICS.SA_MOLECULAR_TRAIT
+[
+    study_id (Type: TEXT; Sample values: ['Nedelec_2016', 'GTEx-eQTL', 'GTEx-eQTL', 'GTEx-sQTL', 'GTEx-sQTL'])
+    type_id (Type: TEXT; Sample values: ['eqtl', 'eqtl', 'eqtl', 'sqtl', 'sqtl'])
+    phenotype_id (Type: TEXT; Sample values: ['ENSG00000213614', 'ENSG00000140463', 'ENSG00000175318', 'chr15^72727994^72729616^clu_20431^ENSG00000140463', 'chr15^72290255^72292198^clu_15912^ENSG00000140488'])
+    gene_id (Type: TEXT; Sample values: ['ENSG00000213614', 'ENSG00000140463', 'ENSG00000175318', 'ENSG00000140463', 'ENSG00000140488'])
+    info (Type: FLOAT; Sample values: ['0.9635', 'nan', 'nan', 'nan', 'nan'])
+    bio_feature (Type: TEXT; Sample values: ['MACROPHAGE_SALMONELLA', 'ARTERY_AORTA', 'OVARY', 'Skin_Not_Sun_Exposed_Suprapubic', 'Brain_Nucleus_accumbens_basal_ganglia'])
+    alt (Type: TEXT; Sample values: ['A', 'T', 'T', 'T', 'T'])
+    chrom (Type: TEXT; Sample values: ['15', '15', '15', '15', '15'])
+    ref (Type: TEXT; Sample values: ['G', 'C', 'C', 'C', 'C'])
+    se (Type: FLOAT; Sample values: ['0.111384', '0.0312722', '0.15385', '0.11517771073028221', '0.1515717132013503'])
+    pos (Type: NUMBER; Sample values: ['71812458', '71812601', '71812601', '71812601', '71812601'])
+    pval (Type: FLOAT; Sample values: ['0.00315092', '0.00408252', '0.00138982', '0.003329502696363603', '0.0018632465938972342'])
+]
+
+--------------------------------------------------
+

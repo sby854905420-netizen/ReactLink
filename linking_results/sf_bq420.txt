@@ -1,0 +1,479 @@
+###Table full name: PATENTS_USPTO.PATENTS.PUBLICATIONS
+[
+    grant_date (Type: NUMBER; Sample values: ['19970515', '20011115', '20020615', '20030315', '20060515']; Description: For US publications only, the claims in plain text)
+    filing_date (Type: NUMBER; Sample values: ['19960323', '19961209', '19970115', '19971105', '19981217']; Description: Is this text truncated?)
+    priority_date (Type: NUMBER; Sample values: ['19950403', '19951227', '19960325', '19961111', '19971218']; Description: Localized text)
+    art_unit (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The grant date, or 0 if not granted.)
+    application_number (Type: TEXT; Sample values: ['AT-96104644-T', 'AT-96119677-T', 'AT-97903856-T', 'AT-97950093-T', 'AT-98310399-T']; Description: Patent application number (DOCDB compatible), eg: 'US-87124404-A'. This may not always be set.)
+    entity_status (Type: TEXT; Sample values: ['', '', '', '', '']; Description: The filing date.)
+    publication_date (Type: NUMBER; Sample values: ['19970515', '20011115', '20020615', '20030315', '20060515']; Description: Two-letter language code for this text)
+    uspc (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: For US publications only, the description in plain text, limited to the first 9 megabytes)
+    pct_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: PCT number for this application if it was part of a PCT filing, eg: 'PCT/EP2008/062623'.)
+    priority_claim (Type: VARIANT; Sample values: ['[\n  {\n    "application_number": "DE-19512401-A",\n    "category": "",\n    "filing_date": 19950403,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "DE-19548515-A",\n    "category": "",\n    "filing_date": 19951227,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "US-62082096-A",\n    "category": "",\n    "filing_date": 19960325,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  },\n  {\n    "application_number": "US-9700844-W",\n    "category": "",\n    "filing_date": 19970115,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "DE-19646298-A",\n    "category": "",\n    "filing_date": 19961111,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  },\n  {\n    "application_number": "DE-19739056-A",\n    "category": "",\n    "filing_date": 19970905,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  },\n  {\n    "application_number": "EP-96118188-A",\n    "category": "",\n    "filing_date": 19961113,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  },\n  {\n    "application_number": "EP-9706096-W",\n    "category": "",\n    "filing_date": 19971105,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]', '[\n  {\n    "application_number": "JP-34951297-A",\n    "category": "",\n    "filing_date": 19971218,\n    "npl_text": "",\n    "publication_number": "",\n    "type": ""\n  }\n]']; Description: Two-letter language code for this text)
+    application_number_formatted (Type: TEXT; Sample values: ['AT96104644T', 'AT96119677T', 'AT97903856T', 'AT97950093T', 'AT98310399T']; Description: Application number, formatted to the patent office format where possible.)
+    claims_localized (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Two-letter language code for this text)
+    fterm (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: For US publications only, the description in HTML, limited to the first 9 megabytes)
+    kind_code (Type: TEXT; Sample values: ['T1', 'T1', 'T1', 'T1', 'T1']; Description: Kind code, indicating application, grant, search report, correction, etc. These are different for each country.)
+    claims_localized_html (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    family_id (Type: TEXT; Sample values: ['7758635', '7781268', '24487533', '27216810', '18404247']; Description: Family ID (simple family). Grouping on family ID will return all publications associated with a simple patent family (all publications share the same priority claims).)
+    country_code (Type: TEXT; Sample values: ['AT', 'AT', 'AT', 'AT', 'AT']; Description: Country code, eg: 'US', 'EP', etc)
+    child (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: The publication date.)
+    publication_number (Type: TEXT; Sample values: ['AT-E152950-T1', 'AT-E208695-T1', 'AT-E217560-T1', 'AT-E234300-T1', 'AT-E323922-T1']; Description: Patent publication number (DOCDB compatible), eg: 'US-7650331-B1')
+    parent (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    fi (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    assignee (Type: VARIANT; Sample values: ['[\n  "Bornemann Werkzeugtechnik Gmbh"\n]', '[\n  "Buna Sow Leuna Olefinverb Gmbh"\n]', '[\n  "Kennametal Inc"\n]', '[\n  "Altana Pharma Ag"\n]', '[\n  "Aruze Corp"\n]']; Description: Localized text)
+    citation (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Two-letter language code for this text)
+    inventor (Type: VARIANT; Sample values: ['[\n  "BORNEMANN, HERMANN"\n]', '[\n  "HAMANN, BERND, DR.",\n  "BAGERITZ, HANS",\n  "KLODT, ROLF-DIETER, DR.",\n  "BOGER, JUERGEN",\n  "WINZHEIMER, BODO",\n  "LEHMANN, REINHARD"\n]', '[\n  "SHAFFER, WILLIAM, R."\n]', '[\n  "SCHMIDT, BEATE",\n  "AMSCHLER, HERMANN",\n  "ULRICH, WOLF-RUEDIGER",\n  "MARTIN, THOMAS",\n  "BAER, THOMAS",\n  "HATZELMANN, ARMIN",\n  "SANDERS, KARL",\n  "BEUME, ROLF",\n  "BOSS, HILDEGARD",\n  "HAEFNER, DIETRICH",\n  "KLEY, HANS-PETER",\n  "GOEBEL, KARL-JOSEF",\n  "FLOCKERZI, DIETER"\n]', '[\n  "SUGIMOTO, KIYOSHI"\n]']; Description: Is this text truncated?)
+    spif_application_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: SPIF standard (spif.group) application number, after 2000)
+    spif_publication_number (Type: TEXT; Sample values: ['', '', '', '', '']; Description: SPIF standard (spif.group) publication number, after 2000)
+    application_kind (Type: TEXT; Sample values: ['T', 'T', 'T', 'T', 'T']; Description: High-level kind of the application: A=patent; U=utility; P=provision; W= PCT; F=design; T=translation.)
+    description_localized (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: The publication abstracts in different languages)
+    locarno (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Localized text)
+    ipc (Type: VARIANT; Sample values: ['[\n  {\n    "code": "B08B15/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B23Q11/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "B29B13/06",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C08J9/22",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C08L25/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "F26B17/10",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "F26B17/14",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "B24B1/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24B3/24",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24C1/02",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24C3/22",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "A61K31/4745",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P11/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P17/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P43/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61K31/47",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C07D471/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "A63F5/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A63F7/02",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G07F9/02",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G07F17/32",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]']; Description: Localized text)
+    title_localized (Type: VARIANT; Sample values: ['[\n  {\n    "language": "de",\n    "text": "Einrichtung zum absaugen von mittels eines hohlfräswerkzeuges abgetragener späne",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Verfahren zur trocknung und konditionierung von expandierbaren styrolpolymerisaten und vorrichtung zur durchfürung des verfahrens",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Vorrichtung und verfahren zum schärfen eines längliches rotierendes werkzeuges",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Benzonaphthyridine als bronchialtherapeutika",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "de",\n    "text": "Spielautomat",\n    "truncated": false\n  }\n]']; Description: The publication titles in different languages)
+    description_localized_html (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Localized text)
+    examiner (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Is this text truncated?)
+    cpc (Type: VARIANT; Sample values: ['[\n  {\n    "code": "B08B15/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B23Q11/0046",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "C08J9/22",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B29B13/065",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B29K2025/00",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "C08J2325/04",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "F26B17/101",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "F26B17/1416",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]', '[\n  {\n    "code": "B24C11/005",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24B3/24",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24C11/005",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24B1/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24B3/24",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24C1/02",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "B24C3/22",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T408/78",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "Y10T408/909",\n    "first": false,\n    "inventive": false,\n    "tree": []\n  },\n  {\n    "code": "B24B33/04",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "Y10T408/78",\n    "first": false,\n    "inventive": false,\n    "...(truncated)', '[\n  {\n    "code": "C07D471/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C07D471/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "C07D471/04",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P1/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P11/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P11/08",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P17/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P19/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P21/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P25/00",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "A61P29/00",\n    "first": false,\n    "inventive": true,\n    "tr...(truncated)', '[\n  {\n    "code": "G07F17/32",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G07F17/32",\n    "first": true,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G07F17/3216",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  },\n  {\n    "code": "G07F17/3216",\n    "first": false,\n    "inventive": true,\n    "tree": []\n  }\n]']; Description: Two-letter language code for this text)
+    abstract_localized (Type: VARIANT; Sample values: ['[\n  {\n    "language": "en",\n    "text": "The milling tool (4) has a hollow working head into which are drawn the chippings (20) and dust, preferably from elastic material such as plastic or wood. The suction duct is a tube (2) fixed rigidly wrt. the tool and passing through the drive head (1) of the machine. This enables the suction hose (15) to be fitted with a minimum of complexity eg. no rotating seals required. An alternate solution has the driving shaft inside the fixed duct to provide extraction over the working area of the tool. In this design the extract hose is attached to a side arm at the upper end of the duct near the machine.",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "en",\n    "text": "The two-stage process is for drying and conditioning expandable styrene polymers (EPS) obtained by suspension polymerisation in presence of blowing agent, followed by separation on a centrifuge to give EPS with a residual moisture content of ca. 2% and an average particle diameter of 0.1-3.0 mm. The process comprises : (a) passing the EPS (1) through a drier (2) with a first gas stream (3) with a temperature of 20-40 degrees C, a gas/EPS ratio of 1.3-1.9 kg/kg and a residence time of 0.05-0.2 minutes then separating the EPS from the gas, and (b) contacting the EPS in a second drier (7) with a second gas stream (8) at 20-40 degrees C, with a residence time of 240-480 minutes from product inlet to outlet and a gas/EPS ratio of 0.15-0.6 kg/kg, and with the gas flow in the same and/or opposite direction to the product flow, the gas being divided into different streams (9), fed into the EPS at different levels one above the other and re-dissipitated ...(truncated)', '[\n  {\n    "language": "en",\n    "text": "A method of, and apparatus for, treating an elongate rotary tool that presents a sharp cutting edge are described. The method includes the steps of emitting under pressure from a nozzle an abrasive fluid stream comprising an abrasive grit entrained in a fluid; and impinging the abrasive fluid stream against the sharp cutting edge of the elongate rotary tool for a preselected time so as to transform the sharp cutting edge into a relatively uniformly honed edge. The apparatus includes a rotatable fixture that releasably holds the elongate rotary tool. A nozzle that emits under pressure an abrasive steam. The nozzle and the elongate rotary tool are relatively moveable so that the abrasive stream impinges the entire length of the sharp cutting edge.",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "en",\n    "text": "PCT No. PCT/EP97/06096 Sec. 371 Date Apr. 16, 1999 Sec. 102(e) Date Apr. 16, 1999 PCT Filed Nov. 5, 1997 PCT Pub. No. WO98/21208 PCT Pub. Date May 22, 1998Compounds of formula (I) in which R1, R2, R3 and R4 have the meanings indicated in the description, are novel active bronchial therapeutics",\n    "truncated": false\n  }\n]', '[\n  {\n    "language": "en",\n    "text": "A gaming machine that is provided with an outlet for paying out gaming media has a receiver for paying-out the gaming media, the receiver being disposed forward of the outlet. The receiver is illuminated so was to permit the player to view the gaming media that has been collected in the receiver, whereby the amount thereof readily can be confirmed. Illumination of the receiver is achieved from within the gaming machine, the illumination being emitted from the outlet for paying the gaming media. Thus, as the gaming media is paid out, a glistening effect that is entertaining and visually pleasing is created. Illumination of the receiver, which may be in the form of a receiver tray, is effected, in one form of the invention, by an internal source of illumination that also illuminates the front panel of the gaming machine. Light is propagated through a transmission element to the receiver. In a preferred form, a further light source is disposed behi...(truncated)']; Description: Localized text)
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.PATENTS.DISCLOSURES_13
+[
+    date (Type: NUMBER; Sample values: ['19751124', '19890711', '19890906', '19890906', '19960930'])
+    family_id (Type: TEXT; Sample values: ['22549751', '22549751', '22549751', '23170520', '22555559'])
+    record_id (Type: TEXT; Sample values: ['REC00002', 'REC00005', 'REC00008', 'REC00010', 'REC00017'])
+    sc_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    wg_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    tc_name (Type: TEXT; Sample values: ['', '', '', '', ''])
+    standard (Type: TEXT; Sample values: ['X3.55;X3.56', 'X3.55;X3.56;X3.72;X3.116;X3.127;X3.136', '', 'X3.250 INCITS 250;NCITS', 'X9.45'])
+    disclosure_event (Type: TEXT; Sample values: ['DE0001', 'DE0003', 'DE0004', 'DE0004', 'DE0009'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.DOCUMENTS_2015
+[
+    date_filed (Type: TEXT; Sample values: ['1996-12-19', '1996-11-14', '1999-05-12', '1998-08-11', '1997-10-30'])
+    upload_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_row_id (Type: TEXT; Sample values: ['5842', '5975', '6020', '6038', '6066'])
+    doc_number (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_number (Type: TEXT; Sample values: ['1:96-cv-04436', '1:96-cv-11090-PBS', '1:97-cv-00026-SS', '1:97-cv-00065-DB', '1:97-cv-00117-DWM'])
+    short_description (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    long_description (Type: TEXT; Sample values: ['SCHEDULE set on 12/19/96 by Hon. David H. Coar : Markman Hearing hearing reset for 10:00 1/9/97 . Telephone notice (pm) (Entered: 01/06/1997)', 'Proposed Interim Protective Order by Genentech, Inc. received for approval by the Court. (scj) (Entered: 11/15/1996)', 'Jury trial held; testimony heard on behalf of defendant; witnesses sworn; evidence submitted on behalf of defendant; plaintiff and defendant rest; testimony continued on behalf of defendant; oral and written motions for judgment by defendants Opti and TriTech; Opti\'s motions for judgment as a matter of law denied; Opti\'s motion regarding damages taken under advisement/carried; TriTech orally joins Opti regarding damages; their motion also carried and taken under advisement; Court grants TriTech\'s motions regarding 271(g) and overules all other motions written and oral; Court grants Crystal\'s motions regarding "best mode" and "inequitable conduct" as to 899 patent; "best mode", "inequitable conduct" and "on-sale bar" as to 841 patent and overruled all other motions (written order forthcoming); rebuttal testimony heard; plaintiff and defendant close; jury recessed until 5/13/99 at 8:30; charge conference held; jury notes filed (extraneous in nature) (fe) (Entered: 05/13/1999)', "Transcript of Proceedings re: Charles Tuan's motion to quash subp duces tecum for date of 5/1/98 (Entered: 08/11/1998)", 'ORDER (2 pgs) amending consolidated case management order by Judge David W. McKeague; dispositive motions filing ddl extended to 2/1/98; discovery extended to 1/1/98; Final Pretrial Conference rescheduled to 3:30 p.m. on 6/1/98; Jury Trial rescheduled to 7/98 trial term, any motion for separate trial of some or all claims in either consolidated action must be filed by 5/1/98; pltf shall file its briefs on claim construction issues NLT 2/1/98; defts shall file their briefs NLT 3/1/98; Settlement Conference set before Magistrate Judge Scoville in the Nedgraphics case rescheduled to 9:30 a.m. on 5/27/98 and in the Cadtex case rescheduled to 5/29/98 @ 9:30 a.m. (cc: all counsel on 10/31/97) (lkd) (Entered: 10/31/1997)'])
+    attachment (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_PTAB.TRIALS_201710
+[
+    FilingDate (Type: TEXT; Sample values: ['2016-02-12', '2016-02-23', '2017-05-12', '2017-06-06', '2017-06-06'])
+    ApplicationNumber (Type: TEXT; Sample values: ['14034206', '09486648', '10685266', '13531319', '12182570'])
+    AccordedFilingDate (Type: TEXT; Sample values: ['2016-02-12', '2016-02-23', '2017-05-12', '2017-06-06', '2017-06-06'])
+    PatentNumber (Type: TEXT; Sample values: ['8873500', '7010572', '7214506', '8566843', '8209705'])
+    InstitutionDecisionDate (Type: TEXT; Sample values: ['', '', '', '', ''])
+    LastModifiedDatetime (Type: TEXT; Sample values: ['2016-07-10T18:50:38', '2016-07-10T18:50:33', '2017-08-17T18:13', '2017-09-13T10:24', '2017-09-13T10:27:17'])
+    TrialNumber (Type: TEXT; Sample values: ['IPR2016-00623', 'IPR2016-00644', 'IPR2017-01429', 'IPR2017-01519', 'IPR2017-01522'])
+    InventorName (Type: TEXT; Sample values: ['Hongbing Gan', 'Dennis Benjamin', '', '', ''])
+    PetitionerPartyName (Type: TEXT; Sample values: ['Qualcomm Incorporated', 'RPX Corporation', 'Argentum Pharmaceuticals LLC', 'BMW of North America, LLC', 'BMW of North America LLC'])
+    PatentOwnerName (Type: TEXT; Sample values: ['BANDSPEED, INC.', 'A PTY, Ltd.', 'Tatsumi et al', 'Fuchs et al', 'Fuchs et al'])
+    Documents (Type: VARIANT; Sample values: ['[\n  {\n    "DocumentNumber": "1013",\n    "FilingDatetime": "2016-02-12T20:24:53",\n    "FilingParty": "petitioner",\n    "Id": 224568,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 13320747,\n    "Title": "Exhibit 1013 Specification of the Bluetooth System",\n    "TrialNumber": "IPR2016-00623",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1010",\n    "FilingDatetime": "2016-02-12T20:24:53",\n    "FilingParty": "petitioner",\n    "Id": 224569,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 3392686,\n    "Title": "Exhibit 1010 US Provisional Application No. 60/264594",\n    "TrialNumber": "IPR2016-00623",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1001",\n    "FilingDatetime": "2016-02-12T20:24:53",\n    "FilingParty": "petitioner",\n    "Id": 224570,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 10331216,\n    "Title": "Exhibit 1001 US 8,873,500",\n    "TrialNum...(truncated)', '[\n  {\n    "DocumentNumber": "1019",\n    "FilingDatetime": "2016-02-23T21:08",\n    "FilingParty": "petitioner",\n    "Id": 225280,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 435760,\n    "Title": "Ex. 1019 - N. Borenstein and  N. Freed RFC 1341 (1992)",\n    "TrialNumber": "IPR2016-00644",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "4",\n    "FilingDatetime": "2016-03-01T13:09:06",\n    "FilingParty": "petitioner",\n    "Id": 225281,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 47023,\n    "Title": "Revised Certificate of Service",\n    "TrialNumber": "IPR2016-00644",\n    "Type": "notice"\n  },\n  {\n    "DocumentNumber": "6",\n    "FilingDatetime": "2016-03-02T08:50:34",\n    "FilingParty": "board",\n    "Id": 225282,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 77023,\n    "Title": "Notice of Filing Date Accorded to Petition",\n    "TrialNumber": "IPR2016-00644",\n ...(truncated)', '[\n  {\n    "DocumentNumber": "1012",\n    "FilingDatetime": "2017-05-12T11:55:50",\n    "FilingParty": "petitioner",\n    "Id": 685420,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 1304584,\n    "Title": "EX1012 - Ogura",\n    "TrialNumber": "IPR2017-01429",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1005",\n    "FilingDatetime": "2017-05-12T10:58:32",\n    "FilingParty": "petitioner",\n    "Id": 685421,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 1301173,\n    "Title": "EX1005 - Declaration of Kenneth Walters",\n    "TrialNumber": "IPR2017-01429",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1011",\n    "FilingDatetime": "2017-05-12T11:55:24",\n    "FilingParty": "petitioner",\n    "Id": 685422,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 5103672,\n    "Title": "EX1011 - Translation of JP 639",\n    "TrialNumber": "IPR2017-01429",\n    "Type": "exhibit"\n  ...(truncated)', '[\n  {\n    "DocumentNumber": "1021",\n    "FilingDatetime": "2017-06-06T17:11:48",\n    "FilingParty": "petitioner",\n    "Id": 696948,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 2053723,\n    "Title": "BMW Exhibit 1021",\n    "TrialNumber": "IPR2017-01519",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1022",\n    "FilingDatetime": "2017-06-06T17:12:05",\n    "FilingParty": "petitioner",\n    "Id": 696949,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 1222382,\n    "Title": "BMW Exhibit 1022",\n    "TrialNumber": "IPR2017-01519",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1001",\n    "FilingDatetime": "2017-06-06T16:50:23",\n    "FilingParty": "petitioner",\n    "Id": 696950,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 1824425,\n    "Title": "BMW Exhibit 1001",\n    "TrialNumber": "IPR2017-01519",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "2",\n ...(truncated)', '[\n  {\n    "DocumentNumber": "1009",\n    "FilingDatetime": "2017-06-06T17:54:10",\n    "FilingParty": "petitioner",\n    "Id": 697013,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 20081156,\n    "Title": "BMW Exhibit 1009",\n    "TrialNumber": "IPR2017-01522",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1012",\n    "FilingDatetime": "2017-06-06T18:01:49",\n    "FilingParty": "petitioner",\n    "Id": 697014,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 3629790,\n    "Title": "BMW Exhibit 1012",\n    "TrialNumber": "IPR2017-01522",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1006",\n    "FilingDatetime": "2017-06-06T17:43:13",\n    "FilingParty": "petitioner",\n    "Id": 697015,\n    "LastModifiedDatedime": "",\n    "MediaType": "application/pdf",\n    "SizeInBytes": 1933318,\n    "Title": "BMW Exhibit 1006",\n    "TrialNumber": "IPR2017-01522",\n    "Type": "exhibit"\n  },\n  {\n    "DocumentNumber": "1008...(truncated)'])
+    ProsecutionStatus (Type: TEXT; Sample values: ['Filing Date Accorded', 'Filing Date Accorded', 'Waiver Filed', 'Waiver Filed', 'Waiver Filed'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.DOCUMENTID_2016
+[
+    appno_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    grant_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pgpub_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    rf_id (Type: TEXT; Sample values: ['68770475', '69340865', '70460736', '70460736', '71480718'])
+    grant_doc_num (Type: TEXT; Sample values: ['3771466', '4028950', '4052684', '4129840', '3774522'])
+    appno_doc_num (Type: TEXT; Sample values: ['None', '05652908', 'None', 'None', '05233453'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.DOCUMENTS
+[
+    date_filed (Type: TEXT; Sample values: ['2004-11-02', '2008-06-17', '2008-08-19', '2011-03-15', '2014-03-12'])
+    upload_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_row_id (Type: TEXT; Sample values: ['53000', '72857', '72883', '40204', '24140'])
+    doc_number (Type: TEXT; Sample values: ['10', '10', '10', '10', '10'])
+    case_number (Type: TEXT; Sample values: ['3:04-cv-02001-JMA', '8:08-cv-00483-CJC-RNB', '8:08-cv-00784-AG-RNB', '2:11-cv-01935-JFW-AGR', '1:14-cv-00555-DLC'])
+    short_description (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    long_description (Type: TEXT; Sample values: ['Declaration of Joseph Rego by defendant Sunrize Staging Inc, defendant Sunrize Building, defendant Lou Luly re motion to dismiss the complaint [8-1] (axr) (Entered: 11/03/2004)', 'Joint STIPULATION to Continue hearing date from July 28, 2008 to July 21, 2008 Re: Memorandum in Support of Motion, 7 , MOTION to Dismiss for Lack of Jurisdiction over Subject Matter 6 filed by Defendants Dynascan Technology Inc, Dynascan Technology Corp. (Attachments: # 1 Proposed Order)(Huang, Peter) (Entered: 06/17/2008)', 'PROOF OF SERVICE Executed by Plaintiff I-Flow Corporation, upon TKJ Group Inc. served on 7/27/2008, answer due 8/16/2008. The Summons and Complaint were served by Personal service, by Federal statute, upon Kevin Farrell, Agent authorized to accept service of process on behalf of TKJ Group, Inc.. Due Dilligence declaration not attached. Original Summons Returned. (Friedland, Michael) (Entered: 08/19/2008)', 'DECLARATION of Keith A. Sipprelle Regarding Compliance with General Order Authorizing Electronic Filing filed by Plaintiff Homeland Housewares, LLC. (Sipprelle, Keith) (Entered: 03/15/2011)', 'STIPULATION AND ORDER extending defendants time to move, answer, or otherwise respond to the complaint on or before May 27, 2014. (Signed by Judge Denise L. Cote on 3/12/2014) (gr) (Entered: 03/12/2014)'])
+    attachment (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.DOCUMENTID
+[
+    appno_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    grant_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pgpub_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    rf_id (Type: TEXT; Sample values: ['42510868', '42510868', '42660035', '42660035', '42660503'])
+    appno_doc_num (Type: TEXT; Sample values: ['04862751', '05545682', '05078618', '04703671', '05190210'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    grant_doc_num (Type: TEXT; Sample values: ['3677049', '3944419', '3741777', '3553770', '3835897'])
+    pgpub_doc_num (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.CASES_2015
+[
+    date_filed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    date_last_filed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    pacer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_row_id (Type: TEXT; Sample values: ['57008', '56478', '56446', '56995', '51196'])
+    case_name (Type: TEXT; Sample values: ['Digcom, Inc, vs Casio Computer, et al', 'Avery et al v. Barsky', 'Unwired Planet, LLC v. Google, Inc.', 'Server Technology, Inc. v. Western Telematic, Inc.', 'TELXON CORPORATION V. LEMELSON MEDICAL, EDUCATION & RESEARCH FOUNDATION'])
+    court_name (Type: TEXT; Sample values: ['District of Nevada (Reno)', 'District of Nevada (Reno)', 'District of Nevada (Reno)', 'District of Nevada (Reno)', 'District of Nevada (Reno)'])
+    date_closed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_number (Type: TEXT; Sample values: ['3:13-cv-00176-MMD-WGC', '3:12-cv-00652-MMD-WGC', '3:12-cv-00504-MMD-VPC', '3:13-cv-00122-MMD-WGC', '3:00-cv-00222-PMP-PHA'])
+    demand (Type: TEXT; Sample values: ['Plaintiff', 'Plaintiff', 'Both', 'Both', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.PACER_CASES_2015
+[
+    date_filed (Type: TEXT; Sample values: ['2001-07-09', '1993-06-04', '2013-05-15', '2000-06-23', '1997-08-06'])
+    court_code (Type: TEXT; Sample values: ['azd', 'azd', 'azd', 'azd', 'azd'])
+    case_name (Type: TEXT; Sample values: ['PAR Technologies Inc v. Philips Elec N Amer, et al', "Akzo Pharma Int'l, et al v. Steris Laboratories, et al", 'Yellow Dog Technologies LLC v. Fuel Recyclers Arizona LLC', 'CNF Tehnologies Inc v. Mobility Electronics', 'Triple S Plastics v. Capitol Vial Inc, et al'])
+    pacer_id (Type: TEXT; Sample values: ['13166', '68655', '781287', '3631', '242284'])
+    court_name (Type: TEXT; Sample values: ['Arizona District Court', 'Arizona District Court', 'Arizona District Court', 'Arizona District Court', 'Arizona District Court'])
+    date_closed (Type: TEXT; Sample values: ['01/09/2002', '07/07/1994', '08/05/2013', '05/23/2001', '07/15/1999'])
+    case_number (Type: TEXT; Sample values: ['2:2001-cv-01273', '2:1993-cv-01071', '4:2013-cv-00346', '2:2000-cv-01198', '4:1997-cv-00499'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.CASES
+[
+    date_filed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    date_last_filed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_row_id (Type: TEXT; Sample values: ['70943', '57008', '56478', '57052', '58295'])
+    pacer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    court_name (Type: TEXT; Sample values: ['U.S. District Court (7)', 'District of Nevada (Reno)', 'District of Nevada (Reno)', 'District of Nevada (Reno)', 'District of Nevada (Reno)'])
+    case_name (Type: TEXT; Sample values: ['Whiteman Industries v. Stone Construction, et al', 'Digcom, Inc, vs Casio Computer, et al', 'Avery et al v. Barsky', 'Trivitis, Inc. v. Primus Pharmaceuticals, Inc.', 'Bayer Healthcare, LLC, et al vs SHP Chemical, Inc.'])
+    date_closed (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    case_number (Type: TEXT; Sample values: ['7:94-cv-00063-AAM', '3:13-cv-00176-MMD-WGC', '3:12-cv-00652-MMD-WGC', '3:13-cv-00352-MMD-VPC', '3:15-cv-00085-MMD-VPC'])
+    demand (Type: TEXT; Sample values: ['None', 'Plaintiff', 'Plaintiff', 'Plaintiff', 'Plaintiff'])
+    referred_to (Type: TEXT; Sample values: ['None', 'Magistrate Judge William G. Cobb', 'Magistrate Judge William G. Cobb', 'Magistrate Judge Valerie P. Cooke', 'Magistrate Judge Valerie P. Cooke'])
+    case_cause (Type: TEXT; Sample values: ['28:1338 Patent Infringement', '15:1126 Patent Infringement', '15:1126 Patent Infringement', '28:1338 Patent Infringement', '35:271 Patent Infringement'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_CLAIMS_STATS_2014
+[
+    claim_no (Type: TEXT; Sample values: ['22', '22', '22', '22', '22'])
+    pat_no (Type: TEXT; Sample values: ['5630497', '5896221', '5631042', '6041811', '6407039'])
+    appl_id (Type: TEXT; Sample values: ['08389241', '08900780', '08540123', '09144958', '09705357'])
+    sf_ct (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    or_ct (Type: TEXT; Sample values: ['0', '0', '0', '0', '1'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    word_ct (Type: TEXT; Sample values: ['39', '39', '39', '39', '39'])
+    char_ct (Type: TEXT; Sample values: ['248', '236', '208', '237', '224'])
+    cns_ct (Type: TEXT; Sample values: ['0', '0', '0', '0', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_PTAB.MATCH_201710
+[
+    ApplicationNumber (Type: TEXT; Sample values: ['07205419', '07586391', '07825488', '07872674', '07879662'])
+    application_number (Type: TEXT; Sample values: ['US-20541988-A', 'US-58639190-A', 'US-82548892-A', 'US-87267492-A', 'US-87966292-A'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CANCER.PUBLICATIONS
+[
+    Filing_Date (Type: TEXT; Sample values: ['20050916', '20071027', '20140627', '20100115', '20050503']; Description: Is this text truncated?)
+    Application_Number (Type: TEXT; Sample values: ['11/228833', '11/925922', '14/318176', '13/144228', '11/120502']; Description: Patent application number (DOCDB compatible), eg: 'US-87124404-A'. This may not always be set.)
+    Grant_or_Publication_Date (Type: TEXT; Sample values: ['20060406', '20080821', '20141225', '20120209', '20060105'])
+    FDA_Approval_Date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    FDA_Application_Number (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    FDA_Applicant (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Patent_or_Publication_ID (Type: TEXT; Sample values: ['US 20060074105 A1', 'US 20080200484 A1', 'US 20140378403 A1', 'US 20120035126 A1', 'US 20060004041 A1'])
+    FDA_Drug_Trade_Name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Family_ID (Type: TEXT; Sample values: ['35559420', '26992976', '42340299', '42340299', '35320170']; Description: Family ID (simple family). Grouping on family ID will return all publications associated with a simple patent family (all publications share the same priority claims).)
+    Patent_Title (Type: TEXT; Sample values: ['Substituted quinoline and quinazoline inhibitors of quinone reductase 2', 'Pharmaceutical Compositions Comprising A Multifunctional Phosphodiesterase Inhibitor and An Adenosine Uptake Inhibitor', 'Compounds For Reducing Drug Resistance And Uses Thereof', 'Compounds For Reducing Drug Resistance And Uses Thereof', 'Compounds for treatment of neurodegenerative diseases'])
+    NIH_Federal_Grant_Number (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TBD (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Drugs_and_Chemistry (Type: TEXT; Sample values: ['1', '1', '1', '1', '1'])
+    Diagnostic_and_Surgical_Devices (Type: TEXT; Sample values: ['0', '0', '1', '1', '0'])
+    NIH_Grant_Recipient_Organization (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    DNA_RNA_or_Protein_Sequence (Type: TEXT; Sample values: ['0', '1', '0', '0', '0'])
+    Data_Science (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.PACER_CASES
+[
+    date_filed (Type: TEXT; Sample values: ['2001-09-28', '2002-10-07', '2000-08-10', '1997-09-29', '1998-07-20'])
+    court_name (Type: TEXT; Sample values: ['Arizona District Court', 'Arizona District Court', 'Arizona District Court', 'Arizona District Court', 'Arizona District Court'])
+    court_code (Type: TEXT; Sample values: ['azd', 'azd', 'azd', 'azd', 'azd'])
+    pacer_id (Type: TEXT; Sample values: ['13699', '23753', '3939', '90356', '96523'])
+    case_name (Type: TEXT; Sample values: ['Cirone v. Sinclair & Rush', "Palestrant, et al v. O'Brien, et al", 'Crafco Inc v. Sealmaster Ind Inc', 'Progressive Elec Inc v. Independent Tech Inc', 'Lemelson Medical Ed v. Silicon Storage Tech'])
+    date_closed (Type: TEXT; Sample values: ['05/14/2002', '12/11/2002', '03/02/2001', '04/22/1998', '11/19/1998'])
+    case_number (Type: TEXT; Sample values: ['2:2001-cv-01857', '2:2002-cv-01970', '2:2000-cv-01538', '2:1997-cv-02016', '2:1998-cv-01299'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_PTAB.TRIALS
+[
+    FilingDate (Type: TEXT; Sample values: [])
+    ApplicationNumber (Type: TEXT; Sample values: [])
+    AccordedFilingDate (Type: TEXT; Sample values: [])
+    InstitutionDecisionDate (Type: TEXT; Sample values: [])
+    PatentOwnerName (Type: TEXT; Sample values: [])
+    InventorName (Type: TEXT; Sample values: [])
+    PetitionerPartyName (Type: TEXT; Sample values: [])
+    publication_number (Type: TEXT; Sample values: [])
+    PatentNumber (Type: TEXT; Sample values: [])
+    TrialNumber (Type: TEXT; Sample values: [])
+    ProsecutionStatus (Type: TEXT; Sample values: [])
+    LastModifiedDatetime (Type: TEXT; Sample values: [])
+    Documents (Type: VARIANT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_CLAIMS_FULLTEXT_2014
+[
+    claim_no (Type: TEXT; Sample values: ['25', '21', '3', '18', '16'])
+    pat_no (Type: TEXT; Sample values: ['8775049', '8775049', '8775049', '8775049', '8775049'])
+    appl_id (Type: TEXT; Sample values: ['13306241', '13306241', '13306241', '13306241', '13306241'])
+    claim_txt (Type: TEXT; Sample values: ['25. The method according to claim 1, wherein the evaluation of the state of the combustion is performed for each individual cylinder of the internal combustion engine.', '21. The apparatus according to claim 20, wherein each multichannel signal evaluation device is connected with a database in which sample signals of flame light signals with assigned particle emissions are stored.', '3. The method according to claim 1, wherein a limit value for flame light intensity is defined and upon exceeding the limit value in at least one cylinder, a measure is performed for reducing particle emissions in the respective cylinder.', '18. The method according to claim 17, wherein the cumulatively detected emissions are compared with flame light signals peaks detected in a cylinder-selective manner and are assigned to the respective cylinder.', '16. The method according to claim 14, wherein an optimization procedure is performed for the parameterization of the injection and/or the air throttling depending on the mixture state and/or the deviation of the cylinder pressure peaks from the light signal peaks.'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_DOCUMENT_STATS_2014
+[
+    pat_no (Type: TEXT; Sample values: ['8514856', '8624634', '8652740', '8661387', '8737779'])
+    appl_id (Type: TEXT; Sample values: ['12822551', '13551650', '13018172', '13740439', '13395095'])
+    pat_wrd_min (Type: TEXT; Sample values: ['159', '136', '427', '97', '185'])
+    pat_wrd_ct (Type: TEXT; Sample values: ['564', '464', '427', '448', '378'])
+    pat_dep_wrd_min (Type: TEXT; Sample values: ['19', '19', '19', '19', '19'])
+    pat_dep_wrd_ct (Type: TEXT; Sample values: ['585', '789', '738', '909', '1522'])
+    pat_wrd_avg (Type: TEXT; Sample values: ['188', '154.6667', '427', '112', '189'])
+    pat_clm_ct (Type: TEXT; Sample values: ['3', '3', '1', '4', '2'])
+    pat_dep_wrd_avg (Type: TEXT; Sample values: ['29.25', '39.45', '36.9', '45.45', '76.1'])
+    pat_dep_clm_ct (Type: TEXT; Sample values: ['20', '20', '20', '20', '20'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.MATCH_2014
+[
+    pub_no (Type: TEXT; Sample values: ['20020134230', '20020134232', '20020134234', '20020134237', '20020134239'])
+    pat_no (Type: TEXT; Sample values: ['', '', '', '', ''])
+    publication_number (Type: TEXT; Sample values: ['US-2002134230-A1', 'US-2002134232-A1', 'US-2002134234-A1', 'US-2002134237-A1', 'US-2002134239-A1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.MATCH
+[
+    pub_no (Type: TEXT; Sample values: ['20110139645', '20110139646', '20110139648', '20110139649', '20110139654'])
+    pat_no (Type: TEXT; Sample values: ['', '', '', '', ''])
+    publication_number (Type: TEXT; Sample values: ['US-2011139645-A1', 'US-2011139646-A1', 'US-2011139648-A1', 'US-2011139649-A1', 'US-2011139654-A1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PGPUB_CLAIMS_FULLTEXT_2014
+[
+    claim_no (Type: TEXT; Sample values: ['48', '50', '51', '52', '53'])
+    pub_no (Type: TEXT; Sample values: ['20120021108', '20120021108', '20120021108', '20120021108', '20120021108'])
+    appl_id (Type: TEXT; Sample values: ['13187504', '13187504', '13187504', '13187504', '13187504'])
+    claim_txt (Type: TEXT; Sample values: ['48. The cold brew apparatus of claim 10, wherein the filter bag is made of a polypropylene mesh.', '50. The cold brew apparatus of claim 10, wherein the filter bag is made of heat sealable paper.', '51. The cold brew apparatus of claim 10, wherein the filter bag is made of natural fibers.', '52. The cold brew apparatus of claim 10, wherein the brewing bag has a transparent or semi-transparent window therein.', '53. The cold brew apparatus of claim 10, wherein the brewing bag includes a gusset.'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_CLAIMS_FULLTEXT
+[
+    claim_no (Type: TEXT; Sample values: ['9', '15', '17', '25', '21'])
+    pat_no (Type: TEXT; Sample values: ['8775049', '8775049', '8775049', '8775049', '8775049'])
+    appl_id (Type: TEXT; Sample values: ['13306241', '13306241', '13306241', '13306241', '13306241'])
+    claim_txt (Type: TEXT; Sample values: ['9. The method according to claim 1, wherein sample signals are derived from theoretical considerations on mixture formation and combustion.', '15. The method according to claim 14, wherein conclusions are drawn on irregular combustion from at least one deviation between the cylinder pressure peaks and the light signal peaks.', '17. The method according to claim 1, wherein a measurement of the emissions is performed simultaneously with the detection of the flame light signals.', '25. The method according to claim 1, wherein the evaluation of the state of the combustion is performed for each individual cylinder of the internal combustion engine.', '21. The apparatus according to claim 20, wherein each multichannel signal evaluation device is connected with a database in which sample signals of flame light signals with assigned particle emissions are stored.'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    dependencies (Type: TEXT; Sample values: ['1', '14', '1', '1', '20'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_CLAIMS_STATS
+[
+    claim_no (Type: TEXT; Sample values: ['7', '7', '7', '7', '7'])
+    pat_no (Type: TEXT; Sample values: ['6725168', '6189617', '6375701', '6180200', '6246983'])
+    appl_id (Type: TEXT; Sample values: ['10049596', '09196536', '09445960', '09087923', '09129649'])
+    word_ct (Type: TEXT; Sample values: ['39', '39', '39', '39', '39'])
+    or_ct (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    char_ct (Type: TEXT; Sample values: ['248', '240', '222', '295', '245'])
+    sf_ct (Type: TEXT; Sample values: ['0', '0', '1', '1', '0'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    cns_ct (Type: TEXT; Sample values: ['0', '0', '1', '1', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.DOCUMENTID_ADMIN_2016
+[
+    error (Type: TEXT; Sample values: ['none', 'none', 'none', 'none', 'none'])
+    admin_appl_id_for_grant (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    rf_id (Type: TEXT; Sample values: ['353810928', '395500045', '354060093', '358780601', '353850965'])
+    appno_doc_num (Type: TEXT; Sample values: ['14683510', '14683835', '14683985', '14684038', '14684239'])
+    grant_doc_num (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PGPUB_DOCUMENT_STATS_2014
+[
+    pub_no (Type: TEXT; Sample values: ['20110289856', '20120029445', '20120085116', '20120107674', '20130233246'])
+    appl_id (Type: TEXT; Sample values: ['13205419', '13252998', '13270753', '13381004', '13418221'])
+    pub_wrd_ct (Type: TEXT; Sample values: ['1044', '202', '268', '120', '257'])
+    pub_wrd_min (Type: TEXT; Sample values: ['95', '91', '76', '120', '63'])
+    pub_dep_wrd_ct (Type: TEXT; Sample values: ['896', '1468', '1058', '898', '867'])
+    pub_dep_wrd_min (Type: TEXT; Sample values: ['15', '15', '15', '15', '15'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PATENT_DOCUMENT_STATS
+[
+    pat_no (Type: TEXT; Sample values: ['8305646', '3946637', '3988556', '4030691', '4183548'])
+    pat_wrd_ct (Type: TEXT; Sample values: ['471', '103', '258', '504', '326'])
+    appl_id (Type: TEXT; Sample values: ['11559573', 'None', 'None', 'None', 'None'])
+    pat_wrd_min (Type: TEXT; Sample values: ['218', '103', '117', '230', '326'])
+    pat_clm_ct (Type: TEXT; Sample values: ['2', '1', '2', '2', '1'])
+    pat_dep_wrd_ct (Type: TEXT; Sample values: ['178', '199', '119', '188', '126'])
+    pat_wrd_avg (Type: TEXT; Sample values: ['235.5', '103', '129', '252', '326'])
+    pat_dep_wrd_avg (Type: TEXT; Sample values: ['59.33333', '66.33334', '39.66667', '62.66667', '42'])
+    pat_dep_clm_ct (Type: TEXT; Sample values: ['3', '3', '3', '3', '3'])
+    pat_dep_wrd_min (Type: TEXT; Sample values: ['33', '33', '33', '33', '33'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PGPUB_CLAIMS_FULLTEXT
+[
+    claim_no (Type: TEXT; Sample values: ['10', '11', '13', '16', '17'])
+    appl_id (Type: TEXT; Sample values: ['12165303', '12165303', '12165303', '12165303', '12165303'])
+    pub_no (Type: TEXT; Sample values: ['20090324148', '20090324148', '20090324148', '20090324148', '20090324148'])
+    claim_txt (Type: TEXT; Sample values: ['10. The rotary machine of claim 1, wherein the one or more parameters related to the foil bearing comprises temperature, strain, pressure, vibration, or combinations thereof.', '11. The rotary machine of claim 1; wherein the fiber optic sensing system comprises a detection system configured to receive reflected light from the one or more fiber optic sensors.', '13. The rotary machine of claim 12; wherein the rotary machine comprises an engine coupled to the controller; wherein the controller is configured to throttle the engine when the detected one or more parameters related to the foil bearing system exceeds a threshold limit.', '16. A foil bearing system, comprising: a bearing shell; a top foil disposed in the bearing shell; a bump foil disposed between the bearing shell and the top foil; and a fiber optic sensing system comprising one or more fiber optic sensors disposed in the bearing shell; on the top foil; or a combinations thereof and configured to detect one or more parameters related to the foil bearing system.', '17. The system of claim 16; wherein the fiber optic sensors are disposed in a plurality of grooves provided in the bearing shell, and the top foil.'])
+    ind_flg (Type: TEXT; Sample values: ['0', '0', '0', '1', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.PATENTS.CPC_DEFINITION
+[
+    notAllocatable (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    dateRevised (Type: FLOAT; Sample values: ['20130101.0', '20130101.0', '20130101.0', '20130101.0', '20130101.0'])
+    status (Type: TEXT; Sample values: ['published', 'published', 'published', 'published', 'published'])
+    residualReferences (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    breakdownCode (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.NAMES_2015
+[
+    name (Type: TEXT; Sample values: ['Jack Sutton', 'Peters Jewelers', 'Peters Motor Cuts', 'Peters Motor Cuts', 'AOL LLC'])
+    name_row_count (Type: TEXT; Sample values: ['234351', '235648', '235649', '235650', '497184'])
+    case_row_id (Type: TEXT; Sample values: ['35376', '35523', '35523', '35523', '67746'])
+    case_number (Type: TEXT; Sample values: ['2:05-cv-06445', '2:06-cv-00053', '2:06-cv-00053', '2:06-cv-00053', '6:07-cv-00354'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.ATTORNEYS_2015
+[
+    name (Type: TEXT; Sample values: ['Thomas Holland Loffredo', 'David G. Hill', 'William A. Alper', 'Kurt M. Rylander', 'MICHAEL E. RAY'])
+    contactinfo (Type: TEXT; Sample values: ['(See above for address)', '(See above for address)', 'Hopgood, Calimafde, Kalil, Blaustein & Judlowe; 60 East 42nd Street; New York, NY 10165; (212) 986-2480', '(See above for address)', '(See above for address)'])
+    case_number (Type: TEXT; Sample values: ['0:96-cv-06366-WDF', '1:91-cv-02222-KMO', '1:92-cv-09264-MGC-MHD', '1:97-cv-00144-JPB', '1:97-cv-01185'])
+    case_row_id (Type: TEXT; Sample values: ['171', '3284', '3865', '6081', '6332'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.NAMES
+[
+    name (Type: TEXT; Sample values: ['Jack Sutton', 'Peters Motor Cuts', 'TERMINATED: 03/26/2008', 'Tripp Scott, P.A.', 'WILLIAM BALKO - COPYRIGHT LITIGATION'])
+    case_number (Type: TEXT; Sample values: ['2:05-cv-06445', '2:06-cv-00053', '6:07-cv-00354', '0:10-cv-62504-CMA', '1:03-cv-01365-RLY-WTL'])
+    name_row_count (Type: TEXT; Sample values: ['234352', '235650', '497185', '8442', '65368'])
+    case_row_id (Type: TEXT; Sample values: ['35376', '35523', '67746', '1420', '10906'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_LITIGATION.ATTORNEYS
+[
+    name (Type: TEXT; Sample values: ['Frederick L. Cottrell , III', 'Robert J. Katzenstein', 'Jason R. Buratti', 'Mark E. Phelps', 'Richard L. Horwitz'])
+    case_number (Type: TEXT; Sample values: ['1:01-cv-00100', '1:01-cv-00401', '1:01-cv-10165', '1:02-cv-02590', '1:03-cv-00737'])
+    contactinfo (Type: TEXT; Sample values: ['Richards, Layton & Finger, PA; One Rodney Square; 920 N. King Street; Wilmington, DE 19801; (302) 658-6541; Email: cottrell@rlf.com', '(See above for address)', 'Robins, Kaplan, Miller & Ciresi LLP; Suite 1200; 1801 K Street, N.W.; Washington , DC 20006; Email: jaburatti@rkmc.com', '(See above for address)', 'Potter Anderson & Corroon, LLP; 1313 N. Market St., Hercules Plaza, 6th Flr.; P.O. Box 951; Wilmington, DE 19899-0951; (302) 984-6000; Email: rhorwitz@potteranderson.com'])
+    case_row_id (Type: TEXT; Sample values: ['8895', '9024', '9581', '10168', '10743'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.DOCUMENTID_ADMIN
+[
+    error (Type: TEXT; Sample values: ['none', 'none', 'none', 'none', 'none'])
+    appno_doc_num (Type: TEXT; Sample values: ['11367061', '11367484', '11368304', '11368722', '11370209'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CLAIMS.PGPUB_DOCUMENT_STATS
+[
+    pub_no (Type: TEXT; Sample values: ['20030031369', '20020079610', '20020020386', '20020052033', '20030118218'])
+    appl_id (Type: TEXT; Sample values: ['09834587', '09920701', '09927865', '09962055', '09991589'])
+    pub_clm_ct (Type: TEXT; Sample values: ['7', '6', '3', '16', '5'])
+    pub_wrd_ct (Type: TEXT; Sample values: ['1975', '307', '585', '1228', '869'])
+    pub_dep_clm_ct (Type: TEXT; Sample values: ['86', '38', '39', '93', '45'])
+    pub_dep_wrd_ct (Type: TEXT; Sample values: ['3737', '661', '2853', '2458', '3303'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_CANCER.MATCH
+[
+    publication_number (Type: TEXT; Sample values: ['US-1151536-A', 'US-1500985-A', 'US-2001000149-A1', 'US-2001000150-A1', 'US-2001000171-A1'])
+    Patent_or_Publication_ID (Type: TEXT; Sample values: ['US 1151536 A', 'US 1500985 A', 'US 20010000149 A1', 'US 20010000150 A1', 'US 20010000171 A1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.MATCH_2016
+[
+    publication_number (Type: TEXT; Sample values: ['US-2014007888-A1', 'US-2014007891-A1', 'US-2014007892-A1', 'US-2014007898-A1', 'US-2014007901-A1'])
+    grant_doc_num (Type: TEXT; Sample values: ['', '', '', '', ''])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTS_USPTO.USPTO_OCE_ASSIGNMENT.MATCH
+[
+    publication_number (Type: TEXT; Sample values: ['US-2014007891-A1', 'US-2014007893-A1', 'US-2014007895-A1', 'US-2014007897-A1', 'US-2014007902-A1'])
+    pgpub_doc_num (Type: TEXT; Sample values: ['20140007891', '20140007893', '20140007895', '20140007897', '20140007902'])
+]
+
+--------------------------------------------------
+

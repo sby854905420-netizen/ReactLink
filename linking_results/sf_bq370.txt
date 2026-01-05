@@ -1,0 +1,303 @@
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_INVOICES
+[
+    CustomerPurchaseOrderNumber (Type: NUMBER; Sample values: ['15472', '16661', '12084', '15165', '17263'])
+    TotalChillerItems (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    CustomerID (Type: NUMBER; Sample values: ['514', '38', '403', '1000', '153'])
+    OrderID (Type: NUMBER; Sample values: ['66440', '64377', '64376', '64372', '72359'])
+    TotalDryItems (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    InvoiceID (Type: NUMBER; Sample values: ['63692', '61724', '61723', '61722', '69350'])
+    AccountsPersonID (Type: NUMBER; Sample values: ['2001', '1001', '2001', '3200', '1001'])
+    DeliveryRun (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    BillToCustomerID (Type: NUMBER; Sample values: ['401', '1', '401', '1000', '1'])
+    InvoiceDate (Type: TEXT; Sample values: ['2016-02-11', '2016-01-07', '2016-01-07', '2016-01-07', '2016-05-13'])
+    InternalComments (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ContactPersonID (Type: NUMBER; Sample values: ['2227', '1075', '2005', '3200', '1305'])
+    DeliveryMethodID (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    SalespersonPersonID (Type: NUMBER; Sample values: ['7', '8', '6', '3', '3'])
+    RunPosition (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    IsCreditNote (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    CreditNoteReason (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    LastEditedBy (Type: NUMBER; Sample values: ['11', '19', '19', '19', '12'])
+    PackedByPersonID (Type: NUMBER; Sample values: ['18', '15', '15', '15', '12'])
+    ConfirmedReceivedBy (Type: TEXT; Sample values: ['Anda Liepa', 'Nils Kalnins', 'Parsa Reuser', 'Krishnam Allu', 'Malati Shenoy'])
+    Comments (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ReturnedDeliveryData (Type: TEXT; Sample values: ['{"Events": [{ "Event":"Ready for collection","EventTime":"2016-02-11T12:00:00","ConNote":"EAN-125-64742"},{ "Event":"DeliveryAttempt","EventTime":"2016-02-12T07:40:00","ConNote":"EAN-125-64742","DriverID":11,"Latitude":43.5475771,"Longitude":-71.4067385,"Status":"Delivered"}],"DeliveredWhen":"2016-02-12T07:40:00","ReceivedBy":"Anda Liepa"}', '{"Events": [{ "Event":"Ready for collection","EventTime":"2016-01-07T12:00:00","ConNote":"EAN-125-62774"},{ "Event":"DeliveryAttempt","EventTime":"2016-01-08T07:25:00","ConNote":"EAN-125-62774","DriverID":19,"Latitude":37.1425588,"Longitude":-94.5107824,"Comment":"Receiver not present"}],"DeliveredWhen":"2016-01-08T07:25:00","ReceivedBy":"Nils Kalnins"}', '{"Events": [{ "Event":"Ready for collection","EventTime":"2016-01-07T12:00:00","ConNote":"EAN-125-62773"},{ "Event":"DeliveryAttempt","EventTime":"2016-01-08T07:20:00","ConNote":"EAN-125-62773","DriverID":19,"Latitude":33.2986656,"Longitude":-111.2895709,"Status":"Delivered"}],"DeliveredWhen":"2016-01-08T07:20:00","ReceivedBy":"Parsa Reuser"}', '{"Events": [{ "Event":"Ready for collection","EventTime":"2016-01-07T12:00:00","ConNote":"EAN-125-62772"},{ "Event":"DeliveryAttempt","EventTime":"2016-01-08T07:15:00","ConNote":"EAN-125-62772","DriverID":19,"Latitude":36.4970385,"Longitude":-99.9866880,"Status":"Delivered"}],"DeliveredWhen":"2016-01-08T07:15:00","ReceivedBy":"Krishnam Allu"}', '{"Events": [{ "Event":"Ready for collection","EventTime":"2016-05-13T12:00:00","ConNote":"EAN-125-70400"},{ "Event":"DeliveryAttempt","EventTime":"2016-05-14T07:35:00","ConNote":"EAN-125-70400","DriverID":12,"Latitude":47.5929997,"Longitude":-93.6907581,"Status":"Delivered"}],"DeliveredWhen":"2016-05-14T07:35:00","ReceivedBy":"Malati Shenoy"}'])
+    LastEditedWhen (Type: TEXT; Sample values: ['2016-02-12 07:00:00.0000000', '2016-01-08 07:00:00.0000000', '2016-01-08 07:00:00.0000000', '2016-01-08 07:00:00.0000000', '2016-05-14 07:00:00.0000000'])
+    DeliveryInstructions (Type: TEXT; Sample values: ['Unit 20, 231 Kaulina Street', 'Unit 115, 232 Abbasi Avenue', 'Suite 56, 1750 Lampsa Road', 'Unit 20, 1253 Rahimi Lane', 'Suite 130, 1952 Laramee Street'])
+    ConfirmedDeliveryTime (Type: TEXT; Sample values: ['2016-02-12 07:40:00.0000000', '2016-01-08 07:25:00.0000000', '2016-01-08 07:20:00.0000000', '2016-01-08 07:15:00.0000000', '2016-05-14 07:35:00.0000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_INVOICELINES
+[
+    Quantity (Type: NUMBER; Sample values: ['2', '8', '8', '8', '7'])
+    InvoiceID (Type: NUMBER; Sample values: ['64608', '64026', '65994', '66152', '696'])
+    InvoiceLineID (Type: NUMBER; Sample values: ['209233', '207422', '213659', '214206', '2056'])
+    StockItemID (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    LineProfit (Type: FLOAT; Sample values: ['-14.0', '-56.0', '-56.0', '-56.0', '108.5'])
+    LastEditedWhen (Type: NUMBER; Sample values: ['1456488000000000', '1455710400000000', '1458648000000000', '1458734400000000', '1358164800000000'])
+    LastEditedBy (Type: NUMBER; Sample values: ['16', '7', '4', '12', '17'])
+    UnitPrice (Type: FLOAT; Sample values: ['2.5', '2.5', '2.5', '2.5', '25.0'])
+    Description (Type: TEXT; Sample values: ['USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)'])
+    ExtendedPrice (Type: FLOAT; Sample values: ['5.75', '23.0', '23.0', '23.0', '201.25'])
+    TaxAmount (Type: FLOAT; Sample values: ['0.75', '3.0', '3.0', '3.0', '26.25'])
+    TaxRate (Type: FLOAT; Sample values: ['15.0', '15.0', '15.0', '15.0', '15.0'])
+    PackageTypeID (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_CUSTOMERTRANSACTIONS
+[
+    InvoiceID (Type: FLOAT; Sample values: ['2.0', '5.0', '14.0', '15.0', '22.0'])
+    IsFinalized (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    OutstandingBalance (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    CustomerID (Type: NUMBER; Sample values: ['803', '905', '870', '991', '890'])
+    CustomerTransactionID (Type: NUMBER; Sample values: ['5', '15', '46', '49', '69'])
+    TransactionAmount (Type: FLOAT; Sample values: ['465.75', '809.6', '747.5', '200.1', '3659.3'])
+    AmountExcludingTax (Type: FLOAT; Sample values: ['405.0', '704.0', '650.0', '174.0', '3182.0'])
+    PaymentMethodID (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TransactionTypeID (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    TaxAmount (Type: FLOAT; Sample values: ['60.75', '105.6', '97.5', '26.1', '477.3'])
+    TransactionDate (Type: TEXT; Sample values: ['2013-01-01', '2013-01-01', '2013-01-01', '2013-01-01', '2013-01-01'])
+    LastEditedWhen (Type: TEXT; Sample values: ['2013-01-02 11:30:00.0000000', '2013-01-02 11:30:00.0000000', '2013-01-02 11:30:00.0000000', '2013-01-02 11:30:00.0000000', '2013-01-02 11:30:00.0000000'])
+    LastEditedBy (Type: NUMBER; Sample values: ['10', '10', '10', '10', '10'])
+    FinalizationDate (Type: TEXT; Sample values: ['2013-01-02', '2013-01-02', '2013-01-02', '2013-01-02', '2013-01-02'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_ORDERS
+[
+    CustomerPurchaseOrderNumber (Type: NUMBER; Sample values: ['15124', '10585', '18624', '11975', '14004'])
+    CustomerID (Type: NUMBER; Sample values: ['89', '564', '913', '440', '1042'])
+    OrderID (Type: NUMBER; Sample values: ['70080', '56719', '56807', '56808', '56810'])
+    IsUndersupplyBackordered (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    BackorderOrderID (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    ContactPersonID (Type: NUMBER; Sample values: ['1177', '2327', '3113', '2079', '3242'])
+    InternalComments (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    LastEditedWhen (Type: NUMBER; Sample values: ['1460196000000000', '1441882800000000', '1441882800000000', '1441882800000000', '1441882800000000'])
+    PickingCompletedWhen (Type: TEXT; Sample values: ['NULL', '2015-09-10 11:00:00.0000000', '2015-09-10 11:00:00.0000000', '2015-09-10 11:00:00.0000000', '2015-09-10 11:00:00.0000000'])
+    SalespersonPersonID (Type: NUMBER; Sample values: ['13', '6', '3', '13', '15'])
+    PickedByPersonID (Type: TEXT; Sample values: ['NULL', '2', '2', '2', '2'])
+    OrderDate (Type: DATE; Sample values: ['2016-04-09', '2015-09-08', '2015-09-10', '2015-09-10', '2015-09-10'])
+    Comments (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    DeliveryInstructions (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    LastEditedBy (Type: NUMBER; Sample values: ['1', '2', '2', '2', '2'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_ORDERLINES
+[
+    Quantity (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    OrderLineID (Type: NUMBER; Sample values: ['8107', '8149', '10302', '11173', '17555'])
+    OrderID (Type: NUMBER; Sample values: ['2538', '2549', '3208', '3479', '5507'])
+    PickedQuantity (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    StockItemID (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    LastEditedWhen (Type: NUMBER; Sample values: ['1361444400000000', '1361444400000000', '1362654000000000', '1363086000000000', '1366282800000000'])
+    LastEditedBy (Type: NUMBER; Sample values: ['17', '17', '18', '5', '17'])
+    PickingCompletedWhen (Type: TEXT; Sample values: ['2013-02-21 11:00:00.0000000', '2013-02-21 11:00:00.0000000', '2013-03-07 11:00:00.0000000', '2013-03-12 11:00:00.0000000', '2013-04-18 11:00:00.0000000'])
+    Description (Type: TEXT; Sample values: ['USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)', 'USB missile launcher (Green)'])
+    UnitPrice (Type: FLOAT; Sample values: ['25.0', '25.0', '25.0', '25.0', '25.0'])
+    TaxRate (Type: FLOAT; Sample values: ['15.0', '15.0', '15.0', '15.0', '15.0'])
+    PackageTypeID (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.WAREHOUSE_STOCKITEMTRANSACTIONS
+[
+    InvoiceID (Type: FLOAT; Sample values: ['129.0', '131.0', '154.0', '162.0', '170.0'])
+    CustomerID (Type: FLOAT; Sample values: ['122.0', '543.0', '84.0', '563.0', '36.0'])
+    PurchaseOrderID (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TransactionTypeID (Type: NUMBER; Sample values: ['10', '10', '10', '10', '10'])
+    StockItemTransactionID (Type: NUMBER; Sample values: ['630', '635', '690', '719', '755'])
+    StockItemID (Type: NUMBER; Sample values: ['118', '105', '137', '173', '173'])
+    SupplierID (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Quantity (Type: FLOAT; Sample values: ['-10.0', '-10.0', '-10.0', '-10.0', '-10.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_CUSTOMERS
+[
+    StandardDiscountPercentage (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    IsOnCreditHold (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    ValidTo (Type: NUMBER; Sample values: ['253402300799999999', '253402300799999999', '253402300799999999', '253402300799999999', '253402300799999999'])
+    BillToCustomerID (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    DeliveryAddressLine2 (Type: TEXT; Sample values: ['1305 Kaleja Street', '1161 Chang Lane', '81 Banerjee Crescent', '726 Roy Boulevard', '834 Mookjai Avenue'])
+    FaxNumber (Type: TEXT; Sample values: ['(201) 555-0101', '(201) 555-0101', '(201) 555-0101', '(201) 555-0101', '(201) 555-0101'])
+    DeliveryAddressLine1 (Type: TEXT; Sample values: ['Suite 12', 'Unit 148', 'Suite 271', 'Suite 203', 'Shop 83'])
+    PhoneNumber (Type: TEXT; Sample values: ['(201) 555-0100', '(201) 555-0100', '(201) 555-0100', '(201) 555-0100', '(201) 555-0100'])
+    CustomerID (Type: NUMBER; Sample values: ['51', '83', '130', '145', '171'])
+    CustomerCategoryID (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    DeliveryPostalCode (Type: NUMBER; Sample values: ['90051', '90540', '90549', '90686', '90179'])
+    PostalAddressLine2 (Type: TEXT; Sample values: ['Ghateville', 'Chuville', 'Tuville', 'Peetreville', 'Ederville'])
+    IsStatementSent (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    PaymentDays (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+    ValidFrom (Type: NUMBER; Sample values: ['1356998400000000', '1356998400000000', '1356998400000000', '1356998400000000', '1356998400000000'])
+    DeliveryMethodID (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    PostalAddressLine1 (Type: TEXT; Sample values: ['PO Box 5129', 'PO Box 9374', 'PO Box 2787', 'PO Box 4756', 'PO Box 3587'])
+    DeliveryCityID (Type: NUMBER; Sample values: ['16430', '49', '20846', '20672', '25653'])
+    PrimaryContactPersonID (Type: NUMBER; Sample values: ['1101', '1165', '1259', '1289', '1341'])
+    DeliveryRun (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    PostalPostalCode (Type: NUMBER; Sample values: ['90051', '90540', '90549', '90686', '90179'])
+    AlternateContactPersonID (Type: TEXT; Sample values: ['1102', '1166', '1260', '1290', '1342'])
+    CustomerName (Type: TEXT; Sample values: ['Tailspin Toys (Imlaystown, NJ)', 'Tailspin Toys (Absecon, NJ)', 'Tailspin Toys (Maple Shade, NJ)', 'Tailspin Toys (Manahawkin, NJ)', 'Tailspin Toys (Ortley Beach, NJ)'])
+    PostalCityID (Type: NUMBER; Sample values: ['16430', '49', '20846', '20672', '25653'])
+    BuyingGroupID (Type: TEXT; Sample values: ['1', '1', '1', '1', '1'])
+    LastEditedBy (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    RunPosition (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    DeliveryLocation (Type: FLOAT; Sample values: ['8.607660043233228e+52', '8.607660043233208e+52', '8.607660043233225e+52', '8.607660043233215e+52', '8.60766004323322e+52'])
+    WebsiteURL (Type: TEXT; Sample values: ['http://www.tailspintoys.com/Imlaystown', 'http://www.tailspintoys.com/Absecon', 'http://www.tailspintoys.com/MapleShade', 'http://www.tailspintoys.com/Manahawkin', 'http://www.tailspintoys.com/OrtleyBeach'])
+    CreditLimit (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.PURCHASING_PURCHASEORDERLINES
+[
+    IsOrderLineFinalized (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    OrderedOuters (Type: NUMBER; Sample values: ['26', '27', '6', '6', '36'])
+    PurchaseOrderID (Type: NUMBER; Sample values: ['40', '40', '12', '12', '12'])
+    ReceivedOuters (Type: NUMBER; Sample values: ['26', '27', '6', '6', '36'])
+    StockItemID (Type: NUMBER; Sample values: ['25', '30', '108', '114', '120'])
+    PurchaseOrderLineID (Type: NUMBER; Sample values: ['234', '235', '142', '143', '145'])
+    PackageTypeID (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+    Description (Type: TEXT; Sample values: ['DBA joke mug - I will get you in order (Black)', 'Developer joke mug - Oct 31 = Dec 25 (White)', 'Superhero action jacket (Blue) XXS', 'Superhero action jacket (Blue) XXL', 'Dinosaur battery-powered slippers (Green) L'])
+    LastReceiptDate (Type: TEXT; Sample values: ['2013-01-14', '2013-01-14', '2013-01-04', '2013-01-04', '2013-01-04'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_CUSTOMERCATEGORIES
+[
+    ValidTo (Type: NUMBER; Sample values: ['253402300799999999', '253402300799999999', '253402300799999999', '253402300799999999', '253402300799999999'])
+    ValidFrom (Type: NUMBER; Sample values: ['1356998400000000', '1356998400000000', '1356998400000000', '1356998400000000', '1388592900000000'])
+    CustomerCategoryID (Type: NUMBER; Sample values: ['2', '4', '5', '7', '8'])
+    CustomerCategoryName (Type: TEXT; Sample values: ['Wholesaler', 'Supermarket', 'Computer Store', 'Corporate', 'General Retailer'])
+    LastEditedBy (Type: NUMBER; Sample values: ['1', '1', '1', '1', '9'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.PURCHASING_PURCHASEORDER
+[
+    IsOrderFinalized (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    DeliveryMethodID (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    PurchaseOrderID (Type: NUMBER; Sample values: ['42', '138', '255', '328', '400'])
+    ContactPersonID (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    SupplierID (Type: NUMBER; Sample values: ['7', '7', '7', '7', '7'])
+    OrderDate (Type: DATE; Sample values: ['2013-01-12', '2013-03-21', '2013-05-31', '2013-07-13', '2013-08-26'])
+    Comments (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    SupplierReference (Type: TEXT; Sample values: ['BC0280982', 'BC0280982', 'BC0280982', 'BC0280982', 'BC0280982'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.PURCHASING_SUPPLIERTRANSACTIONS
+[
+    IsFinalized (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    OutstandingBalance (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    SupplierInvoiceNumber (Type: TEXT; Sample values: ['8940', '873', '5240', '1691', '4720'])
+    PaymentMethodID (Type: NUMBER; Sample values: ['4', '4', '4', '4', '4'])
+    SupplierID (Type: NUMBER; Sample values: ['4', '4', '4', '7', '7'])
+    PurchaseOrderID (Type: TEXT; Sample values: ['153', '155', '161', '162', '164'])
+    TransactionTypeID (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    SupplierTransactionID (Type: NUMBER; Sample values: ['21470', '21757', '22931', '22934', '22939'])
+    TaxAmount (Type: FLOAT; Sample values: ['10863.9', '10966.5', '11928.6', '1816.38', '153.0'])
+    AmountExcludingTax (Type: FLOAT; Sample values: ['72426.0', '73110.0', '79524.0', '12109.2', '1020.0'])
+    TransactionAmount (Type: FLOAT; Sample values: ['83289.9', '84076.5', '91452.6', '13925.58', '1173.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.WAREHOUSE_STOCKITEMS
+[
+    TaxRate (Type: FLOAT; Sample values: ['10.0', '10.0', '15.0', '15.0', '15.0'])
+    StockItemName (Type: TEXT; Sample values: ['Chocolate frogs 250g', 'White chocolate snow balls 250g', '"The Gu" red shirt XML tag t-shirt (White) 3XS', '"The Gu" red shirt XML tag t-shirt (White) S', '"The Gu" red shirt XML tag t-shirt (White) M'])
+    SearchDetails (Type: TEXT; Sample values: ["Chocolate frogs 250g Perfect for your child's party", "White chocolate snow balls 250g Perfect for your child's party", '"The Gu" red shirt XML tag t-shirt (White) 3XS ', '"The Gu" red shirt XML tag t-shirt (White) S ', '"The Gu" red shirt XML tag t-shirt (White) M '])
+    RecommendedRetailPrice (Type: FLOAT; Sample values: ['12.23', '12.23', '26.91', '26.91', '26.91'])
+    UnitPrice (Type: FLOAT; Sample values: ['8.55', '8.55', '18.0', '18.0', '18.0'])
+    SupplierID (Type: NUMBER; Sample values: ['1', '1', '4', '4', '4'])
+    StockItemID (Type: NUMBER; Sample values: ['224', '226', '76', '79', '80'])
+    IsChillerStock (Type: NUMBER; Sample values: ['1', '1', '0', '0', '0'])
+    Barcode (Type: TEXT; Sample values: ['8792838293987', '8792838293236', 'NULL', 'NULL', 'NULL'])
+    ValidFrom (Type: NUMBER; Sample values: ['1464735600000000', '1464735600000000', '1464735600000000', '1464735600000000', '1464735600000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_SPECIALDEALS
+[
+    DiscountAmount (Type: TEXT; Sample values: [])
+    DealDescription (Type: TEXT; Sample values: [])
+    UnitPrice (Type: TEXT; Sample values: [])
+    EndDate (Type: DATE; Sample values: [])
+    StockItemID (Type: TEXT; Sample values: [])
+    DiscountPercentage (Type: FLOAT; Sample values: [])
+    SpecialDealID (Type: NUMBER; Sample values: [])
+    LastEditedWhen (Type: NUMBER; Sample values: [])
+    LastEditedBy (Type: NUMBER; Sample values: [])
+    CustomerID (Type: TEXT; Sample values: [])
+    StockGroupID (Type: NUMBER; Sample values: [])
+    CustomerCategoryID (Type: TEXT; Sample values: [])
+    BuyingGroupID (Type: NUMBER; Sample values: [])
+    StartDate (Type: DATE; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.SALES_BUYINGGROUPS
+[
+    BuyingGroupName (Type: TEXT; Sample values: ['Tailspin Toys'])
+    BuyingGroupID (Type: NUMBER; Sample values: ['1'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.WAREHOUSE_STOCKITEMHOLDINGS
+[
+    LastCostPrice (Type: FLOAT; Sample values: ['110.0', '12.0', '12.0', '12.0', '12.0'])
+    QuantityOnHand (Type: NUMBER; Sample values: ['15106', '199064', '196995', '192749', '222572'])
+    ReorderLevel (Type: NUMBER; Sample values: ['2', '5', '5', '5', '5'])
+    StockItemID (Type: NUMBER; Sample values: ['175', '5', '6', '9', '10'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.PURCHASING_SUPPLIERS
+[
+    PaymentDays (Type: NUMBER; Sample values: ['7', '30', '30', '30', '7'])
+    BankAccountName (Type: TEXT; Sample values: ['Contoso Ltd', 'Lucerne Publishing', 'Northwind Electric Cars', 'Fabrikam Inc', 'Trey Research'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.APPLICATION_PAYMENTMETHODS
+[
+    PaymentMethodName (Type: TEXT; Sample values: ['Cash', 'Credit-Card'])
+    PaymentMethodID (Type: NUMBER; Sample values: ['1', '3'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.WAREHOUSE_STOCKITEMSTOCKGROUPS
+[
+    StockItemID (Type: NUMBER; Sample values: ['2', '3', '5', '12', '13'])
+    StockItemStockGroupID (Type: NUMBER; Sample values: ['5', '8', '13', '34', '37'])
+    StockGroupID (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: WIDE_WORLD_IMPORTERS.WIDE_WORLD_IMPORTERS.WAREHOUSE_STOCKGROUPS
+[
+    StockGroupName (Type: TEXT; Sample values: ['Mugs', 'Computing Novelties', 'USB Novelties', 'Toys', 'Furry Footwear'])
+    StockGroupID (Type: NUMBER; Sample values: ['3', '6', '7', '9', '8'])
+]
+
+--------------------------------------------------
+

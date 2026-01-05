@@ -1,0 +1,824 @@
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_BOUNCE_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Europe/Oslo'])
+    TIME (Type: NUMBER; Sample values: ['1689990591'])
+    PUSH_TOKEN (Type: TEXT; Sample values: ['OcHwgtCyVFwsrs'])
+    USER_ID (Type: TEXT; Sample values: ['2TcIEwF3b000naI'])
+    AD_ID (Type: TEXT; Sample values: ['Dizbk6S9LGrvPY'])
+    APP_ID (Type: TEXT; Sample values: ['WleeR6PnBPb'])
+    PLATFORM (Type: TEXT; Sample values: ['ios'])
+    AD_TRACKING_ENABLED (Type: BOOLEAN; Sample values: ['True'])
+    SEND_ID (Type: TEXT; Sample values: ['hJxqI2xxXFx1ty'])
+    SF_CREATED_AT (Type: TIMESTAMP_LTZ; Sample values: ['2021-12-14 11:17:15.112000-08:00'])
+    ID (Type: TEXT; Sample values: ['QsBCAOIInGgtAm'])
+    DEVICE_ID (Type: TEXT; Sample values: ['7ms6uxHYinL8gS'])
+    APP_API_ID (Type: TEXT; Sample values: ['XCqUYstBRhRINK'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['YEzLzY1JlgIVHl'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['okWUvcJtNoLwKCo'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['GLY6T5pSVtV5b8'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['gRN5B0M45GQ3W2E'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['anIQh6p0GXp5pM'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['APreEMinQABB7N'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['4a3fXhIosSjQZI'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['YK6sGG1sEfGGxB'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['WiLO2VZ0fj50DrT'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['HqUWevTgLRKoVu'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['dnwH4Ethd8u'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_SEND_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Asia/Singapore'])
+    TIME (Type: NUMBER; Sample values: ['1680184087'])
+    PUSH_TOKEN (Type: TEXT; Sample values: ['s2hQmuKIrMETet'])
+    AD_ID (Type: TEXT; Sample values: ['D3rU3y9rfgv3BI'])
+    USER_ID (Type: TEXT; Sample values: ['1ozEahxyc2abh48'])
+    APP_ID (Type: TEXT; Sample values: ['WleeR6PnBPb'])
+    PLATFORM (Type: TEXT; Sample values: ['android'])
+    AD_TRACKING_ENABLED (Type: BOOLEAN; Sample values: ['True'])
+    ID (Type: TEXT; Sample values: ['l2pRHH03p3rNKQ'])
+    SF_CREATED_AT (Type: TIMESTAMP_LTZ; Sample values: ['2021-12-14 11:17:38.135000-08:00'])
+    DEVICE_ID (Type: TEXT; Sample values: ['haIvl0TxMxrImx'])
+    SEND_ID (Type: TEXT; Sample values: ['dFEFtQwTTMmqhv'])
+    APP_API_ID (Type: TEXT; Sample values: ['gKbiTH3V2QFztQ'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['U5aE8qPe1JyW2H'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['w1WpdMO2QxzRao'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['dv7cyxmLjXAHLr1'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['FWrYLbJtaJ8qpj'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['oQUCsvxAFJIG1J'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['MiDH96y6uwe8aAk'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['MUG5lP7Gd1dXn3'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['Uu32LDsWda5'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['Uk8Bd2fmznAO3L'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['SRMagN0H3GJ13T'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['WUWF171IL9Y8zT4'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_OPEN_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Indian/Chagos'])
+    TIME (Type: NUMBER; Sample values: ['1688533671'])
+    USER_ID (Type: TEXT; Sample values: ['01HcGn13T509adp'])
+    AD_ID (Type: TEXT; Sample values: ['2vgBtWalwZSoWl'])
+    APP_ID (Type: TEXT; Sample values: ['cavgwlQbKmE'])
+    PLATFORM (Type: TEXT; Sample values: ['android'])
+    AD_TRACKING_ENABLED (Type: BOOLEAN; Sample values: ['True'])
+    ID (Type: TEXT; Sample values: ['Hc1Iv6aIcwzNeW'])
+    BROWSER (Type: TEXT; Sample values: ['LBFXVe3'])
+    SEND_ID (Type: TEXT; Sample values: ['fNaQDrXaZMYmc6'])
+    DEVICE_ID (Type: TEXT; Sample values: ['eme29Cv96aYONB'])
+    APP_API_ID (Type: TEXT; Sample values: ['NgLvvF7qSliEgW'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['ok9jiQnoT4rbCA'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['MS7NDpmYtLv49sG'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['YzGN6bvVZOfAca'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['v15fcVnCvcpFehz'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    SLIDE_ID (Type: TEXT; Sample values: ['ElVKQzs'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['jDCb6vdE5G39WM'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['fKsYbbiE7hU8Li'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['Nh8PNaF31j1Xg7J'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['MN8AnlgGox6'])
+    SLIDE_ACTION_TYPE (Type: TEXT; Sample values: ['6m4kNyy'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['E9oryjWyV3JiEq'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['lydYyoHpWwU2ye'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['cocKrTMvcYLG8a'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_INFLUENCEDOPEN_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    TIME (Type: NUMBER; Sample values: ['1658791678'])
+    USER_ID (Type: TEXT; Sample values: ['1dRCeEIuKZ8Esep'])
+    APP_ID (Type: TEXT; Sample values: ['cavgwlQbKmE'])
+    PLATFORM (Type: TEXT; Sample values: ['ios'])
+    SEND_ID (Type: TEXT; Sample values: ['7i5okKPaoF3fRC'])
+    ID (Type: TEXT; Sample values: ['NeNJ3FOXCeOxVv'])
+    DEVICE_ID (Type: TEXT; Sample values: ['YSDYiKg7Pje7Z1'])
+    BROWSER (Type: TEXT; Sample values: ['hRPsE6s'])
+    APP_API_ID (Type: TEXT; Sample values: ['JKCnpDLhLTH757'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['53NwKNR9MSRc5IH'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['58h8RRp5cjh7dZr'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['14X2wEeQ2arq6Tx'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['qangd3BhsTBOv2'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['EkezqaD92MkkL3'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['Gdpj1fC6HC8'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['rbIoL4RjWea9OX'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['LROK6TCFZ9X41W'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['4WY9jVer4L7xZJ'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['pp2x0CaIfMGgbC'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_IOSFOREGROUND_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1680692760'])
+    TIMEZONE (Type: TEXT; Sample values: ['America/New_York'])
+    USER_ID (Type: TEXT; Sample values: ['1rv16rYZPX39xog'])
+    AD_ID (Type: TEXT; Sample values: ['B6Uq7bZ42BxQbY'])
+    APP_ID (Type: TEXT; Sample values: ['cavgwlQbKmE'])
+    AD_TRACKING_ENABLED (Type: BOOLEAN; Sample values: ['True'])
+    SEND_ID (Type: TEXT; Sample values: ['IHsWBtGQnt2evg'])
+    BROWSER (Type: TEXT; Sample values: ['LNi6eLq'])
+    PLATFORM (Type: TEXT; Sample values: ['android'])
+    DEVICE_ID (Type: TEXT; Sample values: ['gjLqZot5d8ZUlM'])
+    ID (Type: TEXT; Sample values: ['k0xxl1lWnQSEBO'])
+    SF_CREATED_AT (Type: TIMESTAMP_LTZ; Sample values: ['2021-12-14 11:16:05.085000-08:00'])
+    APP_API_ID (Type: TEXT; Sample values: ['ZB5yvGAeChjb72'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['VrmeXuVtkSiZ7U'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['j5uvwemwdRPtkS'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['p32d4KUWjc2NcL'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['89DbzhTflGYFCr'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['DrfMYMah8UfU4H'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['ZlCC0PeXhev'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['e6mhYsC32gc4S8'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['nI684v4sRoHNo4L'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['kIi1UfF3L1AKvP'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['WSlZXCVUyYDoQUv'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['LJa5UttXS2tXm4e'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_BOUNCE_SHARED_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Asia/Singapore'])
+    TIME (Type: NUMBER; Sample values: ['1690642972'])
+    PUSH_TOKEN (Type: TEXT; Sample values: ['Q9v1G9KUpiKmkI'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['a3FcGsCQEUX6li'])
+    SEND_ID (Type: TEXT; Sample values: ['RzjrqWHwUvJdTR'])
+    DEVICE_ID (Type: TEXT; Sample values: ['p248G3Zbc8czjf'])
+    ID (Type: TEXT; Sample values: ['m3gRvdmwqCqgCP'])
+    AD_ID (Type: TEXT; Sample values: ['1TzL8XhCkHQwbj'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['GY6FbjMjHLA0mu'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['DUP9welF23L6rP'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['eivJmWT6f2bB3F0'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['JmNEIMddzxHSc2b'])
+    APP_API_ID (Type: TEXT; Sample values: ['288mjosr155L7T'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['fvU6ratBU7VRqI'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['FXGdF7xmnDrWbx'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['wipiYDXfKKO'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    USER_ID (Type: TEXT; Sample values: ['1Vhr7od4uu4dGqg'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['kS9uL8puduQSGV'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_SEND_SHARED_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1693362990'])
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    PUSH_TOKEN (Type: TEXT; Sample values: ['a1A28J8xYce44r'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['sdl5HJ3F6QQRC4'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['MHI381yIfeZ0osy'])
+    USER_ID (Type: TEXT; Sample values: ['0lL7oak0UWagKyU'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['jaf5O2aQrfAOmG'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['19jfvxwFloTFnS'])
+    SEND_ID (Type: TEXT; Sample values: ['ojO9BwpwoMHjGJ'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    CANVAS_ID (Type: TEXT; Sample values: ['csTQRH4RZej6vk5'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['d2qGAytBEHxCKd'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['Eua3Yh9JZix'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['X5NBQq5p7kfRyH8'])
+    APP_API_ID (Type: TEXT; Sample values: ['QcPAT20UTW4oXS'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['KDou8kfmZEatNb'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['fi9Lh02q62AIbR'])
+    AD_ID (Type: TEXT; Sample values: ['pkjsc4WNc5mVOX'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['nvIZW4Gc4cWmo0'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['None'])
+    ID (Type: TEXT; Sample values: ['stoQ4UJEZ3a1sR'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_INFLUENCEDOPEN_SHARED_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/New_York'])
+    TIME (Type: NUMBER; Sample values: ['1665435755'])
+    ID (Type: TEXT; Sample values: ['s5S0u4ttMzB2jc'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['loPFcRNkEIeyDTC'])
+    APP_API_ID (Type: TEXT; Sample values: ['ylIIevF0GEGPkh'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['W1TXOWImcelJyd'])
+    USER_ID (Type: TEXT; Sample values: ['1ThK0Tfzzjo6C35'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['DJqv9T494HxaMM'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['RkKc2qUATc7YB4E'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['sngMhQqJw0c'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    SEND_ID (Type: TEXT; Sample values: ['I15iGrQsTnuZ66'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['bHmIdBQpbbVmdn'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['4HNW0goOFeGB44'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['pDDpAVF84jMmJP'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['AUANKSqkUpKLLn'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_IOSFOREGROUND_SHARED_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Asia/Singapore'])
+    TIME (Type: NUMBER; Sample values: ['1689750584'])
+    USER_ID (Type: TEXT; Sample values: ['1l56ymrYc0Kr7L9'])
+    AD_ID (Type: TEXT; Sample values: ['3TO4luQNPyHgKg'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_API_ID (Type: TEXT; Sample values: ['Yb131otkUAvuLN'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['TqBQi51i93iTOvf'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['PEP0p4De1f4m9Z'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['ERT06uw4MGekml'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['KEomeKPeckIetk'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['RtenM8764Ie'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['mOKZKQIMy4eoJK'])
+    ID (Type: TEXT; Sample values: ['XKphia026unKGr'])
+    DEVICE_ID (Type: TEXT; Sample values: ['UkE9PCia88mec1'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['46w34fYGCLHCcu'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['yVtDpA2JCpTMloj'])
+    SEND_ID (Type: TEXT; Sample values: ['ePBobfQvAiT2P1'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['sVbx7KtB9Tc5vm'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_PUSHNOTIFICATION_OPEN_SHARED_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/New_York'])
+    TIME (Type: NUMBER; Sample values: ['1680787636'])
+    AD_TRACKING_ENABLED (Type: BOOLEAN; Sample values: ['True'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['qU1t8uBDTlIIvr'])
+    SLIDE_ID (Type: TEXT; Sample values: ['lUO0Gwt'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['1b4Crn3LDcPJFfY'])
+    APP_API_ID (Type: TEXT; Sample values: ['pLXKIITxZuTXoL'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['VRAYjw6m6NMG2q'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['Ijp2gTtonIOb9ig'])
+    AD_ID (Type: TEXT; Sample values: ['vmsGKqUaSr55NW'])
+    USER_ID (Type: TEXT; Sample values: ['0GnuCJJGV8GgqmP'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['RRcpxzooqOgauG'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['vVscK8hLvmNQ0G'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['VUMPr5ol1UpG9X'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['Qyr8L8Rl9hsS3n'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['aU6yTesmknA'])
+    SLIDE_ACTION_TYPE (Type: TEXT; Sample values: ['h1i13Ng'])
+    SEND_ID (Type: TEXT; Sample values: ['FyOtLNZAHm8Dte'])
+    ID (Type: TEXT; Sample values: ['kb2ntLOeA5XSQX'])
+    DEVICE_ID (Type: TEXT; Sample values: ['Dm0Whuffq0B9Pr'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_DELIVERY_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1691312513'])
+    TIMEZONE (Type: TEXT; Sample values: ['Indian/Chagos'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['WC5rnzke8bf'])
+    SEND_ID (Type: TEXT; Sample values: ['9emj20SkcYkTch'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['ToYjiNSX2uIp3r'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['hujHkHixYkguu0C'])
+    ID (Type: TEXT; Sample values: ['yrTVLBvgWIk1bA'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['icVbWBMRfHb7Kg'])
+    DEVICE_ID (Type: TEXT; Sample values: ['zhAvptrZdVeEjZ'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['9VoLRgrVdBc2PNE'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['re1cV2NjggJXEj'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['UwWrZG5io195AWG'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['olo92wsuOQyP1G'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['0TWgU3WaQ6JYiK'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['NcD0UmSPOmyMi8'])
+    USER_ID (Type: TEXT; Sample values: ['2gpR2JqxhIA1OG3'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['K1RNSW7KVuYyG0'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['w7h7jn3MgVMx1E'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_DELIVERY_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1640078076'])
+    TIMEZONE (Type: TEXT; Sample values: ['Europe/Oslo'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['9XfEMD6ekhKrb8q'])
+    DEVICE_ID (Type: TEXT; Sample values: ['sxoqWI1zOhM0uS'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['qQGZ2EeiODe7Ys'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['iGGJRoNAOQvLxt'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['4B7Q0DgtqIiCAYA'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['Qt89iMjNLFMSQH'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['YcBYz1IKLXd'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['PzxOAirciusKXy'])
+    USER_ID (Type: TEXT; Sample values: ['2YpRi3chBlPMQcx'])
+    ID (Type: TEXT; Sample values: ['avFeZyefNpTWxT'])
+    SEND_ID (Type: TEXT; Sample values: ['4Ih43PrsFa9qzE'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['lfmsk5TJYC9510'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['7reyk3QIwcV5ek'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['GygjcQELNE0OmyP'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_INBOUNDRECEIVE_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1689814347'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['GkeIUJpQjI2R17q'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['u5Nx7GQTvCg7iS'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['WPKZy5YmBlhjek'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['RQTHcIQex9z4jRN'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['USh1Anjd5prT5n9'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['AU5srR10v2H'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['hCgSSKR9qSMXxd'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['5qAqyBM2d1UPW3'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['op7GGQvSyhl8OZ'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    USER_ID (Type: TEXT; Sample values: ['2nHx9LZ5RtBiXUV'])
+    ID (Type: TEXT; Sample values: ['JdZrZr4wjapTwF'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['8BMT5qpzBbI2BG'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['D08sRHdKtASCie'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_INAPPMESSAGE_CLICK_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/New_York'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['0eastvCtgN7VY7'])
+    AD_ID (Type: TEXT; Sample values: ['ZAsbs7HwenYZl2'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CARD_API_ID (Type: TEXT; Sample values: ['ZdTcAxyMVx3jTA'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['6QTQB7ak8ghomr'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['JKw2TUyoAScJFxy'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    APP_ID (Type: TEXT; Sample values: ['cavgwlQbKmE'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['dqAGTt4cOXbkM3p'])
+    ID (Type: TEXT; Sample values: ['Vrs5wBkmynaMrL'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['sbZ9eycDfvOhYb'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['tGTrsr6FEKV6OU'])
+    USER_ID (Type: TEXT; Sample values: ['0StzR9b3ObtJo5o'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['aWR187MqS3Z4yi'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['NDG1KPlLVtnw02'])
+    BUTTON_ID (Type: TEXT; Sample values: ['gpvbJmA'])
+    DEVICE_ID (Type: TEXT; Sample values: ['lJy2tehMFNUlLK'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['s7IORbxPWxmZEaE'])
+    APP_API_ID (Type: TEXT; Sample values: ['5ibd7I8mOZv9kS'])
+    CARD_ID (Type: TEXT; Sample values: ['SpngqR0s4Wpinx'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['pFeb1RHxvsE'])
+    SEND_ID (Type: TEXT; Sample values: ['NfQHyZF3ix8gg6'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['IrtQsu2nnFu8zz'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_BOUNCE_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Europe/Oslo'])
+    TIME (Type: NUMBER; Sample values: ['1686964670'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    ID (Type: TEXT; Sample values: ['faTtHD27VhggpJ'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['nMtCPaYrLnFg2O'])
+    SEND_ID (Type: TEXT; Sample values: ['ikqv7Wvb3TIB9o'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['NvJyOFOoMEcgWF6'])
+    USER_ID (Type: TEXT; Sample values: ['0YU9KA1Jl7tS3KY'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['uaJl6gp4x8ousCK'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['FrARJBqESJ2625'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['kMSN2FEzfIqqNa'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['q3l8JADEQ9A'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['0ULNlQcYMBiEAP'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['46ORLyVdCo9zsY'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['bDO2c5ABY1t2yS'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['3QXXDEQVrfDTEL7'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['lxt1huqRHPqubT'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_SEND_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Indian/Chagos'])
+    TIME (Type: NUMBER; Sample values: ['1657679694'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['NrAyewDgO59Vl2'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['dXG6PLAuKAJv3vK'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['Y6QmS2CYDRnwGg2'])
+    SEND_ID (Type: TEXT; Sample values: ['j0TJa4K9shqSeQ'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    USER_ID (Type: TEXT; Sample values: ['1KaT1aZG89ioVVa'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['iyj5F76KNII6Bu'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['EDvBBSt1ASVaHM'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['35FtU9jD0rIWlW'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    ID (Type: TEXT; Sample values: ['IgN96BhTdEdZgv'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['8SLcDVkf7woB0T'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['CLE5XdV5c8wPB7'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['xHiAxulg7ar4U3'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['Q0SLOMZSvsy'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['s9E0leDLYGJQWKO'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['Gxbij15ogspMR8'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['c5MVHbJhTc4iJ2'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_WEBHOOK_SEND_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Indian/Chagos'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['DHB5mLL5QRyMrC'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['q0Hl48YEFsi3w5'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['sfKXcJuMqQ5SMP'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['PJd7XDAeZUmdOx'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['1uNqPJtKshygpG6'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['ruNPRxrWGRYnFNn'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['yJ3LY1HTVmCMs2'])
+    USER_ID (Type: TEXT; Sample values: ['3262t9lIXdGmhWr'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    ID (Type: TEXT; Sample values: ['wAV0RWxYSvv0Na'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['1zFZWHAynknOpQ'])
+    SEND_ID (Type: TEXT; Sample values: ['GcRxGPAR3Vy0VX'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['9Y1QhRiRWyHrk3z'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['dkEgKVQ4NQu'])
+    DEVICE_ID (Type: TEXT; Sample values: ['vfF9uNtSrTY2H9'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_DELIVERY_SHARED_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Asia/Singapore'])
+    TIME (Type: NUMBER; Sample values: ['1690656405'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['rtIajDAYds4UHB'])
+    ID (Type: TEXT; Sample values: ['Rbacieazu3X4Oq'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['K0blOWyuAtQz5xc'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['FQgXTwxjzlHgkg'])
+    SEND_ID (Type: TEXT; Sample values: ['TRYBKrqgVzFo9c'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['JVePsMwBQNQO5Q'])
+    DEVICE_ID (Type: TEXT; Sample values: ['TLYLIXrkthErNP'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['lHLMryDA4RZG1lQ'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['JLBJQVVEfC10dT'])
+    USER_ID (Type: TEXT; Sample values: ['09Rf6A4UazSxqy5'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['v3NAxeV3484'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['fEwI7JemLQQYvZ'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['QpzaiBz7nvKdwP'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_UNSUBSCRIBE_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    TIME (Type: NUMBER; Sample values: ['1692506477'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    SEND_ID (Type: TEXT; Sample values: ['Cv5digJXVZhLn3'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['1jMC5hCeguoxjg'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['89AeHuBCfVHSb7'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['Ddj21be0wjvGSiu'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    DEVICE_ID (Type: TEXT; Sample values: ['SIjSXyiC3JTsnh'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['yd4FxuKxg2W'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['Q8HZIC4OFGOFv4'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['wzz3a5FLZ8jq2H'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['3JQl6pQHCAY8fCs'])
+    USER_ID (Type: TEXT; Sample values: ['1vfwj68OLOgR9v5'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['P0thJQcCJ8ZcrCZ'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['otdaPMs9S4qdia'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['mbKcIMEzQr6XQj'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    ID (Type: TEXT; Sample values: ['yrFVowfR9aWNcL'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_CLICK_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Asia/Singapore'])
+    TIME (Type: NUMBER; Sample values: ['1683432329'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['juhTmKWZR0fgSl'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['K7tx9FTXbERu5v'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['z3oz6yWNe7MNdzW'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['MJw1FFk8c5Xppl'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['NlMPvYxHTBi8eu'])
+    ID (Type: TEXT; Sample values: ['juPheEbyPTzqox'])
+    LINK_ID (Type: TEXT; Sample values: ['qHSwjSi'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['e9ZaN78RpDGi8A'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['fgRJo27YFjxYji'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['ulVI638engUkYqB'])
+    USER_ID (Type: TEXT; Sample values: ['0xXLak2de8D3IX8'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['DdP6lSOS4uIzH4'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['dFIyF90UYhbqxFf'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    SEND_ID (Type: TEXT; Sample values: ['PwAMNzkaVRjinY'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['Y6V2NureYLG'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_INAPPMESSAGE_IMPRESSION_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['1vCpZSvaqyikfD'])
+    SEND_ID (Type: TEXT; Sample values: ['ZL079EwDu4CPV8'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['HjpM9WfKw7JIyA'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['srMDL3I8AZNb1Zi'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    AD_ID_TYPE (Type: TEXT; Sample values: ['hxKsLl2Rvexjab'])
+    DEVICE_ID (Type: TEXT; Sample values: ['9JFsNAwlSZnZDJ'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['kYq0lI83rM4HBoq'])
+    CARD_ID (Type: TEXT; Sample values: ['3HJQshvfIiRV64'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['1B50KroyePRHBV'])
+    AD_ID (Type: TEXT; Sample values: ['j6ZFaASdFy4D8Z'])
+    APP_API_ID (Type: TEXT; Sample values: ['EcktqTKzpuMf07'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['YW2p1TuPTICU1n'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['g7tlP1HufyaX8Z9'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CARD_API_ID (Type: TEXT; Sample values: ['jwr6EovWzwbiAA'])
+    ID (Type: TEXT; Sample values: ['T1MFW5dtQb032X'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['VnVpifHObtBpVu'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['CfeJnCn8reolAf'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['5CjTyNrnlqn'])
+    APP_ID (Type: TEXT; Sample values: ['cavgwlQbKmE'])
+    USER_ID (Type: TEXT; Sample values: ['1chAWiopIwQKL1a'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_CARRIERSEND_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    ID (Type: TEXT; Sample values: ['TTCcfTLfZRf5Ex'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['Oei84hiQ5JC6Xn'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['9dDNg8d1jdyOXHD'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['dl63dVhB46Ah0x'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['WvZLwmGicC8'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['3TBm1ogo8wgWPQ'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['ZcKyEJPeI7aQuP'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['6ubxXdBJjznVQH'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['6rGO2p94d5IO9U'])
+    SEND_ID (Type: TEXT; Sample values: ['za7YG8Sx1sPZDf'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['5bORyHfYsJAnqQz'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['6bhJ1wckIj8SZI'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['6eGsTfClBFcsYZ'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['rbYGUNyvo96qrcW'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    USER_ID (Type: TEXT; Sample values: ['0pQ6USSNwuWgM1e'])
+    DEVICE_ID (Type: TEXT; Sample values: ['Pf5prWz8QVIVz9'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_INBOUNDRECEIVE_SHARED_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1674488105'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['VOQ1t5c8Tdly0Xi'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['OkIYT1HbF7u'])
+    ID (Type: TEXT; Sample values: ['oPiWj5Cb8u23y7'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['lx5CacWxxXVXKt'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['yxMTs7oUGNHPZHO'])
+    USER_ID (Type: TEXT; Sample values: ['0wcBaUxcyu78i5k'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['5dgjbKZV4bP'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['IT0kj3oROiSU9z'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['p3L9oJHGkjsEDo'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['NDNVmB4pU0xTT9'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['s424Xou'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['qzwqhswkJmcX12'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_SOFTBOUNCE_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['America/Denver'])
+    SEND_ID (Type: TEXT; Sample values: ['PVVl0XHz4SRsK2'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['QcYvyuToySy'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['fsrnOc3rQwh04E'])
+    DEVICE_ID (Type: TEXT; Sample values: ['VeYqD7DXn2Z6bP'])
+    USER_ID (Type: TEXT; Sample values: ['2CMggMto7jg3yuZ'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['cWV3floo7mKfsF'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['w8PPJW4W7C9hIt'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['pEJ6h4UvcFxB6U'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['DLqZKx7Ttfxufe'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['JRHjBEmz1Zv2ijE'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['lS3v75QvGybZ4H3'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['pa50dhp79fPVQa'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['qOh29sa2n2PdDgk'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    ID (Type: TEXT; Sample values: ['XhI3Dfp8R1gjdK'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_EMAIL_SEND_VIEW
+[
+    TIME (Type: NUMBER; Sample values: ['1647098836'])
+    TIMEZONE (Type: TEXT; Sample values: ['America/New_York'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['zFrWnKcfMZZA9w'])
+    SEND_ID (Type: TEXT; Sample values: ['8sxoe0At7MgRdU'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['gnptfnxCrQ50PR'])
+    USER_ID (Type: TEXT; Sample values: ['0pHCMae0DJvh44u'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['TMoevyyZouiL1N'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['VVWaTYmo9pf3M7J'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['C9OF3P1mkrWHdA'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['gQhJQBI1uD7'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['JSVKXz8fFgZfDQH'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    DEVICE_ID (Type: TEXT; Sample values: ['pWzDzARzKOlCMi'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    ID (Type: TEXT; Sample values: ['ppRgpnRx7bzAkJ'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['OCvFFlS1gJ6Mzh'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['uHrhFXsF0xMs8u'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['uLmXUiGQhxPN6Ib'])
+]
+
+--------------------------------------------------
+
+###Table full name: BRAZE_USER_EVENT_DEMO_DATASET.PUBLIC.USERS_MESSAGES_SMS_DELIVERYFAILURE_VIEW
+[
+    TIMEZONE (Type: TEXT; Sample values: ['Europe/Oslo'])
+    APP_GROUP_API_ID (Type: TEXT; Sample values: ['Eakd5vcHShadl3'])
+    DEVICE_ID (Type: TEXT; Sample values: ['pkETikEAYE2LNY'])
+    CANVAS_STEP_API_ID (Type: TEXT; Sample values: ['None'])
+    EXTERNAL_USER_ID (Type: TEXT; Sample values: ['y3gkTkRnQod'])
+    CANVAS_VARIATION_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_ID (Type: TEXT; Sample values: ['None'])
+    MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['kUHnX8PVDsEi0M6'])
+    DISPATCH_ID (Type: TEXT; Sample values: ['XaDLLAG4MbswIi'])
+    SEND_ID (Type: TEXT; Sample values: ['JIZGXhxfeFbYDa'])
+    SUBSCRIPTION_GROUP_ID (Type: TEXT; Sample values: ['UsFQZvtNCMtPKE'])
+    CAMPAIGN_API_ID (Type: TEXT; Sample values: ['JTBz0nhEFpNgUgZ'])
+    CANVAS_STEP_MESSAGE_VARIATION_ID (Type: TEXT; Sample values: ['aWlOzvUE1HqFuv'])
+    USER_ID (Type: TEXT; Sample values: ['1n0CKC6eOHBuTPa'])
+    CANVAS_API_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_STEP_MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['XKGxjh7jBe8QDm'])
+    ID (Type: TEXT; Sample values: ['pFam8zon5R2JLU'])
+    APP_GROUP_ID (Type: TEXT; Sample values: ['JyWFOSKn8bq'])
+    PROVIDER_ERROR_CODE (Type: TEXT; Sample values: ['DHVWFOQ'])
+    SUBSCRIPTION_GROUP_API_ID (Type: TEXT; Sample values: ['DjBFo9sYc2Lz3q'])
+    CANVAS_ID (Type: TEXT; Sample values: ['None'])
+    CANVAS_VARIATION_API_ID (Type: TEXT; Sample values: ['ZG72GlBSPSbBKT'])
+    MESSAGE_VARIATION_API_ID (Type: TEXT; Sample values: ['3OtCXr5G9rLg2A'])
+    CAMPAIGN_ID (Type: TEXT; Sample values: ['sAJnyQMUwgQ5hhy'])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+# Push Notification Analysis
+
+## Overview
+This document details an SQL query that analyzes user responses to push notifications within the timeframe of 8:00 AM to 9:00 AM on June 1, 2023. It is designed to assess the impact and effectiveness of push notification campaigns across various metrics.
+
+## Data Sources
+The analysis utilizes four distinct subqueries pulling from push notification event views:
+- **Send Events**
+- **Bounce Events**
+- **Open Events**
+- **Influenced Open Events**
+
+## Query Description
+Each subquery counts and categorizes events based on the type of interaction (sent, bounced, opened, influenced open), along with detailed user and device information.
+
+### Send Events
+- **Table**: `USERS_MESSAGES_PUSHNOTIFICATION_SEND_VIEW`
+- **Columns**: ID, app group ID, user ID, campaign ID, message variation ID, platform, ad tracking enabled, event timestamp
+
+### Bounce Events
+- **Table**: `USERS_MESSAGES_PUSHNOTIFICATION_BOUNCE_VIEW`
+- **Columns**: Same as Send Events
+
+### Open Events
+- **Table**: `USERS_MESSAGES_PUSHNOTIFICATION_OPEN_VIEW`
+- **Columns**: Same as Send Events plus carrier, browser, and device model
+
+### Influenced Open Events
+- **Table**: `USERS_MESSAGES_PUSHNOTIFICATION_INFLUENCEDOPEN_VIEW`
+- **Columns**: Same as Open Events
+
+## Results Aggregation
+The final output of the query is grouped by:
+- App Group ID
+- Campaign ID
+- User ID
+- Message Variation ID
+- Platform
+- Ad Tracking Enabled
+- Device Information (Carrier, Browser, Device Model)
+
+### Metrics Included
+- `push_notification_sends`: Total number of notifications sent.
+- `unique_push_notification_sends`: Number of unique users who received notifications.
+- `push_notification_bounced`: Total number of notifications that bounced.
+- `unique_push_notification_bounced`: Number of unique users who received bounced notifications.
+- `push_notification_open`: Total number of notifications opened.
+- `unique_push_notification_opened`: Number of unique users who opened notifications.
+- `push_notification_influenced_open`: Total number of indirectly opened notifications.
+- `unique_push_notification_influenced_open`: Number of unique users who opened notifications indirectly.
+
+## Conclusion
+This analysis provides valuable insights into the reach and responsiveness of users to push notifications, helping to guide future marketing strategies and campaign optimizations.

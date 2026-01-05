@@ -1,0 +1,411 @@
+###Table full name: META_KAGGLE.META_KAGGLE.FORUMTOPICS
+[
+    Score (Type: NUMBER; Sample values: ['28', '42', '217', '114', '61'])
+    FirstForumMessageId (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TotalMessages (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    LastForumMessageId (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ForumId (Type: NUMBER; Sample values: ['16860', '16860', '16860', '16860', '16860'])
+    Id (Type: NUMBER; Sample values: ['250718', '250354', '229617', '241702', '228138'])
+    TotalViews (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    LastCommentDate (Type: NUMBER; Sample values: ['1625377492000000', '1625218912000000', '1617153396000000', '1621965486000000', '1616509777000000'])
+    TotalReplies (Type: NUMBER; Sample values: ['1', '0', '0', '0', '0'])
+    CreationDate (Type: NUMBER; Sample values: ['1625377492000000', '1625218912000000', '1617153396000000', '1621965486000000', '1616509777000000'])
+    KernelId (Type: FLOAT; Sample values: ['nan', '18233971.0', '11887338.0', '5832124.0', '12613420.0'])
+    IsSticky (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.FORUMMESSAGEVOTES
+[
+    FromUserId (Type: NUMBER; Sample values: ['307512', '6632177', '697221', '514568', '929000'])
+    ForumMessageId (Type: NUMBER; Sample values: ['6', '28', '352', '546', '563'])
+    ToUserId (Type: NUMBER; Sample values: ['638', '368', '2246', '1828', '1231'])
+    Id (Type: NUMBER; Sample values: ['183321', '4402419', '133472', '431934', '177441'])
+    VoteDate (Type: DATE; Sample values: ['2017-04-06', '2024-07-16', '2016-08-26', '2018-06-30', '2017-03-14'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.USERACHIEVEMENTS
+[
+    HighestRanking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    CurrentRanking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Points (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    Id (Type: NUMBER; Sample values: ['6426519', '6512273', '6419651', '6510824', '7122494'])
+    UserId (Type: NUMBER; Sample values: ['930969', '960263', '928677', '959735', '1159614'])
+    Tier (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    TotalGold (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    TotalSilver (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    TotalBronze (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    AchievementType (Type: TEXT; Sample values: ['Competitions', 'Competitions', 'Competitions', 'Competitions', 'Competitions'])
+    TierAchievementDate (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.FORUMMESSAGES
+[
+    PostUserId (Type: NUMBER; Sample values: ['8860864', '113660', '11189444', '5757223', '11886643'])
+    Message (Type: TEXT; Sample values: ['<p>You can contact me via LinkedIn. <a href="https://www.linkedin.com/in/luuisotorres/" target="_blank">https://www.linkedin.com/in/luuisotorres/</a></p>', '<p>it seems that this paper figures out how to do 1dconv<br>\n<a href="https://www.researchgate.net/publication/343599175_Real-Time_Sign_Language_Detection_using_Human_Pose_Estimation" target="_blank">https://www.researchgate.net/publication/343599175_Real-Time_Sign_Language_Detection_using_Human_Pose_Estimation</a></p>\n<ul>\n<li>keep the NaN values </li>\n<li>perform 1dconv</li>\n<li>if conv ouput contains NaN, set to zero</li>\n</ul>', '<p><strong><em>Thank you so much! Will surely look into it!</em></strong> <a href="https://www.kaggle.com/darshan77879" target="_blank">@darshan77879</a> 🤩</p>', '<p>important information 👍</p>', '<p>Hi <a href="https://www.kaggle.com/javohirtoshqorgonov" target="_blank">@javohirtoshqorgonov</a> and <a href="https://www.kaggle.com/jodiaarnold" target="_blank">@jodiaarnold</a>, I also like python very much.</p>\n<p>When I got into data science, I had to chose which language to code in and after some research I chose Python.</p>\n<p>I had no coding experience, and preferred Python due to :</p>\n<ul>\n<li>It looking like relatively readable language,</li>\n<li>Its versatility : I like that it can be used beyond DA/DS also, like for machine learning, webscraping, but also coding small programs easily etc,</li>\n<li>Very widely documented, a lot of libraries available, a big community for support,…</li>\n</ul>'])
+    ForumTopicId (Type: NUMBER; Sample values: ['390539', '393128', '376603', '383718', '383248'])
+    Medal (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Id (Type: NUMBER; Sample values: ['2178559', '2176448', '2131946', '2135159', '2127784'])
+    ReplyToForumMessageId (Type: FLOAT; Sample values: ['2178321.0', '2176034.0', '2130319.0', '2129733.0', '2127570.0'])
+    MedalAwardDate (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    PostDate (Type: TEXT; Sample values: ['03/12/2023 14:49:20', '03/10/2023 16:55:10', '02/06/2023 13:53:44', '02/08/2023 13:42:41', '02/03/2023 06:39:33'])
+    RawMarkdown (Type: TEXT; Sample values: ['You can contact me via LinkedIn. https://www.linkedin.com/in/luuisotorres/', 'it seems that this paper figures out how to do 1dconv\nhttps://www.researchgate.net/publication/343599175_Real-Time_Sign_Language_Detection_using_Human_Pose_Estimation\n\n- keep the NaN values \n- perform 1dconv\n- if conv ouput contains NaN, set to zero', '***Thank you so much! Will surely look into it!*** @darshan77879 🤩', 'important information 👍', 'Hi @javohirtoshqorgonov and @jodiaarnold, I also like python very much.\n\nWhen I got into data science, I had to chose which language to code in and after some research I chose Python.\n\nI had no coding experience, and preferred Python due to :\n- It looking like relatively readable language,\n- Its versatility : I like that it can be used beyond DA/DS also, like for machine learning, webscraping, but also coding small programs easily etc,\n- Very widely documented, a lot of libraries available, a big community for support,...'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.COMPETITIONS
+[
+    UserRankMultiplier (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    ForumId (Type: NUMBER; Sample values: ['923', '1797', '6106', '3080', '7130'])
+    NumScoredSubmissions (Type: NUMBER; Sample values: ['2', '3', '500', '2', '40'])
+    LeaderboardPercentage (Type: NUMBER; Sample values: ['30', '50', '50', '50', '50'])
+    ScoreTruncationNumDecimals (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    EvaluationAlgorithmName (Type: TEXT; Sample values: ['Root Mean Squared Error', 'Root Mean Squared Error', 'Area Under Receiver Operating Characteristic Curve', 'Area Under Receiver Operating Characteristic Curve', 'Area Under Receiver Operating Characteristic Curve'])
+    TotalSubmissions (Type: NUMBER; Sample values: ['117', '2602', '693', '42', '251'])
+    Title (Type: TEXT; Sample values: ['ITMO year2012 ML RecSys (track 1)', 'Swimming Pool Visitor Forecasting', 'SPRLNaiveBayesFAST', 'Late Arrival of Flights', 'Random Forests Competition'])
+    EvaluationAlgorithmAbbreviation (Type: TEXT; Sample values: ['RMSE', 'RMSE', 'AUC', 'AUC', 'AUC'])
+    EvaluationAlgorithmDescription (Type: TEXT; Sample values: ['Square root of the average of the squared errors.', 'Square root of the average of the squared errors.', 'Measures discrimination. Calculates how well an algorithm separates true positives from false positives. Overall good metric for classification problems. Has range [0.5, 1.0]', 'Measures discrimination. Calculates how well an algorithm separates true positives from false positives. Overall good metric for classification problems. Has range [0.5, 1.0]', 'Measures discrimination. Calculates how well an algorithm separates true positives from false positives. Overall good metric for classification problems. Has range [0.5, 1.0]'])
+    Slug (Type: TEXT; Sample values: ['itmo-year2012-ml-recsys-track-1', 'swimming-pool-visitor-forecasting', 'sprlnaivebayesfast', 'late-arrival-of-flights', 'random-forests-competition'])
+    NumPrizes (Type: NUMBER; Sample values: ['1', '1', '1', '1', '0'])
+    ModelSubmissionDeadlineDate (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Id (Type: NUMBER; Sample values: ['4758', '5686', '7100', '6443', '7318'])
+    TotalTeams (Type: NUMBER; Sample values: ['14', '28', '24', '4', '11'])
+    EvaluationAlgorithmIsMax (Type: BOOLEAN; Sample values: ['False', 'False', 'True', 'True', 'True'])
+    RewardQuantity (Type: FLOAT; Sample values: ['0.0', '0.0', 'nan', '0.0', '0.0'])
+    FinalLeaderboardHasBeenVerified (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    HasLeaderboard (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    TotalCompetitors (Type: NUMBER; Sample values: ['19', '43', '24', '4', '11'])
+    HostName (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ValidationSetValue (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    CompetitionTypeId (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    ValidationSetName (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    OrganizationId (Type: FLOAT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TeamModelDeadlineDate (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    EnableSubmissionModelAttachments (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    HostSegmentTitle (Type: TEXT; Sample values: ['Community', 'Community', 'Community', 'Community', 'Community'])
+    TeamMergerDeadlineDate (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    EnableSubmissionModelHashes (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    EnabledDate (Type: NUMBER; Sample values: ['1447716414000000', '1477586443000000', '1503957354000000', '1491572280000000', '1506745154000000'])
+    EnableTeamModels (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    DeadlineDate (Type: NUMBER; Sample values: ['1451606340000000', '1499471940000000', '1513382340000000', '1492387140000000', '1507089540000000'])
+    Subtitle (Type: TEXT; Sample values: ['Задача для студентов 4-го курса КТ по рекомендательным системам в рамках курса по машинному обучению. Track 1', 'Predict the number of daily visitors of Nettebad Osnabrück', "Assignment 1.  Solve using naive Bayes'", 'Which flights will be late? Find this out!', '.'])
+    RewardType (Type: TEXT; Sample values: ['Knowledge', 'Knowledge', 'Knowledge', 'Knowledge', 'None'])
+    HasKernels (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    MaxTeamSize (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    MaxDailySubmissions (Type: NUMBER; Sample values: ['1440', '250', '500', '30', '40'])
+    ProhibitNewEntrantsDeadlineDate (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    OnlyAllowKernelSubmissions (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    BanTeamMergers (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    CanQualifyTiers (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.USERS
+[
+    PerformanceTier (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    UserName (Type: TEXT; Sample values: ['aashu154581', 'adamwyeth', 'lolo1995s', 'doncolio', 'pthamie'])
+    Id (Type: NUMBER; Sample values: ['154581', '277324', '852854', '853107', '853091'])
+    DisplayName (Type: TEXT; Sample values: ['Aashu', 'Adam Wyeth', 'Lolo', 'Festus Adeboye', 'pthamie'])
+    Country (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    RegisterDate (Type: TEXT; Sample values: ['01/01/2014', '01/01/2015', '01/01/2017', '01/01/2017', '01/01/2017'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.FORUMS
+[
+    Title (Type: TEXT; Sample values: ['Models', 'Notebooks', 'Advanced SQL', 'Data Cleaning', 'Dataset Tasks'])
+    Id (Type: NUMBER; Sample values: ['2578766', '16860', '1462513', '1462517', '573890'])
+    ParentForumId (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASETS
+[
+    ForumId (Type: NUMBER; Sample values: ['66990', '67000', '67025', '67040', '67095'])
+    TotalVotes (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    CreatorUserId (Type: NUMBER; Sample values: ['2311653', '2311653', '2311653', '2311653', '2312500'])
+    Id (Type: NUMBER; Sample values: ['58151', '58161', '58185', '58199', '58252'])
+    OwnerUserId (Type: NUMBER; Sample values: ['2311653', '2311653', '2311653', '2311653', '2312500'])
+    CurrentDatasourceVersionId (Type: NUMBER; Sample values: ['123254', '123281', '123332', '123357', '123463'])
+    OwnerOrganizationId (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    CurrentDatasetVersionId (Type: NUMBER; Sample values: ['112840', '112865', '112907', '112931', '113034'])
+    Type (Type: TEXT; Sample values: ['Dataset', 'Dataset', 'Dataset', 'Dataset', 'Dataset'])
+    CreationDate (Type: NUMBER; Sample values: ['1538462902000000', '1538464192000000', '1538468032000000', '1538469809000000', '1538480351000000'])
+    LastActivityDate (Type: DATE; Sample values: ['2018-10-02', '2018-10-02', '2018-10-02', '2018-10-02', '2018-10-02'])
+    TotalViews (Type: NUMBER; Sample values: ['132', '10', '13', '314', '63'])
+    TotalKernels (Type: NUMBER; Sample values: ['0', '0', '1', '0', '0'])
+    TotalDownloads (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELVOTES
+[
+    UserId (Type: NUMBER; Sample values: ['6437951', '7611249', '5890725', '10007967', '8560689'])
+    Id (Type: NUMBER; Sample values: ['3147639', '3499202', '3676963', '3570039', '3569330'])
+    KernelVersionId (Type: NUMBER; Sample values: ['83046050', '83046050', '83046050', '83046050', '83046050'])
+    VoteDate (Type: DATE; Sample values: ['2021-12-23', '2022-04-06', '2022-06-03', '2022-04-28', '2022-04-28'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.SUBMISSIONS
+[
+    ScoreDate (Type: DATE; Sample values: ['2016-02-16', '2016-02-16', '2016-02-16', '2016-02-16', '2016-02-16'])
+    SubmittedUserId (Type: NUMBER; Sample values: ['441360', '22969', '137177', '460599', '191861'])
+    TeamId (Type: NUMBER; Sample values: ['270557', '266628', '277085', '265697', '272837'])
+    Id (Type: NUMBER; Sample values: ['2575661', '2574743', '2576136', '2576081', '2577187'])
+    PublicScoreFullPrecision (Type: FLOAT; Sample values: ['0.4713052641725747', '0.4761521119797183', '0.5169891895550529', '0.5110518882832594', '0.46151804109644645'])
+    SourceKernelVersionId (Type: TEXT; Sample values: ['', '', '', '', '161290'])
+    IsAfterDeadline (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    SubmissionDate (Type: DATE; Sample values: ['2016-02-16', '2016-02-16', '2016-02-16', '2016-02-16', '2016-02-16'])
+    PublicScoreLeaderboardDisplay (Type: FLOAT; Sample values: ['0.4713', '0.47615', '0.51698', '0.51105', '0.46151'])
+    PrivateScoreLeaderboardDisplay (Type: FLOAT; Sample values: ['0.47029', '0.47544', '0.51586', '0.51019', '0.46024'])
+    PrivateScoreFullPrecision (Type: FLOAT; Sample values: ['0.47029765275103375', '0.4754497853556987', '0.5158655121170114', '0.5101954265336581', '0.4602417308754851'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELS
+[
+    ForumTopicId (Type: NUMBER; Sample values: ['nan', '464880.0', 'nan', 'nan', 'nan'])
+    AuthorUserId (Type: NUMBER; Sample values: ['17582017', '17650091', '17915674', '12749163', '13608749'])
+    TotalVotes (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    TotalComments (Type: NUMBER; Sample values: ['0', '1', '0', '0', '0'])
+    Medal (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Id (Type: NUMBER; Sample values: ['46978346', '46979607', '46980103', '46981995', '46982846'])
+    FirstKernelVersionId (Type: NUMBER; Sample values: ['152701563', '152705157', '152706531', '152711750', '152714161'])
+    ForkParentKernelVersionId (Type: NUMBER; Sample values: ['nan', '152550707.0', 'nan', '152693168.0', 'nan'])
+    CurrentKernelVersionId (Type: NUMBER; Sample values: ['nan', '152712152.0', '152949918.0', '153703103.0', '152714618.0'])
+    MedalAwardDate (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    CreationDate (Type: NUMBER; Sample values: ['1701170742000000', '1701172382000000', '1701172993000000', '1701175249000000', '1701176272000000'])
+    MadePublicDate (Type: DATE; Sample values: ['2023-11-28', '2023-11-28', '2023-11-28', '2023-11-28', '2023-11-28'])
+    TotalViews (Type: NUMBER; Sample values: ['50', '148', '121', '316', '75'])
+    CurrentUrlSlug (Type: TEXT; Sample values: ['notebook209f8fec22', 'countvectorizer-multinomialnb', 'cam-capture', 'prisons-in-hungary', 'my-notebook'])
+    IsProjectLanguageTemplate (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    EvaluationDate (Type: DATE; Sample values: ['2023-12-30', '2023-11-28', '2023-11-30', '2023-12-05', '2023-11-28'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.TEAMMEMBERSHIPS
+[
+    UserId (Type: NUMBER; Sample values: ['10466', '8263', '860462', '2505', '659634'])
+    Id (Type: NUMBER; Sample values: ['18940', '19443', '889883', '19205', '1178361'])
+    TeamId (Type: NUMBER; Sample values: ['4541', '4978', '855573', '4772', '917458'])
+    RequestDate (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASETTASKS
+[
+    ForumId (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    TotalVotes (Type: NUMBER; Sample values: ['193', '14', '21', '16', '27'])
+    DatasetId (Type: NUMBER; Sample values: ['511638', '688051', '311962', '501019', '134715'])
+    OwnerUserId (Type: NUMBER; Sample values: ['2889731', '5212675', '1952004', '1952004', '3630854'])
+    Id (Type: NUMBER; Sample values: ['462', '1026', '164', '433', '588'])
+    Description (Type: TEXT; Sample values: ['## Task Details\nCan we predict the possibility of a booking for a hotel based on the previous_cancellation as the target?\n\n## Expected Submission\nTwo columns --&gt; Hotel Name and Booking_Possibility (0 or 1)', '## Task Details\nWe are sharing the latest BCG Atlas data and various texts related to BCG vaccine policies around the world. The goal of the task is to try to **improve and to extend the existing BCG World Atlas data** and to get a fuller picture of the administration of the vaccine. All data that is collected during this task will support the work of the BCG Atlas team, and it will also help with the analysis of the second task of the hackathon. \nThe current BCG data is stored in  file.  The task is to try to find snippets that answer some of these questions. All the questions are listed as columns. Specifically, we would like to get as many accurate answers as possible to the following questions, for as many countries or regions as possible:\n- Which BCG strain over the years has been used in different countries since the creation of the vaccine and during what time periods?\n- Who are or were the target group of the vaccine, and when and at what age were they vaccinated?\n- Have revacc...(truncated)', "## Task Details\nI'm hungry and I've got some left-over, but currently unknown ingredients, (ex: 'winter squash', 'mexican seasoning', 'mixed spice', 'honey', 'butter', 'olive oil', 'salt') in my fridge. I want to find the recipe that use the most (if not all) the ingredients in my fridge with fewest additional ingredients to buy, with the least amount of effort in time to prep/cook.\n\n## Expected Submission\nA kernel that takes an array of arrays of ingredients in my fridge and outputs the recommended dish information.\nEach inner array is the ingredients that I have for one dish.\nExpected output is an array of arrays of [recipeId,  recipeName, prepTimeInMinutes, numberOfFridgeItemUsed, numberOfAdditionalItemsNeeded]:\n\nExample input:\n```\ninput = [\n ['winter squash', 'mexican seasoning', 'mixed spice', 'honey', 'butter', 'olive oil', 'salt'], \n['low sodium chicken broth', 'tomatoes', 'zucchini', 'potatoes', 'wax beans', 'green beans', 'carrots'], \n['spinach',  'garlic powder', 'soft breadc...(truncated)", "## Task Details\nIt might seem to be intuitive that bikeshare users would travel in the reverse direction in the evening than in the morning. But how true is that? If that's the case, would it reduce the value of convenience of bikeshares being available everywhere, and should they just get their own bikes? Do we also need a crew to pick up and restore all the bikes to initial distributions across the city before the next morning?\n\n## Expected Submission\n1. Find out what percentage of bikes are returned to its initial location?\n2. How many bikeshare trips usually visit more than just start/end points, but visited some other points before the end of the day?", 'Use various Algorithms to increase the performance of the prediction of the sentiment expressed in the review.'])
+    Title (Type: TEXT; Sample values: ['Can we predict the possibility of a booking?', 'Extend the BCG World Atlas Database for BCG Vaccine Policies and Practices', 'Hungry with my fridge!', 'Do bikeshare go round trip or one way?', 'Sentiment Analysis'])
+    CreationDate (Type: NUMBER; Sample values: ['1582109315000000', '1591047416000000', '1575918022000000', '1580852341000000', '1584292213000000'])
+    Deadline (Type: NUMBER; Sample values: ['nan', '1600646400000000.0', '1580428800000000.0', 'nan', '1609372800000000.0'])
+    Subtitle (Type: TEXT; Sample values: ['None', 'Prize Pool $6000; Submission deadline - July 25', 'Kernel to find the recipe that use the items in my fridge', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.USERFOLLOWERS
+[
+    Id (Type: NUMBER; Sample values: ['412502', '851010', '851009', '448467', '31190'])
+    UserId (Type: NUMBER; Sample values: ['368', '421', '421', '440', '650'])
+    FollowingUserId (Type: NUMBER; Sample values: ['1302389', '727004', '1053193', '473824', '1221368'])
+    CreationDate (Type: DATE; Sample values: ['2020-03-08', '2021-08-18', '2021-08-18', '2020-04-27', '2017-10-23'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASETVOTES
+[
+    UserId (Type: NUMBER; Sample values: ['484081', '188410', '118065', '400808', '262803'])
+    Id (Type: NUMBER; Sample values: ['400', '359', '341', '247', '2748'])
+    DatasetVersionId (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+    VoteDate (Type: DATE; Sample values: ['2016-01-28', '2016-01-24', '2016-01-23', '2016-01-17', '2016-05-03'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELVERSIONS
+[
+    TotalVotes (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    AuthorUserId (Type: NUMBER; Sample values: ['11500118', '15669490', '378133', '8444425', '6045667'])
+    ScriptLanguageId (Type: NUMBER; Sample values: ['9', '9', '9', '9', '9'])
+    ParentScriptVersionId (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    ScriptId (Type: NUMBER; Sample values: ['30636649', '50117187', '265878', '21902001', '60937253'])
+    Id (Type: NUMBER; Sample values: ['107355719', '161218273', '1202703', '79775492', '185890301'])
+    Title (Type: TEXT; Sample values: ['Titanic Problem', 'notebookc1fc5ad94b', 'Forecasting Diabetes Mellitus', 'Assignment 3', 'HW8-anomaly-detection'])
+    CreationDate (Type: NUMBER; Sample values: ['1665069639000000', '1706733414000000', '1496235682000000', '1636958055000000', '1719567230000000'])
+    IsChange (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    LinesInsertedFromFork (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '207.0'])
+    LinesChangedFromFork (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '0.0'])
+    LinesChangedFromPrevious (Type: FLOAT; Sample values: ['0.0', '0.0', '14.0', '0.0', '0.0'])
+    VersionNumber (Type: FLOAT; Sample values: ['86.0', '7.0', '10.0', '16.0', '3.0'])
+    LinesInsertedFromPrevious (Type: FLOAT; Sample values: ['4.0', '5.0', '5.0', '6.0', '7.0'])
+    LinesDeletedFromFork (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '76.0'])
+    LinesUnchangedFromPrevious (Type: FLOAT; Sample values: ['427.0', '426.0', '499.0', '425.0', '424.0'])
+    LinesUnchangedFromFork (Type: FLOAT; Sample values: ['nan', 'nan', 'nan', 'nan', '224.0'])
+    EvaluationDate (Type: DATE; Sample values: ['2022-10-06', '2024-01-31', '2017-05-31', '2021-11-15', '2024-06-28'])
+    TotalLines (Type: FLOAT; Sample values: ['431.0', '431.0', '431.0', '431.0', '431.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.COMPETITIONTAGS
+[
+    Id (Type: NUMBER; Sample values: ['482', '315', '300', '304', '298'])
+    TagId (Type: NUMBER; Sample values: ['12038', '14101', '14101', '14101', '14101'])
+    CompetitionId (Type: NUMBER; Sample values: ['13242', '4032', '4195', '4272', '4280'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.TAGS
+[
+    CompetitionCount (Type: NUMBER; Sample values: ['20', '14', '10', '8', '56'])
+    Name (Type: TEXT; Sample values: ['basketball', 'healthcare', 'earth and nature', 'weather and climate', 'housing'])
+    ParentTagId (Type: NUMBER; Sample values: ['4141', '11111', '16637', '7302', '11122'])
+    Id (Type: NUMBER; Sample values: ['2606', '4202', '7000', '7408', '8317'])
+    Description (Type: TEXT; Sample values: ["Basketball is one of the world's most popular and widely viewed sports. Analyze Kobe Bryant's shot selections and peruse our annual March Mania competitions.", 'AI in healthcare is a growing interest. One of the major problems is simply converting research into an application. Should be easy, right?', '', 'Weather datasets and kernels come in all wind speeds and directions. You have weather data about hurricanes and other inclement phenomena, hourly readings, and general weather for various cities.', 'Explore datasets, kernels, and competitions related to housing markets in this tag.'])
+    Slug (Type: TEXT; Sample values: ['basketball', 'healthcare', 'natural-and-physical-sciences', 'weather', 'housing'])
+    FullPath (Type: TEXT; Sample values: ['subject > health and fitness > exercise > sports > basketball', 'subject > health and fitness > health > healthcare', 'subject > earth and nature', 'subject > earth and nature > environment > weather and climate', 'subject > people and society > business > real estate > housing'])
+    KernelCount (Type: NUMBER; Sample values: ['662', '1654', '336', '565', '890'])
+    DatasetCount (Type: NUMBER; Sample values: ['1870', '1648', '47109', '1170', '721'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.USERORGANIZATIONS
+[
+    UserId (Type: NUMBER; Sample values: ['724814', '346825', '755155', '56073', '331256'])
+    Id (Type: NUMBER; Sample values: ['33', '46', '84', '149', '250'])
+    OrganizationId (Type: NUMBER; Sample values: ['5', '3', '41', '66', '114'])
+    JoinDate (Type: DATE; Sample values: ['2016-10-04', '2016-10-17', '2016-10-20', '2016-10-20', '2016-10-24'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASOURCES
+[
+    CreatorUserId (Type: NUMBER; Sample values: ['3867392', '4064256', '4064256', '4064256', '4064256'])
+    CurrentDatasourceVersionId (Type: NUMBER; Sample values: ['925571', '6399262', '7076875', '7977563', '7977567'])
+    Id (Type: NUMBER; Sample values: ['498859', '3683191', '4068752', '4684371', '4684374'])
+    Type (Type: TEXT; Sample values: ['Dataset', 'Dataset', 'Dataset', 'Dataset', 'Dataset'])
+    CreationDate (Type: NUMBER; Sample values: ['1579359348000000', '1692280786000000', '1700233077000000', '1710735660000000', '1710735708000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELLANGUAGES
+[
+    Id (Type: NUMBER; Sample values: ['1', '12', '13', '16', '8'])
+    Name (Type: TEXT; Sample values: ['R', 'R Notebook HTML', 'R Notebook', 'RMarkdown - Interactive', 'IPython Notebook'])
+    DisplayName (Type: TEXT; Sample values: ['R', 'R', 'R', 'R', 'Python'])
+    IsNotebook (Type: BOOLEAN; Sample values: ['False', 'False', 'True', 'True', 'True'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASETTAGS
+[
+    Id (Type: NUMBER; Sample values: ['445', '447', '520', '699', '926'])
+    TagId (Type: NUMBER; Sample values: ['2304', '2304', '2304', '2304', '2304'])
+    DatasetId (Type: NUMBER; Sample values: ['629', '655', '649', '749', '290'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.DATASETTASKSUBMISSIONS
+[
+    SubmittedUserId (Type: NUMBER; Sample values: ['4348228', '5986902', '5521499', '2050099', '3623292'])
+    Id (Type: NUMBER; Sample values: ['4719', '4743', '4761', '4813', '4827'])
+    CreationDate (Type: NUMBER; Sample values: ['1602941845000000', '1603110187000000', '1603290215000000', '1603636907000000', '1603736617000000'])
+    DatasetId (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    DatasetTaskId (Type: NUMBER; Sample values: ['2304', '2304', '2304', '2304', '2304'])
+    AcceptedDate (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    KernelId (Type: NUMBER; Sample values: ['12336275', '12373911', '12304472', '12484884', '12512601'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELTAGS
+[
+    Id (Type: NUMBER; Sample values: ['5867', '14387', '1008', '4312', '18455'])
+    TagId (Type: NUMBER; Sample values: ['2304', '2304', '2304', '2304', '2304'])
+    KernelId (Type: NUMBER; Sample values: ['90782', '160689', '358835', '435514', '744580'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.EPISODES
+[
+    Id (Type: NUMBER; Sample values: ['54280896', '54215929', '54348494', '54556515', '54667942'])
+    Type (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    CompetitionId (Type: NUMBER; Sample values: ['60154', '60154', '60154', '60154', '60154'])
+    CreateTime (Type: NUMBER; Sample values: ['1711149530000000', '1710568729000000', '1711772827000000', '1713772468000000', '1714797902000000'])
+    EndTime (Type: NUMBER; Sample values: ['1711149568000000', '1710568777000000', '1711772865000000', '1713772515000000', '1714797992000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELVERSIONCOMPETITIONSOURCES
+[
+    Id (Type: NUMBER; Sample values: ['6280', '601723', '88411', '974621', '950711'])
+    KernelVersionId (Type: NUMBER; Sample values: ['4511', '555', '841', '610', '773'])
+    SourceCompetitionId (Type: NUMBER; Sample values: ['3948', '3948', '3948', '3948', '3948'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELVERSIONDATASETSOURCES
+[
+    Id (Type: NUMBER; Sample values: ['108078246', '145502949', '146492371', '266698769', '252654'])
+    KernelVersionId (Type: NUMBER; Sample values: ['81536237', '104735677', '105348317', '186690255', '376521'])
+    SourceDatasetVersionId (Type: NUMBER; Sample values: ['2883584', '4128768', '4128768', '8781824', '256'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.KERNELVERSIONKERNELSOURCES
+[
+    Id (Type: NUMBER; Sample values: ['1069706', '1071186', '1077710', '1078087', '1082279'])
+    KernelVersionId (Type: NUMBER; Sample values: ['6490319', '6492453', '6513221', '6513555', '6525168'])
+    SourceKernelVersionId (Type: NUMBER; Sample values: ['6488320', '6488320', '6488320', '6488320', '6488320'])
+]
+
+--------------------------------------------------
+
+###Table full name: META_KAGGLE.META_KAGGLE.EPISODEAGENTS
+[
+    Id (Type: NUMBER; Sample values: ['81336101', '81282735', '81400825', '81458769', '81400895'])
+    EpisodeId (Type: NUMBER; Sample values: ['33120822', '33094139', '33153184', '33182156', '33153219'])
+    SubmissionId (Type: NUMBER; Sample values: ['22809035', '24127816', '22599340', '24115042', '23177330'])
+    Index (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    State (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    UpdatedScore (Type: FLOAT; Sample values: ['584.479734260055', '1262.803283593908', '569.9552747465942', '1325.9342154604803', '1169.175078766726'])
+    InitialScore (Type: FLOAT; Sample values: ['580.0042657891344', '1272.9005023034138', '566.3995879006497', '1320.6288982194073', '1173.6191450661524'])
+    Reward (Type: FLOAT; Sample values: ['90009.0', '90009.0', '90009.0', '90009.0', '90009.0'])
+    InitialConfidence (Type: FLOAT; Sample values: ['35.0', '62.12528253738546', '35.0', '36.79200561544236', '35.0'])
+    UpdatedConfidence (Type: FLOAT; Sample values: ['35.0', '60.78962034206572', '35.0', '36.45203209769453', '35.0'])
+]
+
+--------------------------------------------------
+

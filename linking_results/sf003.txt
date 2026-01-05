@@ -1,0 +1,347 @@
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_ECONOMIC_CENSUS_TIMESERIES
+[
+    VARIABLE (Type: TEXT; Sample values: ['ECTGE100_5324_2017_00_00', 'ESTAB_S_5312_2017_00_00', 'CSTCNT_722513_2012', 'EMP_81_2017_00_Y', 'MSCRSLTT_722310_2012']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    GEO_ID (Type: TEXT; Sample values: ['geoId/C37740', 'geoId/4170200', 'geoId/1236550', 'geoId/1711007', 'geoId/3479040']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Percent', 'USD', 'Count', 'USD']; Description: Unit of measurement for the reported value.)
+    VALUE (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '24.0', '0.0']; Description: Value reported for the variable.)
+    DATE (Type: TEXT; Sample values: ['2017-12-31', '2017-12-31', '2012-12-31', '2017-12-31', '2012-12-31']; Description: Date associated with the value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Establishments with 100 employees or more | Commercial and industrial machinery and equipment rental and leasing (NAICS 2017 code: 5324) | Type of Operation: All establishments | Tax Status: All establishments', 'Relative standard error of estimate of count of establishments | Offices of real estate agents and brokers (NAICS 2017 code: 5312) | Type of Operation: All establishments | Tax Status: All establishments', 'Cost of contract work | Limited-service restaurants (NAICS 2012 code: 722513)', 'Count of employees | Other services (except public administration) (NAICS 2017 code: 81) | Type of Operation: All establishments | Tax Status: Establishments exempt from federal income tax', 'Value of resales | Food service contractors (NAICS 2012 code: 722310)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.AMERICAN_COMMUNITY_SURVEY_ATTRIBUTES
+[
+    MEASUREMENT_PERIOD (Type: TEXT; Sample values: ['5YR', '1YR', '5YR', '5YR', '1YR']; Description: Data collection period for the variable (ex. 1YR or 5 YR).)
+    SERIES_LEVEL_2 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Second characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    CENSUS_SUBJECT (Type: TEXT; Sample values: ['Industry, Occupation, and Class of Worker', 'Industry, Occupation, and Class of Worker', 'Industry, Occupation, and Class of Worker', 'Industry, Occupation, and Class of Worker', 'Industry, Occupation, and Class of Worker']; Description: ACS high-level description for the subject/category of the variable.)
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations.)
+    SERIES_LEVEL_6 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Sixth characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    SERIES_LEVEL_5 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Fifth characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    VARIABLE (Type: TEXT; Sample values: ['B24122_267M_5YR_2018', 'B24122_238M_1YR_2018', 'B24122_238M_5YR_2018', 'B24122_147E_5YR_2018', 'B24122_287E_1YR_2018']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    SERIES_LEVEL_1 (Type: TEXT; Sample values: ['Detectives and criminal investigators', 'Dietetic technicians and ophthalmic medical technicians', 'Dietetic technicians and ophthalmic medical technicians', 'Directors, religious activities and education', 'Dishwashers']; Description: First characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    SERIES_LEVEL_4 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Fourth characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    RACE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Associated race with the population variable.)
+    SERIES_LEVEL_3 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Third characteristic that makes up a variable, specific to a series ID, helpful for comparison across variables within a series (if available).)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value.)
+    MEASURE (Type: TEXT; Sample values: ['Population', 'Population', 'Population', 'Population', 'Population']; Description: Quantifiable attribute; description of what is being recorded.)
+    SERIES_ID (Type: TEXT; Sample values: ['B24122', 'B24122', 'B24122', 'B24122', 'B24122']; Description: Unique ACS identifier for the subject of the ACS variable.)
+    MEASUREMENT_TYPE (Type: TEXT; Sample values: ['Margin of Error', 'Margin of Error', 'Margin of Error', 'Estimate', 'Estimate']; Description: Measurement classification of the variable (ex. estimate, margin of error).)
+    SERIES_TYPE (Type: TEXT; Sample values: ['Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over']; Description: ACS detailed description for the subject/category of the variable.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over: Population | Detectives and criminal investigators, 5yr Margin of Error (2018)', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over: Population | Dietetic technicians and ophthalmic medical technicians, 1yr Margin of Error (2018)', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over: Population | Dietetic technicians and ophthalmic medical technicians, 5yr Margin of Error (2018)', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over: Population | Directors, religious activities and education, 5yr Estimate (2018)', 'Detailed Occupation By Median Earnings In The Past 12 Months (In 2018 Inflation-Adjusted Dollars) For The Full-Time, Year-Round Civilian Employed Male Population 16 Years And Over: Population | Dishwashers, 1yr Estimate (2018)']; Description: Human-readable name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_ECONOMIC_CENSUS_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations.)
+    VARIABLE (Type: TEXT; Sample values: ['PRIDL_8111211_2012', 'CEXTOT_S_53229_2012', 'CSTRSL_54199_2012', 'RCPCNR_S_331529_2012', 'RPMCH_S_81291_2012']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    NAICS_CODE (Type: TEXT; Sample values: ['8111211', '53229', '54199', '331529', '81291']; Description: Industry classification according to North American Industry Classification System.)
+    UNIT (Type: TEXT; Sample values: ['USD', 'Percent', 'USD', 'Percent', 'Percent']; Description: Unit of measurement for the reported value.)
+    MEASURE (Type: TEXT; Sample values: ['Construction work', 'Capital expenditures', 'Resales', 'Construction work', 'Rental payments']; Description: Quantifiable attribute or subject; description of what is being recorded.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Value of construction work on privately owned projects | Paint or body repair (NAICS 2012 code: 8111211)', 'Relative standard error of estimate for total capital expenditures for buildings, structures, machinery, and equipment (new and used) | Other consumer goods rental (NAICS 2012 code: 53229)', 'Cost of resales | All other professional, scientific, and technical services (NAICS 2012 code: 54199)', 'Relative standard error of estimate of value of construction work for establishments not reporting inventories | Other nonferrous metal foundries (except die-casting) (NAICS 2012 code: 331529)', 'Relative standard error of rental payments for machinery and equipment | Pet care (except veterinary) services (NAICS 2012 code: 81291)']; Description: Human-readable unique name for the variable.)
+    TAX_STATUS (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Establishment's tax status (e.g., exempt from or subject to federal income tax).)
+    NAICS_DESCRIPTION (Type: TEXT; Sample values: ['Paint or body repair', 'Other consumer goods rental', 'All other professional, scientific, and technical services', 'Other nonferrous metal foundries (except die-casting)', 'Pet care (except veterinary) services']; Description: Description of Industry classification according to North American Industry Classification System.)
+    CREDIT_CARD_SERVICES_INCOME (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Specific source of credit card products or services income category (e.g., from cardholder fees, interest, merchant fees).)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.AMERICAN_COMMUNITY_SURVEY_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['zip/54137', 'zip/57540', 'zip/60955', 'zip/40503', 'zip/48050']; Description: A unique identifier for a place joinable to the GEOGRAPHY_INDEX table.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value.)
+    VARIABLE (Type: TEXT; Sample values: ['B25091_008E_5YR', 'B25091_008E_5YR', 'B25091_008E_5YR', 'B25014H_002E_5YR', 'B25068_037M_5YR']; Description: A unique identifier for a variable joinable to the timeseries table.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Mortgage Status By Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months: Population | Housing units with a mortgage | 30.0 to 34.9 percent, 5yr Estimate', 'Mortgage Status By Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months: Population | Housing units with a mortgage | 30.0 to 34.9 percent, 5yr Estimate', 'Mortgage Status By Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months: Population | Housing units with a mortgage | 30.0 to 34.9 percent, 5yr Estimate', 'Occupants Per Room ( Householder): Population | 1.00 or less occupants per room | White Alone, Not Hispanic or Latino, 5yr Estimate', 'Bedrooms By Gross Rent: Population | 3 or more bedrooms | No cash rent, 5yr Margin of Error']; Description: Human-readable name for the variable.)
+    DATE (Type: DATE; Sample values: ['2016-12-31', '2016-12-31', '2016-12-31', '2021-12-31', '2013-12-31']; Description: Date associated with the value.)
+    VALUE (Type: VARIANT; Sample values: ['21.0', '0.0', '17.0', '10702.0', '45.0']; Description: Value reported for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.GOVERNMENT_CONTRACT_INDEX
+[
+    PERFORMANCE_ZIPCODE (Type: TEXT; Sample values: ['90245', 'None', 'None', 'None', 'None']; Description: The zipcode location where the contract will be fulfilled)
+    PERFORMANCE_GEO_ID_ZIP (Type: TEXT; Sample values: ['zip/90245', 'None', 'None', 'None', 'None']; Description: The unique identifier for the contract fulfillment zipcode that is joinable to the GEOGRAPHY_INDEX)
+    PERFORMANCE_GEO_ID_COUNTRY (Type: TEXT; Sample values: ['country/USA', 'None', 'None', 'None', 'country/ZMB']; Description: The unique identifier for the contract fulfillment country that is joinable to the GEOGRAPHY_INDEX)
+    CONTRACT_SOLICITATION_ID (Type: TEXT; Sample values: ['10-65', 'FA8601-06-B-0003', 'W911RX-13-t-0148-01', 'FA3300-07-R-0027', 'RFI72061122C000LCD']; Description: Unique solicitation number provided by the System for Award Management (sam.gov) for a specific contract.  Joinable to the GOVERNMENT_CONTRACT_AWARD_INDEX table.)
+    PERFORMANCE_GEO_ID_CITY (Type: TEXT; Sample values: ['geoId/0622412', 'None', 'None', 'None', 'None']; Description: The unique identifier for the contract fulfillment city that is joinable to the GEOGRAPHY_INDEX)
+    NAICS_CODE (Type: NUMBER; Sample values: ['334220.0', '221330.0', 'nan', '511130.0', '541990.0']; Description: The North American Industry Classification System code that best classifies the goods or services in the contract opportunity)
+    PERFORMANCE_GEO_ID_STATE (Type: TEXT; Sample values: ['geoId/06', 'None', 'None', 'None', 'None']; Description: The unique identifier for the contract fulfillment state that is joinable to the GEOGRAPHY_INDEX)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.INTERNATIONAL_TRADE_ADMINISTRATION_EXPORT_ASSISTANCE_CENTERS_INDEX
+[
+    ASSOCIATED_GEO_ID_ZIPS (Type: ARRAY; Sample values: ['[\n  "zip/89412",\n  "zip/89413",\n  "zip/89414",\n  "zip/89415",\n  "zip/89418",\n  "zip/89419",\n  "zip/89420",\n  "zip/89421",\n  "zip/89422",\n  "zip/89423",\n  "zip/89424",\n  "zip/89425",\n  "zip/89426",\n  "zip/89427",\n  "zip/89428",\n  "zip/89429",\n  "zip/89430",\n  "zip/89431",\n  "zip/89432",\n  "zip/89433",\n  "zip/89434",\n  "zip/89435",\n  "zip/89436",\n  "zip/89438",\n  "zip/89439",\n  "zip/89440",\n  "zip/89442",\n  "zip/89444",\n  "zip/89445",\n  "zip/89446",\n  "zip/89447",\n  "zip/89448",\n  "zip/89449",\n  "zip/89450",\n  "zip/89451",\n  "zip/89452",\n  "zip/89460",\n  "zip/89496",\n  "zip/89501",\n  "zip/89502",\n  "zip/89503",\n  "zip/89504",\n  "zip/89505",\n  "zip/89506",\n  "zip/89507",\n  "zip/89509",\n  "zip/89510",\n  "zip/89511",\n  "zip/89512",\n  "zip/89513",\n  "zip/89515",\n  "zip/89520",\n  "zip/89521",\n  "zip/89523",\n  "zip/89533",\n  "zip/89555",\n  "zip/89557",\n  "zip/89570",\n  "zip/89595",\n  "zip/89599",\n  "zip/89701",\n  "zip/89702",\n  "zip/89703",\n  "zip/89704",\n  "zip/89705",\n  "zip/89706",\n  "zip/8...(truncated)', '[\n  "zip/75831",\n  "zip/75833",\n  "zip/75834",\n  "zip/75835",\n  "zip/75844",\n  "zip/75845",\n  "zip/75846",\n  "zip/75847",\n  "zip/75849",\n  "zip/75850",\n  "zip/75851",\n  "zip/75852",\n  "zip/75855",\n  "zip/75856",\n  "zip/75858",\n  "zip/75862",\n  "zip/75865",\n  "zip/75926",\n  "zip/75928",\n  "zip/75932",\n  "zip/75933",\n  "zip/75934",\n  "zip/75936",\n  "zip/75938",\n  "zip/75939",\n  "zip/75942",\n  "zip/75951",\n  "zip/75956",\n  "zip/75960",\n  "zip/75966",\n  "zip/75977",\n  "zip/75979",\n  "zip/75990",\n  "zip/77001",\n  "zip/77002",\n  "zip/77003",\n  "zip/77004",\n  "zip/77005",\n  "zip/77006",\n  "zip/77007",\n  "zip/77008",\n  "zip/77009",\n  "zip/77010",\n  "zip/77011",\n  "zip/77012",\n  "zip/77013",\n  "zip/77014",\n  "zip/77015",\n  "zip/77016",\n  "zip/77017",\n  "zip/77018",\n  "zip/77019",\n  "zip/77020",\n  "zip/77021",\n  "zip/77022",\n  "zip/77023",\n  "zip/77024",\n  "zip/77025",\n  "zip/77026",\n  "zip/77027",\n  "zip/77028",\n  "zip/77029",\n  "zip/77030",\n  "zip/77031",\n  "zip/77032",\n  "zip/77033",\n  "zip/7...(truncated)', '[\n  "zip/39813",\n  "zip/39815",\n  "zip/39817",\n  "zip/39818",\n  "zip/39819",\n  "zip/39823",\n  "zip/39824",\n  "zip/39825",\n  "zip/39826",\n  "zip/39827",\n  "zip/39828",\n  "zip/39829",\n  "zip/39832",\n  "zip/39834",\n  "zip/39836",\n  "zip/39837",\n  "zip/39840",\n  "zip/39841",\n  "zip/39842",\n  "zip/39845",\n  "zip/39846",\n  "zip/39851",\n  "zip/39852",\n  "zip/39854",\n  "zip/39859",\n  "zip/39861",\n  "zip/39862",\n  "zip/39866",\n  "zip/39867",\n  "zip/39870",\n  "zip/39877",\n  "zip/39885",\n  "zip/39886",\n  "zip/39897",\n  "zip/30138",\n  "zip/30187",\n  "zip/30401",\n  "zip/30411",\n  "zip/30412",\n  "zip/30413",\n  "zip/30414",\n  "zip/30415",\n  "zip/30417",\n  "zip/30420",\n  "zip/30421",\n  "zip/30423",\n  "zip/30424",\n  "zip/30425",\n  "zip/30426",\n  "zip/30427",\n  "zip/30428",\n  "zip/30429",\n  "zip/30434",\n  "zip/30436",\n  "zip/30438",\n  "zip/30439",\n  "zip/30441",\n  "zip/30442",\n  "zip/30445",\n  "zip/30446",\n  "zip/30447",\n  "zip/30448",\n  "zip/30449",\n  "zip/30450",\n  "zip/30451",\n  "zip/30452",\n  "zip/3...(truncated)', '[\n  "zip/25401",\n  "zip/25402",\n  "zip/25410",\n  "zip/25411",\n  "zip/25413",\n  "zip/25414",\n  "zip/25419",\n  "zip/25420",\n  "zip/25421",\n  "zip/25422",\n  "zip/25423",\n  "zip/25425",\n  "zip/25427",\n  "zip/25428",\n  "zip/25430",\n  "zip/25431",\n  "zip/25432",\n  "zip/25434",\n  "zip/25437",\n  "zip/25438",\n  "zip/25440",\n  "zip/25441",\n  "zip/25442",\n  "zip/25443",\n  "zip/25444",\n  "zip/25446",\n  "zip/26003",\n  "zip/26030",\n  "zip/26031",\n  "zip/26032",\n  "zip/26033",\n  "zip/26034",\n  "zip/26035",\n  "zip/26036",\n  "zip/26037",\n  "zip/26038",\n  "zip/26039",\n  "zip/26040",\n  "zip/26041",\n  "zip/26047",\n  "zip/26050",\n  "zip/26055",\n  "zip/26056",\n  "zip/26058",\n  "zip/26059",\n  "zip/26060",\n  "zip/26062",\n  "zip/26070",\n  "zip/26074",\n  "zip/26075",\n  "zip/26101",\n  "zip/26102",\n  "zip/26103",\n  "zip/26104",\n  "zip/26105",\n  "zip/26106",\n  "zip/26120",\n  "zip/26121",\n  "zip/26133",\n  "zip/26134",\n  "zip/26142",\n  "zip/26146",\n  "zip/26148",\n  "zip/26149",\n  "zip/26150",\n  "zip/26155",\n  "zip/2...(truncated)', '[\n  "zip/79821",\n  "zip/79835",\n  "zip/79836",\n  "zip/79838",\n  "zip/79849",\n  "zip/79853",\n  "zip/79901",\n  "zip/79902",\n  "zip/79903",\n  "zip/79904",\n  "zip/79905",\n  "zip/79906",\n  "zip/79907",\n  "zip/79908",\n  "zip/79910",\n  "zip/79911",\n  "zip/79912",\n  "zip/79913",\n  "zip/79914",\n  "zip/79915",\n  "zip/79916",\n  "zip/79917",\n  "zip/79918",\n  "zip/79920",\n  "zip/79922",\n  "zip/79923",\n  "zip/79924",\n  "zip/79925",\n  "zip/79926",\n  "zip/79927",\n  "zip/79928",\n  "zip/79929",\n  "zip/79930",\n  "zip/79931",\n  "zip/79932",\n  "zip/79934",\n  "zip/79935",\n  "zip/79936",\n  "zip/79937",\n  "zip/79938",\n  "zip/79940",\n  "zip/79941",\n  "zip/79942",\n  "zip/79943",\n  "zip/79944",\n  "zip/79945",\n  "zip/79946",\n  "zip/79947",\n  "zip/79948",\n  "zip/79949",\n  "zip/79950",\n  "zip/79951",\n  "zip/79952",\n  "zip/79953",\n  "zip/79954",\n  "zip/79955",\n  "zip/79958",\n  "zip/79960",\n  "zip/79961",\n  "zip/79968",\n  "zip/79976",\n  "zip/79978",\n  "zip/79980",\n  "zip/79990",\n  "zip/79995",\n  "zip/79996",\n  "zip/7...(truncated)']; Description: Array of zip codes that are associated with the ITA export assistance center, joinable to GEOGRAPHY_INDEX.)
+    INTERNATIONAL_TRADE_ADMINISTRATION_EXPORT_ASSISTANCE_CENTER_NAME (Type: TEXT; Sample values: ['Reno U.S. Export Assistance Center', 'Houston U.S. Export Assistance Center', 'Savannah U.S. Export Assistance Center', 'Wheeling U.S. Export Assistance Center', 'El Paso U.S. Export Assistance Center']; Description: Name of the ITA export assistance center.)
+    GEO_ID_COUNTRY (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: Unique geographic identifier for the country associated with the ITA export assistance center.)
+    INTERNATIONAL_TRADE_ADMINISTRATION_EXPORT_ASSISTANCE_CENTER_ID (Type: TEXT; Sample values: ['VW5pdGVkIFN0YXRlcy1SZW5v', 'VW5pdGVkIFN0YXRlcy1Ib3VzdG9u', 'VW5pdGVkIFN0YXRlcy1TYXZhbm5haA', 'VW5pdGVkIFN0YXRlcy1XaGVlbGluZw', 'VW5pdGVkIFN0YXRlcy1FbCBQYXNv']; Description: Unique identifier for each International Trade Administration (ITA) export assistance center.)
+    GEO_ID_STATE (Type: TEXT; Sample values: ['geoId/32', 'geoId/48', 'geoId/13', 'geoId/54', 'geoId/48']; Description: Unique geographic identifier for the state associated with the ITA export assistance center.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.CALENDAR_INDEX
+[
+    ANNUAL_PERIOD (Type: NUMBER; Sample values: ['2017', '2023', '2023', '2019', '2018']; Description: The year number related to the annual calendar for the period. It reflects the calendar year for calendar periods and the 4-5-4 retail year for retail periods.)
+    ORDINAL_POSITION_IN_ANNUAL_PERIOD (Type: NUMBER; Sample values: ['34', '24', '177', '313', '313']; Description: The ordinal position of the period within the annual period.)
+    CALENDAR_NAME (Type: TEXT; Sample values: ['Day', 'Week - Monday Start', 'Day', 'Day', 'Day']; Description: Human-readable name for the type of calendar.)
+    CALENDAR_ID (Type: TEXT; Sample values: ['day', 'week_monday_start', 'day', 'day', 'day']; Description: Unique ID denoting a type of calendar (e.g., Month, Quarter, Retail 4-5-4 Month).)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.HOUSING_URBAN_DEVELOPMENT_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations.)
+    VARIABLE (Type: TEXT; Sample values: ['sheltered_safe_haven_sh_homeless_individuals_hispaniclatinoax', 'sheltered_safe_haven_sh_homeless_individuals_male', 'sheltered_total_homeless', 'sheltered_safe_haven_sh_homeless_age_35_to_44', 'sheltered_safe_haven_sh_homeless_american_indian_alaska_native_or_indigenous']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Sheltered Safe Haven (SH) Homeless Individuals - Hispanic/Latin(o)(a)(x)', 'Sheltered Safe Haven (SH) Homeless Individuals - Male', 'Sheltered Total Homeless', 'Sheltered Safe Haven (SH) Homeless - Age 35 to 44', 'Sheltered Safe Haven (SH) Homeless - American Indian, Alaska Native, or Indigenous']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.DATACOMMONS_TIMESERIES
+[
+    VARIABLE (Type: TEXT; Sample values: ['Mean_Visibility', 'Mean_Snowfall', 'Mean_Snowfall', 'Mean_Snowfall', 'Count_Person_WithMedicaidOrMeansTestedPublicCoverage']; Description: A unique identifier for a statistical variable. Each statistical variable represents a unique measure (ie. Population, Median Income, etc.))
+    UNIT (Type: TEXT; Sample values: ['Kilometer', 'Millimeter', 'Millimeter', 'Millimeter', 'Count']; Description: Unit of measure for the value (e.g., USD, Years, Acre, etc.))
+    GEO_ID (Type: TEXT; Sample values: ['geoId/5003250', 'geoId/3048250', 'zip/97132', 'geoId/2601960', 'geoId/42039111600']; Description: A unique identifier for a place joinable to the GEOGRAPHY_INDEX table)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Mean Visibility', 'Mean Snowfall', 'Mean Snowfall', 'Mean Snowfall', 'Population With Medicaid or Means-Tested Public Coverage']; Description: Human-readable name for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.GEOGRAPHY_INDEX
+[
+    GEO_ID (Type: TEXT; Sample values: ['censusBlockGroup/390930801011', 'censusBlockGroup/120379703022', 'censusBlockGroup/484959503002', 'censusBlockGroup/380350111002', 'censusBlockGroup/410050231002']; Description: A unique identifier for a place (a nation, state, zip-code, etc.))
+    ISO_ALPHA2 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 2 letter country code from International Organization for Standardization)
+    ISO_3166_2_CODE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Full ISO-3166 code)
+    ISO_NUMERIC_CODE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Numeric code from International Organization for Standardization)
+    LEVEL (Type: TEXT; Sample values: ['CensusBlockGroup', 'CensusBlockGroup', 'CensusBlockGroup', 'CensusBlockGroup', 'CensusBlockGroup']; Description: Geographic level or hierarchy (e.g., Country, State, County, City, Continent, CountrySubRegion, etc.))
+    ISO_ALPHA3 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: 3 letter country code from International Organization for Standardization)
+    ISO_NAME (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Country name from International Organization for Standardization)
+    GEO_NAME (Type: TEXT; Sample values: ['Block Group 1; Census Tract 801.01; Lorain County; Ohio', 'Block Group 2; Census Tract 9703.02; Franklin County; Florida', 'Block Group 2; Census Tract 9503; Winkler County; Texas', 'Block Group 2; Census Tract 111; Grand Forks County; North Dakota', 'Block Group 2; Census Tract 231; Clackamas County; Oregon']; Description: Full name of the place)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.GEOGRAPHY_CHARACTERISTICS
+[
+    RELATIONSHIP_END_DATE (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The date through which a given characteristic is valid. For example, if the coordinates for ZIP code 12345 changed on 2023-04-01 (i.e., on 2023-04-01 the Census Bureau released shapefiles with updated coordinates for ZIP code 12345), then relationship_end_date of 2023-03-31 is assigned to the previous coordinates for ZIP code 12345. However, currently, all the values in this column are NULL since it only contains most recent characteristics with no historical changes.)
+    RELATIONSHIP_START_DATE (Type: DATE; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: The date from which a given characteristic is valid. For example, if the coordinates for ZIP code 12345 changed on 2023-04-01 (i.e., on 2023-04-01 the Census Bureau released shapefiles with updated coordinates for ZIP code 12345), then relationship_start_date of 2023-04-01 is assigned. However, currently, all the values in this column are NULL since it only contains most recent characteristics with no historical changes.)
+    GEO_ID (Type: TEXT; Sample values: ['statcanId/S051235300682', 'zip/44123', 'geoId/48039660706', 'geoId/26147628000', 'statcanId/S051259530025']; Description: A unique identifier for a place (a nation, state, zip-code, etc.) joinable to the geography index table for adding geospatial information.)
+    GEO_NAME (Type: TEXT; Sample values: ['35300682', '44123', 'Census Tract 6607.06, Brazoria County, Texas', 'Census Tract 6280, St. Clair County, Michigan', '59530025']; Description: Full name of the place)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_DEPARTMENT_OF_AGRICULTURE_COMMODITIES_TIMESERIES
+[
+    MARKETING_YEAR (Type: TEXT; Sample values: ['1999', '2010', '2015', '2021', '2007']; Description: The marketing year tied to the agricultural seasons and harvest periods of a specific crop. A marketing year typically begins in the month when a particular crop's harvest starts and ends just before the next year's harvest begin. This period can vary significantly between different crops and different countries.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Corn: Accumulated Exports', 'Rice-LG Brown: Current Market Year Total Commitment', 'Peanut Oil: Exports', 'Soybean cake & meal: Next Market Year Outstanding Sales', 'All Upland Cotton: Weekly Exports']; Description: Human-readable description of the reported attribute, including commodity type and a description of what is being recorded.)
+    GEO_ID (Type: TEXT; Sample values: ['country/DEU', 'country/BMU', 'country/SEN', 'country/JAM', 'country/BEL']; Description: A unique identifier for a country joinable to the GEOGRAPHY_INDEX table.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.HOUSING_URBAN_DEVELOPMENT_TIMESERIES
+[
+    VARIABLE (Type: TEXT; Sample values: ['overall_homeless_veterans_transgender', 'sheltered_safe_haven_sh_homeless_over_24', 'overall_homeless_individuals_under_18', 'sheltered_transitional_housing_th_homeless_people_in_families_native_hawaiian_or_other_pacific_islander', 'sheltered_emergency_shelter_es_homeless_individuals_under_18']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value.)
+    GEO_ID (Type: TEXT; Sample values: ['CoC/MI-504', 'CoC/CA-518', 'CoC/MD-600', 'CoC/FL-515', 'CoC/PA-603']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VALUE (Type: FLOAT; Sample values: ['0.0', '0.0', '2.0', '0.0', '0.0']; Description: Value reported for the variable.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Overall Homeless Veterans - Transgender', 'Sheltered Safe Haven (SH) Homeless - Over 24', 'Overall Homeless Individuals - Under 18', 'Sheltered Transitional Housing (TH) Homeless People in Families - Native Hawaiian or Other Pacific Islander', 'Sheltered Emergency Shelter (ES) Homeless Individuals - Under 18']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.WORLD_HEALTH_ORGANIZATION_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations (e.g. Annual).)
+    SERIES_LEVEL_2_TYPE (Type: TEXT; Sample values: ['Age Group', 'Age Group', 'Age Group', 'Age Group', 'Age Group']; Description: Each variable can have multiple characteristics (e.g., Female). Each characteristic has an associated characteristic type, or category (e.g., Sex). Characteristic type for SERIES_LEVEL_2.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value (e.g., Percent).)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Ambient air pollution attributable deaths | Sex: Both sexes | Age Group: 0-4 years | Cause: Lower respiratory infections | Margin of Error: Upper Bound', 'Ambient air pollution attributable deaths | Sex: Both sexes | Age Group: 0-4 years | Cause: Lower respiratory infections | Margin of Error: Lower Bound', 'Ambient air pollution attributable deaths | Sex: Both sexes | Age Group: 25-29 years | Cause: Trachea, bronchus, lung cancers | Estimate', 'Ambient air pollution attributable deaths | Sex: Both sexes | Age Group: 25-29 years | Cause: Stroke | Estimate', 'Ambient air pollution attributable deaths | Sex: Both sexes | Age Group: 25-29 years | Cause: Stroke | Margin of Error: Lower Bound']; Description: Human-readable description of the reported attribute.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.DATACOMMONS_ATTRIBUTES
+[
+    UNIT (Type: TEXT; Sample values: ['Count', 'Percent', 'Celsius', 'Grams', 'Count']; Description: Unit of measure for the value (e.g., USD, Years, Acre, etc.))
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Count of Birth Event, europa.eu', 'Percentage of Population Who Binge Drink', 'Temperature in a Location', 'Retail Drug Distribution of Drug Distribution: Drug/dea/9180 L', 'Female Population, abs.gov.au']; Description: Human-readable name for the variable)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.WORLD_HEALTH_ORGANIZATION_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['WHORegion/AFR', 'WorldBankIncomeGroup/WB_LMI', 'MGHERegion/WBDCP_EAP', 'WHORegion/WPR', 'MGHERegion/WBINC_LOINC']; Description: A unique identifier for a country, group of countries, or region, joinable to the GEOGRAPHY_INDEX table.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Rate', 'Count', 'Percent', 'Count']; Description: Unit of measurement for the reported value (ex. USD).)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Household air pollution attributable deaths | Sex: Both sexes | Age Group: Total (All ages) | Cause: Total | Estimate', 'Age-specific death rate between ages x and x+n | Sex: Female | Age Group: 55-59 years | Estimate', 'Projection of deaths | Sex: Female | Age Group: 70 plus  years of age (please delete. It does not work with menu.xml) | Causes: Birth asphyxia and birth trauma | Estimate', 'Percent of population with primary reliance on fuels and technologies for cooking, by fuel type | Residence Area Type: Rural | Cooking fuel: Charcoal | Margin of Error: Upper Bound', 'Years of life lost from mortality (YLLs), per 100,000 people | Sex: Female | Age Group: 50-69 years | Causes: Back and neck pain | Estimate']; Description: Human-readable description of the reported attribute.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.UNITED_KINGDOM_ATTRIBUTES
+[
+    AGE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Age category, if applicable.)
+    SEASONALLY_ADJUSTED (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Indicates whether the value is seasonally adjusted.)
+    FREQUENCY (Type: TEXT; Sample values: ['Weekly', 'Weekly', 'Weekly', 'Weekly', 'Weekly']; Description: Frequency of aggregations.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Death Occurrences of 70-74 year olds', 'Death Occurrences of 20-24 year old Females', 'Death Occurrences of 30-34 year old Females', 'Death Occurrences of 65-69 year old Females', 'Death Occurrences of 80-84 year old Females']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_DEPARTMENT_OF_TRANSPORTATION_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Monthly', 'Monthly', 'Monthly', 'Monthly', 'Monthly']; Description: Frequency of aggregations.)
+    VARIABLE (Type: TEXT; Sample values: ['MAIL_TRANSPORTED', 'DEPARTURES_PERFORMED', 'DEPARTURES_SCHEDULED', 'FREIGHT_TRANSPORTED', 'DISTANCE']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Non-Stop Segment Mail Transported', 'Departures Performed', 'Departures Scheduled', 'Non-Stop Segment Freight Transported', 'Distance Between Airports']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_DEPARTMENT_OF_AGRICULTURE_COMMODITIES_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Weekly', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations (e.g. Annual).)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Cottonseed Oil: Outstanding Sales', 'Rapeseed Meal: Exports', 'Peanut Meal: Food Use Domestic Consumption', 'Mixed Grain: Exports', 'Inshell Basis Walnuts: Ending Stocks']; Description: Human-readable description of the reported attribute, including commodity type and a description of what is being recorded.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.UNITED_NATIONS_INDUSTRIAL_DEVELOPMENT_ORGANIZATION_ATTRIBUTES
+[
+    INDSTAT_VERSION (Type: TEXT; Sample values: ['INDSTAT 2024, ISIC Revision 3', 'INDSTAT 2024, ISIC Revision 3', 'INDSTAT 2024, ISIC Revision 3', 'INDSTAT 2024, ISIC Revision 3', 'INDSTAT 2024, ISIC Revision 3']; Description: INDSTAT database version; INDSTAT releases new versions of INDSTAT 2 with ISIC Revision 3 on an annual basis.)
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Value added: 2320 Refined petroleum products (INDSTAT 2024, ISIC Revision 3) (in USD)', 'Female employees: 2021 Veneer sheets, plywood, particle board, etc. (INDSTAT 2024, ISIC Revision 3)', 'Employees: 3110 Electric motors, generators and transformers (INDSTAT 2024, ISIC Revision 3)', 'Establishments: 132 Non-ferrous metal ores,excl.uranium,thorium (INDSTAT 2024, ISIC Revision 3)', 'Value added: 37 Recycling (INDSTAT 2024, ISIC Revision 3) (in USD)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.EUROPEAN_CENTRAL_BANK_ATTRIBUTES
+[
+    SEASONALLY_ADJUSTED (Type: TEXT; Sample values: ['Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted', 'Not seasonally adjusted']; Description: Indicates whether the value is seasonally adjusted.)
+    GEO_COVERAGE (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None']; Description: Determines whether the variable relates to part or all of a country (e.g., Whole country, Large cities, National excluding capital city).)
+    FREQUENCY (Type: TEXT; Sample values: ['Monthly', 'Monthly', 'Monthly', 'Monthly', 'Monthly']; Description: Frequency of aggregations.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Harmonized Index Of Consumer Prices - All-Items Excluding Energy, Contribution To Growth Rate, European Central Bank, Neither Seasonally Nor Working Day Adjusted, Points', 'Harmonized Index Of Consumer Prices - Education, Health And Social Protection, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Articles For Personal Hygiene And Wellness, Esoteric Products And Beauty Products, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Count', 'Harmonized Index Of Consumer Prices - Retirement Homes For Elderly Persons And Residences For Disabled Persons, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Count', 'Harmonized Index Of Consumer Prices - Cleaning Equipment, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.WORLD_BANK_TIMESERIES
+[
+    VARIABLE (Type: TEXT; Sample values: ['WDI_SE.TER.ENRR.FE', 'WDI_SE.ENR.TERT.FM.ZS', 'WDI_NY.GNP.ATLS.CD', 'WDI_NE.EXP.GNFS.KN', 'QEDS_DT.DOD.PUMU.CD.ST.US']; Description: Unique identifier for a variable, joinable to the attributes table. This variable combines the World Bank dataset abbreviation with the unique timeseries code (provided by the World Bank).)
+    GEO_ID (Type: TEXT; Sample values: ['country/BMU', 'country/WSM', 'country/POL', 'country/SWZ', 'country/CMR']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['School enrollment, tertiary, female (percent gross)', 'School enrollment, tertiary (gross), gender parity index (GPI)', 'Gross National Income, Atlas method (current USD)', 'Exports of goods and services (constant local currency)', 'Public Sector External Debt Position, Multilateral creditors, Short-term, All instruments, USD']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.EUROPEAN_CENTRAL_BANK_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['country/FRA', 'country/BEL', 'country/LTU', 'country/CZE', 'country/POL']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Harmonized Index Of Consumer Prices - All-Items Excluding Energy And Food, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Other Paramedical Services, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100', 'Harmonized Index Of Consumer Prices - Beef And Veal, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Non-Durable Household Goods, Annual Rate Of Change, Eurostat, Neither Seasonally Nor Working Day Adjusted, Percent', 'Harmonized Index Of Consumer Prices - Hairdressing For Men And Children, Monthly Index, Eurostat, Neither Seasonally Nor Working Day Adjusted, Index, 2015=100']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_DEPARTMENT_OF_TRANSPORTATION_TIMESERIES
+[
+    UNIT (Type: TEXT; Sample values: ['Minutes', 'Minutes', 'Pounds', 'Count', 'Pounds']; Description: Unit of measurement for the reported value.)
+    VARIABLE (Type: TEXT; Sample values: ['RAMP_IN_MINUTES', 'RAMP_IN_MINUTES', 'AVAILABLE_CAPACITY_PAYLOAD_POUNDS', 'DEPARTURES_PERFORMED', 'MAIL_TRANSPORTED']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    FLIGHT_TYPE_ID (Type: TEXT; Sample values: ['28ad3b116a705f65fd2a9df6bec3f49f', 'cf4b7309ce4884368d51a7e51942e1b9', 'f367e322ca9c2659c07cc794f71f1d91', 'c9dd4f9fc360815254514841363591c7', '43c78ee4a763fae537e32de92c688134']; Description: A unique hash for the combination of the origin and destination airports, aircraft carriers, and aircrafts. Primary key reflecting the flight pattern.)
+    AIRCRAFT_ID (Type: TEXT; Sample values: ['3501', '67761', '3161', '61661', '41641']; Description: ID for the aircraft type, a distinctive model as designated by the manufacturer.)
+    DESTINATION_AIRPORT_ID (Type: TEXT; Sample values: ['10360BET', '30977ORD', '31057CLT', '30792BUF', '32214HSL']; Description: ID for the destination airport that is part of the flight route being measured, combination of the DOT unique code and official 3 letter OAG code issued for that airport.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Ramp to Ramp Time', 'Ramp to Ramp Time', 'Available Payload', 'Departures Performed', 'Non-Stop Segment Mail Transported']; Description: Human-readable unique name for the variable.)
+    ORIGIN_AIRPORT_ID (Type: TEXT; Sample values: ['90530OOK', '33342MKE', '30781BTR', '31703EWR', '32122HGZ']; Description: ID for the origin airport that is part of the flight route being measured, combination of the DOT unique code and official 3 letter OAG code issued for that airport.)
+    AIRCRAFT_CARRIER_ID (Type: TEXT; Sample values: ['06964_12', '06820_32', '07028_22', '01220_31', '06860_12']; Description: ID for the aircraft carrier.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.UNITED_KINGDOM_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['uk/E06000055', 'uk/E06000037', 'uk/E08000034', 'uk/E06000043', 'uk/E09000028']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    UNIT (Type: TEXT; Sample values: ['Count', 'Count', 'Count', 'Count', 'Count']; Description: Unit of measurement for the reported value.)
+    VARIABLE (Type: TEXT; Sample values: ['weekly-deaths-local-authority_registrations_hospice_covid-19', 'weekly-deaths-local-authority_occurrences_hospital_all-causes', 'weekly-deaths-local-authority_registrations_other-communal-establishment_covid-19', 'weekly-deaths-local-authority_registrations_other-communal-establishment_covid-19', 'weekly-deaths-local-authority_occurrences_hospice_all-causes']; Description: Unique identifier for a variable, joinable to the timeseries table.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Death Registrations from COVID 19: Hospice', 'Death Occurrences from All causes: Hospital', 'Death Registrations from COVID 19: Other communal establishment', 'Death Registrations from COVID 19: Other communal establishment', 'Death Occurrences from All causes: Hospice']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.INTERNATIONAL_LABOUR_ORGANIZATION_ATTRIBUTES
+[
+    AGE_GROUP (Type: TEXT; Sample values: ['Age (10-year bands): 15-24', 'Age (10-year bands): 25-34', 'Age (10-year bands): 25-34', 'Age (Youth, adults): 15-64', 'Age (Youth, adults): 15-64']; Description: A range of ages, if applicable.)
+    SERIES_ID (Type: TEXT; Sample values: ['EAP_TEAP_SEX_AGE_GEO_NB,A', 'EAP_TEAP_SEX_AGE_GEO_NB,A', 'EAP_TEAP_SEX_AGE_GEO_NB,Q', 'EAP_TEAP_SEX_AGE_GEO_NB,Q', 'EAP_TEAP_SEX_AGE_GEO_NB,Q']; Description: Unique ILO identifier for the subject and frequency of the ILO variable.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Labour force by sex, age and rural / urban areas | Total | Age (10-year bands): 15-24 | Not elsewhere classified, Annual (Count), Estimate', 'Labour force by sex, age and rural / urban areas | Male | Age (10-year bands): 25-34 | National, Annual (Count), Estimate', 'Labour force by sex, age and rural / urban areas | Female | Age (10-year bands): 25-34 | National, Quarterly (Count), Estimate', 'Labour force by sex, age and rural / urban areas | Total | Age (Youth, adults): 15-64 | Rural, Quarterly (Count), Estimate', 'Labour force by sex, age and rural / urban areas | Male | Age (Youth, adults): 15-64 | Rural, Quarterly (Count), Estimate']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.AIRPORT_INDEX
+[
+    AIRPORT_WORLD_AREA_CODE (Type: NUMBER; Sample values: ['51', '64', '81', '1', '53']; Description: US DOT identifier for the geographical area where the airport is based.)
+    AIRPORT_NAME (Type: TEXT; Sample values: ['Birmingham-Shuttlesworth International', 'Kansas City International', 'Tucson International', 'Long Island Airport', 'Hattiesburg-Laurel Regional']; Description: Name of the airport.)
+    STATE_GEO_ID (Type: TEXT; Sample values: ['geoId/01', 'geoId/29', 'geoId/04', 'geoId/02', 'geoId/28']; Description: A unique identifier for a state, joinable to the GEOGRAPHY_INDEX table, representing the primary geography for the variable.)
+    AIRPORT_CITY_NAME (Type: TEXT; Sample values: ['Birmingham', 'Kansas City', 'Tucson', 'Long Island', 'Hattiesburg/Laurel']; Description: Name of the city where the airport is located.)
+    AIRPORT_ALPHA_CODE (Type: TEXT; Sample values: ['BHM', 'MCI', 'TUS', 'LIJ', 'PIB']; Description: Code assigned to airports by the International Air Transport Association (IATA), which are widely used in the aviation industry for ticketing, baggage handling, and flight planning.)
+    AIRPORT_DOT_CODE (Type: NUMBER; Sample values: ['1059', '42650', '91940', '1298', '49005']; Description: Unique identifier assigned by the US DOT to each airport, used for administrative and reporting purposes.)
+    COUNTRY_GEO_ID (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: A unique identifier for a country, joinable to the GEOGRAPHY_INDEX table, representing the primary geography for the variable.)
+    AIRPORT_ID (Type: TEXT; Sample values: ['1059BHM', '42650MCI', '91940TUS', '1298LIJ', '49005PIB']; Description: ID for the origin airport that is part of the flight route being measured, combination of the DOT unique code and official 3 letter OAG code issued for that airport.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.UNITED_NATIONS_INDUSTRIAL_DEVELOPMENT_ORGANIZATION_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['country/BGR', 'country/TJK', 'country/MKD', 'country/IRL', 'country/MLT']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    UNIT (Type: TEXT; Sample values: ['USD', 'Count', 'USD', 'USD', 'USD']; Description: Unit of measurement for the reported value.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Wages and salaries: C Total mining and quarrying (INDSTAT 2024, ISIC Revision 3) (in USD)', 'Establishments: 26 Non-metallic mineral products (INDSTAT 2024, ISIC Revision 3)', 'Gross fixed capital formation: 323 TV and radio receivers and associated goods (INDSTAT 2024, ISIC Revision 3) (in USD)', 'Wages and salaries: 132 Non-ferrous metal ores,excl.uranium,thorium (INDSTAT 2024, ISIC Revision 3) (in USD)', 'Output: 251 Rubber products (INDSTAT 2024, ISIC Revision 3) (in USD)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_TREASURY_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Non-Tax Net Collections Amount: Fiscal Service Processed Electronically (Over-the-Counter)', 'Non-Tax Net Collections Amount: Fiscal Service Settled Electronically (Over-the-Counter)', 'IRS Non-Tax Net Collections Amount: Fully Electronic (Internet)', 'IRS Tax Net Collections Amount: Fiscal Service Settled Electronically (Mail)', 'Paper Savings Bonds Unmatured & Unredeemed: All Series']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.WORLD_TRADE_ORGANIZATION_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Annual', 'Annual', 'Annual', 'Annual', 'Annual']; Description: Frequency of aggregations (e.g. Annual).)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['HS Pref - Best preferential simple average ad valorem duty: Goats (010420) (Harmonized System) [Least-developed countries (LDC) duties for 6 countries]', 'HS Pref - Best preferential simple average ad valorem duty: Other (010690) (Harmonized System) [Free-trade agreement duty rates for Cambodia under ASEAN, Least-developed countries (LDC) duties]', 'HS Pref - Best preferential simple average ad valorem duty: Sheep (010410) (Harmonized System) [Free-trade agreement duty rate for CAFTA, Dominican Republic and United States]', 'HS Pref - Best preferential simple average ad valorem duty: Whales, dolphins and porpoises (mammals of the order Cetacea); manatees and dugongs (mammals of the order Sirenia) (010612) (Harmonized System) [ASEAN-Japan free trade area duty rates (ASEAN-Japan Economic Partnership Agreement (AJCEPA)), Philippines-Japan free trade area duty rates (Japan-Philippines Economic Partnership Agreement (JPEPA))]', 'HS Pref - Best preferential simple average ad valorem duty: Camels and other camelids (Camelidae) (010613) (Harmonized System) [EU-Montenegro, CEFTA-Croatia]']; Description: Human-readable description of the reported attribute.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.WORLD_BANK_ATTRIBUTES
+[
+    VARIABLE (Type: TEXT; Sample values: ['QEDS_DT.INT.PRVS.CD.04.YR.US', 'QEDS_DT.INT.PRVS.CD.19.24.MO.US', 'QEDS_DT.INT.PRVS.CD.IQ.00.US', 'QEDS_DT.INT.PUBS.CD.03.YR.US', 'QEDS_DT.INT.PUBS.CD.07.09.MO.US']; Description: Unique identifier for a variable, joinable to the timeseries table. This variable combines the World Bank dataset abbreviation with the unique timeseries code (provided by the World Bank).)
+    FREQUENCY (Type: TEXT; Sample values: ['Quarterly', 'Quarterly', 'Quarterly', 'Quarterly', 'Quarterly']; Description: Frequency of aggregations.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['External Debt Service Payment, Publicly Guaranteed Private Sector External Debt, 4 years, All instruments, Interest, USD', 'External Debt Service Payment, Publicly Guaranteed Private Sector External Debt, 18 to 24 months, All instruments, Interest, USD', 'External Debt Service Payment, Publicly Guaranteed Private Sector External Debt, Immediately, All instruments, Interest, USD', 'External Debt Service Payment, Public Sector External Debt, 3 years, All instruments, Interest, USD', 'External Debt Service Payment, Public Sector External Debt, 6 to 9 months, All instruments, Interest, USD']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.US_TREASURY_ATTRIBUTES
+[
+    FREQUENCY (Type: TEXT; Sample values: ['Monthly', 'Monthly', 'Monthly', 'Monthly', 'Monthly']; Description: Frequency of aggregations.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Paper Savings Bonds Outstanding: Series I', 'TreasuryDirect Sales by Term Amount: Marketable Security TIPS (5 years) (From Certificates of Indebtedness)', 'Paper Savings Bonds Redeemed: Series J', 'Matured Unredeemed Debt: Bonds Outstanding, Series J', 'TreasuryDirect Sales by Term Count: Marketable Series Bill (7 weeks) (From Certificates of Indebtedness)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
+###Table full name: GLOBAL_GOVERNMENT.CYBERSYN.FEDERAL_RESERVE_TIMESERIES
+[
+    GEO_ID (Type: TEXT; Sample values: ['country/USA', 'country/USA', 'country/USA', 'country/USA', 'country/USA']; Description: A unique identifier for a place. Joinable to other geography tables including GEOGRAPHY_INDEX, GEOGRAPHY_RELATIONSHIPS, and GEOGRAPHY_CHARACTERISTICS.)
+    VARIABLE_NAME (Type: TEXT; Sample values: ['Levels: Government-sponsored enterprises; total assets held by Farmer Mac (balance sheet) - Input series with zero seasonal factor, Quarterly (Not seasonally adjusted)', 'Transactions: Monetary authority; Treasury bills; asset - Input series with zero seasonal factor, Quarterly (Not seasonally adjusted)', 'Transactions: Domestic financial sectors; gross fixed investment, nonresidential software - Computed series, Quarterly (Not seasonally adjusted)', 'Transactions: Domestic financial sectors; other deposits including time and savings deposits; liability (IMA) - Computed series, Annual (Not seasonally adjusted)', 'Transactions: Banks in U.S.-affiliated areas; consumption of fixed capital, nonresidential intellectual property products, current cost basis - Computed series, Quarterly (Seasonally adjusted)']; Description: Human-readable unique name for the variable.)
+]
+
+--------------------------------------------------
+
