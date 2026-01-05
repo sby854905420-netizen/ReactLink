@@ -1,0 +1,193 @@
+###Table full name: read_log
+[
+    url (Type: varchar(255); Sample values: ['http://www.example.com/article?id=trend132', 'http://www.example.com/article?id=news731', 'http://www.example.com/article?id=news341', 'http://www.example.com/article?id=news731', 'http://www.example.com/article?id=it605'])
+    session (Type: varchar(255); Sample values: ['08962ace', 'df6eb25d', 'afbd3d09', 'df6eb25d', '77d477cc'])
+    action (Type: varchar(255); Sample values: ['view', 'read-40%', 'view', 'read-20%', 'view'])
+    stamp (Type: varchar(255); Sample values: ['2016-12-29 21:45:47', '2016-12-29 21:46:05', '2016-12-29 21:45:47', '2016-12-29 21:45:56', '2016-12-29 21:45:47'])
+]
+
+--------------------------------------------------
+
+###Table full name: action_log_with_noise
+[
+    url (Type: TEXT; Sample values: [])
+    session (Type: varchar(255); Sample values: [])
+    stamp (Type: varchar(255); Sample values: [])
+    ip (Type: varchar(255); Sample values: [])
+    user_agent (Type: TEXT; Sample values: [])
+    action (Type: varchar(255); Sample values: [])
+    products (Type: varchar(255); Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: activity_log
+[
+    search_type (Type: varchar(255); Sample values: ['', 'Pref-with-Job', 'Pref', '', ''])
+    session (Type: varchar(255); Sample values: ['36dd0df7', '36dd0df7', '111f2996', '87b5725f', '36dd0df7'])
+    path (Type: varchar(255); Sample values: ['/detail/', '/search_list', '/search_list/', '/detail', '/detail'])
+    action (Type: varchar(255); Sample values: ['view', 'view', 'view', 'view', 'view'])
+    stamp (Type: varchar(255); Sample values: ['2017-01-09 12:19:49', '2017-01-09 12:18:43', '2017-01-09 12:18:43', '2017-01-09 12:24:13', '2017-01-09 12:19:49'])
+    option (Type: varchar(255); Sample values: ['detail', 'search', 'search', 'detail', 'detail'])
+]
+
+--------------------------------------------------
+
+###Table full name: access_log
+[
+    session (Type: varchar(255); Sample values: ['98900e', '2016-10-01 17:00:00', '1cf768', '2016-10-02 14:00:00', '2016-10-03 13:00:00'])
+    action (Type: varchar(255); Sample values: ['view', '1CwlSX', 'view', 'FGkTe9', 'KKTw9P'])
+    stamp (Type: varchar(255); Sample values: ['2016-01-03 22:00:00', '/top', '2016-01-04 23:00:00', '/search', '/top'])
+    user_id (Type: varchar(255); Sample values: ['U001', '2bGs3i', 'U002', '3CEHe1', '7jjxQX'])
+]
+
+--------------------------------------------------
+
+###Table full name: action_log
+[
+    session (Type: varchar(255); Sample values: ['989004ea', '989004ea', '9afaf87c', '989004ea', '989004ea'])
+    action (Type: varchar(255); Sample values: ['add_cart', 'add_cart', 'purchase', 'add_cart', 'add_cart'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U001', 'U002', 'U001', 'U001'])
+    stamp (Type: varchar(255); Sample values: ['2016-11-03 18:00:00', '2016-11-03 18:00:00', '2016-11-04 15:00:00', '2016-11-03 18:00:00', '2016-11-03 18:00:00'])
+    category (Type: varchar(255); Sample values: ['drama', 'drama', 'action', 'drama', 'drama'])
+    products (Type: varchar(255); Sample values: ['D001', 'D001', 'A005,A006', 'D001', 'D001'])
+    amount (Type: INTEGER; Sample values: ['nan', 'nan', '1000.0', 'nan', 'nan'])
+]
+
+--------------------------------------------------
+
+###Table full name: dup_action_log
+[
+    session (Type: varchar(255); Sample values: ['989004ea', '111f2996', '87b5725f', 'fe05e1d8', '1cf7678e'])
+    action (Type: varchar(255); Sample values: ['click', 'click', 'click', 'click', 'click'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U007', 'U001', 'U004', 'U003'])
+    stamp (Type: varchar(255); Sample values: ['2016-11-03 18:00:00', '2016-11-04 21:00:00', '2016-11-04 18:00:00', '2016-11-03 21:00:00', '2016-11-03 20:00:00'])
+    products (Type: varchar(255); Sample values: ['D001', 'D002', 'D001', 'D001', 'A001'])
+]
+
+--------------------------------------------------
+
+###Table full name: form_log
+[
+    session (Type: varchar(255); Sample values: ['9b5f320f', '8e9afadc', '46b4c72c', '539eb753', 'b2dbcc54'])
+    action (Type: varchar(255); Sample values: ['view', 'view', 'view', 'view', 'view'])
+    path (Type: varchar(255); Sample values: ['/regist/confirm', '/contact/input', '/regist/confirm', '/contact/input', '/contact/confirm'])
+    stamp (Type: varchar(255); Sample values: ['2016-12-30 00:57:04', '2016-12-30 00:56:08', '2016-12-30 00:57:31', '2016-12-30 00:56:08', '2016-12-30 00:58:58'])
+    status (Type: varchar(255); Sample values: ['error', '', '', '', ''])
+]
+
+--------------------------------------------------
+
+###Table full name: invalid_action_log
+[
+    session (Type: varchar(255); Sample values: ['0CVKaz', '0CVKaz', '0CVKaz', '1QceiB', '1QceiB'])
+    stamp (Type: varchar(255); Sample values: ['2016-11-03 18:02:00', '2016-11-03 18:01:00', '2016-11-03 18:10:00', 'None', '2016-11-04 13:00:00'])
+    action (Type: varchar(255); Sample values: ['add_cart', 'add_cart', 'purchase', 'purchase', 'purchase'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U001', 'U001', 'U002', 'U002'])
+    category (Type: varchar(255); Sample values: ['drama', 'drama', 'drama', 'action', 'drama'])
+    products (Type: varchar(255); Sample values: ['None', 'D002', 'D001,D002', 'A005,A006', 'D002'])
+    amount (Type: INTEGER; Sample values: ['nan', 'nan', '2000.0', '1000.0', '1000.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: purchase_log
+[
+    purchase_id (Type: INTEGER; Sample values: ['10002', '10005', '10001', '10003', '10004'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U002', 'U001', 'U001', 'U002'])
+    stamp (Type: varchar(255); Sample values: ['2017-02-10 10:00:00', '2017-03-02 10:00:00', '2017-01-30 10:00:00', '2017-02-12 10:00:00', '2017-03-01 10:00:00'])
+    amount (Type: INTEGER; Sample values: ['500', '400', '200', '200', '800'])
+]
+
+--------------------------------------------------
+
+###Table full name: form_error_log
+[
+    session (Type: varchar(255); Sample values: ['035a1ebb', '004dc3ef', '004dc3ef', '01061716', '02596e8a'])
+    stamp (Type: varchar(255); Sample values: ['2016-12-30 00:56:09', '2016-12-30 00:56:08', '2016-12-30 00:56:08', '2016-12-30 00:56:42', '2016-12-30 00:56:09'])
+    form (Type: varchar(255); Sample values: ['cart', 'regist', 'regist', 'regist', 'regist'])
+    field (Type: varchar(255); Sample values: ['tel', 'kana', 'email', 'kana', 'kana'])
+    value (Type: varchar(255); Sample values: ['03-99999999', '', '', '山田 太郎', ''])
+    error_type (Type: varchar(255); Sample values: ['format_error', 'require', 'require', 'not_kana', 'require'])
+]
+
+--------------------------------------------------
+
+###Table full name: action_log_with_ip
+[
+    session (Type: varchar(255); Sample values: ['5d5b0997', '989004ea', '5eb2e107', '111f2996', '87b5725f'])
+    stamp (Type: varchar(255); Sample values: ['2016-11-04 20:00:00', '2016-11-03 18:00:00', '2016-11-03 21:00:00', '2016-11-04 21:00:00', '2016-11-04 19:00:00'])
+    user_id (Type: varchar(255); Sample values: ['U006', 'U001', 'U004', 'U007', 'U005'])
+    action (Type: varchar(255); Sample values: ['view', 'view', 'view', 'view', 'view'])
+    ip (Type: varchar(255); Sample values: ['172.16.0.5', '216.58.220.238', '127.0.0.1', '192.168.0.23', '10.0.0.3'])
+]
+
+--------------------------------------------------
+
+###Table full name: mst_users
+[
+    sex (Type: varchar(255); Sample values: ['M', 'M', 'F', 'F', 'F'])
+    user_id (Type: varchar(255); Sample values: ['U005', 'U018', 'U010', 'U006', 'U020'])
+    withdraw_date (Type: varchar(255); Sample values: ['None', 'None', 'None', '2016-10-10', 'None'])
+    register_date (Type: varchar(255); Sample values: ['2016-10-01', '2016-10-01', '2016-10-01', '2016-10-10', '2016-10-02'])
+    birth_date (Type: varchar(255); Sample values: ['1987-11-23', '2009-10-12', '1987-03-18', '1950-01-21', '1954-04-17'])
+    register_device (Type: varchar(255); Sample values: ['sp', 'app', 'pc', 'pc', 'app'])
+]
+
+--------------------------------------------------
+
+###Table full name: mst_categories
+[
+    id (Type: INTEGER; Sample values: ['6', '2', '4', '7', '1'])
+    stamp (Type: varchar(255); Sample values: ['2016-02-01 10:00:00', '2016-01-01 10:00:00', '2016-01-01 10:00:00', '2016-01-01 10:00:00', '2016-01-01 10:00:00'])
+    name (Type: varchar(255); Sample values: ['cooking', 'mens_fashion', 'game', 'supplement', 'ladys_fashion'])
+]
+
+--------------------------------------------------
+
+###Table full name: app1_mst_users
+[
+    email (Type: varchar(255); Sample values: ['sato@example.com', 'suzuki@example.com'])
+    name (Type: varchar(255); Sample values: ['Sato', 'Suzuki'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U002'])
+]
+
+--------------------------------------------------
+
+###Table full name: app2_mst_users
+[
+    phone (Type: varchar(255); Sample values: ['080-xxxx-xxxx', '070-xxxx-xxxx'])
+    name (Type: varchar(255); Sample values: ['Ito', 'Tanaka'])
+    user_id (Type: varchar(255); Sample values: ['U001', 'U002'])
+]
+
+--------------------------------------------------
+
+###Table full name: mst_users_with_card_number
+[
+    user_id (Type: varchar(255); Sample values: ['U001', 'U002', 'U003'])
+    card_number (Type: varchar(255); Sample values: ['1234-xxxx-xxxx-xxxx', 'None', '5678-xxxx-xxxx-xxxx'])
+]
+
+--------------------------------------------------
+
+###Table full name: product_sales
+[
+    product_id (Type: varchar(255); Sample values: ['D003', 'C001', 'B003', 'D001', 'D002'])
+    sales (Type: INTEGER; Sample values: ['10000', '30000', '10000', '50000', '20000'])
+    category_name (Type: varchar(255); Sample values: ['dvd', 'cd', 'book', 'dvd', 'dvd'])
+]
+
+--------------------------------------------------
+
+###Table full name: mst_products_20170101
+[
+    updated_at (Type: varchar(255); Sample values: ['2016-11-03 21:00:00', '2016-11-04 19:00:00', '2016-12-04 18:00:00', '2016-12-04 19:00:00', '2016-11-03 18:00:00'])
+    product_id (Type: varchar(255); Sample values: ['B002', 'D001', 'C001', 'D002', 'A001'])
+    name (Type: varchar(255); Sample values: ['BBD', 'DAA', 'CCA', 'DAD', 'AAA'])
+    price (Type: INTEGER; Sample values: ['3000', '5000', '5000', '5000', '3000'])
+]
+**Some other tables have the similar structure: [mst_products_20161201]**
+
+--------------------------------------------------
+

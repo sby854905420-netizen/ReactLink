@@ -1,0 +1,390 @@
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.COMMENTS
+[
+    ranking (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    id (Type: NUMBER; Sample values: ['1057886', '3288980', '5318569', '10281657', '6944241'])
+    by (Type: TEXT; Sample values: ['mortenjorck', 'mountaineer', 'mrsebastian', 'mrsteveman1', 'mschuster91'])
+    parent (Type: NUMBER; Sample values: ['1057265', '3288867', '5318538', '10281610', '6941193'])
+    text (Type: TEXT; Sample values: ["Unfortunately, the market is no better. The governments allow their central banks to print fake money while the market allows its financial institutions to print fake assets.<p>Whether it's currencies or CDOs, a bubble is a bubble. Valuation is an art that got lost somewhere in the science.", 'I\'m sure any investor, including PG, would prefer entrepreneurs to work smarter though, it\'s not just about hours, but it may take that to succeed.<p>But, after reading this, I remembered this PG essay from a few years ago.<p>"Economically, you can think of a startup as a way to compress your whole working life into a few years. Instead of working at a low intensity for forty years, you work as hard as you possibly can for four." - <a href="http://paulgraham.com/wealth.html" rel="nofollow">http://paulgraham.com/wealth.html</a><p>Also:\n<a href="http://paulgraham.com/really.html" rel="nofollow">http://paulgraham.com/really.html</a>', "It's usually pretty quick/easy to get stuff approved for in-lab, early human trials. But yeah, much longer until it's available to the public.", 'Sounds a bit like gpg-agent.<p>Do you have plans to support OpenPGPCard devices directly?', 'Yeah, but the &quot;HF&quot; part of &quot;HFT&quot; tends to make an elephant out of a fly.'])
+    time (Type: NUMBER; Sample values: ['1263694664', '1322539234', '1362410447', '1443229031', '1387575773'])
+    time_ts (Type: NUMBER; Sample values: ['1263694664000000', '1322539234000000', '1362410447000000', '1443229031000000', '1387575773000000'])
+    deleted (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    author (Type: TEXT; Sample values: ['mortenjorck', 'mountaineer', 'mrsebastian', 'mrsteveman1', 'mschuster91'])
+    dead (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.COMMENTSV2
+[
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id (Type: NUMBER; Sample values: ['10737280', '10742233', '10742596', '10753017', '10759611'])
+    timestamp (Type: NUMBER; Sample values: ['1450180819000000', '1450237464000000', '1450244379000000', '1450374801000000', '1450459788000000'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    by (Type: TEXT; Sample values: ['feb', 'bsdnoob', 'nikdaheratik', 'archimedespi', 'kleer001'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent (Type: NUMBER; Sample values: ['10734334', '10741907', '10741907', '10741674', '10742233'])
+    url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    text (Type: TEXT; Sample values: ['In the video, Andrew creates music live on his laptop by writing a few lines of Scheme.<p>Besides the musical aspects, the video also provides an example of changing snippets code on the fly. The snippets can be started while the rest of the program continues to run. That&#x27;s based on Extempore and the Impromptu language that they created specifically for cyber-physical computing (<a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Impromptu_%28programming_environment%29" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Impromptu_%28programming_envir...</a>)', 'We need a Mac to do it , make it cross platform and we&#x27;ll have a deal here.', 'Requires a Mac (not a problem for me, but for some), the UI builder for XCode can be very annoying for non-cookie cutter UIs, and you&#x27;re on you&#x27;re own if you don&#x27;t use that. Also, the app store itself can make it difficult to find your app and your ratings are reset after every update.<p>The update cycle for iOS can create a kind of hamster wheel of constant &quot;upgrades&quot; that break even year old apps but mainly introduce features that have been as much about Apple&#x27;s business needs or supporting their aesthetic as making the platform better for devs or (often) users.<p>The contrast for Android is the tech is often less mature, support is scattered across many different handsets, you can never be sure users have upgraded to a recent version of the OS, and the percentage of users paying for apps is lower.', 'Just use a fuzzy finder a lot and it&#x27;s pretty easy.', 'That&#x27;s a shit deal. It&#x27;s built on *nix?  It&#x27;s got the guts to share, but not the spirit. So selfish. Bad ecology.'])
+    level (Type: NUMBER; Sample values: ['0', '1', '1', '2', '2'])
+    type (Type: TEXT; Sample values: ['comment', 'comment', 'comment', 'comment', 'comment'])
+    time (Type: NUMBER; Sample values: ['1450180819', '1450237464', '1450244379', '1450374801', '1450459788'])
+    descendants (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    story_id (Type: NUMBER; Sample values: ['10734334', '10738430', '10738430', '10738430', '10738430'])
+    fake_date (Type: DATE; Sample values: ['2000-01-01', '2000-01-01', '2000-01-01', '2000-01-01', '2000-01-01'])
+    deleted (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    dead (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.COMMENTS_CONVOLUTION
+[
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    timestamp (Type: NUMBER; Sample values: ['1479602987000000', '1479603245000000', '1479351571000000', '1478757326000000', '1478281964000000'])
+    id (Type: NUMBER; Sample values: ['12996625', '12996645', '12973868', '12918091', '12874466'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_id (Type: NUMBER; Sample values: ['12969014', '12969014', '12969014', '12908599', '12854877'])
+    by (Type: TEXT; Sample values: ['braveo', 'braveo', 'quotemstr', 'EdHominem', 'ahartman00'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent (Type: NUMBER; Sample values: ['12986916', '12988881', '12973846', '12915740', '12870566'])
+    url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    time (Type: NUMBER; Sample values: ['1479602987', '1479603245', '1479351571', '1478757326', '1478281964'])
+    type (Type: TEXT; Sample values: ['comment', 'comment', 'comment', 'comment', 'comment'])
+    level (Type: NUMBER; Sample values: ['16', '16', '16', '16', '16'])
+    text (Type: TEXT; Sample values: ['right, I too can make assertions with no evidence to back them up.<p>If that&#x27;s really your bar, then we don&#x27;t have much more to discuss.', 'We agree on that, my point is that C++ does it via libraries, Rust does it by hiding unsafe blocks behind interfaces (aka libraries).<p>Time will tell which approach is ultimately superior (if either one of them is actually better), but until the it isn&#x27;t clear that the Rust approach is statistically better than the C++ approach.<p>Ultimately the advantage Rust has is the ability to possibly provide better 3rd party tooling that will enable developers to make the right decisions more often than C++ does.  Consider a tool that runs on code checkin that spits out a report of all sites where code that manipulates state that could affect an unsafe block was changed&#x2F;written so that developers could then have a very focused peer review of the code to ensure the safe code doesn&#x27;t put the state in such a spot that it causes problems.<p>I think in this way Rust may eventually be shown to be better than C++, but then again, maybe not.', 'I&#x27;m criticizing Rust&#x27;s error handling strategy. I shouldn&#x27;t have to defend it at the same time. To be clear: everything is a trade-off. I don&#x27;t think it&#x27;s fair to claim that I don&#x27;t think trade-offs exist merely because I haven&#x27;t enumerated the scant good sides of the specific trade-off Rust made', '&gt; libertarians only support laws that are DEFENSIVE in nature<p>This is key for a few reasons. By rephrasing everything from &#x27;X is wrong because ...&#x27; to an issue of the right transgressed you&#x27;re entirely sidestepping the issue of victimless crimes. Second, they&#x27;re by nature proportional.<p>&gt; only what the individual forces have a natural and lawful right to do<p>Right, a collective <i>is</i> the sum of its members so it has their rights and no more.<p>This firmly roots all power in the individual. It&#x27;s semantically incorrect to write a libertarian law allowing actions that people themselves don&#x27;t have the right to perform. Again, sidestepping entirely the tyranny of the majority.<p>It&#x27;s not perfect, but it&#x27;s a far better base to start from.', 'True.  But they can only afford to not charge because of the ads.  I guess we will see how this plays out :)'])
+    deleted (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    dead (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    descendants (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    month (Type: DATE; Sample values: ['2016-11-01', '2016-11-01', '2016-11-01', '2016-11-01', '2016-11-01'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.TAGS
+[
+    id (Type: NUMBER; Sample values: ['2136', '15213', '25272', '34059', '41229'])
+    count (Type: NUMBER; Sample values: ['256', '256', '256', '256', '256'])
+    tag_name (Type: TEXT; Sample values: ['regsvr32', 'fileserver', 'bad-alloc', 'pitch', 'bin-packing'])
+    wiki_post_id (Type: NUMBER; Sample values: ['10051235', '9275975', '14261588', '37258060', '21865696'])
+    excerpt_post_id (Type: NUMBER; Sample values: ['10051236', '9275976', '14261589', '37258061', '21865697'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.STACKOVERFLOW_POSTS
+[
+    tags (Type: TEXT; Sample values: ['c++|messagebox', 'iphone|c++|objective-c|boost|frameworks', 'javascript|jquery|angularjs', 'tomcat|jvm', 'domain-driven-design|cqrs|event-sourcing'])
+    comment_count (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+    id (Type: NUMBER; Sample values: ['15444977', '11191179', '28565862', '11532497', '24598468'])
+    answer_count (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    score (Type: NUMBER; Sample values: ['0', '1', '0', '0', '0'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['nan', '18961.0', '4342406.0', 'nan', 'nan'])
+    owner_user_id (Type: NUMBER; Sample values: ['1886489', '18961', '4342406', '760062', '758351'])
+    post_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    accepted_answer_id (Type: NUMBER; Sample values: ['nan', 'nan', 'nan', 'nan', '24878467.0'])
+    creation_date (Type: NUMBER; Sample values: ['1363401623070000', '1340634238713000', '1424189571270000', '1342569260377000', '1404668000417000'])
+    last_edit_date (Type: NUMBER; Sample values: ['nan', '1340681729687000.0', '1424189883003000.0', 'nan', 'nan'])
+    body (Type: TEXT; Sample values: ['<p>I am not quite sure why this is happening. I am just trying to output the key pressed. Breakpoint shows the correct letter stored in the pressed variable. Project is set to Unicode.</p> <pre><code>case WM_CHAR: { const wchar_t pressed = LOWORD(wParam); ::MessageBox(hWnd &amp;pressed L Key Pressed  MB_OK); } </code></pre>', "<blockquote> <p>Semantic issue: 'mutable' cannot be applied to references</p> </blockquote> <p>The above is only the latest in a series of errors I've received attempting to get the <a href= https://github.com/horaceho/iphone-fuego rel= nofollow >fuego-iphone</a> project to compile. I'm not certain but it could be related to the way I compiled boost. The project's README recommends using <a href= http://semmel.wordpress.com/2011/01/18/boost-c-libraries-with-ios/ rel= nofollow >these instructions</a> for compiling boost into a framework but I had already done so with the <a href= http://www.danielsefton.com/2012/03/building-boost-1-49-with-clang-ios-5-1-and-xcode-4-3/ rel= nofollow >more recent instructions here</a>. Could this CLANG error be related to a boost version somehow?</p> <p>I admit relative ignorance when it comes to C++.</p> <p>If anyone has any brilliant suggestions for using the fuego library in general with xcode I have tried quite a few different things and am pretty muc...(truncated)", "<p>New to angular still working out the many kinks that I hit. I've got a question to pose to you all.</p> <p>I currently have a table that is being populated on load with ng-repeat. The data itself is a bunch of sums of money. One particular entry is a collection of those sums. I have an ng-onclick on it to run my function getLadders() when clicked. I would like it to basically pan out below wherever that element is in the chart and create new rows of the data that is in that particular element. </p> <p>A mini - drawing of the data it as I can not paste the exact data.</p> <pre><code>ID Name Total 1 Single $20 2 Single $35 3 Combination $60*** 4 Single $10 </code></pre> <p>That is the current chart with combination being the data with the many breakdowns within it. On click of that row I want it to do something like this.</p> <pre><code>ID Name Total 1 Single $20 2 Single $35 3 Combination $60*** 3.1 Single $20 3.2 Single $20 3.3 Single $20 4 Single $10 </code></pre> <p>Basically brea...(truncated)", '<p>I am trying to run my web application under tomcat7 with ubuntu 11.10. And I reset the port to 80 by using authbind. And it is working well when there is no app added to the /webapps/ folder. For example I can access example.com to the tomcat default start page.</p> <p>Then I tried to add my web application into the webapps/ folder and restarted the server. Afterwards I can not visit both the default page or my web apps. I checked the tomcat process and found that the server is stopped a while after I tried to access the pages(no matter the tomcat default page or my app).</p> <p>There are some details about my app the package is about 70MB and using large memory to initialize many objects for the app. I guess it is because of the JVM crash but I have no idea how to locate the issue.</p>', "<p>I'm currently in a situation where I'm replacing the domain layer of an application but must retain the existing MVVM UI. We definitely want an event store but I'm struggling with some aspects of our current CQRS implementation.</p> <p>We have some complex aggregates that contain multiple entity collections and key/value pair dynamic attributes. Our existing UI has one large edit screen for this aggregate and I'm not sure how to structure the command(s) for the update.</p> <p>Possible solutions: 1) Simply fetch the aggregate in the ViewModel perform the updates against the domain model and ship it with the command (<code>var command = new SaveAggregateCommand(myAggregate);</code>). This feels wrong as the internal events would not be retained if shipping this across a serialized boundary (without custom serialization).</p> <p>2) Create one complex command object that contains a list up updated attributes and separate lists of added updated and removed child entities of each collecti...(truncated)"])
+    title (Type: TEXT; Sample values: ['C++ Win32 MessageBox weird output', 'Need help getting Fuego to compile in Xcode - boost version compatibility?', 'Adding additional table rows using Angular after using ng-repeat', 'Tomcat 7 automatic crashed after adding a web application', 'CQRS/ES Update Aggregate Command'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_QUESTIONS
+[
+    tags (Type: TEXT; Sample values: ['php|mysql|simplexml', 'android|multithreading|show|progressdialog', 'css|less', 'jquery|css|cursor', 'sql|sql-server'])
+    comment_count (Type: NUMBER; Sample values: ['12', '12', '12', '12', '12'])
+    id (Type: NUMBER; Sample values: ['25844992', '25592867', '25851963', '25642590', '25732803'])
+    score (Type: NUMBER; Sample values: ['-7', '0', '1', '0', '1'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: NUMBER; Sample values: ['27693665.0', '25593068.0', '25863260.0', 'nan', 'nan'])
+    owner_user_id (Type: NUMBER; Sample values: ['807325', '1492229', '3760661', '3987406', '3950946'])
+    post_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['1446005', '-1', '1058134', '3987406', '3950946'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>I have this XML feed below I am trying to import into MySQL for all the products.\nFor example, inside the table <code>XML_FEED</code> I want something like</p>\n\n<pre><code>shop        -   product_id - product_name - product_link - .......\nmywebstore  -   322233     - MadBiker 600 - .........\nmywebstore  -   324633     - Samsung S4 - .........\n</code></pre>\n\n<p>The code until now it works only if the XML begins from <code>&lt;products&gt;</code> and not from <code>&lt;mywebstore&gt;</code></p>\n\n<p>How to change my code to do this ?</p>\n\n<pre><code>$xml = simplexml_load_file("test.xml");\nforeach($xml-&gt;product as $product)\n{\n    $columns = array();\n    $data = array();\n    foreach($product-&gt;children() as $child)\n    {\n        echo $child-&gt;getName() . ": " . $child . "&lt;br /&gt;";\n        $columns[] = $child-&gt;getName();\n        $data[] = mysql_real_escape_string((string)$child);\n    }\n    $col = \'`\'. implode(\'`,`\',$columns) .\'`\';\n    $val = "\'". implode("\',\'",$data)."\'";\n ...(truncated)', '<p>I wanted to show a ProgressDialog when data need to be uploaded to the server.</p>\n\n<p>I have checked this question <a href="https://stackoverflow.com/questions/12841803/best-way-to-show-a-loading-spinner">Best way to show a loading/progress indicator?</a>\nthe best answer was</p>\n\n<pre><code>ProgressDialog progress = new ProgressDialog(this);\nprogress.setTitle("Loading");\nprogress.setMessage("Wait while loading...");\nprogress.show();\n// To dismiss the dialog\nprogress.dismiss();\n</code></pre>\n\n<p>when i tried to implement this in my code, nothing showed at all !!\nwhat is that i am doing wrong here?!</p>\n\n<p>this is my code</p>\n\n<pre><code>private void UpdateData()\n{\n\n    ProgressDialog progress = new ProgressDialog(this);\n    progress.setTitle("Loading");\n    progress.setMessage("Wait while loading...");\n    progress.show();\n\n    try\n    {\n        UpdateWSTask updateWSTask = new UpdateWSTask();\n        String Resp = updateWSTask.execute().get();\n\n    } catch (InterruptedException e) ...(truncated)', "<p>I'm using LESS as css compiler.</p>\n\n<p>Everything works fine, but now I need to create a specific class structure and I'm a bit stuck.</p>\n\n<p>I'd like to have this structure:</p>\n\n<pre><code>.default .{color} {.icon-after/.icon-before} {.icon}\n</code></pre>\n\n<p>this is the code that I've done:</p>\n\n<pre><code>.default {\n\n  &amp;.disabled {\n    background: lighten(@grayBackground, 5%);\n    color: lighten(@darkText, 35%);\n    cursor: default;\n    border: @grayBorder;\n    text-shadow: @grayTextShadow;\n  }\n\n  &amp;.gray {\n    background: @grayBackground;\n    color: @darkText;\n    border: @grayBorder;\n    text-shadow: @grayTextShadow;\n    &amp;:hover {\n      background: darken(@grayBackground, 5%);\n    }\n  }\n\n  &amp;.green {\n    background: @greenBackground;\n    border: @greenBorder;\n    color: @lightText;\n    text-shadow: @greenTextShadow;\n    &amp;:hover {\n      background: darken(@greenBackground, 10%);\n    }\n  }\n\n  &amp;.yellow {\n    background: @yellowBackground;\n    border: @yell...(truncated)", '<p>I have my cursor set to crosshair whenever it\'s over a div set to <code>width: 100%</code> and <code>height: 520px</code>  and I also want to achieve the effect in the image below but I honestly don\'t know how?</p>\n\n<p>Those lines have to follow the cursor wherever it goes inside that container.</p>\n\n<p>I searched the internet high and low and couldn\'t find anything. Any ideas?\nCan it be realized with jquery?</p>\n\n<p><img src="https://i.stack.imgur.com/3xxhV.jpg" alt="enter image description here"></p>\n\n<p>UPDATE:\nI managed to do this : <a href="http://jsfiddle.net/brilliancedisplay/wnmcgdwf/3/" rel="nofollow noreferrer">jsFiddle</a></p>\n\n<pre><code>$(document).bind(\'mousemove\', function(e){\n    $(\'#right\').css({\n       left:  e.pageX + 20,\n       top:   e.pageY\n    });\n\n});\n</code></pre>', "<p>I need to check for the status change of a certain column in the table \nI can do it using while loop, where i can get the column value and check the value and break from the loop if value is changed.\ni am using SQL server 2008. \nis there a better way?</p>\n\n<p>Here is the sample sql query</p>\n\n<pre><code>   declare @status int = 1\n\n   select @status = status from MyTable with (nolock) where Id = 100034\n\n   while @status &lt;&gt; 3\n   begin\n      WAITFOR DELAY '00:01'\n      select @status = status from MyTable with (nolock) where Id = 100034\n   end\n</code></pre>"])
+    title (Type: TEXT; Sample values: ['How to edit my code to save to mySQL from the beginning of XML?', 'Android : Progress Dialog not working', 'How to create a proper class structure?', 'Add effect to crosshair cursor', 'Need to wait on specific column state change in SQL'])
+    creation_date (Type: NUMBER; Sample values: ['1410773929773000', '1409494978500000', '1410796077800000', '1409741930517000', '1410208741190000'])
+    answer_count (Type: NUMBER; Sample values: ['6', '2', '2', '0', '1'])
+    view_count (Type: NUMBER; Sample values: ['632', '2680', '121', '890', '1147'])
+    favorite_count (Type: NUMBER; Sample values: ['nan', 'nan', 'nan', '1.0', 'nan'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_ANSWERS
+[
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id (Type: NUMBER; Sample values: ['8005006', '8007951', '8013730', '8017650', '8028360'])
+    comment_count (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    owner_user_id (Type: NUMBER; Sample values: ['230513', '673730', '458259', '1030675', '445543'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['-1.0', 'nan', '458259.0', 'nan', '-1.0'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    parent_id (Type: NUMBER; Sample values: ['8002445', '8007808', '8013278', '8017594', '8028184'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>Using this <a href="https://stackoverflow.com/questions/6644739/customizing-jtable-cellrenderer-with-tables-cell-header-color/6644956#6644956"><code>HeaderRenderer</code></a> as the first <strike>row</strike>  column renderer may produce the effect you want:</p>\n\n<p>Addendum: I\'ve updated the example to reflect your sscce with a manual layout. My platform\'s <code>getSystemLookAndFeelClassName()</code> is <code>com.apple.laf.AquaLookAndFeel</code>, so I\'m not seeing the same result. Two observations: You\'ve already <code>setAutoCreateRowSorter(false)</code> to prevent the sorting widget from proliferating, and Nimbus retains it alternating row highlight.</p>\n\n<p><img src="https://i.stack.imgur.com/XwVQe.png" alt="enter image description here"></p>\n\n<pre><code>import java.awt.Component;\nimport javax.swing.JFrame;\nimport javax.swing.JScrollPane;\nimport javax.swing.JTable;\nimport javax.swing.table.JTableHeader;\nimport javax.swing.table.TableCellRenderer;\n\npublic class MyTableExample3 ex...(truncated)', '<p>A seg fault occurs when the call stack gets too big - i.e. too many levels of recursion.</p>\n\n<p>In your case, this means the condition <code>(new - old) &lt; accurate</code> will always evaluate to false - well, maybe not always, but enough times to bloat the call stack.</p>\n\n<p>Testing your code I see that <code>new</code>(probably not a good variable name choice) keeps growing until it exceeds the limits of float. Your algorithm is probably wrong.</p>', '<p>The memory manager embedded in Delphi XE is a cut-down version of FastMM4.</p>\n\n<p>The memory block allocator itself is identical, but the sharing mechanism are not the same.</p>\n\n<p>By default, the following conditional is set in <code>FastMM4Options.inc</code>:</p>\n\n<pre><code>{Define this to enable backward compatibility for the memory manager sharing\n mechanism used by Delphi 2006 and 2007, as well as older FastMM versions.}\n{$define EnableBackwardCompatibleMMSharing}\n</code></pre>\n\n<p>It will create an hidden window handle for libraries to retrieve the shared memory manager instance - this how it was working with Delphi 2006 and 2007.</p>\n\n<p>This kind of sharing does not exist any more in the cut-down version of FastMM4 as implemented in <code>GetMem.inc</code> since Delphi 2009 - which only implements a shared memory manager file mapping (which is the new method). One of the libraries may require the old version of the memory manager sharing, fails to find the shared memory m...(truncated)', "<p>Try it to see:</p>\n\n<pre><code>perl -E '@ar = (10,11,12,42);say $ar[1,2,3]'\n42\n</code></pre>\n\n<p>1,2,3 is a list. In scalar context, it returns its last member.</p>", '<p><strong>Caution - this answer is now obsolete</strong></p>\n<p>The documentation for getimagesize explicitly states &quot;Do not use getimagesize() to check that a given file is a valid image.</p>\n<h1>In case of Images</h1>\n<ul>\n<li>Check the extension with a list of allowed ones (ex. &quot;.jpg&quot;, &quot;.jpeg&quot;, &quot;.png&quot;)</li>\n<li>Check the uploaded file itself by running <a href="http://php.net/manual/en/function.getimagesize.php" rel="nofollow noreferrer">getimagesize</a> on the file, it will return FALSE if it\'s not an image.</li>\n</ul>\n<h1>Other types of upload</h1>\n<ul>\n<li>Check the allowed extensions (ex. &quot;.pdf&quot;)</li>\n<li>Check that the mime type of the file corresponds to the extension</li>\n</ul>\n<p>Sample code:</p>\n<pre><code>function getRealMimeType($filename) {\n    $finfo = new finfo(FILEINFO_MIME, &quot;/usr/share/misc/magic&quot;); \n    if (!$finfo) {\n        echo &quot;Opening fileinfo database failed&quot;;\n        return &quot;&quot;;\n    }\n...(truncated)'])
+    creation_date (Type: NUMBER; Sample values: ['1320382370613000', '1320402813217000', '1320429272833000', '1320458630340000', '1320596104960000'])
+    last_edit_date (Type: NUMBER; Sample values: ['1495535386917000.0', 'nan', '1320429579230000.0', 'nan', '1592644375060000.0'])
+    score (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.FULL_201510
+[
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id (Type: NUMBER; Sample values: ['6940894', '6941271', '7022303', '4149396', '5644753'])
+    by (Type: TEXT; Sample values: ['seanccox', 'Fuxy', 'clhodapp', 'MaysonL', 'mhd'])
+    score (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    text (Type: TEXT; Sample values: ['A quick scan of jigneshg&#x27;s past comments reveals that they are definitely not a native English speaker, and as was pointed out above, in Indian culture, this is a perfectly polite way to empathize with another&#x27;s suffering. The irony that this apparent cultural misunderstanding has caused jigneshg&#x27;s karma  to plummet gives me no end of mirth, but the clearly anglophile Western (and perhaps white male) reaction to jigneshg&#x27;s statement is no more accurate for it. There&#x27;s plenty of self-righteous indignation to go around this holiday season, so maybe a little forgiveness is in order, after examining the situation?', 'Interesting.<p>I would like to meet this person.<p>I find it very helpful to surround myself with people that have a different way of seeing the world.', 'They also finally cashed in the &#x27;big side vs. small side&#x27; credit they&#x27;ve been holding onto since they first branded HD (720 and 1080 are the (exact) pixel-lengths of the small sides, while 4k is (less than) the length of the big side).<p>Edit: Not only that, but they can (defendably) make the claim that 4k is &quot;4 times the size of 1080p&quot; while (deniably) knowing that some people will misinterpret.', '"It appears that your web browser does not support webGL", which is bs. They seem to be pushing Chrome, for some reason.', 'So close, with minimal effort they could map that to \'/bgb/1353\'. It seems that dejure.org actually works that way -&#62; <a href="http://dejure.org/gesetze/BGB/1353" rel="nofollow">http://dejure.org/gesetze/BGB/1353</a> seems to map to <a href="http://dejure.org/gesetze/BGB/1353.html" rel="nofollow">http://dejure.org/gesetze/BGB/1353.html</a>, but they graciously ignore any kind of file extension...'])
+    time (Type: NUMBER; Sample values: ['1387538129', '1387546409', '1389167692', '1340407221', '1367505857'])
+    type (Type: TEXT; Sample values: ['comment', 'comment', 'comment', 'comment', 'comment'])
+    deleted (Type: BOOLEAN; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_PRIVILEGE_WIKI
+[
+    tags (Type: TEXT; Sample values: ['None'])
+    comment_count (Type: NUMBER; Sample values: ['0'])
+    id (Type: NUMBER; Sample values: ['15111874'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['1583'])
+    owner_display_name (Type: TEXT; Sample values: ['None'])
+    post_type_id (Type: NUMBER; Sample values: ['8'])
+    parent_id (Type: TEXT; Sample values: ['None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None'])
+    owner_user_id (Type: NUMBER; Sample values: ['-1'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_TAG_WIKI
+[
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    id (Type: NUMBER; Sample values: ['5166749', '5399041', '5410995', '6369460', '6526901'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['5', '5', '5', '5', '5'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['user1228', 'user806549', 'user1228', 'user757425', 'user195488'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['user1228', 'user806549', 'user1228', 'user757425', 'user195488'])
+    owner_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    body (Type: TEXT; Sample values: ['<p>OpenWrap is a dependency manager for the .net platform.  It can be found at <a href="http://openwrap.org" rel="nofollow">http://openwrap.org</a>.</p>', '<p>Questions in this category contains all aspects of development relating to poker - ie. hand evaluation, game engine, statistics, etc.</p>', '<p><a href="http://msdn.microsoft.com/en-us/library/system.windows.automation.automationelement.aspx" rel="nofollow">AutomationElement</a> represents a UI Automation element in the UI Automation tree, and contains values used as identifiers by UI Automation client applications.  It is found within the <a href="http://msdn.microsoft.com/en-us/library/ms590934.aspx" rel="nofollow">System.Windows.Automation</a> namespace.</p>', '<p>Because a permalink remains unchanged indefinitely, it is less susceptible to link rot. Most modern weblogging and content-syndication software systems support such links. Other types of websites use the term permanent links, but the term permalink is most common within the blogosphere. Permalink is a portmanteau word made from permanent link. Permalinks are often simply stated so as to be human-readable.</p>', '<p>Questions in this tag are only for questions related to the PCI Local Bus standard which is a computer bus for attaching hardware devices in a computer.</p>'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_ORPHANED_TAG_WIKI
+[
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    id (Type: NUMBER; Sample values: ['4164933', '4164934', '3625171', '3625172', '5149478'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['Roger Pate', 'Roger Pate', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['nan', 'nan', '6148.0', '6148.0', '7173.0'])
+    owner_user_id (Type: NUMBER; Sample values: ['-1', '-1', '-1', '-1', '-1'])
+    body (Type: TEXT; Sample values: ['<p><a href="http://en.wikipedia.org/wiki/Argument-dependent_name_lookup" rel="nofollow">ADL</a> is mostly associated with <a href="/tags/c++/info">C++</a>.</p>', 'ADL is argument-dependent lookup, sometimes called Koenig lookup.', '<p><a href="http://www.gnu.org/software/emacs/manual/html_node/elisp/index.html" rel="nofollow noreferrer">Emacs Lisp</a> is the extension language for the <a href="http://www.gnu.org/software/emacs/" rel="nofollow noreferrer">GNU Emacs text editor</a>, and in fact, most of the functionality of Emacs is implemented using Emacs Lisp.  Users generally customize Emacs\' behavior by adding Emacs Lisp statements to their .emacs, or writing separate packages.  A guide to learning Emacs Lisp for non-programmers can be found <a href="http://www.gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html" rel="nofollow noreferrer">here</a>.</p>\n\n<p>Emacs Lisp differs from most other lisps in two main ways:</p>\n\n<ol>\n<li>It has special features for scanning and parsing text, as well as features for handling files, buffers, arrays, displays, and subprocesses.  This is due to the fact that it is designed to be used in a text editor</li>\n<li>It uses <a href="http://en.wikipedia.org/wiki/Scope_(prog...(truncated)', "<p>Emacs Lisp is the extension language for the GNU Emacs text editor, and in fact, most of the functionality of Emacs is implemented using Emacs Lisp.  Users generally customize Emacs' behavior by adding Emacs Lisp statements to their .emacs, or writing separate packages.  A guide to learning Emacs Lisp for non-programmers can be found here.</p>\n\n<p>Emacs Lisp differs from most other lisps in two main ways:</p>\n\n<p>It has special features for scanning and parsing text, </p>", '<p><a href="http://api.jquery.com/jQuery.ajax/" rel="nofollow">See more here</a> (scroll to <strong>dataFilter</strong>)</p>'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.STORIESV2
+[
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id (Type: NUMBER; Sample values: ['5310811', '5925001', '5367137', '5552246', '5237983'])
+    url (Type: TEXT; Sample values: ['http://www.fastcompany.com/3006490/fast-feed/medical-students-better-surgery-after-hours-nintendo-each-week', 'http://www.guardian.co.uk/technology/2011/mar/17/us-spy-operation-social-networks?resubmit', 'http://keepermovies.com/', 'http://bhorowitz.com/2013/04/15/through-the-looking-glass-hiring-sales-people/', 'http://activemobi.com/amazing-mobile-websites'])
+    timestamp (Type: NUMBER; Sample values: ['1362254725000000', '1371932178000000', '1363155987000000', '1366042010000000', '1361192891000000'])
+    time (Type: NUMBER; Sample values: ['1362254725', '1371932178', '1363155987', '1366042010', '1361192891'])
+    by (Type: TEXT; Sample values: ['draker', 'mindcrime', 'wsieroci', 'mh_', 'asznajder'])
+    text (Type: TEXT; Sample values: ['None', 'None', 'Hi,<p>This is my first django website, how do you like it? Please give me your feedback :)<p>Best,\nWiktor', 'None', 'None'])
+    type (Type: TEXT; Sample values: ['story', 'story', 'story', 'story', 'story'])
+    title (Type: TEXT; Sample values: ['Medical Students Better At Surgery After Hours Of Nintendo Each Week', 'Revealed: US Spy Operation That Targets Social Medial [2011]', 'Show HN: Site which searches throught Internet to find full movies from youtube', 'Through the Looking Glass: Hiring Sales People', "How to build your company's mobile website?"])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_WIKI_PLACEHOLDER
+[
+    tags (Type: TEXT; Sample values: [])
+    last_editor_user_id (Type: NUMBER; Sample values: [])
+    owner_display_name (Type: TEXT; Sample values: [])
+    post_type_id (Type: NUMBER; Sample values: [])
+    id (Type: NUMBER; Sample values: [])
+    last_editor_display_name (Type: TEXT; Sample values: [])
+    owner_user_id (Type: NUMBER; Sample values: [])
+    accepted_answer_id (Type: TEXT; Sample values: [])
+    parent_id (Type: TEXT; Sample values: [])
+    comment_count (Type: NUMBER; Sample values: [])
+    body (Type: TEXT; Sample values: [])
+    title (Type: TEXT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_TAG_WIKI_EXCERPT
+[
+    comment_count (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    id (Type: NUMBER; Sample values: ['4742863', '5304008', '5354120', '5362330', '5410996'])
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    answer_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    view_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    favorite_count (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['4', '4', '4', '4', '4'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['user197015', 'user177800', 'user614868', 'user614868', 'user1228'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['user197015', 'user177800', 'user614868', 'user614868', 'user1228'])
+    body (Type: TEXT; Sample values: ["SlimDX is an MIT-licensed, open-source framework that allows developers working with managed languages like C# and IronPython to leverage DirectX and many of Microsoft's other gaming-related multimedia APIs.", 'WebMachine is an Erlang framework for creating RESTful Web Services using Erlang/OTP best practices.', 'TCP/IP (Transmission Control Protocol/Internet Protocol) is the basic communication language or protocol of the Internet. It can also be used as a communications protocol in a private network (either an intranet or an extranet).', 'Smart GWT is a GWT-based framework that allows you to not only utilize its comprehensive widget library for your application UI, but also tie these widgets in with your server-side for data management', 'A class within System.Windows.Automation; represents a UI Automation element in the UI Automation tree, and contains values used as identifiers by UI Automation client applications.'])
+    title (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.FULL_PARTITIONED
+[
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id (Type: NUMBER; Sample values: ['18574840', '18710125', '18632673', '18621139', '18710183'])
+    url (Type: TEXT; Sample values: ['https://aws.amazon.com/about-aws/whats-new/2018/11/announcing-amazon-aurora-global-database/', 'https://invenia.github.io/blog/2018/12/18/GPAR/', 'https://journals.lww.com/jonmd/Citation/1964/02000/_THE_VIP_SYNDROME___A_CLINICAL_STUDY_IN_HOSPITAL.12.aspx', 'https://medium.com/@rhatr/is-it-time-for-cloud-native-open-source-db0ad6e695e5', 'https://www.theverge.com/2018/12/18/18145089/twitter-latest-tweets-toggle-ranked-feed-timeline-algorithm'])
+    time (Type: NUMBER; Sample values: ['1543633624', '1545164100', '1544225890', '1544123941', '1545164507'])
+    timestamp (Type: NUMBER; Sample values: ['1543633624000000', '1545164100000000', '1544225890000000', '1544123941000000', '1545164507000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.FULL_PARTITION_EXTRA
+[
+    tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    ranking (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_id (Type: NUMBER; Sample values: ['15085159', '15085159', '15085159', '15085159', '15085159'])
+    id (Type: NUMBER; Sample values: ['15087446', '15090863', '15089791', '15086865', '15088985'])
+    url (Type: TEXT; Sample values: ['', '', '', '', ''])
+    time (Type: NUMBER; Sample values: ['1503546477', '1503588429', '1503580516', '1503537478', '1503571355'])
+    timestamp (Type: NUMBER; Sample values: ['1503546477000000', '1503588429000000', '1503580516000000', '1503537478000000', '1503571355000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.COMMENTS
+[
+    id (Type: NUMBER; Sample values: ['103439287', '103439288', '103439295', '103439296', '103439300'])
+    post_id (Type: NUMBER; Sample values: ['58559895', '58560057', '14264038', '58557667', '58559898'])
+    score (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    user_id (Type: NUMBER; Sample values: ['8961920', '12123479', '3124256', '10112124', '2164365'])
+    user_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    text (Type: TEXT; Sample values: ["@Yserbius That didn't solve my issue please can you look at into it", "It's changed total output of my script", 'So we need a `getter` for each variable.  Why not just do: `fruits={"apple", "orange"};  d=vars(); params = urllib.urlencode({ fruit: val for fruit, val in d.items() if fruit in fruits and val is not None })`', "If you can reproduce it, I'm happy to take a look.", '@sanastasiadis the question is tagged with _oracle_ but the question you linked to is for _SQL Server_. How does this answer the question?'])
+    creation_date (Type: NUMBER; Sample values: ['1572012506553000', '1572012507483000', '1572012520720000', '1572012521133000', '1572012531927000'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POSTS_MODERATOR_NOMINATION
+[
+    tags (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    last_editor_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    post_type_id (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+    owner_user_id (Type: NUMBER; Sample values: ['171206', '3312', '437768', '114994', '555384'])
+    id (Type: NUMBER; Sample values: ['4729565', '4729601', '4729691', '4729708', '4729774'])
+    last_editor_user_id (Type: NUMBER; Sample values: ['171206', '3312', '437768', '114994', '555384'])
+    parent_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    owner_display_name (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    accepted_answer_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.BADGES
+[
+    tag_based (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    id (Type: NUMBER; Sample values: ['13770010', '13770846', '13789486', '13874270', '13902569'])
+    user_id (Type: NUMBER; Sample values: ['152963', '3198857', '4752052', '4811835', '264148'])
+    name (Type: TEXT; Sample values: ['Informed', 'Informed', 'Informed', 'Informed', 'Informed'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.VOTES
+[
+    id (Type: NUMBER; Sample values: ['184603528', '184743161', '184921894', '134107857', '134276778'])
+    post_id (Type: NUMBER; Sample values: ['55590362', '55530869', '55668918', '42689839', '21742536'])
+    vote_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    creation_date (Type: NUMBER; Sample values: ['1554768000000000', '1554940800000000', '1555113600000000', '1489017600000000', '1489190400000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.HACKERNEWS.STORIES
+[
+    id (Type: NUMBER; Sample values: ['7047766', '10045965', '8263724', '7099890', '8968838'])
+    score (Type: NUMBER; Sample values: ['3', '3', '3', '3', '3'])
+    by (Type: TEXT; Sample values: ['bendoernberg', 'briantmaurer', 'carlsednaoui', 'cbrandolino_', 'cindyceleste'])
+    url (Type: TEXT; Sample values: ['http://btcaddr.es/', 'http://www.dear-data.com/', 'http://techcrunch.com/2014/09/03/the-ice-bucket-challenge-by-the-numbers', 'https://github.com/cbrandolino/jQuery-basic-arithmetic-plugin', 'http://www.wsj.com/articles/how-a-two-tier-economy-is-reshaping-the-u-s-marketplace-1422502201?mod=trending_now_2'])
+    time (Type: NUMBER; Sample values: ['1389565876', '1439352647', '1409761006', '1390352453', '1422565677'])
+    time_ts (Type: NUMBER; Sample values: ['1389565876000000', '1439352647000000', '1409761006000000', '1390352453000000', '1422565677000000'])
+    text (Type: TEXT; Sample values: ['', '', '', '', ''])
+    title (Type: TEXT; Sample values: ['Bitcoin Address Shortener', 'Two women switch continents, draw and share weekly data', 'The Ice Bucket Challenge, by the Numbers', 'Finally: the jQuery basic arithmetics plugin.', 'How a Two-Tier Economy Is Reshaping the U.S. Marketplace'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POST_LINKS
+[
+    id (Type: NUMBER; Sample values: ['947101319', '947191035', '947233779', '947248496', '947258495'])
+    post_id (Type: NUMBER; Sample values: ['25444095', '25448589', '25452281', '25453843', '25454454'])
+    related_post_id (Type: NUMBER; Sample values: ['1453043', '25377797', '11263297', '14704957', '19059730'])
+    link_type_id (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.POST_HISTORY
+[
+    id (Type: NUMBER; Sample values: ['86091483', '85632228', '85632229', '85637305', '85637306'])
+    post_history_type_id (Type: NUMBER; Sample values: ['2', '1', '3', '2', '1'])
+    user_id (Type: NUMBER; Sample values: ['2170106', '4660474', '4660474', '4660730', '4660730'])
+    post_id (Type: NUMBER; Sample values: ['29116345', '28998490', '28998490', '28999843', '28999843'])
+    revision_guid (Type: TEXT; Sample values: ['6509ef7b-52e9-4e14-bd54-274c531ef947', '8e1fce66-6346-4ea1-978d-9d871c55a4a6', '8e1fce66-6346-4ea1-978d-9d871c55a4a6', '6c8c07dd-e85b-4e86-945d-0f6c42faf117', '6c8c07dd-e85b-4e86-945d-0f6c42faf117'])
+    comment (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    text (Type: TEXT; Sample values: ["Use [PHP Date function][1]\n\n    date('Y-m-d',strtotime($_GET['searchKeyword']))\n\n\n  [1]: http://php.net/manual/en/function.date.php", 'How to change the width of a CSS flex-box column?', '<html><css><flex>', 'I can\'t figure out why my code won\'t save to my .accdb database.\n\nI am fetching data from a .accdb database file and displaying it in a DataGridView, and then allowing changes to be made to it there. (This is a stock control system.) After making changes, the user is meant to be able to send the data back so it is saved in the .accdb file.\n\nI have looked online everywhere and tried multiple different ways of doing this. This is the way I am currently using to solve the problem, but when running the code it does not save to the .accdb file. (However, it throws up no errors.)\n\n    Public Class Database\n    Dim datatable As DataTable\n    Dim adapter As OleDb.OleDbDataAdapter\n    Dim dbCon As New OleDb.OleDbConnection\n    Dim dbProvider As String = "PROVIDER=Microsoft.ACE.OLEDB.12.0;"\n    Dim dbRsrc As String = "Data Source =" & System.IO.Directory.GetCurrentDirectory & "/Resources/List.accdb"\n    Dim binding As BindingSource\n    Dim cmdBuilder As OleDb.OleDbCommandBuilder\n\n    Private Sub...(truncated)', 'VB.NET - .accdb database not saving changes'])
+    creation_date (Type: NUMBER; Sample values: ['1426663800027000', '1426112450947000', '1426112450947000', '1426119474033000', '1426119474033000'])
+]
+
+--------------------------------------------------
+
+###Table full name: STACKOVERFLOW_PLUS.STACKOVERFLOW.USERS
+[
+    id (Type: NUMBER; Sample values: ['14596831', '14596949', '14599672', '14599777', '14599876'])
+    website_url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+

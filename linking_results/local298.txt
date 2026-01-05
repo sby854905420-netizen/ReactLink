@@ -1,0 +1,220 @@
+###Table full name: cleaned_weekly_sales
+[
+    month_number (Type: INTEGER; Sample values: ['6', '8', '8', '5', '7'])
+    avg_transaction (Type: REAL; Sample values: ['168.3', '174.25', '43.57', '27.29', '34.62'])
+    transactions (Type: INTEGER; Sample values: ['2747', '5893', '50773', '91473', '273'])
+    calendar_year (Type: INTEGER; Sample values: ['2020', '2020', '2018', '2019', '2020'])
+    segment (Type: TEXT; Sample values: ['C2', 'unknown', 'C1', 'C2', 'F3'])
+    sales (Type: INTEGER; Sample values: ['462331', '1026838', '2212027', '2496378', '9451'])
+    demographic (Type: TEXT; Sample values: ['Couples', 'unknown', 'Couples', 'Couples', 'Families'])
+    week_number (Type: INTEGER; Sample values: ['23', '36', '34', '21', '29'])
+    customer_type (Type: TEXT; Sample values: ['Existing', 'Guest', 'Existing', 'New', 'New'])
+    week_date (Type: TEXT; Sample values: ['2020-06-01', '2020-08-31', '2018-08-20', '2019-05-20', '2020-07-13'])
+    platform (Type: TEXT; Sample values: ['Shopify', 'Shopify', 'Retail', 'Retail', 'Retail'])
+    week_date_formatted (Type: TEXT; Sample values: ['2020-6-1', '2020-8-31', '2018-8-20', '2019-5-20', '2020-7-13'])
+    age_band (Type: TEXT; Sample values: ['Middle Aged', 'unknown', 'Young Adults', 'Middle Aged', 'Retirees'])
+    region (Type: TEXT; Sample values: ['AFRICA', 'AFRICA', 'CANADA', 'OCEANIA', 'SOUTH AMERICA'])
+]
+
+--------------------------------------------------
+
+###Table full name: customer_transactions
+[
+    txn_amount (Type: INTEGER; Sample values: ['306', '131', '3', '867', '583'])
+    txn_date (Type: TEXT; Sample values: ['2020-04-04', '2020-02-04', '2020-03-15', '2020-03-05', '2020-01-12'])
+    customer_id (Type: INTEGER; Sample values: ['204', '208', '169', '393', '351'])
+    txn_type (Type: TEXT; Sample values: ['deposit', 'purchase', 'withdrawal', 'deposit', 'purchase'])
+]
+
+--------------------------------------------------
+
+###Table full name: customer_nodes
+[
+    end_date (Type: TEXT; Sample values: ['2020-03-21', '2020-03-21', '2020-04-09', '2020-01-16', '2020-03-10'])
+    start_date (Type: TEXT; Sample values: ['2020-03-09', '2020-03-21', '2020-03-25', '2020-01-13', '2020-02-12'])
+    customer_id (Type: INTEGER; Sample values: ['74', '250', '281', '268', '161'])
+    node_id (Type: INTEGER; Sample values: ['4', '2', '1', '1', '1'])
+    region_id (Type: INTEGER; Sample values: ['5', '3', '2', '4', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: shopping_cart_users
+[
+    start_date (Type: TEXT; Sample values: ['2020-02-01', '2020-01-19', '2020-03-05', '2020-03-02', '2020-01-16'])
+    user_id (Type: INTEGER; Sample values: ['349', '304', '264', '260', '146'])
+    cookie_id (Type: TEXT; Sample values: ['2632eb', '37bc2f', 'e3fc3a', '3d83d3', '2bae8b'])
+]
+
+--------------------------------------------------
+
+###Table full name: interest_metrics
+[
+    _month (Type: REAL; Sample values: ['10.0', '4.0', '11.0', '11.0', '8.0'])
+    month_year (Type: TEXT; Sample values: ['10-2018', '04-2019', '11-2018', '11-2018', '08-2018'])
+    _year (Type: REAL; Sample values: ['2018.0', '2019.0', '2018.0', '2018.0', '2018.0'])
+    index_value (Type: REAL; Sample values: ['1.16', '0.84', '1.27', '1.52', '1.46'])
+    composition (Type: REAL; Sample values: ['2.79', '1.62', '1.99', '3.67', '5.45'])
+    ranking (Type: INTEGER; Sample values: ['669', '1051', '602', '323', '228'])
+    percentile_ranking (Type: REAL; Sample values: ['21.94', '4.37', '35.13', '65.19', '70.27'])
+    interest_id (Type: REAL; Sample values: ['36872.0', '38358.0', '34086.0', '5.0', '28.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: veg_txn_df
+[
+    discount(%) (Type: INTEGER; Sample values: ['1', '1', '1', '1', '1'])
+    unit_selling_px_rmb/kg (Type: REAL; Sample values: ['8.0', '18.0', '8.0', '8.0', '3.2'])
+    txn_date (Type: TEXT; Sample values: ['2021-02-14 00:00:00', '2021-02-15 00:00:00', '2021-01-17 00:00:00', '2021-09-11 00:00:00', '2022-06-16 00:00:00'])
+    qty_sold(kg) (Type: REAL; Sample values: ['0.739', '0.25', '0.426', '0.389', '0.601'])
+    sale/return (Type: TEXT; Sample values: ['sale', 'sale', 'sale', 'sale', 'sale'])
+    txn_time (Type: TEXT; Sample values: ['18:00:29', '10:10:27', '16:19:33', '09:24:48', '13:52:28'])
+    index (Type: INTEGER; Sample values: ['231837', '232204', '200782', '413284', '584573'])
+    item_code (Type: INTEGER; Sample values: ['102900051010455', '102900005116912', '102900005116547', '102900005115779', '102900011016701'])
+    day_of_week (Type: TEXT; Sample values: ['Sunday', 'Monday', 'Sunday', 'Saturday', 'Thursday'])
+]
+
+--------------------------------------------------
+
+###Table full name: weekly_sales
+[
+    transactions (Type: INTEGER; Sample values: ['452234', '6952', '4584', '152103', '66571'])
+    segment (Type: TEXT; Sample values: ['None', 'None', 'C4', 'F1', 'F2'])
+    sales (Type: INTEGER; Sample values: ['12112894', '338550', '263286', '7531190', '2228486'])
+    platform (Type: TEXT; Sample values: ['Retail', 'Retail', 'Retail', 'Retail', 'Retail'])
+    customer_type (Type: TEXT; Sample values: ['Guest', 'Existing', 'Existing', 'Existing', 'New'])
+    week_date (Type: TEXT; Sample values: ['23/4/18', '1/7/19', '2/7/18', '18/5/20', '29/4/19'])
+    region (Type: TEXT; Sample values: ['CANADA', 'CANADA', 'EUROPE', 'OCEANIA', 'ASIA'])
+]
+
+--------------------------------------------------
+
+###Table full name: bitcoin_transactions
+[
+    txn_date (Type: TEXT; Sample values: ['13-08-2018', '11-02-2021', '22-07-2021', '18-11-2017', '02-10-2017'])
+    quantity (Type: REAL; Sample values: ['7.595667811', '3.011469069', '9.439229697', '3.313783888', '7.151083123'])
+    txn_time (Type: TEXT; Sample values: ['2018-08-13T17:06:25.084Z', '2021-02-11T13:55:41.993Z', '2021-07-22T21:16:18.459Z', '2017-11-18T12:47:32.767Z', '2017-10-02T17:33:44.658Z'])
+    txn_id (Type: INTEGER; Sample values: ['7924', '20253', '22460', '4332', '3716'])
+    percentage_fee (Type: REAL; Sample values: ['0.3', '0.3', '0.3', '0.3', '0.3'])
+    member_id (Type: TEXT; Sample values: ['45c48c', 'e4da3b', '6512bd', 'c51ce4', 'd3d944'])
+    ticker (Type: TEXT; Sample values: ['BTC', 'BTC', 'ETH', 'BTC', 'BTC'])
+    txn_type (Type: TEXT; Sample values: ['BUY', 'BUY', 'SELL', 'BUY', 'BUY'])
+]
+
+--------------------------------------------------
+
+###Table full name: bitcoin_members
+[
+    first_name (Type: TEXT; Sample values: ['Enoch', 'Ayush', 'Nandita', 'Vikram', 'Charlie'])
+    member_id (Type: TEXT; Sample values: ['d3d944', '167909', 'a87ff6', '6512bd', 'eccbc8'])
+    region (Type: TEXT; Sample values: ['Africa', 'United States', 'United States', 'India', 'United States'])
+]
+
+--------------------------------------------------
+
+###Table full name: bitcoin_prices
+[
+    volume (Type: TEXT; Sample values: ['1.37M', '531.22K', '5.16M', '5.41M', '33.59M'])
+    change (Type: TEXT; Sample values: ['-5.84%', '0.15%', '-2.86%', '-0.98%', '-13.01%'])
+    low (Type: REAL; Sample values: ['6756.1', '8413.0', '233.46', '102.89', '376.99'])
+    open (Type: REAL; Sample values: ['7289.0', '8497.4', '247.92', '105.82', '439.14'])
+    high (Type: REAL; Sample values: ['7294.4', '8631.7', '254.36', '107.32', '466.4'])
+    market_date (Type: TEXT; Sample values: ['10-04-2020', '17-11-2019', '22-09-2018', '29-01-2019', '03-09-2020'])
+    price (Type: REAL; Sample values: ['6863.1', '8509.8', '240.82', '104.79', '381.97'])
+    ticker (Type: TEXT; Sample values: ['BTC', 'BTC', 'ETH', 'ETH', 'ETH'])
+]
+
+--------------------------------------------------
+
+###Table full name: shopping_cart_campaign_identifier
+[
+    end_date (Type: TEXT; Sample values: ['2020-01-14', '2020-01-28', '2020-03-31'])
+    start_date (Type: TEXT; Sample values: ['2020-01-01', '2020-01-15', '2020-02-01'])
+    campaign_id (Type: INTEGER; Sample values: ['1', '2', '3'])
+    campaign_name (Type: TEXT; Sample values: ['BOGOF - Fishing For Compliments', '25% Off - Living The Lux Life', 'Half Off - Treat Your Shellf(ish)'])
+    products (Type: TEXT; Sample values: ['1-3', '4-5', '6-8'])
+]
+
+--------------------------------------------------
+
+###Table full name: veg_loss_rate_df
+[
+    index (Type: INTEGER; Sample values: ['23', '178', '26', '221', '83'])
+    item_code (Type: INTEGER; Sample values: ['102900005116233', '102900011032732', '102900005116530', '102900011036242', '102900011009246'])
+    item_name (Type: TEXT; Sample values: ['Red Pepper (1)', 'High Melon (2)', 'Xixia Mushroom (1)', 'Green And Red Jian Pepper Mix (Bag)', 'Fresh Black Fungus (1)'])
+    loss_rate_% (Type: REAL; Sample values: ['11.76', '9.43', '13.82', '9.43', '7.63'])
+]
+
+--------------------------------------------------
+
+###Table full name: veg_cat
+[
+    index (Type: INTEGER; Sample values: ['70', '172', '151', '233', '47'])
+    item_code (Type: INTEGER; Sample values: ['102900011032480', '102900011032367', '102900011027479', '102900011036266', '102900011021644'])
+    category_code (Type: INTEGER; Sample values: ['1011010101', '1011010504', '1011010504', '1011010801', '1011010101'])
+    item_name (Type: TEXT; Sample values: ['Artemisia Stelleriana', 'Red Bell Pepper (2)', 'Xiaozhoupi', 'Velvet Antler Mushroom (Box)', 'Hongshan Caitai'])
+    category_name (Type: TEXT; Sample values: ['Flower/Leaf\xa0Vegetables', 'Capsicum', 'Capsicum', 'Edible Mushroom', 'Flower/Leaf\xa0Vegetables'])
+]
+
+--------------------------------------------------
+
+###Table full name: veg_whsle_df
+[
+    whsle_date (Type: TEXT; Sample values: ['2022-06-25 00:00:00', '2021-06-11 00:00:00', '2020-08-03 00:00:00', '2021-05-06 00:00:00', '2022-05-18 00:00:00'])
+    whsle_px_rmb-kg (Type: REAL; Sample values: ['4.21', '1.19', '3.34', '3.04', '5.96'])
+    index (Type: INTEGER; Sample values: ['37193', '15704', '1255', '14012', '35253'])
+    item_code (Type: INTEGER; Sample values: ['102900005116547', '102900005116509', '102900011001806', '102900005116547', '102900005116714'])
+]
+
+--------------------------------------------------
+
+###Table full name: customer_regions
+[
+    region_id (Type: INTEGER; Sample values: ['5', '3', '1', '4', '2'])
+    region_name (Type: TEXT; Sample values: ['Europe', 'Africa', 'Australia', 'Asia', 'America'])
+]
+
+--------------------------------------------------
+
+###Table full name: shopping_cart_events
+[
+    sequence_number (Type: INTEGER; Sample values: ['3', '1', '21', '3', '7'])
+    event_time (Type: TEXT; Sample values: ['2020-02-08 21:32:06.252986', '2020-02-28 18:45:33.90196', '2020-03-25 20:17:12.484998', '2020-02-17 01:08:10.966062', '2020-01-14 05:06:29.911936'])
+    page_id (Type: INTEGER; Sample values: ['4', '1', '13', '3', '4'])
+    cookie_id (Type: TEXT; Sample values: ['b6d767', '322fd1', '14de71', '75260d', '28dd2c'])
+    visit_id (Type: TEXT; Sample values: ['71740f', '33e1af', 'eaffde', '4d2d07', 'da7cf0'])
+    event_type (Type: INTEGER; Sample values: ['1', '1', '3', '1', '2'])
+]
+
+--------------------------------------------------
+
+###Table full name: shopping_cart_page_hierarchy
+[
+    page_id (Type: INTEGER; Sample values: ['10', '8', '13', '12', '9'])
+    product_id (Type: REAL; Sample values: ['8.0', '6.0', 'nan', 'nan', '7.0'])
+    page_name (Type: TEXT; Sample values: ['Crab', 'Abalone', 'Confirmation', 'Checkout', 'Lobster'])
+    product_category (Type: TEXT; Sample values: ['Shellfish', 'Shellfish', 'None', 'None', 'Shellfish'])
+]
+
+--------------------------------------------------
+
+###Table full name: shopping_cart_event_identifier
+[
+    event_name (Type: TEXT; Sample values: ['Purchase', 'Ad Impression', 'Page View', 'Add to Cart', 'Ad Click'])
+    event_type (Type: INTEGER; Sample values: ['3', '4', '1', '2', '5'])
+]
+
+--------------------------------------------------
+
+###Table full name: interest_map
+[
+    last_modified (Type: TEXT; Sample values: ['2019-01-16 09:11:30', '2018-08-02 16:05:03', '2018-05-23 11:30:12', '2018-08-20 11:00:03', '2017-12-07 12:35:47'])
+    id (Type: INTEGER; Sample values: ['6013', '33959', '5', '34635', '6300'])
+    interest_name (Type: TEXT; Sample values: ['Competitive Sports Participants', 'Boston Bruins Fans', 'Brides & Wedding Planners', 'Arizona Cardinals Fans', 'Washington DC Trip Planners'])
+    interest_summary (Type: TEXT; Sample values: ['People registering for competitive sports leagues, races, and events for adults.', 'People reading news about the Boston Bruins and watching games. These consumers are more likely to spend money on team gear.', 'People researching wedding ideas and vendors.', 'People reading news about the Arizona Cardinals and watching games. These consumers are more likely to spend money on team gear.', 'People researching attractions and accommodations in Washington DC. These consumers are more likely to spend money on flights, hotels, and local attractions.'])
+    created_at (Type: TEXT; Sample values: ['2017-03-27 16:36:07', '2018-08-02 16:05:03', '2016-05-26 14:57:59', '2018-08-20 11:00:03', '2017-05-03 10:00:02'])
+]
+
+--------------------------------------------------
+

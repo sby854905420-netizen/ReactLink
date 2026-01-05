@@ -1,0 +1,482 @@
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_LAYERS
+[
+    osm_way_id (Type: NUMBER; Sample values: ['80820903', '159980615', '83833925', '258762175', '181204824'])
+    osm_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2017"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '2', '1', '1'])
+    layer_code (Type: NUMBER; Sample values: ['1500', '1500', '1500', '1500', '1500'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1286621389000000', '1334665988000000', '1491340214000000', '1390915954000000', '1347758554000000'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    layer_name (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    layer_class (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    gdal_type (Type: TEXT; Sample values: ['multipolygons', 'multipolygons', 'multipolygons', 'multipolygons', 'multipolygons'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_FEATURES
+[
+    osm_way_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    osm_id (Type: NUMBER; Sample values: ['718495344', '980252639', '931455318', '944124836', '542904361'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "highway",\n    "value": "service"\n  },\n  {\n    "key": "service",\n    "value": "parking_aisle"\n  }\n]', '[\n  {\n    "key": "highway",\n    "value": "service"\n  },\n  {\n    "key": "service",\n    "value": "parking_aisle"\n  }\n]', '[\n  {\n    "key": "highway",\n    "value": "service"\n  },\n  {\n    "key": "service",\n    "value": "driveway"\n  }\n]', '[\n  {\n    "key": "highway",\n    "value": "service"\n  },\n  {\n    "key": "service",\n    "value": "driveway"\n  }\n]', '[\n  {\n    "key": "highway",\n    "value": "service"\n  },\n  {\n    "key": "service",\n    "value": "parking_aisle"\n  }\n]'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1566855778000000', '1630961601000000', '1618586508000000', '1621318844000000', '1511695474000000'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)'])
+    feature_type (Type: TEXT; Sample values: ['lines', 'lines', 'lines', 'lines', 'lines'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_WAYS
+[
+    nodes (Type: VARIANT; Sample values: ['[\n  {\n    "id": 866315580\n  },\n  {\n    "id": 866469140\n  },\n  {\n    "id": 867906160\n  },\n  {\n    "id": 866405284\n  },\n  {\n    "id": 866497492\n  },\n  {\n    "id": 866302007\n  },\n  {\n    "id": 866449818\n  },\n  {\n    "id": 867897625\n  },\n  {\n    "id": 867903637\n  },\n  {\n    "id": 866402859\n  },\n  {\n    "id": 866540640\n  }\n]', '[\n  {\n    "id": 887696362\n  },\n  {\n    "id": 887829439\n  },\n  {\n    "id": 887997465\n  },\n  {\n    "id": 887771891\n  },\n  {\n    "id": 887946345\n  },\n  {\n    "id": 887733187\n  },\n  {\n    "id": 887896126\n  },\n  {\n    "id": 887683316\n  },\n  {\n    "id": 887809856\n  },\n  {\n    "id": 887983189\n  },\n  {\n    "id": 887761266\n  },\n  {\n    "id": 887934769\n  },\n  {\n    "id": 887725502\n  },\n  {\n    "id": 887879212\n  },\n  {\n    "id": 887671531\n  },\n  {\n    "id": 887796830\n  },\n  {\n    "id": 887972053\n  },\n  {\n    "id": 887749910\n  },\n  {\n    "id": 887923069\n  },\n  {\n    "id": 887711659\n  },\n  {\n    "id": 887857327\n  },\n  {\n    "id": 888014154\n  },\n  {\n    "id": 887785787\n  },\n  {\n    "id": 887960678\n  },\n  {\n    "id": 887742561\n  },\n  {\n    "id": 887911649\n  },\n  {\n    "id": 887698676\n  },\n  {\n    "id": 887833997\n  },\n  {\n    "id": 888000588\n  },\n  {\n    "id": 887774554\n  },\n  {\n    "id": 887949557\n  },\n  {\n    "id": 887735182\n  },\n  {\n    "id": 887899156\n  },\n  {\n    "id": 887685989\n  },\n  {\n    "id"...(truncated)', '[\n  {\n    "id": 875317769\n  },\n  {\n    "id": 875233963\n  },\n  {\n    "id": 875089145\n  },\n  {\n    "id": 875080513\n  },\n  {\n    "id": 875172134\n  },\n  {\n    "id": 875111942\n  },\n  {\n    "id": 875220084\n  },\n  {\n    "id": 875134925\n  },\n  {\n    "id": 875268235\n  },\n  {\n    "id": 875184010\n  },\n  {\n    "id": 875315418\n  }\n]', '[\n  {\n    "id": 875203058\n  },\n  {\n    "id": 875126295\n  },\n  {\n    "id": 875250411\n  },\n  {\n    "id": 875165175\n  },\n  {\n    "id": 875297030\n  },\n  {\n    "id": 875213426\n  },\n  {\n    "id": 875076413\n  },\n  {\n    "id": 875191884\n  },\n  {\n    "id": 875320995\n  },\n  {\n    "id": 875238167\n  }\n]', '[\n  {\n    "id": 874666973\n  },\n  {\n    "id": 866013570\n  },\n  {\n    "id": 866266913\n  },\n  {\n    "id": 866057384\n  },\n  {\n    "id": 866343277\n  },\n  {\n    "id": 866099913\n  },\n  {\n    "id": 866310751\n  },\n  {\n    "id": 866078019\n  },\n  {\n    "id": 866004036\n  },\n  {\n    "id": 866120918\n  },\n  {\n    "id": 866046890\n  },\n  {\n    "id": 865996831\n  }\n]'])
+    id (Type: NUMBER; Sample values: ['73165139', '75218666', '73978150', '73975367', '72998704'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "37346853"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Thu Mar 28 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060005017843"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "146070088"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Wed Jun 02 00:00:00 PDT 2010"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030003021991"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "136746756"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Sat Jul 02 00:00:00 PDT 2005"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060003000612"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "136746792"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Sat Jul 02 00:00:00 PDT 2005"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060003000648"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "37343289"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Thu Mar 28 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060005002664"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    changeset (Type: NUMBER; Sample values: ['10475054', '10475054', '10475054', '10475054', '10475054'])
+    version (Type: NUMBER; Sample values: ['2', '3', '2', '2', '3'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1327342614000000', '1327337045000000', '1327342255000000', '1327333911000000', '1327346474000000'])
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x0b\\x00\\x00\\x00o\\...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00m\\x00\\x00\\x00g\\x11...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x0b\\x00\\x00\\x00=\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\n\\x00\\x00\\x00^c<\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x0c\\x00\\x00\\x00s_...(truncated)"])
+    username (Type: TEXT; Sample values: ['jumbanho', 'jumbanho', 'jumbanho', 'jumbanho', 'jumbanho'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_FEATURES_POINTS
+[
+    osm_way_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "LAT",\n    "value": "-15.447917"\n  },\n  {\n    "key": "LONG",\n    "value": "34.760088"\n  },\n  {\n    "key": "Village_Na",\n    "value": "Nelsan"\n  },\n  {\n    "key": "name",\n    "value": "Nelsan"\n  },\n  {\n    "key": "place",\n    "value": "village"\n  }\n]', '[\n  {\n    "key": "LAT",\n    "value": "-15.479594"\n  },\n  {\n    "key": "LONG",\n    "value": "34.635801"\n  },\n  {\n    "key": "Village_Na",\n    "value": "Kalinde"\n  },\n  {\n    "key": "name",\n    "value": "Kalinde"\n  },\n  {\n    "key": "place",\n    "value": "village"\n  }\n]', '[\n  {\n    "key": "LAT",\n    "value": "-15.493529"\n  },\n  {\n    "key": "LONG",\n    "value": "34.595185"\n  },\n  {\n    "key": "Village_Na",\n    "value": "Mvala"\n  },\n  {\n    "key": "name",\n    "value": "Mvala"\n  },\n  {\n    "key": "place",\n    "value": "village"\n  }\n]', '[\n  {\n    "key": "MCC",\n    "value": "286"\n  },\n  {\n    "key": "MNC",\n    "value": "02"\n  },\n  {\n    "key": "communication:microwave",\n    "value": "yes"\n  },\n  {\n    "key": "communication:mobile_phone",\n    "value": "gsm;umts"\n  },\n  {\n    "key": "man_made",\n    "value": "mast"\n  },\n  {\n    "key": "operator",\n    "value": "Vodafone Türkiye"\n  },\n  {\n    "key": "tower:type",\n    "value": "communication"\n  }\n]', '[\n  {\n    "key": "MCC",\n    "value": "286"\n  },\n  {\n    "key": "MNC",\n    "value": "01"\n  },\n  {\n    "key": "communication:microwave",\n    "value": "yes"\n  },\n  {\n    "key": "communication:mobile_phone",\n    "value": "gsm;umts;lte"\n  },\n  {\n    "key": "gsm:frequency",\n    "value": "900"\n  },\n  {\n    "key": "lte:frequency",\n    "value": "2100"\n  },\n  {\n    "key": "man_made",\n    "value": "mast"\n  },\n  {\n    "key": "source",\n    "value": "DigitalGlobe"\n  },\n  {\n    "key": "tower:type",\n    "value": "communication"\n  },\n  {\n    "key": "umts:cellid",\n    "value": "20901;41450;57529"\n  },\n  {\n    "key": "umts:frequency",\n    "value": "2100"\n  }\n]'])
+    osm_id (Type: NUMBER; Sample values: ['2025539138', '2025539003', '2025539116', '2180497974', '2586290621'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '3', '6'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1353536371000000', '1353536369000000', '1353536371000000', '1569904798000000', '1586985766000000'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x81\\nG\\x90JaA@\\x1...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xce\\xe1Z\\xedaQA@6...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xee\\x08\\xa7\\x05/L...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x00\\xb5\\x0eX\\x83A\\x8a...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x88\\xc3\\x883u\\xfd...(truncated)"])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.HISTORY_LAYERS
+[
+    osm_way_id (Type: NUMBER; Sample values: ['295106180', '294416264', '295106175', '295105952', '462638510'])
+    osm_id (Type: NUMBER; Sample values: ['295106180', '294416264', '295106175', '295105952', '462638510'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "11"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "14"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "19"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "21"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "23"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]'])
+    layer_name (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    layer_code (Type: NUMBER; Sample values: ['1500', '1500', '1500', '1500', '1500'])
+    gdal_type (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_version (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    layer_class (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1492347889000000', '1492347918000000', '1492347956000000', '1492347982000000', '1492347995000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_NODES
+[
+    id (Type: NUMBER; Sample values: ['6965219276', '3169428389', '1882792979', '1880576599', '3625331228'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1573439409000000', '1415225744000000', '1345915129000000', '1345803726000000', '1435587953000000'])
+    changeset (Type: NUMBER; Sample values: ['76884327', '26581813', '12857973', '12842932', '32286897'])
+    latitude (Type: NUMBER; Sample values: ['42.624112400', '42.830248900', '43.286195200', '43.259995800', '53.784137700'])
+    geometry (Type: BINARY; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    username (Type: TEXT; Sample values: ['kaspesla', 'kaspesla', 'kataklop', 'kataklop', 'kathekas'])
+    longitude (Type: NUMBER; Sample values: ['-71.068307600', '-70.952409000', '5.677898500', '5.732509800', '-1.879969200'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.HISTORY_CHANGESETS
+[
+    ways (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Ways that are part of this way)
+    nodes (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[\n  171513871\n]']; Description: Nodes that are part of this way)
+    relations (Type: VARIANT; Sample values: ['[\n  8935454\n]', '[\n  3921610\n]', '[\n  4546344\n]', '[\n  1573819\n]', '[\n  186430\n]']; Description: Relations that are part of this way)
+    id (Type: NUMBER; Sample values: ['64482521', '33478518', '28528872', '8254690', '12871634']; Description: Changeset ID.)
+    osm_timestamp_max (Type: NUMBER; Sample values: ['1542200268', '1440147654', '1422726677', '1306424582', '1346011894']; Description: Maximum timestamp of objects contained in this changeset.)
+    osm_timestamp_min (Type: NUMBER; Sample values: ['1542200268', '1440147654', '1422726677', '1306424582', '1346011892']; Description: Minimum timestamp of objects contained in this changeset.)
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.PLANET_RELATIONS
+[
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "restriction",\n    "value": "only_straight_on"\n  },\n  {\n    "key": "type",\n    "value": "restriction"\n  }\n]', '[\n  {\n    "key": "restriction",\n    "value": "only_straight_on"\n  },\n  {\n    "key": "type",\n    "value": "restriction"\n  }\n]', '[\n  {\n    "key": "restriction",\n    "value": "only_straight_on"\n  },\n  {\n    "key": "type",\n    "value": "restriction"\n  }\n]', '[\n  {\n    "key": "restriction",\n    "value": "only_straight_on"\n  },\n  {\n    "key": "type",\n    "value": "restriction"\n  }\n]', '[\n  {\n    "key": "restriction",\n    "value": "only_straight_on"\n  },\n  {\n    "key": "type",\n    "value": "restriction"\n  }\n]'])
+    id (Type: NUMBER; Sample values: ['12938404', '2717538', '13389810', '8163144', '7122022'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    changeset (Type: NUMBER; Sample values: ['107760848', '99132132', '113183241', '89001829', '47305236'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1625946685000000', '1613073863000000', '1635669427000000', '1596661764000000', '1490905737000000'])
+    version (Type: NUMBER; Sample values: ['1', '2', '1', '3', '1'])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 901858250,\n    "role": "from",\n    "type": "w"\n  },\n  {\n    "id": 103450876,\n    "role": "to",\n    "type": "w"\n  },\n  {\n    "id": 8377413166,\n    "role": "via",\n    "type": "n"\n  }\n]', '[\n  {\n    "id": 187471693,\n    "role": "from",\n    "type": "w"\n  },\n  {\n    "id": 184229870,\n    "role": "to",\n    "type": "w"\n  },\n  {\n    "id": 8416314352,\n    "role": "via",\n    "type": "n"\n  }\n]', '[\n  {\n    "id": 178710557,\n    "role": "from",\n    "type": "w"\n  },\n  {\n    "id": 957081043,\n    "role": "to",\n    "type": "w"\n  },\n  {\n    "id": 22120139,\n    "role": "via",\n    "type": "n"\n  }\n]', '[\n  {\n    "id": 574820614,\n    "role": "from",\n    "type": "w"\n  },\n  {\n    "id": 114253668,\n    "role": "to",\n    "type": "w"\n  },\n  {\n    "id": 3693331916,\n    "role": "via",\n    "type": "n"\n  }\n]', '[\n  {\n    "id": 483754345,\n    "role": "from",\n    "type": "w"\n  },\n  {\n    "id": 450083557,\n    "role": "to",\n    "type": "w"\n  },\n  {\n    "id": 4470062392,\n    "role": "via",\n    "type": "n"\n  }\n]'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x13\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x82...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x12\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x00\\x...(truncated)"])
+    username (Type: TEXT; Sample values: ['kaartense', 'EgorovaIV', 'ma-rt-in', 'ma-rt-in', 'sorcrosc'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.HISTORY_NODES
+[
+    id (Type: NUMBER; Sample values: ['2452124', '5862608', '9769523', '12047741', '3954820'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+    visible (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    latitude (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    changeset (Type: NUMBER; Sample values: ['9084', '27786', '52099', '71066', '17212'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1147257414000000', '1148563519000000', '1152087481000000', '1154235241000000', '1147842288000000'])
+    geometry (Type: BINARY; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    longitude (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    username (Type: TEXT; Sample values: ['', '', '', '', ''])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.METROPOLITAN_DIVISIONS
+[
+    name (Type: TEXT; Sample values: ['Rockingham County-Strafford County, NH', 'Lake County-Kenosha County, IL-WI', 'Fort Worth-Arlington-Grapevine, TX', 'Detroit-Dearborn-Livonia, MI', 'Los Angeles-Long Beach-Glendale, CA'])
+    lsad_code (Type: TEXT; Sample values: ['M3', 'M3', 'M3', 'M3', 'M3'])
+    lsad_name (Type: TEXT; Sample values: ['Rockingham County-Strafford County, NH Metro Division', 'Lake County-Kenosha County, IL-WI Metro Division', 'Fort Worth-Arlington-Grapevine, TX Metro Division', 'Detroit-Dearborn-Livonia, MI Metro Division', 'Los Angeles-Long Beach-Glendale, CA Metro Division'])
+    geo_id (Type: TEXT; Sample values: ['1446040484', '1698029404', '1910023104', '1982019804', '3108031084'])
+    cbsa_code (Type: TEXT; Sample values: ['14460', '16980', '19100', '19820', '31080'])
+    metdiv_code (Type: TEXT; Sample values: ['40484', '29404', '23104', '19804', '31084'])
+    csa_code (Type: TEXT; Sample values: ['148', '176', '206', '220', '348'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3120', 'G3120', 'G3120', 'G3120', 'G3120'])
+    metdiv_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\t...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00V\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00^\\xdf\\xe2<w\\xc4Q\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd1u\\xe1\\x07\\xe7\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x81\\x8ff\\xd1`bX\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x13%\\xc6\\xd7\\xc3\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x03\\x05(W\\xc2\\x90...(truncated)"])
+    internal_point_latitude (Type: FLOAT; Sample values: ['43.0866384', '42.326441', '32.8073714', '42.2846636', '34.1963983'])
+    internal_point_longitude (Type: FLOAT; Sample values: ['-71.0697777', '-87.435976', '-97.5371593', '-83.2619533', '-118.2618616'])
+    area_land_meters (Type: FLOAT; Sample values: ['2752787746.0', '1853770821.0', '8797655052.0', '1584501319.0', '10511861492.0'])
+    area_water_meters (Type: FLOAT; Sample values: ['297798686.0', '3643100055.0', '188051180.0', '157900250.0', '1793485467.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_OPENSTREETMAP.HISTORY_RELATIONS
+[
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "to",\n    "value": "Hanau Westbahnhof/Hbf"\n  },\n  {\n    "key": "ref",\n    "value": "n61"\n  },\n  {\n    "key": "via",\n    "value": "Bischofsheim"\n  },\n  {\n    "key": "from",\n    "value": "Frankfurt Konstablerwache"\n  },\n  {\n    "key": "name",\n    "value": "Nachtbus n61: Frankfurt => Bischofsheim => Hanau"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "network",\n    "value": "RMV"\n  },\n  {\n    "key": "website",\n    "value": "https://wiki.openstreetmap.org/wiki/Rhein-Main-Verkehrsverbund/Nachtbus_Frankfurt"\n  },\n  {\n    "key": "operator",\n    "value": "viabus"\n  },\n  {\n    "key": "public_transport:version",\n    "value": "2"\n  }\n]', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Київ, Центральний автовокзал"\n  },\n  {\n    "key": "ref",\n    "value": "K3001"\n  },\n  {\n    "key": "from",\n    "value": "Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus K3001: Breslau, Busbahnhof => Kiew, Zentraler Busbahnhof"\n  },\n  {\n    "key": "name:pl",\n    "value": "Flixbus K3001: Wrocław, dworzec autobusowy => Kijów, główny dworzec autobusowy"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Киев, Центральный автовокзал"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus K3001: Вроцлав, Автовокзал => Київ, Центральний автовокзал"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "website",\n    "value": "https://meinfernbus.de/unser-angebot/l...(truncated)'])
+    id (Type: NUMBER; Sample values: ['4754869', '10760608', '10760608', '10760608', '10073013'])
+    changeset (Type: NUMBER; Sample values: ['92057634', '91835145', '91652789', '87254975', '91834560'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    username (Type: TEXT; Sample values: ['aMa-MiH', 'tkoval83', 'tkoval83', 'marcoSt', 'tkoval83'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x05\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xaa\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xa3\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\x10\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x...(truncated)"])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 778708628,\n    "role": "stop_entry_only",\n    "type": "n"\n  },\n  {\n    "id": 538966273,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3429385180,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 659993053,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 2968693414,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3431284360,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 2968693415,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3431460916,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 5214265831,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3302668133,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 3431357947,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1675761836,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 3431357949,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3431357953,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3431357955,\n  ...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6283002440,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2189440690,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 208670454,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 6268787265,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3226393892,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 686253076,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686253078,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 569586334,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 686254004,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 28392446,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 187037129,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 323465900,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 27037904,\n  ...(truncated)'])
+    version (Type: NUMBER; Sample values: ['40', '405', '358', '41', '411'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1601997142000000', '1601566295000000', '1601308498000000', '1593361664000000', '1601565431000000'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.CNECTA
+[
+    lsad (Type: TEXT; Sample values: ['M4', 'M4', 'M4', 'M4'])
+    name_lsad (Type: TEXT; Sample values: ['Portland-Lewiston-South Portland, ME Combined NECTA', 'Pittsfield-North Adams, MA-VT Combined NECTA', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME Combined NECTA', 'Lebanon-Claremont, NH-VT Combined NECTA'])
+    name (Type: TEXT; Sample values: ['Portland-Lewiston-South Portland, ME', 'Pittsfield-North Adams, MA-VT', 'Boston-Worcester-Providence, MA-RI-NH-CT-ME', 'Lebanon-Claremont, NH-VT'])
+    geo_id (Type: TEXT; Sample values: ['775', '770', '715', '725'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3200', 'G3200', 'G3200', 'G3200'])
+    cnecta_fips_code (Type: TEXT; Sample values: ['775', '770', '715', '725'])
+    cnecta_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    int_point_lat (Type: FLOAT; Sample values: ['43.8562034', '42.5337519', '42.3307869', '43.6727226'])
+    int_point_lon (Type: FLOAT; Sample values: ['-70.3192682', '-73.1678825', '-71.3296644', '-72.2484543'])
+    area_land_meters (Type: NUMBER; Sample values: ['6254813062', '1524389768', '21419197698', '3031319652'])
+    area_water_meters (Type: NUMBER; Sample values: ['1537827560', '24514153', '3004814151', '58476158'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.RAILWAYS
+[
+    geo_id (Type: NUMBER; Sample values: ['110168314233', '110194697259', '110215163217', '110230920977', '110343201289'])
+    full_name (Type: TEXT; Sample values: ['Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR', 'Louisville and Nashville RR'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['R1011', 'R1011', 'R1011', 'R1011', 'R1011'])
+    railway_geom (Type: TEXT; Sample values: ['{"type":"LineString","coordinates":[[-86.88663299999998,41.08432899999999],[-86.886527,41.08253899999999],[-86.886476,41.08166599999999],[-86.88644599999999,41.08072599999999],[-86.886437,41.07983],[-86.88639599999999,41.07893699999999],[-86.88622399999998,41.07485499999998],[-86.88606099999998,41.07129199999998],[-86.88602699999998,41.06489099999999],[-86.88579099999998,41.056159],[-86.88535499999999,41.04620599999999],[-86.885333,41.04552899999999],[-86.88475499999999,41.02705999999999],[-86.884726,41.026021],[-86.88431199999999,41.01562399999999],[-86.884151,41.01248199999999],[-86.88374499999999,41.00551399999999],[-86.88369799999999,41.00463699999999],[-86.88366399999999,41.00250899999999],[-86.88362899999999,41.000039],[-86.88325299999999,40.99828799999999],[-86.88332599999998,40.99808499999999],[-86.88297,40.988005],[-86.882913,40.98750499999999]]}', '{"type":"LineString","coordinates":[[-89.45165399999999,38.37588099999998],[-89.45124899999999,38.375692],[-89.45003699999998,38.37512499999999],[-89.44963299999999,38.37493699999999],[-89.44701499999997,38.37370399999998],[-89.44075699999999,38.37075899999998],[-89.43915499999998,38.37002499999999],[-89.43652499999998,38.36881999999998],[-89.43456599999999,38.36792299999999],[-89.43027099999999,38.36595599999999],[-89.42869899999998,38.365217],[-89.42674999999998,38.36430199999999]]}', '{"type":"LineString","coordinates":[[-86.59328399999998,36.01725299999999],[-86.59332799999998,36.018155],[-86.593507,36.01917199999999],[-86.59366099999998,36.01952599999999],[-86.59390399999998,36.01991399999998],[-86.59409399999998,36.02019899999999],[-86.59411899999999,36.02026099999999]]}', '{"type":"LineString","coordinates":[[-86.794476,36.165807],[-86.79449199999999,36.16579999999999],[-86.79454199999999,36.16577999999999],[-86.79455899999999,36.16577399999999],[-86.79458799999999,36.16576099999999],[-86.794674,36.16572199999999],[-86.79470399999998,36.16570999999999],[-86.79480799999998,36.165666],[-86.79512099999998,36.165537],[-86.79522599999998,36.16549499999998],[-86.79533299999998,36.16545099999999],[-86.79543699999999,36.16540899999999],[-86.79565399999998,36.16531899999999],[-86.79576199999998,36.16527599999999],[-86.79597599999998,36.165182],[-86.79661799999998,36.16490199999999],[-86.79683299999999,36.16480899999999]]}', '{"type":"LineString","coordinates":[[-87.35840199999998,41.20486899999999],[-87.35764999999999,41.20382199999999],[-87.35670199999998,41.20250199999999],[-87.35539299999999,41.200682],[-87.354641,41.19963599999999],[-87.35401299999998,41.19875899999999],[-87.35212899999999,41.196131],[-87.35150199999998,41.19525499999999],[-87.35119999999999,41.19482899999999],[-87.35029399999999,41.193553],[-87.349992,41.193128]]}'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.ZIP_CODES
+[
+    city (Type: TEXT; Sample values: ['Orient city', 'Northlake CDP, Centerville CDP, Anderson city', 'Little Chute village', 'Weogufka CDP, Stewartville CDP', 'Murray city'])
+    zip_code (Type: TEXT; Sample values: ['62874', '29625', '54140', '35183', '42071'])
+    state_fips_code (Type: TEXT; Sample values: ['17', '45', '55', '01', '21'])
+    state_code (Type: TEXT; Sample values: ['IL', 'SC', 'WI', 'AL', 'KY'])
+    fips_class_code (Type: TEXT; Sample values: ['B5', 'B5', 'B5', 'B5', 'B5'])
+    zip_code_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)"])
+    state_name (Type: TEXT; Sample values: ['Illinois', 'South Carolina', 'Wisconsin', 'Alabama', 'Kentucky'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G6350', 'G6350', 'G6350', 'G6350', 'G6350'])
+    county (Type: TEXT; Sample values: ['Franklin County', 'Anderson County', 'Outagamie County', 'Coosa County', 'Calloway County'])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb1\\xdd=@w>V\\xc0;...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x89\\x87\\xe6\\xf0\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00:\\xcc\\x97\\x17\\xe0\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x91\\x17\\x88T\\x87\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xbe\\xfax\\xe8;\\x12...(truncated)"])
+    internal_point_lat (Type: FLOAT; Sample values: ['37.9187047', '34.5555194', '44.288433', '33.0161075', '36.6245848'])
+    internal_point_lon (Type: FLOAT; Sample values: ['-88.9760285', '-82.7656214', '-88.3105525', '-86.3520099', '-88.2849065'])
+    functional_status (Type: TEXT; Sample values: ['S', 'S', 'S', 'S', 'S'])
+    area_land_meters (Type: FLOAT; Sample values: ['3671025.0', '124134467.0', '8313809.0', '174879661.0', '549436767.0'])
+    area_water_meters (Type: FLOAT; Sample values: ['77610.0', '19192637.0', '380109.0', '555185.0', '29706886.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.URBAN_AREAS
+[
+    type (Type: TEXT; Sample values: ['C', 'C', 'C', 'C', 'C'])
+    name (Type: TEXT; Sample values: ['Mesquite, NV--AZ', 'Rifle, CO', 'Mount Orab, OH', 'Garner, IA', 'Shelbyville, TN'])
+    lsad_name (Type: TEXT; Sample values: ['Mesquite, NV--AZ Urban Cluster', 'Rifle, CO Urban Cluster', 'Mount Orab, OH Urban Cluster', 'Garner, IA Urban Cluster', 'Shelbyville, TN Urban Cluster'])
+    geo_id (Type: TEXT; Sample values: ['56413', '74935', '60058', '32599', '81334'])
+    urban_area_code (Type: TEXT; Sample values: ['56413', '74935', '60058', '32599', '81334'])
+    area_lsad_code (Type: TEXT; Sample values: ['76', '76', '76', '76', '76'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3500', 'G3500', 'G3500', 'G3500', 'G3500'])
+    urban_area_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00v\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ['bytearray(b\'\\x01\\x01\\x00\\x00\\x00"/\\x10\\xa9\\x0e\\x85...(truncated)', "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe8\\xd4:\\x16\\x80\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xbdqR\\x98w\\xfbT\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00L\\x1cy \\xb2fW\\xc0L...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x05\\xfb\\xafs\\xd3\\...(truncated)"])
+    internal_point_lon (Type: FLOAT; Sample values: ['-114.0790198', '-107.7734428', '-83.9291745', '-93.604622', '-86.450406'])
+    internal_point_lat (Type: FLOAT; Sample values: ['36.8101045', '39.5405847', '39.02627', '43.0994987', '35.4882234'])
+    functional_status (Type: TEXT; Sample values: ['S', 'S', 'S', 'S', 'S'])
+    area_land_meters (Type: FLOAT; Sample values: ['19891472.0', '10118553.0', '7085394.0', '4175654.0', '34934428.0'])
+    area_water_meters (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.STATES
+[
+    lsad_code (Type: TEXT; Sample values: ['00', '00', '00', '00', '00'])
+    state_fips_code (Type: TEXT; Sample values: ['66', '72', '78', '33', '23'])
+    division_code (Type: TEXT; Sample values: ['0', '0', '0', '1', '1'])
+    state_gnis_code (Type: TEXT; Sample values: ['01802705', '01779808', '01802710', '01779794', '01779787'])
+    geo_id (Type: TEXT; Sample values: ['66', '72', '78', '33', '23'])
+    region_code (Type: TEXT; Sample values: ['9', '9', '9', '1', '1'])
+    state_name (Type: TEXT; Sample values: ['Guam', 'Puerto Rico', 'United States Virgin Islands', 'New Hampshire', 'Maine'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4000', 'G4000', 'G4000', 'G4000', 'G4000'])
+    state (Type: TEXT; Sample values: ['GU', 'PR', 'VI', 'NH', 'ME'])
+    state_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00`\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00hF...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd7f\\x08l\\xb3\\x18...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00EN\\xba\\x88J\\x9aP\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb0\\x8d\\x1d\\xf9(>...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\t\\x05\\xa5he\\xe5Q\\...(truncated)", 'bytearray(b"\\x01\\x01\\x00\\x00\\x00b\\xbf\\\'\\xd6\\xa9*Q\\...(truncated)'])
+    int_point_lon (Type: FLOAT; Sample values: ['144.7719021', '-66.4107992', '-64.9712508', '-71.5843145', '-68.666616'])
+    int_point_lat (Type: FLOAT; Sample values: ['13.4417451', '18.217648', '18.326748', '43.6726907', '45.4092843'])
+    area_land_meters (Type: NUMBER; Sample values: ['543555844', '8868701898', '348021896', '23189198255', '79887659040'])
+    area_water_meters (Type: NUMBER; Sample values: ['934337453', '4922576715', '1550236199', '1026903434', '11745717739'])
+    functional_status (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.CBSA
+[
+    name (Type: TEXT; Sample values: ['Lincoln, NE', 'Morgantown, WV', 'Odessa, TX', 'North Port-Sarasota-Bradenton, FL', 'Little Rock-North Little Rock-Conway, AR'])
+    lsad_code (Type: TEXT; Sample values: ['M1', 'M1', 'M1', 'M1', 'M1'])
+    lsad_name (Type: TEXT; Sample values: ['Lincoln, NE Metro Area', 'Morgantown, WV Metro Area', 'Odessa, TX Metro Area', 'North Port-Sarasota-Bradenton, FL Metro Area', 'Little Rock-North Little Rock-Conway, AR Metro Area'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['30700', '34060', '36220', '35840', '30780'])
+    csa_geo_id (Type: TEXT; Sample values: ['339', '390', '372', '412', '340'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3110', 'G3110', 'G3110', 'G3110', 'G3110'])
+    geo_id (Type: TEXT; Sample values: ['30700', '34060', '36220', '35840', '30780'])
+    cbsa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00X\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00#\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00v\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00j)...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00j\\xe7\\xea}\\x997X\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x11\\xf1 \\x87R\\xf3...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe3\\xf6pn\\xb8\\xa2...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x08\\x0e\\x1e\\\\p\\x9...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x00)\\xa0?\\xa3\\x19...(truncated)"])
+    internal_point_latitude (Type: FLOAT; Sample values: ['40.8174581', '39.5251551', '31.8653008', '27.3642461', '34.7557726'])
+    internal_point_longitude (Type: FLOAT; Sample values: ['-96.8687434', '-79.8019121', '-102.5425068', '-82.3193579', '-92.4005889'])
+    msa_indicator (Type: TEXT; Sample values: ['1', '1', '1', '1', '1'])
+    area_land_meters (Type: FLOAT; Sample values: ['3649266235.0', '2613050897.0', '2325322369.0', '3365993000.0', '10579350490.0'])
+    area_water_meters (Type: FLOAT; Sample values: ['34392021.0', '21661985.0', '10375045.0', '824649346.0', '294840550.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.COUNTIES
+[
+    lsad_name (Type: TEXT; Sample values: ['Monroe County', 'Price County', 'Clark County', 'Rusk County', 'Kenosha County'])
+    lsad_code (Type: TEXT; Sample values: ['06', '06', '06', '06', '06'])
+    cbsa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '16980'])
+    county_gnis_code (Type: TEXT; Sample values: ['01581101', '01581110', '01581069', '01581114', '01581089'])
+    fips_class_code (Type: TEXT; Sample values: ['H1', 'H1', 'H1', 'H1', 'H1'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G4020', 'G4020', 'G4020', 'G4020', 'G4020'])
+    geo_id (Type: TEXT; Sample values: ['55081', '55099', '55019', '55107', '55059'])
+    county_fips_code (Type: TEXT; Sample values: ['55081', '55099', '55019', '55107', '55059'])
+    csa_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '176'])
+    state_fips_code (Type: TEXT; Sample values: ['55', '55', '55', '55', '55'])
+    county_name (Type: TEXT; Sample values: ['Monroe', 'Price', 'Clark', 'Rusk', 'Kenosha'])
+    met_div_fips_code (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', '29404'])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xcb\\xc22\\x91\\xad\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\n\\xe1,\\x80\\x04\\x9...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xcc\\x85%y\\t\\xa7V\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00z\\xf9Bm\\xc0\\xc8V\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x92i~F3\\xdbU\\xc0\\...(truncated)"])
+    county_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00x\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00R\\...(truncated)"])
+    int_point_lat (Type: FLOAT; Sample values: ['43.9451751', '45.6790725', '44.7393462', '45.472734', '42.5797034'])
+    int_point_lon (Type: FLOAT; Sample values: ['-90.6199687', '-90.3596497', '-90.6099532', '-91.1367448', '-87.4250046'])
+    area_land_meters (Type: NUMBER; Sample values: ['2333329706', '3247987842', '3133097725', '2366092053', '704075246'])
+    functional_status (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    area_water_meters (Type: NUMBER; Sample values: ['18586826', '62098964', '23243273', '44813690', '1248841319'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.ADJACENT_STATES
+[
+    neighbors_fips_code (Type: VARIANT; Sample values: ['[\n  "32",\n  "35",\n  "08",\n  "06",\n  "49"\n]', '[\n  "04",\n  "32",\n  "41"\n]', '[\n  "51",\n  "24"\n]', '[\n  "29",\n  "55",\n  "18",\n  "21",\n  "26",\n  "19"\n]', '[\n  "17",\n  "26",\n  "39",\n  "21"\n]'])
+    state_fips_code (Type: TEXT; Sample values: ['04', '06', '11', '17', '18'])
+    state_name (Type: TEXT; Sample values: ['Arizona', 'California', 'District of Columbia', 'Illinois', 'Indiana'])
+    state (Type: TEXT; Sample values: ['AZ', 'CA', 'DC', 'IL', 'IN'])
+    neighbors_state (Type: VARIANT; Sample values: ['[\n  "Nevada",\n  "New Mexico",\n  "Colorado",\n  "California",\n  "Utah"\n]', '[\n  "Arizona",\n  "Nevada",\n  "Oregon"\n]', '[\n  "Virginia",\n  "Maryland"\n]', '[\n  "Missouri",\n  "Wisconsin",\n  "Indiana",\n  "Kentucky",\n  "Michigan",\n  "Iowa"\n]', '[\n  "Illinois",\n  "Michigan",\n  "Ohio",\n  "Kentucky"\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.CSA
+[
+    name (Type: TEXT; Sample values: ['Birmingham-Hoover-Talladega, AL', 'Parkersburg-Marietta-Vienna, WV-OH', 'Detroit-Warren-Ann Arbor, MI', 'St. Louis-St. Charles-Farmington, MO-IL', 'Elmira-Corning, NY'])
+    lsad_name (Type: TEXT; Sample values: ['Birmingham-Hoover-Talladega, AL CSA', 'Parkersburg-Marietta-Vienna, WV-OH CSA', 'Detroit-Warren-Ann Arbor, MI CSA', 'St. Louis-St. Charles-Farmington, MO-IL CSA', 'Elmira-Corning, NY CSA'])
+    geo_id (Type: TEXT; Sample values: ['142', '425', '220', '476', '236'])
+    msa_lsad_code (Type: TEXT; Sample values: ['M0', 'M0', 'M0', 'M0', 'M0'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G3100', 'G3100', 'G3100', 'G3100', 'G3100'])
+    csa_code (Type: TEXT; Sample values: ['142', '425', '220', '476', '236'])
+    internal_point_lon (Type: FLOAT; Sample values: ['-86.7482873', '-81.4807049', '-83.4402563', '-90.2644483', '-77.2391561'])
+    csa_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00I\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00f\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    internal_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc7`j\\xf0\\xe3\\xaf...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xba!|\\xde\\xc3^T\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe9\\x96\\xc2(-\\xdc...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe6\\xfe\\x8f\\xb8\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe4\\x08cUNOS\\xc0\\...(truncated)"])
+    internal_point_lat (Type: FLOAT; Sample values: ['33.5274555', '39.2939918', '42.5319462', '38.6843841', '42.229422'])
+    area_land_meters (Type: FLOAT; Sample values: ['17485172162.0', '3188257728.0', '16921809423.0', '23019028266.0', '4656558518.0'])
+    area_water_meters (Type: FLOAT; Sample values: ['347190038.0', '53193779.0', '1335029818.0', '583035006.0', '43914897.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.ADJACENT_COUNTIES
+[
+    neighbors (Type: VARIANT; Sample values: ['[\n  "Floyd",\n  "Chickasaw",\n  "Buchanan",\n  "Butler",\n  "Fayette",\n  "Black Hawk"\n]', '[\n  "Sac",\n  "Carroll",\n  "Buena Vista",\n  "Webster",\n  "Greene",\n  "Pocahontas"\n]', '[\n  "Calhoun",\n  "Dallas",\n  "Webster",\n  "Boone",\n  "Carroll",\n  "Guthrie"\n]', '[\n  "Franklin",\n  "Hardin",\n  "Butler",\n  "Marshall",\n  "Black Hawk",\n  "Tama"\n]', '[\n  "Palo Alto",\n  "Wright",\n  "Webster",\n  "Hancock",\n  "Kossuth",\n  "Pocahontas"\n]'])
+    neighbors_fips_code (Type: VARIANT; Sample values: ['[\n  "19067",\n  "19037",\n  "19019",\n  "19023",\n  "19065",\n  "19013"\n]', '[\n  "19161",\n  "19027",\n  "19021",\n  "19187",\n  "19073",\n  "19151"\n]', '[\n  "19025",\n  "19049",\n  "19187",\n  "19015",\n  "19027",\n  "19077"\n]', '[\n  "19069",\n  "19083",\n  "19023",\n  "19127",\n  "19013",\n  "19171"\n]', '[\n  "19147",\n  "19197",\n  "19187",\n  "19081",\n  "19109",\n  "19151"\n]'])
+    county_fips_code (Type: TEXT; Sample values: ['19017', '19025', '19073', '19075', '19091'])
+    state (Type: TEXT; Sample values: ['Iowa', 'Iowa', 'Iowa', 'Iowa', 'Iowa'])
+    county (Type: TEXT; Sample values: ['Bremer County', 'Calhoun County', 'Greene County', 'Grundy County', 'Humboldt County'])
+    neighbors_state (Type: VARIANT; Sample values: ['[\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa"\n]', '[\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa"\n]', '[\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa"\n]', '[\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa"\n]', '[\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa",\n  "Iowa"\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.NATIONAL_OUTLINE
+[
+    name (Type: TEXT; Sample values: ['United States'])
+    geo_id (Type: TEXT; Sample values: ['US'])
+    us_outline_geom (Type: BINARY; Sample values: ['bytearray(b\'\\x01\\x06\\x00\\x00\\x00"\\x01\\x00\\x00\\x01\\...(truncated)'])
+    aff_geo_id (Type: TEXT; Sample values: ['0100000US'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.CONGRESS_DISTRICT_116
+[
+    geo_id (Type: TEXT; Sample values: ['1224', '0624', '3625', '1227', '0627'])
+    mtfcc_feature_class_code (Type: TEXT; Sample values: ['G5200', 'G5200', 'G5200', 'G5200', 'G5200'])
+    district_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00(\\...(truncated)", "bytearray(b'\\x01\\x06\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\t...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    int_point_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xadwn\\x90\\x7f\\rT\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x18!<\\xda8\\x07^\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00v\\xe9_\\x92\\xcamS\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00:\\xe1\\xca~\\x02\\x10...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x1b|a2\\xd5{]\\xc0\\...(truncated)"])
+    int_point_lon (Type: FLOAT; Sample values: ['-80.2109109', '-120.112845', '-77.715489', '-80.2501523', '-117.9348875'])
+    lsad_name (Type: TEXT; Sample values: ['Congressional District 24', 'Congressional District 24', 'Congressional District 25', 'Congressional District 27', 'Congressional District 27'])
+    lsad_code (Type: TEXT; Sample values: ['C2', 'C2', 'C2', 'C2', 'C2'])
+    congress_session (Type: TEXT; Sample values: ['116', '116', '116', '116', '116'])
+    int_point_lat (Type: FLOAT; Sample values: ['25.9084664', '34.9196335', '43.3233952', '25.6912633', '34.2650833'])
+    district_fips_code (Type: TEXT; Sample values: ['24', '24', '25', '27', '27'])
+    state_fips_code (Type: TEXT; Sample values: ['12', '06', '36', '12', '06'])
+    area_land_meters (Type: NUMBER; Sample values: ['265292337', '17832224852', '1321083917', '293304632', '1812571329'])
+    area_water_meters (Type: NUMBER; Sample values: ['33056037', '3684335356', '1832005880', '597414640', '7548567'])
+    functional_status (Type: BOOLEAN; Sample values: ['False', 'False', 'False', 'False', 'False'])
+]
+**Some other tables have the similar structure: [GEO_US_BOUNDARIES.CONGRESS_DISTRICT_115]**
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.NWS_FORECAST_REGIONS
+[
+    name (Type: TEXT; Sample values: ['Perkins', 'Butte', 'Bailey', 'Floyd', 'Cottle'])
+    state (Type: TEXT; Sample values: ['SD', 'SD', 'TX', 'TX', 'TX'])
+    zone (Type: TEXT; Sample values: ['002', '012', '027', '030', '032'])
+    shortname (Type: TEXT; Sample values: ['Perkins', 'Butte', 'Bailey', 'Floyd', 'Cottle'])
+    lat (Type: FLOAT; Sample values: ['45.4904', '44.9058', '34.0685', '34.0724', '34.0777'])
+    state_zone (Type: TEXT; Sample values: ['SD002', 'SD012', 'TX027', 'TX030', 'TX032'])
+    shape_geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00X\\...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00%\\...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00%\\...(truncated)', 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00<\\...(truncated)'])
+    lon (Type: FLOAT; Sample values: ['-102.4759', '-103.5081', '-102.8298', '-101.3032', '-100.2787'])
+    time_zone (Type: TEXT; Sample values: ['M', 'M', 'C', 'C', 'C'])
+    cwa (Type: TEXT; Sample values: ['UNR', 'UNR', 'LUB', 'LUB', 'LUB'])
+    fe_area (Type: TEXT; Sample values: ['nw', 'nw', 'nw', 'nw', 'nw'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP_BOUNDARIES.GEO_US_BOUNDARIES.COASTLINE
+[
+    name (Type: TEXT; Sample values: ['Atlantic', 'Atlantic', 'Atlantic', 'Atlantic', 'Atlantic'])
+    coastline_geom (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00.\\x00\\x00\\x00\\xcdx...(truncated)", 'bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00[\\...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00o\\x00\\x00\\x00\\xfb\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\x1e\\x00\\x00\\x00\\x...(truncated)"])
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+Categories: Geospatial functions
+
+
+## ST_INTERSECTS
+
+Returns TRUE if the two GEOGRAPHY objects or the two GEOMETRY objects intersect (i.e. share any portion of space).
+
+Note This function does not support using a GeometryCollection or FeatureCollection as input values.
+
+Tip You can use the search optimization service to improve the performance of queries that call this function.
+For details, see Search Optimization Service.
+
+See also:ST_DISJOINT
+
+
+## Syntax
+
+ST_INTERSECTS( <geography_expression_1> , <geography_expression_2> )
+
+ST_INTERSECTS( <geometry_expression_1> , <geometry_expression_2> )
+
+
+## Arguments
+
+
+geography_expression_1A GEOGRAPHY object.
+
+geography_expression_2A GEOGRAPHY object.
+
+geometry_expression_1A GEOMETRY object.
+
+geometry_expression_2A GEOMETRY object.
+
+
+## Returns
+
+BOOLEAN.
+
+## Usage notes
+
+
+For GEOMETRY objects, the function reports an error if the two input GEOMETRY objects have different SRIDs.
+
+
+## Examples
+
+
+## GEOGRAPHY examples
+
+This shows a simple use of the ST_INTERSECTS function:
+
+SELECT ST_INTERSECTS(
+    TO_GEOGRAPHY('POLYGON((0 0, 2 0, 2 2, 0 2, 0 0))'),
+    TO_GEOGRAPHY('POLYGON((1 1, 3 1, 3 3, 1 3, 1 1))')
+    );
++---------------------------------------------------------+
+| ST_INTERSECTS(                                          |
+|     TO_GEOGRAPHY('POLYGON((0 0, 2 0, 2 2, 0 2, 0 0))'), |
+|     TO_GEOGRAPHY('POLYGON((1 1, 3 1, 3 3, 1 3, 1 1))')  |
+|     )                                                   |
+|---------------------------------------------------------|
+| True                                                    |
++---------------------------------------------------------+
+
+
+
+## GEOMETRY examples
+
+This shows a simple use of the ST_INTERSECTS function:
+
+SELECT ST_INTERSECTS(
+  TO_GEOMETRY('POLYGON((0 0, 0 2, 2 2, 2 0, 0 0))'),
+  TO_GEOMETRY('POLYGON((1 1, 3 1, 3 3, 1 3, 1 1))') );
+
++------------------------------------------------------+
+| ST_INTERSECTS(                                       |
+|   TO_GEOMETRY('POLYGON((0 0, 0 2, 2 2, 2 0, 0 0))'), |
+|   TO_GEOMETRY('POLYGON((1 1, 3 1, 3 3, 1 3, 1 1))')  |
+| )                                                    |
+|------------------------------------------------------|
+| True                                                 |
++------------------------------------------------------+

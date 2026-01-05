@@ -1,0 +1,272 @@
+###Table full name: team_driver_ranks
+[
+    year (Type: INT; Sample values: ['1992', '1980', '1952', '1992', '1982'])
+    driver_id (Type: INT; Sample values: ['94', '199', '724', '125', '90'])
+    team_driver_rank (Type: ; Sample values: ['1', '2', '2', '3', '4'])
+    constructor_id (Type: INT; Sample values: ['35', '3', '144', '37', '32'])
+    constructor_ref (Type: TEXT; Sample values: ['dallara', 'williams', 'veritas', 'march', 'team_lotus'])
+    driver_ref (Type: TEXT; Sample values: ['martini', 'reutemann', 'ulmen', 'naspetti', 'moreno'])
+]
+
+--------------------------------------------------
+
+###Table full name: driver_standings
+[
+    points (Type: FLOAT; Sample values: ['5.0', '1.0', '43.0', '0.0', '2.0'])
+    wins (Type: INT(11); Sample values: ['0', '0', '4', '0', '0'])
+    position (Type: INT(11); Sample values: ['10', '13', '2', '7', '14'])
+    driver_id (Type: INT(11); Sample values: ['304', '119', '35', '138', '96'])
+    race_id (Type: INT(11); Sample values: ['705', '376', '216', '388', '249'])
+    driver_standings_id (Type: INT(11); Sample values: ['51291', '19122', '10858', '19505', '10428'])
+    position_text (Type: VARCHAR(255); Sample values: ['10', '13', '2', '7', '14'])
+]
+
+--------------------------------------------------
+
+###Table full name: driver_standings_ext
+[
+    points (Type: REAL; Sample values: ['1.0', '0.0', '0.0', '2.0', '46.0'])
+    wins (Type: INT; Sample values: ['0', '0', '0', '0', '2'])
+    position (Type: INT; Sample values: ['15', '15', '39', '17', '3'])
+    driver_id (Type: INT; Sample values: ['55', '807', '208', '734', '222'])
+    race_id (Type: INT; Sample values: ['180', '1099', '481', '828', '557'])
+    driver_standings_id (Type: INT; Sample values: ['11149', '71900', '22608', '43778', '58297'])
+    position_text (Type: TEXT; Sample values: ['15', '15', '39', '17', '3'])
+]
+
+--------------------------------------------------
+
+###Table full name: tdr_overrides
+[
+    team_driver_rank (Type: INT(11); Sample values: ['2', '2', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: constructor_standings
+[
+    race_id (Type: INT(11); Sample values: ['772', '1105', '470', '543', '329'])
+    points (Type: FLOAT; Sample values: ['0.0', '17.0', '0.0', '1.0', '0.0'])
+    wins (Type: INT(11); Sample values: ['0', '0', '0', '0', '0'])
+    constructor_id (Type: INT(11); Sample values: ['125', '1', '56', '57', '35'])
+    position (Type: INT(11); Sample values: ['8', '6', '14', '6', '14'])
+    constructor_standings_id (Type: INT(11); Sample values: ['17821', '28502', '10790', '23149', '7788'])
+    position_text (Type: VARCHAR(255); Sample values: ['8', '6', '14', '6', '14'])
+]
+
+--------------------------------------------------
+
+###Table full name: races_ext
+[
+    max_points (Type: ; Sample values: ['10', '9', '10', '25', '25'])
+    year (Type: INT; Sample values: ['2009', '1978', '2000', '2012', '2017'])
+    fp3_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp3_time (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp2_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp1_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp1_time (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp2_time (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    name (Type: TEXT; Sample values: ['Monaco Grand Prix', 'United States Grand Prix West', 'Japanese Grand Prix', 'Korean Grand Prix', 'Japanese Grand Prix'])
+    circuit_id (Type: INT; Sample values: ['6', '43', '22', '35', '22'])
+    race_id (Type: INT; Sample values: ['6', '530', '173', '875', '984'])
+    time (Type: NUM; Sample values: ['12:00:00', 'None', 'None', '06:00:00', '05:00:00'])
+    short_name (Type: ; Sample values: ['Monaco', 'United States Grand Prix West', 'Japan', 'Korea', 'Japan'])
+]
+
+--------------------------------------------------
+
+###Table full name: lap_positions
+[
+    driver_id (Type: INT; Sample values: ['846', '815', '811', '815', '819'])
+    race_id (Type: INT; Sample values: ['1073', '915', '347', '983', '882'])
+]
+
+--------------------------------------------------
+
+###Table full name: lap_time_stats
+[
+    driver_id (Type: INT; Sample values: ['56', '15', '847', '30', '20'])
+    race_id (Type: INT; Sample values: ['141', '170', '1131', '93', '936'])
+    stdev_milliseconds (Type: ; Sample values: ['22246.99046941265', '35735.79552336145', '3408.3033716265727', '4386.384758990276', '14240.878505613206'])
+    stdev_seconds (Type: ; Sample values: ['22.246990469412648', '35.735795523361446', '3.4083033716265736', '4.386384758990276', '14.240878505613205'])
+]
+
+--------------------------------------------------
+
+###Table full name: races
+[
+    year (Type: INT(11); Sample values: ['2023', '1968', '2002', '1999', '1952'])
+    fp3_date (Type: VARCHAR(255); Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp3_time (Type: VARCHAR(255); Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fp2_date (Type: VARCHAR(255); Sample values: ['2023-07-01', 'None', 'None', 'None', 'None'])
+    fp1_date (Type: VARCHAR(255); Sample values: ['2023-06-30', 'None', 'None', 'None', 'None'])
+    time (Type: TIME; Sample values: ['13:00:00', 'None', 'None', 'None', 'None'])
+    date (Type: DATE; Sample values: ['2023-07-02', '1968-09-22', '2002-08-18', '1999-05-30', '1952-07-19'])
+    fp1_time (Type: VARCHAR(255); Sample values: ['11:30:00', 'None', 'None', 'None', 'None'])
+    fp2_time (Type: VARCHAR(255); Sample values: ['10:30:00', 'None', 'None', 'None', 'None'])
+    circuit_id (Type: INT(11); Sample values: ['70', '52', '11', '4', '9'])
+    race_id (Type: INT(11); Sample values: ['1107', '676', '136', '179', '821'])
+    name (Type: VARCHAR(255); Sample values: ['Austrian Grand Prix', 'Canadian Grand Prix', 'Hungarian Grand Prix', 'Spanish Grand Prix', 'British Grand Prix'])
+]
+
+--------------------------------------------------
+
+###Table full name: circuits_ext
+[
+    last_race_year (Type: ; Sample values: ['1965', '2024', '1970', '2008', '2020'])
+    circuit_id (Type: INT; Sample values: ['56', '18', '52', '16', '76'])
+    name (Type: TEXT; Sample values: ['Prince George Circuit', 'Autódromo José Carlos Pace', 'Circuit Mont-Tremblant', 'Fuji Speedway', 'Autodromo Internazionale del Mugello'])
+]
+
+--------------------------------------------------
+
+###Table full name: lap_times
+[
+    driver_id (Type: INT(11); Sample values: ['837', '20', '14', '31', '21'])
+    position (Type: INT(11); Sample values: ['17', '4', '9', '3', '14'])
+    race_id (Type: INT(11); Sample values: ['949', '870', '122', '149', '119'])
+]
+
+--------------------------------------------------
+
+###Table full name: lap_times_ext
+[
+    driver_id (Type: INT; Sample values: ['18', '21', '23', '3', '21'])
+    race_id (Type: INT; Sample values: ['128', '227', '222', '47', '8'])
+    position (Type: INT; Sample values: ['5', '15', '10', '8', '10'])
+]
+
+--------------------------------------------------
+
+###Table full name: constructor_results
+[
+    race_id (Type: INT(11); Sample values: ['161', '644', '582', '629', '1112'])
+    points (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '2.0'])
+    constructor_results_id (Type: INT(11); Sample values: ['1506', '11729', '12785', '12151', '16805'])
+    constructor_id (Type: INT(11); Sample values: ['20', '6', '56', '6', '117'])
+]
+
+--------------------------------------------------
+
+###Table full name: qualifying
+[
+    driver_id (Type: INT(11); Sample values: ['5', '840', '815', '807', '44'])
+    race_id (Type: INT(11); Sample values: ['874', '1027', '898', '880', '264'])
+    qualify_id (Type: INT(11); Sample values: ['5317', '8313', '5822', '5452', '2766'])
+    constructor_id (Type: INT(11); Sample values: ['207', '211', '1', '15', '27'])
+]
+
+--------------------------------------------------
+
+###Table full name: drivers
+[
+    nationality (Type: VARCHAR(255); Sample values: ['American', 'British', 'Japanese', 'Portuguese', 'American'])
+    surname (Type: VARCHAR(255); Sample values: ['Elisian', 'Parnell', 'Nakajima', 'Monteiro', "O'Connor"])
+    code (Type: VARCHAR(3); Sample values: ['None', 'None', 'None', 'TMO', 'None'])
+    number (Type: INT(11); Sample values: ['None', 'None', 'None', 'None', 'None'])
+    forename (Type: VARCHAR(255); Sample values: ['Ed', 'Reg', 'Satoru', 'Tiago', 'Pat'])
+    dob (Type: DATE; Sample values: ['1926-12-09', '1911-07-02', '1953-02-23', '1976-07-24', '1928-10-09'])
+    driver_id (Type: INT(11); Sample values: ['596', '686', '138', '33', '597'])
+]
+
+--------------------------------------------------
+
+###Table full name: liveries
+[
+    start_year (Type: INT(11); Sample values: ['2006', '1985', '2016', '2008', '2012'])
+    end_year (Type: INT(11); Sample values: ['2009', '1989', '2020', '2016', '2015'])
+    constructor_ref (Type: VARCHAR(255); Sample values: ['bmw_sauber', 'williams', 'renault', 'force_india', 'lotus_f1'])
+    primary_hex_code (Type: VARCHAR(255); Sample values: ['#001473', '#101938', '#FFF500', '#EB6F05', '#C1A43E'])
+]
+
+--------------------------------------------------
+
+###Table full name: short_grand_prix_names
+[
+    full_name (Type: VARCHAR(255); Sample values: ['United States Grand Prix', 'Monaco Grand Prix', 'Qatar Grand Prix', 'Russian Grand Prix', 'European Grand Prix'])
+    short_name (Type: VARCHAR(255); Sample values: ['United States', 'Monaco', 'Qatar', 'Russia', 'Europe'])
+]
+
+--------------------------------------------------
+
+###Table full name: results
+[
+    fastest_lap (Type: INT(11); Sample values: ['nan', 'nan', 'nan', '59.0', 'nan'])
+    race_id (Type: INT(11); Sample values: ['548', '260', '326', '936', '274'])
+    points (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '0.0', '0.0'])
+    fastest_lap_speed (Type: VARCHAR(255); Sample values: ['None', 'None', 'None', '181.566', 'None'])
+    fastest_lap_time (Type: VARCHAR(255); Sample values: ['None', 'None', 'None', '1:26.864', 'None'])
+    driver_id (Type: INT(11); Sample values: ['229', '106', '110', '13', '109'])
+    result_id (Type: INT(11); Sample values: ['13392', '5230', '7199', '22727', '5622'])
+    constructor_id (Type: INT(11); Sample values: ['64', '33', '35', '3', '15'])
+    grid (Type: INT(11); Sample values: ['0', '18', '15', '8', '7'])
+    status_id (Type: INT(11); Sample values: ['81', '12', '11', '1', '10'])
+]
+
+--------------------------------------------------
+
+###Table full name: drives
+[
+    year (Type: INT; Sample values: ['1968', '1967', '1958', '2012', '1994'])
+    is_final_drive_of_season (Type: ; Sample values: ['1', '1', '1', '1', '1'])
+    is_first_drive_of_season (Type: ; Sample values: ['1', '1', '1', '1', '1'])
+    driver_id (Type: INT; Sample values: ['365', '351', '577', '813', '83'])
+    drive_id (Type: ; Sample values: ['1', '1', '1', '1', '1'])
+    constructor_id (Type: INT; Sample values: ['26', '193', '6', '3', '32'])
+]
+
+--------------------------------------------------
+
+###Table full name: sprint_results
+[
+    driver_id (Type: INT(11); Sample values: ['855', '847', '847', '1', '840'])
+    fastest_lap (Type: INT(11); Sample values: ['6', '14', '19', '17', '5'])
+    race_id (Type: INT(11); Sample values: ['1110', '1071', '1077', '1061', '1125'])
+    points (Type: FLOAT; Sample values: ['0.0', '0.0', '0.0', '2.0', '0.0'])
+    fastest_lap_speed (Type: VARCHAR(255); Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fastest_lap_time (Type: VARCHAR(255); Sample values: ['2:04.760', '1:14.056', '1:20.756', '1:29.937', '1:42.258'])
+    laps (Type: INT(11); Sample values: ['11', '24', '21', '17', '19'])
+    result_id (Type: INT(11); Sample values: ['175', '57', '71', '2', '254'])
+    constructor_id (Type: INT(11); Sample values: ['51', '3', '131', '131', '117'])
+    grid (Type: INT(11); Sample values: ['19', '17', '11', '1', '15'])
+    status_id (Type: INT(11); Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: retirements
+[
+    driver_id (Type: INT; Sample values: ['17', '173', '122', '157', '232'])
+    race_id (Type: INT; Sample values: ['108', '504', '292', '367', '610'])
+    status_id (Type: INT; Sample values: ['22', '8', '20', '81', '51'])
+]
+
+--------------------------------------------------
+
+###Table full name: pit_stops
+[
+    race_id (Type: INT(11); Sample values: ['863', '966', '1064', '1073', '851'])
+    driver_id (Type: INT(11); Sample values: ['30', '20', '847', '852', '10'])
+]
+
+--------------------------------------------------
+
+###Table full name: drivers_ext
+[
+    nationality (Type: TEXT; Sample values: ['British', 'American', 'American', 'German', 'Italian'])
+    driver_id (Type: INT; Sample values: ['541', '798', '533', '718', '586'])
+    code (Type: ; Sample values: ['FLO', 'LEV', 'BOY', 'LOO', 'PIO'])
+    forename (Type: TEXT; Sample values: ['Ron', 'Bayliss', 'Johnny', 'Ernst', 'Luigi'])
+    surname (Type: TEXT; Sample values: ['Flockhart', 'Levrett', 'Boyd', 'Loof', 'Piotti'])
+    full_name (Type: TEXT; Sample values: ['Ron Flockhart', 'Bayliss Levrett', 'Johnny Boyd', 'Ernst Loof', 'Luigi Piotti'])
+]
+
+--------------------------------------------------
+
+###Table full name: seasons
+[
+    year (Type: INT(11); Sample values: ['2005', '1983', '1988', '1980', '1970'])
+]
+
+--------------------------------------------------
+

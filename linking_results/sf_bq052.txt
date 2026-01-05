@@ -1,0 +1,558 @@
+###Table full name: PATENTSVIEW.PATENTSVIEW.USRELDOC
+[
+    date (Type: TEXT; Sample values: ['2013-06-20', '2017-09-14', '2018-10-18', '2012-09-20', '2011-12-08'])
+    patent_id (Type: TEXT; Sample values: ['8618696', '10037507', '10257822', '8402331', '8133689'])
+    sequence (Type: TEXT; Sample values: ['28', '19', '16', '25', '19'])
+    uuid (Type: TEXT; Sample values: ['bg35bwgdg1rmbx1kshsjx1xf7', 'z0i9pkakju0epdip0vtmcadnf', 'itba71z7z5ip113q4tkwt75jf', 'wg0fpahkrne5dj95a79ct5jyp', 'yjpemeqlq1w4054nay25qb5kw'])
+    relkind (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    kind (Type: TEXT; Sample values: ['A1', 'A1', 'A1', 'A1', 'A1'])
+    doctype (Type: TEXT; Sample values: ['related-publication', 'related-publication', 'related-publication', 'related-publication', 'related-publication'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+    reldocno (Type: TEXT; Sample values: ['20130154389', '20170262782', '20180302883', '20120239994', '20110300560'])
+    status (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CPC_CURRENT
+[
+    patent_id (Type: TEXT; Sample values: ['10396367', '5308489', '7479522', '6930146', '7175953'])
+    category (Type: TEXT; Sample values: ['inventional', 'inventional', 'inventional', 'inventional', 'inventional'])
+    uuid (Type: TEXT; Sample values: ['0fccb987-5388-476f-8391-f47d2e55a308', 'b51fcbe9-5f0b-478c-9292-7a4e7721bbe9', '2313da55-6a74-4330-a280-33125f345769', '9703e112-1350-4036-b9e9-8106f486783d', 'd0bb650e-2a37-43c5-ab0c-2984c34a94fe'])
+    group_id (Type: TEXT; Sample values: ['C08K', 'C08L', 'C08L', 'C08L', 'C09B'])
+    section_id (Type: TEXT; Sample values: ['C', 'C', 'C', 'C', 'C'])
+    sequence (Type: NUMBER; Sample values: ['4', '4', '4', '4', '4'])
+    subsection_id (Type: TEXT; Sample values: ['C08', 'C08', 'C08', 'C08', 'C09'])
+    subgroup_id (Type: TEXT; Sample values: ['C08K5/3462', 'C08L101/00', 'C08L51/085', 'C08L67/025', 'C09B23/083'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.USPATENTCITATION
+[
+    date (Type: TEXT; Sample values: ['2005-11-01', '2005-11-01', '2005-11-01', '2005-11-01', '2005-11-01'])
+    citation_id (Type: TEXT; Sample values: ['6966918', '6966919', '6966923', '6966929', '6966936'])
+    name (Type: TEXT; Sample values: ['Schuldt-Hempe et al.', 'Sixto, Jr. et al.', 'Gittings', 'Mitchell', 'Yamasaki et al.'])
+    patent_id (Type: TEXT; Sample values: ['9089501', '8568410', '8821530', '10219911', '8518184'])
+    category (Type: TEXT; Sample values: ['cited by applicant', 'cited by applicant', 'cited by applicant', 'cited by applicant', 'cited by applicant'])
+    uuid (Type: TEXT; Sample values: ['57ncvypgc6olzvvyu8cyrup28', 'ku1vpwjzed77n4wajpnj8s0bc', '9y51eyspby8nsi5pgsjqhvqmu', 'itpjgf8np2k8jjc3uw355hp7x', 'm0pa59o492vy0l2so88l0xgs3'])
+    sequence (Type: NUMBER; Sample values: ['66', '574', '28', '164', '273'])
+    kind (Type: TEXT; Sample values: ['B1', 'B2', 'B2', 'B2', 'B2'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.USAPPLICATIONCITATION
+[
+    date (Type: TEXT; Sample values: ['1996-05-01', '2000-12-01', '2001-03-01', '2001-03-01', '2001-03-01'])
+    patent_id (Type: TEXT; Sample values: ['8712582', '6857775', '10857329', '9202758', '11072668'])
+    name (Type: TEXT; Sample values: ['Klingel et al.', 'Shiraishi', 'Selmon', 'Andideh', 'Toone et al.'])
+    number (Type: TEXT; Sample values: ['WO 96/13790', 'D. 434674', '2001/0000041', '2001/0000012', '2001/0000039'])
+    application_id (Type: TEXT; Sample values: ['WO 96/13790', 'D. 434674', '2001/0000041', '2001/0000012', '2001/0000039'])
+    uuid (Type: TEXT; Sample values: ['wckile03msbg8fr0rtxy7b2m3', '18dkuauyvinnam00r3wbfft9o', 'c2g37744mvmi7fq9uh7hnrelp', 'qpjmbmd0cxewanpp7fp0aj9ck', 'jne1x56qvdy444c8op202ord7'])
+    category (Type: TEXT; Sample values: ['cited by applicant', 'cited by other', 'cited by examiner', 'cited by examiner', 'cited by applicant'])
+    sequence (Type: NUMBER; Sample values: ['28', '2', '0', '28', '0'])
+    kind (Type: TEXT; Sample values: ['A1', 'S', 'A1', 'A1', 'A1'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.APPLICATION
+[
+    date (Type: TEXT; Sample values: ['1990-07-26', '1992-11-30', '1993-09-17', '1994-03-08', '1994-03-11'])
+    id (Type: TEXT; Sample values: ['D/535207', 'D002048', 'D013068', 'D019659', 'D019888'])
+    patent_id (Type: TEXT; Sample values: ['D371814', 'D390605', 'D395297', 'D387555', 'D387736'])
+    number (Type: TEXT; Sample values: ['D535207', 'D002048', 'D013068', 'D019659', 'D019888'])
+    series_code (Type: TEXT; Sample values: ['D', 'D', 'D', 'D', 'D'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.FOREIGNCITATION
+[
+    date (Type: TEXT; Sample values: ['2002-12-01', '2002-12-01', '2002-12-01', '2002-12-01', '2002-12-01'])
+    patent_id (Type: TEXT; Sample values: ['7329559', '7870461', '8329239', '10907170', '9029656'])
+    number (Type: TEXT; Sample values: ['WO 02/099907', 'WO 02/100026', 'WO 02/100192', 'WO 02/100199', 'WO 02/100199'])
+    uuid (Type: TEXT; Sample values: ['xhj001ca1uk574sktzgyjbpc4', 'wxddvgazkrhjza59ens6ajy6e', 'qhziqthnqr8x58o6to57fw84d', 'bhzwlqdqrw7ohhcskzy601g24', 't7cepyiztg16eum41z8m3vkpj'])
+    category (Type: TEXT; Sample values: ['cited by other', 'cited by other', 'cited by other', 'cited by applicant', 'cited by applicant'])
+    sequence (Type: NUMBER; Sample values: ['116', '1', '0', '6', '7'])
+    country (Type: TEXT; Sample values: ['WO', 'WO', 'WO', 'WO', 'WO'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT
+[
+    date (Type: TEXT; Sample values: ['2013-10-01', '2016-05-03', '2016-05-17', '2016-07-19', '2018-04-03'])
+    abstract (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    title (Type: TEXT; Sample values: ['Cremation remains keepsake charm', 'Pulse oximetry sensor', 'Wheel', 'Band attachment', 'Satellite equipment for robot'])
+    id (Type: TEXT; Sample values: ['D690894', 'D755392', 'D756281', 'D761689', 'D814540'])
+    filename (Type: TEXT; Sample values: ['ipg131001.xml', 'ipg160503.xml', 'ipg160517.xml', 'ipg160719.xml', 'ipg180403.xml'])
+    number (Type: TEXT; Sample values: ['D690894', 'D755392', 'D756281', 'D761689', 'D814540'])
+    type (Type: TEXT; Sample values: ['design', 'design', 'design', 'design', 'design'])
+    kind (Type: TEXT; Sample values: ['S1', 'S1', 'S1', 'S1', 'S1'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+    withdrawn (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    num_claims (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.NBER_SUBCATEGORY
+[
+    title (Type: TEXT; Sample values: ['Drugs', 'Resins', 'Coating', 'Genetics', 'Receptacles'])
+    id (Type: TEXT; Sample values: ['31', '15', '12', '33', '68'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CPC_SUBSECTION
+[
+    title (Type: TEXT; Sample values: ['WEAPONS', 'FOOTWEAR', 'HEADWEAR', 'HOROLOGY', 'RAILWAYS'])
+    id (Type: TEXT; Sample values: ['F41', 'A43', 'A42', 'G04', 'B61'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.USPC_CURRENT
+[
+    patent_id (Type: TEXT; Sample values: [])
+    uuid (Type: TEXT; Sample values: [])
+    sequence (Type: NUMBER; Sample values: [])
+    subclass_id (Type: TEXT; Sample values: [])
+    mainclass_id (Type: TEXT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CPC_SUBGROUP
+[
+    title (Type: TEXT; Sample values: ['Accessing, addressing or allocating within memory systems or architectures -Protection against unauthorised use of memory ; or access to memory-by checking the object accessibility, e.g. type of access defined by the memory independently of subject rights ', 'Accessories for mixers ; ; Auxiliary operations or auxiliary devices; Parts or details of general application-Feed or discharge mechanisms-Feed mechanisms -characterized by the means for feeding the components to the mixer-using gravity, e.g. from a hopper', 'Accessories for mixers ; ; Auxiliary operations or auxiliary devices; Parts or details of general application-Feed or discharge mechanisms-Feed mechanisms -characterized by the means for feeding the components to the mixer-using pistons, plungers, syringes', 'Adaptations of machines or engines for special use; Combinations of engines with devices driven thereby -Adaptations for driving, or combinations with, hand-held tools or the like ; control thereof-with pressure-velocity transformation exclusively in rotor', 'Adhesive bonding and miscellaneous chemical manufacture-Methods of surface bonding and/or assembly therefor-of discrete laminae to single face of additional lamina-All laminae planar and face to face-with covering of discrete laminae with additional lamina'])
+    id (Type: TEXT; Sample values: ['G06F12/1416', 'B01F15/0234', 'B01F15/0237', 'F01D15/065', 'Y10T156/1093'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CPC_GROUP
+[
+    title (Type: TEXT; Sample values: ['ENZYMES', 'SEWING ', 'BRUSHES ', 'KNITTING', 'MILLING '])
+    id (Type: TEXT; Sample values: ['C12Y', 'D05B', 'A46B', 'D04B', 'B23C'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PCT_DATA
+[
+    date (Type: TEXT; Sample values: ['1997-05-14', '1996-11-28', '1997-12-04', '1998-01-29', '1998-10-05'])
+    _371_date (Type: TEXT; Sample values: ['1998-11-24', '1998-11-25', '1998-11-25', '1998-11-25', '1998-11-25'])
+    _102_date (Type: TEXT; Sample values: ['1998-11-24', '1998-11-25', '1998-11-25', '1998-11-25', '1998-11-25'])
+    uuid (Type: TEXT; Sample values: ['v8ytczzfg5xril2pulgae7mpz', 'f7geredanvenr1ckxav8tipvg', 'iskblsunhiygozk3dx721g9lk', '580ijfy1z1tihq6bf3500tz72', 'xu31xhs9n56nafkgtqbuuclvf'])
+    patent_id (Type: TEXT; Sample values: ['6136157', '6183621', '6326016', '6273995', '6223135'])
+    rel_id (Type: TEXT; Sample values: ['PCT/SE97/00794', 'WO96/37437', 'WO97/45018', 'WO98/03730', 'WO98/43859'])
+    kind (Type: TEXT; Sample values: ['00', 'A', 'A', 'A', 'A'])
+    doc_type (Type: TEXT; Sample values: ['pct_application', 'wo_grant', 'wo_grant', 'wo_grant', 'wo_grant'])
+    country (Type: TEXT; Sample values: ['WO', 'WO', 'WO', 'WO', 'WO'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.FOREIGN_PRIORITY
+[
+    date (Type: TEXT; Sample values: ['2010-01-29', '2005-12-06', '2007-03-15', '2008-01-31', '2002-07-15'])
+    uuid (Type: TEXT; Sample values: ['ztgvs4z21xu7ukrf4w7ki6sv9', '3kpkrndj6lrrficcwvvd953b2', '48eh65lpsj3ntpsafkn02snol', '5jcy1yd7clmhekp1ejuvj1kyd', '76mpeehux25p2mm1r04r9c6sw'])
+    patent_id (Type: TEXT; Sample values: ['9422244', '7689264', '8440881', '8197665', '7269549'])
+    number (Type: TEXT; Sample values: ['10152097', '05026538', '07104197', '08150927', '02077844'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.NBER_CATEGORY
+[
+    title (Type: TEXT; Sample values: ['Cmp&Cmm', 'Others', 'Not Classified'])
+    id (Type: TEXT; Sample values: ['2', '6', '7'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.NBER
+[
+    patent_id (Type: TEXT; Sample values: ['5957794', '5836287', '5743367', '4389981', '5624010'])
+    uuid (Type: TEXT; Sample values: ['j8tuxh72edfxc9ap6ykjsssph', 'je9c7em7fvi10jxtsr6f0p625', 'jhylh7rzg3f9o1txrysn865f4', 'jielz80we58qk9v06ri8spch5', 'jjn4owdggqraixu7dz3t07we1'])
+    subcategory_id (Type: TEXT; Sample values: ['53', '53', '53', '53', '53'])
+    category_id (Type: TEXT; Sample values: ['5', '5', '5', '5', '5'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.OTHERREFERENCE
+[
+    text (Type: TEXT; Sample values: ['Database Search, DNA Sequence Alignments [BLASTN 2.2.1[Jul. 12, 2001], NCBI].', 'International Preliminary Report on Patentability for PCT Application No. PCT/US2014/052447, dated Sep. 1, 2016.', 'Moore GE, “Primary Eye Irritation Study in Rabbits,”  product safety labs , East Brunswick, New Jersey, 1-15, (Oct. 21, 1999).', '3GPP TSG RAN WG1 Meeting #66bis R1-113187 Zhuhai, China, Oct. 10-14, 2011 Source: LG Electronics Title: Discussion on Simultaneous Uplink ChannelTransmission in Rel-11.', 'International Search Report PCT/US01/11218 dated Aug. 14, 2001.'])
+    uuid (Type: TEXT; Sample values: ['en76sg4rufqs84o9cyjhu3uyg', 'kbdmsnzl7bdtmmh459fkbuo84', 'd1dzkghdltx9n4xy45wohw41a', 'qufqg0n8yduw5f9r002jftwjy', 'n34h4de0kqjumexsl5h16ekow'])
+    patent_id (Type: TEXT; Sample values: ['7423119', '9988908', '7732486', '9888499', '8968289'])
+    sequence (Type: NUMBER; Sample values: ['207', '207', '207', '207', '207'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.USPC
+[
+    patent_id (Type: TEXT; Sample values: ['4733714', '4715905', '7684187', '5924300', '9019701'])
+    uuid (Type: TEXT; Sample values: ['vx63cj017gh32rnj8qou8whzr', 'no3fq6xhprzuyjmzloepaacj0', '2jzao5tdsvfggvxxi3me6dx17', 'jitiqsy2de4rnjmvar48pi5hs', '2vz25pigd5urhwqwb0vqvmccs'])
+    sequence (Type: NUMBER; Sample values: ['6', '6', '6', '6', '6'])
+    subclass_id (Type: TEXT; Sample values: ['164/306', '164/480', '165/121', '165/122', '165/122'])
+    mainclass_id (Type: TEXT; Sample values: ['164', '164', '165', '165', '165'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.DETAIL_DESC_TEXT_2021
+[
+    text (Type: TEXT; Sample values: ['DETAILED DESCRIPTION\n\nPersons of ordinary skill in the art will realize that the following description is illustrative only and not in any way limiting. Other aspects will readily suggest themselves to such skilled persons.\n\nThe present invention improves the efficiency of existing LUT-based FPGA logic cells at implementing up, down and pop counters. When implementing each of these functions, some of the K-input LUTs in some of the logic cells remain available to generate any function of the K inputs to those LUTs.\n\nIn accordance with one aspect of the present invention, an illustrative LUT-based logic cell120that allows improved efficiency for up counters and pop counters is shown inFIG. 4, to which attention is now drawn. Some of the elements of logic cell120ofFIG. 4are common to the logic cells shown in previous drawing figures and will be referred to inFIG. 4using the same reference numerals used to designate those same elements in the previous drawing figures.\n\nThe logic cell120of...(truncated)', "DETAILED DESCRIPTION\n\nIn a cohesive granular material according to the present invention, the granules are made of stiff substance and have a grain size in the range from 55 μm to 2.0 mm. This range of grain sizes corresponds to the definition of sand. However, the granules are not restricted to sand, neither with regard to the substance of the granules, i.e. their chemical composition, nor with regard to the shape of the granules.\n\nThe elastomeric substance of the cohesive granular material according to the present invention is elastic and its young's modulus is not more than 0.5 times the Young's modulus of the stiff substance. Typically, the difference in Young's modulus is much higher. The elastomeric substance elastically connects the granules, particularly with regard to a tensile or a shear load but also with regard to a pressure load on the cohesive granular material. Already with regard to a shear load and particularly with regard to a pressure load on the cohesive granular ma...(truncated)", 'DETAILED DESCRIPTION OF EXEMPLARY EMBODIMENTS\n\nA. General Introduction\n\nThe present invention provides, inter alia, methods for treating a CD30-expressing hematologic cancer. The present inventors have discovered that a weekly therapeutic regimen with the anti-CD30 antibody-drug conjugate cAC10-(MC-vc-PAB-MMAE)4at doses of about 0.8 mg/kg to about 1.2 mg/kg provides a surprisingly efficacious therapeutic regimen, e.g., it allows for multiple objective responses within a short time period and has an acceptable tolerability profile despite frequent dosing. That such a substantial dose of the antibody-drug conjugate can be provided at such frequent intervals and result in a high response rate and acceptable toxicity profile is a surprising finding. In a phase I study, multiple complete responses were observed within 8 weeks of treatment. The weekly dosing regimen has been observed to provide a high rate of response in a short time period. The high rate of response is also surprising for a...(truncated)', 'BRIEF SUMMARY OF THE INVENTION\n\nThe rotatable hook assembly10is designed to meet all of the above criteria and more. It can comprise five or more primary components: a locking twist handle, a bag hook, a suspension thickness buffer, a lock in accessory, and a headrest storage hook. The locking twist handle functions in concert with the bag hook to form the main body of the rotatable hook assembly10. Together, they provide for a hook on which a plethora of shopping bag handles (or similar) can be gathered and hooked as well as a locking member which, once activated, secures the handles on the hook. The locking twist handle also comprises a convenient carry handle so that multiple bags can be carried simultaneously by the user in one hand without discomfort, pinching, and other common issues experienced when carrying multiple bags with a bare hand. The twist function allows the locking twist handle to twist open and closed making adding and/or removing bags from the bag hook a simple pro...(truncated)', 'MODE FOR CARRYING OUT THE INVENTION\n\nHereinafter, the present invention will be described in detail. It will be understood that words or terms used in the specification and claims shall not be interpreted as the meaning defined in commonly used dictionaries. It will be further understood that the words or terms should be interpreted as having a meaning that is consistent with their meaning in the context of the relevant art and the technical idea of the invention, based on the principle that an inventor may properly define the meaning of the words or terms to best explain the invention.\n\nTypically, a method of preparing a positive electrode material including an alumina coating layer in the form of a film has been suggested, in which aluminum (Al) is oxidized using a solvent such as alkoxide, a predetermined amount of positive electrode material powder is put in the aluminum oxide solution and mixed, and a high-temperature sintering process is then performed in a temperature range of a...(truncated)'])
+    patent_id (Type: TEXT; Sample values: ['10936286', '10941081', '10940178', '10939746', '10938036'])
+    length (Type: NUMBER; Sample values: ['16627', '17139', '85747', '28147', '37619'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.MAINCLASS_CURRENT
+[
+    title (Type: TEXT; Sample values: ['BEDS', 'LOCKS', 'SHIPS', 'TOOLS', 'WELLS'])
+    id (Type: TEXT; Sample values: ['5', '70', '114', '81', '166'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.US_TERM_OF_GRANT
+[
+    patent_id (Type: TEXT; Sample values: ['5174504', '5074838', '4559232', '5420013', '4761240'])
+    uuid (Type: TEXT; Sample values: ['z9y4m0a49rrv13oobfjfhruyt', '3zitfb2aia6u8nlr3n5uta60p', 'q36z0hu0fuakfps1855oguvgx', '371gdkoc6hkkigrl6vo1hp6ct', '8tqysssc0wexdhpj4pvz036hw'])
+    disclaimer_date (Type: TEXT; Sample values: ['2008-05-14', '2007-03-13', '2001-06-26', '2010-10-26', '2004-12-29'])
+    term_extension (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+    term_grant (Type: TEXT; Sample values: ['NULL', 'NULL', 'NULL', 'NULL', 'NULL'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.SUBCLASS_CURRENT
+[
+    title (Type: TEXT; Sample values: ['Divalent chalcogen, bonded directly to two carbons or to carbon and hydrogen, attached indirectly to phosphorus by acyclic nonionic bonding (wherein the hydrogen may be replaced by substituted or unsubstituted ammonium, or by a Group IA or IIA light metal)', '1', '1', '1', '2'])
+    id (Type: TEXT; Sample values: ['558/165', '210/DIG.*', '514/200', '514/210.8', '540/223'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.WIPO
+[
+    sequence (Type: TEXT; Sample values: ['0', '0', '0', '0', '0'])
+    patent_id (Type: TEXT; Sample values: ['10020849', '10027265', '10037837', '10050468', '10069230'])
+    field_id (Type: TEXT; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.LOCATION
+[
+    id (Type: TEXT; Sample values: ['d7d40b84-cb90-11eb-9615-121df0c29c1e', '76690a33-cbae-11eb-9615-121df0c29c1e', '97cde1fd-cb8f-11eb-9615-121df0c29c1e', '3e139199-cb8e-11eb-9615-121df0c29c1e', '3e2297e6-cb8e-11eb-9615-121df0c29c1e'])
+    city (Type: TEXT; Sample values: ['None', 'Rio Cuarto', 'St Martin', 'PILLICHSDORF', 'Gmunden'])
+    country (Type: TEXT; Sample values: ['AI', 'AR', 'AR', 'AT', 'AT'])
+    state (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.IPCR
+[
+    patent_id (Type: TEXT; Sample values: ['6530169', '6591733', '5421114', '6384193', '6405468'])
+    uuid (Type: TEXT; Sample values: ['fwu2zrloyrwcwdgaktjgkx6mr', 'kavup1p4zsm3wjwhdgwzfb3p0', 'vhdtwcqpo7bz1jpgxthx2goq2', 'ktdz2s1zgy5vjptntpkycb6pv', 'qs706yjmasctoppsibduessiw'])
+    section (Type: TEXT; Sample values: ['F', 'F', 'F', 'C', 'F'])
+    subgroup (Type: TEXT; Sample values: ['00', '00', '58', '00', '00'])
+    action_date (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    subclass (Type: TEXT; Sample values: ['A', 'A', 'A', 'A', 'A'])
+    main_group (Type: TEXT; Sample values: ['15', '9', '3', '14', '17'])
+    ipc_class (Type: TEXT; Sample values: ['41', '41', '41', '07', '41'])
+    classification_level (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    sequence (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    classification_value (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.REL_APP_TEXT
+[
+    patent_id (Type: TEXT; Sample values: ['7899432', '7160272', '9279166', '7273496', '7344982'])
+    text (Type: TEXT; Sample values: ['BENEFIT OF PROVISIONAL APPLICATION This application is a continuation of and claims the benefit of U.S. patent application Ser. No. 11/820,489, filed 19 Jun. 2007, which claims the benefit of U.S. Provisional Application No. 60/814,731, filed 19 Jun. 2006.', 'CLAIM OF PRIORITY 1. This application claims the benefit of U.S. Provisional Patent Application Ser. No. 60/385,167, filed 31 May 2002, entitled “Improved Y-Site Medical Valve.” This provisional application is incorporated herein as if fully set forth.', 'CLAIM OF PRIORITY The present application claims the benefit of the filing date of U.S. Provisional Application Serial No 61/258,768 (filed Nov. 6, 2009) and the entirety of the contents of this application being hereby expressly incorporated by reference.', 'CLAIM OF PRIORITY This application claims priority to U.S. Provisional Application No. 60/422,021, filed on Oct. 29, 2002, entitled “ARTIFICIAL VERTEBRAL DISK REPLACEMENT IMPLANT WITH CROSSBAR SPACER AND METHOD” , which is included herein by reference.', 'CLAIM TO DOMESTIC PRIORITY The present non-provisional patent application claims priority to provisional application Ser. No. 60/524,452 entitled “Selective Deposition of Ruthenium Films by Digital CVD”, filed on Nov. 24, 2003, by Jaydeb Goswami et al.'])
+    uuid (Type: TEXT; Sample values: ['zbgmunbx6p8b9a81z1ct4qbn0', '0i5rwno3ssh2er5s1usocefd8', 'll4vrc4ztuwjbxovpsqlerzeb', 'k9j0478ax5t2q8jhl7o73kkma', 'm5ub01hqu4rpjaddw196xrc9j'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.MAINCLASS
+[
+    id (Type: TEXT; Sample values: ['154', '41', '44', '460', '727'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.MATCH
+[
+    patent_id (Type: TEXT; Sample values: ['3930423', '3930679', '3930816', '3930947', '3931452'])
+    publication_number (Type: TEXT; Sample values: ['US-3930423-A', 'US-3930679-A', 'US-3930816-A', 'US-3930947-A', 'US-3931452-A'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.RAWLOCATION
+[
+    id (Type: TEXT; Sample values: ['vfu7odn7e9oa9s5ypan8plop1', '16xusuap7rdacrx87mg3hizxe', '55ks2zuw1suyhtgfqke41evmm', '7uzkx7wep2bn07jglqqfbi3rr', 'ebailf7rbyx8hqt634ogbuqbb'])
+    location_id (Type: TEXT; Sample values: ['ff1b0420-cb90-11eb-9615-121df0c29c1e', 'ff1b0420-cb90-11eb-9615-121df0c29c1e', 'ff1b0420-cb90-11eb-9615-121df0c29c1e', 'ff1b0420-cb90-11eb-9615-121df0c29c1e', 'ff1b0420-cb90-11eb-9615-121df0c29c1e'])
+    latlong (Type: TEXT; Sample values: ['37.5308|-121.942', '37.5308|-121.942', '37.5308|-121.942', '37.5308|-121.942', '37.5308|-121.942'])
+    country (Type: TEXT; Sample values: ['US', 'US', 'US', 'US', 'US'])
+    state (Type: TEXT; Sample values: ['CA', 'CA', 'CA', 'CA', 'CA'])
+    city (Type: TEXT; Sample values: ['Fremont', 'Fremont', 'Fremont', 'Fremont', 'Fremont'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.BRF_SUM_TEXT
+[
+    patent_id (Type: TEXT; Sample values: ['8340917', '9223704', '4140085', '5753729', '7944184'])
+    uuid (Type: TEXT; Sample values: ['trk41aa0c2vx03i8zta2low1w', '3su3q8p4ekjd6xhnx2t4jys8t', 'b0qs060fwm3tavltiwk2ye9wl', 'tqszodoh1hdqy84ugu3qbxpky', '8exjqcsq8zhh7qrcwl2cs9k8s'])
+    text (Type: TEXT; Sample values: ['BACKGROUND Research in many areas of biotechnology, such as drug discovery, disease analysis, and crop improvements, involves matching fragments of sequences that are generated from a sample, with long sequences that represent biological components. For example, the human genome is a double helix of sequences of nucleotides, where one sequence is a complement of the other. There are 4 nucleotides in DNA sequences, more in RNA and protein sequences. Each nucleotide in a DNA sequence is represented by a character from the alphabet {a,c,t,g}. Each strand of the double helix that constitutes the human genome is a sequence of more than 3 billion characters. The 2 strands are not independent. For each character position in one strand, there is a complementary character in the corresponding position of the second strand. The characters a and t are complements of one another, and the characters c and g are complements of one another. Each character is also called a base, hence a genomic sequen...(truncated)', 'BACKGROUND The present disclosure relates to a memory access control circuit, and more particularly, to a memory access control circuit, prefetch circuit, memory device and information processing system for gaining burst access to a memory. A processor uses a memory both as an instruction storage area and as a data storage area. Therefore, it is necessary for the processor to access the memory highly frequently during the execution of a program. In order to reduce the burden on the memory resulting from such frequent accesses, a cache memory is provided between the processor and memory. A cache memory manages a plurality of continuous words as a line. Therefore, the plurality of words are filled altogether at the time of a cache mishit. At this time, a burst transfer is used to transfer data from the memory. In order to achieve transfer of a plurality of words using a burst transfer, a system is known which can change the sequence of the words to be transferred by using the wraparound ...(truncated)', 'The invention relates to a method and an apparatus for controlling the proportion of fuel and air in a combustible fuel-air mixture fed to an internal combustion engine. More particularly, the invention relates to an apparatus in which an oxygen sensor (.lambda.-sensor) monitors the exhaust gas composition and generates a signal which is used in influencing the fuel-air ratio. For this purpose, the sensor signal is compared with a set-point or threshold value. Known in the art are systems which determine the duration of fuel injection control pulses by disposing in the exhaust system a .lambda.-sensor which generates an electrical signal that alternates abruptly between a higher and lower voltage depending on whether the mixture fed to the engine is rich or lean. This output signal is used as the actual value in a control loop and is used by the fuel injection system to determine the duration of the control pulses used to actuate the injection valves. The basic duration of the fuel inj...(truncated)', "The invention relates to coating compositions stabilized against damage by light, heat and oxygen, which contain as stabilizer a 2-(2'-hydroxyphenyl)-1,3-pyrimidine derivative, to new compounds of the 2-(2'hydroxyphenyl)-1,3-pyrimidine type, to their use for stabilizing organic material and to corresponding compositions. If it is desired to increase the light stability of an organic material, especially a coating, it is conventional to add a light stabilizer. One class of light stabilizers which is very frequently employed is that of the UV absorbers, which protect the material by absorbing the damaging radiation via chromophores. The most commonly used types of UV absorbers are 2-hydroxybenzophenones and 2-(2-hydroxyphenyl)benzotriazoles. In more recent literature, triphenyl-triazines are also mentioned as stabilizers for coating materials, for example in the publications U.S. Pat. No. 4,619,956, EP-A-434,608, EP-A-442,847 and EP-A-502,816, or as stabilizers for polycarbonate (U.S. Pa...(truncated)", 'The present invention relates to a high voltage direct current (HVDC) system, and more particularly to a static compensator (STATCOM) for an HVDC system. BACKGROUND INFORMATION Although HVDC systems are an idea power generator without inertia, they generate a harmonic wave and consume invalid power. To resolve these problems, a harmonic wave filter, an invalid power compensator such as static VAR (voltage amperes reactive) compensator or STATCOM, and a synchronous phase modifier have been used. However, the invalid power compensator is not associated with the HVDC suitably and a control performance is not secure enough. FIG. 1 illustrates a conventional synchronous power generator system. A turbine 1 - 1 controls a frequency and valid power of the synchronous power generator system. An exciter 1 - 3 controls invalid power and voltages of the synchronous power generator system. The valid power of the synchronous power generator system is expressed by a first area 1 - 5 , and the invalid...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CLAIM
+[
+    text (Type: TEXT; Sample values: ['The apparatus of claim 11 further comprising:means for coupling said guide rails to said support fingers and to said lateral guide means, said coupling means permitting movement of said support fingers relative to said slots in a pair of mutually orthogonal directions whereby the width and depth of the transport channel may be varied.', '13. A fusion protein of the formula: wherein GFP is green fluorescent protein; AEQ is aequorin; and LINKER is a polypeptide of 5-63 amino acids; wherein the linker includes the amino acid sequence Ser Gly Leu Arg Ser [SEQ ID NO: 26].', 'A seismic isolator as set forth in claim 10 wherein said first ends of second and third links are of a configuration for welding to said frame.', 'The apparatus of claim 11, wherein each of the pluralities of extension value allows the output of the combining circuit to provide an output consistent with a different multi-sequence generator.', '13. A method for detecting free elements in a ceramic matrix composite component, the method comprising: providing a computed tomography device, comprising: positioning the ceramic matrix composite component between the radiation source and the first grating; rotating the ceramic matrix composite component orthogonally to one or both of the first grating and the second grating; stepping the first grating or the second grating at each component position in the plurality of component positions to provide phase steps; incrementally rotating one or both of the ceramic matrix composite component and the computed tomography device to provide a plurality of component positions; directing radiation from the radiation source to the detector at each phase step of each component position in the plurality of component positions to acquire information from the ceramic matrix composite component; generating phase contrast and dark field contrast images corresponding to variations in density with the...(truncated)'])
+    sequence (Type: TEXT; Sample values: ['13', '13', '13', '13', '13'])
+    patent_id (Type: TEXT; Sample values: ['5080217', '6936475', '5934028', '6601158', '9746405'])
+    exemplary (Type: TEXT; Sample values: ['False', 'False', 'False', 'False', 'False'])
+    dependent (Type: TEXT; Sample values: ['-1', '-1', '-1', '-1', '-1'])
+    uuid (Type: TEXT; Sample values: ['f14iorboawm0ew4zxz095hkf1', 'br6in9paqszb9k8q5qcskbwrr', 'uo09zb52i0ms8tkn08uke4nl6', 'ncjwzvisu6x44ai88utr6px9d', 'cftodyxd2112579yr15i3umz7'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.CLAIMS_2021
+[
+    text (Type: TEXT; Sample values: ['1. A testing system, comprising: a first radio frequency system comprising a first plurality of antennas; and a second radio frequency system comprising a second plurality of antennas, wherein the second radio frequency system is configured to: transmit a first test data packet to the first radio frequency system; receive a beamforming parameter from the first radio frequency system via a wired connection that bypasses the first plurality of antennas and the second plurality of antennas, wherein the beamforming parameter is configured to indicate a difference between the first test data packet and an expected data packet; and adjust a magnitude, a phase, or both, of a second test data packet based at least in part on the beamforming parameter.', '1. A method for controlling a laundry treatment apparatus including an outer tub, an inner tub disposed inside the outer tub, an air circulation path having a start end connected to a side surface of the outer tub and a section upwardly extending relative to the start end, a water drain path connected to a lower surface of the outer tub and configured to guide and drain water inside the outer tub to an outside, a filter part that includes a filter net disposed to traverse the upwardly extending section of the air circulation path and an edge frame disposed around the filter net and configured to support the filter net, and a plurality of nozzles configured to spray cleaning water to the filter net, the method comprising: supplying wash water into the outer tub; washing or rinsing laundry in the inner tub by using the wash water; and draining the wash water through the water drain path, wherein draining the washing water comprises: rotating the edge frame relative to the filter net, and...(truncated)', '1. A method comprising: downloading a shared description file of a group of three-dimensional graph description objects including identical attribute features and a group of different stock keeping unit (SKU) presentation commodities belonging to a same Standard Product Unit (SPU); storing the shared description file locally according to a commodity browsing record of a client terminal; downloading at least one separate description file of the group of three-dimensional graph description objects; combining the shared description file with a separate description file from the at least one separate description file to form a three-dimensional graph description file, wherein combining the shared description file with the separate description file comprises combining the shared description file stored in the client terminal locally with a downloaded separate description file of a specific SKU presentation commodity to form the three-dimensional graph description file; and automatically pre...(truncated)', '1. A forceps, comprising: first and second shafts each having a jaw member disposed at a distal end thereof, the first and second shafts configured to rotate about a pivot to move the jaw members relative to each other; a blade configured to cut tissue disposed between the jaw members; a trigger operably coupled to the blade and rotatable to actuate the blade to cut tissue disposed between the jaw members; an interference member configured to rotate into engagement with the trigger to prevent rotation of the trigger, the interference member defining a slot; and a protrusion extending from the first shaft toward the second shaft and having a pin extending therefrom configured to be received within the slot, the pin configured to translate along the slot to rotate the interference member.', '1. A system, comprising: a memory; and a processor to execute instructions stored in the memory to perform operations comprising: analyzing rail voltage drop (IR drop) for a full-chip to identify an IR drop violation in a block design of the full-chip; performing a block-level IR drop analysis for the block design; generating a revised block design corresponding to the block design in which the IR drop violation is identified; performing a block-level IR drop analysis on the revised block design to verify that the IR drop violation is fixed; integrating the revised block design into the full-chip to replace the block design upon verifying that the IR drop violation is fixed; and performing the IR drop analysis for the full-chip comprising the revised block design.'])
+    num (Type: TEXT; Sample values: ['00001', '00001', '00001', '00001', '00001'])
+    patent_id (Type: TEXT; Sample values: ['10931345', '10961653', '11010964', '10980557', '11022634'])
+    uuid (Type: TEXT; Sample values: ['2bfb6c99-9cb0-11eb-9615-121df0c29c1e', '432b87e8-9cbb-11eb-9615-121df0c29c1e', 'd25104b3-b7e2-11eb-9615-121df0c29c1e', '1df0f20d-b27b-11eb-9615-121df0c29c1e', '39db5d60-ebc6-11eb-b0cf-121df0c29c1e'])
+    sequence (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    dependent (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    exemplary (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.SUBCLASS
+[
+    id (Type: TEXT; Sample values: ['015/210.1', '033/334', '03H/110.4', '055/DIG10', '07C/597.4'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.LAWYER
+[
+    id (Type: TEXT; Sample values: ['007bf9adef356f708442479c51664e88', '0130c675635a408305bd352c862f3e8b', '023cabbc4284663499f20a4483299643', '034a5e858ae8ab163ca1c48824102b34', '0383742d12a47a7b33eb17330c9e81f4'])
+    name_last (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    name_first (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    organization (Type: TEXT; Sample values: ['Leygid, Voit & Mayer, Ltd.', 'Renner Kenner Greive Bobaktaylor & Weber', 'Okomato & Benedicto LLP', 'Schmeiser, Olsen & Watts; John R. Pivnichny', 'Tarelli, Sundheim, Covell & Tummino LLP'])
+    country (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.ASSIGNEE
+[
+    id (Type: TEXT; Sample values: ['e7708504-153e-4914-91ef-d99c05a96873', 'e7819615-e086-4867-81e2-77c1e05d18e4', 'e79e091d-a09e-4fcc-85e4-f3d5d9be2bad', 'e7caba19-ff5b-4d45-b6d4-b60f55089b63', 'e8153061-c00d-4a64-b366-2454afab3205'])
+    name_last (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    name_first (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    type (Type: FLOAT; Sample values: ['3.0', '3.0', '3.0', '3.0', '3.0'])
+    organization (Type: TEXT; Sample values: ['pneuPAC Limited', 'ACTION STAR TECHNOLOGY CO., LTD.', 'Burgess Micro Switch Company Limited', 'CREA N.V.', 'CABCO GROUP LIMITED'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.WIPO_FIELD
+[
+    id (Type: TEXT; Sample values: ['D07', 'D99', 'D28', 'D25', 'D27'])
+    sector_title (Type: TEXT; Sample values: ['Design', 'Design', 'Design', 'Design', 'Design'])
+    field_title (Type: TEXT; Sample values: ['Household goods, not elsewhere specified', 'Miscellaneous', 'Pharmaceutical and cosmetic products, toilet articles and apparatus', 'Building units and construction elements', "Tobacco and smokers' supplies"])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.RAWEXAMINER
+[
+    group (Type: TEXT; Sample values: ['3762', '3762', '3762', '3762', '3762'])
+    name_first (Type: TEXT; Sample values: ['Christopher A', 'Christopher A', 'Christopher D', 'Christopher D', 'Christopher D'])
+    patent_id (Type: TEXT; Sample values: ['9974952', '9839492', '8977356', '8738147', '8449444'])
+    name_last (Type: TEXT; Sample values: ['Flory', 'Flory', 'Koharski', 'Koharski', 'Koharski'])
+    uuid (Type: TEXT; Sample values: ['m9aj3t1pcki5f234kg4oo41js', '5jjrb6305vakuk8d1a7g29th8', 'u8b9bozgtqs2h1dhof7ozoquw', 'e5sgw9wrexh7omwocj26krmbo', 'km3grgq8vpon7mnh7v55kvqtk'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.GOVERNMENT_ORGANIZATION
+[
+    name (Type: TEXT; Sample values: ['Postal Service', 'Denali Commission', 'Agency for International Development', 'Argonne National Laboratory', 'Brookhaven National Laboratory'])
+    organization_id (Type: NUMBER; Sample values: ['11', '4', '100', '78', '159'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT_GOVINTORG
+[
+    patent_id (Type: TEXT; Sample values: ['10074282', '10096097', '10029556', '10127447', '10067112'])
+    organization_id (Type: NUMBER; Sample values: ['256', '256', '256', '256', '256'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.DRAW_DESC_TEXT
+[
+    text (Type: TEXT; Sample values: ['FIG. 1J  includes a tenth view of an embodiment of a multi-screen user device;', 'FIG. 9 is an illustrative signal point plot illustrating the circular contour of the CMA blind equalization method;', 'FIG. 6  is a flowchart illustrating an example of the slow regeneration control; and', 'FIG. 10  shows UV spectra of (a) miconazole and (b) phenazopyridine, taken at several values of pH, typical of spectra taken in the cosolvent method. Note that the reference (right) absorbances are slightly higher than the highest sample absorbances (left), in contrast to the situation in the aqueous dilution method (FIG.  9 ). In principle, this indicates that the cosolvent method is more sensitive than the aqueous dilution method.', 'FIG. 10  shows the 2D  1 H- 13 C HSQC spectrum of A1F. The spectrum was acquired on a 600 MHz Bruker Avance spectrometer with 5 mm cryoprobe at 27° C. using a sensitivity-enhanced gradient HSQC pulse sequence. A total of 16 points were averaged for each of 1024×256 hyper complex points. The recycle delay was 1.1 s.'])
+    patent_id (Type: TEXT; Sample values: ['8907906', '5940440', '10352222', '6569686', '8216851'])
+    sequence (Type: TEXT; Sample values: ['10', '10', '10', '10', '10'])
+    uuid (Type: TEXT; Sample values: ['bnl69b122zl4lj951qjrsulr0', '2f5gqx6knnoz8hzfd535jwr6n', 'drvo0nvdyzopac1tybiwejqa2', '0lph4ia6ie3imqcvf0djd1cm3', '0j9p2ziuzg41xoffzesxqqm51'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.DRAW_DESC_TEXT_2021
+[
+    text (Type: TEXT; Sample values: ['FIG. 9 is a top view of the design of FIG. 6 ;', 'FIG. 9 is a logic flow diagram of assessing a security risk and performing a security response in accordance with the present invention.', 'FIG. 10 is a bottom view of the remote control device shown in FIG. 7 .', 'FIG. 4C shows a process for searching for information housed in the system in instances where a field level method of data encryption is utilized.', 'FIGS. 8A, 8B, 8C illustrate results of ex vivo imaging experiments in the abdominal aorta of a rabbit following AF750 NIR fluorophore injected into the artery wall. FIG. 8A : Three imaging sessions of the same region of the vessel were performed with catheter placed in different intraluminal positions. Representative ultrasound image of the vessel cross section obtained from each position is presented in black and white colors. Each colored circular ring represents corresponding raw NIRF or corrected NIRF signals, and are depicted on the interior of the IVUS catheter, as well as externally around the vessel wall. FIG. 8B : Representation of the raw and corrected NIRF two dimensional images obtained in different intraluminal positions. FIG. 8C Comparison between raw and corrected NIRF signals in pullback position 6 mm. All scale bars 1 mm.'])
+    sequence (Type: NUMBER; Sample values: ['10', '10', '10', '10', '10'])
+    patent_id (Type: TEXT; Sample values: ['D908485', '10904214', 'D909004', '11106815', '11123047'])
+    uuid (Type: TEXT; Sample values: ['72404f44-9964-11eb-9615-121df0c29c1e', '73f4ba4a-9964-11eb-9615-121df0c29c1e', '7254487e-9964-11eb-9615-121df0c29c1e', 'a5934620-4015-11ec-b427-12de62d610b1', 'ab01dfd9-4019-11ec-b427-12de62d610b1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.RAWASSIGNEE
+[
+    name_last (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    patent_id (Type: TEXT; Sample values: ['6519094', '7119958', '5932850', '5381448', '6657369'])
+    name_first (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    uuid (Type: TEXT; Sample values: ['kdchn2f76p5ppvohmhgjdymn3', 'w013fx7xgo14m9ar7rdd1y5v0', 'dc51eab6-0b01-41d8-8f2b-37f01e65430a', 'pyn1zoktpbm50zb6ae5j3wlsl', 'fti7sbdaayikgmw5d6v99wd4f'])
+    type (Type: FLOAT; Sample values: ['3.0', '3.0', '3.0', '3.0', '3.0'])
+    sequence (Type: NUMBER; Sample values: ['0', '0', '0', '0', '0'])
+    organization (Type: TEXT; Sample values: ['Matsushita Electric Industrial Co., Ltd.', 'Matsushita Electric Industrial Co., Ltd.', 'Matsushita Electric Industrial Co., Ltd.', 'Matsushita Electric Industrial Co., Ltd.', 'Matsushita Electric Industrial Co., Ltd.'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.INVENTOR
+[
+    id (Type: TEXT; Sample values: ['fl:r_ln:kitago-2', 'fl:r_ln:baba-13', 'fl:r_ln:takeuchi-16', 'fl:r_ln:umino-1', 'fl:r_ln:tsuhara-1'])
+    name_first (Type: TEXT; Sample values: ['Ryosuke', 'Ryosuke', 'Ryosuke', 'Ryosuke', 'Ryosuke'])
+    name_last (Type: TEXT; Sample values: ['Kitago', 'BABA', 'Takeuchi', 'UMINO', 'Tsuhara'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.BOTANIC
+[
+    patent_id (Type: TEXT; Sample values: ['PP20359', 'PP16970', 'PP32309', 'PP19539', 'PP27954'])
+    uuid (Type: TEXT; Sample values: ['06i082at44feqh3567o765fxg', '1pi7xr52gijr0g3czo4rg3mjc', 'n0lrrdyv8um0od2s7ldl34fmc', 'r4vgoyxcuu3u4lun4kk0bk21k', 'az0rve7k94pn2bodr84okjns1'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.FIGURES
+[
+    patent_id (Type: TEXT; Sample values: ['7945619', '9736480', '9806707', '8181511', 'D786280'])
+    uuid (Type: TEXT; Sample values: ['mjc0asaj8ajqw3mihluefyczd', 'gqeaccvlqdbrbdo3huogk4s9c', '0a2fv5zg7hk23f3n6687gr0za', 'j970inpgvnoryl0nzvqhc8vi7', 'oaq9mzysfhrk33kmle25vrlzw'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT_LAWYER
+[
+    patent_id (Type: TEXT; Sample values: ['D647010', 'D735919', 'D720263', '7514340', '7345545'])
+    lawyer_id (Type: TEXT; Sample values: ['0005647487ba7841035ebb6b6e06c1e2', '0005647487ba7841035ebb6b6e06c1e2', '0005647487ba7841035ebb6b6e06c1e2', '00056e250abdbd1e1d6358ed439ed25b', '00056e250abdbd1e1d6358ed439ed25b'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT_INVENTOR
+[
+    patent_id (Type: TEXT; Sample values: ['4633115', '7099733', '8373326', '7441399', '6850293'])
+    inventor_id (Type: TEXT; Sample values: ['fl:m_ln:watanabe-86', 'fl:h_ln:naya-1', 'fl:y_ln:enomoto-39', 'fl:m_ln:utamura-1', 'fl:y_ln:utsumi-4'])
+    location_id (Type: TEXT; Sample values: ['ff6637c1-cb8e-11eb-9615-121df0c29c1e', 'ff6637c1-cb8e-11eb-9615-121df0c29c1e', 'ff6637c1-cb8e-11eb-9615-121df0c29c1e', 'ff6637c1-cb8e-11eb-9615-121df0c29c1e', 'ff6637c1-cb8e-11eb-9615-121df0c29c1e'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.RAWINVENTOR
+[
+    patent_id (Type: TEXT; Sample values: ['7882463', '9917285', 'D404275', '9161833', '7992858'])
+    uuid (Type: TEXT; Sample values: ['ug5gxv4ejs51vicvvogx84hr5', 'lfohk4vbmka08yu3djvfquwx8', 'lfyo0jctwl7edc16bop8nyhkk', 'mluaxfk9eo6noyou6cn5hlzvg', 'ol3rhtmj5su307oozric2okib'])
+    name_first (Type: TEXT; Sample values: ['Kevin W.', 'Atsushi', 'Robert I.', 'Elisma', 'Masayuki'])
+    name_last (Type: TEXT; Sample values: ['McCullen', 'Mitani', 'Somers', 'Caffrey', 'Ueda'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT_ASSIGNEE
+[
+    patent_id (Type: TEXT; Sample values: ['11179164', '11139018', '11165899', '11168211', '11142954'])
+    assignee_id (Type: TEXT; Sample values: ['00241bc8-9510-47c5-9ecd-62fe4ab7906c', '00d8ce38-147e-4f7d-81fb-5650b64bb0ad', '017cf470-956c-479f-8a37-13c7774a54cb', '0298bb7a-1a36-4ad4-9f64-c071023ebd66', '02fca0dd-2732-4265-ae3c-3e445711b1b8'])
+    location_id (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.RAWLAWYER
+[
+    patent_id (Type: TEXT; Sample values: ['6223689', '6290358', '6060680', '5990024', '6058307'])
+    name_first (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    name_last (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    sequence (Type: NUMBER; Sample values: ['1', '3', '1', '1', '1'])
+    uuid (Type: TEXT; Sample values: ['5edfd333-e134-46a0-b034-e25351c51a02', '3cf16744-4473-46f3-9545-e642ba5d9bbd', '87978494-4fea-4c31-b9d1-5ca6c9ff6c89', 'fc0f7308-372c-4bca-9b2a-86cd86e84cdd', 'e2954e82-d2a9-4138-b97d-359caa7e38e4'])
+    organization (Type: TEXT; Sample values: ['Law Offices of Brian S. Steinberger', 'Edwards & Angell, LLP', 'Grant Patent Services', 'Reed & Associates', 'Pepper Hamilton LLP'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.NON_INVENTOR_APPLICANT
+[
+    patent_id (Type: TEXT; Sample values: ['9593885', '10076763', 'D724264', 'D701352', 'D676229'])
+    designation (Type: TEXT; Sample values: ['us-only', 'us-only', 'us-only', 'us-only', 'us-only'])
+    uuid (Type: TEXT; Sample values: ['1zpd0v8dy5fcks8ri0tehjph5', 'i5m4lekiy3q3ob4vd6bca7kzz', 'kivv0qweqpl9sptp8al7wrznb', 'kxm44okm4mnu44byd0p9f9rcs', 'mh94xka9g0mx1olv7ckxb7iec'])
+    fname (Type: TEXT; Sample values: ['Cuerdon', 'Dong', 'Chen', 'Xu', 'Fogg'])
+    organization (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PATENT_CONTRACTAWARDNUMBER
+[
+    patent_id (Type: TEXT; Sample values: ['10169847', 'PP21965', '4534894', '7267941', '7547509'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.GOVERNMENT_INTEREST
+[
+    patent_id (Type: TEXT; Sample values: ['10593821', '8377831', '7448441', '7067022', '6863021'])
+]
+
+--------------------------------------------------
+
+###Table full name: PATENTSVIEW.PATENTSVIEW.PERSISTENT_ASSIGNEE_DISAMBIG
+[
+    disamb_assignee_id_20190820 (Type: TEXT; Sample values: ['org_kEnV6I8cuBHV5fQ0ZCZN', 'org_npVJ4j7RstzxqbGCrc8t', 'org_HaMejF3KUiJrek2EFRh2', 'org_HaMejF3KUiJrek2EFRh2', 'org_hJ5NLOW6hV2RsFGkD7hv'])
+    disamb_assignee_id_20191231 (Type: TEXT; Sample values: ['org_OhzNz0dANlu1NfK7TdCR', 'org_03jQkU3MS8JEguCAlklK', 'org_z80x0b2N4Dk6CsEVroeT', 'org_z80x0b2N4Dk6CsEVroeT', 'org_ebN3Qt2tebbNPi1PC4c7'])
+    disamb_assignee_id_20191008 (Type: TEXT; Sample values: ['org_00JIuEjOeTD9FaaMEPbp', 'org_00VTI7dJwHgr26VkL4NM', 'org_00ZpPHnQGwsshY7ISboK', 'org_00ZpPHnQGwsshY7ISboK', 'org_00czyo2zVRr7l24NARwJ'])
+    disamb_assignee_id_20190312 (Type: TEXT; Sample values: ['org_XY9itoQIZtoEnvTyof61', 'org_67YzfuOA09U6exgSWnkm', 'org_kRhmBLQVcWt9PFidjhYa', 'org_kRhmBLQVcWt9PFidjhYa', 'org_zesbQZHjDgADq1ZYDdTo'])
+]
+
+--------------------------------------------------
+

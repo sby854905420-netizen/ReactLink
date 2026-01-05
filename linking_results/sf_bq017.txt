@@ -1,0 +1,194 @@
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_WAYS
+[
+    geometry (Type: BINARY; Sample values: ['bytearray(b"\\x01\\x02\\x00\\x00\\x00\\x0b\\x00\\x00\\x00o\\...(truncated)', "bytearray(b'\\x01\\x02\\x00\\x00\\x00m\\x00\\x00\\x00g\\x11...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00i\\x00\\x00\\x00\\x87\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00\\n\\x00\\x00\\x00^c<\\...(truncated)", "bytearray(b'\\x01\\x02\\x00\\x00\\x00q\\x00\\x00\\x00v=,/T...(truncated)"])
+    id (Type: NUMBER; Sample values: ['73165139', '75218666', '75207289', '73975367', '79494876'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    nodes (Type: VARIANT; Sample values: ['[\n  {\n    "id": 866315580\n  },\n  {\n    "id": 866469140\n  },\n  {\n    "id": 867906160\n  },\n  {\n    "id": 866405284\n  },\n  {\n    "id": 866497492\n  },\n  {\n    "id": 866302007\n  },\n  {\n    "id": 866449818\n  },\n  {\n    "id": 867897625\n  },\n  {\n    "id": 867903637\n  },\n  {\n    "id": 866402859\n  },\n  {\n    "id": 866540640\n  }\n]', '[\n  {\n    "id": 887696362\n  },\n  {\n    "id": 887829439\n  },\n  {\n    "id": 887997465\n  },\n  {\n    "id": 887771891\n  },\n  {\n    "id": 887946345\n  },\n  {\n    "id": 887733187\n  },\n  {\n    "id": 887896126\n  },\n  {\n    "id": 887683316\n  },\n  {\n    "id": 887809856\n  },\n  {\n    "id": 887983189\n  },\n  {\n    "id": 887761266\n  },\n  {\n    "id": 887934769\n  },\n  {\n    "id": 887725502\n  },\n  {\n    "id": 887879212\n  },\n  {\n    "id": 887671531\n  },\n  {\n    "id": 887796830\n  },\n  {\n    "id": 887972053\n  },\n  {\n    "id": 887749910\n  },\n  {\n    "id": 887923069\n  },\n  {\n    "id": 887711659\n  },\n  {\n    "id": 887857327\n  },\n  {\n    "id": 888014154\n  },\n  {\n    "id": 887785787\n  },\n  {\n    "id": 887960678\n  },\n  {\n    "id": 887742561\n  },\n  {\n    "id": 887911649\n  },\n  {\n    "id": 887698676\n  },\n  {\n    "id": 887833997\n  },\n  {\n    "id": 888000588\n  },\n  {\n    "id": 887774554\n  },\n  {\n    "id": 887949557\n  },\n  {\n    "id": 887735182\n  },\n  {\n    "id": 887899156\n  },\n  {\n    "id": 887685989\n  },\n  {\n    "id"...(truncated)', '[\n  {\n    "id": 887486861\n  },\n  {\n    "id": 887326669\n  },\n  {\n    "id": 887543636\n  },\n  {\n    "id": 887388813\n  },\n  {\n    "id": 887580418\n  },\n  {\n    "id": 887438720\n  },\n  {\n    "id": 887288093\n  },\n  {\n    "id": 887502812\n  },\n  {\n    "id": 887342883\n  },\n  {\n    "id": 887553102\n  },\n  {\n    "id": 887399906\n  },\n  {\n    "id": 887587454\n  },\n  {\n    "id": 887452958\n  },\n  {\n    "id": 887540766\n  },\n  {\n    "id": 887385800\n  },\n  {\n    "id": 887578662\n  },\n  {\n    "id": 887435586\n  },\n  {\n    "id": 887284770\n  },\n  {\n    "id": 887498843\n  },\n  {\n    "id": 887338158\n  },\n  {\n    "id": 887551376\n  },\n  {\n    "id": 887396999\n  },\n  {\n    "id": 887585563\n  },\n  {\n    "id": 887448296\n  },\n  {\n    "id": 887296654\n  },\n  {\n    "id": 887515391\n  },\n  {\n    "id": 887354017\n  },\n  {\n    "id": 887557526\n  },\n  {\n    "id": 887407722\n  },\n  {\n    "id": 887452327\n  },\n  {\n    "id": 887299647\n  },\n  {\n    "id": 887518065\n  },\n  {\n    "id": 887357653\n  },\n  {\n    "id": 887560444\n  },\n  {\n    "id"...(truncated)', '[\n  {\n    "id": 875203058\n  },\n  {\n    "id": 875126295\n  },\n  {\n    "id": 875250411\n  },\n  {\n    "id": 875165175\n  },\n  {\n    "id": 875297030\n  },\n  {\n    "id": 875213426\n  },\n  {\n    "id": 875076413\n  },\n  {\n    "id": 875191884\n  },\n  {\n    "id": 875320995\n  },\n  {\n    "id": 875238167\n  }\n]', '[\n  {\n    "id": 927804568\n  },\n  {\n    "id": 927952840\n  },\n  {\n    "id": 927834031\n  },\n  {\n    "id": 927859272\n  },\n  {\n    "id": 927947127\n  },\n  {\n    "id": 927896134\n  },\n  {\n    "id": 927971934\n  },\n  {\n    "id": 927894051\n  },\n  {\n    "id": 927971505\n  },\n  {\n    "id": 927921740\n  },\n  {\n    "id": 927802421\n  },\n  {\n    "id": 927826455\n  },\n  {\n    "id": 927915475\n  },\n  {\n    "id": 927857691\n  },\n  {\n    "id": 927945590\n  },\n  {\n    "id": 927964843\n  },\n  {\n    "id": 927852132\n  },\n  {\n    "id": 927794827\n  },\n  {\n    "id": 927882057\n  },\n  {\n    "id": 927908689\n  },\n  {\n    "id": 927784889\n  },\n  {\n    "id": 927942252\n  },\n  {\n    "id": 927820454\n  },\n  {\n    "id": 927953307\n  },\n  {\n    "id": 927835459\n  },\n  {\n    "id": 927978323\n  },\n  {\n    "id": 927866390\n  },\n  {\n    "id": 927897288\n  },\n  {\n    "id": 927973532\n  },\n  {\n    "id": 927926419\n  },\n  {\n    "id": 927807195\n  },\n  {\n    "id": 927828303\n  },\n  {\n    "id": 927917980\n  },\n  {\n    "id": 927861048\n  },\n  {\n    "id"...(truncated)'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1327342614000000', '1327337045000000', '1327336165000000', '1327333911000000', '1327344795000000'])
+    version (Type: NUMBER; Sample values: ['2', '3', '2', '2', '2'])
+    changeset (Type: NUMBER; Sample values: ['10475054', '10475054', '10475054', '10475054', '10475054'])
+    username (Type: TEXT; Sample values: ['jumbanho', 'jumbanho', 'jumbanho', 'jumbanho', 'jumbanho'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "37346853"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Thu Mar 28 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060005017843"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "146070088"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Wed Jun 02 00:00:00 PDT 2010"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030003021991"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "32169952"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Fri Mar 08 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030003001813"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "136746792"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Sat Jul 02 00:00:00 PDT 2005"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18060003000648"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]', '[\n  {\n    "key": "gnis:fcode",\n    "value": "46003"\n  },\n  {\n    "key": "gnis:ftype",\n    "value": "StreamRiver"\n  },\n  {\n    "key": "intermittent",\n    "value": "yes"\n  },\n  {\n    "key": "nhd:com_id",\n    "value": "26977445"\n  },\n  {\n    "key": "nhd:fdate",\n    "value": "Fri Mar 08 00:00:00 PST 2002"\n  },\n  {\n    "key": "nhd:reach_code",\n    "value": "18030006000227"\n  },\n  {\n    "key": "source",\n    "value": "NHD"\n  },\n  {\n    "key": "waterway",\n    "value": "stream"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_FEATURES
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\r...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\t...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_way_id (Type: NUMBER; Sample values: ['839339694', '322227974', '674038987', '886660521', '456349582'])
+    osm_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    feature_type (Type: TEXT; Sample values: ['multipolygons', 'multipolygons', 'multipolygons', 'multipolygons', 'multipolygons'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1598016026000000', '1421329134000000', '1551519849000000', '1608467910000000', '1480329992000000'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "landuse",\n    "value": "residential"\n  },\n  {\n    "key": "name",\n    "value": "شهرک امام زمان"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "farmyard"\n  },\n  {\n    "key": "name",\n    "value": "South Landridge Farm"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "residential"\n  },\n  {\n    "key": "name",\n    "value": "Cantura Cove"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "farmyard"\n  },\n  {\n    "key": "name",\n    "value": "Craigspark"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "name",\n    "value": "Krughorst"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_FEATURES_POINTS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xef\\xa6\\xa5\\x03\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xb6\\xb5\\x85\\xe7\\x...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00S\\x1a\\xd6\\xf9\\\\\\x9...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xc4\\xa4S\\xb2\\xf7\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd3\\xa0h\\x1e\\xc0\\...(truncated)"])
+    osm_way_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    osm_id (Type: NUMBER; Sample values: ['8242788622', '8242788645', '8242788728', '5336182396', '7746621289'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1608386913000000', '1608386913000000', '1608386913000000', '1515821683000000', '1595683421000000'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "id",\n    "value": "1"\n  }\n]', '[\n  {\n    "key": "MCC",\n    "value": "286"\n  },\n  {\n    "key": "communication:microwave",\n    "value": "yes"\n  },\n  {\n    "key": "communication:mobile_phone",\n    "value": "gsm;umts"\n  },\n  {\n    "key": "man_made",\n    "value": "mast"\n  },\n  {\n    "key": "source",\n    "value": "DigitalGlobe"\n  },\n  {\n    "key": "tower:type",\n    "value": "communication"\n  }\n]', '[\n  {\n    "key": "atm",\n    "value": "yes"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_RELATIONS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00>\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", 'bytearray(b"\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)', "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00g\\...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    id (Type: NUMBER; Sample values: ['7463946', '11022461', '13286432', '3801191', '10741974'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1502475117000000', '1587502152000000', '1633283424000000', '1402038563000000', '1582368485000000'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 514874852,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 514874853,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 794546848,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 794546849,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 989177514,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 989177513,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 286548146,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 286548138,\n    "role": "outer",\n    "type": "w"\n  }\n]', '[\n  {\n    "id": 775531718,\n    "role": "outer",\n    "type": "w"\n  },\n  {\n    "id": 775531720,\n    "role": "outer",\n    "type": "w"\n  }\n]'])
+    username (Type: TEXT; Sample values: ['Aurimas Fišeras', 'UPegasus', 'UPegasus', 'Cabeleira', 'pikappa79'])
+    changeset (Type: NUMBER; Sample values: ['51041273', '83900996', '112043412', '22769296', '81342937'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  }\n]', '[\n  {\n    "key": "landuse",\n    "value": "forest"\n  },\n  {\n    "key": "type",\n    "value": "multipolygon"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_NODES
+[
+    geometry (Type: BINARY; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    longitude (Type: NUMBER; Sample values: ['-113.443301100', '28.986649100', '31.774604500', '34.772905300', '18.856070600'])
+    latitude (Type: NUMBER; Sample values: ['49.438724700', '-20.688499500', '3.376556000', '1.249124300', '50.309746300'])
+    id (Type: NUMBER; Sample values: ['8809595840', '4811433843', '4926349833', '7825875320', '2164077960'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1623005376000000', '1492951085000000', '1497952209000000', '1597836475000000', '1361379447000000'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    username (Type: TEXT; Sample values: ['tschettervictor', 'twesigyegabriel', 'twesigyegabriel', 'twesigyegabriel', 'umrudasl-import'])
+    changeset (Type: NUMBER; Sample values: ['105929128', '48059152', '49688586', '89630746', '15102364'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.PLANET_LAYERS
+[
+    osm_way_id (Type: NUMBER; Sample values: ['80820903', '159980615', '296636352', '181204824', '235356919'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_id (Type: NUMBER; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    osm_version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    layer_code (Type: NUMBER; Sample values: ['1500', '1500', '1500', '1500', '1500'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1286621389000000', '1334665988000000', '1407493810000000', '1347758554000000', '1377626831000000'])
+    layer_name (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    gdal_type (Type: TEXT; Sample values: ['multipolygons', 'multipolygons', 'multipolygons', 'multipolygons', 'multipolygons'])
+    layer_class (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "yes"\n  },\n  {\n    "key": "source",\n    "value": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013"\n  },\n  {\n    "key": "wall",\n    "value": "no"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.HISTORY_RELATIONS
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x05\\x00\\x00\\x00\\x05\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xaa\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00\\xa3\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00J\\x00\\x00\\x00\\x01\\...(truncated)", "bytearray(b'\\x01\\x05\\x00\\x00\\x00S\\x00\\x00\\x00\\x01\\...(truncated)"])
+    id (Type: NUMBER; Sample values: ['5426265', '10760608', '10760608', '10073012', '10073012'])
+    version (Type: NUMBER; Sample values: ['11', '405', '358', '144', '172'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1603643356000000', '1601566295000000', '1601308498000000', '1599506009000000', '1599836110000000'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    members (Type: VARIANT; Sample values: ['[\n  {\n    "id": 3474923242,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 340277699,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 2195652482,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 340277697,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 1965658359,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 340277700,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3124508814,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 363992436,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3682835401,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 237581846,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 8044420082,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 363988644,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3680942433,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 3680942481,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 3680942431,\n    "role": ...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 6282807439,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590943,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 7250590942,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 457938601,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 160093178,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 3084898954,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6104410984,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 131564057,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 5113395796,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 5113395788,\n    "role": "platform",\n    "type": "n"\n  },\n  {\n    "id": 670923148,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 478461166,\n    "role": "",\n    "type":...(truncated)', '[\n  {\n    "id": 3226393892,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6268787265,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2189440690,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 208670454,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 6283002440,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 316513888,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 136523670,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 129371441,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 93359854,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 84039072,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 136523690,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 35399711,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 123804816,\n   ...(truncated)', '[\n  {\n    "id": 3226393892,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2051764767,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6169161537,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 1721677981,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 6268787265,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 2189440690,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 208670454,\n    "role": "platform",\n    "type": "w"\n  },\n  {\n    "id": 6283002440,\n    "role": "stop",\n    "type": "n"\n  },\n  {\n    "id": 316513888,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 136523670,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 129371441,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 93359854,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 84039072,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 136523690,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 35399711,\n    "role": "",\n    "type": "w"\n  },\n  {\n    "id": 123804816,\n   ...(truncated)'])
+    changeset (Type: NUMBER; Sample values: ['93021604', '91835145', '91652789', '90546299', '90765272'])
+    username (Type: TEXT; Sample values: ['Stylez995', 'tkoval83', 'tkoval83', 'tkoval83', 'tkoval83'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "to",\n    "value": "Solemskogen"\n  },\n  {\n    "key": "ref",\n    "value": "56"\n  },\n  {\n    "key": "from",\n    "value": "Tamburveien"\n  },\n  {\n    "key": "line",\n    "value": "bus"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "colour",\n    "value": "#0072BC"\n  },\n  {\n    "key": "network",\n    "value": "Ruter"\n  },\n  {\n    "key": "operator",\n    "value": "Norgesbuss"\n  },\n  {\n    "key": "public_transport:version",\n    "value": "2"\n  }\n]', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "ref",\n    "value": "N3300"\n  },\n  {\n    "key": "from",\n    "value": "Kiew, Busbahnhof"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus N3300: Kiew, Busbahnhof => Wien Erdberg, Busterminal VIB"\n  },\n  {\n    "key": "name:hu",\n    "value": "Flixbus N3300: Kijev, autóbusz-állomás => Bécs Erdberg, VIB buszpályaudvar"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus N3300: Киев, автовокзал => Вена Эрдберг, автовокзал VIB"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus N3300: Київ, автовокзал => Відень Ердберг, автовокзал VIB"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "Euroclub Ltd."\n  },\n  {\n    "key": "public_transport:version",\n  ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "ref",\n    "value": "K3001"\n  },\n  {\n    "key": "from",\n    "value": "Київ, Центральний автовокзал"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus K3001: Київ, Центральний автовокзал => Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus K3001: Kiew, Zentraler Busbahnhof => Breslau, Busbahnhof"\n  },\n  {\n    "key": "name:pl",\n    "value": "Flixbus K3001: Kijów, główny dworzec autobusowy => Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus K3001: Киев, Центральный автовокзал => Вроцлав, Автовокзал"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus K3001: Київ, Центральний автовокзал => Вроцлав, Автовокзал"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "TOV Gunsel"\n  },\n  {\n    "key": "publ...(truncated)', '[\n  {\n    "key": "to",\n    "value": "Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "ref",\n    "value": "K3001"\n  },\n  {\n    "key": "from",\n    "value": "Київ, Центральний автовокзал"\n  },\n  {\n    "key": "name",\n    "value": "Flixbus K3001: Київ, Центральний автовокзал => Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "type",\n    "value": "route"\n  },\n  {\n    "key": "route",\n    "value": "bus"\n  },\n  {\n    "key": "name:de",\n    "value": "Flixbus K3001: Kiew, Zentraler Busbahnhof => Breslau, Busbahnhof"\n  },\n  {\n    "key": "name:pl",\n    "value": "Flixbus K3001: Kijów, główny dworzec autobusowy => Wrocław, dworzec autobusowy"\n  },\n  {\n    "key": "name:ru",\n    "value": "Flixbus K3001: Киев, Центральный автовокзал => Вроцлав, Автовокзал"\n  },\n  {\n    "key": "name:uk",\n    "value": "Flixbus K3001: Київ, Центральний автовокзал => Вроцлав, Автовокзал"\n  },\n  {\n    "key": "network",\n    "value": "Flixbus"\n  },\n  {\n    "key": "operator",\n    "value": "TOV Gunsel"\n  },\n  {\n    "key": "publ...(truncated)'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.HISTORY_NODES
+[
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xd4\\xe8\\xc4\\xd4L\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00A$C\\x8e\\xad\\x87\\x0...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\x01F\\xe1\\xc4\\xa1\\...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xe5T!\\xd4\\xfb\\x8c...(truncated)", "bytearray(b'\\x01\\x01\\x00\\x00\\x00\\xdb6\\x8c\\x82\\xe01...(truncated)"])
+    longitude (Type: NUMBER; Sample values: ['3.342431700', '3.566249000', '3.472964800', '3.318839700', '3.524354000'])
+    latitude (Type: NUMBER; Sample values: ['50.747601900', '50.807488600', '50.934549900', '50.740783800', '50.821340400'])
+    id (Type: NUMBER; Sample values: ['2719410933', '2024704316', '1923480350', '2688228888', '2156021073'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1394901096000000', '1353500660000000', '1348134836000000', '1393239113000000', '1360938139000000'])
+    version (Type: NUMBER; Sample values: ['1', '1', '1', '1', '1'])
+    visible (Type: BOOLEAN; Sample values: ['True', 'True', 'True', 'True', 'True'])
+    changeset (Type: NUMBER; Sample values: ['21119993', '13957937', '13181552', '20748310', '15040720'])
+    username (Type: TEXT; Sample values: ['lodde1949', 'lodde1949', 'lodde1949', 'lodde1949', 'lodde1949'])
+    all_tags (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.HISTORY_LAYERS
+[
+    osm_way_id (Type: NUMBER; Sample values: ['295106180', '295106194', '294416267', '295105951', '294416270'])
+    geometry (Type: BINARY; Sample values: ["bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\n...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)", "bytearray(b'\\x01\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x...(truncated)"])
+    osm_id (Type: NUMBER; Sample values: ['295106180', '295106194', '294416267', '295105951', '294416270'])
+    osm_version (Type: NUMBER; Sample values: ['2', '2', '2', '2', '2'])
+    layer_code (Type: NUMBER; Sample values: ['1500', '1500', '1500', '1500', '1500'])
+    osm_timestamp (Type: NUMBER; Sample values: ['1492347889000000', '1492347962000000', '1492348012000000', '1492348027000000', '1492348066000000'])
+    layer_name (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    gdal_type (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    layer_class (Type: TEXT; Sample values: ['building', 'building', 'building', 'building', 'building'])
+    all_tags (Type: VARIANT; Sample values: ['[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "11"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "1A"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "26"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "29"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]', '[\n  {\n    "key": "building",\n    "value": "house"\n  },\n  {\n    "key": "addr:city",\n    "value": "Rawa Mazowiecka"\n  },\n  {\n    "key": "addr:street",\n    "value": "Aleksandrówka"\n  },\n  {\n    "key": "source:addr",\n    "value": "mrawamazowiecka.e-mapa.net"\n  },\n  {\n    "key": "addr:postcode",\n    "value": "96-200"\n  },\n  {\n    "key": "addr:city:simc",\n    "value": "0977077"\n  },\n  {\n    "key": "addr:housenumber",\n    "value": "36"\n  },\n  {\n    "key": "addr:street:sym_ul",\n    "value": "00228"\n  }\n]'])
+]
+
+--------------------------------------------------
+
+###Table full name: GEO_OPENSTREETMAP.GEO_OPENSTREETMAP.HISTORY_CHANGESETS
+[
+    ways (Type: VARIANT; Sample values: ['[]', '[]', '[]', '[]', '[]']; Description: Ways that are part of this way)
+    osm_timestamp_max (Type: NUMBER; Sample values: ['1429167998', '1306424582', '1346011894', '1438929466', '1543686864']; Description: Maximum timestamp of objects contained in this changeset.)
+    id (Type: NUMBER; Sample values: ['30256461', '8254690', '12871634', '33171592', '65078513']; Description: Changeset ID.)
+    relations (Type: VARIANT; Sample values: ['[\n  2787405\n]', '[\n  1573819\n]', '[\n  186430\n]', '[\n  5419230,\n  5419225\n]', '[\n  9068338\n]']; Description: Relations that are part of this way)
+    nodes (Type: VARIANT; Sample values: ['[]', '[]', '[\n  171513871\n]', '[]', '[]']; Description: Nodes that are part of this way)
+    osm_timestamp_min (Type: NUMBER; Sample values: ['1429167998', '1306424582', '1346011892', '1438929466', '1543686864']; Description: Minimum timestamp of objects contained in this changeset.)
+]
+
+--------------------------------------------------
+
+
+External knowledge that might be helpful: 
+Categories: Geospatial functions
+
+
+## ST_DWITHIN
+
+Returns TRUE if the minimum geodesic distance between two points (two GEOGRAPHY objects) is within the specified distance. Otherwise, returns FALSE.
+If the parameters are GEOGRAPHY values that are not points (e.g. lines or polygons), this returns TRUE or FALSE based on the minimum geodesic distance between the two closest points of the two values.
+
+Tip You can use the search optimization service to improve the performance of queries that call this function.
+For details, see Search Optimization Service.
+
+## Syntax
+
+ST_DWITHIN( <geography_expression_1> , <geography_expression_2> , <distance_in_meters> )
+
+
+## Arguments
+
+
+geography_expression_1The argument must be an expression of type GEOGRAPHY.
+
+geography_expression_2The argument must be an expression of type GEOGRAPHY.
+
+distance_in_metersThe argument must be an expression of type REAL. The distance is in meters.
+
+
+## Returns
+
+Returns a BOOLEAN.
+
+## Usage notes
+
+
+Returns NULL if any input is NULL.
+
+
+## Examples
+
+This returns TRUE because the distance in meters between two points 1 degree apart along the equator is less than 150,000 meters:
+
+SELECT ST_DWITHIN (ST_MAKEPOINT(0, 0), ST_MAKEPOINT(1, 0), 150000);
++-------------------------------------------------------------+
+| ST_DWITHIN (ST_MAKEPOINT(0, 0), ST_MAKEPOINT(1, 0), 150000) |
+|-------------------------------------------------------------|
+| True                                                        |
++-------------------------------------------------------------+
