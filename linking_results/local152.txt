@@ -1,0 +1,80 @@
+###Table full name: movies
+[
+    duration (Type: INTEGER; Sample values: ['117', '159', '92', '99', '80'])
+    id (Type: TEXT; Sample values: ['tt7477068', 'tt7222598', 'tt5885106', 'tt8054150', 'tt5887650'])
+    title (Type: TEXT; Sample values: ['Der Trafikant', 'Raju Kannada Medium', 'Vengeance', 'O chyom govoryat muzhchiny. Prodolzhenie', 'Living Space'])
+    year (Type: INTEGER; Sample values: ['2018', '2018', '2018', '2018', '2018'])
+    date_published (Type: TIMESTAMP; Sample values: ['2018-11-01 00:00:00', '2018-01-19 00:00:00', '2018-09-28 00:00:00', '2018-02-22 00:00:00', '2018-03-10 00:00:00'])
+    languages (Type: TEXT; Sample values: ['German, Czech', 'Kannada', 'English', 'Russian', 'English'])
+    worlwide_gross_income (Type: TEXT; Sample values: ['$ 360996', 'None', 'None', '$ 7035897', 'None'])
+    country (Type: TEXT; Sample values: ['Austria, Germany', 'India', 'UK', 'Russia', 'Australia'])
+    production_company (Type: TEXT; Sample values: ['Epo-Film Produktionsgesellschaft', 'Suresh Arts', 'Evolutionary Films', 'None', 'Tru Dot Films'])
+]
+
+--------------------------------------------------
+
+###Table full name: ratings
+[
+    total_votes (Type: INTEGER; Sample values: ['1719', '128', '688', '137', '282'])
+    movie_id (Type: TEXT; Sample values: ['tt3923004', 'tt6424724', 'tt8304386', 'tt6619250', 'tt7999950'])
+    median_rating (Type: REAL; Sample values: ['6.0', '7.0', '3.0', '4.0', '7.0'])
+    avg_rating (Type: REAL; Sample values: ['3.7', '6.7', '4.0', '3.1', '7.2'])
+]
+
+--------------------------------------------------
+
+###Table full name: director_mapping
+[
+    movie_id (Type: TEXT; Sample values: ['tt6892250', 'tt8396120', 'tt6138688', 'tt7382828', 'tt4161376'])
+    name_id (Type: TEXT; Sample values: ['nm8994803', 'nm9412189', 'nm1618536', 'nm1671980', 'nm10150409'])
+]
+
+--------------------------------------------------
+
+###Table full name: names
+[
+    known_for_movies (Type: TEXT; Sample values: ['None', 'tt5826432', 'None', 'None', 'tt7025388,tt5629524,tt5242684'])
+    id (Type: TEXT; Sample values: ['nm0005405', 'nm5125871', 'nm5587544', 'nm6680947', 'nm7779129'])
+    name (Type: TEXT; Sample values: ['Seann William Scott', 'DeRon Horton', 'Shane Wheeler', 'Nhung Trang', 'Nikita Dyuvbanov'])
+    height (Type: REAL; Sample values: ['180.0', '200.0', 'nan', 'nan', 'nan'])
+    date_of_birth (Type: TEXT; Sample values: ['1976-10-03', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: genre
+[
+    movie_id (Type: TEXT; Sample values: ['tt6359956', 'tt7986672', 'tt8016666', 'tt5911032', 'tt8653824'])
+    genre (Type: TEXT; Sample values: ['Comedy', 'Thriller', 'Comedy', 'Drama', 'Fantasy'])
+]
+
+--------------------------------------------------
+
+###Table full name: role_mapping
+[
+    movie_id (Type: TEXT; Sample values: ['tt7219324', 'tt2898904', 'tt3809960', 'tt8665794', 'tt5897636'])
+    name_id (Type: TEXT; Sample values: ['nm0038449', 'nm4666860', 'nm0957257', 'nm3354073', 'nm4264236'])
+    category (Type: TEXT; Sample values: ['actress', 'actor', 'actor', 'actor', 'actress'])
+]
+
+--------------------------------------------------
+
+###Table full name: ERD
+[
+    Unnamed: 9 (Type: TEXT; Sample values: ['duration', 'movie', 'name', 'year', 'None'])
+    Unnamed: 10 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 6 (Type: TEXT; Sample values: ['role_mapping', 'None', 'None', 'None', 'None'])
+    Unnamed: 12 (Type: TEXT; Sample values: ['director_mapping', 'None', 'None', 'None', 'None'])
+    Unnamed: 7 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 8 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 11 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 3 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 2 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 4 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    Unnamed: 5 (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    column (Type: TEXT; Sample values: ['name_id', 'languages', 'known_for_movies', 'genre', 'worlwide_gross_income'])
+    table (Type: TEXT; Sample values: ['director_mapping', 'movie', 'names', 'genre', 'movie'])
+]
+
+--------------------------------------------------
+

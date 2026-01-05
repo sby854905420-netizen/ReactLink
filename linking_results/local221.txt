@@ -1,0 +1,148 @@
+###Table full name: Team
+[
+    id (Type: INTEGER; Sample values: ['2', '3476', '2510', '3473', '16850'])
+    team_api_id (Type: INTEGER; Sample values: ['9993', '8462', '274581', '8667', '8152'])
+    team_fifa_api_id (Type: INTEGER; Sample values: ['675', '1790', '111560', '1952', '110329'])
+    team_long_name (Type: TEXT; Sample values: ['Beerschot AC', 'Portsmouth', 'Royal Excel Mouscron', 'Hull City', 'FC St. Pauli'])
+    team_short_name (Type: TEXT; Sample values: ['BAC', 'POR', 'MOP', 'HUL', 'STP'])
+]
+
+--------------------------------------------------
+
+###Table full name: Match
+[
+    league_id (Type: INTEGER; Sample values: ['10257', '7809', '15722', '21518', '19694'])
+    home_team_api_id (Type: INTEGER; Sample values: ['8600', '8178', '1601', '8581', '9938'])
+    home_player_10 (Type: INTEGER; Sample values: ['39232', '212867', '206844', '42873', '32465'])
+    season (Type: TEXT; Sample values: ['2009/2010', '2015/2016', '2010/2011', '2014/2015', '2009/2010'])
+    home_player_X10 (Type: INTEGER; Sample values: ['5.0', '7.0', 'nan', '7.0', '4.0'])
+    home_player_Y10 (Type: INTEGER; Sample values: ['10.0', '8.0', 'nan', '8.0', '10.0'])
+    away_player_X10 (Type: INTEGER; Sample values: ['7.0', '7.0', 'nan', '7.0', '4.0'])
+    home_team_goal (Type: INTEGER; Sample values: ['0', '2', '0', '0', '1'])
+    away_team_api_id (Type: INTEGER; Sample values: ['8535', '8226', '8031', '8315', '10251'])
+    away_player_10 (Type: INTEGER; Sample values: ['39719', '140819', '68836', '179772', '38614'])
+    goal (Type: TEXT; Sample values: ['<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>71</event_incident_typefk><elapsed>84</elapsed><player1>39719</player1><sortorder>0</sortorder><team>8535</team><id>836171</id><n>23</n><type>goa...(truncated)', '<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>393</event_incident_typefk><coordinates><value>15</value><value>65</value></coordinates><elapsed>5</elapsed><player2>27420</player2><subtype>shot...(truncated)', 'None', '<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>393</event_incident_typefk><coordinates><value>22</value><value>63</value></coordinates><elapsed>49</elapsed><player2>181297</player2><subtype>sh...(truncated)', 'None'])
+    home_player_11 (Type: INTEGER; Sample values: ['27734', '31199', '196185', '41294', '23512'])
+    home_player_X11 (Type: INTEGER; Sample values: ['7.0', '5.0', 'nan', '5.0', '6.0'])
+    home_player_X9 (Type: INTEGER; Sample values: ['3.0', '5.0', 'nan', '5.0', '8.0'])
+    home_player_9 (Type: INTEGER; Sample values: ['41694', '304733', '30278', '25462', '33693'])
+    possession (Type: TEXT; Sample values: ['<possession />', '<possession><value><comment>59</comment><stats><homepos>59</homepos><awaypos>41</awaypos></stats><event_incident_typefk>352</event_incident_typefk><elapsed>27</elapsed><subtype>possession</subtype><sortorder>1</sortorder><awaypos>41</awaypos><homepos...(truncated)', 'None', '<possession><value><comment>48</comment><event_incident_typefk>352</event_incident_typefk><elapsed>24</elapsed><subtype>possession</subtype><sortorder>0</sortorder><awaypos>52</awaypos><homepos>48</homepos><n>143</n><type>special</type><id>4115595</i...(truncated)', 'None'])
+    away_player_Y10 (Type: INTEGER; Sample values: ['8.0', '8.0', 'nan', '8.0', '10.0'])
+    home_player_Y11 (Type: INTEGER; Sample values: ['10.0', '11.0', 'nan', '11.0', '10.0'])
+    home_player_7 (Type: INTEGER; Sample values: ['39644', '208230', '13405', '513086', '34563'])
+    home_player_8 (Type: INTEGER; Sample values: ['111862.0', '269788.0', 'nan', '150632.0', '92790.0'])
+    home_player_Y9 (Type: INTEGER; Sample values: ['10.0', '8.0', 'nan', '8.0', '7.0'])
+    home_player_X7 (Type: INTEGER; Sample values: ['5.0', '3.0', 'nan', '6.0', '4.0'])
+    home_player_X8 (Type: INTEGER; Sample values: ['7.0', '6.0', 'nan', '3.0', '6.0'])
+    home_player_6 (Type: INTEGER; Sample values: ['25818.0', '37373.0', 'nan', '105351.0', '28110.0'])
+    home_player_X1 (Type: INTEGER; Sample values: ['1.0', '1.0', 'nan', '1.0', '1.0'])
+    away_player_X9 (Type: INTEGER; Sample values: ['5.0', '5.0', 'nan', '6.0', '8.0'])
+    home_player_5 (Type: INTEGER; Sample values: ['39357.0', '487867.0', 'nan', '37484.0', '14039.0'])
+    home_player_X6 (Type: INTEGER; Sample values: ['3.0', '4.0', 'nan', '4.0', '2.0'])
+    home_player_X5 (Type: INTEGER; Sample values: ['8.0', '8.0', 'nan', '8.0', '8.0'])
+    away_player_X11 (Type: INTEGER; Sample values: ['5.0', '5.0', 'nan', '5.0', '6.0'])
+    corner (Type: TEXT; Sample values: ['<corner />', '<corner><value><stats><corners>1</corners></stats><event_incident_typefk>867</event_incident_typefk><coordinates><value>45</value><value>69</value></coordinates><elapsed>10</elapsed><subtype>cross_left</subtype><player1>240837</player1><sortorder>1</...(truncated)', 'None', '<corner><value><stats><corners>1</corners></stats><event_incident_typefk>867</event_incident_typefk><coordinates><value>1</value><value>1</value></coordinates><elapsed>11</elapsed><subtype>cross_left</subtype><player1>42873</player1><sortorder>3</sor...(truncated)', 'None'])
+    away_player_11 (Type: INTEGER; Sample values: ['30881', '30249', '38604', '33028', '39660'])
+    home_player_X3 (Type: INTEGER; Sample values: ['4.0', '6.0', 'nan', '4.0', '4.0'])
+    home_player_Y8 (Type: INTEGER; Sample values: ['7.0', '6.0', 'nan', '8.0', '7.0'])
+    id (Type: INTEGER; Sample values: ['10676', '9953', '16312', '23937', '19994'])
+    home_player_1 (Type: INTEGER; Sample values: ['42422', '215168', '68768', '213504', '12318'])
+    home_player_Y7 (Type: INTEGER; Sample values: ['7.0', '8.0', 'nan', '6.0', '7.0'])
+    home_player_X4 (Type: INTEGER; Sample values: ['6.0', '2.0', 'nan', '6.0', '6.0'])
+    away_player_9 (Type: INTEGER; Sample values: ['31725.0', '212893.0', 'nan', '43375.0', '34447.0'])
+    home_player_Y6 (Type: INTEGER; Sample values: ['7.0', '6.0', 'nan', '6.0', '7.0'])
+    home_player_3 (Type: INTEGER; Sample values: ['39643', '101501', '69619', '42312', '39223'])
+    home_player_2 (Type: INTEGER; Sample values: ['30983.0', '469700.0', 'nan', '477472.0', '112704.0'])
+    home_player_4 (Type: INTEGER; Sample values: ['24970', '34114', '68732', '179407', '32661'])
+    away_team_goal (Type: INTEGER; Sample values: ['1', '1', '2', '2', '0'])
+    home_player_X2 (Type: INTEGER; Sample values: ['2.0', '4.0', 'nan', '2.0', '2.0'])
+    away_player_X7 (Type: INTEGER; Sample values: ['6.0', '4.0', 'nan', '5.0', '4.0'])
+    away_player_Y9 (Type: INTEGER; Sample values: ['8.0', '8.0', 'nan', '6.0', '7.0'])
+    away_player_Y11 (Type: INTEGER; Sample values: ['11.0', '11.0', 'nan', '11.0', '10.0'])
+    away_player_X8 (Type: INTEGER; Sample values: ['3.0', '3.0', 'nan', '4.0', '6.0'])
+    home_player_Y1 (Type: INTEGER; Sample values: ['1.0', '1.0', 'nan', '1.0', '1.0'])
+    away_player_7 (Type: INTEGER; Sample values: ['24502.0', '34267.0', 'nan', '571615.0', '38812.0'])
+    away_player_X1 (Type: INTEGER; Sample values: ['1.0', '1.0', 'nan', '1.0', '1.0'])
+    home_player_Y5 (Type: INTEGER; Sample values: ['3.0', '3.0', 'nan', '3.0', '3.0'])
+    away_player_X6 (Type: INTEGER; Sample values: ['4.0', '6.0', 'nan', '3.0', '2.0'])
+    away_player_8 (Type: INTEGER; Sample values: ['35643.0', '240837.0', 'nan', '150323.0', '23765.0'])
+    away_player_X5 (Type: INTEGER; Sample values: ['8.0', '2.0', 'nan', '8.0', '8.0'])
+    date (Type: TEXT; Sample values: ['2009-11-08 00:00:00', '2015-08-15 00:00:00', '2011-04-09 00:00:00', '2015-02-01 00:00:00', '2010-01-16 00:00:00'])
+    away_player_6 (Type: INTEGER; Sample values: ['24507', '27420', '116872', '181297', '35666'])
+    away_player_5 (Type: INTEGER; Sample values: ['33816', '212156', '13329', '154938', '112123'])
+    away_player_X3 (Type: INTEGER; Sample values: ['4.0', '6.0', 'nan', '4.0', '4.0'])
+    away_player_X4 (Type: INTEGER; Sample values: ['6.0', '8.0', 'nan', '6.0', '6.0'])
+    away_player_Y8 (Type: INTEGER; Sample values: ['8.0', '8.0', 'nan', '6.0', '7.0'])
+    home_player_Y3 (Type: INTEGER; Sample values: ['3.0', '3.0', 'nan', '3.0', '3.0'])
+    cross (Type: TEXT; Sample values: ['<cross />', '<cross><value><stats><crosses>1</crosses></stats><event_incident_typefk>774</event_incident_typefk><coordinates><value>4</value><value>56</value></coordinates><elapsed>1</elapsed><subtype>cross</subtype><player1>240837</player1><sortorder>2</sortorde...(truncated)', 'None', '<cross><value><stats><crosses>1</crosses></stats><event_incident_typefk>7</event_incident_typefk><coordinates><value>41</value><value>53</value></coordinates><elapsed>4</elapsed><subtype>cross</subtype><player1>179772</player1><sortorder>0</sortorder...(truncated)', 'None'])
+    country_id (Type: INTEGER; Sample values: ['10257', '7809', '15722', '21518', '19694'])
+    match_api_id (Type: INTEGER; Sample values: ['704560', '2001677', '838708', '1778243', '658913'])
+]
+
+--------------------------------------------------
+
+###Table full name: League
+[
+    id (Type: INTEGER; Sample values: ['4769', '1729', '21518', '24558', '19694'])
+    name (Type: TEXT; Sample values: ['France Ligue 1', 'England Premier League', 'Spain LIGA BBVA', 'Switzerland Super League', 'Scotland Premier League'])
+    country_id (Type: INTEGER; Sample values: ['4769', '1729', '21518', '24558', '19694'])
+]
+
+--------------------------------------------------
+
+###Table full name: Team_Attributes
+[
+    id (Type: INTEGER; Sample values: ['270', '828', '1197', '210', '1101'])
+    buildUpPlayDribbling (Type: INTEGER; Sample values: ['nan', '42.0', '65.0', 'nan', 'nan'])
+    date (Type: TEXT; Sample values: ['2011-02-22 00:00:00', '2014-09-19 00:00:00', '2014-09-19 00:00:00', '2010-02-22 00:00:00', '2013-09-20 00:00:00'])
+    buildUpPlaySpeed (Type: INTEGER; Sample values: ['67', '55', '55', '70', '42'])
+    buildUpPlayPassing (Type: INTEGER; Sample values: ['49', '49', '56', '45', '44'])
+    team_api_id (Type: INTEGER; Sample values: ['8344', '8550', '9768', '9789', '9803'])
+    buildUpPlayDribblingClass (Type: TEXT; Sample values: ['Little', 'Normal', 'Normal', 'Little', 'Little'])
+    team_fifa_api_id (Type: INTEGER; Sample values: ['1961', '68', '237', '22', '1902'])
+    buildUpPlayPassingClass (Type: TEXT; Sample values: ['Mixed', 'Mixed', 'Mixed', 'Mixed', 'Mixed'])
+    buildUpPlaySpeedClass (Type: TEXT; Sample values: ['Fast', 'Balanced', 'Balanced', 'Fast', 'Balanced'])
+    buildUpPlayPositioningClass (Type: TEXT; Sample values: ['Organised', 'Organised', 'Organised', 'Organised', 'Organised'])
+    defenceTeamWidth (Type: INTEGER; Sample values: ['53', '50', '54', '53', '55'])
+    defenceAggression (Type: INTEGER; Sample values: ['47', '54', '60', '70', '44'])
+    chanceCreationPassing (Type: INTEGER; Sample values: ['67', '49', '42', '70', '49'])
+    defenceTeamWidthClass (Type: TEXT; Sample values: ['Normal', 'Normal', 'Normal', 'Normal', 'Normal'])
+]
+
+--------------------------------------------------
+
+###Table full name: match_view
+[
+    league (Type: TEXT; Sample values: ['Italy Serie A', 'Spain LIGA BBVA', 'Italy Serie A', 'Belgium Jupiler League', 'Poland Ekstraklasa'])
+    home_team (Type: TEXT; Sample values: ['Genoa', 'Real Valladolid', 'Sampdoria', 'Beerschot AC', 'Cracovia'])
+    season (Type: TEXT; Sample values: ['2011/2012', '2012/2013', '2008/2009', '2009/2010', '2008/2009'])
+    home_team_goal (Type: INTEGER; Sample values: ['3', '2', '0', '2', '0'])
+    away_team (Type: TEXT; Sample values: ['Catania', 'Getafe CF', 'Fiorentina', 'Sporting Lokeren', 'Polonia Bytom'])
+    goal (Type: TEXT; Sample values: ['<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>71</event_incident_typefk><elapsed>30</elapsed><player1>30991</player1><sortorder>0</sortorder><team>10233</team><id>1667227</id><n>19</n><type>g...(truncated)', '<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>71</event_incident_typefk><elapsed>45</elapsed><player1>241825</player1><sortorder>0</sortorder><team>8305</team><id>2697046</id><n>24</n><type>g...(truncated)', '<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident_typefk>71</event_incident_typefk><elapsed>19</elapsed><player1>24507</player1><sortorder>0</sortorder><team>8535</team><id>536234</id><n>19</n><type>goa...(truncated)', 'None', 'None'])
+    home_midfield_1 (Type: TEXT; Sample values: ['Miguel Veloso', 'Alvaro Rubio', 'Gennaro Delvecchio', 'Bart Goor', 'None'])
+    home_midfield_2 (Type: TEXT; Sample values: ['Cristobal Jorquera', 'Lluis Sastre', 'Paolo Sammarco', 'Ivan Leko', 'None'])
+    home_midfield_4 (Type: TEXT; Sample values: ['Juraj Kucka', 'Oscar Gonzalez', 'Reto Ziegler', 'Faris Haroun', 'None'])
+    home_midfield_3 (Type: TEXT; Sample values: ['Kevin Constant', 'Patrick Ebert', 'Daniele Franceschini', 'Wim De Decker', 'None'])
+    away_gk (Type: TEXT; Sample values: ['Mariano Andujar', 'Jordi Codina', 'Sebastian Frey', 'Boubacar Barry Copa', 'None'])
+    home_gk (Type: TEXT; Sample values: ['Sebastian Frey', 'Dani Hernandez', 'Luca Castellazzi', 'Tomislav Pacovski', 'None'])
+    id (Type: INTEGER; Sample values: ['11698', '23281', '10345', '495', '15951'])
+    match_api_id (Type: INTEGER; Sample values: ['1082979', '1260119', '539725', '665368', '506602'])
+    away_midfield_1 (Type: TEXT; Sample values: ['Pablo Martin Ledesma', 'Xavier Torres', 'Zdravko Kuzmanovic', 'Marcel MBayo,25', 'None'])
+    away_midfield_2 (Type: TEXT; Sample values: ['Francesco Lodi', 'Borja Fernandez', 'Felipe Melo', 'Mario Carevic', 'None'])
+    away_midfield_3 (Type: TEXT; Sample values: ['Alejandro Daro Gomez', 'Diego Castro', 'Riccardo Montolivo', 'Tshilola Tshinyama Tiko', 'None'])
+    away_midfield_4 (Type: TEXT; Sample values: ['Marco Biagianti', 'Abdelaziz Barrada', 'Mario Alberto Santana', 'Sulejman Smajic', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: Player_Attributes
+[
+    finishing (Type: INTEGER; Sample values: ['66', '60', '28', '32', '37'])
+    id (Type: INTEGER; Sample values: ['174935', '94567', '158917', '142', '98247'])
+    player_fifa_api_id (Type: INTEGER; Sample values: ['189263', '183142', '152697', '221280', '205174'])
+    player_api_id (Type: INTEGER; Sample values: ['102301', '47413', '34206', '564793', '208280'])
+    sliding_tackle (Type: INTEGER; Sample values: ['12', '58', '46', '57', '62'])
+]
+
+--------------------------------------------------
+

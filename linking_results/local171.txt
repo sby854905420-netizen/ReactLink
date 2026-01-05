@@ -1,0 +1,177 @@
+###Table full name: legislators
+[
+    birthday (Type: TEXT; Sample values: ['1882-08-03', '1839-03-20', '1771-04-04', '1932-07-29', '1897-05-24'])
+    gender (Type: TEXT; Sample values: ['M', 'M', 'M', 'F', 'M'])
+    suffix (Type: TEXT; Sample values: ['None', 'None', 'Jr.', 'None', 'None'])
+    id_house_history (Type: REAL; Sample values: ['10157.0', '23150.0', '19845.0', '16096.0', '9739.0'])
+    first_name (Type: TEXT; Sample values: ['Thomas', 'Henry', 'Jotham', 'Nancy', 'Michael'])
+    last_name (Type: TEXT; Sample values: ['Burchill', 'Turner', 'Post', 'Kassebaum', 'Bradley'])
+    id_bioguide_previous_0 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_house_history_alternate (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    full_name (Type: TEXT; Sample values: ['Thomas Francis Burchill', 'Henry Gray Turner', 'Jotham Post', 'Nancy Landon Kassebaum', 'Michael Joseph Bradley'])
+    id_fec_1 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    other_names_last (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_lis (Type: TEXT; Sample values: ['None', 'None', 'None', 'S140', 'None'])
+    other_names_end (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_fec_0 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_google_entity_id (Type: TEXT; Sample values: ['kg:/m/026fp3p', 'kg:/m/026j32c', 'kg:/m/02rktbn', 'kg:/m/021v7x', 'kg:/m/0d_vmv'])
+    id_fec_2 (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_wikipedia (Type: TEXT; Sample values: ['Thomas F. Burchill', 'Henry Gray Turner', 'Jotham Post Jr.', 'Nancy Kassebaum', 'Michael J. Bradley'])
+    id_thomas (Type: REAL; Sample values: ['nan', 'nan', 'nan', '1375.0', 'nan'])
+    id_bioguide (Type: TEXT; Sample values: ['B001072', 'T000421', 'P000455', 'K000017', 'B000743'])
+    nickname (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_govtrack (Type: INTEGER; Sample values: ['402018', '410990', '408842', '406188', '401702'])
+    id_votesmart (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_cspan (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_icpsr (Type: REAL; Sample values: ['1248.0', '9516.0', '7546.0', '14708.0', '954.0'])
+    middle_name (Type: TEXT; Sample values: ['Francis', 'Gray', 'None', 'Landon', 'Joseph'])
+    id_wikidata (Type: TEXT; Sample values: ['Q3332131', 'Q1606804', 'Q168616', 'Q458281', 'Q6831369'])
+    id_ballotpedia (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    id_opensecrets (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    other_names_middle (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: legislators_terms
+[
+    how (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    term_end (Type: TEXT; Sample values: ['1979-01-03', '1891-03-03', '1881-03-03', '1869-03-03', '1957-01-03'])
+    state_rank (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    state (Type: TEXT; Sample values: ['CA', 'TX', 'IA', 'PA', 'OH'])
+    party (Type: TEXT; Sample values: ['Democrat', 'Democrat', 'Republican', 'Republican', 'Republican'])
+    caucus (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    district (Type: REAL; Sample values: ['4.0', '2.0', '5.0', '16.0', '7.0'])
+    phone (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    term_number (Type: INTEGER; Sample values: ['7', '1', '0', '1', '8'])
+    id_bioguide (Type: TEXT; Sample values: ['L000221', 'M000203', 'T000224', 'K000311', 'B000909'])
+    term_start (Type: TEXT; Sample values: ['1977-01-04', '1889-12-02', '1879-03-18', '1867-03-04', '1955-01-05'])
+    office (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    term_id (Type: TEXT; Sample values: ['L000221-7', 'M000203-1', 'T000224-0', 'K000311-1', 'B000909-8'])
+    class (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    fax (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    term_type (Type: TEXT; Sample values: ['rep', 'rep', 'rep', 'rep', 'rep'])
+    address (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    contact_form (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    rss_url (Type: TEXT; Sample values: ['None', 'None', 'None', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: legislation_date_dim
+[
+    date (Type: TEXT; Sample values: ['1951-06-11', '1963-10-28', '1989-10-03', '1962-09-28', '1959-02-12'])
+    month_name (Type: TEXT; Sample values: ['June', 'October', 'October', 'September', 'February'])
+    day_of_month (Type: INTEGER; Sample values: ['11', '28', '3', '28', '12'])
+]
+
+--------------------------------------------------
+
+###Table full name: cities
+[
+    insert_date (Type: TEXT; Sample values: ['2023-04-05', '2023-02-15', '2023-02-10', '2021-01-16', '2023-06-23'])
+    population (Type: REAL; Sample values: ['58988.0', '8766.0', '10601.0', '42707.0', '82472.0'])
+    capital (Type: INTEGER; Sample values: ['0', '0', '0', '0', '0'])
+    longitude (Type: REAL; Sample values: ['3.3275', '25.5301', '38.3386', '-23.295', '51.6154'])
+    country_code_2 (Type: TEXT; Sample values: ['co', 'in', 'tj', 'br', 'gb'])
+    city_name (Type: TEXT; Sample values: ['florida', 'hardiya', 'khovaling', 'santo antonio da platina', 'edmonton'])
+    latitude (Type: REAL; Sample values: ['-76.2386', '84.4961', '69.9728', '-50.0769', '-0.0708'])
+    city_id (Type: INTEGER; Sample values: ['14356', '40795', '38898', '16699', '6105'])
+]
+
+--------------------------------------------------
+
+###Table full name: aliens
+[
+    gender (Type: TEXT; Sample values: ['Male', 'Female', 'Male', 'Female', 'Female'])
+    birth_year (Type: INTEGER; Sample values: ['1822', '1810', '1864', '1858', '1751'])
+    first_name (Type: TEXT; Sample values: ['Morton', 'Diane-marie', 'Hagan', 'Tess', 'Martita'])
+    last_name (Type: TEXT; Sample values: ['Szymaniak', 'Chalk', 'Connerly', 'Bradnick', 'Jelfs'])
+    id (Type: INTEGER; Sample values: ['21003', '27407', '40469', '22356', '23546'])
+    email (Type: TEXT; Sample values: ['mszymaniakg7e@1688.com', 'dchalkl5a@paginegialle.it', 'hconnerlyv84@umn.edu', 'tbradnickh8z@timesonline.co.uk', 'mjelfsi61@diigo.com'])
+    type (Type: TEXT; Sample values: ['Nordic', 'Flatwoods', 'Green', 'Reptile', 'Grey'])
+]
+
+--------------------------------------------------
+
+###Table full name: alien_data
+[
+    state (Type: TEXT; Sample values: ['pennsylvania', 'michigan', 'district of columbia', 'california', 'michigan'])
+    age (Type: INTEGER; Sample values: ['261', '285', '203', '269', '69'])
+    gender (Type: TEXT; Sample values: ['female', 'male', 'male', 'female', 'female'])
+    birth_year (Type: INTEGER; Sample values: ['1763', '1739', '1821', '1755', '1955'])
+    first_name (Type: TEXT; Sample values: ['filia', 'ike', 'sayer', 'mercy', 'sonnnie'])
+    last_name (Type: TEXT; Sample values: ['rennix', 'gouly', 'amner', 'klemt', 'willavoys'])
+    country (Type: TEXT; Sample values: ['united states', 'united states', 'united states', 'united states', 'united states'])
+    us_region (Type: TEXT; Sample values: ['mideast', 'great lakes', 'mideast', 'far west', 'great lakes'])
+    type (Type: TEXT; Sample values: ['reptile', 'grey', 'nordic', 'flatwoods', 'nordic'])
+    id (Type: INTEGER; Sample values: ['6466', '4654', '20536', '46217', '2437'])
+    occupation (Type: TEXT; Sample values: ['chemical engineer', 'statistician i', 'financial advisor', 'structural analysis engineer', 'vp sales'])
+    aggressive (Type: INTEGER; Sample values: ['1', '1', '0', '1', '0'])
+    current_location (Type: TEXT; Sample values: ['scranton', 'lansing', 'washington', 'bakersfield', 'saginaw'])
+    feeding_frequency (Type: TEXT; Sample values: ['monthly', 'weekly', 'yearly', 'often', 'often'])
+]
+
+--------------------------------------------------
+
+###Table full name: job_postings_fact
+[
+    salary_year_avg (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    job_posted_date (Type: TEXT; Sample values: ['2023-09-17 07:00:47', '2023-06-15 16:55:20', '2023-11-17 17:02:57', '2023-09-25 15:52:26', '2023-07-02 09:34:45'])
+    job_title_short (Type: TEXT; Sample values: ['Data Analyst', 'Data Scientist', 'Data Scientist', 'Software Engineer', 'Software Engineer'])
+    job_id (Type: INTEGER; Sample values: ['1722126', '1046646', '103424', '967500', '884963'])
+    company_id (Type: INTEGER; Sample values: ['94819', '2438', '4473', '352', '113'])
+]
+
+--------------------------------------------------
+
+###Table full name: aliens_location
+[
+    state (Type: TEXT; Sample values: ['Ohio', 'Colorado', 'Pennsylvania', 'Louisiana', 'Minnesota'])
+    loc_id (Type: INTEGER; Sample values: ['29529', '8670', '16425', '37693', '40241'])
+    country (Type: TEXT; Sample values: ['United States', 'United States', 'United States', 'United States', 'United States'])
+]
+
+--------------------------------------------------
+
+###Table full name: cities_countries
+[
+    country_name (Type: TEXT; Sample values: ['italy', 'cyprus', 'rwanda', 'nepal', 'suriname'])
+    created_on (Type: TEXT; Sample values: ['2024-07-18', '2024-07-18', '2024-07-18', '2024-07-18', '2024-07-18'])
+    sub_region (Type: TEXT; Sample values: ['southern europe', 'western asia', 'subsaharan africa', 'southern asia', 'latin america and the caribbean'])
+    country_code_2 (Type: TEXT; Sample values: ['it', 'cy', 'rw', 'np', 'sr'])
+    country_code_3 (Type: TEXT; Sample values: ['ita', 'cyp', 'rwa', 'npl', 'sur'])
+    intermediate_region (Type: TEXT; Sample values: ['None', 'None', 'eastern africa', 'None', 'south america'])
+    region (Type: TEXT; Sample values: ['europe', 'asia', 'africa', 'asia', 'americas'])
+    country_id (Type: INTEGER; Sample values: ['115', '7', '195', '163', '224'])
+]
+
+--------------------------------------------------
+
+###Table full name: job_company
+[
+    name (Type: TEXT; Sample values: ['Atom Learning', 'Fidelity Life', 'Pando Group', 'RaiceTech Soft', 'Arcadis Gen'])
+    thumbnail (Type: TEXT; Sample values: ['None', 'None', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pBB1_fLU_5GVPG0wFtsXVDIlna_MbeEJnN9zOQY&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTXj8umBy4xThWXztzSQSba6bWqIV3cikNEqsBiI&s', 'None'])
+    company_id (Type: INTEGER; Sample values: ['477107', '271209', '297649', '280330', '542480'])
+]
+
+--------------------------------------------------
+
+###Table full name: cities_languages
+[
+    country_code_2 (Type: TEXT; Sample values: ['al', 'kp', 'sa', 'tw', 'tw'])
+    language_id (Type: INTEGER; Sample values: ['5', '410', '461', '542', '543'])
+]
+
+--------------------------------------------------
+
+###Table full name: aliens_details
+[
+    aggressive (Type: INTEGER; Sample values: ['0', '1', '0', '1', '1'])
+    detail_id (Type: INTEGER; Sample values: ['10521', '5319', '19113', '33703', '30823'])
+    feeding_frequency (Type: TEXT; Sample values: ['Once', 'Often', 'Monthly', 'Often', 'Never'])
+]
+
+--------------------------------------------------
+

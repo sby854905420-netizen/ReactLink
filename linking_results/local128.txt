@@ -1,0 +1,128 @@
+###Table full name: Bowler_Scores
+[
+    HandiCapScore (Type: smallint; Sample values: ['165', '211', '192', '199', '205'])
+    BowlerID (Type: INT; Sample values: ['7', '7', '32', '1', '10'])
+    MatchID (Type: INT; Sample values: ['9', '23', '12', '5', '27'])
+    GameNumber (Type: smallint; Sample values: ['3', '2', '1', '3', '2'])
+    RawScore (Type: smallint; Sample values: ['144', '182', '140', '152', '169'])
+    WonGame (Type: BOOLEAN; Sample values: ['0', '1', '0', '1', '0'])
+]
+
+--------------------------------------------------
+
+###Table full name: Bowler_Scores_Archive
+[
+    HandiCapScore (Type: smallint; Sample values: [])
+    BowlerID (Type: INT; Sample values: [])
+    GameNumber (Type: smallint; Sample values: [])
+    MatchID (Type: INT; Sample values: [])
+    RawScore (Type: smallint; Sample values: [])
+    WonGame (Type: BOOLEAN; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: Bowlers
+[
+    BowlerID (Type: INTEGER; Sample values: ['11', '26', '5', '32', '16'])
+    BowlerGamesBowled (Type: INT; Sample values: ['39', '39', '39', '39', '39'])
+    BowlerLastName (Type: TEXT; Sample values: ['Kennedy', 'Thompson', 'Patterson', 'Rosales', 'Sheskey'])
+    BowlerTotalPins (Type: INT; Sample values: ['6372', '6137', '5819', '5525', '5549'])
+    BowlerPhoneNumber (Type: TEXT; Sample values: ['(206) 555-7854', '(206) 555-8989', '(206) 555-3487', '(206) 555-9482', '(206) 555-9893'])
+    BowlerCurrentAverage (Type: smallint; Sample values: ['163', '157', '149', '142', '142'])
+    BowlerFirstName (Type: TEXT; Sample values: ['Angel', 'Mary', 'Ann', 'Joe', 'Richard'])
+    BowlerAddress (Type: TEXT; Sample values: ['2957 W 33rd', '122 Spring Valley Drive', '16 Maple Lane', '908 W. Capital Way', '17950 N 59th'])
+    BowlerCurrentHcp (Type: smallint; Sample values: ['33', '39', '46', '52', '52'])
+    TeamID (Type: INT; Sample values: ['3', '7', '2', '8', '4'])
+    BowlerState (Type: TEXT; Sample values: ['WA', 'WA', 'WA', 'WA', 'WA'])
+    BowlerCity (Type: TEXT; Sample values: ['Ballard', 'Duvall', 'Auburn', 'Tacoma', 'Seattle'])
+    BowlerMiddleInit (Type: TEXT; Sample values: ['None', 'K', 'K', 'None', 'None'])
+    BowlerZip (Type: TEXT; Sample values: ['98154', '98019', '98002', '98404', '98011'])
+]
+
+--------------------------------------------------
+
+###Table full name: Tourney_Matches
+[
+    Lanes (Type: TEXT; Sample values: ['07-08', '15-16', '19-20', '13-14', '05-06'])
+    OddLaneTeamID (Type: INT; Sample values: ['3', '2', '4', '8', '7'])
+    EvenLaneTeamID (Type: INT; Sample values: ['5', '3', '5', '1', '1'])
+    TourneyID (Type: INT; Sample values: ['6', '3', '13', '7', '12'])
+    MatchID (Type: INTEGER; Sample values: ['22', '9', '52', '25', '45'])
+]
+
+--------------------------------------------------
+
+###Table full name: Tourney_Matches_Archive
+[
+    Lanes (Type: TEXT; Sample values: [])
+    OddLaneTeamID (Type: INT; Sample values: [])
+    EvenLaneTeamID (Type: INT; Sample values: [])
+    MatchID (Type: INT; Sample values: [])
+    TourneyID (Type: INT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: Tournaments
+[
+    TourneyLocation (Type: TEXT; Sample values: ['Acapulco Lanes', 'Red Rooster Lanes', 'Bolero Lanes', 'Totem Lanes', 'Red Rooster Lanes'])
+    TourneyID (Type: INTEGER; Sample values: ['14', '15', '3', '20', '8'])
+    TourneyDate (Type: DATE; Sample values: ['2017-12-04', '2018-07-12', '2017-09-18', '2018-08-16', '2017-10-23'])
+]
+
+--------------------------------------------------
+
+###Table full name: Match_Games
+[
+    GameNumber (Type: smallint; Sample values: ['3', '3', '2', '2', '3'])
+    MatchID (Type: INT; Sample values: ['27', '48', '8', '13', '44'])
+    WinningTeamID (Type: INT; Sample values: ['6', '6', '6', '5', '4'])
+]
+
+--------------------------------------------------
+
+###Table full name: Tournaments_Archive
+[
+    TourneyLocation (Type: TEXT; Sample values: [])
+    TourneyID (Type: INT; Sample values: [])
+    TourneyDate (Type: DATE; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: Match_Games_Archive
+[
+    GameNumber (Type: smallint; Sample values: [])
+    WinningTeamID (Type: INT; Sample values: [])
+    MatchID (Type: INT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: Teams
+[
+    CaptainID (Type: INT; Sample values: ['12', '5', '32', '2', '7'])
+    TeamID (Type: INTEGER; Sample values: ['3', '2', '8', '1', '9'])
+    TeamName (Type: TEXT; Sample values: ['Terrapins', 'Sharks', 'Swordfish', 'Marlins', 'Huckleberrys'])
+]
+
+--------------------------------------------------
+
+###Table full name: WAZips
+[
+    City (Type: TEXT; Sample values: ['Skamokawa', 'Seattle', 'Vancouver', 'Cunningham', 'Loomis'])
+    State (Type: TEXT; Sample values: ['WA', 'WA', 'WA', 'WA', 'WA'])
+    ZIP (Type: TEXT; Sample values: ['98647', '98164', '98683', '99327', '98827'])
+]
+
+--------------------------------------------------
+
+###Table full name: sqlite_sequence
+[
+    name (Type: ; Sample values: ['Tournaments', 'Bowlers', 'Teams', 'Tourney_Matches'])
+    seq (Type: ; Sample values: ['20', '34', '10', '57'])
+]
+
+--------------------------------------------------
+

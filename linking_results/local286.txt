@@ -1,0 +1,115 @@
+###Table full name: sellers
+[
+    index (Type: INTEGER; Sample values: ['1324', '731', '1241', '629', '53'])
+    seller_zip_code_prefix (Type: INTEGER; Sample values: ['4307', '4438', '88020', '83409', '89214'])
+    seller_id (Type: TEXT; Sample values: ['bb2afe2061d53c6968aa0cffa233a8ec', '9674754b5a0cb32b638cec001178f799', 'b5e3e38609125694d2ea2417522a60b7', '160e4f13fd3a64b1b86807be88b5ffb0', 'ef990a83bbea832f36ebe81376335aa8'])
+    seller_state (Type: TEXT; Sample values: ['SP', 'SP', 'SC', 'PR', 'SC'])
+    seller_city (Type: TEXT; Sample values: ['sao paulo', 'sao paulo', 'florianopolis', 'colombo', 'joinville'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_items
+[
+    seller_id (Type: TEXT; Sample values: ['6a51fc556dab5f766ced6fbc860bc613', 'cc419e0650a3c5ba77189a1882b7556a', '955fee9216a65b617aa5c0531780ce60', 'f35becee938e982bd615edf8ef12bcfb', '5cf13accae3222c70a9cac40818ae839'])
+    product_id (Type: TEXT; Sample values: ['d9c379ab5377be590da568f41cd3c49d', '154e7e31ebfa092203795c972e5804a6', '54d9ac713e253fa1fae9c8003b011c2a', '130cdbc1715f7e1b5d9be728ce04398e', 'acfc0fd945c522a0d2266d45bcdd91c6'])
+    shipping_limit_date (Type: TEXT; Sample values: ['2018-05-07 12:14:41', '2017-06-30 02:25:32', '2018-04-03 10:28:51', '2017-04-07 18:45:21', '2017-12-29 18:29:34'])
+    price (Type: REAL; Sample values: ['199.9', '19.99', '35.0', '39.9', '94.9'])
+    index (Type: INTEGER; Sample values: ['9107', '88553', '28085', '69756', '83698'])
+    order_id (Type: TEXT; Sample values: ['14cfc006132ad861a3d1b6c7bb9fd8a6', 'c9203e1cece67a652cfa58cec64fde76', '3ff1a97af462ca0dafa98d5914729e86', '9f33a39fe21aa7e49c58d5c16da393a0', 'be162c3ed290c4feb0aab4d46123275f'])
+    order_item_id (Type: INTEGER; Sample values: ['1', '1', '1', '1', '1'])
+    freight_value (Type: REAL; Sample values: ['19.48', '7.78', '12.43', '14.52', '16.42'])
+]
+
+--------------------------------------------------
+
+###Table full name: products
+[
+    index (Type: INTEGER; Sample values: ['26363', '28639', '29083', '22029', '25301'])
+    product_description_lenght (Type: REAL; Sample values: ['847.0', '219.0', '287.0', '337.0', '1760.0'])
+    product_id (Type: TEXT; Sample values: ['78d0688c7b88b87da70a7c498c82a1df', '89e4362d74afa10ac57f8d67210132a6', '27c5d184e397082e7f0ff11ace0d7269', 'dfd89d96029976badf7fe6a83f5f7ae2', 'a3b68fbd8f68d8fdff1dd36cf1336b6b'])
+    product_name_lenght (Type: REAL; Sample values: ['55.0', '30.0', '21.0', '43.0', '45.0'])
+    product_photos_qty (Type: REAL; Sample values: ['1.0', '1.0', '1.0', '5.0', '7.0'])
+    product_weight_g (Type: REAL; Sample values: ['250.0', '1870.0', '750.0', '1075.0', '2000.0'])
+    product_length_cm (Type: REAL; Sample values: ['16.0', '27.0', '22.0', '18.0', '25.0'])
+    product_height_cm (Type: REAL; Sample values: ['7.0', '20.0', '12.0', '8.0', '30.0'])
+    product_width_cm (Type: REAL; Sample values: ['11.0', '29.0', '22.0', '12.0', '25.0'])
+    product_category_name (Type: TEXT; Sample values: ['automotivo', 'fashion_bolsas_e_acessorios', 'beleza_saude', 'telefonia', 'utilidades_domesticas'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_reviews
+[
+    review_score (Type: INTEGER; Sample values: ['2', '5', '4', '4', '5'])
+    index (Type: INTEGER; Sample values: ['9221', '82020', '18538', '17648', '98624'])
+    order_id (Type: TEXT; Sample values: ['2b4c98424c04c927d4f10fd35a3e3558', '477bf888e0dfc2afc08a57768a52dbed', '693a9ad555486a066084766cdf4936b4', '558731462aceb9588378c7c19194d2db', '2db72c1513eb12a34d183d40a7291014'])
+    review_id (Type: TEXT; Sample values: ['3b154c210f1a1abaec031cd605b8c1f5', '81079956a73e5809093854e8e24333c9', 'b96f4c57623b8968b2ae679c54b98fa7', '35bd753bc196d9b857c048d1468bab2f', '3243b28368e300faac5aa4ce1c1efc20'])
+    review_comment_title (Type: TEXT; Sample values: ['None', '*****', 'None', 'None', 'None'])
+    review_comment_message (Type: TEXT; Sample values: ['Achei Q desta vez,o produto deixou a desejar,muito fraco demas', 'Recomendo', 'None', 'None', 'Bom dia. Apesar da greve do correio o produto chegou certo. Obrigado'])
+    review_creation_date (Type: TEXT; Sample values: ['2018-08-14 00:00:00', '2018-06-10 00:00:00', '2017-11-02 00:00:00', '2018-05-19 00:00:00', '2018-03-13 00:00:00'])
+    review_answer_timestamp (Type: TEXT; Sample values: ['2018-08-14 21:31:53', '2018-06-13 19:33:09', '2017-11-05 02:56:25', '2018-05-21 19:47:24', '2018-03-14 11:33:40'])
+]
+
+--------------------------------------------------
+
+###Table full name: product_category_name_translation
+[
+    product_category_name_english (Type: TEXT; Sample values: ['security_and_services', 'home_comfort_2', 'stationery', 'food_drink', 'auto'])
+    index (Type: INTEGER; Sample values: ['70', '62', '12', '10', '2'])
+    product_category_name (Type: TEXT; Sample values: ['seguros_e_servicos', 'casa_conforto_2', 'papelaria', 'alimentos_bebidas', 'automotivo'])
+]
+
+--------------------------------------------------
+
+###Table full name: orders
+[
+    index (Type: INTEGER; Sample values: ['97137', '37394', '91689', '66033', '78088'])
+    customer_id (Type: TEXT; Sample values: ['4fe13d656b536982335931449b3fe43d', '96d1f87fec96475ce25b292d7f76a557', '5dd037b7e50e7de06920eae973de87a2', 'ad12353ac8bc97c62829dbd1a0baa24e', 'edd6907574d4a158ecd03f912804d444'])
+    order_id (Type: TEXT; Sample values: ['a1fa8465f15178a62e2429d53c230d99', 'a57bebffbfa4ce3c72a856f94e1c589f', 'e323604c8f7546deb59dee1db160e268', '5cb7883ae621115f6c404bca4c9e97fa', 'f2c0317eedcc292f3a4f356cf92d506d'])
+    order_status (Type: TEXT; Sample values: ['delivered', 'delivered', 'delivered', 'delivered', 'delivered'])
+    order_purchase_timestamp (Type: TEXT; Sample values: ['2017-11-16 17:32:44', '2017-11-30 21:35:58', '2017-10-25 11:52:23', '2018-03-19 14:08:49', '2017-08-19 16:13:20'])
+    order_approved_at (Type: TEXT; Sample values: ['2017-11-17 17:47:43', '2017-12-01 10:31:25', '2017-10-25 12:07:16', '2018-03-19 14:29:30', '2017-08-22 03:45:50'])
+    order_delivered_customer_date (Type: TEXT; Sample values: ['2017-11-23 16:16:40', '2018-01-15 16:48:57', '2017-11-01 19:42:22', '2018-04-03 15:09:00', '2017-08-28 18:14:24'])
+    order_estimated_delivery_date (Type: TEXT; Sample values: ['2017-11-29 00:00:00', '2018-01-03 00:00:00', '2017-11-17 00:00:00', '2018-04-19 00:00:00', '2017-09-12 00:00:00'])
+    order_delivered_carrier_date (Type: TEXT; Sample values: ['2017-11-21 17:13:41', '2017-12-06 12:05:15', '2017-10-26 19:19:53', '2018-03-23 16:18:40', '2017-08-23 13:53:25'])
+]
+
+--------------------------------------------------
+
+###Table full name: customers
+[
+    index (Type: INTEGER; Sample values: ['32553', '80465', '31212', '42423', '47162'])
+    customer_id (Type: TEXT; Sample values: ['1e919c04beaee802f45cbffd7ec05e8d', '587140b63abb380a13f3e008fb38ec09', '03514f9ba6258fadc8aa2391eadee65b', '11f4172096c062f11e0da57ad9817572', '5e5da5412a9c2e535cf46f43cd8d8e4e'])
+    customer_unique_id (Type: TEXT; Sample values: ['0eb3ce970ea08b082361b436eee0ee38', '56b4fe70529cc49e243c4f746439cce7', '3a4f5d794447ef719ca0e2f79613756d', 'a92d11f5026db84dd46d221a4e8cb449', '133712ad4fe8e5ec9e21cf71a5719c30'])
+    customer_zip_code_prefix (Type: INTEGER; Sample values: ['3286', '18046', '75115', '6730', '83430'])
+    customer_state (Type: TEXT; Sample values: ['SP', 'SP', 'GO', 'SP', 'PR'])
+    customer_city (Type: TEXT; Sample values: ['sao paulo', 'sorocaba', 'anapolis', 'vargem grande paulista', 'campina grande do sul'])
+]
+
+--------------------------------------------------
+
+###Table full name: order_payments
+[
+    index (Type: INTEGER; Sample values: ['59220', '37387', '63881', '18391', '75222'])
+    order_id (Type: TEXT; Sample values: ['e393acae9e64be5b2a7d48ef2ae87710', '20b2b93a5f0525645b5878cb139f8c5c', 'f791078f5bc7c09db8f76d26f0db4588', '193d998b23a996345ca322516b2d5af3', '99a3d4b1228bc02abf9eec5d9a7a742d'])
+    payment_sequential (Type: INTEGER; Sample values: ['1', '1', '1', '1', '2'])
+    payment_value (Type: REAL; Sample values: ['42.3', '173.86', '70.65', '1978.18', '20.0'])
+    payment_installments (Type: INTEGER; Sample values: ['4', '1', '6', '6', '1'])
+    payment_type (Type: TEXT; Sample values: ['credit_card', 'credit_card', 'credit_card', 'credit_card', 'voucher'])
+]
+
+--------------------------------------------------
+
+###Table full name: geolocation
+[
+    index (Type: INTEGER; Sample values: ['204440', '633512', '684658', '557002', '215645'])
+    geolocation_zip_code_prefix (Type: INTEGER; Sample values: ['8340', '37540', '44200', '30720', '8710'])
+    geolocation_state (Type: TEXT; Sample values: ['SP', 'MG', 'BA', 'MG', 'SP'])
+    geolocation_lng (Type: REAL; Sample values: ['-46.46311196863638', '-45.709585646236455', '-38.70958724999999', '-43.97852350582838', '-46.2055810076754'])
+    geolocation_city (Type: TEXT; Sample values: ['sao paulo', 'santa rita do sapucai', 'santo amaro', 'belo horizonte', 'mogi das cruzes'])
+    geolocation_lat (Type: REAL; Sample values: ['-23.61793141687345', '-22.247972436857665', '-12.548402999999992', '-19.920961445467103', '-23.526049838473146'])
+]
+
+--------------------------------------------------
+

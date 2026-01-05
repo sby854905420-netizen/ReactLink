@@ -1,0 +1,128 @@
+###Table full name: Movie
+[
+    num_votes (Type: INTEGER; Sample values: ['59', '3794', '1250', '118', '940'])
+    index (Type: INTEGER; Sample values: ['3296', '298', '1471', '2459', '1103'])
+    MID (Type: TEXT; Sample values: ['tt0349058', 'tt3709344', 'tt0215911', 'tt6346954', 'tt3636776'])
+    rating (Type: REAL; Sample values: ['4.6', '7.3', '8.7', '6.7', '6.4'])
+    title (Type: TEXT; Sample values: ['88 Antop Hill', 'City Lights', 'Koshish', 'Shor Se Shuruaat', 'Samrat & Co.'])
+    year (Type: TEXT; Sample values: ['2003', '2014', '1972', '2016', '2014'])
+]
+
+--------------------------------------------------
+
+###Table full name: Person
+[
+    index (Type: INTEGER; Sample values: ['25488', '7972', '14258', '15421', '3955'])
+    PID (Type: TEXT; Sample values: ['nm3845280', 'nm1319395', 'nm2423229', 'nm1218479', 'nm3554142'])
+    Name (Type: TEXT; Sample values: [' Rajiv Thakur', ' Hoi-Pang Lo', ' Joan Riegert', ' Master Atit', ' Kathryne Isabelle Easton'])
+    Gender (Type: TEXT; Sample values: ['Male', 'Male', 'Female', 'Male', 'Male'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Director
+[
+    ID (Type: INTEGER; Sample values: ['1046', '2699', '1525', '164', '347'])
+    index (Type: INTEGER; Sample values: ['1046', '2699', '1525', '164', '347'])
+    MID (Type: TEXT; Sample values: ['tt6080746', 'tt2962230', 'tt0089599', 'tt1093370', 'tt0463345'])
+    PID (Type: TEXT; Sample values: ['nm0223606', 'nm0154269', 'nm0576559', 'nm1665004', 'nm1662693'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Cast
+[
+    ID (Type: INTEGER; Sample values: ['44870', '31074', '41032', '28026', '41692'])
+    index (Type: INTEGER; Sample values: ['44870', '31074', '41032', '28026', '41692'])
+    PID (Type: TEXT; Sample values: [' nm1277293', ' nm0707502', ' nm0451864', ' nm2195693', ' nm1159638'])
+    MID (Type: TEXT; Sample values: ['tt0337633', 'tt0154749', 'tt0313495', 'tt2188805', 'tt2275794'])
+]
+
+--------------------------------------------------
+
+###Table full name: Language
+[
+    LAID (Type: INTEGER; Sample values: ['0', '29', '7', '21', '3'])
+    index (Type: INTEGER; Sample values: ['0', '29', '7', '21', '3'])
+    Name (Type: TEXT; Sample values: ['English', 'Bhojpuri', 'Punjabi', 'Russian', 'Cantonese'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Producer
+[
+    ID (Type: INTEGER; Sample values: ['8698', '7321', '7070', '3305', '1520'])
+    index (Type: INTEGER; Sample values: ['8698', '7321', '7070', '3305', '1520'])
+    MID (Type: TEXT; Sample values: ['tt1573482', 'tt0086597', 'tt4684028', 'tt3794302', 'tt7399470'])
+    PID (Type: TEXT; Sample values: [' nm1154600', ' nm0438470', ' nm7754496', ' nm2132725', ' nm4482460'])
+]
+
+--------------------------------------------------
+
+###Table full name: Genre
+[
+    GID (Type: INTEGER; Sample values: ['229', '84', '210', '134', '72'])
+    index (Type: INTEGER; Sample values: ['229', '84', '210', '134', '72'])
+    Name (Type: TEXT; Sample values: ['Crime, Drama, Fantasy            ', 'Thriller            ', 'Musical, Fantasy            ', 'Sci-Fi            ', 'Action, Comedy            '])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Genre
+[
+    GID (Type: INTEGER; Sample values: ['36', '19', '19', '246', '0'])
+    index (Type: INTEGER; Sample values: ['196', '3245', '3173', '1829', '0'])
+    ID (Type: INTEGER; Sample values: ['196', '3245', '3173', '1829', '0'])
+    MID (Type: TEXT; Sample values: ['tt0073707', 'tt0173283', 'tt0070009', 'tt0058287', 'tt2388771'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Language
+[
+    LAID (Type: INTEGER; Sample values: ['2', '2', '2', '4', '2'])
+    index (Type: INTEGER; Sample values: ['2970', '2710', '173', '3454', '2308'])
+    MID (Type: TEXT; Sample values: ['tt0085912', 'tt0338959', 'tt3767372', 'tt0245830', 'tt2402131'])
+    ID (Type: INTEGER; Sample values: ['2970', '2710', '173', '3454', '2308'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Country
+[
+    CID (Type: REAL; Sample values: ['2.0', '2.0', '2.0', '2.0', '2.0'])
+    MID (Type: TEXT; Sample values: ['tt1773015', 'tt5544662', 'tt0375705', 'tt0476805', 'tt0046673'])
+    index (Type: INTEGER; Sample values: ['905', '3219', '2603', '2034', '1902'])
+    ID (Type: INTEGER; Sample values: ['905', '3219', '2603', '2034', '1902'])
+]
+
+--------------------------------------------------
+
+###Table full name: Country
+[
+    CID (Type: INTEGER; Sample values: ['8', '11', '1', '21', '29'])
+    index (Type: INTEGER; Sample values: ['8', '11', '1', '21', '29'])
+    Name (Type: TEXT; Sample values: ['Belgium', 'Argentina', 'USA', 'Soviet Union', 'Sweden'])
+]
+
+--------------------------------------------------
+
+###Table full name: M_Location
+[
+    LID (Type: REAL; Sample values: ['None', 'None', 'None', 'None', 'None'])
+    MID (Type: TEXT; Sample values: ['tt1887763', 'tt0375997', 'tt2265191', 'tt0277981', 'tt3542028'])
+    index (Type: INTEGER; Sample values: ['2524', '1719', '2742', '1251', '230'])
+    ID (Type: INTEGER; Sample values: ['2524', '1719', '2742', '1251', '230'])
+]
+
+--------------------------------------------------
+
+###Table full name: Location
+[
+    LID (Type: INTEGER; Sample values: ['47', '323', '239', '237', '73'])
+    index (Type: INTEGER; Sample values: ['47', '323', '239', '237', '73'])
+    Name (Type: TEXT; Sample values: ['Abbeydale Sports Club, Sheffield, South Yorkshire, England, UK', 'Aga Khan Palace, Nagar Rd, Pune, Maharashtra, India', 'Annapoorna Studios, Hyderabad, Telangana, India', 'Beloeil, Belgium', 'Florida, USA'])
+]
+
+--------------------------------------------------
+

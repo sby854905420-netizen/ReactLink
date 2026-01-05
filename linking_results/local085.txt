@@ -1,0 +1,185 @@
+###Table full name: orders
+[
+    requireddate (Type: DATE; Sample values: ['1998-02-06', '1998-05-29', '1998-03-31', '1996-10-22', '1997-03-21'])
+    shippeddate (Type: DATE; Sample values: ['1998-01-05', '1998-05-04', '1998-03-09', '1996-10-04', '1997-02-25'])
+    employeeid (Type: INTEGER; Sample values: ['9', '7', '4', '2', '4'])
+    orderdate (Type: DATE; Sample values: ['1997-12-26', '1998-05-01', '1998-03-03', '1996-09-24', '1997-02-21'])
+    customerid (Type: TEXT; Sample values: ['KOENE', 'WHITC', 'AROUT', 'QUICK', 'LAMAI'])
+    orderid (Type: INTEGER; Sample values: ['10799', '11066', '10920', '10313', '10454'])
+    shippostalcode (Type: TEXT; Sample values: ['14776', '98124', 'CO7 6JX', '01307', '31000'])
+    shipvia (Type: INTEGER; Sample values: ['3', '2', '2', '2', '3'])
+    freight (Type: REAL; Sample values: ['30.7600002', '44.7200012', '29.6100006', '1.96000004', '2.74000001'])
+    shipaddress (Type: TEXT; Sample values: ['Maubelstr. 90', '1029 - 12th Ave. S.', 'Brook Farm Stratford St. Mary', 'Taucherstraße 10', '1 rue Alsace-Lorraine'])
+    shipcity (Type: TEXT; Sample values: ['Brandenburg', 'Seattle', 'Colchester', 'Cunewalde', 'Toulouse'])
+    shipcountry (Type: TEXT; Sample values: ['Germany', 'USA', 'UK', 'Germany', 'France'])
+    shipregion (Type: TEXT; Sample values: ['None', 'WA', 'Essex', 'None', 'None'])
+    shipname (Type: TEXT; Sample values: ['Königlich Essen', 'White Clover Markets', 'Around the Horn', 'QUICK-Stop', "La maison d'Asie"])
+]
+
+--------------------------------------------------
+
+###Table full name: order_details
+[
+    orderid (Type: INTEGER; Sample values: ['10456', '10671', '10784', '11077', '10835'])
+    productid (Type: INTEGER; Sample values: ['49', '16', '39', '55', '77'])
+    quantity (Type: INTEGER; Sample values: ['21', '10', '2', '2', '2'])
+    discount (Type: REAL; Sample values: ['0.150000006', '0.0', '0.150000006', '0.0', '0.200000003'])
+    unitprice (Type: REAL; Sample values: ['16.0', '17.4500008', '18.0', '24.0', '13.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: employees
+[
+    notes (Type: TEXT; Sample values: ['Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.  He is fluent in French and Italian and reads German.  He joined the company as a sales representative, was promoted to sales man...(truncated)', 'Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).  She was assigned to the London office temporarily from July through November 1992.', 'Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his perman...(truncated)', 'Janet has a BS degree in chemistry from Boston College (1984).  She has also completed a certificate program in food retailing management.  Janet was hired as a sales associate in 1991 and promoted to sales representative in February 1992.', 'Robert King served in the Peace Corps and traveled extensively before completing his degree in English at the University of Michigan in 1992, the year he joined the company.  After completing a course entitled Selling in Europe, he was transferred to...(truncated)'])
+    birthdate (Type: DATE; Sample values: ['1952-02-19', '1937-09-19', '1955-03-04', '1963-08-30', '1960-05-29'])
+    hiredate (Type: DATE; Sample values: ['1992-08-14', '1993-05-03', '1993-10-17', '1992-04-01', '1994-01-02'])
+    lastname (Type: TEXT; Sample values: ['Fuller', 'Peacock', 'Buchanan', 'Leverling', 'King'])
+    extension (Type: TEXT; Sample values: ['3457', '5176', '3453', '3355', '465'])
+    employeeid (Type: INTEGER; Sample values: ['2', '4', '5', '3', '7'])
+    title (Type: TEXT; Sample values: ['Vice President, Sales', 'Sales Representative', 'Sales Manager', 'Sales Representative', 'Sales Representative'])
+    homephone (Type: TEXT; Sample values: ['(206) 555-9482', '(206) 555-8122', '(71) 555-4848', '(206) 555-3412', '(71) 555-5598'])
+    firstname (Type: TEXT; Sample values: ['Andrew', 'Margaret', 'Steven', 'Janet', 'Robert'])
+    reportsto (Type: INTEGER; Sample values: ['nan', '2.0', '2.0', '2.0', '5.0'])
+    country (Type: TEXT; Sample values: ['USA', 'USA', 'UK', 'USA', 'UK'])
+    postalcode (Type: TEXT; Sample values: ['98401', '98052', 'SW1 8JR', '98033', 'RG1 9SP'])
+    titleofcourtesy (Type: TEXT; Sample values: ['Dr.', 'Mrs.', 'Mr.', 'Ms.', 'Mr.'])
+    address (Type: TEXT; Sample values: ['908 W. Capital Way', '4110 Old Redmond Rd.', '14 Garrett Hill', '722 Moss Bay Blvd.', 'Edgeham Hollow\\nWinchester Way'])
+    city (Type: TEXT; Sample values: ['Tacoma', 'Redmond', 'London', 'Kirkland', 'London'])
+    photo (Type: BLOB; Sample values: ['\\x', '\\x', '\\x', '\\x', '\\x'])
+    region (Type: TEXT; Sample values: ['WA', 'WA', 'None', 'WA', 'None'])
+    photopath (Type: TEXT; Sample values: ['http://accweb/emmployees/fuller.bmp', 'http://accweb/emmployees/peacock.bmp', 'http://accweb/emmployees/buchanan.bmp', 'http://accweb/emmployees/leverling.bmp', 'http://accweb/emmployees/davolio.bmp'])
+]
+
+--------------------------------------------------
+
+###Table full name: shippers
+[
+    phone (Type: TEXT; Sample values: ['(503) 555-9931', '(503) 555-9831', '1-800-225-5345', '1-800-782-7892', '(503) 555-3199'])
+    shipperid (Type: INTEGER; Sample values: ['3', '1', '6', '5', '2'])
+    companyname (Type: TEXT; Sample values: ['Federal Shipping', 'Speedy Express', 'DHL', 'UPS', 'United Package'])
+]
+
+--------------------------------------------------
+
+###Table full name: products
+[
+    reorderlevel (Type: INTEGER; Sample values: ['0', '10', '25', '0', '5'])
+    supplierid (Type: INTEGER; Sample values: ['28', '7', '24', '24', '4'])
+    discontinued (Type: INTEGER; Sample values: ['0', '0', '0', '1', '0'])
+    unitsonorder (Type: INTEGER; Sample values: ['0', '0', '0', '0', '20'])
+    quantityperunit (Type: TEXT; Sample values: ['5 kg pkg.', '32 - 500 g boxes', '16 - 2 kg boxes', '48 pieces', '5 kg pkg.'])
+    unitsinstock (Type: INTEGER; Sample values: ['79', '29', '38', '0', '4'])
+    productid (Type: INTEGER; Sample values: ['59', '16', '52', '53', '74'])
+    productname (Type: TEXT; Sample values: ['Raclette Courdavault', 'Pavlova', 'Filo Mix', 'Perth Pasties', 'Longlife Tofu'])
+    categoryid (Type: INTEGER; Sample values: ['4', '3', '5', '6', '7'])
+    unitprice (Type: REAL; Sample values: ['55.0', '17.4500008', '7.0', '32.7999992', '10.0'])
+]
+
+--------------------------------------------------
+
+###Table full name: suppliers
+[
+    phone (Type: TEXT; Sample values: ['(02) 555-5914', '031-987 65 43', '(04721) 8713', '(514) 555-9022', '(0)2-953010'])
+    contacttitle (Type: TEXT; Sample values: ['Sales Representative', 'Sales Agent', 'Coordinator Foreign Markets', 'Marketing Manager', 'Marketing Manager'])
+    supplierid (Type: INTEGER; Sample values: ['24', '9', '13', '25', '15'])
+    contactname (Type: TEXT; Sample values: ['Wendy Mackenzie', 'Lars Peterson', 'Sven Petersen', 'Jean-Guy Lauzon', 'Beate Vileid'])
+    companyname (Type: TEXT; Sample values: ["G'day, Mate", 'PB Knäckebröd AB', 'Nord-Ost-Fisch Handelsgesellschaft mbH', 'Ma Maison', 'Norske Meierier'])
+    country (Type: TEXT; Sample values: ['Australia', 'Sweden', 'Germany', 'Canada', 'Norway'])
+    postalcode (Type: TEXT; Sample values: ['2042', 'S-345 67', '27478', 'H1J 1C3', '1320'])
+    homepage (Type: TEXT; Sample values: ["G'day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#", 'None', 'None', 'None', 'None'])
+    city (Type: TEXT; Sample values: ['Sydney', 'Göteborg', 'Cuxhaven', 'Montréal', 'Sandvika'])
+    address (Type: TEXT; Sample values: ["170 Prince Edward Parade Hunter's Hill", 'Kaloadagatan 13', 'Frahmredder 112a', '2960 Rue St. Laurent', 'Hatlevegen 5'])
+    fax (Type: TEXT; Sample values: ['(02) 555-4873', '031-987 65 91', '(04721) 8714', 'None', 'None'])
+    region (Type: TEXT; Sample values: ['NSW', 'None', 'None', 'Québec', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: customergroupthreshold
+[
+    groupname (Type: TEXT; Sample values: ['Low', 'Medium', 'High', 'Very High'])
+    rangebottom (Type: DECIMAL; Sample values: ['0', '1000', '5000', '10000'])
+    rangetop (Type: DECIMAL; Sample values: ['999.9999', '4999.9999', '9999.9999', '922337203685477.6'])
+]
+
+--------------------------------------------------
+
+###Table full name: customers
+[
+    phone (Type: TEXT; Sample values: ['(5) 555-2933', '089-0877310', '(2) 283-2951', '(171) 555-7733', '26.47.15.10'])
+    customerid (Type: TEXT; Sample values: ['TORTU', 'FRANK', 'GROSR', 'NORTS', 'VINET'])
+    contacttitle (Type: TEXT; Sample values: ['Owner', 'Marketing Manager', 'Owner', 'Sales Associate', 'Accounting Manager'])
+    postalcode (Type: TEXT; Sample values: ['05033', '80805', '1081', 'SW7 1RZ', '51100'])
+    companyname (Type: TEXT; Sample values: ['Tortuga Restaurante', 'Frankenversand', 'GROSELLA-Restaurante', 'North/South', 'Vins et alcools Chevalier'])
+    contactname (Type: TEXT; Sample values: ['Miguel Angel Paolino', 'Peter Franken', 'Manuel Pereira', 'Simon Crowther', 'Paul Henriot'])
+    country (Type: TEXT; Sample values: ['Mexico', 'Germany', 'Venezuela', 'UK', 'France'])
+    city (Type: TEXT; Sample values: ['México D.F.', 'München', 'Caracas', 'London', 'Reims'])
+    address (Type: TEXT; Sample values: ['Avda. Azteca 123', 'Berliner Platz 43', '5ª Ave. Los Palos Grandes', 'South House 300 Queensbridge', "59 rue de l'Abbaye"])
+    fax (Type: TEXT; Sample values: ['None', '089-0877451', '(2) 283-3397', '(171) 555-2530', '26.47.15.11'])
+    region (Type: TEXT; Sample values: ['None', 'None', 'DF', 'None', 'None'])
+]
+
+--------------------------------------------------
+
+###Table full name: customercustomerdemo
+[
+    customerid (Type: TEXT; Sample values: [])
+    customertypeid (Type: TEXT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: employeeterritories
+[
+    territoryid (Type: TEXT; Sample values: ['85014', '30346', '94025', '27511', '95008'])
+    employeeid (Type: INTEGER; Sample values: ['6', '3', '7', '4', '7'])
+]
+
+--------------------------------------------------
+
+###Table full name: customerdemographics
+[
+    customertypeid (Type: TEXT; Sample values: [])
+    customerdesc (Type: TEXT; Sample values: [])
+]
+
+--------------------------------------------------
+
+###Table full name: usstates
+[
+    stateid (Type: INTEGER; Sample values: ['35', '33', '29', '37', '51'])
+    statename (Type: TEXT; Sample values: ['North Dakota', 'New York', 'Nevada', 'Oklahoma', 'Wyoming'])
+    stateabbr (Type: TEXT; Sample values: ['ND', 'NY', 'NV', 'OK', 'WY'])
+    stateregion (Type: TEXT; Sample values: ['midwest', 'east', 'west', 'midwest', 'west'])
+]
+
+--------------------------------------------------
+
+###Table full name: territories
+[
+    territoryid (Type: TEXT; Sample values: ['44122', '14450', '98104', '95060', '60179'])
+    regionid (Type: INTEGER; Sample values: ['3', '1', '2', '2', '2'])
+    territorydescription (Type: TEXT; Sample values: ['Beachwood', 'Fairport', 'Seattle', 'Santa Cruz', 'Hoffman Estates'])
+]
+
+--------------------------------------------------
+
+###Table full name: categories
+[
+    description (Type: TEXT; Sample values: ['Dried fruit and bean curd', 'Soft drinks, coffees, teas, beers, and ales', 'Breads, crackers, pasta, and cereal', 'Seaweed and fish', 'Desserts, candies, and sweet breads'])
+    categoryid (Type: INTEGER; Sample values: ['7', '1', '5', '8', '3'])
+    categoryname (Type: TEXT; Sample values: ['Produce', 'Beverages', 'Grains/Cereals', 'Seafood', 'Confections'])
+    picture (Type: BLOB; Sample values: ['\\x', '\\x', '\\x', '\\x', '\\x'])
+]
+
+--------------------------------------------------
+
+###Table full name: region
+[
+    regionid (Type: INTEGER; Sample values: ['1', '2', '3', '4'])
+    regiondescription (Type: TEXT; Sample values: ['Eastern', 'Western', 'Northern', 'Southern'])
+]
+
+--------------------------------------------------
+
