@@ -11,6 +11,7 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
 
 ## Folder Structure  
 ```
+- linking_results/                     -- Results after schema linking used to SQL generation
 - run/  
   - bigquery_credentials/              -- Place bigquery credentials
   - documents/                         -- Constructed column-level documents
@@ -29,7 +30,6 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   - retrieve_topk_schema.py            -- Retrieve script
   - spdier2_data.json                  -- Spider 2.0-Lite test set
   - utils.py                           -- Utility Functions
-- Linking_results/                     -- Results after schema linking used to SQL generation
 ```
 
 ## Settint Up Environment
