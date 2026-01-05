@@ -46,6 +46,7 @@ the sql query to answer the user question
 6. If you still can't find the column you want through the `@schema_retrieval`, you can use `@sql_execution` to get all the column names in a certain table, and then use `@schema_retrieval` to retrieve the columns you think are missing.
 
 [SQL Optimization Guidelines]
+{SQL_TYPE}
 When writing the SQL query, consider the following optimization strategies:
 {SQL_OPTIMIZATION}
 
@@ -343,3 +344,9 @@ SQLite Optimization Strategies:
         ```
     - These queries are commonly used to inspect schema structure and infer column semantics.
 """
+
+BIGQUERY = "Please use BIGQUERY SQL syntax for your SQL queries."
+
+SNOWFLAKE = "Please use Snowflake SQL syntax for your SQL queries."
+
+SQLITE = "Please use SQLite SQL syntax for your SQL queries."
