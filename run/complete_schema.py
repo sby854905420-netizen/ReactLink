@@ -15,7 +15,6 @@ from google.cloud import bigquery
 import snowflake.connector
 import pandas as pd
 import shutil
-from chat import Chat
 import argparse
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"), base_url=os.environ.get("OPENAI_BASE_URL"))
