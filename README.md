@@ -35,15 +35,17 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
 ## Settint Up Environment
 1. Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/wzy416/AutoLink.git
+cd AutoLink
 ```
-3. Create conda environment:
-4. Modify the api key:
+2. Create conda environment:
 ```bash
 conda create -n AutoLink python=3.12
 conda activate AutoLink
 pip install -r requirements.txt
 ```
+3. Modify the api key:
+To use your own LLM, modify the OPENAI_API_KEY and OPENAI_BASE_URL in `run/main.sh`.
 
 ## Run
 ```bash
