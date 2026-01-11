@@ -22,7 +22,7 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
     - sql_selection/                   -- The final SQL after cadidate selection
     - merge_candidates.json            -- The final schema linking results, used for calculating recall(The difference from unfilled_schema.json lies in whether nested columns in BigQuery are expanded)
     - unfilled_schema.json             -- The final schema linking results, used for constructing the SQL generation prompt
-    - ...                              -- *Other intermediate results*
+    - ...                              -- Other intermediate results
   - resource/                          -- Copied from Spider 2.0-Lite Repo
   - snowflake_credential/              -- Place snowflake credential
   - add_id.py                          -- Primary and foreign key rule processing
