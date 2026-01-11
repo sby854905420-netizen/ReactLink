@@ -17,6 +17,8 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   - documents/                         -- Constructed column-level documents
   - embeddings/                        -- Document embeddings
   - log_path/                          -- Results of schema linking and sql generation
+    - final_schema_prompts/            -- Prompts after AutoLink's schema linking process used to SQL generation
+    - schema_prompts/                  -- Prompts of schema used to AutoLink's schema linking process
     - sql_gen/                         -- Candidate SQLs and execution results
     - sql_revise/                      -- Revision result of every candidates
     - sql_selection/                   -- The final SQL after cadidate selection
