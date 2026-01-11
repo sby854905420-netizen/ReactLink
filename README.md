@@ -17,6 +17,12 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   - documents/                         -- Constructed column-level documents
   - embeddings/                        -- Document embeddings
   - log_path/                          -- Results of schema linking and sql generation
+    - sql_gen/                         -- Candidate SQLs and execution results
+    - sql_revise/                      -- Revision result of every candidates
+    - sql_selection/                   -- The final SQL after cadidate selection
+    - merge_candidates.json            -- The final schema linking results, used for calculating recall(The difference from unfilled_schema.json lies in whether nested columns in BigQuery are expanded)
+    - unfilled_schema.json             -- The final schema linking results, used for constructing the SQL generation prompt
+    - ...                              -- *Other intermediate results*
   - resource/                          -- Copied from Spider 2.0-Lite Repo
   - snowflake_credential/              -- Place snowflake credential
   - add_id.py                          -- Primary and foreign key rule processing
@@ -60,7 +66,7 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   You should copy [`spdier2-lite/resource`](https://github.com/xlang-ai/Spider2/tree/main/spider2-lite) from [`Spider 2.0`](https://github.com/xlang-ai/Spider2) repo to `run/resource/`. Follow the [`bigquery guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Bigquery_Guideline.md) and  [`snowflake guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Snowflake_Guideline.md) to sign up accounts, then put the credential json files under `run/bigquery_credentials/` and `run/snowflake_credential/` separately.
 
 ## Running the code
-1. Schema Linking:
+1. Schema Linking
   ```bash
   cd ./run
   bash main.sh
