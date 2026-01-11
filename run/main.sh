@@ -12,6 +12,7 @@ python embedding_docs.py
 
 python retrieve_topk_schema.py --log_path $LOG_PATH --top_n $TOP_N
 python add_id.py --log_path $LOG_PATH
-python generate_schema.py --log_path $LOG_PATH
+python generate_schema.py --log_path $LOG_PATH --is_initial
 python complete_schema.py --log_path $LOG_PATH
 python postprocess.py --log_path $LOG_PATH
+python generate_schema.py --log_path $LOG_PATH
