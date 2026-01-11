@@ -16,6 +16,7 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   - bigquery_credentials/              -- Place bigquery credentials
   - documents/                         -- Constructed column-level documents
   - embeddings/                        -- Document embeddings
+  - log_path/                          -- Results of schema linking and sql generation
   - resource/                          -- Copied from Spider 2.0-Lite Repo
   - snowflake_credential/              -- Place snowflake credential
   - add_id.py                          -- Primary and foreign key rule processing
@@ -24,12 +25,17 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   - embedding_docs.py                  -- Embedding documents
   - generate_docs.py                   -- Generate documents  
   - generate_schema.py                 -- Generate schema  
-  - main.sh                            -- Main script 
+  - main.sh                            -- Main script of schema linking
   - model_manager.py                   -- Embedding model manager
   - postprocess.py                     -- Postprocess after schema linking
   - retrieve_topk_schema.py            -- Retrieve script
   - spdier2_data.json                  -- Spider 2.0-Lite test set
-  - utils.py                           -- Utility Functions
+  - sql_execution.py                   -- Execute SQL
+  - sql_gen.sh                         -- The script to generate SQL
+  - sql_generation.py                  -- Generate candidate SQLs
+  - sql_revise.py                      -- Revise the SQL with error execution after candidate SQL generation
+  - sql_selection.py                   -- Select the final SQL via self-consistency based on SQL execution results
+  - utils.py                           -- Utility functions
 ```
 
 ## Settint Up Environment
@@ -54,11 +60,18 @@ For industrial-scale text-to-SQL, supplying the entire database schema to Large 
   You should copy [`spdier2-lite/resource`](https://github.com/xlang-ai/Spider2/tree/main/spider2-lite) from [`Spider 2.0`](https://github.com/xlang-ai/Spider2) repo to `run/resource/`. Follow the [`bigquery guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Bigquery_Guideline.md) and  [`snowflake guideline`](https://github.com/xlang-ai/Spider2/blob/main/assets/Snowflake_Guideline.md) to sign up accounts, then put the credential json files under `run/bigquery_credentials/` and `run/snowflake_credential/` separately.
 
 ## Running the code
+1. Schema Linking:
   ```bash
   cd ./run
   bash main.sh
   ```
   It will gradually complete the entire process from document construction, document embedding, initial schema retrieval, to schema exploration and expansion.
+
+2. SQL Generation
+  ```bash
+  bash sql_gen.sh
+  ```
+  It will progressively complete candidate SQL generation, SQL revision, and final SQL selection.
 
 # Citation
 If you find this repo helpful, please cite our work:
