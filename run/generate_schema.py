@@ -147,9 +147,6 @@ def process_values(values: list, is_dict: bool = False, is_array: bool = False, 
                 return values[:3]
             return [str(value)[:250] + "...(truncated)" if len(str(value)) > 250 else str(value) for value in values][:3]
 
-
-
-
 def preprocess_json_content(content):
     content = content.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 
@@ -253,12 +250,21 @@ def get_column_type(column_type: str):
     return is_dict, is_array, is_variant
 
 
-def generate_initial_schema_prompt(log_path: str):
-    with open(f"{log_path}/unfilled_pre_rule.json", "r", encoding="utf-8") as f:
-        initial_candidates = json.load(f)
-
-    os.makedirs(f"{log_path}/schema_prompts", exist_ok=True)
-
+def generate_schema_prompt(log_path: str, is_initial: bool = False):
+    if is_initial:
+        print("Generating initial schema prompts...")
+        with open(f"{log_path}/unfilled_pre_rule.json", "r", encoding="utf-8") as f:
+            candidates = json.load(f)
+        
+        os.makedirs(f"{log_path}/schema_prompts", exist_ok=True)
+    else:
+        print("Generating final schema prompts...")
+        with open("spider2_data.json", "r", encoding="utf-8") as f:
+            spider2_data = json.load(f)
+        with open(f"{log_path}/unfilled_schema.json", "r", encoding="utf-8") as f:
+            candidates = json.load(f)
+        os.makedirs(f"{log_path}/final_schema_prompts", exist_ok=True)
+    
     with open("documents/bigquery.json", "r", encoding="utf-8") as f:
         bigquery_data = json.load(f)
 
@@ -270,7 +276,7 @@ def generate_initial_schema_prompt(log_path: str):
 
     schema_prompt = ""
 
-    for instance_id, schema_info in tqdm(initial_candidates.items()):
+    for instance_id, schema_info in tqdm(candidates.items()):
         db_name = schema_info["db_name"]
 
         if instance_id.startswith("bq") or instance_id.startswith("ga"):
@@ -356,18 +362,41 @@ def generate_initial_schema_prompt(log_path: str):
                     schema_prompt += f"**Some other tables have the similar structure: [{', '.join(similar_tables)}]**\n"
 
             schema_prompt += "\n" + "-" * 50 + "\n\n"
+        if is_initial:
+            with open(f"{log_path}/schema_prompts/{instance_id}.txt", "w", encoding="utf-8") as f:
+                f.write(schema_prompt)
+        else:
+            external_text = ""
 
-        with open(f"{log_path}/schema_prompts/{instance_id}.txt", "w", encoding="utf-8") as f:
-            f.write(schema_prompt)
+            if instance_id in spider2_data:
+                ek_file = spider2_data[instance_id].get("external_knowledge", "")
+                if ek_file:
+                    ek_path = os.path.join("resource", "documents", ek_file)
+                    if os.path.exists(ek_path):
+                        with open(ek_path, "r", encoding="utf-8") as ef:
+                            ek_content = ef.read()
+
+                        external_text = (
+                            "External knowledge that might be helpful: \n"
+                            + ek_content
+                        )
+                    else:
+                        print(f"[Warning] External knowledge file not found: {ek_path}")
+
+            full_prompt = schema_prompt + external_text
+            with open(f"{log_path}/final_schema_prompts/{instance_id}.txt", "w", encoding="utf-8") as f:
+                f.write(full_prompt)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--log_path', type=str, default="log_v3_topn100")
+    parser.add_argument('--is_initial', action='store_true', default=False)
     args = parser.parse_args()
 
-    generate_initial_schema_prompt(args.log_path)
-
-    all_prompts = os.listdir(f"{args.log_path}/schema_prompts")
+    generate_schema_prompt(args.log_path, args.is_initial)
+    if args.is_initial:
+        all_prompts = os.listdir(f"{args.log_path}/schema_prompts")
+    else:
+        all_prompts = os.listdir(f"{args.log_path}/final_schema_prompts")
     print("Schema prompts generated successfully.")
     print("Total:", len(all_prompts))
-
