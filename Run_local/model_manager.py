@@ -59,7 +59,7 @@ class ModelManager:
     def encode(self, text: str):
         if self.model is None:
             raise RuntimeError("Model not loaded. Call load_model() first.")
-        return self.model.encode(text, convert_to_numpy=True)
+        return self.model.encode(text, convert_to_numpy=True, normalize_embeddings=True)
 
     def release_model(self):
         if self.model is None:

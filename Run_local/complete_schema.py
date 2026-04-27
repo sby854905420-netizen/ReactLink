@@ -13,7 +13,7 @@ from tqdm import tqdm
 from config import (
     AGENT_RETRIEVAL_TOP_K as CONFIG_AGENT_RETRIEVAL_TOP_K,
     CANDIDATE_DB_MIN_HIT_COUNT as CONFIG_CANDIDATE_DB_MIN_HIT_COUNT,
-    CANDIDATE_DB_STRONG_DISTANCE_QUANTILE as CONFIG_CANDIDATE_DB_STRONG_DISTANCE_QUANTILE,
+    CANDIDATE_DB_STRONG_SCORE_QUANTILE as CONFIG_CANDIDATE_DB_STRONG_SCORE_QUANTILE,
     ENABLE_CONTEXT_CONTROL as CONFIG_ENABLE_CONTEXT_CONTROL,
     MAX_CONTEXT_CHARS as CONFIG_MAX_CONTEXT_CHARS,
     MAX_DATABASE_SWITCHES as CONFIG_MAX_DATABASE_SWITCHES,
@@ -91,11 +91,11 @@ CANDIDATE_DB_MIN_HIT_COUNT = get_env(
     int,
     aliases=("REACTLINK_CANDIDATE_DB_MIN_HIT_COUNT",),
 )
-CANDIDATE_DB_STRONG_DISTANCE_QUANTILE = get_env(
-    "CANDIDATE_DB_STRONG_DISTANCE_QUANTILE",
-    CONFIG_CANDIDATE_DB_STRONG_DISTANCE_QUANTILE,
+CANDIDATE_DB_STRONG_SCORE_QUANTILE = get_env(
+    "CANDIDATE_DB_STRONG_SCORE_QUANTILE",
+    CONFIG_CANDIDATE_DB_STRONG_SCORE_QUANTILE,
     float,
-    aliases=("REACTLINK_CANDIDATE_DB_STRONG_DISTANCE_QUANTILE",),
+    aliases=("REACTLINK_CANDIDATE_DB_STRONG_SCORE_QUANTILE",),
 )
 MAX_DATABASE_SWITCHES = get_env(
     "MAX_DATABASE_SWITCHES",
@@ -176,7 +176,7 @@ def configure_runtime(args):
     global OLLAMA_BASE_URL
     global OLLAMA_MODEL
     global CANDIDATE_DB_MIN_HIT_COUNT
-    global CANDIDATE_DB_STRONG_DISTANCE_QUANTILE
+    global CANDIDATE_DB_STRONG_SCORE_QUANTILE
     global MAX_DATABASE_SWITCHES
     global ENABLE_CONTEXT_CONTROL
     global MAX_CONTEXT_CHARS
@@ -193,7 +193,7 @@ def configure_runtime(args):
     OLLAMA_BASE_URL = args.ollama_base_url.rstrip("/")
     OLLAMA_MODEL = args.ollama_model
     CANDIDATE_DB_MIN_HIT_COUNT = args.candidate_db_min_hit_count
-    CANDIDATE_DB_STRONG_DISTANCE_QUANTILE = args.candidate_db_strong_distance_quantile
+    CANDIDATE_DB_STRONG_SCORE_QUANTILE = args.candidate_db_strong_score_quantile
     MAX_DATABASE_SWITCHES = args.max_database_switches
     ENABLE_CONTEXT_CONTROL = args.enable_context_control
     MAX_CONTEXT_CHARS = args.max_context_chars
@@ -403,42 +403,42 @@ def quantile(values: list[float], q: float) -> float:
 def candidate_db_stats_from_schema(schema_info: dict) -> list[dict]:
     stats = {}
     tables = schema_info.get("table_candidates", [])
-    distances = schema_info.get("distances", [])
+    similarity_scores = schema_info.get("similarity_scores", [])
 
     for index, table in enumerate(tables):
         db_id = table_db_id(table)
         if not db_id:
             continue
-        distance = None
-        if index < len(distances):
+        similarity_score = None
+        if index < len(similarity_scores):
             try:
-                distance = float(distances[index])
+                similarity_score = float(similarity_scores[index])
             except (TypeError, ValueError):
-                distance = None
+                similarity_score = None
 
         item = stats.setdefault(
             db_id,
             {
                 "db_id": db_id,
                 "hit_count": 0,
-                "min_distance": None,
-                "distance_sum": 0.0,
-                "distance_count": 0,
+                "max_score": None,
+                "score_sum": 0.0,
+                "score_count": 0,
             },
         )
         item["hit_count"] += 1
-        if distance is not None:
-            item["distance_sum"] += distance
-            item["distance_count"] += 1
-            if item["min_distance"] is None or distance < item["min_distance"]:
-                item["min_distance"] = distance
+        if similarity_score is not None:
+            item["score_sum"] += similarity_score
+            item["score_count"] += 1
+            if item["max_score"] is None or similarity_score > item["max_score"]:
+                item["max_score"] = similarity_score
 
     rows = []
     for item in stats.values():
         row = dict(item)
-        row["mean_distance"] = (
-            row["distance_sum"] / row["distance_count"]
-            if row["distance_count"]
+        row["mean_score"] = (
+            row["score_sum"] / row["score_count"]
+            if row["score_count"]
             else None
         )
         rows.append(row)
@@ -446,8 +446,8 @@ def candidate_db_stats_from_schema(schema_info: dict) -> list[dict]:
     return sorted(
         rows,
         key=lambda row: (
-            row["min_distance"] is None,
-            row["min_distance"] if row["min_distance"] is not None else float("inf"),
+            row["max_score"] is None,
+            -(row["max_score"] if row["max_score"] is not None else float("-inf")),
             -row["hit_count"],
             row["db_id"],
         ),
@@ -457,31 +457,31 @@ def candidate_db_stats_from_schema(schema_info: dict) -> list[dict]:
 def candidate_db_ids_from_schema(
     schema_info: dict,
     min_hit_count: int = CANDIDATE_DB_MIN_HIT_COUNT,
-    strong_distance_quantile: float = CANDIDATE_DB_STRONG_DISTANCE_QUANTILE,
+    strong_score_quantile: float = CANDIDATE_DB_STRONG_SCORE_QUANTILE,
 ) -> set:
     stats = candidate_db_stats_from_schema(schema_info)
     if not stats:
         return set()
 
-    distance_values = [
-        row["min_distance"]
+    score_values = [
+        row["max_score"]
         for row in stats
-        if row["min_distance"] is not None
+        if row["max_score"] is not None
     ]
-    distance_threshold = (
-        quantile(distance_values, strong_distance_quantile)
-        if distance_values
+    score_threshold = (
+        quantile(score_values, strong_score_quantile)
+        if score_values
         else None
     )
 
     kept = set()
     for row in stats:
-        strong_distance_hit = (
-            distance_threshold is not None
-            and row["min_distance"] is not None
-            and row["min_distance"] <= distance_threshold
+        strong_score_hit = (
+            score_threshold is not None
+            and row["max_score"] is not None
+            and row["max_score"] >= score_threshold
         )
-        if row["hit_count"] >= min_hit_count or strong_distance_hit:
+        if row["hit_count"] >= min_hit_count or strong_score_hit:
             kept.add(row["db_id"])
 
     return kept
@@ -570,7 +570,7 @@ def format_observed_columns(results):
             "column_type": metadata["column_type"],
             "column_value": metadata["column_value"],
             "description": metadata["description"],
-            "distance": result.get("distance"),
+            "similarity_score": result.get("similarity_score"),
         })
     return columns
 
@@ -675,7 +675,7 @@ def compact_observed_columns(observed_columns: list, limit: int = MAX_MEMORY_OBS
             "table": record.get("table", ""),
             "column": record.get("column", ""),
             "column_type": record.get("column_type", ""),
-            "distance": record.get("distance"),
+            "similarity_score": record.get("similarity_score"),
             "description": compact_description(record.get("description", "")),
         })
         if len(compacted) >= limit:
@@ -1527,7 +1527,7 @@ if __name__ == "__main__":
         default=os.environ.get("SENTENCE_TRANSFORMER_MODEL", SENTENCE_TRANSFORMER_MODEL),
     )
     parser.add_argument("--candidate_db_min_hit_count", type=int, default=CANDIDATE_DB_MIN_HIT_COUNT)
-    parser.add_argument("--candidate_db_strong_distance_quantile", type=float, default=CANDIDATE_DB_STRONG_DISTANCE_QUANTILE)
+    parser.add_argument("--candidate_db_strong_score_quantile", type=float, default=CANDIDATE_DB_STRONG_SCORE_QUANTILE)
     parser.add_argument("--max_database_switches", type=int, default=MAX_DATABASE_SWITCHES)
     parser.add_argument("--enable_context_control", type=parse_bool, default=ENABLE_CONTEXT_CONTROL)
     parser.add_argument("--max_context_chars", type=int, default=MAX_CONTEXT_CHARS)

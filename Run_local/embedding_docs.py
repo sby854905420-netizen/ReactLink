@@ -54,14 +54,18 @@ def embed_documents(input_file: str, embed_path: str, batch_size: int = 32, mode
         db_embeddings = []
         for i in tqdm(range(0, len(all_descriptions), batch_size), desc=f"Embedding {db_name}", leave=False):
             batch_descriptions = all_descriptions[i:i + batch_size]
-            batch_embeddings = model.encode(batch_descriptions, convert_to_numpy=True)
+            batch_embeddings = model.encode(
+                batch_descriptions,
+                convert_to_numpy=True,
+                normalize_embeddings=True,
+            )
             db_embeddings.extend(batch_embeddings)
 
         if not db_embeddings:
             raise ValueError(f"No descriptions found for database {db_name}.")
 
         dimension = len(db_embeddings[0])
-        index = faiss.IndexFlatL2(dimension)
+        index = faiss.IndexFlatIP(dimension)
         index.add(np.array(db_embeddings, dtype=np.float32))
 
         faiss.write_index(index, os.path.join(embed_path, "index.faiss"))

@@ -67,7 +67,7 @@ def _retrieve_with_device_filtered(
         metadata_mapping = json.load(f)
     model_manager.load_model(device=device)
     question_embedding = model_manager.encode(question)
-    distances, indices = index.search(question_embedding.reshape(1, -1), len(metadata_mapping))
+    similarity_scores, indices = index.search(question_embedding.reshape(1, -1), len(metadata_mapping))
     scoped_indices = {
         idx
         for idx, metadata in enumerate(metadata_mapping)
@@ -81,7 +81,7 @@ def _retrieve_with_device_filtered(
             metadata = metadata_mapping[idx]
             filtered_results.append({
                 "index": idx,
-                "distance": float(distances[0][i]),
+                "similarity_score": float(similarity_scores[0][i]),
                 "metadata": metadata
             })
             if len(filtered_results) >= top_k:
@@ -242,7 +242,7 @@ def process_items_with_device(items, device, top_k, log_dir, dataset_name, data_
             column_types = []
             descriptions = []
             column_values = []
-            distances = []
+            similarity_scores = []
 
             for result in results:
                 metadata = result["metadata"]
@@ -262,7 +262,7 @@ def process_items_with_device(items, device, top_k, log_dir, dataset_name, data_
                 description = metadata["description"]
                 descriptions.append(description)
 
-                distances.append(result["distance"])
+                similarity_scores.append(result["similarity_score"])
 
             results_by_instance[instance_id] = {
                 "question": question,
@@ -273,7 +273,7 @@ def process_items_with_device(items, device, top_k, log_dir, dataset_name, data_
                 "column_values": column_values,
                 "table_candidates": table_candidates,
                 "descriptions": descriptions,
-                "distances": distances,
+                "similarity_scores": similarity_scores,
                 "retrieved_count": len(results)
             }
             if write_sample_debug:
@@ -324,7 +324,7 @@ def retrieve_additional(
             "column_type": metadata["column_type"],
             "column_value": metadata["column_value"],
             "description": metadata["description"],
-            "distance": result["distance"]
+            "similarity_score": result["similarity_score"]
         })
     
     return formatted_results, completion_message

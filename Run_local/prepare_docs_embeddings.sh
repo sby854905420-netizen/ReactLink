@@ -8,7 +8,7 @@ cd "$SCRIPT_DIR"
 # Quick-edit preparation settings.
 # Put each dataset folder under PROJECT_ROOT/Data, then change DATASET_NAME here.
 DATASET_NAME="MMQA_SMOKE"
-SENTENCE_TRANSFORMER_MODEL="BAAI/bge-large-en-v1.5"
+SENTENCE_TRANSFORMER_MODEL="Qwen/Qwen3-Embedding-0.6B"
 BATCH_SIZE=1024
 RECREATE=false
 
