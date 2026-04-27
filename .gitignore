@@ -1,2 +1,7 @@
 MMQA/
 run/
+Data/
+logs/
+__pycache__/
+*.py[cod]
+*.faiss

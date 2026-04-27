@@ -1,126 +1,175 @@
-import os
-import json
-from tqdm import tqdm
 import argparse
-import glob
+import json
+import os
 
 from cost_tool import SampleCostRecorder
-from utils import DEFAULT_DATASET_NAME, is_dataset_instance
+from utils import (
+    AGENT_LINKED_COLUMNS_FILE,
+    AGENT_UNLINKED_COLUMNS_FILE,
+    DEFAULT_DATA_ROOT,
+    DEFAULT_DATASET_NAME,
+    DEFAULT_LOG_ROOT,
+    FINAL_PROMPT_LINKED_SCHEMA_FILE,
+    FINAL_SCHEMA_LINKING_COLUMNS_FILE,
+    RESULT_MANIFEST_FILE,
+    RULE_AUGMENTED_INITIAL_SCHEMA_FILE,
+    SCHEMA_LINKING_STATUS_FILE,
+    build_schema_result_snapshot,
+    load_agent_columns,
+    load_schema_linking_status,
+    merge_schema_records,
+    parse_bool,
+    pipeline_file,
+    pipeline_sample_file,
+    record_db_ids,
+    records_to_schema,
+    sample_file,
+    schema_to_records,
+    summary_file,
+    get_sample_dir,
+    get_summary_dir,
+)
 
-def extract_description(description_text):
-    lines = description_text.strip().split("\n")
-    
-    for line in lines:
-        if line.startswith("description:"):
-            return line[len("description:"):].strip()
 
-    return ""                
-        
-def merge(log_path, is_preprocess=False, dataset_name: str = DEFAULT_DATASET_NAME):
-    cost_output_path = os.path.join(log_path, "cost.json")
-    if is_preprocess:
-        with open(f"{log_path}/unfilled_pre_rule.json", "r", encoding="utf-8") as f:
-            initial_candidates = json.load(f)
-    else:
-        with open(f"{log_path}/initial_candidates.json", "r", encoding="utf-8") as f:
-            initial_candidates = json.load(f)
-        
-    for instance_id, schema_info in initial_candidates.items():
-        if os.path.exists(f"{log_path}/candidates/{instance_id}.json"):
-            with open(f"{log_path}/candidates/{instance_id}.json", "r", encoding="utf-8") as f:
-                step2_candidates = json.load(f)
-                
-            step2_schema = step2_candidates[instance_id]
-            schema_info["column_candidates"] += step2_schema["column_candidates"]
-            schema_info["table_candidates"] += step2_schema["table_candidates"]
-            schema_info["column_types"] += step2_schema["column_types"]
-            schema_info["column_values"] += step2_schema["column_values"]
-            schema_info["descriptions"] += step2_schema["descriptions"]
+def last_explicit_selected_db_id(status: dict) -> str | None:
+    history = status.get("database_selection_history", [])
+    if isinstance(history, list):
+        for selection in reversed(history):
+            if isinstance(selection, dict) and selection.get("db_id"):
+                return selection["db_id"]
+    return status.get("selected_db_id")
 
-    with open(f"{log_path}/unfilled_schema.json", "w", encoding="utf-8") as f:
-        json.dump(initial_candidates, f, indent=4, ensure_ascii=False)
-    
-    with open(f"{log_path}/unfilled_schema.json", "r", encoding="utf-8") as f:
+
+def status_flags(status: dict) -> tuple[bool, bool]:
+    explicit_status = status.get("status")
+    if explicit_status == "finished":
+        return True, False
+    if explicit_status == "error":
+        return False, True
+    if explicit_status == "best_effort":
+        return False, False
+    return bool(status.get("is_finished", False)), bool(status.get("is_error", False))
+
+
+def build_run_status(counts: dict) -> str:
+    if counts["error"]:
+        return "completed_with_errors"
+    if counts["best_effort"]:
+        return "completed_with_unfinished_samples"
+    return "success"
+
+
+def to_schema_linking_columns(data_id: str, db_ids: list, records: list) -> dict:
+    db_id = db_ids[0] if len(db_ids) == 1 else ""
+    return {
+        "db_id": db_id,
+        "db_ids": db_ids,
+        "columns": [
+            {
+                "table": record["table"],
+                "column": record["column"],
+            }
+            for record in records
+        ],
+    }
+
+
+def merge(
+    log_path,
+    dataset_name: str = DEFAULT_DATASET_NAME,
+    data_root: str = DEFAULT_DATA_ROOT,
+    write_sample_debug: bool = False,
+):
+    summary_dir = get_summary_dir(log_path)
+    cost_output_path = summary_file(log_path, "cost.json")
+    with open(pipeline_file(log_path, RULE_AUGMENTED_INITIAL_SCHEMA_FILE), "r", encoding="utf-8") as f:
         initial_candidates = json.load(f)
-        
-    final_schemas =  {}
-        
-    for instance_id, schema_info in initial_candidates.items():
+
+    final_prompt_schemas = {}
+    final_schema_linking_columns = {}
+    result_manifest = {
+        "total": 0,
+        "finished": 0,
+        "best_effort": 0,
+        "error": 0,
+        "samples": {},
+    }
+
+    for data_id, schema_info in initial_candidates.items():
         with SampleCostRecorder(
-            sample_id=instance_id,
+            sample_id=data_id,
             output_path=cost_output_path,
         ):
-            final_schemas[instance_id] = {}
-            
-            db_name = schema_info["db_name"]
-            
-            filled_table_candidates = []
-            filled_column_candidates = []
-            
-            table_candidates = schema_info["table_candidates"]
-            column_candidates = schema_info["column_candidates"]
-            
-            if instance_id.startswith("bq") or instance_id.startswith("ga"):
+            initial_records = schema_to_records(schema_info)
+            linked_records = load_agent_columns(pipeline_sample_file(log_path, data_id, AGENT_LINKED_COLUMNS_FILE))
+            unlinked_records = load_agent_columns(pipeline_sample_file(log_path, data_id, AGENT_UNLINKED_COLUMNS_FILE))
+            status = load_schema_linking_status(pipeline_sample_file(log_path, data_id, SCHEMA_LINKING_STATUS_FILE))
+            selected_db_id = last_explicit_selected_db_id(status)
+            final_records = merge_schema_records(
+                initial_records,
+                linked_records,
+                unlinked_records,
+                selected_db_id=selected_db_id,
+            )
+            output_db_ids = [selected_db_id] if selected_db_id else record_db_ids(final_records)
 
-                db_path = f"resource/databases/bigquery/{db_name}"
-                json_files = glob.glob(os.path.join(db_path, "**", "*.json"), recursive=True)
-                
-                for table_candidate, column_candidate in zip(table_candidates, column_candidates):
-                    table_name = table_candidate.split(".")[-1]
-                    found_path = None
-                    for json_file in json_files:
-                        if table_name.strip().lower() in json_file.strip().lower():
-                            found_path = json_file
-                            break
-                    if not found_path:
-                        print(f"Warning: Instance_id {instance_id}, Table {table_name} not found in BigQuery database {db_name}.")
-                        continue
-                    with open(found_path, "r", encoding="utf-8") as f:
-                        table_info = json.load(f)
-                    nested_column_names = table_info["nested_column_names"]
-                    
-                    is_nested = False
-                    for nested_column in nested_column_names:
-                        if "." in nested_column:
-                            is_nested = True
-                            break
-                    if not is_nested:
-                        filled_column_candidates.append(column_candidate)
-                        filled_table_candidates.append(table_candidate)
-                    else:
-                        for nested_column in nested_column_names:
-                            if "." in nested_column:
-                                first_parts = nested_column.split(".")[0]
-                                if first_parts.lower() == column_candidate.lower():
-                                    filled_column_candidates.append(nested_column)
-                                    filled_table_candidates.append(table_candidate)
-                            elif nested_column == column_candidate:
-                                filled_column_candidates.append(nested_column)
-                                filled_table_candidates.append(table_candidate)
-                                
-                                
-            elif instance_id.startswith("sf"):
-                for table_candidate, column_candidate in zip(table_candidates, column_candidates):
-                    filled_column_candidates.append(column_candidate)
-                    filled_table_candidates.append(table_candidate)
-                
-            elif instance_id.startswith("local") or is_dataset_instance(instance_id, dataset_name):
-                for table_candidate, column_candidate in zip(table_candidates, column_candidates):
-                    filled_column_candidates.append(column_candidate)
-                    filled_table_candidates.append(table_candidate)
-                
-            final_schemas[instance_id]["table_candidates"] = filled_table_candidates
-            final_schemas[instance_id]["column_candidates"] = filled_column_candidates
-        
-    with open(f"{log_path}/merge_candidates.json", "w") as f:
-        json.dump(final_schemas, f, indent=4, ensure_ascii=False)
+            final_prompt_schema = records_to_schema(
+                schema_info["question"],
+                schema_info["db_name"],
+                final_records,
+                db_id=output_db_ids[0] if len(output_db_ids) == 1 else None,
+            )
+            final_prompt_schema["db_ids"] = output_db_ids
+            final_columns = to_schema_linking_columns(data_id, output_db_ids, final_records)
+            is_finished, is_error = status_flags(status)
+            sample_result = build_schema_result_snapshot(
+                selected_db_id=selected_db_id,
+                final_records=final_records,
+                is_finished=is_finished,
+                is_error=is_error,
+                termination_reason=status.get("termination_reason"),
+                error_message=status.get("error_message"),
+            )
+            if "turns_used" in status:
+                sample_result["turns_used"] = status["turns_used"]
+
+            final_prompt_schemas[data_id] = final_prompt_schema
+            final_schema_linking_columns[data_id] = final_columns
+            result_manifest["samples"][data_id] = sample_result
+            result_manifest["total"] += 1
+            result_manifest[sample_result["status"]] += 1
+
+            if write_sample_debug:
+                os.makedirs(get_sample_dir(log_path, data_id), exist_ok=True)
+                with open(sample_file(log_path, data_id, FINAL_PROMPT_LINKED_SCHEMA_FILE), "w", encoding="utf-8") as f:
+                    json.dump(final_prompt_schema, f, ensure_ascii=False, indent=2)
+                with open(sample_file(log_path, data_id, FINAL_SCHEMA_LINKING_COLUMNS_FILE), "w", encoding="utf-8") as f:
+                    json.dump(final_columns, f, ensure_ascii=False, indent=2)
+
+    os.makedirs(summary_dir, exist_ok=True)
+    result_manifest["run_status"] = build_run_status(result_manifest)
+    with open(summary_file(log_path, FINAL_PROMPT_LINKED_SCHEMA_FILE), "w", encoding="utf-8") as f:
+        json.dump(final_prompt_schemas, f, indent=2, ensure_ascii=False)
+
+    with open(summary_file(log_path, FINAL_SCHEMA_LINKING_COLUMNS_FILE), "w", encoding="utf-8") as f:
+        json.dump(final_schema_linking_columns, f, indent=2, ensure_ascii=False)
+
+    with open(summary_file(log_path, RESULT_MANIFEST_FILE), "w", encoding="utf-8") as f:
+        json.dump(result_manifest, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--log_path', type=str, default="log_mmqa_global_topn100")
-    parser.add_argument('--dataset_name', type=str, default=DEFAULT_DATASET_NAME)
+    parser.add_argument("--log_path", type=str, default=os.path.join(DEFAULT_LOG_ROOT, DEFAULT_DATASET_NAME))
+    parser.add_argument("--dataset_name", type=str, default=DEFAULT_DATASET_NAME)
+    parser.add_argument("--data_root", type=str, default=DEFAULT_DATA_ROOT)
+    parser.add_argument("--write_sample_debug", type=parse_bool, default=False)
     args = parser.parse_args()
     print("Merging candidate schemas...")
-    merge(log_path=args.log_path, is_preprocess=True, dataset_name=args.dataset_name)
+    merge(
+        log_path=args.log_path,
+        dataset_name=args.dataset_name,
+        data_root=args.data_root,
+        write_sample_debug=args.write_sample_debug,
+    )
     print("Merging completed.")

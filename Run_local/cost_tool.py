@@ -77,7 +77,12 @@ def update_cost_json(output_path: str, sample_id: str, cost_record: dict):
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
 
-    lock_path = f"{output_path}.lock"
+    if os.path.basename(output_dir) == "_summary":
+        lock_dir = os.path.join(os.path.dirname(output_dir), "cache", "_locks")
+        os.makedirs(lock_dir, exist_ok=True)
+        lock_path = os.path.join(lock_dir, f"{os.path.basename(output_path)}.lock")
+    else:
+        lock_path = f"{output_path}.lock"
     with open(lock_path, "a+", encoding="utf-8") as lock_file:
         fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
 

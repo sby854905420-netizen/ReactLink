@@ -5,7 +5,25 @@ import re
 import argparse
 
 from cost_tool import SampleCostRecorder
-from utils import DEFAULT_DATASET_NAME, is_dataset_instance, load_dataset_data
+from utils import (
+    DEFAULT_DATA_ROOT,
+    DEFAULT_DATASET_NAME,
+    DEFAULT_LOG_ROOT,
+    FINAL_PROMPT_LINKED_SCHEMA_FILE,
+    FINAL_SCHEMA_PROMPT_FILE,
+    RULE_AUGMENTED_INITIAL_SCHEMA_FILE,
+    SCHEMA_LINKING_PROMPT_FILE,
+    get_documents_path,
+    get_pipeline_dir,
+    get_pipeline_sample_dir,
+    get_sample_dir,
+    load_dataset_data,
+    parse_bool,
+    pipeline_file,
+    pipeline_sample_file,
+    sample_file,
+    summary_file,
+)
 
 def extract_description(description_text):
     lines = description_text.strip().split("\n")
@@ -195,52 +213,6 @@ def fix_malformed_json(content):
     return content
 
 
-def safe_json_loads(json_str, max_attempts=3):
-
-    for attempt in range(max_attempts):
-        try:
-            return json.loads(json_str)
-        except json.JSONDecodeError as e:
-            if attempt == max_attempts - 1:
-                try:
-                    simplified = extract_basic_info(json_str)
-                    return json.loads(simplified)
-                except:
-                    raise e
-            else:
-                json_str = progressive_fix(json_str, attempt)
-
-
-def extract_basic_info(content):
-    basic_info = {}
-    simple_patterns = [
-        r'"([^"]+)":\s*"([^"]*)"',  
-        r'"([^"]+)":\s*(\d+\.?\d*)',  
-        r'"([^"]+)":\s*(true|false|null)' 
-    ]
-
-    for pattern in simple_patterns:
-        matches = re.findall(pattern, content)
-        for key, value in matches:
-            if key not in basic_info:  
-                if value in ['true', 'false', 'null']:
-                    basic_info[key] = json.loads(value)
-                elif value.replace('.', '').replace('-', '').isdigit():
-                    basic_info[key] = json.loads(value)
-                else:
-                    basic_info[key] = value
-
-    return json.dumps(basic_info)
-
-
-def progressive_fix(content, attempt):
-    if attempt == 0:
-        return preprocess_json_content(content)
-    elif attempt == 1:
-        return fix_malformed_json(preprocess_json_content(content))
-    else:
-        return extract_basic_info(content)
-
 def get_column_type(column_type: str):
     is_dict, is_array, is_variant = False, False, False
     if column_type.startswith("ARRAY<") and column_type.endswith(">"):
@@ -257,22 +229,24 @@ def generate_schema_prompt(
     log_path: str,
     is_initial: bool = False,
     dataset_name: str = DEFAULT_DATASET_NAME,
+    data_root: str = DEFAULT_DATA_ROOT,
+    write_sample_debug: bool = False,
 ):
-    cost_output_path = os.path.join(log_path, "cost.json")
+    cost_output_path = summary_file(log_path, "cost.json")
     if is_initial:
         print("Generating initial schema prompts...")
-        with open(f"{log_path}/unfilled_pre_rule.json", "r", encoding="utf-8") as f:
+        with open(pipeline_file(log_path, RULE_AUGMENTED_INITIAL_SCHEMA_FILE), "r", encoding="utf-8") as f:
             candidates = json.load(f)
-        
-        os.makedirs(f"{log_path}/schema_prompts", exist_ok=True)
     else:
         print("Generating final schema prompts...")
-        spider2_data = load_dataset_data(dataset_name)
-        with open(f"{log_path}/unfilled_schema.json", "r", encoding="utf-8") as f:
+        dataset_data = load_dataset_data(dataset_name, data_root)
+        with open(summary_file(log_path, FINAL_PROMPT_LINKED_SCHEMA_FILE), "r", encoding="utf-8") as f:
             candidates = json.load(f)
-        os.makedirs(f"{log_path}/final_schema_prompts", exist_ok=True)
-    
-    with open("documents/localdb.json", "r", encoding="utf-8") as f:
+
+    if is_initial:
+        dataset_data = load_dataset_data(dataset_name, data_root)
+
+    with open(get_documents_path(dataset_name, data_root), "r", encoding="utf-8") as f:
         localdb_data = json.load(f)
 
     schema_prompt = ""
@@ -284,10 +258,7 @@ def generate_schema_prompt(
         ):
             db_name = schema_info["db_name"]
 
-            if instance_id.startswith("local") or is_dataset_instance(instance_id, dataset_name):
-                db_data = localdb_data[db_name]
-            else:
-                raise ValueError(f"Unknown instance ID: {instance_id}")
+            db_data = localdb_data[db_name]
 
             column_candidates = schema_info["column_candidates"]
             column_types = schema_info["column_types"]
@@ -364,41 +335,49 @@ def generate_schema_prompt(
 
                 schema_prompt += "\n" + "-" * 50 + "\n\n"
             if is_initial:
-                with open(f"{log_path}/schema_prompts/{instance_id}.txt", "w", encoding="utf-8") as f:
+                os.makedirs(get_pipeline_sample_dir(log_path, instance_id), exist_ok=True)
+                with open(pipeline_sample_file(log_path, instance_id, SCHEMA_LINKING_PROMPT_FILE), "w", encoding="utf-8") as f:
                     f.write(schema_prompt)
+                if write_sample_debug:
+                    os.makedirs(get_sample_dir(log_path, instance_id), exist_ok=True)
+                    with open(sample_file(log_path, instance_id, SCHEMA_LINKING_PROMPT_FILE), "w", encoding="utf-8") as f:
+                        f.write(schema_prompt)
             else:
                 external_text = ""
 
-                if instance_id in spider2_data:
-                    ek_file = spider2_data[instance_id].get("external_knowledge", "")
-                    if ek_file:
-                        ek_path = os.path.join("resource", "documents", ek_file)
-                        if os.path.exists(ek_path):
-                            with open(ek_path, "r", encoding="utf-8") as ef:
-                                ek_content = ef.read()
-
-                            external_text = (
-                                "External knowledge that might be helpful: \n"
-                                + ek_content
-                            )
-                        else:
-                            print(f"[Warning] External knowledge file not found: {ek_path}")
+                if instance_id in dataset_data:
+                    external_knowledge = dataset_data[instance_id].get("external_knowledge")
+                    if external_knowledge:
+                        external_text = (
+                            "External knowledge that might be helpful: \n"
+                            + str(external_knowledge)
+                        )
 
                 full_prompt = schema_prompt + external_text
-                with open(f"{log_path}/final_schema_prompts/{instance_id}.txt", "w", encoding="utf-8") as f:
+                os.makedirs(get_sample_dir(log_path, instance_id), exist_ok=True)
+                with open(sample_file(log_path, instance_id, FINAL_SCHEMA_PROMPT_FILE), "w", encoding="utf-8") as f:
                     f.write(full_prompt)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--log_path', type=str, default="log_mmqa_global_topn100")
+    parser.add_argument('--log_path', type=str, default=os.path.join(DEFAULT_LOG_ROOT, DEFAULT_DATASET_NAME))
     parser.add_argument('--is_initial', action='store_true', default=False)
     parser.add_argument('--dataset_name', type=str, default=DEFAULT_DATASET_NAME)
+    parser.add_argument('--data_root', type=str, default=DEFAULT_DATA_ROOT)
+    parser.add_argument("--write_sample_debug", type=parse_bool, default=False)
     args = parser.parse_args()
 
-    generate_schema_prompt(args.log_path, args.is_initial, args.dataset_name)
-    if args.is_initial:
-        all_prompts = os.listdir(f"{args.log_path}/schema_prompts")
-    else:
-        all_prompts = os.listdir(f"{args.log_path}/final_schema_prompts")
+    generate_schema_prompt(
+        args.log_path,
+        args.is_initial,
+        args.dataset_name,
+        args.data_root,
+        write_sample_debug=args.write_sample_debug,
+    )
+    all_prompts = [
+        entry
+        for entry in os.listdir(os.path.join(get_pipeline_dir(args.log_path), "samples"))
+        if os.path.isdir(os.path.join(get_pipeline_dir(args.log_path), "samples", entry))
+    ]
     print("Schema prompts generated successfully.")
     print("Total:", len(all_prompts))

@@ -1,27 +1,27 @@
 import json
 import os
+import argparse
 
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
+from config import BATCH_SIZE, SENTENCE_TRANSFORMER_MODEL
+from utils import DEFAULT_DATA_ROOT, DEFAULT_DATASET_NAME, get_documents_path, get_embeddings_dir
 
-MODEL_NAME = os.environ.get("SENTENCE_TRANSFORMER_MODEL", "BAAI/bge-large-en-v1.5")
+MODEL_NAME = os.environ.get("SENTENCE_TRANSFORMER_MODEL", SENTENCE_TRANSFORMER_MODEL)
 
 
-def embed_documents(input_file: str, embed_path: str, batch_size: int = 32):
+def embed_documents(input_file: str, embed_path: str, batch_size: int = 32, model_name: str = MODEL_NAME):
     os.makedirs(embed_path, exist_ok=True)
 
-    model = SentenceTransformer(MODEL_NAME)
+    model = SentenceTransformer(model_name)
 
     with open(input_file, "r", encoding="utf-8") as f:
         documents = json.load(f)
 
     for db_name, tables in tqdm(documents.items()):
-        db_dir = os.path.join(embed_path, db_name)
-        os.makedirs(db_dir, exist_ok=True)
-
         all_descriptions = []
         metadata_mapping = []
 
@@ -64,11 +64,24 @@ def embed_documents(input_file: str, embed_path: str, batch_size: int = 32):
         index = faiss.IndexFlatL2(dimension)
         index.add(np.array(db_embeddings, dtype=np.float32))
 
-        faiss.write_index(index, os.path.join(db_dir, "index.faiss"))
-        with open(os.path.join(db_dir, "metadata.json"), "w", encoding="utf-8") as f_meta:
+        faiss.write_index(index, os.path.join(embed_path, "index.faiss"))
+        with open(os.path.join(embed_path, "metadata.json"), "w", encoding="utf-8") as f_meta:
             json.dump(metadata_mapping, f_meta, ensure_ascii=False, indent=2)
+        print(f"Embedding index for {db_name} saved to {embed_path}")
 
 
 if __name__ == "__main__":
-    print("Embedding MMQA global SQLite documents...")
-    embed_documents(os.path.join("documents", "localdb.json"), "embeddings/localdb", batch_size=1024)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset_name", type=str, default=DEFAULT_DATASET_NAME)
+    parser.add_argument("--data_root", type=str, default=DEFAULT_DATA_ROOT)
+    parser.add_argument("--batch_size", type=int, default=BATCH_SIZE)
+    parser.add_argument("--sentence_transformer_model", type=str, default=MODEL_NAME)
+    args = parser.parse_args()
+
+    print(f"Embedding {args.dataset_name} global SQLite documents...")
+    embed_documents(
+        get_documents_path(args.dataset_name, args.data_root),
+        get_embeddings_dir(args.dataset_name, args.data_root),
+        batch_size=args.batch_size,
+        model_name=args.sentence_transformer_model,
+    )

@@ -1,30 +1,36 @@
 import json
 import os
+import argparse
 
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(BASE_DIR)
-MMQA_SCHEMA_PATH = os.path.join(PROJECT_ROOT, "MMQA", "db_info.json")
-GLOBAL_DB_NAME = "mmqa_global"
+from utils import (
+    DEFAULT_DATA_ROOT,
+    DEFAULT_DATASET_NAME,
+    get_db_info_path,
+    get_documents_dir,
+    get_documents_path,
+    get_dataset_schema_name,
+)
 
 
 def qualify_table_name(db_id: str, table_name: str) -> str:
     return f"{db_id}.{table_name}"
 
 
-def generate_documents(output_path: str = "documents"):
-    with open(MMQA_SCHEMA_PATH, "r", encoding="utf-8") as f:
-        mmqa_schemas = json.load(f)
+def generate_documents(dataset_name: str = DEFAULT_DATASET_NAME, data_root: str = DEFAULT_DATA_ROOT):
+    db_info_path = get_db_info_path(dataset_name, data_root)
+    with open(db_info_path, "r", encoding="utf-8") as f:
+        schemas = json.load(f)
 
-    documents = {GLOBAL_DB_NAME: {}}
+    schema_name = get_dataset_schema_name(dataset_name)
+    documents = {schema_name: {}}
 
-    for schema in mmqa_schemas:
+    for schema in schemas:
         db_id = schema["db_id"]
         table_names = schema["table_names"]
         column_names = schema["column_names"]
         column_types = schema["column_types"]
         column_descriptions = schema["column_descriptions"]
-        sample_rows = schema["sample_rows"]
+        sample_rows = schema.get("sample_rows", {})
 
         tables = {}
         for table_name in table_names:
@@ -51,7 +57,7 @@ def generate_documents(output_path: str = "documents"):
 
         for table_name, table_info in tables.items():
             qualified_table_name = table_info["qualified_table_name"]
-            documents[GLOBAL_DB_NAME][qualified_table_name] = {
+            documents[schema_name][qualified_table_name] = {
                 "similar_tables": [],
                 "columns": {},
                 "column_types": table_info["column_types"],
@@ -62,7 +68,7 @@ def generate_documents(output_path: str = "documents"):
                 column_values = []
                 for sample_row in table_info["sample_rows"]:
                     column_values.append(str(sample_row.get(column_name, "")))
-                documents[GLOBAL_DB_NAME][qualified_table_name]["sample_values"].append(column_values)
+                documents[schema_name][qualified_table_name]["sample_values"].append(column_values)
 
             for column_name, column_type, column_desc in zip(
                 table_info["columns"],
@@ -75,14 +81,20 @@ def generate_documents(output_path: str = "documents"):
                     + "table name: " + qualified_table_name + "\n"
                     + "description: " + column_desc + "\n"
                 )
-                documents[GLOBAL_DB_NAME][qualified_table_name]["columns"][column_name] = desc
+                documents[schema_name][qualified_table_name]["columns"][column_name] = desc
 
-    os.makedirs(output_path, exist_ok=True)
-    output_file = os.path.join(output_path, "localdb.json")
+    os.makedirs(get_documents_dir(dataset_name, data_root), exist_ok=True)
+    output_file = get_documents_path(dataset_name, data_root)
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(documents, f, indent=4, ensure_ascii=False)
+    print(f"Documents saved to {output_file}")
 
 
 if __name__ == "__main__":
-    print("Generate documents for MMQA global SQLite space...")
-    generate_documents(output_path="documents")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset_name", type=str, default=DEFAULT_DATASET_NAME)
+    parser.add_argument("--data_root", type=str, default=DEFAULT_DATA_ROOT)
+    args = parser.parse_args()
+
+    print(f"Generate documents for {args.dataset_name} global SQLite space...")
+    generate_documents(dataset_name=args.dataset_name, data_root=args.data_root)
