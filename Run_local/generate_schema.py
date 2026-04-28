@@ -10,10 +10,11 @@ from utils import (
     DEFAULT_DATASET_NAME,
     DEFAULT_LOG_ROOT,
     FINAL_PROMPT_LINKED_SCHEMA_FILE,
-    FINAL_SCHEMA_PROMPT_FILE,
     RULE_AUGMENTED_INITIAL_SCHEMA_FILE,
     SCHEMA_LINKING_PROMPT_FILE,
+    final_schema_prompt_file,
     get_documents_path,
+    get_final_schema_prompt_dir,
     get_pipeline_dir,
     get_pipeline_sample_dir,
     get_sample_dir,
@@ -354,8 +355,8 @@ def generate_schema_prompt(
                         )
 
                 full_prompt = schema_prompt + external_text
-                os.makedirs(get_sample_dir(log_path, instance_id), exist_ok=True)
-                with open(sample_file(log_path, instance_id, FINAL_SCHEMA_PROMPT_FILE), "w", encoding="utf-8") as f:
+                os.makedirs(get_final_schema_prompt_dir(log_path), exist_ok=True)
+                with open(final_schema_prompt_file(log_path, instance_id), "w", encoding="utf-8") as f:
                     f.write(full_prompt)
 
 if __name__ == "__main__":
@@ -374,10 +375,20 @@ if __name__ == "__main__":
         args.data_root,
         write_sample_debug=args.write_sample_debug,
     )
-    all_prompts = [
-        entry
-        for entry in os.listdir(os.path.join(get_pipeline_dir(args.log_path), "samples"))
-        if os.path.isdir(os.path.join(get_pipeline_dir(args.log_path), "samples", entry))
-    ]
     print("Schema prompts generated successfully.")
+    if args.is_initial:
+        prompt_dir = os.path.join(get_pipeline_dir(args.log_path), "samples")
+        all_prompts = [
+            entry
+            for entry in os.listdir(prompt_dir)
+            if os.path.isdir(os.path.join(prompt_dir, entry))
+        ]
+    else:
+        prompt_dir = get_final_schema_prompt_dir(args.log_path)
+        all_prompts = [
+            entry
+            for entry in os.listdir(prompt_dir)
+            if entry.endswith(".txt") and os.path.isfile(os.path.join(prompt_dir, entry))
+        ]
+        print("Output:", prompt_dir)
     print("Total:", len(all_prompts))

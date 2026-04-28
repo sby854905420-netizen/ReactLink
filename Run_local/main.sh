@@ -1,13 +1,30 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$SCRIPT_DIR"
 
-if [[ $# -gt 0 ]]; then
-    export DATASET_NAME="$1"
-fi
+# Quick run settings. Keep empty to use config.py defaults.
+RUN_DATASET_NAME="MMQA_SMOKE"
+RUN_MODEL_DISCUSSION_TURNS="20"
+RUN_OLLAMA_MODEL="qwen2.5:14b"
+RUN_WRITE_SAMPLE_DEBUG="False"
+RUN_TOP_N="50"
+
+apply_override() {
+    local name="$1"
+    local value="$2"
+    if [[ -n "$value" ]]; then
+        export "$name=$value"
+    fi
+}
+
+apply_override DATASET_NAME "$RUN_DATASET_NAME"
+apply_override MODEL_DISCUSSION_TURNS "$RUN_MODEL_DISCUSSION_TURNS"
+apply_override OLLAMA_MODEL "$RUN_OLLAMA_MODEL"
+apply_override WRITE_SAMPLE_DEBUG "$RUN_WRITE_SAMPLE_DEBUG"
+apply_override TOP_N "$RUN_TOP_N"
 
 USER_LOG_PATH="${LOG_PATH:-}"
 set -a
@@ -42,51 +59,42 @@ Resolved ReactLink run configuration:
   OLLAMA_BASE_URL=$OLLAMA_BASE_URL
   OLLAMA_MODEL=$OLLAMA_MODEL
   MODEL_DISCUSSION_TURNS=$MODEL_DISCUSSION_TURNS
+  WRITE_SAMPLE_DEBUG=$WRITE_SAMPLE_DEBUG
+  TOP_N=$TOP_N
   RUN_ID=$RUN_ID
   LOG_PATH=$LOG_PATH
 EOF
 
-python retrieve_topk_schema.py \
-    --log_path "$LOG_PATH" \
-    --top_n "$TOP_N" \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
-    --retrieval_device "$RETRIEVAL_DEVICE" \
-    --sentence_transformer_model "$SENTENCE_TRANSFORMER_MODEL" \
+COMMON_ARGS=(
+    --log_path "$LOG_PATH"
+    --dataset_name "$DATASET_NAME"
+    --data_root "$DATA_ROOT"
     --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+)
+
+python retrieve_topk_schema.py \
+    "${COMMON_ARGS[@]}" \
+    --top_n "$TOP_N" \
+    --retrieval_device "$RETRIEVAL_DEVICE" \
+    --sentence_transformer_model "$SENTENCE_TRANSFORMER_MODEL"
 
 python add_id.py \
-    --log_path "$LOG_PATH" \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
-    --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+    "${COMMON_ARGS[@]}"
 
 python generate_schema.py \
-    --log_path "$LOG_PATH" \
-    --is_initial \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
-    --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+    "${COMMON_ARGS[@]}" \
+    --is_initial
 
 python complete_schema.py \
-    --log_path "$LOG_PATH" \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
+    "${COMMON_ARGS[@]}" \
     --ollama_base_url "$OLLAMA_BASE_URL" \
     --ollama_model "$OLLAMA_MODEL" \
     --sentence_transformer_model "$SENTENCE_TRANSFORMER_MODEL" \
     --model_discussion_turns "$MODEL_DISCUSSION_TURNS" \
-    --retrieval_device "$RETRIEVAL_DEVICE" \
-    --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+    --retrieval_device "$RETRIEVAL_DEVICE"
 
 python postprocess.py \
-    --log_path "$LOG_PATH" \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
-    --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+    "${COMMON_ARGS[@]}"
 
 python generate_schema.py \
-    --log_path "$LOG_PATH" \
-    --dataset_name "$DATASET_NAME" \
-    --data_root "$DATA_ROOT" \
-    --write_sample_debug "$WRITE_SAMPLE_DEBUG"
+    "${COMMON_ARGS[@]}"

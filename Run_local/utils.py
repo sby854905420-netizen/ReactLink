@@ -23,7 +23,7 @@ AGENT_UNLINKED_COLUMNS_FILE = "agent_unlinked_columns.json"
 FINAL_PROMPT_LINKED_SCHEMA_FILE = "final_prompt_linked_schema.json"
 FINAL_SCHEMA_LINKING_COLUMNS_FILE = "final_schema_linking_columns.json"
 SCHEMA_LINKING_PROMPT_FILE = "schema_linking_prompt.txt"
-FINAL_SCHEMA_PROMPT_FILE = "final_schema_prompt.txt"
+FINAL_SCHEMA_PROMPT_DIR_NAME = "final_schema_prompt"
 MODEL_OUTPUT_FILE = "model_output.txt"
 INPUT_MESSAGES_FILE = "input_messages.txt"
 ERROR_FILE = "error.txt"
@@ -112,6 +112,10 @@ def get_pipeline_sample_dir(log_path: str, data_id: str) -> str:
     return os.path.join(get_pipeline_dir(log_path), "samples", str(data_id))
 
 
+def get_final_schema_prompt_dir(log_path: str) -> str:
+    return os.path.join(resolve_path(log_path), FINAL_SCHEMA_PROMPT_DIR_NAME)
+
+
 def ensure_sample_dir(log_path: str, data_id: str) -> str:
     sample_dir = get_sample_dir(log_path, data_id)
     os.makedirs(sample_dir, exist_ok=True)
@@ -140,6 +144,10 @@ def pipeline_file(log_path: str, filename: str) -> str:
 
 def sample_file(log_path: str, data_id: str, filename: str) -> str:
     return os.path.join(get_sample_dir(log_path, data_id), filename)
+
+
+def final_schema_prompt_file(log_path: str, data_id: str) -> str:
+    return os.path.join(get_final_schema_prompt_dir(log_path), f"{data_id}.txt")
 
 
 def pipeline_sample_file(log_path: str, data_id: str, filename: str) -> str:
